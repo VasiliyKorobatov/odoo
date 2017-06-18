@@ -322,7 +322,6 @@ file_filter = addons/l10n_multilang/i18n/<lang>.po
 source_file = addons/l10n_multilang/i18n/l10n_multilang.pot
 source_lang = en
 
-
 [odoo-10.link_tracker]
 file_filter = addons/link_tracker/i18n/<lang>.po
 source_file = addons/link_tracker/i18n/link_tracker.pot
@@ -922,3 +921,4 @@ source_lang = en
 file_filter = addons/website_twitter/i18n/<lang>.po
 source_file = addons/website_twitter/i18n/website_twitter.pot
 source_lang = en
+

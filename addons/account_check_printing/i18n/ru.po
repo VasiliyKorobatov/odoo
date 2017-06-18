@@ -4,7 +4,7 @@
 # 
 # Translators:
 # KingOPl Slav <87slava13@gmail.com>, 2016
-# dr&mx <dronmax@gmail.com>, 2016
+# Максим Дронь <dronmax@gmail.com>, 2016
 # Алексей Билькевич (belskiy) <mmmbrsk@gmail.com>, 2016
 # Sergey Vilizhanin <sv@grimmette.ru>, 2016
 # Max Belyanin <maxbelyanin@gmail.com>, 2016

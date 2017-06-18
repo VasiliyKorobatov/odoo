@@ -5,7 +5,7 @@
 # Translators:
 # Max Belyanin <maxbelyanin@gmail.com>, 2016
 # Martin Trigaux <mat@odoo.com>, 2016
-# dr&mx <dronmax@gmail.com>, 2016
+# Максим Дронь <dronmax@gmail.com>, 2016
 # Gennady Marchenko <gennadym@gmail.com>, 2016
 # Viktor Pogrebniak <vp@aifil.ru>, 2016
 msgid ""

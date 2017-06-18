@@ -5,7 +5,7 @@
 # Translators:
 # Viktor Pogrebniak <vp@aifil.ru>, 2016
 # Sergey Vilizhanin <sv@grimmette.ru>, 2016
-# dr&mx <dronmax@gmail.com>, 2016
+# Максим Дронь <dronmax@gmail.com>, 2016
 # Danil Bochevkin <danil.borchevkin@gmail.com>, 2016
 msgid ""
 msgstr ""

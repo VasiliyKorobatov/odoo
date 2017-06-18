@@ -3,7 +3,7 @@
 # * utm
 # 
 # Translators:
-# dr&mx <dronmax@gmail.com>, 2016
+# Максим Дронь <dronmax@gmail.com>, 2016
 # KingOPl Slav <87slava13@gmail.com>, 2016
 # Masha Koc <mariya.kos.ua@gmail.com>, 2016
 # Martin Trigaux <mat@odoo.com>, 2016

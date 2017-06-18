@@ -3,7 +3,7 @@
 # * l10n_multilang
 # 
 # Translators:
-# dr&mx <dronmax@gmail.com>, 2016
+# Максим Дронь <dronmax@gmail.com>, 2016
 # Sergey Vilizhanin <sv@grimmette.ru>, 2016
 # Max Belyanin <maxbelyanin@gmail.com>, 2016
 msgid ""
