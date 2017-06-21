@@ -110,7 +110,7 @@ def slugify(s, max_length=None):
         # There are 2 different libraries only python-slugify is supported
         try:
             return slugify_lib.slugify(s, max_length=max_length)
-        except TypeError
+        except TypeError:
             logger.info("Can't use slug")
             pass
     uni = unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode('ascii')
