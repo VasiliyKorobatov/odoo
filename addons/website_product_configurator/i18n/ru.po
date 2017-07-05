@@ -1,0 +1,190 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_product_configurator
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-25 18:32+0500\n"
+"PO-Revision-Date: 2017-06-25 18:42+0500\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 2.0.2\n"
+"Last-Translator: Korobarov Vasiliy <korobarov@akvastil.com>\n"
+"Language: ru\n"
+
+#. module: website_product_configurator
+#: model:ir.ui.view,arch_db:website_product_configurator.product_configurator
+msgid ""
+"<span class=\"fa fa-exclamation\" aria-hidden=\"true\"/>\n"
+"                  <span class=\"sr-only\">Error:</span>"
+msgstr ""
+"<span class=\"fa fa-exclamation\" aria-hidden=\"true\"/>\n"
+"                  <span class=\"sr-only\">Ошибка:</span>"
+
+#. module: website_product_configurator
+#: model:ir.ui.view,arch_db:website_product_configurator.config_default_footer
+msgid "<span class=\"fa fa-long-arrow-left\"/> <span>Back</span>"
+msgstr "<span class=\"fa fa-long-arrow-left\"/> <span>Назад</span>"
+
+#. module: website_product_configurator
+#: model:ir.ui.view,arch_db:website_product_configurator.product_configurator
+msgid "<span class=\"fa fa-refresh\"/> Reset"
+msgstr "<span class=\"fa fa-refresh\"/> Сбросить"
+
+#. module: website_product_configurator
+#: model:ir.ui.view,arch_db:website_product_configurator.config_default_footer
+msgid "<span>Configure</span>"
+msgstr "<span>Настройки</span>"
+
+#. module: website_product_configurator
+#: model:ir.ui.view,arch_db:website_product_configurator.config_default_footer
+msgid "<span>Continue</span>"
+msgstr "<span>Продолжить</span>"
+
+#. module: website_product_configurator
+#: model:ir.ui.view,arch_db:website_product_configurator.cfg_session
+msgid "Add to Cart"
+msgstr "Добавить в корзину"
+
+#. module: website_product_configurator
+#: model:ir.ui.view,arch_db:website_product_configurator.config_form_select
+msgid "Custom"
+msgstr "Настраиваемый"
+
+#. module: website_product_configurator
+#: model:ir.model.fields,field_description:website_product_configurator.field_sale_order_line_customer_remarks
+msgid "Customer Remarks"
+msgstr "Пожелания покупателя"
+
+#. module: website_product_configurator
+#: model:ir.ui.view,arch_db:website_product_configurator.product_configurator_list
+msgid "No product defined."
+msgstr "Товар не объявлен."
+
+#. module: website_product_configurator
+#: model:ir.ui.view,arch_db:website_product_configurator.product_configurator_list
+msgid "Options <span class=\"caret\"/>"
+msgstr "Опции <span class=\"caret\"/>"
+
+#. module: website_product_configurator
+#: model:ir.ui.view,arch_db:website_product_configurator.product_configurator
+#: model:ir.ui.view,arch_db:website_product_configurator.product_configurator_list
+#: model:website.menu,name:website_product_configurator.product_configurator_menu
+msgid "Product Configurator"
+msgstr "Конфигуратор товара"
+
+#. module: website_product_configurator
+#: model:ir.ui.view,arch_db:website_product_configurator.cfg_session
+msgid "Product Name"
+msgstr "Название продукции"
+
+#. module: website_product_configurator
+#: model:ir.ui.view,arch_db:website_product_configurator.cfg_session
+msgid "Product not available"
+msgstr "Недоступен к заказу"
+
+#. module: website_product_configurator
+#: model:ir.ui.view,arch_db:website_product_configurator.product_configurator_list
+msgid "Promote"
+msgstr "Продвижение"
+
+#. module: website_product_configurator
+#: model:ir.ui.view,arch_db:website_product_configurator.product_configurator_list
+msgid "Push down"
+msgstr "Опустить в конец"
+
+#. module: website_product_configurator
+#: model:ir.ui.view,arch_db:website_product_configurator.product_configurator_list
+msgid "Push to bottom"
+msgstr "Опустить ниже"
+
+#. module: website_product_configurator
+#: model:ir.ui.view,arch_db:website_product_configurator.product_configurator_list
+msgid "Push to top"
+msgstr "Поднять в начало"
+
+#. module: website_product_configurator
+#: model:ir.ui.view,arch_db:website_product_configurator.product_configurator_list
+msgid "Push up"
+msgstr "Поднять выше"
+
+#. module: website_product_configurator
+#: model:ir.ui.view,arch_db:website_product_configurator.product_items
+msgid "Sale"
+msgstr "Продажа"
+
+#. module: website_product_configurator
+#: model:ir.model,name:website_product_configurator.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Позиция заказа продаж"
+
+#. module: website_product_configurator
+#: model:ir.model.fields,field_description:website_product_configurator.field_product_config_session_session_id
+msgid "Session ID"
+msgstr "ID сессии"
+
+#. module: website_product_configurator
+#: model:ir.ui.view,arch_db:website_product_configurator.product_configurator_list
+msgid "Size"
+msgstr "Размер"
+
+#. module: website_product_configurator
+#: model:ir.model.fields,help:website_product_configurator.field_product_config_step_view_id
+msgid "Specific view for rendering this attribute in the frontend"
+msgstr "Конкретный вид для отображения этого атрибута на фронтэнде"
+
+#. module: website_product_configurator
+#: model:ir.ui.view,arch_db:website_product_configurator.product_configurator_list
+msgid "Styles"
+msgstr "Стили"
+
+#. module: website_product_configurator
+#: model:ir.ui.view,arch_db:website_product_configurator.product_configurator
+msgid "Taxes:"
+msgstr "Налоги:"
+
+#. module: website_product_configurator
+#: model:ir.ui.view,arch_db:website_product_configurator.product_configurator
+msgid "Total:"
+msgstr "Всего:"
+
+#. module: website_product_configurator
+#: model:ir.ui.view,arch_db:website_product_configurator.product_configurator_list
+msgid "Use the <i>'Content'</i> top menu to create a new product."
+msgstr "Используйте <i>'Содержание'</i> верхнего меню для создания нового товара."
+
+#. module: website_product_configurator
+#: model:ir.model.fields,help:website_product_configurator.field_product_config_session_website
+msgid "Used to filter website configuration session from others"
+msgstr "Используется для фильтрации веб-сайт конфигурации сессии от других"
+
+#. module: website_product_configurator
+#: model:ir.model,name:website_product_configurator.model_website
+#: model:ir.model.fields,field_description:website_product_configurator.field_product_config_session_website
+msgid "Website"
+msgstr "Сайт"
+
+#. module: website_product_configurator
+#: model:ir.model.fields,field_description:website_product_configurator.field_product_config_step_view_id
+msgid "Website View"
+msgstr "Просмотр на сайте"
+
+#. module: website_product_configurator
+#: model:ir.model.fields,help:website_product_configurator.field_product_config_session_session_id
+msgid "Website session ID to identify user"
+msgstr "ID сеанса сайта для идентификации пользователей"
+
+#. module: website_product_configurator
+#: model:ir.model,name:website_product_configurator.model_product_config_session
+msgid "product.config.session"
+msgstr ""
+
+#. module: website_product_configurator
+#: model:ir.model,name:website_product_configurator.model_product_config_step
+msgid "product.config.step"
+msgstr ""
