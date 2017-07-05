@@ -22,7 +22,7 @@
             <meta name="apple-mobile-web-app-capable" content="yes" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
         </xpath>
-
+<!--
         <xpath expr="//nav[@id='oe_main_menu_navbar']" position="replace">
 
             <t t-set="body_classname" t-value="'drawer drawer--left o_web_client'" />
@@ -91,7 +91,7 @@
 
             </header>
 
-        </xpath>
+        </xpath> -->
 
     </template>
 
