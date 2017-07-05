@@ -136,7 +136,7 @@
               name="App Drawer - Menu"
               >
 
-        <xpath expr="//ul[contains(@class, 'oe_systray')]" position="replace" />
+        <!--xpath expr="//ul[contains(@class, 'oe_systray')]" position="replace" /-->
 
         <xpath expr="//ul[contains(@class, 'oe_user_menu_placeholder')]" position="replace" />
 
