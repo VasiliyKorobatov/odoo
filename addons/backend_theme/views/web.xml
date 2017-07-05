@@ -3,8 +3,7 @@
 <!--
     Copyright 2016 LasLabs Inc.
     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
--->
-<!--
+
         <xpath expr="//nav[@id='oe_main_menu_navbar']" position="replace">
 
             <t t-set="body_classname" t-value="'drawer drawer--left o_web_client'" />
