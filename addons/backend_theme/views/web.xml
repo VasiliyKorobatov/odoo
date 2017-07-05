@@ -138,7 +138,7 @@
 
         <!--xpath expr="//ul[contains(@class, 'oe_systray')]" position="replace" /-->
 
-        <xpath expr="//ul[contains(@class, 'oe_user_menu_placeholder')]" position="replace" />
+        <!--xpath expr="//ul[contains(@class, 'oe_user_menu_placeholder')]" position="replace" /-->
 
         <xpath expr="//ul[contains(@class, 'oe_application_menu_placeholder')]" position="replace">
 
