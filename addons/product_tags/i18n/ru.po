@@ -1,0 +1,130 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_tags
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-07-06 15:24+0500\n"
+"PO-Revision-Date: 2017-07-06 15:27+0500\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 2.0.2\n"
+"Last-Translator: Korobarov Vasiliy <korobarov@akvastil.com>\n"
+"Language: ru\n"
+
+#. module: product_tags
+#: model:ir.model.fields,field_description:product_tags.field_product_tag_active
+msgid "Active"
+msgstr "Активно"
+
+#. module: product_tags
+#: model:ir.model.fields,field_description:product_tags.field_product_tag_child_ids
+msgid "Child Tags"
+msgstr "Дочерные теги"
+
+#. module: product_tags
+#: model:ir.model.fields,field_description:product_tags.field_product_tag_create_uid
+msgid "Created by"
+msgstr "Создатель"
+
+#. module: product_tags
+#: model:ir.model.fields,field_description:product_tags.field_product_tag_create_date
+msgid "Created on"
+msgstr "Создано от"
+
+#. module: product_tags
+#: model:ir.model.fields,field_description:product_tags.field_product_tag_display_name
+msgid "Display Name"
+msgstr "Отображаемое имя"
+
+#. module: product_tags
+#: model:ir.model.fields,field_description:product_tags.field_product_tag_id
+msgid "ID"
+msgstr "ID"
+
+#. module: product_tags
+#: model:ir.model.fields,field_description:product_tags.field_product_tag_image
+msgid "Image"
+msgstr "Изображение"
+
+#. module: product_tags
+#: model:ir.model.fields,field_description:product_tags.field_product_tag___last_update
+msgid "Last Modified on"
+msgstr "Последний раз изменено"
+
+#. module: product_tags
+#: model:ir.model.fields,field_description:product_tags.field_product_tag_write_uid
+msgid "Last Updated by"
+msgstr "Последний Раз Обновил"
+
+#. module: product_tags
+#: model:ir.model.fields,field_description:product_tags.field_product_tag_write_date
+msgid "Last Updated on"
+msgstr "Последнее изменение на"
+
+#. module: product_tags
+#: model:ir.model.fields,field_description:product_tags.field_product_tag_parent_left
+msgid "Left Parent"
+msgstr "Левый родитель"
+
+#. module: product_tags
+#: model:ir.model.fields,field_description:product_tags.field_product_tag_parent_id
+msgid "Parent Tag"
+msgstr "Родительский тег"
+
+#. module: product_tags
+#: model:ir.ui.view,arch_db:product_tags.product_tag_form
+msgid "Product Tag"
+msgstr "Тег продукта"
+
+#. module: product_tags
+#: model:ir.actions.act_window,name:product_tags.product_tag_action_form
+#: model:ir.model,name:product_tags.model_product_tag
+#: model:ir.ui.menu,name:product_tags.menu_product_tag_action_form
+#: model:ir.ui.view,arch_db:product_tags.product_tag_list
+#: model:ir.ui.view,arch_db:product_tags.product_tag_tree
+msgid "Product Tags"
+msgstr "Теги продукта"
+
+#. module: product_tags
+#: model:ir.model,name:product_tags.model_product_template
+msgid "Product Template"
+msgstr "Шаблон Продукта"
+
+#. module: product_tags
+#: model:ir.model.fields,field_description:product_tags.field_product_tag_parent_right
+msgid "Right Parent"
+msgstr "Правый родитель"
+
+#. module: product_tags
+#: model:ir.ui.view,arch_db:product_tags.product_tag_search
+msgid "Tag"
+msgstr "Тег"
+
+#. module: product_tags
+#: model:ir.model.fields,field_description:product_tags.field_product_tag_name
+msgid "Tag Name"
+msgstr "Имя тега"
+
+#. module: product_tags
+#: model:ir.model.fields,field_description:product_tags.field_delivery_carrier_tag_ids
+#: model:ir.model.fields,field_description:product_tags.field_product_product_tag_ids
+#: model:ir.model.fields,field_description:product_tags.field_product_template_tag_ids
+#: model:ir.ui.view,arch_db:product_tags.product_template_tag_search_inherit
+msgid "Tags"
+msgstr "Теги"
+
+#. module: product_tags
+#: model:ir.ui.view,arch_db:product_tags.product_template_form_inherit
+msgid "Tags..."
+msgstr "Теги..."
+
+#. module: product_tags
+#: model:ir.model.fields,help:product_tags.field_product_tag_active
+msgid "The active field allows you to hide the tag without removing it."
+msgstr "Активное поле позволяет скрыть тег, не удаляя его."
