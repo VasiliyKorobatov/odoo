@@ -16,7 +16,7 @@ contentMenu.TopBar.include({
         website.prompt({
             id: "editor_new_product",
             window_title: _t("New Product"),
-            input: "Product Name",
+            input: "Название",
         }).then(function (name) {
             website.form('/shop/add_product', 'POST', {
                 name: name
