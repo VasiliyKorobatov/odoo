@@ -215,7 +215,7 @@
                         <h4 class="app-drawer-panel-title pull-left">
                             <a class="app-drawer-icon-close drawer-toggle">
                                 <i class="fa fa-lg fa-chevron-left"
-                                   t-translation="off"
+                                   t-translation="on"
                                    aria-hidden="true"
                                    />
                                 Apps
