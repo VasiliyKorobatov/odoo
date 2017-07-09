@@ -3,7 +3,10 @@
 
 from odoo import models, fields, api
 import odoo.addons.decimal_precision as dp
+import sys
 
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 class PriceRule(models.Model):
     _name = "delivery.price.rule"
