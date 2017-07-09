@@ -13,13 +13,13 @@ class PriceRule(models.Model):
     @api.depends('variable', 'operator', 'max_value', 'list_base_price', 'list_price', 'variable_factor')
     def _get_name(self):
         for rule in self:
-            name = 'if %s %s %s then' % (rule.variable, rule.operator, rule.max_value)
+            name = 'если %s %s %s то' % (rule.variable, rule.operator, rule.max_value)
             if rule.list_base_price and not rule.list_price:
-                name = '%s fixed price %s' % (name, rule.list_base_price)
+                name = '%s фиксированная цена %s' % (name, rule.list_base_price)
             elif rule.list_price and not rule.list_base_price:
-                name = '%s %s times %s' % (name, rule.list_price, rule.variable_factor)
+                name = '%s %s за %s' % (name, rule.list_price, rule.variable_factor)
             else:
-                name = '%s fixed price %s and %s times %s Extra' % (name, rule.list_base_price, rule.list_price, rule.variable_factor)
+                name = '%s фиксированная цена %s + %s за %s дополнительно' % (name, rule.list_base_price, rule.list_price, rule.variable_factor)
             rule.name = name
 
     name = fields.Char(compute='_get_name')
