@@ -64,6 +64,8 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
 .cu_space29 { width:100%;height:29px;overflow:hidden; }
 .cu_space61 { width:100%;height:61px;overflow:hidden; }
 .cu_space9 { width:100%;height:9px;overflow:hidden; }
+tr.R15 td.R51C6I span {top: 20px;}
+tr.R15 td.R51C6S span {top: -20px;}
 </STYLE>
 
 <TABLE CELLSPACING="0">
