@@ -134,7 +134,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
 <TD><DIV class="cu_space15"><SPAN></SPAN></DIV></TD>
 <TD><DIV class="cu_space15"><SPAN></SPAN></DIV></TD>
 <TD><DIV class="cu_space15"><SPAN></SPAN></DIV></TD>
-<TD><DIV class="cu_space15"><![CDATA[&nbsp;]]></DIV></TD>
+<TD><DIV class="cu_space15"> </DIV></TD>
 </TR>
 <t t-if="True">
     <!-- TO DO: flag of print logo -->
@@ -145,47 +145,11 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
     </TR>
     <TR CLASS="R0">
     <TD><DIV class="cu_space15"><SPAN></SPAN></DIV></TD>
-    <TD><DIV class="cu_space15"><![CDATA[&nbsp;]]></DIV></TD>
+    <TD><DIV class="cu_space15"> </DIV></TD>
     </TR>
     <TR CLASS="R0">
     <TD><SPAN></SPAN></TD>
-    <TD><![CDATA[&nbsp;]]></TD>
-    </TR>
-    <TR CLASS="R0">
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><![CDATA[&nbsp;]]></TD>
+    <TD> </TD>
     </TR>
     <TR CLASS="R0">
     <TD><SPAN></SPAN></TD>
@@ -221,7 +185,43 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
-    <TD><![CDATA[&nbsp;]]></TD>
+    <TD> </TD>
+    </TR>
+    <TR CLASS="R0">
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD> </TD>
     </TR>
 </t><t t-if="False">
     <TR CLASS="R0">
@@ -247,7 +247,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
-    <TD><![CDATA[&nbsp;]]></TD>
+    <TD> </TD>
     </TR>
     <TR CLASS="R0">
     <TD><SPAN></SPAN></TD>
@@ -259,7 +259,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
-    <TD><![CDATA[&nbsp;]]></TD>
+    <TD> </TD>
     </TR>
     <TR CLASS="R0">
     <TD><SPAN></SPAN></TD>
@@ -271,7 +271,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
-    <TD><![CDATA[&nbsp;]]></TD>
+    <TD> </TD>
     </TR>
     <TR CLASS="R0">
     <TD><SPAN></SPAN></TD>
@@ -283,7 +283,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
-    <TD><![CDATA[&nbsp;]]></TD>
+    <TD> </TD>
     </TR>
     <TR CLASS="R0">
     <TD><SPAN></SPAN></TD>
@@ -295,7 +295,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
-    <TD><![CDATA[&nbsp;]]></TD>
+    <TD> </TD>
     </TR>
     <TR CLASS="R0">
     <TD><SPAN></SPAN></TD>
@@ -307,43 +307,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
-    <TD><![CDATA[&nbsp;]]></TD>
-    </TR>
-    <TR CLASS="R0">
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><SPAN></SPAN></TD>
-    <TD><![CDATA[&nbsp;]]></TD>
+    <TD> </TD>
     </TR>
     <TR CLASS="R0">
     <TD><SPAN></SPAN></TD>
@@ -379,7 +343,43 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
-    <TD><![CDATA[&nbsp;]]></TD>
+    <TD> </TD>
+    </TR>
+    <TR CLASS="R0">
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD><SPAN></SPAN></TD>
+    <TD> </TD>
     </TR>
 </t>
 <TR CLASS="R15">
@@ -417,7 +417,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
 </TR>
 <TR CLASS="R0">
 <TD><SPAN></SPAN></TD>
-<TD><![CDATA[&nbsp;]]></TD>
+<TD> </TD>
 </TR>
 <TR CLASS="R0">
 <TD><SPAN></SPAN></TD>
@@ -458,7 +458,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
 <TD><SPAN></SPAN></TD>
 <TD><SPAN></SPAN></TD>
 <TD><SPAN></SPAN></TD>
-<TD><![CDATA[&nbsp;]]></TD>
+<TD> </TD>
 </TR>
 <TR>
 <TD><SPAN></SPAN></TD>
@@ -494,7 +494,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
 <TD><SPAN></SPAN></TD>
 <TD><SPAN></SPAN></TD>
 <TD><SPAN></SPAN></TD>
-<TD><![CDATA[&nbsp;]]></TD>
+<TD> </TD>
 </TR>
 <TR CLASS="R0">
 <TD><SPAN></SPAN></TD>
@@ -507,12 +507,12 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
 </TR>
 <TR CLASS="R0">
 <TD><SPAN></SPAN></TD>
-<TD><![CDATA[&nbsp;]]></TD>
+<TD> </TD>
 </TR>
 <TR CLASS="R26">
 <TD><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
 <TD CLASS="R26C1" COLSPAN="32"><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
-<TD><DIV class="cu_space9"><![CDATA[&nbsp;]]></DIV></TD>
+<TD><DIV class="cu_space9"> </DIV></TD>
 </TR>
 <TR CLASS="R26">
 <TD><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
@@ -548,7 +548,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
 <TD><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
 <TD><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
 <TD><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
-<TD><DIV class="cu_space9"><![CDATA[&nbsp;]]></DIV></TD>
+<TD><DIV class="cu_space9"> </DIV></TD>
 </TR>
 <TR>
 <TD><SPAN></SPAN></TD>
@@ -584,7 +584,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
 <TD><SPAN></SPAN></TD>
 <TD><SPAN></SPAN></TD>
 <TD><SPAN></SPAN></TD>
-<TD><![CDATA[&nbsp;]]></TD>
+<TD> </TD>
 </TR>
 <TR CLASS="R15">
 <TD><SPAN></SPAN></TD>
@@ -626,7 +626,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
 <TD><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
 <TD><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
 <TD><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
-<TD><DIV class="cu_space9"><![CDATA[&nbsp;]]></DIV></TD>
+<TD><DIV class="cu_space9"> </DIV></TD>
 </TR>
 <TR>
 <TD><SPAN></SPAN></TD>
@@ -662,7 +662,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
 <TD><SPAN></SPAN></TD>
 <TD><SPAN></SPAN></TD>
 <TD><SPAN></SPAN></TD>
-<TD><![CDATA[&nbsp;]]></TD>
+<TD> </TD>
 </TR>
 <TR CLASS="R15">
 <TD><SPAN></SPAN></TD>
@@ -704,7 +704,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
 <TD><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
 <TD><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
 <TD><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
-<TD><DIV class="cu_space9"><![CDATA[&nbsp;]]></DIV></TD>
+<TD><DIV class="cu_space9"> </DIV></TD>
 </TR>
 <TR>
 <TD><SPAN></SPAN></TD>
@@ -740,7 +740,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
 <TD><SPAN></SPAN></TD>
 <TD><SPAN></SPAN></TD>
 <TD><SPAN></SPAN></TD>
-<TD><![CDATA[&nbsp;]]></TD>
+<TD> </TD>
 </TR>
 </TABLE>
 <!-- end header -->
@@ -810,7 +810,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
 <TD CLASS="R39C1"><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
 <TD CLASS="R39C1"><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
 <TD CLASS="R39C1"><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
-<TD><DIV class="cu_space9"><![CDATA[&nbsp;]]></DIV></TD>
+<TD><DIV class="cu_space9"> </DIV></TD>
 </TR>
 <TR CLASS="R15">
 <TD CLASS="R40C6" COLSPAN="7"><SPAN class="cu_wspace">Итого:</SPAN></TD>
@@ -898,7 +898,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
 <TD><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
 <TD><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
 <TD><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
-<TD><DIV class="cu_space9"><![CDATA[&nbsp;]]></DIV></TD>
+<TD><DIV class="cu_space9"> </DIV></TD>
 </TR>
 <TR CLASS="R15">
 <TD><SPAN></SPAN></TD>
@@ -948,7 +948,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
-    <TD><![CDATA[&nbsp;]]></TD>
+    <TD> </TD>
     </TR>
     <TR CLASS="R26">
     <TD><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
@@ -984,7 +984,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
     <TD CLASS="R26C1"><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
     <TD CLASS="R26C1"><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
     <TD CLASS="R26C1"><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
-    <TD><DIV class="cu_space9"><![CDATA[&nbsp;]]></DIV></TD>
+    <TD><DIV class="cu_space9"> </DIV></TD>
     </TR>
     <TR>
     <TD><SPAN></SPAN></TD>
@@ -1020,7 +1020,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
-    <TD><![CDATA[&nbsp;]]></TD>
+    <TD> </TD>
     </TR>
     <TR CLASS="R15">
     <TD><SPAN></SPAN></TD>
@@ -1076,7 +1076,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
-    <TD><![CDATA[&nbsp;]]></TD>
+    <TD> </TD>
     </TR>
     <TR CLASS="R26">
     <TD><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
@@ -1112,7 +1112,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
     <TD CLASS="R26C1"><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
     <TD CLASS="R26C1"><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
     <TD CLASS="R26C1"><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
-    <TD><DIV class="cu_space9"><![CDATA[&nbsp;]]></DIV></TD>
+    <TD><DIV class="cu_space9"> </DIV></TD>
     </TR>
     <TR>
     <TD><SPAN></SPAN></TD>
@@ -1148,7 +1148,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
-    <TD><![CDATA[&nbsp;]]></TD>
+    <TD> </TD>
     </TR>
     <TR CLASS="R15">
     <TD><SPAN></SPAN></TD>
@@ -1204,7 +1204,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
-    <TD><![CDATA[&nbsp;]]></TD>
+    <TD> </TD>
     </TR>
     <TR CLASS="R26">
     <TD><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
@@ -1240,7 +1240,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
     <TD CLASS="R26C1"><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
     <TD CLASS="R26C1"><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
     <TD CLASS="R26C1"><DIV class="cu_space9"><SPAN></SPAN></DIV></TD>
-    <TD><DIV class="cu_space9"><![CDATA[&nbsp;]]></DIV></TD>
+    <TD><DIV class="cu_space9"> </DIV></TD>
     </TR>
     <TR>
     <TD><SPAN></SPAN></TD>
@@ -1276,7 +1276,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
-    <TD><![CDATA[&nbsp;]]></TD>
+    <TD> </TD>
     </TR>
     <TR CLASS="R15">
     <TD><SPAN></SPAN></TD>
@@ -1322,7 +1322,7 @@ td { padding: 0px; padding-left: 2px; overflow:hidden; }
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
     <TD><SPAN></SPAN></TD>
-    <TD><![CDATA[&nbsp;]]></TD>
+    <TD> </TD>
     </TR>
     <!-- end entrepreneur sign -->
 </t>
