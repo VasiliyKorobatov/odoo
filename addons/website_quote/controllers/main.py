@@ -13,7 +13,7 @@ class sale_quote(http.Controller):
     def view_user(self, *args, **kwargs):
         return self.view(*args, **kwargs)
 
-    @http.route("/quote/<int:order_id>/<token>","/quote/<int:order_id>/<int:pdf>", type='http', auth="public", website=True)
+    @http.route(["/quote/<int:order_id>/<token>","/quote/<int:order_id>/<int:pdf>"], type='http', auth="public", website=True)
     def view(self, order_id, pdf=0, token=None, message=False, **post):
         # use sudo to allow accessing/viewing orders for public user
         # only if he knows the private token
