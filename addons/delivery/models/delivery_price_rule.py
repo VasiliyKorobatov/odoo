@@ -17,13 +17,13 @@ class PriceRule(models.Model):
     def _get_name(self):
         loc_dict = {'price': 'цена', 'volume': 'объем', 'weight': 'вес', 'wv': 'вес*объем', 'quantity': 'кол-во'}
         for rule in self:
-            name = 'если %s %s %s то' % (rule.variable, rule.operator, rule.max_value)
+            name = 'если %s %s %s то' % (loc_dict[rule.variable], rule.operator, rule.max_value)
             if rule.list_base_price and not rule.list_price:
-                name = '%s фиксированная price %s' % (name, rule.list_base_price)
+                name = '%s фиксированная цена %s' % (name, rule.list_base_price)
             elif rule.list_price and not rule.list_base_price:
                 name = '%s %s за %s' % (name, rule.list_price, loc_dict[rule.variable_factor])
             else:
-                name = '%s фиксированная price %s + %s за %s дополнительно' % (name, rule.list_base_price, rule.list_price, loc_dict[rule.variable_factor])
+                name = '%s фиксированная цена %s + %s за %s дополнительно' % (name, rule.list_base_price, rule.list_price, loc_dict[rule.variable_factor])
             rule.name = name
 
     name = fields.Char(compute='_get_name')
