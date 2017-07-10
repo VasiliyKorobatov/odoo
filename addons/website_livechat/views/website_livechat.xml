@@ -32,7 +32,6 @@
         <!-- Layout add footer -->
         <template id="header_footer_custom" inherit_id="website.footer_default" name="Footer Rating Livechat Link">
             <xpath expr="//ul[@id='products']" position="inside">
-                <li><a href="/livechat/">Livechat Support</a></li>
             </xpath>
         </template>
 

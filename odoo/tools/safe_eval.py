@@ -24,7 +24,10 @@ import werkzeug
 from .misc import ustr
 
 import odoo
+import sys
 
+reload(sys)
+sys.setdefaultencoding('utf8')
 unsafe_eval = eval
 
 __all__ = ['test_expr', 'safe_eval', 'const_eval']

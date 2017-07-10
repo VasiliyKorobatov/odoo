@@ -784,7 +784,7 @@ tr.R15 td.R51C6S span {top: -20px;}
         <TD CLASS="R37C2">Артикул</TD>
     </t>
     <TD CLASS="R37C2"><t t-esc="line.name or ''"/></TD>
-    <TD CLASS="R37C4"><SPAN class="cu_wspace"><t t-esc="line.product_uom_qty or ''"/></SPAN></TD>
+    <TD CLASS="R37C4"><SPAN class="cu_wspace"><t t-esc="(line.product_uom_qty).split('.')[0] or ''"/></SPAN></TD>
     <TD CLASS="R37C5"><SPAN class="cu_wspace"><t t-esc="line.product_uom.name or ''"/></SPAN></TD>
     <TD CLASS="R37C4"><SPAN class="cu_wspace"><t t-esc="line.price_unit or ''"/></SPAN></TD>
     <TD CLASS="R37C7"><SPAN class="cu_wspace"><t t-esc="(('%.2f')%(line.price_unit*line.product_uom_qty)).replace('.',',') or ''"/></SPAN></TD>
@@ -816,17 +816,17 @@ tr.R15 td.R51C6S span {top: -20px;}
 </TR>
 <TR CLASS="R15">
 <TD CLASS="R40C6" COLSPAN="7"><SPAN class="cu_wspace">Итого:</SPAN></TD>
-<TD CLASS="R40C6"><SPAN class="cu_wspace"><t t-esc="o.amount_total or '0,00'"/></SPAN></TD>
+<TD CLASS="R40C6"><SPAN class="cu_wspace"><t t-esc="(('%.2f')%( o.amount_total)).replace('.',',')  or '0,00'"/></SPAN></TD>
 <TD></TD>
 </TR>
 <TR CLASS="R15">
 <TD CLASS="R40C6" COLSPAN="7"><SPAN class="cu_wspace">В том числе НДС</SPAN></TD>
-<TD CLASS="R40C6"><SPAN class="cu_wspace"><t t-esc="o.amount_tax or '0,00'"/></SPAN></TD>
+<TD CLASS="R40C6"><SPAN class="cu_wspace"><t t-esc="(('%.2f')%( o.amount_tax)).replace('.',',')  or '0,00'"/></SPAN></TD>
 <TD></TD>
 </TR>
 <TR CLASS="R15">
 <TD CLASS="R40C6" COLSPAN="7"><SPAN class="cu_wspace">Всего к оплате:</SPAN></TD>
-<TD CLASS="R40C6"><SPAN class="cu_wspace"><t t-esc="o.amount_total or '0,00'"/></SPAN></TD>
+<TD CLASS="R40C6"><SPAN class="cu_wspace"><t t-esc="(('%.2f')%( o.amount_total)).replace('.',',')  or '0,00'"/></SPAN></TD>
 <TD></TD>
 </TR>
 </TABLE>
