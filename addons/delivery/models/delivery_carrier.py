@@ -285,7 +285,7 @@ class DeliveryCarrier(models.Model):
     def get_price_from_picking(self, total, weight, volume, quantity):
         price = 0.0
         criteria_found = False
-        price_dict = {'цена': total, 'объем': volume, 'вес': weight, 'ВО': volume * weight, 'кол-во': quantity}
+        price_dict = {'price': total, 'volume': volume, 'weight': weight, 'wv': volume * weight, 'quantity': quantity}
         for line in self.price_rule_ids:
             test = safe_eval(line.variable + line.operator + str(line.max_value), price_dict)
             if test:
