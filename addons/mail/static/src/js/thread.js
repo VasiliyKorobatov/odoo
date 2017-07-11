@@ -12,8 +12,8 @@ var ORDER = {
     DESC: -1,
 };
 
-var read_more = _t('read more');
-var read_less = _t('read less');
+var read_more = _t('читать далее');
+var read_less = _t('свернуть');
 
 function time_from_now(date) {
     if (moment().diff(date, 'seconds') < 45) {
