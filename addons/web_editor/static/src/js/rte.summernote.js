@@ -882,104 +882,104 @@ eventHandler.detach = function (oLayoutInfo, options) {
 
 $.summernote.lang.odoo = {
     font: {
-      bold: _t('Bold'),
-      italic: _t('Italic'),
-      underline: _t('Underline'),
-      strikethrough: _t('Strikethrough'),
-      subscript: _t('Subscript'),
-      superscript: _t('Superscript'),
+      bold: _t('Жирный'),
+      italic: _t('Наклонный'),
+      underline: _t('Подчеркнутый'),
+      strikethrough: _t('Зачеркнутый'),
+      subscript: _t('Нижний индекс'),
+      superscript: _t('Верхний индекс'),
       clear: _t('Очистить стиль шрифта'),
-      height: _t('Line Height'),
-      name: _t('Font Family'),
-      size: _t('Font Size')
+      height: _t('Высота строки'),
+      name: _t('Шрифт'),
+      size: _t('Размер шрифта')
     },
     image: {
-      image: _t('File / Image'),
-      insert: _t('Insert Image'),
-      resizeFull: _t('Resize Full'),
-      resizeHalf: _t('Resize Half'),
-      resizeQuarter: _t('Resize Quarter'),
-      floatLeft: _t('Float Left'),
-      floatRight: _t('Float Right'),
-      floatNone: _t('Float None'),
-      dragImageHere: _t('Drag an image here'),
-      selectFromFiles: _t('Select from files'),
-      url: _t('Image URL'),
-      remove: _t('Remove Image')
+      image: _t('Файл / картинка'),
+      insert: _t('Вставить изображение'),
+      resizeFull: _t('Полное изображение'),
+      resizeHalf: _t('В половину'),
+      resizeQuarter: _t('В четверть'),
+      floatLeft: _t('По левому краю'),
+      floatRight: _t('По правому краю'),
+      floatNone: _t('Без выравнивания'),
+      dragImageHere: _t('Перетащите изображение сюда'),
+      selectFromFiles: _t('Выбрать из файлов'),
+      url: _t('Ссылка на изображение'),
+      remove: _t('Удалить изображение')
     },
     link: {
-      link: _t('Link'),
-      insert: _t('Insert Link'),
-      unlink: _t('Unlink'),
-      edit: _t('Edit'),
-      textToDisplay: _t('Text to display'),
-      url: _t('To what URL should this link go?'),
-      openInNewWindow: _t('Open in new window')
+      link: _t('Ссылка'),
+      insert: _t('Вставить ссылку'),
+      unlink: _t('Удалить ссылку'),
+      edit: _t('Редактировать'),
+      textToDisplay: _t('Текст для отображения'),
+      url: _t('К какому URL должна идти эта ссылка?'),
+      openInNewWindow: _t('Открыть в новом окне')
     },
     video: {
-      video: _t('Video'),
-      videoLink: _t('Video Link'),
-      insert: _t('Insert Video'),
-      url: _t('Video URL?'),
-      providers: _t('(YouTube, Vimeo, Vine, Instagram, DailyMotion or Youku)')
+      video: _t('Видео'),
+      videoLink: _t('Ссылка видео'),
+      insert: _t('Вставить видео'),
+      url: _t('Ссылка видео?'),
+      providers: _t('(YouTube, Vimeo, Vine, Instagram, DailyMotion Или Youku)')
     },
     table: {
-      table: _t('Table')
+      table: _t('Таблица')
     },
     hr: {
-      insert: _t('Insert Horizontal Rule')
+      insert: _t('Вставить горизонтальную линию')
     },
     style: {
-      style: _t('Style'),
-      normal: _t('Normal'),
-      blockquote: _t('Quote'),
-      pre: _t('Code'),
-      h1: _t('Header 1'),
-      h2: _t('Header 2'),
-      h3: _t('Header 3'),
-      h4: _t('Header 4'),
-      h5: _t('Header 5'),
-      h6: _t('Header 6')
+      style: _t('Стиль'),
+      normal: _t('Обычный'),
+      blockquote: _t('Цитата'),
+      pre: _t('Код'),
+      h1: _t('Заголовок 1'),
+      h2: _t('Заголовок 2'),
+      h3: _t('Заголовок 3'),
+      h4: _t('Заголовок 4'),
+      h5: _t('Заголовок 5'),
+      h6: _t('Заголовок 6')
     },
     lists: {
-      unordered: _t('Unordered list'),
-      ordered: _t('Ordered list')
+      unordered: _t('Неупорядоченный список'),
+      ordered: _t('Упорядоченный список')
     },
     options: {
-      help: _t('Help'),
-      fullscreen: _t('Full Screen'),
-      codeview: _t('Code View')
+      help: _t('Помощь'),
+      fullscreen: _t('Во весь экран'),
+      codeview: _t('Просмотр кода')
     },
     paragraph: {
-      paragraph: _t('Paragraph'),
-      outdent: _t('Outdent'),
-      indent: _t('Indent'),
-      left: _t('Align left'),
-      center: _t('Align center'),
-      right: _t('Align right'),
-      justify: _t('Justify full')
+      paragraph: _t('Абзац'),
+      outdent: _t('Выступ'),
+      indent: _t('Отступ'),
+      left: _t('По левому краю'),
+      center: _t('По центру'),
+      right: _t('По правому краю'),
+      justify: _t('По ширине')
     },
     color: {
-      recent: _t('Recent Color'),
-      more: _t('More Color'),
-      background: _t('Background Color'),
-      foreground: _t('Font Color'),
-      transparent: _t('Transparent'),
-      setTransparent: _t('Set transparent'),
-      reset: _t('Reset'),
-      resetToDefault: _t('Reset to default')
+      recent: _t('Последний цвет'),
+      more: _t('Больше цвета'),
+      background: _t('Фоновый цвет'),
+      foreground: _t('Цвет шрифта'),
+      transparent: _t('Прозрачный'),
+      setTransparent: _t('Уставить прозрачным'),
+      reset: _t('Сброс'),
+      resetToDefault: _t('Сброс по умолчанию')
     },
     shortcut: {
-      shortcuts: _t('Keyboard shortcuts'),
-      close: _t('Close'),
-      textFormatting: _t('Text formatting'),
-      action: _t('Action'),
-      paragraphFormatting: _t('Paragraph formatting'),
-      documentStyle: _t('Document Style')
+      shortcuts: _t('Клавиатурные сокращения'),
+      close: _t('Закрыть'),
+      textFormatting: _t('Форматирование текста'),
+      action: _t('Действие'),
+      paragraphFormatting: _t('Форматирование абзаца'),
+      documentStyle: _t('Стиль документа')
     },
     history: {
-      undo: _t('Undo'),
-      redo: _t('Redo')
+      undo: _t('Шаг назад'),
+      redo: _t('Шаг вперед')
     }
 };
 });

@@ -353,7 +353,7 @@ define('summernote/defaults', function () {
           table: 'Таблица'
         },
         hr: {
-          insert: 'Вставить горизонтальное правило'
+          insert: 'Вставить горизонтальную линию'
         },
         style: {
           style: 'Стиль',
@@ -369,7 +369,7 @@ define('summernote/defaults', function () {
         },
         lists: {
           unordered: 'Неупорядоченный список',
-          ordered: 'Список отмен'
+          ordered: 'Упорядоченный список'
         },
         options: {
           help: 'Помощь',
