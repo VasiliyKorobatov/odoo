@@ -888,7 +888,7 @@ $.summernote.lang.odoo = {
       strikethrough: _t('Strikethrough'),
       subscript: _t('Subscript'),
       superscript: _t('Superscript'),
-      clear: _t('Remove Font Style'),
+      clear: _t('Очистить стиль шрифта'),
       height: _t('Line Height'),
       name: _t('Font Family'),
       size: _t('Font Size')
