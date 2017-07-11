@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-<template id="s_cover" name="Cover">
+<template id="s_cover" name="Обложка">
     <section class="s_text_block_image_fw oe_img_bg oe_custom_bg" style="background-image: url(/web/image/website.s_cover_default_image); background-position: 50% 100%">
         <div class="container">
             <div class="row">
@@ -14,7 +14,7 @@
     </section>
 </template>
 
-<template id="s_banner" name="Banner">
+<template id="s_banner" name="Баннер">
     <div id="myCarousel" class="carousel slide s_banner" data-interval="10000" style="height: 400px;">
         <!-- Indicators -->
         <ol class="carousel-indicators hidden">
@@ -41,7 +41,7 @@
     </div>
 </template>
 
-<template id="s_text_image" name="Text-Image">
+<template id="s_text_image" name="Текст-Картинка">
     <section class="s_text_image">
         <div class="container">
             <div class="row">
@@ -64,7 +64,7 @@
     </section>
 </template>
 
-<template id="s_image_text" name="Image-Text">
+<template id="s_image_text" name="Картинка-текст">
     <section class="s_image_text">
         <div class="container">
             <div class="row">
@@ -87,7 +87,7 @@
     </section>
 </template>
 
-<template id="s_big_message" name="Big message">
+<template id="s_big_message" name="Большое сообщение">
     <section class="jumbotron s_big_message" style="background-image: url('/web/image/website.s_background_image_01');">
         <div class="container">
             <div class="row">
@@ -101,7 +101,7 @@
     </section>
 </template>
 
-<template id="s_text_block" name="Text Block">
+<template id="s_text_block" name="Текст">
     <section class="s_text_block">
         <div class="container">
             <h2 class="text-center">A Great Headline</h2>
@@ -130,7 +130,7 @@
     </section>
 </template>
 
-<template id="s_title" name="Title">
+<template id="s_title" name="Заголовок">
     <section class="s_title">
         <div class="container">
             <div class="row">
@@ -143,7 +143,7 @@
     </section>
 </template>
 
-<template id="s_features" name="Features">
+<template id="s_features" name="Характеристики">
     <section class="s_features">
         <div class="container">
             <div class="row mt16 mb16">
@@ -167,7 +167,7 @@
     </section>
 </template>
 
-<template id="s_big_picture" name="Big Picture">
+<template id="s_big_picture" name="Большая картинка">
     <section class="s_big_picture bg-gray-lighter">
         <div class="container">
             <h2 class="text-center">A Punchy Headline</h2>
@@ -193,7 +193,7 @@
     </section>
 </template>
 
-<template id="s_three_columns" name="Three Columns">
+<template id="s_three_columns" name="Три колонки">
     <section class="s_three_columns">
         <div class="container">
             <div class="row">
@@ -230,7 +230,7 @@
     </section>
 </template>
 
-<template id="s_well" name="Well">
+<template id="s_well" name="Хорошо">
     <div class="well s_well clearfix">
         <p>
             Explain the benefits you offer. Don't write about products or
@@ -239,7 +239,7 @@
     </div>
 </template>
 
-<template id="s_panel" name="Panel">
+<template id="s_panel" name="Панель">
     <div class="panel panel-default o_panel s_panel">
         <div class="panel-heading ">
             <h3 class="panel-title">Feature Title</h3>
@@ -253,7 +253,7 @@
     </div>
 </template>
 
-<template id="s_image_floating" name="Image Floating">
+<template id="s_image_floating" name="Плавающие изображения">
     <div class="o_image_floating o_margin_l pull-right s_image_floating">
         <div class="o_container">
             <img class="img img-rounded img-responsive" src="/web/image/website.s_image_floating_default_image" alt="Odoo CMS- Sample image floating"/>
@@ -264,7 +264,7 @@
     </div>
 </template>
 
-<template id="s_share" name="Share">
+<template id="s_share" name="Расшарить">
     <div class="oe_share s_share">
         <h3>
             <span>Share</span>
@@ -277,7 +277,7 @@
     </div>
 </template>
 
-<template id="s_image_gallery" name="Image Gallery">
+<template id="s_image_gallery" name="Галерея изображений">
     <section class="o_gallery o_spc-medium o_slideshow s_image_gallery" data-columns="3" style="height: 500px; overflow: hidden;">
         <div class="container">
             <div class="alert alert-info css_editable_mode_display">Add Images from the 'Customize' menu</div>
@@ -285,7 +285,7 @@
     </section>
 </template>
 
-<template id="s_comparisons" name="Comparisons">
+<template id="s_comparisons" name="Сравнение">
     <section class="s_comparisons">
         <div class="container">
             <h2 class="text-center">Our Offers</h2>
@@ -365,7 +365,7 @@
     </section>
 </template>
 
-<template id="s_button" name="Call to Action">
+<template id="s_button" name="Призыв действовать">
     <section class="jumbotron s_button bg-gray-lighter">
         <div class="container">
             <div class="row">
@@ -387,7 +387,7 @@
     </section>
 </template>
 
-<template id="s_faq_collapse" name="Accordion">
+<template id="s_faq_collapse" name="Аккордион">
     <section class="s_faq_collapse">
         <div class="container">
             <h2 class="page-header">Point of Sale Questions <small>v7</small></h2>
@@ -449,7 +449,7 @@
     </section>
 </template>
 
-<template id="s_references" name="References">
+<template id="s_references" name="Рекомендации">
     <section class="s_references bg-gray-lighter">
         <div class="container">
             <div class="row">
@@ -476,7 +476,7 @@
     </section>
 </template>
 
-<template id="s_feature_grid" name="Feature Grid">
+<template id="s_feature_grid" name="Сетка особенностей">
     <section class="s_feature_grid">
         <div class="container">
             <div class="row">
@@ -527,13 +527,13 @@
     </section>
 </template>
 
-<template id="s_parallax" name="Parallax">
+<template id="s_parallax" name="Параллакс">
     <section class="parallax s_parallax oe_custom_bg oe_img_bg"
         style="background-image: url(/web/image/website.s_background_image_04);"
         data-scroll-background-ratio="0.3"><div class="oe_structure"/></section>
 </template>
 
-<template id="s_parallax_slider" name="Parallax Slider">
+<template id="s_parallax_slider" name="Слайдер Параллакс">
     <section class="parallax s_parallax_slider oe_custom_bg oe_img_bg"
              style="background-image: url(/web/image/website.s_parallax_slider_default_image);"
             data-scroll-background-ratio="0.3">

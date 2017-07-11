@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-10-10 08:44+0000\n"
-"PO-Revision-Date: 2017-07-09 19:02+0500\n"
+"PO-Revision-Date: 2017-07-11 15:39+0500\n"
 "Last-Translator: Korobarov Vasiliy <korobarov@akvastil.com>\n"
 "Language-Team: Russian (https://www.transifex.com/odoo/teams/41243/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -1351,7 +1351,7 @@ msgstr "Количество"
 #. module: website_quote
 #: model:ir.ui.view,arch_db:website_quote.so_quotation
 msgid "Quotation"
-msgstr "Предложение цен"
+msgstr "Коммерческое предложение"
 
 #. module: website_quote
 #: model:ir.model.fields,field_description:website_quote.field_sale_quote_template_number_of_days
@@ -1397,7 +1397,7 @@ msgstr "Ценовое предложение просмотренно"
 #: code:addons/website_quote/controllers/main.py:26
 #, python-format
 msgid "Quotation viewed by customer"
-msgstr "Предложение, просмотренное клиентом"
+msgstr "Предложение было просмотренно клиентом"
 
 #. module: website_quote
 #: model:ir.ui.view,arch_db:website_quote.so_quotation_content

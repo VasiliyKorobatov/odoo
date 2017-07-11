@@ -133,7 +133,7 @@
         
     </template>
     
-    <template id="data_slider_snippet" name="Data Slider Snippet">
+    <template id="data_slider_snippet" name="Слайдер с данными">
         <section class="oe_snippet_body o_data_slider mb32 container text-center"
                  data-options="false"
                  >

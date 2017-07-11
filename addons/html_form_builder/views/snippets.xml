@@ -108,7 +108,7 @@
     
         </template>
 
-        <template id="s_form" name="Existing HTML Form">
+        <template id="s_form" name="Существующая форма">
             <section class="html_form">
                 <div class="container">
                     <h2>My Form</h2>
@@ -120,7 +120,7 @@
             </section>
         </template>
 
-        <template id="s_form_new" name="New HTML Form">
+        <template id="s_form_new" name="Новая форма">
             <section class="html_form_new">
                 <div class="container">
                     <h2>My Form</h2>
@@ -132,28 +132,28 @@
             </section>
         </template>
         
-        <template id="s_textbox" name="Textbox">
+        <template id="s_textbox" name="Поле">
             <div class="hff hff_textbox form-group" data-form-type="textbox" data-field-id="0">
                 <label for="field1">Field 1</label>
                 <input type="text" name="field1" class="form-control"/>
             </div>
         </template>   
 
-        <template id="s_date_picker" name="Date Picker">
+        <template id="s_date_picker" name="Дата">
             <div class="hff hff_date_picker form-group" data-form-type="date_picker" data-field-id="0">
                 <label for="field1">Field 1</label>
                 <input type="text" name="field1" class="form-control"/>
             </div>
         </template>   
 
-        <template id="s_datetime_picker" name="Datetime Picker">
+        <template id="s_datetime_picker" name="Дата-время">
             <div class="hff hff_datetime_picker form-group" data-form-type="datetime_picker" data-field-id="0">
                 <label for="field1">Field 1</label>
                 <input type="text" name="field1" class="form-control"/>
             </div>
         </template>   
 
-        <template id="s_binary" name="Binary">
+        <template id="s_binary" name="Файл">
             <div class="hff hff_binary form-group" data-form-type="file_select" data-field-id="0">
                 <label for="field1">Field 1</label>
                 <div class="input-group">
@@ -167,7 +167,7 @@
             </div>
         </template>  
         
-        <template id="s_radio_group_selection" name="Radio Group">
+        <template id="s_radio_group_selection" name="Переключатели">
             <div class="hff hff_radio_group form-group" data-form-type="radio_group_selection" data-field-id="0">
                 <label for="field1">Field 1</label><br/>
                 <input type="radio" name="field1"/>Option 1<br/>
@@ -176,13 +176,13 @@
             </div>
         </template>
 
-        <template id="s_checkbox_boolean" name="Checkbox">
+        <template id="s_checkbox_boolean" name="Флажек">
             <div class="hff hff_checkbox checkbox" data-form-type="checkbox_boolean" data-field-id="0">
                 <label><input type="checkbox" name="field1"/>I Agree</label>
             </div>
         </template>
 
-        <template id="s_checkbox_group" name="Checkbox Group">
+        <template id="s_checkbox_group" name="Флажки">
             <div class="hff hff_checkbox_group" data-form-type="checkbox_group" data-field-id="0">
                 <label for="field1">Field 1</label>
                 <div class="checkbox">
@@ -197,14 +197,14 @@
             </div>
         </template>
 
-        <template id="s_textarea" name="Textarea">
+        <template id="s_textarea" name="Текстовое поле">
             <div class="hff hff_textarea form-group" data-form-type="textarea" data-field-id="0">
                 <label for="field1">Field 1</label>
                 <textarea class="form-control" name="field1"/>
             </div>
         </template>
 
-        <template id="s_input_group" name="Input Group">
+        <template id="s_input_group" name="Группа ввода">
             <div class="hff hff_input_group form-group" data-form-type="input_group" data-field-id="0">
                 <label for="field1" class="o_default_snippet_text">Field 1</label><br/>
                 <div class="row form-group">
@@ -217,7 +217,7 @@
             </div>
         </template>
 
-        <template id="s_dropbox" name="Dropbox">
+        <template id="s_dropbox" name="Выпадающий список">
             <div class="hff hff_dropbox form-group" data-form-type="dropbox" data-field-id="0">
                 <label for="field1">Field 1</label>
                 <select class="form-control" name="field1">
@@ -226,7 +226,7 @@
             </div>
         </template>
         
-        <template id="s_captcha" name="Captcha">
+        <template id="s_captcha" name="Капча">
             <div class="hff html_form_captcha form-group">
                 Placeholder Captcha String
             </div>
