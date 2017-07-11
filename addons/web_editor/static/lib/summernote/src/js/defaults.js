@@ -308,105 +308,105 @@ define('summernote/defaults', function () {
     lang: {
       'en-US': {
         font: {
-          bold: 'Bold',
-          italic: 'Italic',
-          underline: 'Underline',
-          clear: 'Remove Font Style',
-          height: 'Line Height',
-          name: 'Font Family',
-          strikethrough: 'Strikethrough',
-          subscript: 'Subscript',
-          superscript: 'Superscript',
-          size: 'Font Size'
+          bold: 'Жирный',
+          italic: 'Наклонный',
+          underline: 'Подчеркнутый',
+          clear: 'Очистить формат шрифта',
+          height: 'Высота строки',
+          name: 'Шрифт',
+          strikethrough: 'Зачеркнутый',
+          subscript: 'Нижний индекс',
+          superscript: 'Верхний индекс',
+          size: 'Размер шрифта'
         },
         image: {
-          image: 'Picture',
-          insert: 'Insert Image',
-          resizeFull: 'Resize Full',
-          resizeHalf: 'Resize Half',
-          resizeQuarter: 'Resize Quarter',
-          floatLeft: 'Float Left',
-          floatRight: 'Float Right',
-          floatNone: 'Float None',
-          shapeRounded: 'Shape: Rounded',
-          shapeCircle: 'Shape: Circle',
-          shapeThumbnail: 'Shape: Thumbnail',
-          shapeNone: 'Shape: None',
-          dragImageHere: 'Drag image or text here',
-          dropImage: 'Drop image or Text',
-          selectFromFiles: 'Select from files',
-          maximumFileSize: 'Maximum file size',
-          maximumFileSizeError: 'Maximum file size exceeded.',
-          url: 'Image URL',
-          remove: 'Remove Image'
+          image: 'Изображение',
+          insert: 'Вставить изображение',
+          resizeFull: 'В полный размер',
+          resizeHalf: 'Уменить в половину',
+          resizeQuarter: 'Уменьшить в четверть',
+          floatLeft: 'Обтекание слева',
+          floatRight: 'Обтекание справа',
+          floatNone: 'Нет обтекания',
+          shapeRounded: 'Форма: Скругленная',
+          shapeCircle: 'Форма: Круг',
+          shapeThumbnail: 'Форма: Миниатюра',
+          shapeNone: 'Форма: Нет',
+          dragImageHere: 'Перетащите изображение или текст сюда',
+          dropImage: 'Перетащите изображение или текст',
+          selectFromFiles: 'Выбрать из файлов',
+          maximumFileSize: 'Максимальный размер файла',
+          maximumFileSizeError: 'Максимальный размер файла превышен.',
+          url: 'Ссылка изображения',
+          remove: 'Удалить изображение'
         },
         link: {
-          link: 'Link',
-          insert: 'Insert Link',
-          unlink: 'Unlink',
-          edit: 'Edit',
-          textToDisplay: 'Text to display',
-          url: 'To what URL should this link go?',
-          openInNewWindow: 'Open in new window'
+          link: 'Ссылка',
+          insert: 'Вставить ссылку',
+          unlink: 'Удалить ссылку',
+          edit: 'Редактировать',
+          textToDisplay: 'Текст для отображения',
+          url: 'К какому URL должна идти эта ссылка?',
+          openInNewWindow: 'Открыть в новом окне'
         },
         table: {
-          table: 'Table'
+          table: 'Таблица'
         },
         hr: {
-          insert: 'Insert Horizontal Rule'
+          insert: 'Вставить горизонтальное правило'
         },
         style: {
-          style: 'Style',
-          normal: 'Paragraph',
-          blockquote: 'Quote',
-          pre: 'Code',
-          h1: 'Header 1',
-          h2: 'Header 2',
-          h3: 'Header 3',
-          h4: 'Header 4',
-          h5: 'Header 5',
-          h6: 'Header 6'
+          style: 'Стиль',
+          normal: 'Абзац',
+          blockquote: 'Цитата',
+          pre: 'Код',
+          h1: 'Заголовок 1',
+          h2: 'Заголовок 2',
+          h3: 'Заголовок 3',
+          h4: 'Заголовок 4',
+          h5: 'Заголовок 5',
+          h6: 'Заголовок 6'
         },
         lists: {
-          unordered: 'Unordered list',
-          ordered: 'Ordered list'
+          unordered: 'Неупорядоченный список',
+          ordered: 'Список отмен'
         },
         options: {
-          help: 'Help',
-          fullscreen: 'Full Screen',
-          codeview: 'Code View'
+          help: 'Помощь',
+          fullscreen: 'Во весь экран',
+          codeview: 'Просмотр кода'
         },
         paragraph: {
-          paragraph: 'Paragraph',
-          outdent: 'Outdent',
-          indent: 'Indent',
-          left: 'Align left',
-          center: 'Align center',
-          right: 'Align right',
-          justify: 'Justify full'
+          paragraph: 'Параграф',
+          outdent: 'Выступ',
+          indent: 'Отступ',
+          left: 'По левому краю',
+          center: 'По центру',
+          right: 'По правому краю',
+          justify: 'По ширине'
         },
         color: {
-          recent: 'Recent Color',
-          more: 'More Color',
-          background: 'Background Color',
-          foreground: 'Foreground Color',
-          transparent: 'Transparent',
-          setTransparent: 'Set transparent',
-          reset: 'Reset',
-          resetToDefault: 'Reset to default'
+          recent: 'Недавний цвет',
+          more: 'Больше цвета',
+          background: 'Фоновый цвет',
+          foreground: 'Цвет переднего плана',
+          transparent: 'Прозрачный',
+          setTransparent: 'Установить прозрачным',
+          reset: 'Сброс',
+          resetToDefault: 'Сброс по умолчанию'
         },
         shortcut: {
-          shortcuts: 'Keyboard shortcuts',
-          close: 'Close',
-          textFormatting: 'Text formatting',
-          action: 'Action',
-          paragraphFormatting: 'Paragraph formatting',
-          documentStyle: 'Document Style',
-          extraKeys: 'Extra keys'
+          shortcuts: 'Клавиатурные сокрашения',
+          close: 'Закрыть',
+          textFormatting: 'Формат текста',
+          action: 'Действие',
+          paragraphFormatting: 'Форматирование абзаца',
+          documentStyle: 'Стиль документа',
+          extraKeys: 'Доп ключи'
         },
         history: {
-          undo: 'Undo',
-          redo: 'Redo'
+          undo: 'Шаг назад',
+          redo: 'Шаг вперед'
         }
       }
     }
