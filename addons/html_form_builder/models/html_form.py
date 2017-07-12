@@ -12,10 +12,10 @@ class HtmlForm(models.Model):
     _description = "HTML Form"
     
     def _default_return_url(self):
-        return request.httprequest.host_url + "form/thankyou"
+        return self.env['ir.config_parameter'].get_param('web.base.url') + "form/thankyou"
 
     def _default_submit_url(self):
-        return request.httprequest.host_url + "form/sinsert"
+        return self.env['ir.config_parameter'].get_param('web.base.url') + "form/sinsert"
     
     name = fields.Char(string="Form Name", required=True)
     model_id = fields.Many2one('ir.model', string="Model", required=True)
