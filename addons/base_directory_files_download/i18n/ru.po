@@ -1,0 +1,154 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* base_directory_files_download
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-07-12 06:59+0000\n"
+"PO-Revision-Date: 2017-07-12 12:09+0500\n"
+"Last-Translator: Korobarov Vasiliy <korobarov@akvastil.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: ru\n"
+"X-Generator: Poedit 2.0.2\n"
+
+#. module: base_directory_files_download
+#: model:ir.model.fields,field_description:base_directory_files_download.field_ir_filesystem_directory_file_count
+msgid "# Files"
+msgstr "# Файлы"
+
+#. module: base_directory_files_download
+#: code:addons/base_directory_files_download/models/ir_filesystem_directory.py:92
+#, python-format
+msgid "%s (copy)"
+msgstr "%s (копия)"
+
+#. module: base_directory_files_download
+#: model:ir.model.fields,field_description:base_directory_files_download.field_ir_filesystem_directory_create_uid
+#: model:ir.model.fields,field_description:base_directory_files_download.field_ir_filesystem_file_create_uid
+msgid "Created by"
+msgstr "Создал"
+
+#. module: base_directory_files_download
+#: model:ir.model.fields,field_description:base_directory_files_download.field_ir_filesystem_directory_create_date
+#: model:ir.model.fields,field_description:base_directory_files_download.field_ir_filesystem_file_create_date
+msgid "Created on"
+msgstr "Создано"
+
+#. module: base_directory_files_download
+#: model:ir.model.fields,field_description:base_directory_files_download.field_ir_filesystem_directory_directory
+#: model:ir.model.fields,field_description:base_directory_files_download.field_ir_filesystem_file_directory_id
+#: model:ir.ui.view,arch_db:base_directory_files_download.ir_filesystem_directory_tree
+msgid "Directory"
+msgstr "Директория"
+
+#. module: base_directory_files_download
+#: model:ir.actions.act_window,name:base_directory_files_download.ir_filesystem_directory_action
+#: model:ir.ui.menu,name:base_directory_files_download.menu_ir_filesystem_directory
+msgid "Directory Content"
+msgstr "Содержимое директории"
+
+#. module: base_directory_files_download
+#: code:addons/base_directory_files_download/models/ir_filesystem_directory.py:52
+#, python-format
+msgid "Directory does not exist"
+msgstr "Каталог не существует"
+
+#. module: base_directory_files_download
+#: model:ir.model.fields,field_description:base_directory_files_download.field_ir_filesystem_directory_display_name
+#: model:ir.model.fields,field_description:base_directory_files_download.field_ir_filesystem_file_display_name
+msgid "Display Name"
+msgstr "Отображаемое имя"
+
+#. module: base_directory_files_download
+#: model:res.groups,name:base_directory_files_download.group_filesystem_directory
+msgid "Download files of directory"
+msgstr "Загрузка файлов каталога"
+
+#. module: base_directory_files_download
+#: model:ir.ui.menu,name:base_directory_files_download.menu_ir_filesystem
+msgid "Downloads"
+msgstr "Загрузки"
+
+#. module: base_directory_files_download
+#: code:addons/base_directory_files_download/models/ir_filesystem_file.py:31
+#, python-format
+msgid ""
+"Error while reading file %s.\n"
+"                Maybe it was removed or permission is changed.\n"
+"                Please refresh the list."
+msgstr ""
+"Ошибка при чтении файла %s.\n"
+"                Возможно, это было удалено или разрешение изменено.\n"
+"                Обновите список."
+
+#. module: base_directory_files_download
+#: model:ir.model.fields,field_description:base_directory_files_download.field_ir_filesystem_file_file_content
+msgid "File content"
+msgstr "Содержимое файла"
+
+#. module: base_directory_files_download
+#: model:ir.model.fields,field_description:base_directory_files_download.field_ir_filesystem_file_filename
+msgid "Filename"
+msgstr "Имя файла"
+
+#. module: base_directory_files_download
+#: model:ir.model.fields,field_description:base_directory_files_download.field_ir_filesystem_directory_file_ids
+#: model:ir.ui.view,arch_db:base_directory_files_download.ir_filesystem_directory_form
+msgid "Files"
+msgstr "Файлы"
+
+#. module: base_directory_files_download
+#: model:ir.ui.view,arch_db:base_directory_files_download.ir_filesystem_directory_form
+msgid "Files:"
+msgstr "Файлы:"
+
+#. module: base_directory_files_download
+#: model:ir.model,name:base_directory_files_download.model_ir_filesystem_directory
+msgid "Filesystem Directory"
+msgstr "Каталог файловой системы"
+
+#. module: base_directory_files_download
+#: model:ir.model.fields,field_description:base_directory_files_download.field_ir_filesystem_directory_id
+#: model:ir.model.fields,field_description:base_directory_files_download.field_ir_filesystem_file_id
+msgid "ID"
+msgstr "ID"
+
+#. module: base_directory_files_download
+#: model:ir.model.fields,field_description:base_directory_files_download.field_ir_filesystem_directory___last_update
+#: model:ir.model.fields,field_description:base_directory_files_download.field_ir_filesystem_file___last_update
+msgid "Last Modified on"
+msgstr "Последний раз изменено"
+
+#. module: base_directory_files_download
+#: model:ir.model.fields,field_description:base_directory_files_download.field_ir_filesystem_directory_write_uid
+#: model:ir.model.fields,field_description:base_directory_files_download.field_ir_filesystem_file_write_uid
+msgid "Last Updated by"
+msgstr "Последний раз обновил"
+
+#. module: base_directory_files_download
+#: model:ir.model.fields,field_description:base_directory_files_download.field_ir_filesystem_directory_write_date
+#: model:ir.model.fields,field_description:base_directory_files_download.field_ir_filesystem_file_write_date
+msgid "Last Updated on"
+msgstr "Последний раз обновлено"
+
+#. module: base_directory_files_download
+#: model:ir.model.fields,field_description:base_directory_files_download.field_ir_filesystem_directory_name
+#: model:ir.model.fields,field_description:base_directory_files_download.field_ir_filesystem_file_name
+msgid "Name"
+msgstr "Имя"
+
+#. module: base_directory_files_download
+#: model:ir.model.fields,field_description:base_directory_files_download.field_ir_filesystem_file_stored_filename
+msgid "Stored filename"
+msgstr "Сохраненное имя файла"
+
+#. module: base_directory_files_download
+#: model:ir.model,name:base_directory_files_download.model_ir_filesystem_file
+msgid "ir.filesystem.file"
+msgstr "ir.filesystem.file"
