@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-09 13:04+0000\n"
-"PO-Revision-Date: 2017-07-06 15:07+0500\n"
+"PO-Revision-Date: 2017-07-13 19:58+0500\n"
 "Last-Translator: Korobarov Vasiliy <korobarov@akvastil.com>\n"
 "Language-Team: Russian (https://www.transifex.com/odoo/teams/41243/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -2328,17 +2328,17 @@ msgstr "Начните свой интернет-магазин путем со�
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.address
 msgid "State / Province"
-msgstr "Штат / Провинция"
+msgstr "Регион"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.address
 msgid "State / Province..."
-msgstr "Штат / Провинция..."
+msgstr "Регион..."
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.address
 msgid "Street <span class=\"hidden-xs\"> and Number</span>"
-msgstr "Улица <span class=\"hidden-xs\"> и номер</span>"
+msgstr "Улица<span class=\"hidden-xs\">, строение, помещение</span>"
 
 #. module: website_sale
 #: model:ir.model.fields,field_description:website_sale.field_product_style_name
@@ -2394,7 +2394,7 @@ msgstr "Описание"
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.address
 msgid "TIN / VAT"
-msgstr "TIN / VAT"
+msgstr "ИНН"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
@@ -2701,7 +2701,7 @@ msgid ""
 "                                        <small> or </small>"
 msgstr ""
 "Ваш адрес\n"
-"                                        <small> or </small>"
+"                                        <small> или </small>"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.website_planner
