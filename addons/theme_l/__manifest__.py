@@ -8,6 +8,7 @@
     'author': 'Vasiliy Korobatov',
     'data': [
         'views/layout.xml',
+        'views/assets.xml',
         'views/pages.xml'
     ],
     'category': 'Theme/Creative',
