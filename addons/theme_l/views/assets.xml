@@ -5,6 +5,9 @@
             <xpath expr="link[last()]" position="after">
                 <link href="/theme_l/static/less/style.less" rel="stylesheet" type="text/less" />
             </xpath>
+            <xpath expr="script[last()]" position="after">
+                <script href="/theme_l/static/src/js/tutorial_editor.js" type="text/javascript" />
+            </xpath>
         </template>
     </data>
 </odoo>
