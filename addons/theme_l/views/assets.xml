@@ -1,5 +1,10 @@
-<template id="l-style" name="L Style" inherit_id="website.assets_frontend">
-    <xpath expr="link[last()]" position="after">
-        <link href="/theme_l/static/less/style.less" rel="stylesheet" type="text/less" />
-    </xpath>
-</template>
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <template id="l-style" name="L Style" inherit_id="website.assets_frontend">
+            <xpath expr="link[last()]" position="after">
+                <link href="/theme_l/static/less/style.less" rel="stylesheet" type="text/less" />
+            </xpath>
+        </template>
+    </data>
+</odoo>
