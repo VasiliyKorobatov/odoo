@@ -5,7 +5,7 @@
             <t t-call="website.layout">
                 <div id="wrap">
                     <div class="container">
-                        <h1>Наш услуги</h1>
+                        <h1>Наши услуги</h1>
                         <ul class="services">
                             <li>Производство почтовых ящиков</li>
                             <li>Изготовление уличных урн</li>
@@ -16,5 +16,11 @@
                 </div>
             </t>
         </template>
+        <record id="services_page_link" model="website.menu">
+            <field name="name">Услуги</field>
+            <field name="url">/services</field>
+            <field name="parent_id" ref="website.main_menu" />
+            <field name="sequence" type="int">99</field>
+        </record>
     </data>
 </odoo>
