@@ -6,4 +6,4 @@ odoo.define('snippet_tmonial_options',function(require){
             alert("On focus!");
         },
     });
-})();
+});
