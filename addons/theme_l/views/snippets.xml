@@ -6,7 +6,7 @@
                 <div class="container text-center">
                     <div class="row">
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <img src="/theme_l/stitic/src/img/client_1.png" class="img-responsive img-circle"
+                            <img src="/base/static/img/res_partner_address_4-image.png" class="img-responsive img-circle"
                                  alt="Client"/>
                             <h3>Клиент 1</h3>
                             <p>С этим производителем работаем давно! Очень рады качественной продукции и оперативному
@@ -14,7 +14,7 @@
                             </p>
                         </div>
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <img src="/theme_l/static/src/img/client_2.png" class="img-responsive img-circle"
+                            <img src="/base/static/img/res_partner_address_10-image.png" class="img-responsive img-circle"
                                  alt="Client"/>
                             <h3>Клиент 2</h3>
                             <p>С этим производителем работаем давно! Очень рады качественной продукции и оперативному
@@ -22,7 +22,7 @@
                             </p>
                         </div>
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <img src="/theme_l/static/src/img/client_3.png" class="img-responsive img-circle"
+                            <img src="/base/static/img/res_partner_address_18-image.png" class="img-responsive img-circle"
                                  alt="Client"/>
                             <h3>Клиент 3</h3>
                             <p>С этим производителем работаем давно! Очень рады качественной продукции и оперативному
