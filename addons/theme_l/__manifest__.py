@@ -7,7 +7,8 @@
     'version': '0.1',
     'author': 'Vasiliy Korobatov',
     'data': [
-        'views/layout.xml'
+        'views/layout.xml',
+        'views/pages.xml'
     ],
     'category': 'Theme/Creative',
     'depends': ['website', 'sale'],
