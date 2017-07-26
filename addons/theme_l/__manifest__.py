@@ -9,6 +9,7 @@
     'data': [
         'views/layout.xml',
         'views/assets.xml',
+        'views/snippets.xml',
         'views/pages.xml'
     ],
     'category': 'Theme/Creative',
