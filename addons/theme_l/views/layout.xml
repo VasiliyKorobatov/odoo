@@ -14,7 +14,7 @@
                     </div>
                 </div>
             </xpath>
-            <xpath expr="//a[@class='navbar-brand']" position="replace">
+            <xpath expr="//header//a[@class='navbar-brand']" position="replace">
             </xpath>
         </template>
     </data>
