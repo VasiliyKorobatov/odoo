@@ -12,15 +12,14 @@
                     <div class="row">
                         <div id="logo" class="col-xs-4 col-sm-4 col-md-4 col-lg-4" />
                         <div id="search" class="col-xs-4 col-sm-4 col-md-4 col-lg-4" >
-                            <t t-if="website_sale">
-                                <t t-call="website_sale.search" />
-                            </t>
-                            <t t-else="">
-                                <t t-call="website.website_search_box">
-                                     <t t-set="search_class">pagination form-inline o_website_sale_search</t>
-
+                            <form t-att-action="keep('/shop'+ ('/category/'+slug(category)) if category else None, search=0)" method="get" t-att-class="search_class">
+                                <t t-if="attrib_values">
+                                    <t t-foreach="attrib_values" t-as="a">
+                                        <input type="hidden" name="attrib" t-att-value="'%s-%s' % (a[0], a[1])"/>
+                                    </t>
                                 </t>
-                            </t>
+                                <t t-call="website.website_search_box"/>
+                            </form>
                         </div>
                     </div>
                 </div>
