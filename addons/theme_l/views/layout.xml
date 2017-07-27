@@ -11,6 +11,9 @@
                 <div class="container">
                     <div class="row">
                         <div id="logo" class="col-xs-4 col-sm-4 col-md-4 col-lg-4" />
+                        <div id="search" class="col-xs-4 col-sm-4 col-md-4 col-lg-4" >
+                            <t t-call="website.website_search_box" />
+                        </div>
                     </div>
                 </div>
             </xpath>
