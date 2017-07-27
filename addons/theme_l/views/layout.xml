@@ -10,12 +10,18 @@
             <xpath expr="//div[@id='wrapwrap']/header/div" position="before">
                 <div class="container">
                     <div class="row">
-                         <strong>Добро пожаловать</strong> на наш сайт!
+                        <strong>Добро пожаловать</strong> на наш сайт!
                     </div>
                 </div>
             </xpath>
+        </template>
+        <template id="custom_logo" inherit_id="website.website.layout_logo_show" name="Custom Logo">
             <xpath expr="//header//a[@class='navbar-brand']" position="replace">
+                <a href="/" class="navbar-brand logo">
+                    <img src="/logo.png" t-att-alt="'Логотип %s' % res_company.name" t-att-title="res_company.name"/>
+                </a>
             </xpath>
         </template>
+
     </data>
 </odoo>
