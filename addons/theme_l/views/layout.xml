@@ -12,6 +12,7 @@
                     <div class="row">
                         <div id="logo" class="col-xs-4 col-sm-4 col-md-4 col-lg-4" />
                         <div id="search" class="col-xs-4 col-sm-4 col-md-4 col-lg-4" >
+                            <t t-if="website_sale">
                             <form t-att-action="keep('/shop'+ ('/category/'+slug(category)) if category else None, search=0)" method="get" t-att-class="search_class">
                                 <t t-if="attrib_values">
                                     <t t-foreach="attrib_values" t-as="a">
@@ -20,6 +21,8 @@
                                 </t>
                                 <t t-call="website.website_search_box"/>
                             </form>
+                            </t>
+
                         </div>
                     </div>
                 </div>
