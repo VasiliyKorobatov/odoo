@@ -10,28 +10,46 @@
             <xpath expr="//div[@id='wrapwrap']/header/div" position="before">
                 <div class="container">
                     <div class="row">
-                        <div id="logo" class="col-xs-4 col-sm-4 col-md-4 col-lg-4" />
-                        <div id="search" class="col-xs-4 col-sm-4 col-md-4 col-lg-4" >
+                        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 text-center" >
+                            <div id="logo" />
+                            <div id="credo" >
+                                <t t-esc="res_company.rml_header1" />
+                            </div>
+                        </div>
+                        <div id="search" class="col-xs-12 col-sm-6 col-md-6 col-lg-6" >
                             <t t-if="website_sale">
-                            <form t-att-action="keep('/shop'+ ('/category/'+slug(category)) if category else None, search=0)" method="get" t-att-class="search_class">
-                                <t t-if="attrib_values">
-                                    <t t-foreach="attrib_values" t-as="a">
-                                        <input type="hidden" name="attrib" t-att-value="'%s-%s' % (a[0], a[1])"/>
+                                <form t-att-action="keep('/shop'+ ('/category/'+slug(category)) if category else None, search=0)" method="get" t-att-class="search_class">
+                                    <t t-if="attrib_values">
+                                        <t t-foreach="attrib_values" t-as="a">
+                                            <input type="hidden" name="attrib" t-att-value="'%s-%s' % (a[0], a[1])"/>
+                                        </t>
                                     </t>
-                                </t>
-                                <t t-call="website.website_search_box"/>
-                            </form>
+                                    <t t-call="website.website_search_box"/>
+                                </form>
                             </t>
                             <t t-else="">
-                            <form t-att-action="'/shop'" method="get" t-att-class="search_class">
-                                <t t-if="attrib_values">
-                                    <t t-foreach="attrib_values" t-as="a">
-                                        <input type="hidden" name="attrib" t-att-value="'%s-%s' % (a[0], a[1])"/>
+                                <form t-att-action="'/shop'" method="get" t-att-class="search_class">
+                                    <t t-if="attrib_values">
+                                        <t t-foreach="attrib_values" t-as="a">
+                                            <input type="hidden" name="attrib" t-att-value="'%s-%s' % (a[0], a[1])"/>
+                                        </t>
                                     </t>
-                                </t>
-                                <t t-call="website.website_search_box"/>
-                            </form>
+                                    <t t-call="website.website_search_box"/>
+                                </form>
                             </t>
+
+                        </div>
+                        <div id="work-time" class="hidden-xs col-sm-3 col-md-2 col-lg-2 ">
+                            <span class="fa fa-clock-o" />&amp;nbsp;Время работы <br/>
+                            ПН-ПТ 09:00 - 17:00<br />
+                            СБ-ВС Выходной<br />
+                        </div>
+                        <div id="phones" class="hidden-xs col-sm-3 col-md-3 col-lg-3 ">
+                            <span class="fa fa-map-marker" /> <a id="your-city" href="#">Челябинск</a><br/>
+                            <span class="fa fa-phone" /> <a id="our-phone" t-attr-href="'tel: %s' % res_company.phone"> <t t-esc="res_company.phone" />
+                            <span class="fa fa-envelope" /> <a id="our-mail" t-attr-href="'mailto: %s' % res_company.email"> <t t-esc="res_company.email" />
+                        </a><br/>
+
 
                         </div>
                     </div>
