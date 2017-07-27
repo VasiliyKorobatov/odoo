@@ -22,6 +22,16 @@
                                 <t t-call="website.website_search_box"/>
                             </form>
                             </t>
+                            <t t-else="">
+                            <form t-att-action="'/shop'" method="get" t-att-class="search_class">
+                                <t t-if="attrib_values">
+                                    <t t-foreach="attrib_values" t-as="a">
+                                        <input type="hidden" name="attrib" t-att-value="'%s-%s' % (a[0], a[1])"/>
+                                    </t>
+                                </t>
+                                <t t-call="website.website_search_box"/>
+                            </form>
+                            </t>
 
                         </div>
                     </div>
