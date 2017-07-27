@@ -12,11 +12,11 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 text-center" >
                             <div id="logo" />
-                            <div id="credo" >
+                            <div id="credo" class="small">
                                 <t t-esc="res_company.rml_header1" />
                             </div>
                         </div>
-                        <div id="search" class="col-xs-12 col-sm-4 col-md-4 col-lg-4" >
+                        <div id="search" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mt16" >
                             <t t-if="website_sale">
                                 <form t-att-action="keep('/shop'+ ('/category/'+slug(category)) if category else None, search=0)" method="get" t-att-class="search_class">
                                     <t t-if="attrib_values">
