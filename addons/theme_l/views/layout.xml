@@ -39,7 +39,7 @@
                             </t>
 
                         </div>
-                        <div id="work-time" class="hidden-xs col-sm-2 col-md-2 col-lg-2 ">
+                        <div id="work-time" class="hidden-xs col-sm-2 col-md-2 col-lg-2 text-center">
                             <span class="fa fa-clock-o" />&amp;nbsp;Время работы <br/>
                             ПН-ПТ 09:00 - 17:00<br />
                             СБ-ВС Выходной<br />
