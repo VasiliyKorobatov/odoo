@@ -15,7 +15,7 @@
                 </div>
             </xpath>
         </template>
-        <template id="custom_logo" inherit_id="website.website.layout_logo_show" name="Custom Logo">
+        <template id="custom_logo" inherit_id="website.layout_logo_show" name="Custom Logo">
             <xpath expr="//header//a[@class='navbar-brand']" position="replace">
                 <a href="/" class="navbar-brand logo">
                     <img src="/logo.png" t-att-alt="'Логотип %s' % res_company.name" t-att-title="res_company.name"/>
