@@ -7,9 +7,9 @@
             <xpath expr="//div[@id='wrapwrap']/header" position="attributes">
                 <attribute name="id">l_header</attribute>
             </xpath>
-            <xpath expr="//div[@id='wrapwrap']/header/div" position="after">
+            <xpath expr="//div[@id='wrapwrap']/header/div" position="before">
                 <div class="container">
-                    <div class="alert alert-info mt16" role="alert">
+                    <div class="row">
                          <strong>Добро пожаловать</strong> на наш сайт!
                     </div>
                 </div>
