@@ -67,19 +67,19 @@
         </template>
         <template id="user_menu_enter" inherit_id="user_menu" name="Enter in User Menu">
             <xpath expr=".//*[@id='user-menu-enter']" position="inside">
-                    <div id="enter_btn" />
-                    <a groups="base.group_public" t-attf-href="/web/login" class="btn btn-default">
-                      <span class="fa fa-sign-in" />  <b>Войти</b>
-                    </a>
-                    <a  groups="base.group_public"  t-attf-href="/web/signup?{{ keep_query() }}" class="btn btn-default">
-                      <span class="fa fa-user-plus" /><b>Регистрация</b>
-                    </a>
-                    <a groups="base.group_user" t-attf-href="/my/home" class="btn btn-default">
-                        <span class="fa fa-user-circle-o" />   <b>Личный кабинет</b>
-                    </a>
-                    <a groups="base.group_user" t-attf-href="/web/session/logout?redirect=/" class="btn btn-default">
-                        <span class="fa fa-sign-out" />
-                    </a>
+                <div id="enter_btn" />
+                <a groups="base.group_public" t-attf-href="/web/login" class="btn btn-default">
+                    <span class="fa fa-sign-in" />  <b>Войти</b>
+                </a>
+                <a  groups="base.group_public"  t-attf-href="/web/signup?{{ keep_query() }}" class="btn btn-default">
+                    <span class="fa fa-user-plus" /><b>Регистрация</b>
+                </a>
+                <a groups="base.group_user" t-attf-href="/my/home" class="btn btn-default">
+                    <span class="fa fa-user-circle-o" />   <b>Личный кабинет</b>
+                </a>
+                <a groups="base.group_user" t-attf-href="/web/session/logout?redirect=/" class="btn btn-default">
+                    <span class="fa fa-sign-out" />
+                </a>
             </xpath>
         </template>
 
@@ -100,7 +100,27 @@
             <xpath expr=".//a[@class='navbar-brand logo']" position="replace" />
         </template>
         <template id="static_menu" inherit_id="website.layout" name="Static Menu">
-            <xpath expr=".//*[contains(@class, 'navbar-static-top')]" position="replace" />
+            <xpath expr=".//*[contains(@class, 'navbar-static-top')]" position="replace" >
+                <div class="navbar navbar-default navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"/>
+                                <span class="icon-bar"/>
+                                <span class="icon-bar"/>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse navbar-top-collapse">
+                            <ul class="nav navbar-nav navbar-right" id="top_menu">
+                                <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                    <t t-call="website.submenu"/>
+                                </t>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
         </template>
         <template id="custom_logo" inherit_id="theme_l.custom_header" name="Custom Logo">
             <xpath expr=".//*[@id='logo']" position="inside">
