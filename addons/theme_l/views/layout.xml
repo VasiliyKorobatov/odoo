@@ -57,7 +57,7 @@
             <xpath expr="//div[@id='wrapwrap']" position="before">
                 <nav class="navbar navbar-default navbar-fixed-top">
                     <div class="container">
-                        <div class="row">
+                        <div class="row mt8">
                             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="user-menu-enter" />
                             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="user-menu-registration" />
                             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pull-right" id="user-menu-cart"/>
@@ -68,14 +68,14 @@
         </template>
         <template id="user_menu_enter" inherit_id="user_menu" name="Enter in User Menu">
             <xpath expr=".//*[@id='user-menu-enter']" position="inside">
-                <div groups="base.group_public">
+                <div groups="base.group_public" class="btn btn-default">
                     <a t-attf-href="/web/login">
-                      <span class="fa fa-2x  fa-user-o" />  <b>Войти</b>
+                      <span class="fa fa-user-o" />  <b>Войти</b>
                     </a>
                 </div>
                 <div groups="base.group_user">
-                    <a t-attf-href="/my/home">
-                        <span class="fa fa-2x fa-user-circle-o" />   <b>Личный кабинет</b>
+                    <a t-attf-href="/my/home" class="btn btn-default">
+                        <span class="fa fa-user-circle-o" />   <b>Личный кабинет</b>
                     </a>
                 </div>
             </xpath>
