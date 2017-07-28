@@ -111,7 +111,7 @@
                             </button>
                         </div>
                         <div class="collapse navbar-collapse navbar-top-collapse">
-                            <ul class="nav navbar-nav navbar-right" id="top_menu">
+                            <ul class="nav navbar-nav navbar-left" id="top_menu">
                                 <t t-foreach="website.menu_id.child_id" t-as="submenu">
                                     <t t-call="website.submenu"/>
                                 </t>
