@@ -67,15 +67,15 @@
             </xpath>
         </template>
         <template id="user_menu_enter" inherit_id="user_menu" name="Enter in User Menu">
-            <xpath expr="" position="inside">
+            <xpath expr=".//*[@id='user-menu-enter']" position="inside">
                 <li groups="base.group_public">
-            <a t-attf-href="/web/login">
-                <b>Sign in</b>
-            </a>
-        </li>
+                    <a t-attf-href="/web/login">
+                        <b>Sign in</b>
+                    </a>
+                </li>
             </xpath>
         </template>
-        <template id="user_menu_registration" inherit_id="user_menu" name="Registration in User Menu">
+        <!--template id="user_menu_registration" inherit_id="user_menu" name="Registration in User Menu">
             <xpath expr="" position="inside">
 
             </xpath>
@@ -84,7 +84,7 @@
             <xpath expr="" position="inside">
 
             </xpath>
-        </template>
+        </template-->
 
 
 
