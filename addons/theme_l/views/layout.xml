@@ -12,10 +12,7 @@
             </xpath>
             <xpath expr="//main" position="before">
                 <nav class="col-md-3" id="leftCol">
-                    <ul class="nav nav-stacked" id="sidebar">
-                        <li class="btn btn-info">Железные урны</li>
-                        <li class="btn btn-info">Почтовые ящики</li>
-                    </ul>
+                    <div id="sidebar" />
                 </nav>
             </xpath>
             <xpath expr="//div[@id='wrapwrap']/header/div" position="before">
@@ -159,6 +156,18 @@
                 </a>
             </xpath>
         </template>
+        <template id="category_left_menu" inherit_id="website_sale.products" name="Left Category Menu">
+            <xpath expr="//*[@id='sidebar']" position="inside">
+                <ul class="nav nav-pills nav-stacked mt16">
+                    <li t-att-class=" '' if category else 'active' ">
+                        <a t-att-href="keep('/shop',category=0)" class="o_not_editable">All Products</a>
+                    </li>
+                    <t t-foreach="categories" t-as="c">
+                        <t t-call="website_sale.categories_recursive"/></t>
+                </ul>
+            </xpath>
+        </template>
+
 
     </data>
 </odoo>
