@@ -68,11 +68,16 @@
         </template>
         <template id="user_menu_enter" inherit_id="user_menu" name="Enter in User Menu">
             <xpath expr=".//*[@id='user-menu-enter']" position="inside">
-                <li groups="base.group_public">
+                <div groups="base.group_public">
                     <a t-attf-href="/web/login">
-                        <b>Sign in</b>
+                        <b>Войти</b>
                     </a>
-                </li>
+                </div>
+                <div groups="base.group_user">
+                    <a t-attf-href="/my/home">
+                        <b>Личный кабинет</b>
+                    </a>
+                </div>
             </xpath>
         </template>
         <!--template id="user_menu_registration" inherit_id="user_menu" name="Registration in User Menu">
