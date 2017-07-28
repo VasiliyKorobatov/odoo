@@ -7,7 +7,7 @@ $('#sidebar').affix({
       offset: {
         top: 150,
         bottom: function () {
-            return ($("footer").outerHeight(true))
+            return $("footer").outerHeight(true)
         }
       }
 });
@@ -16,7 +16,7 @@ $('#sidebar').affix({
 $body.scrollspy({
 	target: '#leftCol',
 	offset:  function () {
-            return ($("footer").outerHeight(true))
+            return $("footer").outerHeight(true)
         }
 });
 });
