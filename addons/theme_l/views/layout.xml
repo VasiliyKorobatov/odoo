@@ -99,6 +99,9 @@
         <template id="rm_logo" inherit_id="website.layout_logo_show" name="RM Logo">
             <xpath expr=".//a[@class='navbar-brand logo']" position="replace" />
         </template>
+        <template id="static_menu" inherit_id="website.layout" name="Static Menu">
+            <xpath expr="//div[@id='wrapwrap']/header/div" position="replace" />
+        </template>
         <template id="custom_logo" inherit_id="theme_l.custom_header" name="Custom Logo">
             <xpath expr=".//*[@id='logo']" position="inside">
                 <a href="/" class="logo">
