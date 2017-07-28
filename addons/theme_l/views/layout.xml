@@ -11,8 +11,8 @@
                 <attribute name="class">col-md-9</attribute>
             </xpath>
             <xpath expr="//main" position="before">
-                <nav class="col-md-3" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
-                    <ul>
+                <nav class="col-md-3" >
+                    <ul data-spy="affix" data-offset-top="60" data-offset-bottom="200">
                         <li class="btn btn-info">Железные урны</li>
                         <li class="btn btn-info">Почтовые ящики</li>
                     </ul>
