@@ -156,7 +156,7 @@
                 </a>
             </xpath>
         </template>
-        <template id="category_left_menu" inherit_id="website_sale.products" name="Left Category Menu">
+        <template id="category_left_menu" inherit_id="website.layout" name="Left Category Menu">
             <xpath expr="*[@id='sidebar']" position="inside">
                 <ul class="nav nav-pills nav-stacked mt16">
                     <li t-att-class=" '' if category else 'active' ">
