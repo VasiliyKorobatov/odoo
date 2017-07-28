@@ -5,7 +5,7 @@ var navHeight = $('.navbar').outerHeight(true) + 10;
 
 $('#sidebar').affix({
       offset: {
-        top: 60,
+        top: 250,
         bottom: 600
       }
 });
