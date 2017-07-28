@@ -70,7 +70,7 @@
             <xpath expr=".//*[@id='user-menu-enter']" position="inside">
                 <div groups="base.group_public" >
                     <a t-attf-href="/web/login" class="btn btn-default">
-                      <span class="fa fa-user-o" />  <b>Войти</b>
+                      <span class="fa fa-sing-in" />  <b>Войти</b>
                     </a>
                 </div>
                 <div groups="base.group_user">
@@ -84,12 +84,12 @@
             <xpath expr=".//*[@id='user-menu-registration']" position="inside">
                  <div groups="base.group_public" >
                     <a  t-if="signup_enabled" t-attf-href="/web/signup?{{ keep_query() }}" class="btn btn-default">
-                      <span class="fa fa-user-o" /><b>Регистрация</b>
+                      <span class="fa fa-user-plus" /><b>Регистрация</b>
                     </a>
                 </div>
                 <div groups="base.group_user">
                     <a  t-attf-href="/web/session/logout?redirect=/" class="btn btn-default">
-                        <span class="fa fa-user-circle-o" />
+                        <span class="fa fa-sign-out" />
                     </a>
                 </div>
             </xpath>
