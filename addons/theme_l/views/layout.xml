@@ -75,7 +75,7 @@
                 </div>
                 <div groups="base.group_user">
                     <a t-attf-href="/my/home">
-                        <span class="fa fa-2x fa-user-circle" />   <b>Личный кабинет</b>
+                        <span class="fa fa-2x fa-user" />   <b>Личный кабинет</b>
                     </a>
                 </div>
             </xpath>
