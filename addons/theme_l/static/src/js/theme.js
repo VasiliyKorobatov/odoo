@@ -10,7 +10,6 @@ $('#sidebar').affix({
             return $("footer").outerHeight(true)
         }
       }
-      console.log(offset.bottom);
 });
 
 
