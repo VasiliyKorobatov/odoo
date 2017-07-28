@@ -80,12 +80,22 @@
                 </div>
             </xpath>
         </template>
-        <!--template id="user_menu_registration" inherit_id="user_menu" name="Registration in User Menu">
-            <xpath expr="" position="inside">
-
+        <template id="user_menu_registration" inherit_id="user_menu" name="Exit and Registration in User Menu">
+            <xpath expr=".//*[@id='user-menu-registration']" position="inside">
+                 <div groups="base.group_public" >
+                    <a  t-if="signup_enabled" t-attf-href="/web/signup?{{ keep_query() }}" class="btn btn-default">
+                      <span class="fa fa-user-o" /><b>Регистрация</b>
+                    </a>
+                </div>
+                <div groups="base.group_user">
+                    <a  t-attf-href="/web/session/logout?redirect=/" class="btn btn-default">
+                        <span class="fa fa-user-circle-o" />
+                    </a>
+                </div>
             </xpath>
         </template>
-        <template id="user_menu_cart" inherit_id="user_menu" name="Cart in User Menu">
+
+        <!--template id="user_menu_cart" inherit_id="user_menu" name="Cart in User Menu">
             <xpath expr="" position="inside">
 
             </xpath>
