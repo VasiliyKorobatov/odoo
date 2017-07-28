@@ -7,7 +7,7 @@ $('#sidebar').affix({
       offset: {
         top: 150,
 //        bottom: navHeight
-        bottom: 1000
+        bottom: 0
       }
 });
 
