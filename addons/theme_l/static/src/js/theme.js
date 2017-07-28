@@ -9,7 +9,7 @@ $('#sidebar').affix({
         bottom: function () {
             return $("footer").outerHeight(true)
         }
-      };
+      }
       console.log(offset.bottom);
 });
 
