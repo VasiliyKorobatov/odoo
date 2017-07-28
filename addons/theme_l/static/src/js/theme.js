@@ -15,6 +15,8 @@ $('#sidebar').affix({
 
 $body.scrollspy({
 	target: '#leftCol',
-//	offset: navHeight
+	offset:  function () {
+            return ($("footer").outerHeight(true))
+        }
 });
 });
