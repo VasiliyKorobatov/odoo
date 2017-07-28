@@ -68,12 +68,12 @@
         </template>
         <template id="user_menu_enter" inherit_id="user_menu" name="Enter in User Menu">
             <xpath expr=".//*[@id='user-menu-enter']" position="inside">
-                <div groups="base.group_public" >
+                <div groups="base.group_public" id="enter_btn">
                     <a t-attf-href="/web/login" class="btn btn-default">
                       <span class="fa fa-sing-in" />  <b>Войти</b>
                     </a>
                 </div>
-                <div groups="base.group_user">
+                <div groups="base.group_user" id="enter_btn">
                     <a t-attf-href="/my/home" class="btn btn-default">
                         <span class="fa fa-user-circle-o" />   <b>Личный кабинет</b>
                     </a>
@@ -81,9 +81,9 @@
             </xpath>
         </template>
         <template id="user_menu_registration" inherit_id="user_menu" name="Exit and Registration in User Menu">
-            <xpath expr=".//*[@id='user-menu-registration']" position="inside">
+            <xpath expr=".//*[@id='enter']" position="after">
                  <div groups="base.group_public" >
-                    <a  t-if="signup_enabled" t-attf-href="/web/signup?{{ keep_query() }}" class="btn btn-default">
+                    <a  t-attf-href="/web/signup?{{ keep_query() }}" class="btn btn-default">
                       <span class="fa fa-user-plus" /><b>Регистрация</b>
                     </a>
                 </div>
