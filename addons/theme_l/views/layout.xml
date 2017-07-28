@@ -68,6 +68,7 @@
         </template>
         <template id="user_menu_enter" inherit_id="user_menu" name="Enter in User Menu">
             <xpath expr=".//*[@id='user-menu-enter']" position="inside">
+                    <div id="enter_btn" />
                     <a groups="base.group_public" t-attf-href="/web/login" class="btn btn-default">
                       <span class="fa fa-sing-in" />  <b>Войти</b>
                     </a>
