@@ -85,9 +85,10 @@
 
         <template id="user_menu_cart" inherit_id="user_menu" name="Cart in User Menu">
             <xpath expr=".//*[@id='user-menu-cart']" position="inside">
-                <a class="btn btn-link" href="#"><span class="fa fa-shopping-cart" />Корзина</a>
-
-                <a class="btn btn-default" href="#">Оформить</a>
+                <t t-set="website_sale_order" t-value="website.sale_get_order()"/>
+                <a href="/shop/cart">  <i class="fa fa-shopping-cart"/> Корзина <sup t-attf-class="my_cart_quantity label label-primary" t-esc="website_sale_order and website_sale_order.cart_quantity or ''"/>
+                </a>
+                <a class="btn btn-default" href="/shop/cart">Оформить</a>
 
             </xpath>
         </template>
