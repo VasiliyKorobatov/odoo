@@ -7,7 +7,7 @@ $('#sidebar').affix({
       offset: {
         top: 150,
         bottom: function(){
-            return $("footer").outerHeight(True)-$("#wrapwrap").outerHeight(True)
+            return (-$("#wrapwrap").outerHeight(True))
         }
       }
 });
