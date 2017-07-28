@@ -41,8 +41,13 @@
 .navbar-static-top{
     z-index:998;
 }
-@media (min-width: @screen-md-min){
+@media (min-width: @screen-sm-min){
     #wrapwrap {
-        padding-top: 60px;
+        top: 60px;
+    }
+}
+@media (max-width: @screen-xs-max){
+    #wrapwrap {
+        top: 90px;
     }
 }
