@@ -9,9 +9,8 @@ $('#sidebar').affix({
         bottom: function () {
             return $("footer").outerHeight(true)
         }
-        console.log(bottom)
       };
-      console.log(offset);
+      console.log(offset.bottom);
 });
 
 
