@@ -6,13 +6,13 @@ var navHeight = $('.navbar').outerHeight(true) + 10;
 $('#sidebar').affix({
       offset: {
         top: 250,
-        bottom: 1600
+        bottom: navHeight
       }
 });
 
 
 $body.scrollspy({
 	target: '#leftCol',
-	offset: 1600
+	offset: navHeight
 });
 });
