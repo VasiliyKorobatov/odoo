@@ -54,7 +54,7 @@
             </xpath>
         </template>
         <template id="user_menu" inherit_id="website.layout" name="User Menu and Cart">
-            <xpath expr="//div[@id='wrapwrap']/header" position="before">
+            <xpath expr="//div[@id='wrapwrap']" position="before">
                 <nav class="navbar navbar-default navbar-fixed-top">
                     <div class="container">
                         <div class="row">
