@@ -8,7 +8,7 @@
                 <attribute name="id">l_header</attribute>
             </xpath>
             <xpath expr="//div[@id='wrapwrap']/header/div" position="before">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 text-center" >
                             <div id="logo" />
@@ -44,7 +44,7 @@
                             <span class="small">ПН-ПТ 09:00 - 17:00</span><br />
                             <span class="small">СБ-ВС Выходной</span><br />
                         </div>
-                        <div id="phones" class="hidden-xs col-sm-3 col-md-3 col-lg-3 text-center">
+                        <div id="phones" class="hidden-xs col-sm-2 col-md-3 col-lg-3 text-center">
                             <span class="fa fa-map-marker" /> <a id="your-city" href="#">Челябинск</a><br/>
                             <span class="fa fa-phone" /> <a id="our-phone" t-att-href="'tel:%s' % res_company.phone"> <t t-esc="res_company.phone" /></a><br/>
                             <span class="fa fa-envelope" /> <a id="our-mail" t-att-href="'mailto:%s' % res_company.email"> <t t-esc="res_company.email" /></a><br/>
