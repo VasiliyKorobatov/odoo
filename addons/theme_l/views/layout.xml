@@ -88,7 +88,7 @@
                 <t t-set="website_sale_order" t-value="website.sale_get_order()"/>
                 <a href="/shop/cart" class="btn">  <i class="fa fa-shopping-cart"/> Корзина <sup t-attf-class="my_cart_quantity label label-primary" t-esc="website_sale_order and website_sale_order.cart_quantity or ''"/>
                 </a>
-                <a  t-att-class="'btn btn-default' if website_sale_order and website_sale_order.cart_quantity else 'hidden'" href="/shop/cart">Оформить</a>
+                <a  class='btn btn-default' href="/shop/cart">Оформить</a>
 
             </xpath>
         </template>
