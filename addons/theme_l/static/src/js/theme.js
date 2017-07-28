@@ -13,6 +13,6 @@ $('#sidebar').affix({
 
 $body.scrollspy({
 	target: '#leftCol',
-	offset: 150
+	offset: navHeight
 });
 });
