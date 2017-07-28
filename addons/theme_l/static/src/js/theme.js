@@ -6,7 +6,9 @@ var navHeight = $('.navbar').outerHeight(true) + 10;
 $('#sidebar').affix({
       offset: {
         top: 150,
-        bottom: -2000
+        bottom: function(){
+            return $("footer").outerHeight(True)-$("#wrapwrap").outerHeight(True)
+        }
       }
 });
 
