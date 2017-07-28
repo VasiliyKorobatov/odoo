@@ -162,8 +162,8 @@
                     <li t-att-class=" '' if category else 'active' ">
                         <a t-att-href="keep('/shop',category=0)" class="o_not_editable">All Products</a>
                     </li>
-                    <t t-foreach="categories" t-as="c">
-                        <t t-call="website_sale.categories_recursive"/></t>
+                    <!--<t t-foreach="categories" t-as="c">-->
+                        <!--<t t-call="website_sale.categories_recursive"/></t>-->
                 </ul>
             </xpath>
         </template>
