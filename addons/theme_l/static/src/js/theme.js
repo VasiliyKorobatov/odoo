@@ -7,8 +7,8 @@ var navHeight = function(){
            } else {
                 h = $(".navbar-fixed-top").outerHeight(true)+$("header").outerHeight(true)
            }
-            return h
-       }
+            return h;
+       };
 
 }
 $('#sidebar').affix({
