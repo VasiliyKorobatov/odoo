@@ -34,9 +34,13 @@
     background-color: #EAEAEA;
   }
 }
-
-#leftCol{
-    width: 230px;
+@media (min-width: 979px) {
+    #leftCol{
+        width: 230px;
+    }
+    main {
+        width: calc(100% - 230px);
+    }
 }
 .navbar-fixed-top, .navbar-fixed-bottom{
     z-index:999;
