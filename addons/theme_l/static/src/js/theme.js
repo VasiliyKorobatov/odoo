@@ -2,13 +2,8 @@ $(document).ready(function() {
 
 var $body   = $(document.body);
 var navHeight = function(){
-      if ($("#oe_main_menu_navbar").length){
-                h = $("#oe_main_menu_navbar").outerHeight(true)+$(".navbar-fixed-top").outerHeight(true)+$("header").outerHeight(true)
-           } else {
-                h = $(".navbar-fixed-top").outerHeight(true)+$("header").outerHeight(true)
-           }
-            return h;
-       };
+            return $("#oe_main_menu_navbar").length ? ($("#oe_main_menu_navbar").outerHeight(true)+$(".navbar-fixed-top").outerHeight(true)+$("header").outerHeight(true)):($(".navbar-fixed-top").outerHeight(true)+$("header").outerHeight(true))
+       }
 
 }
 $('#sidebar').affix({
