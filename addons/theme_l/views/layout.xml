@@ -163,7 +163,7 @@
                         <!--<a t-att-href="keep('/shop',category=0)" class="o_not_editable">All Products</a>-->
                     <!--</li>-->
                     <t t-foreach="request.website.sale_categories()" t-as="c">
-                        <t t-call="categories_recursive"/>
+                        <t t-call="theme_l.categories_recursive"/>
                     </t>
                 </ul>
             </xpath>
@@ -173,7 +173,7 @@
                 <a t-att-href="keep('/shop/category/' + slug(c), category=0)" t-field="c.name"></a>
                 <ul t-if="c.child_id" class="nav nav-pills nav-stacked nav-hierarchy">
                     <t t-foreach="c.child_id" t-as="c">
-                        <t t-call="categories_recursive" />
+                        <t t-call="theme_l.categories_recursive" />
                     </t>
                 </ul>
             </li>
