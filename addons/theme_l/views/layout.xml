@@ -166,6 +166,7 @@
                         <t t-call="theme_l.categories_recursive"/>
                     </t>
                 </ul>
+                <div class="oe_structure" />
             </xpath>
         </template>
         <template id="categories_recursive" name="Category list">
