@@ -1,9 +1,7 @@
 $(document).ready(function() {
 
 var $body   = $(document.body);
-var navHeight = function(){
-            return $("#oe_main_menu_navbar").length ? ($("#oe_main_menu_navbar").outerHeight(true)+$(".navbar-fixed-top").outerHeight(true)+$("header").outerHeight(true)):($(".navbar-fixed-top").outerHeight(true)+$("header").outerHeight(true))
-       }
+var navHeight = $("#oe_main_menu_navbar").length ? ($("#oe_main_menu_navbar").outerHeight(true)+$(".navbar-fixed-top").outerHeight(true)+$("header").outerHeight(true)) :($(".navbar-fixed-top").outerHeight(true)+$("header").outerHeight(true));
 
 }
 $('#sidebar').affix({
