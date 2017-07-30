@@ -160,7 +160,7 @@
             <xpath expr="//*[@id='sidebar']" position="inside">
                 <ul class="nav nav-pills nav-stacked mt8">
                     <!--<li t-att-class=" '' if category else 'active' ">-->
-                        <!--<a t-att-href="keep('/shop',category=0)" class="o_not_editable">All Products</a>-->
+                    <!--<a t-att-href="keep('/shop',category=0)" class="o_not_editable">All Products</a>-->
                     <!--</li>-->
                     <t t-foreach="request.website.sale_categories()" t-as="c">
                         <t t-call="theme_l.categories_recursive"/>
@@ -185,9 +185,11 @@
         </template>
         <template id="products_pager" inherit_id="website_sale.products" name="Products Pager">
             <xpath expr="//div[@class='products_pager']" position="replace" >
-                <div id="products_pager" class="row" style="width: 100%;">
-                    <t t-call="website_sale.pricelist_list" />
-                    <t t-call="website.pager" />
+                <div class="products_pager" >
+                    <div id="products_pager" class="row" style="width: 100%;">
+                        <t t-call="website_sale.pricelist_list" />
+                        <t t-call="website.pager" />
+                    </div>
                 </div>
             </xpath>
         </template>
