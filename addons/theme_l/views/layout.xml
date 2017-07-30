@@ -193,12 +193,13 @@
                 </div>
             </xpath>
         </template>
+
         <template id="sort" inherit_id="website_sale.sort" name="Sort By">
             <xpath expr="//div[@class='dropdown btn-group dropdown_sorty_by']" position="replace" >
-            <t t-set="list_price_desc_label"><i class="fa fa-arrow-up" aria-hidden="true"/> Цена</t>
-            <t t-set="list_price_asc_label"><i class="fa fa-arrow-down" aria-hidden="true"/> Цена</t>
-            <t t-set="name_asc_label">Название</t>
-            <t t-set="website_sale_sortable" t-value="[
+                <t t-set="list_price_desc_label"><i class="fa fa-arrow-up" aria-hidden="true"/> Цена</t>
+                <t t-set="list_price_asc_label"><i class="fa fa-arrow-down" aria-hidden="true"/> Цена</t>
+                <t t-set="name_asc_label">Название</t>
+                <t t-set="website_sale_sortable" t-value="[
                              (list_price_desc_label, 'list_price desc'),
                              (list_price_asc_label, 'list_price asc'),
                              (name_asc_label, 'name asc')
@@ -217,6 +218,274 @@
                 </div>
             </xpath>
         </template>
+
+        <template id="homepage" inherit_id="website.homepage" name="HomePage">
+            <xpath expr="//div[@id='wrap']" position="replace">
+                <div id="wrap" class="">
+                    <div class="oe_structure oe_empty" />
+                     <t t-foreach="request.website.sale_categories()" t-as="c">
+                        <t t-call="theme_l.categories_recursive"/>
+                     </t>
+                    <div class="oe_structure oe_empty" />
+                    <section class="o_data_slider mb32 container text-center" data-options="{&quot;lazyLoad&quot;:&quot;ondemand&quot;,&quot;slidesToShow&quot;:3,&quot;slidesToScroll&quot;:1,&quot;dots&quot;:true,&quot;infinite&quot;:true,&quot;speed&quot;:500,&quot;arrows&quot;:true,&quot;autoplay&quot;:true,&quot;adaptiveHeight&quot;:false,&quot;variableWidth&quot;:false,&quot;autoplaySpeed&quot;:3000,&quot;data_model&quot;:&quot;product.template&quot;,&quot;data_domain&quot;:[[&quot;website_published&quot;,&quot;=&quot;,true]],&quot;data_image_field&quot;:&quot;image_medium&quot;,&quot;data_name_field&quot;:&quot;display_name&quot;,&quot;data_title&quot;:&quot;Наша продукция &quot;,&quot;data_title_tag&quot;:&quot;h1&quot;,&quot;data_title_class&quot;:&quot;text-center&quot;,&quot;data_uri_field&quot;:&quot;website_url&quot;,&quot;data_container_width&quot;:&quot;90%&quot;,&quot;data_limit&quot;:10,&quot;prevArrow&quot;:&quot;&lt;a href=\&quot;#\&quot; class=\&quot;slider-arrow-left\&quot;&gt;&lt;i class=\&quot;fa fa-arrow-left fa-2x\&quot;&gt;&lt;/i&gt;&lt;/a&gt;&quot;,&quot;nextArrow&quot;:&quot;&lt;a href=\&quot;#\&quot; class=\&quot;slider-arrow-right\&quot;&gt;&lt;i class=\&quot;fa fa-arrow-right fa-2x\&quot;&gt;&lt;/i&gt;&lt;/a&gt;&quot;}" style="width: 90%;">
+                        <div class="row">
+                            <h1 class="text-center">Наша продукция </h1>
+                        </div>
+                        <div class="o_slick_container oe_structure slick-initialized slick-slider slick-dotted" role="toolbar">
+                            <a href="#" class="slider-arrow-left slick-arrow">
+                                <i class="fa fa-arrow-left fa-2x"/>
+                            </a>
+                            <div aria-live="polite" class="slick-list draggable">
+                                <div class="slick-track" role="listbox" style="opacity: 1; width: 2328px; transform: translate3d(-485px, 0px, 0px);">
+                                    <div class="thumbnail slick-slide slick-cloned" data-slick-index="-5" aria-hidden="true" tabindex="-1" style="width: 93px;">
+                                        <a href="/shop/product/28" tabindex="-1">
+                                            <img data-lazy="/web/image/product.template/28/image_medium"/>
+                                            <div class="caption">
+                                                <h5>Урна с пепельницей</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="thumbnail slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" tabindex="-1" style="width: 93px;">
+                                        <a href="/shop/product/41" tabindex="-1">
+                                            <img data-lazy="/web/image/product.template/41/image_medium"/>
+                                            <div class="caption">
+                                                <h5>Урна круглая</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="thumbnail slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 93px;">
+                                        <a href="/shop/product/3" tabindex="-1">
+                                            <img data-lazy="/web/image/product.template/3/image_medium"/>
+                                            <div class="caption">
+                                                <h5>Умывальник дачный</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="thumbnail slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" tabindex="-1" style="width: 93px;">
+                                        <a href="/shop/product/39" tabindex="-1">
+                                            <img data-lazy="/web/image/product.template/39/image_medium"/>
+                                            <div class="caption">
+                                                <h5>Двухъярусная кровать</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="thumbnail slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 93px;">
+                                        <a href="/shop/product/38" tabindex="-1">
+                                            <img data-lazy="/web/image/product.template/38/image_medium"/>
+                                            <div class="caption">
+                                                <h5>Кровать одноярусная</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="thumbnail slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide00" style="width: 93px;">
+                                        <a href="/shop/product/30" tabindex="0">
+                                            <img src="/web/image/product.template/30/image_medium" style="opacity: 1;"/>
+                                            <div class="caption">
+                                                <h5>Секционные почтовые ящики Подъезд</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="thumbnail slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide01" style="width: 93px;">
+                                        <a href="/shop/product/31" tabindex="0">
+                                            <img src="/web/image/product.template/31/image_medium" style="opacity: 1;"/>
+                                            <div class="caption">
+                                                <h5>Секционные почтовые ящики Подъезд Люкс</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="thumbnail slick-slide slick-active" data-slick-index="2" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide02" style="width: 93px;">
+                                        <a href="/shop/product/32" tabindex="0">
+                                            <img src="/web/image/product.template/32/image_medium" style="opacity: 1;"/>
+                                            <div class="caption">
+                                                <h5>Почтовый ящик уличный "Альфа"</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="thumbnail slick-slide slick-active" data-slick-index="3" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide03" style="width: 93px;">
+                                        <a href="/shop/product/33" tabindex="0">
+                                            <img src="/web/image/product.template/33/image_medium" style="opacity: 1;"/>
+                                            <div class="caption">
+                                                <h5>Почтовый ящик Горизонт</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="thumbnail slick-slide slick-active" data-slick-index="4" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide04" style="width: 93px;">
+                                        <a href="/shop/product/36" tabindex="0">
+                                            <img src="/web/image/product.template/36/image_medium" style="opacity: 1;"/>
+                                            <div class="caption">
+                                                <h5>Почтовый ящик Почта</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="thumbnail slick-slide" data-slick-index="5" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide05" style="width: 93px;">
+                                        <a href="/shop/product/35" tabindex="-1">
+                                            <img data-lazy="/web/image/product.template/35/image_medium"/>
+                                            <div class="caption">
+                                                <h5>Почтовый ящик Полукруглый</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="thumbnail slick-slide" data-slick-index="6" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide06" style="width: 93px;">
+                                        <a href="/shop/product/25" tabindex="-1">
+                                            <img data-lazy="/web/image/product.template/25/image_medium"/>
+                                            <div class="caption">
+                                                <h5>Урна квадратная</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="thumbnail slick-slide" data-slick-index="7" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide07" style="width: 93px;">
+                                        <a href="/shop/product/29" tabindex="-1">
+                                            <img data-lazy="/web/image/product.template/29/image_medium"/>
+                                            <div class="caption">
+                                                <h5>Урна на гнутых ножках</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="thumbnail slick-slide" data-slick-index="8" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide08" style="width: 93px;">
+                                        <a href="/shop/product/27" tabindex="-1">
+                                            <img data-lazy="/web/image/product.template/27/image_medium"/>
+                                            <div class="caption">
+                                                <h5>Урна с крышкой</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="thumbnail slick-slide" data-slick-index="9" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide09" style="width: 93px;">
+                                        <a href="/shop/product/28" tabindex="-1">
+                                            <img data-lazy="/web/image/product.template/28/image_medium"/>
+                                            <div class="caption">
+                                                <h5>Урна с пепельницей</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="thumbnail slick-slide" data-slick-index="10" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide010" style="width: 93px;">
+                                        <a href="/shop/product/41" tabindex="-1">
+                                            <img data-lazy="/web/image/product.template/41/image_medium"/>
+                                            <div class="caption">
+                                                <h5>Урна круглая</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="thumbnail slick-slide" data-slick-index="11" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide011" style="width: 93px;">
+                                        <a href="/shop/product/3" tabindex="-1">
+                                            <img data-lazy="/web/image/product.template/3/image_medium"/>
+                                            <div class="caption">
+                                                <h5>Умывальник дачный</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="thumbnail slick-slide" data-slick-index="12" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide012" style="width: 93px;">
+                                        <a href="/shop/product/39" tabindex="-1">
+                                            <img data-lazy="/web/image/product.template/39/image_medium"/>
+                                            <div class="caption">
+                                                <h5>Двухъярусная кровать</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="thumbnail slick-slide" data-slick-index="13" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide013" style="width: 93px;">
+                                        <a href="/shop/product/38" tabindex="-1">
+                                            <img data-lazy="/web/image/product.template/38/image_medium"/>
+                                            <div class="caption">
+                                                <h5>Кровать одноярусная</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="thumbnail slick-slide slick-cloned" data-slick-index="14" aria-hidden="true" tabindex="-1" style="width: 93px;">
+                                        <a href="/shop/product/30" tabindex="-1">
+                                            <img src="/web/image/product.template/30/image_medium" style="opacity: 1;"/>
+                                            <div class="caption">
+                                                <h5>Секционные почтовые ящики Подъезд</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="thumbnail slick-slide slick-cloned" data-slick-index="15" aria-hidden="true" tabindex="-1" style="width: 93px;">
+                                        <a href="/shop/product/31" tabindex="-1">
+                                            <img src="/web/image/product.template/31/image_medium" style="opacity: 1;"/>
+                                            <div class="caption">
+                                                <h5>Секционные почтовые ящики Подъезд Люкс</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="thumbnail slick-slide slick-cloned" data-slick-index="16" aria-hidden="true" tabindex="-1" style="width: 93px;">
+                                        <a href="/shop/product/32" tabindex="-1">
+                                            <img src="/web/image/product.template/32/image_medium" style="opacity: 1;"/>
+                                            <div class="caption">
+                                                <h5>Почтовый ящик уличный "Альфа"</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="thumbnail slick-slide slick-cloned" data-slick-index="17" aria-hidden="true" tabindex="-1" style="width: 93px;">
+                                        <a href="/shop/product/33" tabindex="-1">
+                                            <img src="/web/image/product.template/33/image_medium" style="opacity: 1;"/>
+                                            <div class="caption">
+                                                <h5>Почтовый ящик Горизонт</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="thumbnail slick-slide slick-cloned" data-slick-index="18" aria-hidden="true" tabindex="-1" style="width: 93px;">
+                                        <a href="/shop/product/36" tabindex="-1">
+                                            <img src="/web/image/product.template/36/image_medium" style="opacity: 1;"/>
+                                            <div class="caption">
+                                                <h5>Почтовый ящик Почта</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="slider-arrow-right slick-arrow">
+                                <i class="fa fa-arrow-right fa-2x"/>
+                            </a>
+                            <ul class="slick-dots" role="tablist">
+                                <li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true" aria-controls="navigation00" id="slick-slide00">
+                                    <button type="button" data-role="none" role="button" tabindex="0">1</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation01" id="slick-slide01">
+                                    <button type="button" data-role="none" role="button" tabindex="0">2</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation02" id="slick-slide02">
+                                    <button type="button" data-role="none" role="button" tabindex="0">3</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation03" id="slick-slide03">
+                                    <button type="button" data-role="none" role="button" tabindex="0">4</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation04" id="slick-slide04">
+                                    <button type="button" data-role="none" role="button" tabindex="0">5</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation05" id="slick-slide05">
+                                    <button type="button" data-role="none" role="button" tabindex="0">6</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation06" id="slick-slide06">
+                                    <button type="button" data-role="none" role="button" tabindex="0">7</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation07" id="slick-slide07">
+                                    <button type="button" data-role="none" role="button" tabindex="0">8</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation08" id="slick-slide08">
+                                    <button type="button" data-role="none" role="button" tabindex="0">9</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation09" id="slick-slide09">
+                                    <button type="button" data-role="none" role="button" tabindex="0">10</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation010" id="slick-slide010">
+                                    <button type="button" data-role="none" role="button" tabindex="0">11</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation011" id="slick-slide011">
+                                    <button type="button" data-role="none" role="button" tabindex="0">12</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation012" id="slick-slide012">
+                                    <button type="button" data-role="none" role="button" tabindex="0">13</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation013" id="slick-slide013">
+                                    <button type="button" data-role="none" role="button" tabindex="0">14</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <div class="oe_structure oe_empty" />
+                </div>
+            </xpath>
+        </template>
+
+
 
 
     </data>
