@@ -1,5 +1,5 @@
 $(document).ready(function() {
-if($(".wrapwrap #div.wrap").length && $("#sidebar").outerHeight(true)>$(".wrapwrap #div.wrap").outerHeight(true)){
+if($("div#wrap").length && $("#sidebar").outerHeight(true)>$("div#wrap").outerHeight(true)){
     $("#sidebar div.oe_structure").hide();
 }
 var $body   = $(document.body);
