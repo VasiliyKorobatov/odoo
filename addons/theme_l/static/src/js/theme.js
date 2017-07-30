@@ -1,5 +1,7 @@
 $(document).ready(function() {
-
+if($(".wrapwrap #div.wrap").length && $("#sidebar").outerHeight(true)>$(".wrapwrap #div.wrap").outerHeight(true)){
+    $("#sidebar div.oe_structure").hide();
+}
 var $body   = $(document.body);
 var navHeight = $("#oe_main_menu_navbar").length ? ($("#oe_main_menu_navbar").outerHeight(true)+$(".navbar-fixed-top").outerHeight(true)+$("header").outerHeight(true)) :($(".navbar-fixed-top").outerHeight(true)+$("header").outerHeight(true));
 
