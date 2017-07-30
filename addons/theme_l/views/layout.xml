@@ -194,7 +194,7 @@
             </xpath>
         </template>
         <template id="sort" inherit_id="website_sale.sort" name="Sort By">
-            <xpath expr="//div[@class='dropdown_sorty_by']" position="replace" >
+            <xpath expr="//div[@class='dropdown btn-group dropdown_sorty_by']" position="replace" >
             <t t-set="list_price_desc_label"><i class="fa fa-arrow-up" aria-hidden="true"/> Цена</t>
             <t t-set="list_price_asc_label"><i class="fa fa-arrow-down" aria-hidden="true"/> Цена</t>
             <t t-set="name_asc_label">Название</t>
