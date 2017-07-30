@@ -183,5 +183,15 @@
                 </ul>
             </li>
         </template>
+        <template id="products_pager" inherit_id="website_sale.products" name="Products Pager">
+            <xpath expr="//div[@class='products_pager']" position="replace" >
+                <div id="products_pager" class="row" style="width: 100%;">
+                    <t t-call="website_sale.pricelist_list" />
+                    <t t-call="website.pager" />
+                </div>
+            </xpath>
+        </template>
+
+
     </data>
 </odoo>
