@@ -18,6 +18,10 @@ $(document).ready(function() {
         target: '#leftCol',
         offset: navHeight
     });
+    $body.scrollspy({
+        target: 'div.dropdown_sorty_by',
+        offset: navHeight
+    });
 });
 $(window).load(function() {
     if($("div#wrap").length && $("#sidebar").outerHeight(true)>$("div#wrap").outerHeight(true)){
