@@ -9,13 +9,13 @@ $(document).ready(function() {
             bottom: function(){return ($("footer").outerHeight(true)+$("div#sidebar").outerHeight(true)-$(document).outerHeight(true))}
           }
     });
-    $('div.dropdown_sorty_by').affix({
-          offset: {
-            top: navHeight
-//            ,
-//            bottom: function(){return ($("footer").outerHeight(true)+$("div#sidebar").outerHeight(true)-$(document).outerHeight(true))}
-          }
-    });
+//    $('div.dropdown_sorty_by').affix({
+//          offset: {
+//            top: navHeight
+////            ,
+////            bottom: function(){return ($("footer").outerHeight(true)+$("div#sidebar").outerHeight(true)-$(document).outerHeight(true))}
+//          }
+//    });
 
 
     $body.scrollspy({
