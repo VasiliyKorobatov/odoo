@@ -714,9 +714,9 @@
                 <h4 class="hidden oe_not_available bg-warning">Временно не доступен</h4>
             </div>
         </template>
-        <template id="custom_select_quantity" inherit_id="theme_l.custom_product_detail" name="Custom select quantity">
-            <xpath expr="//a[@id='add_to_cart']" position="before">
-                <div class="center-block">
+        <template id="custom_select_quantity" inherit_id="website_sale.product_quantity" name="Custom select quantity">
+            <xpath expr="//div[@class='css_quantity input-group oe_website_spinner']" position="replace">
+                <div class="center-block text-center">
                     <div class="css_quantity input-group oe_website_spinner" contenteditable="false">
                         <a t-attf-href="#" class="mb8 input-group-addon js_add_cart_json">
                             <i class="fa fa-minus"/>
@@ -730,11 +730,5 @@
             </xpath>
 
         </template>
-
-
-
-
-
-
     </data>
 </odoo>
