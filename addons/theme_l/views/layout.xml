@@ -527,9 +527,9 @@
         <template id="categories_recursive_homepage" name="Category list HomePage">
             <li class="col-md-4">
                 <!--<a t-att-href="keep('/shop/category/' + slug(c), category=0)" t-field="c.name"></a>-->
-                <a class="homepage-category" t-att-href="'/shop/category/'+slug(c)">
-                    <div class="category-image" t-field="c.image_medium" t-options="{'widget': 'image', 'class': 'img-rounded'}" />
-                    <div class="category-caption" t-esc="c.name" />
+                <a class="homepage-category thumbnail" t-att-href="'/shop/category/'+slug(c)">
+                    <div class="category-image" t-field="c.image_medium" t-options="{'widget': 'image', 'class': 'img-rounded center-block'}" />
+                    <div class="category-caption text-center" t-esc="c.name" />
                 </a>
                 <ul t-if="c.child_id" class="nav nav-pills nav-stacked nav-hierarchy">
                     <t t-foreach="c.child_id" t-as="c">
