@@ -78,7 +78,7 @@
         <template id="user_menu" inherit_id="website.layout" name="User Menu and Cart">
             <xpath expr="//div[@id='wrapwrap']" position="before">
                 <nav class="navbar navbar-default navbar-fixed-top">
-                    <div class="container">
+                    <div class="container-fluid">
                         <div class="row mt8">
                             <div class="col-xs-7 col-sm-6 col-md-6 col-lg-6" id="user-menu-enter"/>
                             <div class="col-xs-5 col-sm-6 col-md-6 col-lg-6 text-right" id="user-menu-cart"/>
