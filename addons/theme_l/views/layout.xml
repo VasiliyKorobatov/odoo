@@ -644,13 +644,14 @@
                                 <span itemprop="url" style="display:none;" t-esc="'/shop/product/%s' % slug(product)"/>
                                 <form action="/shop/cart/update" class="js_add_cart_variants" t-att-data-attribute_value_ids="product.product_variant_ids.ids" method="POST">
                                     <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
-                                    <t t-call="website_sale.product_price"/>
-                                    <div t-if="product.availability == 'in_stock'" class="alert alert-success">
-                                        <span class="fa fa-check"/>
+                                    <div class="text-center">
+                                        <t t-call="website_sale.product_price"/>
+                                    </div>
+                                    <div t-if="product.availability == 'in_stock'" class="alert alert-success text-center">
+                                        <span class="fa fa-check-circle"/>
                                         <span>На складе</span>
                                     </div>
-                                    <a id="add_to_cart" class="btn btn-primary btn-lg mt8 js_check_product a-submit" href="#">В корзину</a>
-
+                                    <a id="add_to_cart" class="btn btn-primary btn-lg mt8 js_check_product a-submit text-center center-block" href="#">В корзину</a>
                                     <div t-if="product.availability == 'warning'" class="alert alert-warning">
                                         <span class="fa fa-warning"/>
                                         <span t-field="product.availability_warning"/>
