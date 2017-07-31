@@ -489,7 +489,7 @@
             <li t-att-class="'active' if c.id == int(category or 0) else None">
                 <!--<a t-att-href="keep('/shop/category/' + slug(c), category=0)" t-field="c.name"></a>-->
                 <a class="homepage-category" t-att-href="'/shop/category/'+slug(c)">
-                    <div class="category-image" t-field="c.image_small" t-options="{'widget': 'image', 'class': 'img-circle'}" />
+                    <div class="category-image" t-field="c.image_medium" t-options="{'widget': 'image', 'class': 'img-rounded'}" />
                     <div class="category-caption" t-esc="c.name" />
                 </a>
                 <ul t-if="c.child_id" class="nav nav-pills nav-stacked nav-hierarchy">
