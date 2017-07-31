@@ -259,7 +259,9 @@
 
                     </div>
                     <t t-foreach="request.website.sale_categories()" t-as="c">
-                        <t t-call="theme_l.categories_recursive_homepage"/>
+                        <ul class="homepage-categories">
+                            <t t-call="theme_l.categories_recursive_homepage"/>
+                        </ul>
                     </t>
                     <div class="oe_structure oe_empty" />
                     <section class="o_data_slider mb32 container text-center" data-options="{&quot;lazyLoad&quot;:&quot;ondemand&quot;,&quot;slidesToShow&quot;:3,&quot;slidesToScroll&quot;:1,&quot;dots&quot;:true,&quot;infinite&quot;:true,&quot;speed&quot;:500,&quot;arrows&quot;:true,&quot;autoplay&quot;:true,&quot;adaptiveHeight&quot;:false,&quot;variableWidth&quot;:false,&quot;autoplaySpeed&quot;:3000,&quot;data_model&quot;:&quot;product.template&quot;,&quot;data_domain&quot;:[[&quot;website_published&quot;,&quot;=&quot;,true]],&quot;data_image_field&quot;:&quot;image_medium&quot;,&quot;data_name_field&quot;:&quot;display_name&quot;,&quot;data_title&quot;:&quot;Наша продукция &quot;,&quot;data_title_tag&quot;:&quot;h1&quot;,&quot;data_title_class&quot;:&quot;text-center&quot;,&quot;data_uri_field&quot;:&quot;website_url&quot;,&quot;data_container_width&quot;:&quot;90%&quot;,&quot;data_limit&quot;:10,&quot;prevArrow&quot;:&quot;&lt;a href=\&quot;#\&quot; class=\&quot;slider-arrow-left\&quot;&gt;&lt;i class=\&quot;fa fa-arrow-left fa-2x\&quot;&gt;&lt;/i&gt;&lt;/a&gt;&quot;,&quot;nextArrow&quot;:&quot;&lt;a href=\&quot;#\&quot; class=\&quot;slider-arrow-right\&quot;&gt;&lt;i class=\&quot;fa fa-arrow-right fa-2x\&quot;&gt;&lt;/i&gt;&lt;/a&gt;&quot;}" style="width: 90%;">
@@ -521,7 +523,7 @@
         </template>
 
         <template id="categories_recursive_homepage" name="Category list HomePage">
-            <li t-att-class="'active' if c.id == int(category or 0) else None">
+            <li class="col-md-4">
                 <!--<a t-att-href="keep('/shop/category/' + slug(c), category=0)" t-field="c.name"></a>-->
                 <a class="homepage-category" t-att-href="'/shop/category/'+slug(c)">
                     <div class="category-image" t-field="c.image_medium" t-options="{'widget': 'image', 'class': 'img-rounded'}" />
