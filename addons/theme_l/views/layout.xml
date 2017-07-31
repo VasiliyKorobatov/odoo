@@ -222,10 +222,45 @@
         <template id="homepage" inherit_id="website.homepage" name="HomePage">
             <xpath expr="//div[@id='wrap']" position="replace">
                 <div id="wrap" class="">
-                    <div class="oe_structure oe_empty" />
-                     <t t-foreach="request.website.sale_categories()" t-as="c">
+                    <div class="oe_structure oe_empty" >
+                        <div id="myCarousel1501441674202" class="carousel slide s_banner" data-interval="10000">
+                            <ol class="carousel-indicators hidden">
+                                <li data-target="#myCarousel1501441674202" data-slide-to="0" class="active"/>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item bg-alpha oe_img_bg oe_custom_bg active" style="background-image: url(&quot;/web/image/2464&quot;);">
+                                    <div class="container">
+                                        <div class="row content">
+                                            <div class="carousel-content col-md-offset-1 mb96 bg-black-50 mt16 col-md-4">
+                                                <h2 class="o_default_snippet_text">Здрасти, </h2>
+                                                <div>Hello, Салеметсiз бе. </div>
+                                                <div> </div>
+                                                <div>Предлагаем на выгодных условиях </div>
+                                                <div> </div>
+                                                <div>почтовые ящики уличные и секционные от производителя </div>
+                                                <div>армейские кровати </div>
+                                                <div>уличные урны.</div>
+                                                <p>
+                                                    <a href="/page/website.contactus" class="btn btn-warning">Свяжитесь с нами</a>
+                                                </p>
+                                            </div>
+                                            <div class="carousel-img hidden-sm hidden-xs mt32 col-md-6"><img class="img-responsive" src="/web/image/2468" alt="ящик" data-original-title="ящик" title=""/><br/><span style="color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.5);">Мы - Миасское производство, Миасс - это город инженеров-технологов и где делают ракеты. Лавков, пока не делает ракет. Но может качественно изготовить на интересных условиях металлическую мебель в дом.</span>&amp;nbsp;</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-control left hidden" data-target="#myCarousel1501441674202" data-slide="prev" style="width: 10%" data-cke-saved-href="#myCarousel1501441674202">
+                                <i class="fa fa-chevron-left"/>
+                            </div>
+                            <div class="carousel-control right hidden" data-target="#myCarousel1501441674202" data-slide="next" style="width: 10%" data-cke-saved-href="#myCarousel1501441674202">
+                                <i class="fa fa-chevron-right"/>
+                            </div>
+                        </div>
+
+                    </div>
+                    <t t-foreach="request.website.sale_categories()" t-as="c">
                         <t t-call="theme_l.categories_recursive_homepage"/>
-                     </t>
+                    </t>
                     <div class="oe_structure oe_empty" />
                     <section class="o_data_slider mb32 container text-center" data-options="{&quot;lazyLoad&quot;:&quot;ondemand&quot;,&quot;slidesToShow&quot;:3,&quot;slidesToScroll&quot;:1,&quot;dots&quot;:true,&quot;infinite&quot;:true,&quot;speed&quot;:500,&quot;arrows&quot;:true,&quot;autoplay&quot;:true,&quot;adaptiveHeight&quot;:false,&quot;variableWidth&quot;:false,&quot;autoplaySpeed&quot;:3000,&quot;data_model&quot;:&quot;product.template&quot;,&quot;data_domain&quot;:[[&quot;website_published&quot;,&quot;=&quot;,true]],&quot;data_image_field&quot;:&quot;image_medium&quot;,&quot;data_name_field&quot;:&quot;display_name&quot;,&quot;data_title&quot;:&quot;Наша продукция &quot;,&quot;data_title_tag&quot;:&quot;h1&quot;,&quot;data_title_class&quot;:&quot;text-center&quot;,&quot;data_uri_field&quot;:&quot;website_url&quot;,&quot;data_container_width&quot;:&quot;90%&quot;,&quot;data_limit&quot;:10,&quot;prevArrow&quot;:&quot;&lt;a href=\&quot;#\&quot; class=\&quot;slider-arrow-left\&quot;&gt;&lt;i class=\&quot;fa fa-arrow-left fa-2x\&quot;&gt;&lt;/i&gt;&lt;/a&gt;&quot;,&quot;nextArrow&quot;:&quot;&lt;a href=\&quot;#\&quot; class=\&quot;slider-arrow-right\&quot;&gt;&lt;i class=\&quot;fa fa-arrow-right fa-2x\&quot;&gt;&lt;/i&gt;&lt;/a&gt;&quot;}" style="width: 90%;">
                         <div class="row">
