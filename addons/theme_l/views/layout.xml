@@ -594,6 +594,9 @@
                             </div>
                         </div>
                         <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <h1 itemprop="name" t-field="product.name">Название продукта</h1>
+                            </div>
                             <div class="col-sm-7">
                                 <span itemprop="image" t-field="product.image" t-options="{'widget': 'image', 'class': 'product_detail_img', 'alt-field': 'name', 'zoom': 'image'}" groups="!website_sale.group_website_multi_image"/>
                                 <t groups="website_sale.group_website_multi_image">
@@ -636,9 +639,6 @@
                                         </ol>
                                     </div>
                                 </t>
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <h1 itemprop="name" t-field="product.name">Название продукта</h1>
                             </div>
                             <div class="col-sm-5 col-lg-4 col-lg-offset-1" id="product_details">
                                 <span itemprop="url" style="display:none;" t-esc="'/shop/product/%s' % slug(product)"/>
