@@ -649,6 +649,8 @@
                                         <span class="fa fa-check"/>
                                         <span>На складе</span>
                                     </div>
+                                    <a id="add_to_cart" class="btn btn-primary btn-lg mt8 js_check_product a-submit" href="#">В корзину</a>
+
                                     <div t-if="product.availability == 'warning'" class="alert alert-warning">
                                         <span class="fa fa-warning"/>
                                         <span t-field="product.availability_warning"/>
@@ -660,8 +662,7 @@
                                                 <t t-set="ul_class" t-value="'nav-stacked'"/>
                                             </t>
                                         </t>
-                                        <p t-if="len(product.product_variant_ids) &gt; 1" class="css_not_available_msg bg-danger" style="padding: 15px;">Product not available</p>
-                                        <a id="add_to_cart" class="btn btn-primary btn-lg mt8 js_check_product a-submit" href="#">В корзину</a>
+                                        <p t-if="len(product.product_variant_ids) &gt; 1" class="css_not_available_msg bg-danger" style="padding: 15px;">Товар временно не доступен</p>
                                     </div>
                                 </form>
 
