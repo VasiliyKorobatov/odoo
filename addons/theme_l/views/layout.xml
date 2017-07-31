@@ -547,10 +547,10 @@
                 <div itemscope="itemscope" itemtype="http://schema.org/Product" id="wrap" class="js_sale">
                     <section t-attf-class="container mt8 oe_website_sale #{(compute_currency(product.lst_price) - product.website_price) &gt; 0.01 and website.get_current_pricelist().discount_policy == 'without_discount'  and 'discount'}" id="product_detail">
                         <div class="row">
-                            <div class="col-sm-4">
+                            <div class="col-sm-8">
                                 <ol class="breadcrumb">
                                     <li>
-                                        <a t-att-href="keep(category=0)">Products</a>
+                                        <a t-att-href="keep(category=0)">Каталог</a>
                                     </li>
                                     <li t-if="category">
                                         <a t-att-href="keep('/shop/category/%s' % slug(category), category=0)" t-field="category.name"/>
@@ -560,10 +560,7 @@
                                     </li>
                                 </ol>
                             </div>
-                            <div class="col-sm-3 mb8">
-                                <t t-call="website_sale.search"/>
-                            </div>
-                            <div id="website_published_button" class="col-sm-3">
+                            <div id="website_published_button" class="col-sm-4">
                                 <t t-call="website.publish_management" groups="sales_team.group_sale_manager">
                                     <t t-set="object" t-value="product"/>
                                     <t t-set="publish_edit" t-value="True"/>
@@ -632,7 +629,7 @@
                                         </t>
                                         <t t-call="website_sale.product_price"/>
                                         <p t-if="len(product.product_variant_ids) &gt; 1" class="css_not_available_msg bg-danger" style="padding: 15px;">Product not available</p>
-                                        <a id="add_to_cart" class="btn btn-primary btn-lg mt8 js_check_product a-submit" href="#">Add to Cart</a>
+                                        <a id="add_to_cart" class="btn btn-primary btn-lg mt8 js_check_product a-submit" href="#">В корзину</a>
                                     </div>
                                 </form>
                                 <hr t-if="product.availability != 'empty'"/>
@@ -649,11 +646,7 @@
                                     <p t-field="product.description_sale" class="text-muted"/>
                                 </div>
                                 <hr/>
-                                <p class="text-muted">
-                                    30-day money-back guarantee<br/>
-                                    Free Shipping in U.S.<br/>
-                                    Buy now, get in 2 days
-                                </p>
+
                             </div>
                         </div>
                     </section>
