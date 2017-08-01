@@ -25,7 +25,7 @@
                                 <t t-esc="res_company.rml_header1"/>
                             </div>
                         </div>
-                        <div id="search" class="col-xs-12 col-sm-4 col-md-5 col-lg-4 mt16">
+                        <div id="search" class="col-xs-12 col-sm-5 col-md-5 col-lg-4 mt16">
                             <t t-if="website_sale">
                                 <form t-att-action="keep('/shop'+ ('/category/'+slug(category)) if category else None, search=0)"
                                       method="get" t-att-class="search_class">
@@ -57,7 +57,7 @@
                             <span class="small">СБ-ВС Выходной</span>
                             <br/>
                         </div-->
-                        <div id="phones" class="hidden-xs col-sm-2 col-md-3 col-lg-3 text-center">
+                        <div id="phones" class="hidden-xs col-sm-3 col-md-3 col-lg-3 text-center">
                             <span class="fa fa-map-marker"/>
 
                             <span class="fa fa-phone"/>
