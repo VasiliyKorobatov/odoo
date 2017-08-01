@@ -145,6 +145,7 @@
         <template id="user_menu_enter" inherit_id="theme_l.static_menu" name="Enter in User Menu">
             <xpath expr=".//div[@class='collapse navbar-collapse navbar-top-collapse']" position="inside">
                 <div id="enter_btn" />
+                <div class="nav navbar-nav navbar-right mt8">
                 <a groups="base.group_public" t-attf-href="/web/login" class="btn btn-default">
                     <span class="fa fa-sign-in"/>
                     <b>Войти</b>
@@ -160,6 +161,7 @@
                 <a groups="base.group_user" t-attf-href="/web/session/logout?redirect=/" class="btn btn-default">
                     <span class="fa fa-sign-out"/>
                 </a>
+                </div>
             </xpath>
         </template>
 
