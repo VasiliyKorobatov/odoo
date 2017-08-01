@@ -78,6 +78,8 @@
         <template id="user_menu" inherit_id="website.layout" name="User Menu and Cart">
             <xpath expr="//div[@id='wrapwrap']" position="before">
                 <nav class="navbar navbar-default navbar-fixed-top">
+                    <div id="user-menu-enter" />
+
                     <div class="container-fluid">
                         <div class="row mt8">
                             <div class="col-md-1 menu-button">
@@ -141,7 +143,7 @@
             </xpath>
         </template>
         <template id="user_menu_enter" inherit_id="theme_l.static_menu" name="Enter in User Menu">
-            <xpath expr=".//*[@id='user-menu-enter']" position="inside">
+            <xpath expr=".//*[@id='user-enter']" position="inside">
                 <div id="enter_btn"/>
                 <a groups="base.group_public" t-attf-href="/web/login" class="btn btn-default">
                     <span class="fa fa-sign-in"/>
@@ -196,7 +198,7 @@
                                 <t t-foreach="website.menu_id.child_id" t-as="submenu">
                                     <t t-call="website.submenu"/>
                                 </t>
-                                <div id="user-menu-enter" />
+                                <div id="user-enter" />
                             </ul>
                         </div>
                     </div>
