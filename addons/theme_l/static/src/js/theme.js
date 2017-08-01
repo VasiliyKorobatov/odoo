@@ -5,6 +5,11 @@ $(document).ready(function() {
     $('#sidebar').on('hidden.bs.collapse', function(){
         $("main").attr("class","col-md-12");
     });
+    ymaps.ready(function() {
+        if (typeof ymaps.geolocation.city != "undefined") {
+             $('#user-city').text(ymaps.geolocation.city);
+        }
+    });
 });
 $(window).load(function() {
 //
