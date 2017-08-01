@@ -12,7 +12,7 @@
             <!--</xpath>-->
             <xpath expr="//main" position="before">
                 <nav class="col-md-3" id="leftCol">
-                    <div id="sidebar" class="collapse in" />
+                    <div id="sidebar" class="collapse" />
                 </nav>
             </xpath>
             <xpath expr="//div[@id='wrapwrap']/header/div" position="before">
