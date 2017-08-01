@@ -25,7 +25,7 @@
                                 <t t-esc="res_company.rml_header1"/>
                             </div>
                         </div>
-                        <div id="search" class="col-xs-12 col-sm-5 col-md-5 col-lg-4 mt16">
+                        <div id="search" class="col-xs-12 col-sm-5 col-md-6 col-lg-4 mt16">
                             <t t-if="website_sale">
                                 <form t-att-action="keep('/shop'+ ('/category/'+slug(category)) if category else None, search=0)"
                                       method="get" t-att-class="search_class">
