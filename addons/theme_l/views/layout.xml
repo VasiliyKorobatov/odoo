@@ -94,6 +94,7 @@
                                             <script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU" type="text/javascript" />
                                             <script type="text/javascript">
                                                 ymaps.ready(function(){
+                                                    console.log("YaMap Ready");
                                                     ymaps.geolocation.get({ provider: 'yandex',autoReverseGeocode: true}).then(function (result) {console.log(result.geoObjects.get(0).properties.get('metaDataProperty').getAll());});
                                                 });
                                                 <!--ymaps.ready(function() {-->
