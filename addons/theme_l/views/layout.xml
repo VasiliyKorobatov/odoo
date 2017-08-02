@@ -93,11 +93,12 @@
                                         <li>
                                             <script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU" type="text/javascript" />
                                             <script type="text/javascript">
-                                                ymaps.ready(function() {
-                                                if (typeof ymaps.geolocation.city != "undefined") {
-                                                $('#user-city').text(ymaps.geolocation.city);
-                                                }
-                                                });
+                                                ymaps.geolocation.get({ provider: 'yandex',autoReverseGeocode: true}).then(function (result) {console.log(result.geoObjects.get(0).properties.get('metaDataProperty').getAll());});
+                                                <!--ymaps.ready(function() {-->
+                                                <!--if (typeof ymaps.geolocation.city != "undefined") {-->
+                                                <!--$('#user-city').text(ymaps.geolocation.city);-->
+                                                <!--}-->
+                                                <!--});-->
                                             </script>
                                             <a id="your-city" href="#"> <span class="fa fa-map-marker"><span  id="user-city" /></span></a>
                                         </li>
