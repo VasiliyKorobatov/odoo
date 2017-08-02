@@ -104,6 +104,13 @@
                                                                 $("#your-city").popover('hide');
                                                                 Cookies.set('city', $("#user-city").text(), { expires: 365 });
                                                             });
+                                                            $("#no-city").click(function(){
+                                                                $("#city").modal('show');
+                                                            });
+                                                            $("#city a").click(function(e){
+                                                               var city = e.text();
+                                                               console.log(city);
+                                                            });
                                                         });
                                                     } else {
                                                         $("#user-city").text(Cookies.get("city"));
