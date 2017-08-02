@@ -94,14 +94,11 @@
                                             <script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU" type="text/javascript" />
                                             <script type="text/javascript">
                                                 ymaps.ready(function(){
-                                                    console.log("YaMap Ready");
                                                     ymaps.geolocation.get({
                                                         provider: 'yandex',
                                                         autoReverseGeocode: true
                                                     }).then(function (result) {
-                                                        console.log("YaMap GeoCode");
-                                                        console.log(
-                                                            result.geoObjects.get(0).properties.get('name'));
+                                                       $("#user-city).text(result.geoObjects.get(0).properties.get('name'));
                                                     });
                                                 });
                                                 <!--ymaps.ready(function() {-->
