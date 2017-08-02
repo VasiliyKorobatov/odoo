@@ -103,18 +103,11 @@
 
                                                 });
                                             </script>
-                                            <a data-title="Ваш город?" data-content="" data-delay="3" data-html="true" data-container="body"  data-placement="bottom"  data-toggle="modal" id="your-city" href="#city">
+                                            <a data-title="Ваш город?" data-content="<div class='row'><div class='col-xs-6'><a class='btn btn-success' id='yes-city' href='javascript:void(0)'>Да</a></div><div class='col-xs-6'><a class='btn btn-default' id='no-city' href='javascript:void(0)'>Нет</a></div></div>" data-delay="3" data-html="true" data-container="body"  data-placement="bottom"  data-toggle="modal" id="your-city" href="#city">
                                                 <span class="fa fa-map-marker">&amp;nbsp;
                                                     <span  id="user-city" />
                                                 </span>
-                                                <!--<div class='row'>-->
-                                                    <!--<div class='col-xs-6'>-->
-                                                        <!--<a class='btn btn-success' id='yes-city' href='javascript:void(0)'>Да</a>-->
-                                                    <!--</div>-->
-                                                    <!--<div class='col-xs-6'>-->
-                                                        <!--<a class='btn btn-default' id='no-city' href='javascript:void(0)'>Нет</a>-->
-                                                    <!--</div>-->
-                                                <!--</div>-->
+
                                             </a>
                                         </li>
                                     </ul>
