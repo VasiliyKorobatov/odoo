@@ -102,7 +102,7 @@
                                                 });
                                                     $("#yes-city").click(function(){
                                                         $("#your-city").popover('hide');
-                                                        Cookie.set('city', $("#user-city").text();
+                                                        Cookie.set('city', $("#user-city").text());
                                                     });
                                                 });
                                             </script>
