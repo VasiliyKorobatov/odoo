@@ -102,7 +102,7 @@
                                                             $(function () {$("#your-city").popover('show')});
                                                             $("#yes-city").click(function(){
                                                                 $("#your-city").popover('hide');
-                                                                Cookies.set('city', $("#user-city").text());
+                                                                Cookies.set('city', $("#user-city").text(), { expires: 365 });
                                                             });
                                                         });
                                                     } else {
