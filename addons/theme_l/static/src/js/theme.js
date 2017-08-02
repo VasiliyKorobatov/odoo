@@ -6,12 +6,13 @@ $(document).ready(function() {
     $('#sidebar').on('hidden.bs.collapse', function(){
         $("main").attr("class","col-md-12");
     });
+
+});
+$(window).load(function() {
     $("#yes-city").click(function(){
         $("#your-city").popover('hide');
         Cookies.set('city', $("#user-city").text());
     });
-});
-$(window).load(function() {
 //
 //    if($("div#wrap").length && $("#sidebar").outerHeight(true)>$("div#wrap").outerHeight(true)){
 ////        $("#sidebar div.oe_structure").hide();
