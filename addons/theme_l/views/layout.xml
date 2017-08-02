@@ -105,11 +105,15 @@
                                                                 Cookies.set('city', $("#user-city").text(), { expires: 365 });
                                                             });
                                                             $("#no-city").click(function(){
+                                                                $("#your-city").popover('hide')
                                                                 $("#city").modal('show');
                                                             });
                                                             $("#city a").click(function(){
                                                                var city = $(this).text();
                                                                console.log(city);
+                                                               $("#user-city").text(city);
+                                                               Cookies.set('city', city, { expires: 365 });
+                                                               $("#city").modal('hide');
                                                             });
                                                         });
                                                     } else {
