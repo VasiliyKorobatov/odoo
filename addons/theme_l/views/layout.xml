@@ -98,7 +98,7 @@
                                                         provider: 'yandex',
                                                         autoReverseGeocode: true
                                                     }).then(function (result) {
-                                                       $("#user-city).text(result.geoObjects.get(0).properties.get('name'));
+                                                       $("#user-city").text(result.geoObjects.get(0).properties.get('name'));
                                                     });
                                                 });
                                                 <!--ymaps.ready(function() {-->
