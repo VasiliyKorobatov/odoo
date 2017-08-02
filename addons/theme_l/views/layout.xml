@@ -99,6 +99,7 @@
                                                         provider: 'yandex',
                                                         autoReverseGeocode: true
                                                     }).then(function (result) {
+                                                        console.log("YaMap GeoCode");
                                                         console.log(
                                                             result.geoObjects.get(0).properties.get('metaDataProperty').getAll());
                                                     });
