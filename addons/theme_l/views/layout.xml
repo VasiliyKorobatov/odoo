@@ -93,21 +93,24 @@
                                             <script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU" type="text/javascript" />
                                             <script type="text/javascript">
                                                 ymaps.ready(function(){
-                                                ymaps.geolocation.get({
-                                                    provider: 'yandex',
-                                                    autoReverseGeocode: true
-                                                }).then(function (result) {
-                                                    $("#user-city").text(result.geoObjects.get(0).properties.get('name'));
-                                                    $(function () {$("#your-city").popover('show')});
-                                                    $("#yes-city").click(function(){
-                                                        $("#your-city").popover('hide');
-                                                        Cookies.set('city', $("#user-city").text());
-                                                    });
-                                                });
-
+                                                    if(typeof Cookies.get("city") == "undefined"){
+                                                        ymaps.geolocation.get({
+                                                            provider: 'yandex',
+                                                            autoReverseGeocode: true
+                                                        }).then(function (result) {
+                                                            $("#user-city").text(result.geoObjects.get(0).properties.get('name'));
+                                                            $(function () {$("#your-city").popover('show')});
+                                                            $("#yes-city").click(function(){
+                                                                $("#your-city").popover('hide');
+                                                                Cookies.set('city', $("#user-city").text());
+                                                            });
+                                                        });
+                                                    } else {
+                                                        $("#user-city").text(Cookies.get("city"));
+                                                    }
                                                 });
                                             </script>
-                                            <a data-title="Ваш город?" data-content="&lt;div class='row'&gt;&lt;div class='col-xs-12'&gt;&lt;a class='btn btn-success btn-sm' id='yes-city' href='javascript:void(0)'&gt;Да&lt;/a&gt;&lt;a class='btn btn-default btn-sm' id='no-city' style='margin-left:10px;' href='javascript:void(0)'&gt;Нет&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;" data-delay="3" data-html="true" data-container="body"  data-placement="bottom"  data-toggle="modal" id="your-city" href="#city">
+                                            <a data-title="Ваш город?" data-trigger="manual" data-content="&lt;div class='row'&gt;&lt;div class='col-xs-12'&gt;&lt;a class='btn btn-success btn-sm' id='yes-city' href='javascript:void(0)'&gt;Да&lt;/a&gt;&lt;a class='btn btn-default btn-sm' id='no-city' style='margin-left:10px;' href='javascript:void(0)'&gt;Нет&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;" data-delay="3" data-html="true" data-container="body"  data-placement="bottom"  data-toggle="modal" id="your-city" href="#city">
                                                 <span class="fa fa-map-marker">&amp;nbsp;
                                                     <span  id="user-city" />
                                                 </span>
