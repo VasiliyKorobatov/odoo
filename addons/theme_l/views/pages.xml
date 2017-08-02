@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <template name="Услуги" id="website.services" page="True">
-            <t t-call="website.layout">
-                <div id="wrap">
-                    <div class="container">
-                        <h1>Наши услуги</h1>
-                        <ul class="services">
-                            <li>Производство почтовых ящиков</li>
-                            <li>Изготовление уличных урн</li>
-                            <li>Производство дачных умывальников</li>
-                        </ul>
-                    </div>
-                    <div class="oe_structure" />
-                </div>
-            </t>
-        </template>
-        <record id="services_page_link" model="website.menu">
-            <field name="name">Услуги</field>
-            <field name="url">/page/services</field>
-            <field name="parent_id" ref="website.main_menu" />
-            <field name="sequence" type="int">99</field>
-        </record>
+        <!--<template name="Услуги" id="website.services" page="True">-->
+            <!--<t t-call="website.layout">-->
+                <!--<div id="wrap">-->
+                    <!--<div class="container">-->
+                        <!--<h1>Наши услуги</h1>-->
+                        <!--<ul class="services">-->
+                            <!--<li>Производство почтовых ящиков</li>-->
+                            <!--<li>Изготовление уличных урн</li>-->
+                            <!--<li>Производство дачных умывальников</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                    <!--<div class="oe_structure" />-->
+                <!--</div>-->
+            <!--</t>-->
+        <!--</template>-->
+        <!--<record id="services_page_link" model="website.menu">-->
+            <!--<field name="name">Услуги</field>-->
+            <!--<field name="url">/page/services</field>-->
+            <!--<field name="parent_id" ref="website.main_menu" />-->
+            <!--<field name="sequence" type="int">99</field>-->
+        <!--</record>-->
     </data>
 </odoo>
