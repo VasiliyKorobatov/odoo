@@ -107,7 +107,7 @@
                                                 <!--}-->
                                                 <!--});-->
                                             </script>
-                                            <a id="your-city" href="#"> <span class="fa fa-map-marker"><span  id="user-city" /></span></a>
+                                            <a id="your-city" href="#"><span class="fa fa-map-marker">&amp;nbsp;<span  id="user-city" /></span></a>
                                         </li>
                                     </ul>
                                 </div>

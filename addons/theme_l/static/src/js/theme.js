@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $('#sidebar').on('show.bs.collapse', function(){
+        $('#sidebar').css("min-height", $('#wrap').outerHeight(true)+'px');
         $("main").attr("class","col-md-9");
     });
     $('#sidebar').on('hidden.bs.collapse', function(){
