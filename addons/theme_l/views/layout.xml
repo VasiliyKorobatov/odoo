@@ -99,6 +99,10 @@
                                                 }).then(function (result) {
                                                     $("#user-city").text(result.geoObjects.get(0).properties.get('name'));
                                                     $(function () {$("#your-city").popover('show')});
+                                                    $("#yes-city").click(function(){
+                                                        $("#your-city").popover('hide');
+                                                        Cookies.set('city', $("#user-city").text());
+                                                    });
                                                 });
 
                                                 });

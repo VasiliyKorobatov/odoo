@@ -9,10 +9,7 @@ $(document).ready(function() {
 
 });
 $(window).load(function() {
-    $("#yes-city").click(function(){
-        $("#your-city").popover('hide');
-        Cookies.set('city', $("#user-city").text());
-    });
+
 //
 //    if($("div#wrap").length && $("#sidebar").outerHeight(true)>$("div#wrap").outerHeight(true)){
 ////        $("#sidebar div.oe_structure").hide();
