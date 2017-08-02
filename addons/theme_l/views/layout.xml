@@ -110,7 +110,6 @@
                                                             });
                                                             $("#city a").click(function(){
                                                                var city = $(this).text();
-                                                               console.log(city);
                                                                $("#user-city").text(city);
                                                                Cookies.set('city', city, { expires: 365 });
                                                                $("#city").modal('hide');
