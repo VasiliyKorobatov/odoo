@@ -176,6 +176,9 @@
                                 <h4 class="modal-title">Выберите город</h4>
                             </div>
                             <div class="modal-body">
+                                <div class="row">
+
+
                                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                                     <a href="javascript:void(0)">Москва</a>
                                     <a href="javascript:void(0)">Санкт-Петербург</a>
@@ -213,6 +216,7 @@
                                     <a href="javascript:void(0)">Самара</a>
                                     <a href="javascript:void(0)">Миасс</a>
                                 </div>
+                                    </div>
                             </div>
                             <!--div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
