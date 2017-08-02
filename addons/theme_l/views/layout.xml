@@ -93,8 +93,9 @@
                                         <li>
                                             <script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU" type="text/javascript" />
                                             <script type="text/javascript">
-                                                console.log("string");
-                                                ymaps.geolocation.get({ provider: 'yandex',autoReverseGeocode: true}).then(function (result) {console.log(result.geoObjects.get(0).properties.get('metaDataProperty').getAll());});
+                                                ymaps.ready(function(){
+                                                    ymaps.geolocation.get({ provider: 'yandex',autoReverseGeocode: true}).then(function (result) {console.log(result.geoObjects.get(0).properties.get('metaDataProperty').getAll());});
+                                                });
                                                 <!--ymaps.ready(function() {-->
                                                 <!--if (typeof ymaps.geolocation.city != "undefined") {-->
                                                 <!--$('#user-city').text(ymaps.geolocation.city);-->
