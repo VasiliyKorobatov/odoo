@@ -94,19 +94,16 @@
                                             <script type="text/javascript">
                                                 ymaps.ready(function(){
                                                 ymaps.geolocation.get({
-                                                provider: 'yandex',
-                                                autoReverseGeocode: true
+                                                    provider: 'yandex',
+                                                    autoReverseGeocode: true
                                                 }).then(function (result) {
-                                                $("#user-city").text(result.geoObjects.get(0).properties.get('name'));
+                                                    $("#user-city").text(result.geoObjects.get(0).properties.get('name'));
+                                                    $(function () {$("#your-city").popover('show')});
                                                 });
+
                                                 });
-                                                <!--ymaps.ready(function() {-->
-                                                <!--if (typeof ymaps.geolocation.city != "undefined") {-->
-                                                <!--$('#user-city').text(ymaps.geolocation.city);-->
-                                                <!--}-->
-                                                <!--});-->
                                             </script>
-                                            <a data-toggle="modal" id="your-city" href="#city"><span class="fa fa-map-marker">&amp;nbsp;<span  id="user-city" /></span></a>
+                                            <a data-content="Ваш город" data-toggle="modal" id="your-city" href="#city"><span class="fa fa-map-marker">&amp;nbsp;<span  id="user-city" /></span></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -225,6 +222,7 @@
                         </div><!-- /.modal-content -->
                     </div><!-- /.modal-dialog -->
                 </div><!-- /.modal -->
+
             </xpath>
         </template>
         <template id="user_menu_enter" inherit_id="theme_l.static_menu" name="Enter in User Menu">
