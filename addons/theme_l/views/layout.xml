@@ -107,8 +107,8 @@
                                                             $("#no-city").click(function(){
                                                                 $("#city").modal('show');
                                                             });
-                                                            $("#city a").click(function(e){
-                                                               var city = e.text();
+                                                            $("#city a").click(function(){
+                                                               var city = $(this).text();
                                                                console.log(city);
                                                             });
                                                         });
