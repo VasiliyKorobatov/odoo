@@ -704,7 +704,7 @@ function detect_old_ie() {
                 imgObjwidth = imgObj.width();
                 imgObjwidth = 1000
                 imgObjheight = imgObj.height();
-                imgObjheight = 780
+                imgObjheight = 1000
 
                 if (current.options.adaptive) {
                     //Images corrections for adaptive
