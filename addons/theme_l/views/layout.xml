@@ -4694,7 +4694,7 @@
                             </div>
                             <div class="col-sm-7 col-md-6 col-lg-8" id="product_details">
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <h1 itemprop="name" t-field="product.name">Название продукта</h1>
+                                    <h1 class="text-center" itemprop="name" t-field="product.name">Название продукта</h1>
                                 </div>
                                 <span itemprop="url" style="display:none;" t-esc="'/shop/product/%s' % slug(product)"/>
                                 <div class="col-xs-12 col-md-6" />
@@ -4715,7 +4715,7 @@
                                                 <span class="fa fa-warning"/>
                                                 <span t-field="product.availability_warning"/>
                                             </div>
-                                            <div class="js_product col-xs-12" t-if="product.product_variant_ids">
+                                            <div class="js_product col-xs-12 mb8" t-if="product.product_variant_ids">
                                                 <t t-placeholder="select">
                                                     <input type="hidden" class="product_id" name="product_id"
                                                            t-att-value="product.product_variant_id.id if len(product.product_variant_ids) == 1 else '0'"/>
