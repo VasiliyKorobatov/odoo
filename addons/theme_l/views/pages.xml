@@ -71,7 +71,7 @@
                                 <div class="oe_structure" id="html_fields" data-oe-id="1525" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[3]/div[1]/form[1]/div[1]">
                                     <div class="hff hff_textbox form-group" data-form-type="textbox" data-field-id="11">
                                         <label class="control-label" for="city">Где удобно получить? *</label>
-                                        <input type="text" class="form-control" name="city" placeholder="например: г.Екатеринбург">
+                                        <input type="text" class="form-control" name="city" placeholder="например: г.Екатеринбург" />
                                     </div>
                                     <div class="hff hff_dropbox form-group" data-form-type="dropbox" data-field-id="16">
                                         <label class="control-label" for="x_carrier">Транспортная компания *</label>
@@ -95,22 +95,22 @@
                                     </div>
                                     <div class="hff hff_textbox form-group" data-form-type="textbox" data-field-id="14">
                                         <label class="control-label" for="partner_name">Ваше имя *</label>
-                                        <input type="text" class="form-control" name="partner_name" placeholder="введите Ваше имя">
+                                        <input type="text" class="form-control" name="partner_name" placeholder="введите Ваше имя" />
                                     </div>
                                     <div class="hff hff_textbox form-group" data-form-type="textbox" data-field-id="13">
                                         <label class="control-label" for="phone">Телефон *</label>
-                                        <input type="text" class="form-control" name="phone" placeholder="напр. +7-900-027-36-22">
+                                        <input type="text" class="form-control" name="phone" placeholder="напр. +7-900-027-36-22" />
                                     </div>
                                     <div class="hff hff_textbox form-group" data-form-type="textbox" data-field-id="15">
                                         <label class="control-label" for="email_from">Email *</label>
-                                        <input type="email" class="form-control" name="email_from" placeholder="напр. zakaz@lavkov.ru">
+                                        <input type="email" class="form-control" name="email_from" placeholder="напр. zakaz@lavkov.ru" />
                                     </div>
                                     <div class="hff hff_checkbox checkbox" data-form-type="checkbox_boolean" data-field-id="17">
-                                        <label><input type="checkbox" checked="checked" name="active">Нажимая на кнопку Расчитать, я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ О персональных данных, на условиях и для целей, определенных в Согласии на обработку персональных данных</label>
+                                        <label><input type="checkbox" checked="checked" name="active" />Нажимая на кнопку Расчитать, я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ О персональных данных, на условиях и для целей, определенных в Согласии на обработку персональных данных</label>
                                     </div>
                                 </div>
-                                <input type="hidden" name="form_id" value="4" data-oe-id="1525" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[3]/div[1]/form[1]/input[1]">
-                                <input type="hidden" name="csrf_token" data-oe-id="1525" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[3]/div[1]/form[1]/input[2]" value="62d8b7bcd1dcc6474d45396205ec0214366f37d6o1501768002">
+                                <input type="hidden" name="form_id" value="4" data-oe-id="1525" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[3]/div[1]/form[1]/input[1]"/>
+                                <input type="hidden" name="csrf_token" data-oe-id="1525" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[3]/div[1]/form[1]/input[2]" value="62d8b7bcd1dcc6474d45396205ec0214366f37d6o1501768002"/>
                                 <button class="btn btn-primary btn-lg" data-oe-id="1525" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[3]/div[1]/form[1]/button[1]">Рассчитать</button>
                             </form>
                         </div>
@@ -179,23 +179,23 @@
                             <form role="form" method="POST" action="https://shop.lavkov.ru/form/sinsert" enctype="multipart/form-data">
                                 <div class="oe_structure" id="html_fields" data-oe-id="1524" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[3]/div[1]/form[1]/div[1]">
                                     <div class="hff hff_textbox form-group" data-form-type="textbox" data-field-id="6">
-                                        <input type="hidden" class="form-control" name="name" value="Отзыв">
+                                        <input type="hidden" class="form-control" name="name" value="Отзыв"/>
                                     </div>
                                     <div class="hff hff_textbox form-group" data-form-type="textbox" data-field-id="7">
                                         <label class="control-label" for="partner_name">Ваше имя *</label>
-                                        <input type="text" class="form-control" name="partner_name">
+                                        <input type="text" class="form-control" name="partner_name"/>
                                     </div>
                                     <div class="hff hff_textbox form-group" data-form-type="textbox" data-field-id="8">
                                         <label class="control-label" for="email_from">Email *</label>
-                                        <input type="email" class="form-control" name="email_from">
+                                        <input type="email" class="form-control" name="email_from"/>
                                     </div>
                                     <div class="hff hff_textarea form-group" data-form-type="textarea" data-field-id="9">
                                         <label class="control-label" for="description">Отзыв *</label>
                                         <textarea class="form-control" name="description"></textarea>
                                     </div>
                                 </div>
-                                <input type="hidden" name="form_id" value="3" data-oe-id="1524" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[3]/div[1]/form[1]/input[1]">
-                                <input type="hidden" name="csrf_token" data-oe-id="1524" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[3]/div[1]/form[1]/input[2]" value="c67615aeaa63b55a5691e773585ec2b44d55b627o1501768240">
+                                <input type="hidden" name="form_id" value="3" data-oe-id="1524" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[3]/div[1]/form[1]/input[1]"/>
+                                <input type="hidden" name="csrf_token" data-oe-id="1524" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[3]/div[1]/form[1]/input[2]" value="c67615aeaa63b55a5691e773585ec2b44d55b627o1501768240"/>
                                 <button class="btn btn-primary btn-lg" data-oe-id="1524" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[3]/div[1]/form[1]/button[1]">Отправить</button>
                             </form>
                         </div>
