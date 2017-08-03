@@ -4701,6 +4701,7 @@
                                 <div class="col-xs-12 col-md-6">
                                 <form action="/shop/cart/update" class="js_add_cart_variants"
                                       t-att-data-attribute_value_ids="product.product_variant_ids.ids" method="POST">
+                                    <div class="col-xs-12">
                                     <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
                                     <div class="text-center">
                                         <t t-call="theme_l.product_price"/>
@@ -4731,6 +4732,7 @@
                                             не
                                             доступен
                                         </p>
+                                    </div>
                                     </div>
                                 </form>
                                     </div>
