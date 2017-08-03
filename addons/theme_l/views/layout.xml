@@ -4823,8 +4823,8 @@
                                     <span>В наличии</span>
                                 </div>
                                 <a id="add_to_cart"
-                                   class="btn btn-primary btn-lg mt8 js_check_product a-submit text-center center-block"
-                                   href="#">В корзину
+                                   class="btn btn-primary mt8 js_check_product a-submit text-center center-block"
+                                   href="#"><span class="fa fa-shopping-cart" />&amp;nbsp;В корзину
                                 </a>
                                 <div t-if="product.availability == 'warning'" class="alert alert-warning">
                                     <span class="fa fa-warning"/>
