@@ -93,31 +93,31 @@
                                             <script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU" type="text/javascript" />
                                             <script type="text/javascript">
                                                 ymaps.ready(function(){
-                                                    if(typeof Cookies.get("city") == "undefined"){
-                                                        ymaps.geolocation.get({
-                                                            provider: 'yandex',
-                                                            autoReverseGeocode: true
-                                                        }).then(function (result) {
-                                                            $("#user-city").text(result.geoObjects.get(0).properties.get('name'));
-                                                            $(function () {$("#your-city").popover('show')});
-                                                            $("#yes-city").click(function(){
-                                                                $("#your-city").popover('hide');
-                                                                Cookies.set('city', $("#user-city").text(), { expires: 365 });
-                                                            });
-                                                            $("#no-city").click(function(){
-                                                                $("#your-city").popover('hide')
-                                                                $("#city").modal('show');
-                                                            });
-                                                            $("#city a").click(function(){
-                                                               var city = $(this).text();
-                                                               $("#user-city").text(city);
-                                                               Cookies.set('city', city, { expires: 365 });
-                                                               $("#city").modal('hide');
-                                                            });
-                                                        });
-                                                    } else {
-                                                        $("#user-city").text(Cookies.get("city"));
-                                                    }
+                                                if(typeof Cookies.get("city") == "undefined"){
+                                                ymaps.geolocation.get({
+                                                provider: 'yandex',
+                                                autoReverseGeocode: true
+                                                }).then(function (result) {
+                                                $("#user-city").text(result.geoObjects.get(0).properties.get('name'));
+                                                $(function () {$("#your-city").popover('show')});
+                                                $("#yes-city").click(function(){
+                                                $("#your-city").popover('hide');
+                                                Cookies.set('city', $("#user-city").text(), { expires: 365 });
+                                                });
+                                                $("#no-city").click(function(){
+                                                $("#your-city").popover('hide')
+                                                $("#city").modal('show');
+                                                });
+                                                $("#city a").click(function(){
+                                                var city = $(this).text();
+                                                $("#user-city").text(city);
+                                                Cookies.set('city', city, { expires: 365 });
+                                                $("#city").modal('hide');
+                                                });
+                                                });
+                                                } else {
+                                                $("#user-city").text(Cookies.get("city"));
+                                                }
                                                 });
                                             </script>
                                             <a data-title="Ваш город?" data-trigger="manual" data-content="&lt;div class='row'&gt;&lt;div class='col-xs-12'&gt;&lt;a class='btn btn-success btn-sm' id='yes-city' href='javascript:void(0)'&gt;Да&lt;/a&gt;&lt;a class='btn btn-default btn-sm' id='no-city' style='margin-left:10px;' href='javascript:void(0)'&gt;Нет&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;" data-delay="3" data-html="true" data-container="body"  data-placement="bottom"  data-toggle="modal" id="your-city" href="#city">
@@ -198,44 +198,44 @@
                                 <div class="row">
 
 
-                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                                    <a href="javascript:void(0)">Москва</a>
-                                    <a href="javascript:void(0)">Санкт-Петербург</a>
-                                    <a href="javascript:void(0)">Новосибирск</a>
-                                    <a href="javascript:void(0)">Казань</a>
-                                    <a href="javascript:void(0)">Челябинск</a>
-                                    <a href="javascript:void(0)">Омск</a>
-                                    <a href="javascript:void(0)">Екатеринбург</a>
-                                    <a href="javascript:void(0)">Златоуст</a>
-                                    <a href="javascript:void(0)">Нижний Новгород</a>
-                                    <a href="javascript:void(0)">Уфа</a>
-                                    <a href="javascript:void(0)">Самара</a>
-                                </div>
-                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                                    <a href="javascript:void(0)">Пермь</a>
-                                    <a href="javascript:void(0)">Тюмень</a>
-                                    <a href="javascript:void(0)">Саратов</a>
-                                    <a href="javascript:void(0)">Оренбург</a>
-                                    <a href="javascript:void(0)">Стерлитамак</a>
-                                    <a href="javascript:void(0)">Кемерово</a>
-                                    <a href="javascript:void(0)">Красноярск</a>
-                                    <a href="javascript:void(0)">Рязань</a>
-                                    <a href="javascript:void(0)">Ижевск</a>
-                                    <a href="javascript:void(0)">Пенза</a>
-                                    <a href="javascript:void(0)">Ульяновск</a>
-                                    <a href="javascript:void(0)">Набережные Челны</a>
-                                </div>
-                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                                    <a href="javascript:void(0)">Курган</a>
-                                    <a href="javascript:void(0)">Астрахань</a>
-                                    <a href="javascript:void(0)">Барнаул</a>
-                                    <a href="javascript:void(0)">Магнитогорск</a>
-                                    <a href="javascript:void(0)">Нижний Тагил</a>
-                                    <a href="javascript:void(0)">Тула</a>
-                                    <a href="javascript:void(0)">Самара</a>
-                                    <a href="javascript:void(0)">Миасс</a>
-                                </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <a href="javascript:void(0)">Москва</a>
+                                        <a href="javascript:void(0)">Санкт-Петербург</a>
+                                        <a href="javascript:void(0)">Новосибирск</a>
+                                        <a href="javascript:void(0)">Казань</a>
+                                        <a href="javascript:void(0)">Челябинск</a>
+                                        <a href="javascript:void(0)">Омск</a>
+                                        <a href="javascript:void(0)">Екатеринбург</a>
+                                        <a href="javascript:void(0)">Златоуст</a>
+                                        <a href="javascript:void(0)">Нижний Новгород</a>
+                                        <a href="javascript:void(0)">Уфа</a>
+                                        <a href="javascript:void(0)">Самара</a>
                                     </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <a href="javascript:void(0)">Пермь</a>
+                                        <a href="javascript:void(0)">Тюмень</a>
+                                        <a href="javascript:void(0)">Саратов</a>
+                                        <a href="javascript:void(0)">Оренбург</a>
+                                        <a href="javascript:void(0)">Стерлитамак</a>
+                                        <a href="javascript:void(0)">Кемерово</a>
+                                        <a href="javascript:void(0)">Красноярск</a>
+                                        <a href="javascript:void(0)">Рязань</a>
+                                        <a href="javascript:void(0)">Ижевск</a>
+                                        <a href="javascript:void(0)">Пенза</a>
+                                        <a href="javascript:void(0)">Ульяновск</a>
+                                        <a href="javascript:void(0)">Набережные Челны</a>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <a href="javascript:void(0)">Курган</a>
+                                        <a href="javascript:void(0)">Астрахань</a>
+                                        <a href="javascript:void(0)">Барнаул</a>
+                                        <a href="javascript:void(0)">Магнитогорск</a>
+                                        <a href="javascript:void(0)">Нижний Тагил</a>
+                                        <a href="javascript:void(0)">Тула</a>
+                                        <a href="javascript:void(0)">Самара</a>
+                                        <a href="javascript:void(0)">Миасс</a>
+                                    </div>
+                                </div>
                             </div>
                             <!--div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -419,7 +419,6 @@
                                 <i class="fa fa-chevron-right"/>
                             </div>
                         </div>
-
                     </div>
                     <section class="o_data_slider mb32 container text-center" data-options="{&quot;lazyLoad&quot;:&quot;ondemand&quot;,&quot;slidesToShow&quot;:3,&quot;slidesToScroll&quot;:1,&quot;dots&quot;:true,&quot;infinite&quot;:true,&quot;speed&quot;:500,&quot;arrows&quot;:true,&quot;autoplay&quot;:true,&quot;adaptiveHeight&quot;:false,&quot;variableWidth&quot;:false,&quot;autoplaySpeed&quot;:3000,&quot;data_model&quot;:&quot;product.template&quot;,&quot;data_domain&quot;:[[&quot;website_published&quot;,&quot;=&quot;,true]],&quot;data_image_field&quot;:&quot;image_medium&quot;,&quot;data_name_field&quot;:&quot;display_name&quot;,&quot;data_title&quot;:&quot;Наша продукция &quot;,&quot;data_title_tag&quot;:&quot;h1&quot;,&quot;data_title_class&quot;:&quot;text-center&quot;,&quot;data_uri_field&quot;:&quot;website_url&quot;,&quot;data_container_width&quot;:&quot;90%&quot;,&quot;data_limit&quot;:10,&quot;prevArrow&quot;:&quot;&lt;a href=\&quot;#\&quot; class=\&quot;slider-arrow-left\&quot;&gt;&lt;i class=\&quot;fa fa-arrow-left fa-2x\&quot;&gt;&lt;/i&gt;&lt;/a&gt;&quot;,&quot;nextArrow&quot;:&quot;&lt;a href=\&quot;#\&quot; class=\&quot;slider-arrow-right\&quot;&gt;&lt;i class=\&quot;fa fa-arrow-right fa-2x\&quot;&gt;&lt;/i&gt;&lt;/a&gt;&quot;}" style="width: 90%;">
                         <div class="row">
@@ -707,7 +706,22 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="oe_structure oe_empty" />
+                    <div class="oe_structure oe_empty">
+                        <section class="jumbotron mt0 mb0 o_animate o_visible o_animated o_anim_bounce_in_left o_animate_preview bg-gray-lighter" style="visibility: visible; animation-play-state: running;">
+                            <div class="container">
+                                <h3>Оставайтесь на связи с нами</h3>
+                                <p>В одиночку мы можем сделать многое, вместе - еще больше</p>
+                                <div class="input-group js_subscribe" data-list-id="1" data-subscribe="off">
+                                    <input type="email" name="email" class="js_subscribe_email form-control" placeholder="ваш электронный адрес...">
+                                    <span class="input-group-btn">
+                                        <a href="#" class="btn btn-primary js_subscribe_btn o_default_snippet_text">Подписаться</a>
+                                        <a href="#" class="btn btn-success js_subscribed_btn hidden o_default_snippet_text" disabled="disabled">Спасибо</a>
+                                    </span>
+                                    <div class="alert alert-success hidden o_default_snippet_text">Спасибо за подписку!</div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </div>
             </xpath>
         </template>
