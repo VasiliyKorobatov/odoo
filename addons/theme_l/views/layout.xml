@@ -94,7 +94,10 @@
                                                 autoReverseGeocode: true
                                                 }).then(function (result) {
                                                 $("#user-city").text(result.geoObjects.get(0).properties.get('name'));
-                                                $(function () {$("#your-city").popover('show')});
+                                                $(function () {
+                                                    $("#your-city").popover('show');
+                                                    $(".popover").css("position","fixed");
+                                                });
                                                 $("#yes-city").click(function(){
                                                 $("#your-city").popover('hide');
                                                 Cookies.set('city', $("#user-city").text(), { expires: 365 });
