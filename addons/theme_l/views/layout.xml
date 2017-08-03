@@ -729,7 +729,7 @@
                                     <div class="o_popup_modal_body text-center">
                                         <div class="o_popup_content_dev" data-oe-placeholder="Type Here ..."><div><div class="modal-header text-center"><h3 class="modal-title mt8">ООО "Лавков" для клиентов</h3></div><div class="o_popup_message" style="text-align: left;"><strong>Специальные условия для постоянных покупателей</strong></div><p class="o_message_paragraph">оставайтесь с нами на связи</p></div></div>
                                         <div class="input-group o_not_editable o_popup_animated o_popup_bounce_del500ms o_popup_bounce_small" style="display: table;" contenteditable="false">
-                                            <input type="email" name="email" class="popup_subscribe_email form-control" placeholder="адрес электронной почты..." autofocus="autofocus">
+                                            <input type="email" name="email" class="popup_subscribe_email form-control" placeholder="адрес электронной почты..." autofocus="autofocus" />
                                             <span class="input-group-btn">
                                                 <a href="#" class="btn btn-success popup_subscribe_btn o_default_snippet_text">Подписаться</a>
                                             </span>
