@@ -2,25 +2,216 @@
 <odoo>
     <data>
         <!--<template name="Услуги" id="website.services" page="True">-->
-            <!--<t t-call="website.layout">-->
-                <!--<div id="wrap">-->
-                    <!--<div class="container">-->
-                        <!--<h1>Наши услуги</h1>-->
-                        <!--<ul class="services">-->
-                            <!--<li>Производство почтовых ящиков</li>-->
-                            <!--<li>Изготовление уличных урн</li>-->
-                            <!--<li>Производство дачных умывальников</li>-->
-                        <!--</ul>-->
-                    <!--</div>-->
-                    <!--<div class="oe_structure" />-->
-                <!--</div>-->
-            <!--</t>-->
+        <!--<t t-call="website.layout">-->
+        <!--<div id="wrap">-->
+        <!--<div class="container">-->
+        <!--<h1>Наши услуги</h1>-->
+        <!--<ul class="services">-->
+        <!--<li>Производство почтовых ящиков</li>-->
+        <!--<li>Изготовление уличных урн</li>-->
+        <!--<li>Производство дачных умывальников</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <!--<div class="oe_structure" />-->
+        <!--</div>-->
+        <!--</t>-->
         <!--</template>-->
         <!--<record id="services_page_link" model="website.menu">-->
-            <!--<field name="name">Услуги</field>-->
-            <!--<field name="url">/page/services</field>-->
-            <!--<field name="parent_id" ref="website.main_menu" />-->
-            <!--<field name="sequence" type="int">99</field>-->
+        <!--<field name="name">Услуги</field>-->
+        <!--<field name="url">/page/services</field>-->
+        <!--<field name="parent_id" ref="website.main_menu" />-->
+        <!--<field name="sequence" type="int">99</field>-->
         <!--</record>-->
+        <template name="Оплата" id="website.oplata" page="True">
+            <t t-call="website.layout">
+                <div id="wrap">
+                    <div class="container">
+                        <h1>Оплата</h1>
+                    </div>
+                    <div class="oe_structure" />
+                </div>
+            </t>
+        </template>
+        <template name="Доставка" id="website.dostavka" page="True">
+            <t t-call="website.layout">
+                <div id="wrap" class="">
+                    <section class="s_title" data-oe-id="1525" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[1]">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1 class="text-center">Доставка</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_text_block" data-oe-id="1525" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[2]">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mb16 mt16">
+                                    <p>Наша компания работает как в Уральском регионе, так и по всей территории России. Отправляем продукцию начиная от картонной коробки до фуры. </p>
+                                    <ol>
+                                        <li>
+                                            <p>Уточните город получения товара </p>
+                                        </li>
+                                        <li>
+                                            <p>Выберите транспортные компании которые работают в вашем городе. Сомневаетесь, оставьте поле пустым мы самостоятельно подберём оптимальный вариант </p>
+                                        </li>
+                                        <li>
+                                            <p>Уточните наименование и количество</p>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="html_form" data-form-model="crm.lead" data-form-id="4">
+                        <div class="container mt16 mb16">
+                            <h2 data-oe-id="1525" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[3]/div[1]/h2[1]">Узнать себестоимость заказа с доставкой</h2>
+                            <form role="form" method="POST" action="https://shop.lavkov.ru/form/sinsert" enctype="multipart/form-data">
+                                <div class="oe_structure" id="html_fields" data-oe-id="1525" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[3]/div[1]/form[1]/div[1]">
+                                    <div class="hff hff_textbox form-group" data-form-type="textbox" data-field-id="11">
+                                        <label class="control-label" for="city">Где удобно получить? *</label>
+                                        <input type="text" class="form-control" name="city" placeholder="например: г.Екатеринбург">
+                                    </div>
+                                    <div class="hff hff_dropbox form-group" data-form-type="dropbox" data-field-id="16">
+                                        <label class="control-label" for="x_carrier">Транспортная компания *</label>
+                                        <select class="form-control" name="x_carrier">
+                                            <option value="">Выберите транспортную компанию...</option>
+                                            <option value="2">Доставка транспортной компанией</option>
+                                            <option value="3">ТК ПЭК</option>
+                                            <option value="4">ТК КИТ</option>
+                                            <option value="5">ТК Ратэк</option>
+                                            <option value="6">Деловые линии</option>
+                                            <option value="7">Экспресс-Авто</option>
+                                            <option value="8">ЖелДорЭкспедиция</option>
+                                            <option value="9">ТК Энергия</option>
+                                            <option value="10">ТК Грузлайн</option>
+                                            <option value="11">ТК Байкал-сервис</option>
+                                        </select>
+                                    </div>
+                                    <div class="hff hff_textarea form-group" data-form-type="textarea" data-field-id="12">
+                                        <label class="control-label" for="description">Наименование товара и количество в шт.</label>
+                                        <textarea class="form-control" name="description" placeholder="&quot;Урна с крышкой&quot; 50 шт., &quot;Почтовый ящик Почта без замка&quot; 10 шт."></textarea>
+                                    </div>
+                                    <div class="hff hff_textbox form-group" data-form-type="textbox" data-field-id="14">
+                                        <label class="control-label" for="partner_name">Ваше имя *</label>
+                                        <input type="text" class="form-control" name="partner_name" placeholder="введите Ваше имя">
+                                    </div>
+                                    <div class="hff hff_textbox form-group" data-form-type="textbox" data-field-id="13">
+                                        <label class="control-label" for="phone">Телефон *</label>
+                                        <input type="text" class="form-control" name="phone" placeholder="напр. +7-900-027-36-22">
+                                    </div>
+                                    <div class="hff hff_textbox form-group" data-form-type="textbox" data-field-id="15">
+                                        <label class="control-label" for="email_from">Email *</label>
+                                        <input type="email" class="form-control" name="email_from" placeholder="напр. zakaz@lavkov.ru">
+                                    </div>
+                                    <div class="hff hff_checkbox checkbox" data-form-type="checkbox_boolean" data-field-id="17">
+                                        <label><input type="checkbox" checked="checked" name="active">Нажимая на кнопку Расчитать, я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ О персональных данных, на условиях и для целей, определенных в Согласии на обработку персональных данных</label>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="form_id" value="4" data-oe-id="1525" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[3]/div[1]/form[1]/input[1]">
+                                <input type="hidden" name="csrf_token" data-oe-id="1525" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[3]/div[1]/form[1]/input[2]" value="62d8b7bcd1dcc6474d45396205ec0214366f37d6o1501768002">
+                                <button class="btn btn-primary btn-lg" data-oe-id="1525" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[3]/div[1]/form[1]/button[1]">Рассчитать</button>
+                            </form>
+                        </div>
+                    </section>
+                    <div class="oe_structure" />
+                </div>
+            </t>
+        </template>
+        <template name="Гарантии" id="website.garantii" page="True">
+            <t t-call="website.layout">
+                <div id="wrap">
+                    <div class="container">
+                        <h1>Гарантии</h1>
+                    </div>
+                    <div class="oe_structure" />
+                </div>
+            </t>
+        </template>
+        <template name="О компании" id="website.okompanii" page="True">
+            <t t-call="website.layout">
+                <div id="wrap">
+                    <div class="container">
+                        <h1>О компании</h1>
+                    </div>
+                    <div class="oe_structure" />
+                </div>
+            </t>
+        </template>
+        <template name="Отзывы" id="website.otzyvy" page="True">
+            <t t-call="website.layout">
+                <div id="wrap" class="oe_structure oe_empty">
+                    <section class="s_title" data-oe-id="1524" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[1]">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1 class="text-center">Отзывы о нас</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="s_text_block" data-oe-id="1524" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[2]">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mb16 mt16">
+                                    <blockquote>Спасибо! Сервис на высоте. Понравилось с вами сотрудничать. Будем Вас рекомендовать! Сыктывкар<br><div style="text-align: right;">&nbsp;<b style="color: rgb(77, 77, 77); font-family: Arial, Helvetica, sans-serif; font-size: 15px;">Елена</b><span style="color: rgb(77, 77, 77); font-family: Arial, Helvetica, sans-serif; font-size: 15px;">&nbsp;<b>27.04.2017 14:30</b></span></div></blockquote>
+                                    <blockquote>Покупали почтовые ящики для подъезда. Сервисное обслуживание на высоте. Ящики свою недорогую стоимость оправдывают. Были проблемы с доставкой ТК КИТ.<br><div style="text-align: right;"><b style="font-size: 15px; color: rgb(77, 77, 77); font-family: Arial, Helvetica, sans-serif;">Ирина 14.04.2017 08:42</b></div></blockquote>
+                                    <blockquote>Поставили урны, на ощупь металл и правду толстый, крепление хорошее.<br><div style="text-align: right;"><font color="#4d4d4d" face="Arial, Helvetica, sans-serif"><span style="font-size: 15px;"><b>Светлана 27.02.2017 05:29</b></span></font></div></blockquote>
+                                    <blockquote>Заказала почтовые ящики для дома в Челябинске, сервисом компании довольна. Буду рекомендовать!<br><div style="text-align: right;"><font color="#4d4d4d" face="Arial, Helvetica, sans-serif"><span style="font-size: 15px;"><b>Елена 18.11.2016 06:13</b></span></font></div></blockquote>
+                                    <blockquote>Всё отлично. Заказали почтовые ящики для подъезда. Пришли быстро.<br><div style="text-align: right;"><font color="#4d4d4d" face="Arial, Helvetica, sans-serif"><span style="font-size: 15px;"><b>Александр Брынцев 20.04.2016 05:35</b></span></font></div></blockquote>
+                                    <blockquote>Покупали почтовые ящики для подъезда. Сервисное обслуживание на высоте. Ящики свою недорогую стоимость оправдывают. Были проблемы с доставкой ТК КИТ.<br><div style="text-align: right;"><b style="font-size: 15px; color: rgb(77, 77, 77); font-family: Arial, Helvetica, sans-serif;">Ирина 14.04.2017 08:42</b></div></blockquote>
+                                    <blockquote>Качество уличных урн соответствует стоимости. Не ожидали, что за 700 рублей можно купить приличные урны. Благодарю.<br><div style="text-align: right;"><font color="#4d4d4d" face="Arial, Helvetica, sans-serif"><span style="font-size: 15px;"><b>Ирина из Екатеринбурга 15.03.2016 10:50</b></span></font></div></blockquote>
+                                    <blockquote>Привет из Пскова. Пишем сказать, большое спасибо, за приобретенные у вас почтовые ящики. В подъезде стало светлее и наряднее. Переживали, что переведем вам денежки на банковскую карту, а они ту-ту, но вы молодцы, что нас не подвели.<br><div style="text-align: right;"><font color="#4d4d4d" face="Arial, Helvetica, sans-serif"><span style="font-size: 15px;"><b>Марина 14.03.2016 18:47</b></span></font></div></blockquote>
+                                    <blockquote>Спасибо за превосходный сервис и качество работы. Обязательно буду рекомендовать знакомым.<br><div style="text-align: right;"><font color="#4d4d4d" face="Arial, Helvetica, sans-serif"><span style="font-size: 15px;"><b>Оля 10.02.2016 16:54</b></span></font></div></blockquote>
+                                    <blockquote>Спасибо огромное компании! Цены приемлемые сервис отличный. Короче кто надумает не сомневайтесь.<br><div style="text-align: right;"><font color="#4d4d4d" face="Arial, Helvetica, sans-serif"><span style="font-size: 15px;"><b>Соколов Евгений 25.11.2015 16:51</b></span></font></div></blockquote>
+                                    <blockquote>Клиентский сервис поставлен хорошо, приятно общаться, отвечают быстро и компетентно. Сработать не получилось по моим причинам, но в следующий раз к ним обращусь точно.<br><div style="text-align: right;"><font color="#4d4d4d" face="Arial, Helvetica, sans-serif"><span style="font-size: 15px;"><b>Субботин Игорь 16.11.2015 09:12</b></span></font></div></blockquote>
+                                    <blockquote>Спасибо большое! Было приятно работать! Ребята - молодцы сопровождают заказ "От звонка и До доставки", все возникшее вопросы укомплектованию моего заказа и по доставке решили быстро и оперативно!<br><div style="text-align: right;"><span style="font-size: 15px;"><b>Василий 25.08.2015 19:48</b></span></div></blockquote>
+                                    <blockquote>Очень доволен сервисом компании. Нельзя не отметить качество продукции. Ребята работают на высшем уровне.<br><div style="text-align: right;"><font color="#4d4d4d" face="Arial, Helvetica, sans-serif"><span style="font-size: 15px;"><b>Александр Крапкин 10.06.2015 01:51</b></span></font></div></blockquote>
+                                    <blockquote>Приобрела ящики и очень довольна. Соотношение “цена - качество” — самое оптимальное! В общем, молодцы. Отгрузили быстро.<br><div style="text-align: right;"><font color="#4d4d4d" face="Arial, Helvetica, sans-serif"><span style="font-size: 15px;"><b>Василиса Агапкина 10.05.2015 08:51</b></span></font></div></blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="html_form mb32" data-form-model="crm.lead" data-form-id="3">
+                        <div class="container mt16 mb16">
+                            <h2 data-oe-id="1524" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[3]/div[1]/h2[1]">Оставить отзыв</h2>
+                            <form role="form" method="POST" action="https://shop.lavkov.ru/form/sinsert" enctype="multipart/form-data">
+                                <div class="oe_structure" id="html_fields" data-oe-id="1524" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[3]/div[1]/form[1]/div[1]">
+                                    <div class="hff hff_textbox form-group" data-form-type="textbox" data-field-id="6">
+                                        <input type="hidden" class="form-control" name="name" value="Отзыв">
+                                    </div>
+                                    <div class="hff hff_textbox form-group" data-form-type="textbox" data-field-id="7">
+                                        <label class="control-label" for="partner_name">Ваше имя *</label>
+                                        <input type="text" class="form-control" name="partner_name">
+                                    </div>
+                                    <div class="hff hff_textbox form-group" data-form-type="textbox" data-field-id="8">
+                                        <label class="control-label" for="email_from">Email *</label>
+                                        <input type="email" class="form-control" name="email_from">
+                                    </div>
+                                    <div class="hff hff_textarea form-group" data-form-type="textarea" data-field-id="9">
+                                        <label class="control-label" for="description">Отзыв *</label>
+                                        <textarea class="form-control" name="description"></textarea>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="form_id" value="3" data-oe-id="1524" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[3]/div[1]/form[1]/input[1]">
+                                <input type="hidden" name="csrf_token" data-oe-id="1524" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[3]/div[1]/form[1]/input[2]" value="c67615aeaa63b55a5691e773585ec2b44d55b627o1501768240">
+                                <button class="btn btn-primary btn-lg" data-oe-id="1524" data-oe-model="ir.ui.view" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/section[3]/div[1]/form[1]/button[1]">Отправить</button>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </t>
+        </template>
+        <template name="Реквизиты" id="website.rekvizity" page="True">
+            <t t-call="website.layout">
+                <div id="wrap">
+                    <div class="container">
+                        <h1>Реквизиты</h1>
+                    </div>
+                    <div class="oe_structure" />
+                </div>
+            </t>
+        </template>
     </data>
 </odoo>

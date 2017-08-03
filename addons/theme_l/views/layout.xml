@@ -144,54 +144,36 @@
                                             </a>
                                             <ul class="dropdown-menu" role="menu">
                                                 <li>
-                                                    <a href="/shop">
-                                                        <span data-oe-model="website.menu" data-oe-id="13"
-                                                              data-oe-field="name" data-oe-type="char"
-                                                              data-oe-expression="submenu.name">Вся продукция
-                                                        </span>
+                                                    <a href="/page/oplata">
+                                                        <span>Оплата</span>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="/shop/category/zheleznye-urny-2">
-                                                        <span data-oe-model="website.menu" data-oe-id="8"
-                                                              data-oe-field="name" data-oe-type="char"
-                                                              data-oe-expression="submenu.name">Железные урны
-                                                        </span>
+                                                    <a href="/page/dostavka">
+                                                        <span>Доставка</span>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="/shop/category/sektsionnye-pochtovye-iashchiki-3">
-                                                        <span data-oe-model="website.menu" data-oe-id="9"
-                                                              data-oe-field="name" data-oe-type="char"
-                                                              data-oe-expression="submenu.name">Секционные почтовые
-                                                            ящики
-                                                        </span>
+                                                    <a href="/page/garantii">
+                                                        <span>Гарантия</span>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="/shop/category/ulichnye-pochtovye-iashchiki-4">
-                                                        <span data-oe-model="website.menu" data-oe-id="10"
-                                                              data-oe-field="name" data-oe-type="char"
-                                                              data-oe-expression="submenu.name">Уличные почтовые ящики
-                                                        </span>
+                                                    <a href="/page/okompanii">
+                                                        <span>О компании</span>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="/shop/category/umyvalniki-dachnye-1">
-                                                        <span data-oe-model="website.menu" data-oe-id="11"
-                                                              data-oe-field="name" data-oe-type="char"
-                                                              data-oe-expression="submenu.name">Умывальники
-                                                        </span>
+                                                    <a href="/page/otzyvy">
+                                                        <span>Отзывы</span>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="/shop/category/krovati-metallicheskie-5">
-                                                        <span data-oe-model="website.menu" data-oe-id="12"
-                                                              data-oe-field="name" data-oe-type="char"
-                                                              data-oe-expression="submenu.name">Металлические кровати
-                                                        </span>
+                                                    <a href="/page/rekvizity">
+                                                        <span>Реквизиты</span>
                                                     </a>
                                                 </li>
+
                                             </ul>
                                         </li>
 
