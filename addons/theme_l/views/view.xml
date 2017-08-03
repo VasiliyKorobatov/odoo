@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!--<record model="ir.ui.view"-->
-            <!--id="theme_l.product_template_form_view">-->
-        <!--<field name="name">theme_l.product.dimensions.product.template.form</field>-->
-        <!--<field name="model">product.template</field>-->
-        <!--<field name="inherit_id"-->
-               <!--ref="product.product_template_form_view"/>-->
-        <!--<field name="arch" type="xml">-->
-            <!--<xpath expr="//notebook/page[1]" position="inside">-->
-                <!--<group>-->
-                    <!--<group>-->
-                        <!--<field name="dimensions_uom_id"/>-->
-                    <!--</group>-->
-                <!--</group>-->
-            <!--</xpath>-->
-        <!--</field>-->
-    <!--</record>-->
-    <!--<record model="ir.ui.view"-->
-            <!--id="theme_l.product_product_form_view">-->
-        <!--<field name="name">theme_l.product.dimensions.product.product.form</field>-->
-        <!--<field name="model">product.product</field>-->
-        <!--<field name="inherit_id"-->
-               <!--ref="product.product_variant_easy_edit_view"/>-->
-        <!--<field name="arch" type="xml">-->
-            <!--<xpath expr="//field[@name='weight']" position="after">-->
-                <!--<field name="length"/>-->
-                <!--<field name="width"/>-->
-                <!--<field name="height"/>-->
-            <!--</xpath>-->
-        <!--</field>-->
-    <!--</record>-->
+    <record model="ir.ui.view"
+            id="theme_l.product_template_form_view">
+        <field name="name">theme_l.product.dimensions.product.template.form</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id"
+               ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook/page[1]" position="inside">
+                <group>
+                    <group>
+                        <field name="dimensions_uom_id"/>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+    <record model="ir.ui.view"
+            id="theme_l.product_product_form_view">
+        <field name="name">theme_l.product.dimensions.product.product.form</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id"
+               ref="product.product_variant_easy_edit_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='weight']" position="after">
+                <field name="length"/>
+                <field name="width"/>
+                <field name="height"/>
+            </xpath>
+        </field>
+    </record>
 </odoo>
