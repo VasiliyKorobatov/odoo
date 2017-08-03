@@ -4110,8 +4110,8 @@
 
     <template id="user_menu_cart" inherit_id="user_menu" name="Cart in User Menu">
         <xpath expr=".//*[@id='user-menu-cart']" position="inside">
-            <div class="hidden-sm col-md-7"/>
-            <div class="col-sm-12 col-md-5">
+            <div class="hidden-sm col-md-6"/>
+            <div class="col-sm-12 col-md-6">
                 <t t-set="website_sale_order" t-value="website.sale_get_order()"/>
                 <a id="cart-btn" href="/shop/cart" class="btn">
                     <i class="fa fa-shopping-cart"/>
@@ -4915,7 +4915,7 @@
         </xpath>
     </template>
     <template id="marquee_text" inherit_id="theme_l.user_menu_cart" name="Marquee">
-        <xpath expr="//div[@class='hidden-sm col-md-7']" position="inside">
+        <xpath expr="//div[@class='hidden-sm col-md-6']" position="inside">
             <marquee direction="left" class="mt4">
                 Застройщикам и оптовым покупателям индвидуальные скидки! Звоните сейчас ... +7-351-711-12-49
             </marquee>
