@@ -216,7 +216,7 @@
                             </div>
                             <div class="modal-body">
                                 <div class="row">
-                                    <ul>
+                                    <ul id="region-list">
                                         <li data-region-id='0'>
                                             <ul class='cities-list'>
                                                 <li class='city-name' data-location-city='509'>
