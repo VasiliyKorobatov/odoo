@@ -4599,8 +4599,8 @@
                 <t t-set="additional_title" t-value="product.name"/>
                 <div itemscope="itemscope" itemtype="http://schema.org/Product" id="wrap" class="js_sale">
                     <section
-                            t-attf-class="container mt8 oe_website_sale #{(compute_currency(product.lst_price) - product.website_price) &gt; 0.01 and website.get_current_pricelist().discount_policy == 'without_discount'  and 'discount'}"
-                            id="product_detail">
+                            t-attf-class="container-fluid oe_website_sale #{(compute_currency(product.lst_price) - product.website_price) &gt; 0.01 and website.get_current_pricelist().discount_policy == 'without_discount'  and 'discount'}"
+                            id="product_detail" style="max-width:1310px;">
                         <div class="row">
                             <div class="col-sm-8">
                                 <ol class="breadcrumb">
