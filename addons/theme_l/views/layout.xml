@@ -421,39 +421,6 @@
                         </div>
 
                     </div>
-                    <div class="row">
-                        <div class="container">
-                            <h2 class="text-center">Категории продукции</h2>
-                            <ul class="homepage-categories">
-                                <t t-foreach="request.website.sale_categories()" t-as="c">
-                                    <t t-call="theme_l.categories_recursive_homepage"/>
-                                </t>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="oe_structure oe_empty">
-                        <section class="s_text_block">
-                            <div class="container">
-                                <h3 class="text-center text-muted o_default_snippet_text">Здрасти, Hello, Салеметсiз бе.</h3>
-                                <div class="row">
-                                    <div class="col-md-12 mb16 mt16">
-                                        <div class="o_image_floating pull-right s_image_floating o_margin_l">
-                                            <div class="o_container">
-                                                <img class="img img-rounded img-responsive" src="/web/image/2106" />
-                                            </div>
-                                            <div class="o_footer">
-                                                <small class="text-muted">Отличные почтовые ящики идеально подойдут в любой подъезд</small>
-                                            </div>
-                                        </div>
-                                        <p class="o_default_snippet_text">Ящики почтовые уличные "Почта", секционные ящики "Подъезд", облагородить площадку во дворе, заказав уличную урну от 24 литров или скамейку для сада. Низкие цены, высокое качество. </p>
-                                        <p>Для армейских гарнизонов, профилакториев есть выбор металлических кроваток, двух ярусных кроватей. </p>
-                                        <p class="o_default_snippet_text">Легированная сталь основа всей железной продукции. Покраска идёт в специализированных малярных комнатах в соответствии с рекомендацией производителя порошковой краски. При заданной температуре. </p>
-                                        <p class="o_default_snippet_text">Ассортимент продукции предлагаем посмотреть в фотообзоре в верхней части сайта.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
                     <section class="o_data_slider mb32 container text-center" data-options="{&quot;lazyLoad&quot;:&quot;ondemand&quot;,&quot;slidesToShow&quot;:3,&quot;slidesToScroll&quot;:1,&quot;dots&quot;:true,&quot;infinite&quot;:true,&quot;speed&quot;:500,&quot;arrows&quot;:true,&quot;autoplay&quot;:true,&quot;adaptiveHeight&quot;:false,&quot;variableWidth&quot;:false,&quot;autoplaySpeed&quot;:3000,&quot;data_model&quot;:&quot;product.template&quot;,&quot;data_domain&quot;:[[&quot;website_published&quot;,&quot;=&quot;,true]],&quot;data_image_field&quot;:&quot;image_medium&quot;,&quot;data_name_field&quot;:&quot;display_name&quot;,&quot;data_title&quot;:&quot;Наша продукция &quot;,&quot;data_title_tag&quot;:&quot;h1&quot;,&quot;data_title_class&quot;:&quot;text-center&quot;,&quot;data_uri_field&quot;:&quot;website_url&quot;,&quot;data_container_width&quot;:&quot;90%&quot;,&quot;data_limit&quot;:10,&quot;prevArrow&quot;:&quot;&lt;a href=\&quot;#\&quot; class=\&quot;slider-arrow-left\&quot;&gt;&lt;i class=\&quot;fa fa-arrow-left fa-2x\&quot;&gt;&lt;/i&gt;&lt;/a&gt;&quot;,&quot;nextArrow&quot;:&quot;&lt;a href=\&quot;#\&quot; class=\&quot;slider-arrow-right\&quot;&gt;&lt;i class=\&quot;fa fa-arrow-right fa-2x\&quot;&gt;&lt;/i&gt;&lt;/a&gt;&quot;}" style="width: 90%;">
                         <div class="row">
                             <h1 class="text-center">Наша продукция </h1>
@@ -707,6 +674,39 @@
                             </ul>
                         </div>
                     </section>
+                    <div class="oe_structure oe_empty">
+                        <section class="s_text_block">
+                            <div class="container">
+                                <h3 class="text-center text-muted o_default_snippet_text">Здрасти, Hello, Салеметсiз бе.</h3>
+                                <div class="row">
+                                    <div class="col-md-12 mb16 mt16">
+                                        <div class="o_image_floating pull-right s_image_floating o_margin_l">
+                                            <div class="o_container">
+                                                <img class="img img-rounded img-responsive" src="/web/image/2106" />
+                                            </div>
+                                            <div class="o_footer">
+                                                <small class="text-muted">Отличные почтовые ящики идеально подойдут в любой подъезд</small>
+                                            </div>
+                                        </div>
+                                        <p class="o_default_snippet_text">Ящики почтовые уличные "Почта", секционные ящики "Подъезд", облагородить площадку во дворе, заказав уличную урну от 24 литров или скамейку для сада. Низкие цены, высокое качество. </p>
+                                        <p>Для армейских гарнизонов, профилакториев есть выбор металлических кроваток, двух ярусных кроватей. </p>
+                                        <p class="o_default_snippet_text">Легированная сталь основа всей железной продукции. Покраска идёт в специализированных малярных комнатах в соответствии с рекомендацией производителя порошковой краски. При заданной температуре. </p>
+                                        <p class="o_default_snippet_text">Ассортимент продукции предлагаем посмотреть в фотообзоре в верхней части сайта.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="row">
+                        <div class="container">
+                            <h2 class="text-center">Категории продукции</h2>
+                            <ul class="homepage-categories">
+                                <t t-foreach="request.website.sale_categories()" t-as="c">
+                                    <t t-call="theme_l.categories_recursive_homepage"/>
+                                </t>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="oe_structure oe_empty" />
                 </div>
             </xpath>
