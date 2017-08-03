@@ -4179,8 +4179,6 @@
 
         <template id="user_menu_cart" inherit_id="user_menu" name="Cart in User Menu">
             <xpath expr=".//*[@id='user-menu-cart']" position="inside">
-                                <div class="hidden-sm col-md-7"/>
-
                 <div class="hidden-sm col-md-6"/>
                 <div class="col-sm-12 col-md-6">
                     <t t-set="website_sale_order" t-value="website.sale_get_order()"/>
