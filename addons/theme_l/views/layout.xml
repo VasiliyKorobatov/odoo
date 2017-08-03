@@ -4075,16 +4075,15 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
-                        <!--div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Сохранить</button>
-                        </div-->
-                    </div><!-- /.modal-content -->
-                </div><!-- /.modal-dialog -->
-            </div><!-- /.modal -->
+                            <!--div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Сохранить</button>
+                            </div-->
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
 
-        </xpath>
+            </xpath>
     </template>
     <template id="user_menu_enter" inherit_id="theme_l.static_menu" name="Enter in User Menu">
         <xpath expr=".//div[@class='collapse navbar-collapse navbar-top-collapse']" position="inside">
