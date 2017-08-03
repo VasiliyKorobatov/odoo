@@ -4862,7 +4862,6 @@
             </xpath>
         </template>
         <template id="custom_variants" name="Custom Variants" inherit_id="website_sale.variants">
-            <t t-name="theme_l.custom_variants">
                 <t t-set="attribute_value_ids" t-value="get_attribute_value_ids(product)"/>
                 <ul t-attf-class="list-unstyled js_add_cart_variants #{ul_class}" t-att-data-attribute_value_ids="attribute_value_ids">
                     <t t-foreach="product.attribute_line_ids.sorted(key=lambda x: x.attribute_id.sequence)" t-as="variant_id">
@@ -4916,7 +4915,6 @@
                         </li>
                     </t>
                 </ul>
-            </t>
         </template>
 
 
