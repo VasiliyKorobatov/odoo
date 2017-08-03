@@ -223,7 +223,8 @@
                                                     <a href='#' data-city-id='509' data-region-id='77'>Москва</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='802'>
-                                                    <a href='#' data-city-id='802' data-region-id='78'>Санкт-Петербург</a>
+                                                    <a href='#' data-city-id='802' data-region-id='78'>Санкт-Петербург
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='898'>
                                                     <a href='#' data-city-id='898' data-region-id='92'>Севастополь</a>
@@ -588,7 +589,9 @@
                                                     <a href='#' data-city-id='101' data-region-id='33'>Гороховец</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='102'>
-                                                    <a href='#' data-city-id='102' data-region-id='33'>Гусь-Хрустальный</a>
+                                                    <a href='#' data-city-id='102' data-region-id='33'>
+                                                        Гусь-Хрустальный
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='103'>
                                                     <a href='#' data-city-id='103' data-region-id='33'>Камешково</a>
@@ -642,7 +645,8 @@
                                                     <a href='#' data-city-id='119' data-region-id='33'>Суздаль</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='120'>
-                                                    <a href='#' data-city-id='120' data-region-id='33'>Юрьев-Польский</a>
+                                                    <a href='#' data-city-id='120' data-region-id='33'>Юрьев-Польский
+                                                    </a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -674,7 +678,8 @@
                                                     <a href='#' data-city-id='128' data-region-id='34'>Котово</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='129'>
-                                                    <a href='#' data-city-id='129' data-region-id='34'>Краснослободск</a>
+                                                    <a href='#' data-city-id='129' data-region-id='34'>Краснослободск
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='130'>
                                                     <a href='#' data-city-id='130' data-region-id='34'>Ленинск</a>
@@ -815,7 +820,9 @@
                                                     <a href='#' data-city-id='170' data-region-id='5'>Буйнакск</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='171'>
-                                                    <a href='#' data-city-id='171' data-region-id='5'>Дагестанские Огни</a>
+                                                    <a href='#' data-city-id='171' data-region-id='5'>Дагестанские
+                                                        Огни
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='172'>
                                                     <a href='#' data-city-id='172' data-region-id='5'>Дербент</a>
@@ -898,7 +905,8 @@
                                                     <a href='#' data-city-id='192' data-region-id='37'>Вичуга</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='193'>
-                                                    <a href='#' data-city-id='193' data-region-id='37'>Гаврилов Посад</a>
+                                                    <a href='#' data-city-id='193' data-region-id='37'>Гаврилов Посад
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='194'>
                                                     <a href='#' data-city-id='194' data-region-id='37'>Заволжск</a>
@@ -1021,7 +1029,9 @@
                                                     <a href='#' data-city-id='229' data-region-id='38'>Тулун</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='230'>
-                                                    <a href='#' data-city-id='230' data-region-id='38'>Усолье-Сибирское</a>
+                                                    <a href='#' data-city-id='230' data-region-id='38'>
+                                                        Усолье-Сибирское
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='231'>
                                                     <a href='#' data-city-id='231' data-region-id='38'>Усть-Илимск</a>
@@ -1091,7 +1101,8 @@
                                                     <a href='#' data-city-id='249' data-region-id='39'>Калининград</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='250'>
-                                                    <a href='#' data-city-id='250' data-region-id='39'>Краснознаменск</a>
+                                                    <a href='#' data-city-id='250' data-region-id='39'>Краснознаменск
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='251'>
                                                     <a href='#' data-city-id='251' data-region-id='39'>Ладушкин</a>
@@ -1303,7 +1314,8 @@
                                             <span class='region-name'>Кемеровская Область</span>
                                             <ul class='cities-list' data-location-region='42'>
                                                 <li class='city-name' data-location-city='310'>
-                                                    <a href='#' data-city-id='310' data-region-id='42'>Анжеро-Судженск</a>
+                                                    <a href='#' data-city-id='310' data-region-id='42'>Анжеро-Судженск
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='311'>
                                                     <a href='#' data-city-id='311' data-region-id='42'>Белово</a>
@@ -1324,7 +1336,9 @@
                                                     <a href='#' data-city-id='316' data-region-id='42'>Киселевск</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='317'>
-                                                    <a href='#' data-city-id='317' data-region-id='42'>Ленинск-Кузнецкий</a>
+                                                    <a href='#' data-city-id='317' data-region-id='42'>
+                                                        Ленинск-Кузнецкий
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='318'>
                                                     <a href='#' data-city-id='318' data-region-id='42'>Мариинск</a>
@@ -1368,10 +1382,12 @@
                                             <span class='region-name'>Кировская Область</span>
                                             <ul class='cities-list' data-location-region='43'>
                                                 <li class='city-name' data-location-city='330'>
-                                                    <a href='#' data-city-id='330' data-region-id='43'>Белая Холуница</a>
+                                                    <a href='#' data-city-id='330' data-region-id='43'>Белая Холуница
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='331'>
-                                                    <a href='#' data-city-id='331' data-region-id='43'>Вятские Поляны</a>
+                                                    <a href='#' data-city-id='331' data-region-id='43'>Вятские Поляны
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='332'>
                                                     <a href='#' data-city-id='332' data-region-id='43'>Зуевка</a>
@@ -1554,10 +1570,13 @@
                                                     <a href='#' data-city-id='386' data-region-id='23'>Новороссийск</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='387'>
-                                                    <a href='#' data-city-id='387' data-region-id='23'>Приморско-Ахтарск</a>
+                                                    <a href='#' data-city-id='387' data-region-id='23'>
+                                                        Приморско-Ахтарск
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='388'>
-                                                    <a href='#' data-city-id='388' data-region-id='23'>Славянск-на-Кубани
+                                                    <a href='#' data-city-id='388' data-region-id='23'>
+                                                        Славянск-на-Кубани
                                                     </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='389'>
@@ -1688,7 +1707,8 @@
                                                     <a href='#' data-city-id='427' data-region-id='91'>Керчь</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='428'>
-                                                    <a href='#' data-city-id='428' data-region-id='91'>Красноперекопск</a>
+                                                    <a href='#' data-city-id='428' data-region-id='91'>Красноперекопск
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='429'>
                                                     <a href='#' data-city-id='429' data-region-id='91'>Подгорное</a>
@@ -1934,7 +1954,8 @@
                                                     <a href='#' data-city-id='499' data-region-id='12'>Йошкар-Ола</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='500'>
-                                                    <a href='#' data-city-id='500' data-region-id='12'>Козьмодемьянск</a>
+                                                    <a href='#' data-city-id='500' data-region-id='12'>Козьмодемьянск
+                                                    </a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -1951,7 +1972,8 @@
                                                     <a href='#' data-city-id='503' data-region-id='13'>Ковылкино</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='504'>
-                                                    <a href='#' data-city-id='504' data-region-id='13'>Краснослободск</a>
+                                                    <a href='#' data-city-id='504' data-region-id='13'>Краснослободск
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='505'>
                                                     <a href='#' data-city-id='505' data-region-id='13'>Рузаевка</a>
@@ -2044,7 +2066,8 @@
                                                     <a href='#' data-city-id='530' data-region-id='50'>Егорьевск</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='531'>
-                                                    <a href='#' data-city-id='531' data-region-id='50'>Железнодорожный</a>
+                                                    <a href='#' data-city-id='531' data-region-id='50'>Железнодорожный
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='532'>
                                                     <a href='#' data-city-id='532' data-region-id='50'>Жуковский</a>
@@ -2089,7 +2112,8 @@
                                                     <a href='#' data-city-id='545' data-region-id='50'>Краснозаводск</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='546'>
-                                                    <a href='#' data-city-id='546' data-region-id='50'>Краснознаменск</a>
+                                                    <a href='#' data-city-id='546' data-region-id='50'>Краснознаменск
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='547'>
                                                     <a href='#' data-city-id='547' data-region-id='50'>Кубинка</a>
@@ -2104,7 +2128,9 @@
                                                     <a href='#' data-city-id='550' data-region-id='50'>Лобня</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='551'>
-                                                    <a href='#' data-city-id='551' data-region-id='50'>Лосино-Петровский</a>
+                                                    <a href='#' data-city-id='551' data-region-id='50'>
+                                                        Лосино-Петровский
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='552'>
                                                     <a href='#' data-city-id='552' data-region-id='50'>Луховицы</a>
@@ -2140,7 +2166,9 @@
                                                     <a href='#' data-city-id='562' data-region-id='50'>Орехово-Зуево</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='563'>
-                                                    <a href='#' data-city-id='563' data-region-id='50'>Павловский Посад</a>
+                                                    <a href='#' data-city-id='563' data-region-id='50'>Павловский
+                                                        Посад
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='564'>
                                                     <a href='#' data-city-id='564' data-region-id='50'>Пересвет</a>
@@ -2182,7 +2210,8 @@
                                                     <a href='#' data-city-id='576' data-region-id='50'>Солнечногорск</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='577'>
-                                                    <a href='#' data-city-id='577' data-region-id='50'>Старая Купавна</a>
+                                                    <a href='#' data-city-id='577' data-region-id='50'>Старая Купавна
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='578'>
                                                     <a href='#' data-city-id='578' data-region-id='50'>Ступино</a>
@@ -2347,7 +2376,8 @@
                                                     <a href='#' data-city-id='626' data-region-id='52'>Навашино</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='627'>
-                                                    <a href='#' data-city-id='627' data-region-id='52'>Нижний Новгород</a>
+                                                    <a href='#' data-city-id='627' data-region-id='52'>Нижний Новгород
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='628'>
                                                     <a href='#' data-city-id='628' data-region-id='52'>Павлово</a>
@@ -2388,7 +2418,9 @@
                                                     <a href='#' data-city-id='638' data-region-id='53'>Валдай</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='639'>
-                                                    <a href='#' data-city-id='639' data-region-id='53'>Великий Новгород</a>
+                                                    <a href='#' data-city-id='639' data-region-id='53'>Великий
+                                                        Новгород
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='640'>
                                                     <a href='#' data-city-id='640' data-region-id='53'>Малая Вишера</a>
@@ -2537,7 +2569,8 @@
                                                     <a href='#' data-city-id='681' data-region-id='57'>Ливны</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='682'>
-                                                    <a href='#' data-city-id='682' data-region-id='57'>Малоархангельск</a>
+                                                    <a href='#' data-city-id='682' data-region-id='57'>Малоархангельск
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='683'>
                                                     <a href='#' data-city-id='683' data-region-id='57'>Мценск</a>
@@ -2678,7 +2711,8 @@
                                                     <a href='#' data-city-id='723' data-region-id='25'>Артем</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='724'>
-                                                    <a href='#' data-city-id='724' data-region-id='25'>Большой Камень</a>
+                                                    <a href='#' data-city-id='724' data-region-id='25'>Большой Камень
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='725'>
                                                     <a href='#' data-city-id='725' data-region-id='25'>Владивосток</a>
@@ -2699,7 +2733,8 @@
                                                     <a href='#' data-city-id='730' data-region-id='25'>Партизанск</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='731'>
-                                                    <a href='#' data-city-id='731' data-region-id='25'>Спасск-Дальний</a>
+                                                    <a href='#' data-city-id='731' data-region-id='25'>Спасск-Дальний
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='732'>
                                                     <a href='#' data-city-id='732' data-region-id='25'>Уссурийск</a>
@@ -2728,7 +2763,8 @@
                                                     <a href='#' data-city-id='738' data-region-id='60'>Новоржев</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='739'>
-                                                    <a href='#' data-city-id='739' data-region-id='60'>Новосокольники</a>
+                                                    <a href='#' data-city-id='739' data-region-id='60'>Новосокольники
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='740'>
                                                     <a href='#' data-city-id='740' data-region-id='60'>Опочка</a>
@@ -2787,11 +2823,13 @@
                                                     <a href='#' data-city-id='756' data-region-id='61'>Зерноград</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='757'>
-                                                    <a href='#' data-city-id='757' data-region-id='61'>Каменск-Шахтинский
+                                                    <a href='#' data-city-id='757' data-region-id='61'>
+                                                        Каменск-Шахтинский
                                                     </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='758'>
-                                                    <a href='#' data-city-id='758' data-region-id='61'>Константиновск</a>
+                                                    <a href='#' data-city-id='758' data-region-id='61'>Константиновск
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='759'>
                                                     <a href='#' data-city-id='759' data-region-id='61'>Красный Сулин</a>
@@ -2812,7 +2850,8 @@
                                                     <a href='#' data-city-id='764' data-region-id='61'>Пролетарск</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='765'>
-                                                    <a href='#' data-city-id='765' data-region-id='61'>Ростов-на-Дону</a>
+                                                    <a href='#' data-city-id='765' data-region-id='61'>Ростов-на-Дону
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='766'>
                                                     <a href='#' data-city-id='766' data-region-id='61'>Сальск</a>
@@ -2865,7 +2904,9 @@
                                                     <a href='#' data-city-id='780' data-region-id='62'>Спас-Клепики</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='781'>
-                                                    <a href='#' data-city-id='781' data-region-id='62'>Спасск-Рязанский</a>
+                                                    <a href='#' data-city-id='781' data-region-id='62'>
+                                                        Спасск-Рязанский
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='782'>
                                                     <a href='#' data-city-id='782' data-region-id='62'>Шацк</a>
@@ -2885,7 +2926,8 @@
                                                     <a href='#' data-city-id='785' data-region-id='63'>Нефтегорск</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='786'>
-                                                    <a href='#' data-city-id='786' data-region-id='63'>Новокуйбышевск</a>
+                                                    <a href='#' data-city-id='786' data-region-id='63'>Новокуйбышевск
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='787'>
                                                     <a href='#' data-city-id='787' data-region-id='63'>Октябрьск</a>
@@ -2938,7 +2980,8 @@
                                                     <a href='#' data-city-id='801' data-region-id='78'>Пушкин</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='802'>
-                                                    <a href='#' data-city-id='802' data-region-id='78'>Санкт-Петербург</a>
+                                                    <a href='#' data-city-id='802' data-region-id='78'>Санкт-Петербург
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='803'>
                                                     <a href='#' data-city-id='803' data-region-id='78'>Сестрорецк</a>
@@ -3081,7 +3124,8 @@
                                                     <a href='#' data-city-id='843' data-region-id='65'>Поронайск</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='844'>
-                                                    <a href='#' data-city-id='844' data-region-id='65'>Северо-Курильск</a>
+                                                    <a href='#' data-city-id='844' data-region-id='65'>Северо-Курильск
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='845'>
                                                     <a href='#' data-city-id='845' data-region-id='65'>Томари</a>
@@ -3096,7 +3140,8 @@
                                                     <a href='#' data-city-id='848' data-region-id='65'>Шахтерск</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='849'>
-                                                    <a href='#' data-city-id='849' data-region-id='65'>Южно-Сахалинск</a>
+                                                    <a href='#' data-city-id='849' data-region-id='65'>Южно-Сахалинск
+                                                    </a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -3155,7 +3200,9 @@
                                                     <a href='#' data-city-id='866' data-region-id='66'>Ирбит</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='867'>
-                                                    <a href='#' data-city-id='867' data-region-id='66'>Каменск-Уральский</a>
+                                                    <a href='#' data-city-id='867' data-region-id='66'>
+                                                        Каменск-Уральский
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='868'>
                                                     <a href='#' data-city-id='868' data-region-id='66'>Камышлов</a>
@@ -3170,7 +3217,8 @@
                                                     <a href='#' data-city-id='871' data-region-id='66'>Кировград</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='872'>
-                                                    <a href='#' data-city-id='872' data-region-id='66'>Краснотурьинск</a>
+                                                    <a href='#' data-city-id='872' data-region-id='66'>Краснотурьинск
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='873'>
                                                     <a href='#' data-city-id='873' data-region-id='66'>Красноуральск</a>
@@ -3364,7 +3412,9 @@
                                                     <a href='#' data-city-id='929' data-region-id='26'>Лермонтов</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='930'>
-                                                    <a href='#' data-city-id='930' data-region-id='26'>Минеральные Воды</a>
+                                                    <a href='#' data-city-id='930' data-region-id='26'>Минеральные
+                                                        Воды
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='931'>
                                                     <a href='#' data-city-id='931' data-region-id='26'>Михайловск</a>
@@ -3376,7 +3426,9 @@
                                                     <a href='#' data-city-id='933' data-region-id='26'>Нефтекумск</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='934'>
-                                                    <a href='#' data-city-id='934' data-region-id='26'>Новоалександровск</a>
+                                                    <a href='#' data-city-id='934' data-region-id='26'>
+                                                        Новоалександровск
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='935'>
                                                     <a href='#' data-city-id='935' data-region-id='26'>Новопавловск</a>
@@ -3476,7 +3528,9 @@
                                                     <a href='#' data-city-id='963' data-region-id='16'>Мензелинск</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='964'>
-                                                    <a href='#' data-city-id='964' data-region-id='16'>Набережные Челны</a>
+                                                    <a href='#' data-city-id='964' data-region-id='16'>Набережные
+                                                        Челны
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='965'>
                                                     <a href='#' data-city-id='965' data-region-id='16'>Нижнекамск</a>
@@ -3511,10 +3565,12 @@
                                                     <a href='#' data-city-id='973' data-region-id='69'>Весьегонск</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='974'>
-                                                    <a href='#' data-city-id='974' data-region-id='69'>Вышний Волочек</a>
+                                                    <a href='#' data-city-id='974' data-region-id='69'>Вышний Волочек
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='975'>
-                                                    <a href='#' data-city-id='975' data-region-id='69'>Западная Двина</a>
+                                                    <a href='#' data-city-id='975' data-region-id='69'>Западная Двина
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='976'>
                                                     <a href='#' data-city-id='976' data-region-id='69'>Зубцов</a>
@@ -3727,7 +3783,8 @@
                                                     <a href='#' data-city-id='1035' data-region-id='73'>Инза</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='1036'>
-                                                    <a href='#' data-city-id='1036' data-region-id='73'>Новоульяновск</a>
+                                                    <a href='#' data-city-id='1036' data-region-id='73'>Новоульяновск
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='1037'>
                                                     <a href='#' data-city-id='1037' data-region-id='73'>Сенгилей</a>
@@ -3760,7 +3817,9 @@
                                                     </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='1044'>
-                                                    <a href='#' data-city-id='1044' data-region-id='27'>Советская Гавань</a>
+                                                    <a href='#' data-city-id='1044' data-region-id='27'>Советская
+                                                        Гавань
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='1045'>
                                                     <a href='#' data-city-id='1045' data-region-id='27'>Хабаровск</a>
@@ -3788,7 +3847,8 @@
                                             </ul>
                                         </li>
                                         <li data-region-id='86'>
-                                            <span class='region-name'>Ханты-Мансийский Автономный округ - Югра Автономный
+                                            <span class='region-name'>Ханты-Мансийский Автономный округ - Югра
+                                                Автономный
                                                 округ
                                             </span>
                                             <ul class='cities-list' data-location-region='86'>
@@ -3811,7 +3871,8 @@
                                                     <a href='#' data-city-id='1056' data-region-id='86'>Нефтеюганск</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='1057'>
-                                                    <a href='#' data-city-id='1057' data-region-id='86'>Нижневартовск</a>
+                                                    <a href='#' data-city-id='1057' data-region-id='86'>Нижневартовск
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='1058'>
                                                     <a href='#' data-city-id='1058' data-region-id='86'>Нягань</a>
@@ -3835,7 +3896,8 @@
                                                     <a href='#' data-city-id='1064' data-region-id='86'>Урай</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='1065'>
-                                                    <a href='#' data-city-id='1065' data-region-id='86'>Ханты-Мансийск</a>
+                                                    <a href='#' data-city-id='1065' data-region-id='86'>Ханты-Мансийск
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='1066'>
                                                     <a href='#' data-city-id='1066' data-region-id='86'>Югорск</a>
@@ -3852,10 +3914,12 @@
                                                     <a href='#' data-city-id='1068' data-region-id='74'>Бакал</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='1069'>
-                                                    <a href='#' data-city-id='1069' data-region-id='74'>Верхнеуральск</a>
+                                                    <a href='#' data-city-id='1069' data-region-id='74'>Верхнеуральск
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='1070'>
-                                                    <a href='#' data-city-id='1070' data-region-id='74'>Верхний Уфалей</a>
+                                                    <a href='#' data-city-id='1070' data-region-id='74'>Верхний Уфалей
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='1071'>
                                                     <a href='#' data-city-id='1071' data-region-id='74'>Еманжелинск</a>
@@ -3873,7 +3937,8 @@
                                                     <a href='#' data-city-id='1075' data-region-id='74'>Касли</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='1076'>
-                                                    <a href='#' data-city-id='1076' data-region-id='74'>Катав-Ивановск</a>
+                                                    <a href='#' data-city-id='1076' data-region-id='74'>Катав-Ивановск
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='1077'>
                                                     <a href='#' data-city-id='1077' data-region-id='74'>Копейск</a>
@@ -3970,10 +4035,13 @@
                                                     <a href='#' data-city-id='1104' data-region-id='21'>Козловка</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='1105'>
-                                                    <a href='#' data-city-id='1105' data-region-id='21'>Мариинский Посад</a>
+                                                    <a href='#' data-city-id='1105' data-region-id='21'>Мариинский
+                                                        Посад
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='1106'>
-                                                    <a href='#' data-city-id='1106' data-region-id='21'>Новочебоксарск</a>
+                                                    <a href='#' data-city-id='1106' data-region-id='21'>Новочебоксарск
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='1107'>
                                                     <a href='#' data-city-id='1107' data-region-id='21'>Цивильск</a>
@@ -4019,7 +4087,8 @@
                                                     <a href='#' data-city-id='1117' data-region-id='89'>Надым</a>
                                                 </li>
                                                 <li class='city-name' data-location-city='1118'>
-                                                    <a href='#' data-city-id='1118' data-region-id='89'>Новый Уренгой</a>
+                                                    <a href='#' data-city-id='1118' data-region-id='89'>Новый Уренгой
+                                                    </a>
                                                 </li>
                                                 <li class='city-name' data-location-city='1119'>
                                                     <a href='#' data-city-id='1119' data-region-id='89'>Ноябрьск</a>
@@ -4084,844 +4153,677 @@
                 </div><!-- /.modal -->
 
             </xpath>
-    </template>
-    <template id="user_menu_enter" inherit_id="theme_l.static_menu" name="Enter in User Menu">
-        <xpath expr=".//div[@class='collapse navbar-collapse navbar-top-collapse']" position="inside">
-            <div id="enter_btn"/>
-            <div class="nav navbar-nav navbar-right mt8">
-                <a groups="base.group_public" t-attf-href="/web/login" class="btn btn-default">
-                    <span class="fa fa-sign-in"/>
-                    <b>Войти</b>
-                </a>
-                <a groups="base.group_public" t-attf-href="/web/signup?{{ keep_query() }}" class="btn btn-default">
-                    <span class="fa fa-user-plus"/>
-                    <b class="hidden-xs">Регистрация</b>
-                </a>
-                <a groups="base.group_user" t-attf-href="/my/home" class="btn btn-default">
-                    <span class="fa fa-user-circle-o"/>
-                    <b>Личный кабинет</b>
-                </a>
-                <a groups="base.group_user" t-attf-href="/web/session/logout?redirect=/" class="btn btn-default">
-                    <span class="fa fa-sign-out"/>
-                </a>
-            </div>
-        </xpath>
-    </template>
+        </template>
+        <template id="user_menu_enter" inherit_id="theme_l.static_menu" name="Enter in User Menu">
+            <xpath expr=".//div[@class='collapse navbar-collapse navbar-top-collapse']" position="inside">
+                <div id="enter_btn"/>
+                <div class="nav navbar-nav navbar-right mt8">
+                    <a groups="base.group_public" t-attf-href="/web/login" class="btn btn-default">
+                        <span class="fa fa-sign-in"/>
+                        <b>Войти</b>
+                    </a>
+                    <a groups="base.group_public" t-attf-href="/web/signup?{{ keep_query() }}" class="btn btn-default">
+                        <span class="fa fa-user-plus"/>
+                        <b class="hidden-xs">Регистрация</b>
+                    </a>
+                    <a groups="base.group_user" t-attf-href="/my/home" class="btn btn-default">
+                        <span class="fa fa-user-circle-o"/>
+                        <b>Личный кабинет</b>
+                    </a>
+                    <a groups="base.group_user" t-attf-href="/web/session/logout?redirect=/" class="btn btn-default">
+                        <span class="fa fa-sign-out"/>
+                    </a>
+                </div>
+            </xpath>
+        </template>
 
-    <template id="user_menu_cart" inherit_id="user_menu" name="Cart in User Menu">
-        <xpath expr=".//*[@id='user-menu-cart']" position="inside">
-            <div class="hidden-sm col-md-6"/>
-            <div class="col-sm-12 col-md-6">
-                <t t-set="website_sale_order" t-value="website.sale_get_order()"/>
-                <a id="cart-btn" href="/shop/cart" class="btn">
-                    <i class="fa fa-shopping-cart"/>
-                    Корзина
-                    <sup t-attf-class="my_cart_quantity label label-primary"
-                         t-esc="website_sale_order and website_sale_order.cart_quantity or ''"/>
-                </a>
-                <a class='btn btn-default hidden-xs' href="/shop/cart">Оформить</a>
-            </div>
-        </xpath>
-    </template>
+        <template id="user_menu_cart" inherit_id="user_menu" name="Cart in User Menu">
+            <xpath expr=".//*[@id='user-menu-cart']" position="inside">
+                <div class="hidden-sm col-md-6"/>
+                <div class="col-sm-12 col-md-6">
+                    <t t-set="website_sale_order" t-value="website.sale_get_order()"/>
+                    <a id="cart-btn" href="/shop/cart" class="btn">
+                        <i class="fa fa-shopping-cart"/>
+                        Корзина
+                        <sup t-attf-class="my_cart_quantity label label-primary"
+                             t-esc="website_sale_order and website_sale_order.cart_quantity or ''"/>
+                    </a>
+                    <a class='btn btn-default hidden-xs' href="/shop/cart">Оформить</a>
+                </div>
+            </xpath>
+        </template>
 
 
-    <template id="rm_logo" inherit_id="website.layout_logo_show" name="RM Logo">
-        <xpath expr=".//a[@class='navbar-brand logo']" position="replace"/>
-    </template>
-    <template id="static_menu" inherit_id="website.layout" name="Static Menu">
-        <xpath expr=".//*[contains(@class, 'navbar-static-top')]" position="replace">
-            <div class="navbar navbar-default navbar-static-top">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                data-target=".navbar-top-collapse">
-                            <span class="sr-only">Свернуть</span>
-                            <span class="icon-bar"/>
-                            <span class="icon-bar"/>
-                            <span class="icon-bar"/>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse navbar-top-collapse">
-                        <div class="hidden-xs col-sm-1 col-md-1 menu-button mt8">
-                            <button data-toggle="collapse" data-target="#sidebar">
-                                <span class="fa fa-2x fa-navicon"/>
+        <template id="rm_logo" inherit_id="website.layout_logo_show" name="RM Logo">
+            <xpath expr=".//a[@class='navbar-brand logo']" position="replace"/>
+        </template>
+        <template id="static_menu" inherit_id="website.layout" name="Static Menu">
+            <xpath expr=".//*[contains(@class, 'navbar-static-top')]" position="replace">
+                <div class="navbar navbar-default navbar-static-top">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target=".navbar-top-collapse">
+                                <span class="sr-only">Свернуть</span>
+                                <span class="icon-bar"/>
+                                <span class="icon-bar"/>
+                                <span class="icon-bar"/>
                             </button>
                         </div>
-                        <ul class="nav navbar-nav navbar-left" id="top_menu">
-                            <t t-foreach="website.menu_id.child_id" t-as="submenu">
-                                <t t-call="website.submenu"/>
-                            </t>
-                            <div id="user-enter"/>
-                        </ul>
+                        <div class="collapse navbar-collapse navbar-top-collapse">
+                            <div class="hidden-xs col-sm-1 col-md-1 menu-button mt8">
+                                <button data-toggle="collapse" data-target="#sidebar">
+                                    <span class="fa fa-2x fa-navicon"/>
+                                </button>
+                            </div>
+                            <ul class="nav navbar-nav navbar-left" id="top_menu">
+                                <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                    <t t-call="website.submenu"/>
+                                </t>
+                                <div id="user-enter"/>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </xpath>
-    </template>
-    <template id="custom_logo" inherit_id="theme_l.custom_header" name="Custom Logo">
-        <xpath expr=".//*[@id='logo']" position="inside">
-            <a href="/" class="logo">
-                <img src="/logo.png" t-att-alt="'Логотип %s' % res_company.name" t-att-title="res_company.name"/>
-            </a>
-        </xpath>
-    </template>
-    <template id="category_left_menu" inherit_id="custom_header" name="Left Category Menu">
-        <xpath expr="//*[@id='sidebar']" position="inside">
-            <ul class="nav nav-pills nav-stacked mt8">
-                <!--<li t-att-class=" '' if category else 'active' ">-->
-                <!--<a t-att-href="keep('/shop',category=0)" class="o_not_editable">All Products</a>-->
-                <!--</li>-->
-                <t t-foreach="request.website.sale_categories()" t-as="c">
-                    <t t-call="theme_l.categories_recursive"/>
-                </t>
-            </ul>
-            <div class="oe_structure"/>
-        </xpath>
-    </template>
-    <template id="categories_recursive" name="Category list">
-        <li t-att-class="'active' if c.id == int(category or 0) else None">
-            <!--<a t-att-href="keep('/shop/category/' + slug(c), category=0)" t-field="c.name"></a>-->
-            <a class="left-menu-item" t-att-href="'/shop/category/'+slug(c)">
-                <div class="category-image" t-field="c.image_small"
-                     t-options="{'widget': 'image', 'class': 'img-circle'}"/>
-                <div class="category-caption" t-esc="c.name"/>
-            </a>
-            <ul t-if="c.child_id" class="nav nav-pills nav-stacked nav-hierarchy">
-                <t t-foreach="c.child_id" t-as="c">
-                    <t t-call="theme_l.categories_recursive"/>
-                </t>
-            </ul>
-        </li>
-    </template>
-    <template id="products_pager" inherit_id="website_sale.products" name="Products Pager">
-        <xpath expr="//div[@class='products_pager']" position="replace">
-            <div class="products_pager">
-                <div id="products_pager" class="row" style="width: 100%;">
-                    <t t-call="website_sale.pricelist_list"/>
-                    <t t-call="website.pager"/>
+            </xpath>
+        </template>
+        <template id="custom_logo" inherit_id="theme_l.custom_header" name="Custom Logo">
+            <xpath expr=".//*[@id='logo']" position="inside">
+                <a href="/" class="logo">
+                    <img src="/logo.png" t-att-alt="'Логотип %s' % res_company.name" t-att-title="res_company.name"/>
+                </a>
+            </xpath>
+        </template>
+        <template id="category_left_menu" inherit_id="custom_header" name="Left Category Menu">
+            <xpath expr="//*[@id='sidebar']" position="inside">
+                <ul class="nav nav-pills nav-stacked mt8">
+                    <!--<li t-att-class=" '' if category else 'active' ">-->
+                    <!--<a t-att-href="keep('/shop',category=0)" class="o_not_editable">All Products</a>-->
+                    <!--</li>-->
+                    <t t-foreach="request.website.sale_categories()" t-as="c">
+                        <t t-call="theme_l.categories_recursive"/>
+                    </t>
+                </ul>
+                <div class="oe_structure"/>
+            </xpath>
+        </template>
+        <template id="categories_recursive" name="Category list">
+            <li t-att-class="'active' if c.id == int(category or 0) else None">
+                <!--<a t-att-href="keep('/shop/category/' + slug(c), category=0)" t-field="c.name"></a>-->
+                <a class="left-menu-item" t-att-href="'/shop/category/'+slug(c)">
+                    <div class="category-image" t-field="c.image_small"
+                         t-options="{'widget': 'image', 'class': 'img-circle'}"/>
+                    <div class="category-caption" t-esc="c.name"/>
+                </a>
+                <ul t-if="c.child_id" class="nav nav-pills nav-stacked nav-hierarchy">
+                    <t t-foreach="c.child_id" t-as="c">
+                        <t t-call="theme_l.categories_recursive"/>
+                    </t>
+                </ul>
+            </li>
+        </template>
+        <template id="products_pager" inherit_id="website_sale.products" name="Products Pager">
+            <xpath expr="//div[@class='products_pager']" position="replace">
+                <div class="products_pager">
+                    <div id="products_pager" class="row" style="width: 100%;">
+                        <t t-call="website_sale.pricelist_list"/>
+                        <t t-call="website.pager"/>
+                    </div>
                 </div>
-            </div>
-        </xpath>
-    </template>
+            </xpath>
+        </template>
 
-    <template id="sort" inherit_id="website_sale.sort" name="Sort By">
-        <xpath expr="//div[@class='dropdown btn-group dropdown_sorty_by']" position="replace">
-            <t t-set="list_price_desc_label">
-                <i class="fa fa-arrow-up" aria-hidden="true"/>
-                Цена
-            </t>
-            <t t-set="list_price_asc_label">
-                <i class="fa fa-arrow-down" aria-hidden="true"/>
-                Цена
-            </t>
-            <t t-set="name_asc_label">Название</t>
-            <t t-set="website_sale_sortable" t-value="[
+        <template id="sort" inherit_id="website_sale.sort" name="Sort By">
+            <xpath expr="//div[@class='dropdown btn-group dropdown_sorty_by']" position="replace">
+                <t t-set="list_price_desc_label">
+                    <i class="fa fa-arrow-up" aria-hidden="true"/>
+                    Цена
+                </t>
+                <t t-set="list_price_asc_label">
+                    <i class="fa fa-arrow-down" aria-hidden="true"/>
+                    Цена
+                </t>
+                <t t-set="name_asc_label">Название</t>
+                <t t-set="website_sale_sortable" t-value="[
                              (list_price_desc_label, 'list_price desc'),
                              (list_price_asc_label, 'list_price asc'),
                              (name_asc_label, 'name asc')
                          ]"/>
-            <div class="dropdown btn-group dropdown_sorty_by">
-                <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
-                    <span class="fa fa-2x fa-exchange"/>
-                </a>
-                <ul class="dropdown-menu" role="menu">
-                    <li t-foreach="website_sale_sortable" t-as="sortby">
-                        <a t-att-href="keep('/shop', order=sortby[1])">
-                            <span t-raw="sortby[0]"/>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </xpath>
-    </template>
-
-    <template id="homepage" inherit_id="website.homepage" name="HomePage">
-        <xpath expr="//div[@id='wrap']" position="replace">
-            <div id="wrap" class="">
-                <div class="oe_structure oe_empty">
-                    <div id="myCarousel1501441674202" class="carousel slide s_banner" data-interval="10000">
-                        <ol class="carousel-indicators hidden">
-                            <li data-target="#myCarousel1501441674202" data-slide-to="0" class="active"/>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="item bg-alpha oe_img_bg oe_custom_bg active"
-                                 style="background-image: url(&quot;/web/image/2464&quot;);">
-                                <div class="container">
-                                    <div class="row content">
-                                        <div class="carousel-content col-md-offset-1 mb96 bg-black-50 mt16 col-md-4">
-                                            <h2 class="o_default_snippet_text">Здрасти,</h2>
-                                            <div>Hello, Салеметсiз бе.</div>
-                                            <div></div>
-                                            <div>Предлагаем на выгодных условиях</div>
-                                            <div></div>
-                                            <div>почтовые ящики уличные и секционные от производителя</div>
-                                            <div>армейские кровати</div>
-                                            <div>уличные урны.</div>
-                                            <p>
-                                                <a href="/page/website.contactus" class="btn btn-warning">Свяжитесь с
-                                                    нами
-                                                </a>
-                                            </p>
-                                        </div>
-                                        <div class="carousel-img hidden-sm hidden-xs mt32 col-md-6">
-                                            <img class="img-responsive" src="/web/image/2468" alt="ящик"
-                                                 data-original-title="ящик" title=""/>
-                                            <br/>
-                                            <span style="color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.5);">
-                                                Мы - Миасское производство, Миасс - это город инженеров-технологов и где
-                                                делают ракеты. Лавков, пока не делает ракет. Но может качественно
-                                                изготовить на интересных условиях металлическую мебель в дом.</span>&amp;nbsp;
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-control left hidden" data-target="#myCarousel1501441674202"
-                             data-slide="prev" style="width: 10%" data-cke-saved-href="#myCarousel1501441674202">
-                            <i class="fa fa-chevron-left"/>
-                        </div>
-                        <div class="carousel-control right hidden" data-target="#myCarousel1501441674202"
-                             data-slide="next" style="width: 10%" data-cke-saved-href="#myCarousel1501441674202">
-                            <i class="fa fa-chevron-right"/>
-                        </div>
-                    </div>
-                </div>
-                <section class="o_data_slider mb32 container text-center"
-                         data-options="{&quot;lazyLoad&quot;:&quot;ondemand&quot;,&quot;slidesToShow&quot;:3,&quot;slidesToScroll&quot;:1,&quot;dots&quot;:true,&quot;infinite&quot;:true,&quot;speed&quot;:500,&quot;arrows&quot;:true,&quot;autoplay&quot;:true,&quot;adaptiveHeight&quot;:false,&quot;variableWidth&quot;:false,&quot;autoplaySpeed&quot;:3000,&quot;data_model&quot;:&quot;product.template&quot;,&quot;data_domain&quot;:[[&quot;website_published&quot;,&quot;=&quot;,true]],&quot;data_image_field&quot;:&quot;image_medium&quot;,&quot;data_name_field&quot;:&quot;display_name&quot;,&quot;data_title&quot;:&quot;Наша продукция &quot;,&quot;data_title_tag&quot;:&quot;h1&quot;,&quot;data_title_class&quot;:&quot;text-center&quot;,&quot;data_uri_field&quot;:&quot;website_url&quot;,&quot;data_container_width&quot;:&quot;90%&quot;,&quot;data_limit&quot;:10,&quot;prevArrow&quot;:&quot;&lt;a href=\&quot;#\&quot; class=\&quot;slider-arrow-left\&quot;&gt;&lt;i class=\&quot;fa fa-arrow-left fa-2x\&quot;&gt;&lt;/i&gt;&lt;/a&gt;&quot;,&quot;nextArrow&quot;:&quot;&lt;a href=\&quot;#\&quot; class=\&quot;slider-arrow-right\&quot;&gt;&lt;i class=\&quot;fa fa-arrow-right fa-2x\&quot;&gt;&lt;/i&gt;&lt;/a&gt;&quot;}"
-                         style="width: 90%;">
-                    <div class="row">
-                        <h1 class="text-center">Наша продукция</h1>
-                    </div>
-                    <div class="o_slick_container oe_structure slick-initialized slick-slider slick-dotted"
-                         role="toolbar">
-                        <a href="#" class="slider-arrow-left slick-arrow">
-                            <i class="fa fa-arrow-left fa-2x"/>
-                        </a>
-                        <div aria-live="polite" class="slick-list draggable">
-                            <div class="slick-track" role="listbox"
-                                 style="opacity: 1; width: 2328px; transform: translate3d(-485px, 0px, 0px);">
-                                <!--<div class="thumbnail slick-slide slick-cloned" data-slick-index="-5" aria-hidden="true"-->
-                                     <!--tabindex="-1" style="width: 93px;">-->
-                                    <!--<a href="/shop/product/28" tabindex="-1">-->
-                                        <!--<img data-lazy="/web/image/product.template/28/image_medium"/>-->
-                                        <!--<div class="caption">-->
-                                            <!--<h5>Урна с пепельницей</h5>-->
-                                        <!--</div>-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                                <!--<div class="thumbnail slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true"-->
-                                     <!--tabindex="-1" style="width: 93px;">-->
-                                    <!--<a href="/shop/product/41" tabindex="-1">-->
-                                        <!--<img data-lazy="/web/image/product.template/41/image_medium"/>-->
-                                        <!--<div class="caption">-->
-                                            <!--<h5>Урна круглая</h5>-->
-                                        <!--</div>-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                                <!--<div class="thumbnail slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true"-->
-                                     <!--tabindex="-1" style="width: 93px;">-->
-                                    <!--<a href="/shop/product/3" tabindex="-1">-->
-                                        <!--<img data-lazy="/web/image/product.template/3/image_medium"/>-->
-                                        <!--<div class="caption">-->
-                                            <!--<h5>Умывальник дачный</h5>-->
-                                        <!--</div>-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                                <!--<div class="thumbnail slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true"-->
-                                     <!--tabindex="-1" style="width: 93px;">-->
-                                    <!--<a href="/shop/product/39" tabindex="-1">-->
-                                        <!--<img data-lazy="/web/image/product.template/39/image_medium"/>-->
-                                        <!--<div class="caption">-->
-                                            <!--<h5>Двухъярусная кровать</h5>-->
-                                        <!--</div>-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                                <!--<div class="thumbnail slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true"-->
-                                     <!--tabindex="-1" style="width: 93px;">-->
-                                    <!--<a href="/shop/product/38" tabindex="-1">-->
-                                        <!--<img data-lazy="/web/image/product.template/38/image_medium"/>-->
-                                        <!--<div class="caption">-->
-                                            <!--<h5>Кровать одноярусная</h5>-->
-                                        <!--</div>-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                                <!--<div class="thumbnail slick-slide slick-current slick-active" data-slick-index="0"-->
-                                     <!--aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide00"-->
-                                     <!--style="width: 93px;">-->
-                                    <!--<a href="/shop/product/30" tabindex="0">-->
-                                        <!--<img src="/web/image/product.template/30/image_medium" style="opacity: 1;"/>-->
-                                        <!--<div class="caption">-->
-                                            <!--<h5>Секционные почтовые ящики Подъезд</h5>-->
-                                        <!--</div>-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                                <!--<div class="thumbnail slick-slide slick-active" data-slick-index="1" aria-hidden="false"-->
-                                     <!--tabindex="-1" role="option" aria-describedby="slick-slide01" style="width: 93px;">-->
-                                    <!--<a href="/shop/product/31" tabindex="0">-->
-                                        <!--<img src="/web/image/product.template/31/image_medium" style="opacity: 1;"/>-->
-                                        <!--<div class="caption">-->
-                                            <!--<h5>Секционные почтовые ящики Подъезд Люкс</h5>-->
-                                        <!--</div>-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                                <!--<div class="thumbnail slick-slide slick-active" data-slick-index="2" aria-hidden="false"-->
-                                     <!--tabindex="-1" role="option" aria-describedby="slick-slide02" style="width: 93px;">-->
-                                    <!--<a href="/shop/product/32" tabindex="0">-->
-                                        <!--<img src="/web/image/product.template/32/image_medium" style="opacity: 1;"/>-->
-                                        <!--<div class="caption">-->
-                                            <!--<h5>Почтовый ящик уличный "Альфа"</h5>-->
-                                        <!--</div>-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                                <!--<div class="thumbnail slick-slide slick-active" data-slick-index="3" aria-hidden="false"-->
-                                     <!--tabindex="-1" role="option" aria-describedby="slick-slide03" style="width: 93px;">-->
-                                    <!--<a href="/shop/product/33" tabindex="0">-->
-                                        <!--<img src="/web/image/product.template/33/image_medium" style="opacity: 1;"/>-->
-                                        <!--<div class="caption">-->
-                                            <!--<h5>Почтовый ящик Горизонт</h5>-->
-                                        <!--</div>-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                                <!--<div class="thumbnail slick-slide slick-active" data-slick-index="4" aria-hidden="false"-->
-                                     <!--tabindex="-1" role="option" aria-describedby="slick-slide04" style="width: 93px;">-->
-                                    <!--<a href="/shop/product/36" tabindex="0">-->
-                                        <!--<img src="/web/image/product.template/36/image_medium" style="opacity: 1;"/>-->
-                                        <!--<div class="caption">-->
-                                            <!--<h5>Почтовый ящик Почта</h5>-->
-                                        <!--</div>-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                                <!--<div class="thumbnail slick-slide" data-slick-index="5" aria-hidden="true" tabindex="-1"-->
-                                     <!--role="option" aria-describedby="slick-slide05" style="width: 93px;">-->
-                                    <!--<a href="/shop/product/35" tabindex="-1">-->
-                                        <!--<img data-lazy="/web/image/product.template/35/image_medium"/>-->
-                                        <!--<div class="caption">-->
-                                            <!--<h5>Почтовый ящик Полукруглый</h5>-->
-                                        <!--</div>-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                                <!--<div class="thumbnail slick-slide" data-slick-index="6" aria-hidden="true" tabindex="-1"-->
-                                     <!--role="option" aria-describedby="slick-slide06" style="width: 93px;">-->
-                                    <!--<a href="/shop/product/25" tabindex="-1">-->
-                                        <!--<img data-lazy="/web/image/product.template/25/image_medium"/>-->
-                                        <!--<div class="caption">-->
-                                            <!--<h5>Урна квадратная</h5>-->
-                                        <!--</div>-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                                <!--<div class="thumbnail slick-slide" data-slick-index="7" aria-hidden="true" tabindex="-1"-->
-                                     <!--role="option" aria-describedby="slick-slide07" style="width: 93px;">-->
-                                    <!--<a href="/shop/product/29" tabindex="-1">-->
-                                        <!--<img data-lazy="/web/image/product.template/29/image_medium"/>-->
-                                        <!--<div class="caption">-->
-                                            <!--<h5>Урна на гнутых ножках</h5>-->
-                                        <!--</div>-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                                <!--<div class="thumbnail slick-slide" data-slick-index="8" aria-hidden="true" tabindex="-1"-->
-                                     <!--role="option" aria-describedby="slick-slide08" style="width: 93px;">-->
-                                    <!--<a href="/shop/product/27" tabindex="-1">-->
-                                        <!--<img data-lazy="/web/image/product.template/27/image_medium"/>-->
-                                        <!--<div class="caption">-->
-                                            <!--<h5>Урна с крышкой</h5>-->
-                                        <!--</div>-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                                <!--<div class="thumbnail slick-slide" data-slick-index="9" aria-hidden="true" tabindex="-1"-->
-                                     <!--role="option" aria-describedby="slick-slide09" style="width: 93px;">-->
-                                    <!--<a href="/shop/product/28" tabindex="-1">-->
-                                        <!--<img data-lazy="/web/image/product.template/28/image_medium"/>-->
-                                        <!--<div class="caption">-->
-                                            <!--<h5>Урна с пепельницей</h5>-->
-                                        <!--</div>-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                                <!--<div class="thumbnail slick-slide" data-slick-index="10" aria-hidden="true"-->
-                                     <!--tabindex="-1" role="option" aria-describedby="slick-slide010" style="width: 93px;">-->
-                                    <!--<a href="/shop/product/41" tabindex="-1">-->
-                                        <!--<img data-lazy="/web/image/product.template/41/image_medium"/>-->
-                                        <!--<div class="caption">-->
-                                            <!--<h5>Урна круглая</h5>-->
-                                        <!--</div>-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                                <!--<div class="thumbnail slick-slide" data-slick-index="11" aria-hidden="true"-->
-                                     <!--tabindex="-1" role="option" aria-describedby="slick-slide011" style="width: 93px;">-->
-                                    <!--<a href="/shop/product/3" tabindex="-1">-->
-                                        <!--<img data-lazy="/web/image/product.template/3/image_medium"/>-->
-                                        <!--<div class="caption">-->
-                                            <!--<h5>Умывальник дачный</h5>-->
-                                        <!--</div>-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                                <!--<div class="thumbnail slick-slide" data-slick-index="12" aria-hidden="true"-->
-                                     <!--tabindex="-1" role="option" aria-describedby="slick-slide012" style="width: 93px;">-->
-                                    <!--<a href="/shop/product/39" tabindex="-1">-->
-                                        <!--<img data-lazy="/web/image/product.template/39/image_medium"/>-->
-                                        <!--<div class="caption">-->
-                                            <!--<h5>Двухъярусная кровать</h5>-->
-                                        <!--</div>-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                                <!--<div class="thumbnail slick-slide" data-slick-index="13" aria-hidden="true"-->
-                                     <!--tabindex="-1" role="option" aria-describedby="slick-slide013" style="width: 93px;">-->
-                                    <!--<a href="/shop/product/38" tabindex="-1">-->
-                                        <!--<img data-lazy="/web/image/product.template/38/image_medium"/>-->
-                                        <!--<div class="caption">-->
-                                            <!--<h5>Кровать одноярусная</h5>-->
-                                        <!--</div>-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                                <!--<div class="thumbnail slick-slide slick-cloned" data-slick-index="14" aria-hidden="true"-->
-                                     <!--tabindex="-1" style="width: 93px;">-->
-                                    <!--<a href="/shop/product/30" tabindex="-1">-->
-                                        <!--<img src="/web/image/product.template/30/image_medium" style="opacity: 1;"/>-->
-                                        <!--<div class="caption">-->
-                                            <!--<h5>Секционные почтовые ящики Подъезд</h5>-->
-                                        <!--</div>-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                                <!--<div class="thumbnail slick-slide slick-cloned" data-slick-index="15" aria-hidden="true"-->
-                                     <!--tabindex="-1" style="width: 93px;">-->
-                                    <!--<a href="/shop/product/31" tabindex="-1">-->
-                                        <!--<img src="/web/image/product.template/31/image_medium" style="opacity: 1;"/>-->
-                                        <!--<div class="caption">-->
-                                            <!--<h5>Секционные почтовые ящики Подъезд Люкс</h5>-->
-                                        <!--</div>-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                                <!--<div class="thumbnail slick-slide slick-cloned" data-slick-index="16" aria-hidden="true"-->
-                                     <!--tabindex="-1" style="width: 93px;">-->
-                                    <!--<a href="/shop/product/32" tabindex="-1">-->
-                                        <!--<img src="/web/image/product.template/32/image_medium" style="opacity: 1;"/>-->
-                                        <!--<div class="caption">-->
-                                            <!--<h5>Почтовый ящик уличный "Альфа"</h5>-->
-                                        <!--</div>-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                                <!--<div class="thumbnail slick-slide slick-cloned" data-slick-index="17" aria-hidden="true"-->
-                                     <!--tabindex="-1" style="width: 93px;">-->
-                                    <!--<a href="/shop/product/33" tabindex="-1">-->
-                                        <!--<img src="/web/image/product.template/33/image_medium" style="opacity: 1;"/>-->
-                                        <!--<div class="caption">-->
-                                            <!--<h5>Почтовый ящик Горизонт</h5>-->
-                                        <!--</div>-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                                <!--<div class="thumbnail slick-slide slick-cloned" data-slick-index="18" aria-hidden="true"-->
-                                     <!--tabindex="-1" style="width: 93px;">-->
-                                    <!--<a href="/shop/product/36" tabindex="-1">-->
-                                        <!--<img src="/web/image/product.template/36/image_medium" style="opacity: 1;"/>-->
-                                        <!--<div class="caption">-->
-                                            <!--<h5>Почтовый ящик Почта</h5>-->
-                                        <!--</div>-->
-                                    <!--</a>-->
-                                <!--</div>-->
-                            </div>
-                        </div>
-                        <a href="#" class="slider-arrow-right slick-arrow">
-                            <i class="fa fa-arrow-right fa-2x"/>
-                        </a>
-                        <ul class="slick-dots" role="tablist">
-                            <li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true"
-                                aria-controls="navigation00" id="slick-slide00">
-                                <button type="button" data-role="none" role="button" tabindex="0">1</button>
-                            </li>
-                            <li aria-hidden="true" role="presentation" aria-selected="false"
-                                aria-controls="navigation01" id="slick-slide01">
-                                <button type="button" data-role="none" role="button" tabindex="0">2</button>
-                            </li>
-                            <li aria-hidden="true" role="presentation" aria-selected="false"
-                                aria-controls="navigation02" id="slick-slide02">
-                                <button type="button" data-role="none" role="button" tabindex="0">3</button>
-                            </li>
-                            <li aria-hidden="true" role="presentation" aria-selected="false"
-                                aria-controls="navigation03" id="slick-slide03">
-                                <button type="button" data-role="none" role="button" tabindex="0">4</button>
-                            </li>
-                            <li aria-hidden="true" role="presentation" aria-selected="false"
-                                aria-controls="navigation04" id="slick-slide04">
-                                <button type="button" data-role="none" role="button" tabindex="0">5</button>
-                            </li>
-                            <li aria-hidden="true" role="presentation" aria-selected="false"
-                                aria-controls="navigation05" id="slick-slide05">
-                                <button type="button" data-role="none" role="button" tabindex="0">6</button>
-                            </li>
-                            <li aria-hidden="true" role="presentation" aria-selected="false"
-                                aria-controls="navigation06" id="slick-slide06">
-                                <button type="button" data-role="none" role="button" tabindex="0">7</button>
-                            </li>
-                            <li aria-hidden="true" role="presentation" aria-selected="false"
-                                aria-controls="navigation07" id="slick-slide07">
-                                <button type="button" data-role="none" role="button" tabindex="0">8</button>
-                            </li>
-                            <li aria-hidden="true" role="presentation" aria-selected="false"
-                                aria-controls="navigation08" id="slick-slide08">
-                                <button type="button" data-role="none" role="button" tabindex="0">9</button>
-                            </li>
-                            <li aria-hidden="true" role="presentation" aria-selected="false"
-                                aria-controls="navigation09" id="slick-slide09">
-                                <button type="button" data-role="none" role="button" tabindex="0">10</button>
-                            </li>
-                            <li aria-hidden="true" role="presentation" aria-selected="false"
-                                aria-controls="navigation010" id="slick-slide010">
-                                <button type="button" data-role="none" role="button" tabindex="0">11</button>
-                            </li>
-                            <li aria-hidden="true" role="presentation" aria-selected="false"
-                                aria-controls="navigation011" id="slick-slide011">
-                                <button type="button" data-role="none" role="button" tabindex="0">12</button>
-                            </li>
-                            <li aria-hidden="true" role="presentation" aria-selected="false"
-                                aria-controls="navigation012" id="slick-slide012">
-                                <button type="button" data-role="none" role="button" tabindex="0">13</button>
-                            </li>
-                            <li aria-hidden="true" role="presentation" aria-selected="false"
-                                aria-controls="navigation013" id="slick-slide013">
-                                <button type="button" data-role="none" role="button" tabindex="0">14</button>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <div class="oe_structure oe_empty">
-                    <section class="s_text_block">
-                        <div class="container">
-                            <h3 class="text-center text-muted o_default_snippet_text">Здрасти, Hello, Салеметсiз бе.
-                            </h3>
-                            <div class="row">
-                                <div class="col-md-12 mb16 mt16">
-                                    <div class="o_image_floating pull-right s_image_floating o_margin_l">
-                                        <div class="o_container">
-                                            <img class="img img-rounded img-responsive" src="/web/image/2106"/>
-                                        </div>
-                                        <div class="o_footer">
-                                            <small class="text-muted">Отличные почтовые ящики идеально подойдут в любой
-                                                подъезд
-                                            </small>
-                                        </div>
-                                    </div>
-                                    <p class="o_default_snippet_text">Ящики почтовые уличные "Почта", секционные ящики
-                                        "Подъезд", облагородить площадку во дворе, заказав уличную урну от 24 литров или
-                                        скамейку для сада. Низкие цены, высокое качество.
-                                    </p>
-                                    <p>Для армейских гарнизонов, профилакториев есть выбор металлических кроваток, двух
-                                        ярусных кроватей.
-                                    </p>
-                                    <p class="o_default_snippet_text">Легированная сталь основа всей железной продукции.
-                                        Покраска идёт в специализированных малярных комнатах в соответствии с
-                                        рекомендацией производителя порошковой краски. При заданной температуре.
-                                    </p>
-                                    <p class="o_default_snippet_text">Ассортимент продукции предлагаем посмотреть в
-                                        фотообзоре в верхней части сайта.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="row">
-                    <div class="container">
-                        <h2 class="text-center">Категории продукции</h2>
-                        <ul class="homepage-categories">
-                            <t t-foreach="request.website.sale_categories()" t-as="c">
-                                <t t-call="theme_l.categories_recursive_homepage"/>
-                            </t>
-                        </ul>
-                    </div>
-                </div>
-                <div class="oe_structure oe_empty">
-                    <section
-                            class="jumbotron mt0 mb0 o_animate o_visible o_animated o_anim_bounce_in_left o_animate_preview bg-gray-lighter">
-                        <div class="container">
-                            <h3>Оставайтесь на связи с нами</h3>
-                            <p>В одиночку мы можем сделать многое, вместе - еще больше</p>
-                            <div class="input-group js_subscribe" data-list-id="1" data-subscribe="off">
-                                <input type="email" name="email" class="js_subscribe_email form-control"
-                                       placeholder="ваш электронный адрес..."/>
-                                <span class="input-group-btn">
-                                    <a href="#" class="btn btn-primary js_subscribe_btn o_default_snippet_text">
-                                        Подписаться
-                                    </a>
-                                    <a href="#" class="btn btn-success js_subscribed_btn hidden o_default_snippet_text"
-                                       disabled="disabled">Спасибо
-                                    </a>
-                                </span>
-                                <div class="alert alert-success hidden o_default_snippet_text">Спасибо за подписку!
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <div class="o_newsletter_popup" data-list-id="1">
-                        <div class="alert alert-warning alert-dismissible fade in css_non_editable_mode_hidden o_not_editable o_default_snippet_text"
-                             role="alert" contenteditable="false">
-                            <strong class="o_default_snippet_text">Всплывающий бюллетень!</strong>
-                            Эффект фрагмента всплывающего окна бюллетени активен на этой странице. Нажмите
-                            <a id="edit_dialog" href="#" class="o_default_snippet_text" data-original-title="" title="">
-                                Здесь диалоговое окно для редактирования контента
+                <div class="dropdown btn-group dropdown_sorty_by">
+                    <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
+                        <span class="fa fa-2x fa-exchange"/>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li t-foreach="website_sale_sortable" t-as="sortby">
+                            <a t-att-href="keep('/shop', order=sortby[1])">
+                                <span t-raw="sortby[0]"/>
                             </a>
-                        </div>
-                        <div class="modal modal-dialog modal-md fade fade-custom" id="o_newsletter_popup" tabindex="-1"
-                             role="dialog" style="display: none;" aria-hidden="true">
-                            <div class="modal-content o_popup_modal_content">
-                                <a href="#" class="o_popup_btn_close o_not_editable o_default_snippet_text"
-                                   data-dismiss="modal" data-original-title="" title="" contenteditable="false">×
-                                </a>
-                                <div class="o_popup_modal_body text-center">
-                                    <div class="o_popup_content_dev" data-oe-placeholder="Type Here ...">
-                                        <div>
-                                            <div class="modal-header text-center">
-                                                <h3 class="modal-title mt8">ООО "Лавков" для клиентов</h3>
+                        </li>
+                    </ul>
+                </div>
+            </xpath>
+        </template>
+
+        <template id="homepage" inherit_id="website.homepage" name="HomePage">
+            <xpath expr="//div[@id='wrap']" position="replace">
+                <div id="wrap" class="">
+                    <div class="oe_structure oe_empty">
+                        <div id="myCarousel1501441674202" class="carousel slide s_banner" data-interval="10000">
+                            <ol class="carousel-indicators hidden">
+                                <li data-target="#myCarousel1501441674202" data-slide-to="0" class="active"/>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item bg-alpha oe_img_bg oe_custom_bg active"
+                                     style="background-image: url(&quot;/web/image/2464&quot;);">
+                                    <div class="container">
+                                        <div class="row content">
+                                            <div class="carousel-content col-md-offset-1 mb96 bg-black-50 mt16 col-md-4">
+                                                <h2 class="o_default_snippet_text">Здрасти,</h2>
+                                                <div>Hello, Салеметсiз бе.</div>
+                                                <div></div>
+                                                <div>Предлагаем на выгодных условиях</div>
+                                                <div></div>
+                                                <div>почтовые ящики уличные и секционные от производителя</div>
+                                                <div>армейские кровати</div>
+                                                <div>уличные урны.</div>
+                                                <p>
+                                                    <a href="/page/website.contactus" class="btn btn-warning">Свяжитесь
+                                                        с
+                                                        нами
+                                                    </a>
+                                                </p>
                                             </div>
-                                            <div class="o_popup_message" style="text-align: left;">
-                                                <strong>Специальные условия для постоянных покупателей</strong>
+                                            <div class="carousel-img hidden-sm hidden-xs mt32 col-md-6">
+                                                <img class="img-responsive" src="/web/image/2468" alt="ящик"
+                                                     data-original-title="ящик" title=""/>
+                                                <br/>
+                                                <span style="color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.5);">
+                                                    Мы - Миасское производство, Миасс - это город инженеров-технологов и
+                                                    где
+                                                    делают ракеты. Лавков, пока не делает ракет. Но может качественно
+                                                    изготовить на интересных условиях металлическую мебель в дом.</span>&amp;nbsp;
                                             </div>
-                                            <p class="o_message_paragraph">оставайтесь с нами на связи</p>
                                         </div>
                                     </div>
-                                    <div class="input-group o_not_editable o_popup_animated o_popup_bounce_del500ms o_popup_bounce_small"
-                                         style="display: table;" contenteditable="false">
-                                        <input type="email" name="email" class="popup_subscribe_email form-control"
-                                               placeholder="адрес электронной почты..." autofocus="autofocus"/>
-                                        <span class="input-group-btn">
-                                            <a href="#"
-                                               class="btn btn-success popup_subscribe_btn o_default_snippet_text">
-                                                Подписаться
-                                            </a>
-                                        </span>
+                                </div>
+                            </div>
+                            <div class="carousel-control left hidden" data-target="#myCarousel1501441674202"
+                                 data-slide="prev" style="width: 10%" data-cke-saved-href="#myCarousel1501441674202">
+                                <i class="fa fa-chevron-left"/>
+                            </div>
+                            <div class="carousel-control right hidden" data-target="#myCarousel1501441674202"
+                                 data-slide="next" style="width: 10%" data-cke-saved-href="#myCarousel1501441674202">
+                                <i class="fa fa-chevron-right"/>
+                            </div>
+                        </div>
+                        <section class="s_feature_grid mt16 mb8">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="col-md-12">
+                                            <span style="min-width: 45px" class="pull-left mb16 fa fa-truck fa-2x"
+                                                  data-original-title="" title=""/>
+                                            <h5 class="mt0 mb0 o_default_snippet_text">Доставка по всей России</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="col-md-12">
+                                            <span style="min-width: 45px" class="pull-left mb16 fa fa-star-o fa-2x"
+                                                  data-original-title="" title=""/>
+                                            <h5 class="mb0 mt0">Гарантия качества</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="col-md-12">
+                                            <span style="min-width: 45px" class="pull-left mb16 fa fa-thumbs-o-up fa-2x"
+                                                  data-original-title="" title=""/>
+                                            <h5 class="mb0 mt0">Подберем нужное для Вас&nbsp;</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="col-md-12">
+                                            <span style="min-width: 45px" class="pull-left mb16 fa fa-history fa-2x"
+                                                  data-original-title="" title=""/>
+                                            <h5 class="mb0 mt0">Оперативное обслуживание</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                    <section class="o_data_slider mb32 container text-center"
+                             data-options="{&quot;lazyLoad&quot;:&quot;ondemand&quot;,&quot;slidesToShow&quot;:3,&quot;slidesToScroll&quot;:1,&quot;dots&quot;:true,&quot;infinite&quot;:true,&quot;speed&quot;:500,&quot;arrows&quot;:true,&quot;autoplay&quot;:true,&quot;adaptiveHeight&quot;:false,&quot;variableWidth&quot;:false,&quot;autoplaySpeed&quot;:3000,&quot;data_model&quot;:&quot;product.template&quot;,&quot;data_domain&quot;:[[&quot;website_published&quot;,&quot;=&quot;,true]],&quot;data_image_field&quot;:&quot;image_medium&quot;,&quot;data_name_field&quot;:&quot;display_name&quot;,&quot;data_title&quot;:&quot;Наша продукция &quot;,&quot;data_title_tag&quot;:&quot;h1&quot;,&quot;data_title_class&quot;:&quot;text-center&quot;,&quot;data_uri_field&quot;:&quot;website_url&quot;,&quot;data_container_width&quot;:&quot;90%&quot;,&quot;data_limit&quot;:10,&quot;prevArrow&quot;:&quot;&lt;a href=\&quot;#\&quot; class=\&quot;slider-arrow-left\&quot;&gt;&lt;i class=\&quot;fa fa-arrow-left fa-2x\&quot;&gt;&lt;/i&gt;&lt;/a&gt;&quot;,&quot;nextArrow&quot;:&quot;&lt;a href=\&quot;#\&quot; class=\&quot;slider-arrow-right\&quot;&gt;&lt;i class=\&quot;fa fa-arrow-right fa-2x\&quot;&gt;&lt;/i&gt;&lt;/a&gt;&quot;}"
+                             style="width: 90%;">
+                        <div class="row">
+                            <h1 class="text-center">Наша продукция</h1>
+                        </div>
+                        <div class="o_slick_container oe_structure slick-initialized slick-slider slick-dotted"
+                             role="toolbar">
+                            <a href="#" class="slider-arrow-left slick-arrow">
+                                <i class="fa fa-arrow-left fa-2x"/>
+                            </a>
+                            <div aria-live="polite" class="slick-list draggable">
+                                <div class="slick-track" role="listbox"
+                                     style="opacity: 1; width: 2328px; transform: translate3d(-485px, 0px, 0px);">
+                                </div>
+                            </div>
+                            <a href="#" class="slider-arrow-right slick-arrow">
+                                <i class="fa fa-arrow-right fa-2x"/>
+                            </a>
+                            <ul class="slick-dots" role="tablist">
+                                <li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true"
+                                    aria-controls="navigation00" id="slick-slide00">
+                                    <button type="button" data-role="none" role="button" tabindex="0">1</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false"
+                                    aria-controls="navigation01" id="slick-slide01">
+                                    <button type="button" data-role="none" role="button" tabindex="0">2</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false"
+                                    aria-controls="navigation02" id="slick-slide02">
+                                    <button type="button" data-role="none" role="button" tabindex="0">3</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false"
+                                    aria-controls="navigation03" id="slick-slide03">
+                                    <button type="button" data-role="none" role="button" tabindex="0">4</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false"
+                                    aria-controls="navigation04" id="slick-slide04">
+                                    <button type="button" data-role="none" role="button" tabindex="0">5</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false"
+                                    aria-controls="navigation05" id="slick-slide05">
+                                    <button type="button" data-role="none" role="button" tabindex="0">6</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false"
+                                    aria-controls="navigation06" id="slick-slide06">
+                                    <button type="button" data-role="none" role="button" tabindex="0">7</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false"
+                                    aria-controls="navigation07" id="slick-slide07">
+                                    <button type="button" data-role="none" role="button" tabindex="0">8</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false"
+                                    aria-controls="navigation08" id="slick-slide08">
+                                    <button type="button" data-role="none" role="button" tabindex="0">9</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false"
+                                    aria-controls="navigation09" id="slick-slide09">
+                                    <button type="button" data-role="none" role="button" tabindex="0">10</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false"
+                                    aria-controls="navigation010" id="slick-slide010">
+                                    <button type="button" data-role="none" role="button" tabindex="0">11</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false"
+                                    aria-controls="navigation011" id="slick-slide011">
+                                    <button type="button" data-role="none" role="button" tabindex="0">12</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false"
+                                    aria-controls="navigation012" id="slick-slide012">
+                                    <button type="button" data-role="none" role="button" tabindex="0">13</button>
+                                </li>
+                                <li aria-hidden="true" role="presentation" aria-selected="false"
+                                    aria-controls="navigation013" id="slick-slide013">
+                                    <button type="button" data-role="none" role="button" tabindex="0">14</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <div class="oe_structure oe_empty">
+                        <section class="s_text_block">
+                            <div class="container">
+                                <h3 class="text-center text-muted o_default_snippet_text">Здрасти, Hello, Салеметсiз бе.
+                                </h3>
+                                <div class="row">
+                                    <div class="col-md-12 mb16 mt16">
+                                        <div class="o_image_floating pull-right s_image_floating o_margin_l">
+                                            <div class="o_container">
+                                                <img class="img img-rounded img-responsive" src="/web/image/2106"/>
+                                            </div>
+                                            <div class="o_footer">
+                                                <small class="text-muted">Отличные почтовые ящики идеально подойдут в
+                                                    любой
+                                                    подъезд
+                                                </small>
+                                            </div>
+                                        </div>
+                                        <p class="o_default_snippet_text">Ящики почтовые уличные "Почта", секционные
+                                            ящики
+                                            "Подъезд", облагородить площадку во дворе, заказав уличную урну от 24 литров
+                                            или
+                                            скамейку для сада. Низкие цены, высокое качество.
+                                        </p>
+                                        <p>Для армейских гарнизонов, профилакториев есть выбор металлических кроваток,
+                                            двух
+                                            ярусных кроватей.
+                                        </p>
+                                        <p class="o_default_snippet_text">Легированная сталь основа всей железной
+                                            продукции.
+                                            Покраска идёт в специализированных малярных комнатах в соответствии с
+                                            рекомендацией производителя порошковой краски. При заданной температуре.
+                                        </p>
+                                        <p class="o_default_snippet_text">Ассортимент продукции предлагаем посмотреть в
+                                            фотообзоре в верхней части сайта.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="row">
+                        <div class="container">
+                            <h2 class="text-center">Категории продукции</h2>
+                            <ul class="homepage-categories">
+                                <t t-foreach="request.website.sale_categories()" t-as="c">
+                                    <t t-call="theme_l.categories_recursive_homepage"/>
+                                </t>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="oe_structure oe_empty">
+                        <section
+                                class="jumbotron mt0 mb0 o_animate o_visible o_animated o_anim_bounce_in_left o_animate_preview bg-gray-lighter">
+                            <div class="container">
+                                <h3>Оставайтесь на связи с нами</h3>
+                                <p>В одиночку мы можем сделать многое, вместе - еще больше</p>
+                                <div class="input-group js_subscribe" data-list-id="1" data-subscribe="off">
+                                    <input type="email" name="email" class="js_subscribe_email form-control"
+                                           placeholder="ваш электронный адрес..."/>
+                                    <span class="input-group-btn">
+                                        <a href="#" class="btn btn-primary js_subscribe_btn o_default_snippet_text">
+                                            Подписаться
+                                        </a>
+                                        <a href="#"
+                                           class="btn btn-success js_subscribed_btn hidden o_default_snippet_text"
+                                           disabled="disabled">Спасибо
+                                        </a>
+                                    </span>
+                                    <div class="alert alert-success hidden o_default_snippet_text">Спасибо за подписку!
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="o_newsletter_popup" data-list-id="1">
+                            <div class="alert alert-warning alert-dismissible fade in css_non_editable_mode_hidden o_not_editable o_default_snippet_text"
+                                 role="alert" contenteditable="false">
+                                <strong class="o_default_snippet_text">Всплывающий бюллетень!</strong>
+                                Эффект фрагмента всплывающего окна бюллетени активен на этой странице. Нажмите
+                                <a id="edit_dialog" href="#" class="o_default_snippet_text" data-original-title=""
+                                   title="">
+                                    Здесь диалоговое окно для редактирования контента
+                                </a>
+                            </div>
+                            <div class="modal modal-dialog modal-md fade fade-custom" id="o_newsletter_popup"
+                                 tabindex="-1"
+                                 role="dialog" style="display: none;" aria-hidden="true">
+                                <div class="modal-content o_popup_modal_content">
+                                    <a href="#" class="o_popup_btn_close o_not_editable o_default_snippet_text"
+                                       data-dismiss="modal" data-original-title="" title="" contenteditable="false">×
+                                    </a>
+                                    <div class="o_popup_modal_body text-center">
+                                        <div class="o_popup_content_dev" data-oe-placeholder="Type Here ...">
+                                            <div>
+                                                <div class="modal-header text-center">
+                                                    <h3 class="modal-title mt8">ООО "Лавков" для клиентов</h3>
+                                                </div>
+                                                <div class="o_popup_message" style="text-align: left;">
+                                                    <strong>Специальные условия для постоянных покупателей</strong>
+                                                </div>
+                                                <p class="o_message_paragraph">оставайтесь с нами на связи</p>
+                                            </div>
+                                        </div>
+                                        <div class="input-group o_not_editable o_popup_animated o_popup_bounce_del500ms o_popup_bounce_small"
+                                             style="display: table;" contenteditable="false">
+                                            <input type="email" name="email" class="popup_subscribe_email form-control"
+                                                   placeholder="адрес электронной почты..." autofocus="autofocus"/>
+                                            <span class="input-group-btn">
+                                                <a href="#"
+                                                   class="btn btn-success popup_subscribe_btn o_default_snippet_text">
+                                                    Подписаться
+                                                </a>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </xpath>
-    </template>
+            </xpath>
+        </template>
 
-    <template id="categories_recursive_homepage" name="Category list HomePage">
-        <li class="col-md-4">
-            <!--<a t-att-href="keep('/shop/category/' + slug(c), category=0)" t-field="c.name"></a>-->
-            <a class="homepage-category thumbnail" t-att-href="'/shop/category/'+slug(c)">
-                <div class="category-image" t-field="c.image"
-                     t-options="{'widget': 'image', 'class': 'img-rounded center-block'}"/>
-                <div class="category-caption text-center" t-esc="c.name"/>
-            </a>
-            <ul t-if="c.child_id" class="nav nav-pills nav-stacked nav-hierarchy">
-                <t t-foreach="c.child_id" t-as="c">
-                    <t t-call="theme_l.categories_recursive_homepage"/>
-                </t>
-            </ul>
-        </li>
-    </template>
-    <template id="custom_product_detail" inherit_id="website_sale.product" name="Custom Product Detail">
-        <xpath expr="//div[@id='wrap']" position="replace">
-            <t t-set="additional_title" t-value="product.name"/>
-            <div itemscope="itemscope" itemtype="http://schema.org/Product" id="wrap" class="js_sale">
-                <section
-                        t-attf-class="container mt8 oe_website_sale #{(compute_currency(product.lst_price) - product.website_price) &gt; 0.01 and website.get_current_pricelist().discount_policy == 'without_discount'  and 'discount'}"
-                        id="product_detail">
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <ol class="breadcrumb">
-                                <li>
-                                    <a t-att-href="keep(category=0)">Каталог</a>
-                                </li>
-                                <li t-if="category">
-                                    <a t-att-href="keep('/shop/category/%s' % slug(category), category=0)"
-                                       t-field="category.name"/>
-                                </li>
-                                <li class="active">
-                                    <span t-field="product.name"/>
-                                </li>
-                            </ol>
+        <template id="categories_recursive_homepage" name="Category list HomePage">
+            <li class="col-md-4">
+                <!--<a t-att-href="keep('/shop/category/' + slug(c), category=0)" t-field="c.name"></a>-->
+                <a class="homepage-category thumbnail" t-att-href="'/shop/category/'+slug(c)">
+                    <div class="category-image" t-field="c.image"
+                         t-options="{'widget': 'image', 'class': 'img-rounded center-block'}"/>
+                    <div class="category-caption text-center" t-esc="c.name"/>
+                </a>
+                <ul t-if="c.child_id" class="nav nav-pills nav-stacked nav-hierarchy">
+                    <t t-foreach="c.child_id" t-as="c">
+                        <t t-call="theme_l.categories_recursive_homepage"/>
+                    </t>
+                </ul>
+            </li>
+        </template>
+        <template id="custom_product_detail" inherit_id="website_sale.product" name="Custom Product Detail">
+            <xpath expr="//div[@id='wrap']" position="replace">
+                <t t-set="additional_title" t-value="product.name"/>
+                <div itemscope="itemscope" itemtype="http://schema.org/Product" id="wrap" class="js_sale">
+                    <section
+                            t-attf-class="container mt8 oe_website_sale #{(compute_currency(product.lst_price) - product.website_price) &gt; 0.01 and website.get_current_pricelist().discount_policy == 'without_discount'  and 'discount'}"
+                            id="product_detail">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <ol class="breadcrumb">
+                                    <li>
+                                        <a t-att-href="keep(category=0)">Каталог</a>
+                                    </li>
+                                    <li t-if="category">
+                                        <a t-att-href="keep('/shop/category/%s' % slug(category), category=0)"
+                                           t-field="category.name"/>
+                                    </li>
+                                    <li class="active">
+                                        <span t-field="product.name"/>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div id="website_published_button" class="col-sm-4">
+                                <t t-call="website.publish_management" groups="sales_team.group_sale_manager">
+                                    <t t-set="object" t-value="product"/>
+                                    <t t-set="publish_edit" t-value="True"/>
+                                    <t t-set="action" t-value="'product.product_template_action'"/>
+                                </t>
+                            </div>
+                            <div class="col-sm-2 text-right">
+                                <t t-call="website_sale.pricelist_list"/>
+                            </div>
                         </div>
-                        <div id="website_published_button" class="col-sm-4">
-                            <t t-call="website.publish_management" groups="sales_team.group_sale_manager">
-                                <t t-set="object" t-value="product"/>
-                                <t t-set="publish_edit" t-value="True"/>
-                                <t t-set="action" t-value="'product.product_template_action'"/>
-                            </t>
-                        </div>
-                        <div class="col-sm-2 text-right">
-                            <t t-call="website_sale.pricelist_list"/>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <h1 itemprop="name" t-field="product.name">Название продукта</h1>
-                        </div>
-                        <div class="col-sm-7">
-                            <span itemprop="image" t-field="product.image"
-                                  t-options="{'widget': 'image', 'class': 'product_detail_img', 'alt-field': 'name', 'zoom': 'image'}"
-                                  groups="!website_sale.group_website_multi_image"/>
-                            <t groups="website_sale.group_website_multi_image">
-                                <t t-set="variant_img" t-value="product.product_variant_ids[0].image_variant"/>
-                                <t t-set="image_ids" t-value="product.product_image_ids"/>
-                                <div id="o-carousel-product" class="carousel slide" data-ride="carousel"
-                                     data-interval="0">
-                                    <div class="carousel-outer">
-                                        <div class="carousel-inner">
-                                            <div class="item active" itemprop="image"
-                                                 t-field="product.product_variant_ids[0].image"
-                                                 t-options="{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;product_detail_img js_variant_img&quot;, &quot;alt-field&quot;: &quot;name&quot;, &quot;zoom&quot;: &quot;image&quot;}"/>
-                                            <div t-if="variant_img" class="item" itemprop="image"
-                                                 t-field="product.image"
-                                                 t-options="{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;product_detail_img&quot;, &quot;alt-field&quot;: &quot;name&quot;, &quot;zoom&quot;: &quot;image&quot;}"/>
-                                            <t t-if="len(image_ids)" t-foreach="image_ids" t-as="pimg">
-                                                <div class="item" t-field="pimg.image"
-                                                     t-options="{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;product_detail_img&quot;, &quot;alt-field&quot;: &quot;name&quot;, &quot;zoom&quot;: &quot;image&quot; }"/>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <h1 itemprop="name" t-field="product.name">Название продукта</h1>
+                            </div>
+                            <div class="col-sm-7">
+                                <span itemprop="image" t-field="product.image"
+                                      t-options="{'widget': 'image', 'class': 'product_detail_img', 'alt-field': 'name', 'zoom': 'image'}"
+                                      groups="!website_sale.group_website_multi_image"/>
+                                <t groups="website_sale.group_website_multi_image">
+                                    <t t-set="variant_img" t-value="product.product_variant_ids[0].image_variant"/>
+                                    <t t-set="image_ids" t-value="product.product_image_ids"/>
+                                    <div id="o-carousel-product" class="carousel slide" data-ride="carousel"
+                                         data-interval="0">
+                                        <div class="carousel-outer">
+                                            <div class="carousel-inner">
+                                                <div class="item active" itemprop="image"
+                                                     t-field="product.product_variant_ids[0].image"
+                                                     t-options="{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;product_detail_img js_variant_img&quot;, &quot;alt-field&quot;: &quot;name&quot;, &quot;zoom&quot;: &quot;image&quot;}"/>
+                                                <div t-if="variant_img" class="item" itemprop="image"
+                                                     t-field="product.image"
+                                                     t-options="{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;product_detail_img&quot;, &quot;alt-field&quot;: &quot;name&quot;, &quot;zoom&quot;: &quot;image&quot;}"/>
+                                                <t t-if="len(image_ids)" t-foreach="image_ids" t-as="pimg">
+                                                    <div class="item" t-field="pimg.image"
+                                                         t-options="{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;product_detail_img&quot;, &quot;alt-field&quot;: &quot;name&quot;, &quot;zoom&quot;: &quot;image&quot; }"/>
+                                                </t>
+                                            </div>
+
+                                            <t t-if="len(image_ids) or variant_img">
+                                                <a class="carousel-control left" href="#o-carousel-product"
+                                                   role="button"
+                                                   data-slide="prev">
+                                                    <span class="fa fa-chevron-left" aria-hidden="true"/>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control right" href="#o-carousel-product"
+                                                   role="button"
+                                                   data-slide="next">
+                                                    <span class="fa fa-chevron-right" aria-hidden="true"/>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
                                             </t>
                                         </div>
 
-                                        <t t-if="len(image_ids) or variant_img">
-                                            <a class="carousel-control left" href="#o-carousel-product" role="button"
-                                               data-slide="prev">
-                                                <span class="fa fa-chevron-left" aria-hidden="true"/>
-                                                <span class="sr-only">Previous</span>
-                                            </a>
-                                            <a class="carousel-control right" href="#o-carousel-product" role="button"
-                                               data-slide="next">
-                                                <span class="fa fa-chevron-right" aria-hidden="true"/>
-                                                <span class="sr-only">Next</span>
-                                            </a>
-                                        </t>
-                                    </div>
-
-                                    <ol class="carousel-indicators" t-if="len(image_ids) or variant_img">
-                                        <li data-target="#o-carousel-product" data-slide-to="0" class="active">
-                                            <img class="img img-responsive js_variant_img_small"
-                                                 t-attf-src="/website/image/product.product/{{product.product_variant_ids[0].id}}/image/90x90"
-                                                 t-att-alt="product.name"/>
-                                        </li>
-                                        <li t-if="variant_img" data-target="#o-carousel-product" data-slide-to="1"
-                                            class="">
-                                            <img class="img img-responsive"
-                                                 t-attf-src="/website/image/product.template/{{product.id}}/image/90x90"
-                                                 t-att-alt="product.name"/>
-                                        </li>
-                                        <t t-if="len(image_ids)" t-foreach="image_ids" t-as="pimg">
-                                            <li data-target="#o-carousel-product"
-                                                t-att-data-slide-to="pimg_index + (variant_img and 2 or 1)">
-                                                <img class="img img-responsive"
-                                                     t-attf-src="/website/image/product.image/{{pimg.id}}/image/90x90"
-                                                     t-att-alt="pimg.name"/>
+                                        <ol class="carousel-indicators" t-if="len(image_ids) or variant_img">
+                                            <li data-target="#o-carousel-product" data-slide-to="0" class="active">
+                                                <img class="img img-responsive js_variant_img_small"
+                                                     t-attf-src="/website/image/product.product/{{product.product_variant_ids[0].id}}/image/90x90"
+                                                     t-att-alt="product.name"/>
                                             </li>
-                                        </t>
-                                    </ol>
-                                </div>
-                            </t>
-                        </div>
-                        <div class="col-sm-5 col-lg-4 col-lg-offset-1" id="product_details">
-                            <span itemprop="url" style="display:none;" t-esc="'/shop/product/%s' % slug(product)"/>
-                            <form action="/shop/cart/update" class="js_add_cart_variants"
-                                  t-att-data-attribute_value_ids="product.product_variant_ids.ids" method="POST">
-                                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
-                                <div class="text-center">
-                                    <t t-call="theme_l.product_price"/>
-                                </div>
-                                <div t-if="product.availability == 'in_stock'" class="alert alert-success text-center">
-                                    <span class="fa fa-check-circle"/>
-                                    <span>В наличии</span>
-                                </div>
-                                <a id="add_to_cart"
-                                   class="btn btn-primary mt8 js_check_product a-submit text-center center-block"
-                                   href="#"><span class="fa fa-shopping-cart" />&amp;nbsp;В корзину
-                                </a>
-                                <div t-if="product.availability == 'warning'" class="alert alert-warning">
-                                    <span class="fa fa-warning"/>
-                                    <span t-field="product.availability_warning"/>
-                                </div>
-                                <div class="js_product" t-if="product.product_variant_ids">
-                                    <t t-placeholder="select">
-                                        <input type="hidden" class="product_id" name="product_id"
-                                               t-att-value="product.product_variant_id.id if len(product.product_variant_ids) == 1 else '0'"/>
-                                        <t t-call="website_sale.variants">
-                                            <t t-set="ul_class" t-value="'nav-stacked'"/>
-                                        </t>
-                                    </t>
-                                    <p t-if="len(product.product_variant_ids) &gt; 1"
-                                       class="css_not_available_msg bg-danger" style="padding: 15px;">Товар временно не
-                                        доступен
-                                    </p>
-                                </div>
-                            </form>
-
-                            <hr t-if="product.description_sale"/>
-                            <div>
-                                <p t-field="product.description_sale" class="text-muted"/>
+                                            <li t-if="variant_img" data-target="#o-carousel-product" data-slide-to="1"
+                                                class="">
+                                                <img class="img img-responsive"
+                                                     t-attf-src="/website/image/product.template/{{product.id}}/image/90x90"
+                                                     t-att-alt="product.name"/>
+                                            </li>
+                                            <t t-if="len(image_ids)" t-foreach="image_ids" t-as="pimg">
+                                                <li data-target="#o-carousel-product"
+                                                    t-att-data-slide-to="pimg_index + (variant_img and 2 or 1)">
+                                                    <img class="img img-responsive"
+                                                         t-attf-src="/website/image/product.image/{{pimg.id}}/image/90x90"
+                                                         t-att-alt="pimg.name"/>
+                                                </li>
+                                            </t>
+                                        </ol>
+                                    </div>
+                                </t>
                             </div>
-                            <hr/>
+                            <div class="col-sm-5 col-lg-4 col-lg-offset-1" id="product_details">
+                                <span itemprop="url" style="display:none;" t-esc="'/shop/product/%s' % slug(product)"/>
+                                <form action="/shop/cart/update" class="js_add_cart_variants"
+                                      t-att-data-attribute_value_ids="product.product_variant_ids.ids" method="POST">
+                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                    <div class="text-center">
+                                        <t t-call="theme_l.product_price"/>
+                                    </div>
+                                    <div t-if="product.availability == 'in_stock'"
+                                         class="alert alert-success text-center">
+                                        <span class="fa fa-check-circle"/>
+                                        <span>В наличии</span>
+                                    </div>
+                                    <a id="add_to_cart"
+                                       class="btn btn-primary mt8 js_check_product a-submit text-center center-block"
+                                       href="#"><span class="fa fa-shopping-cart"/>&amp;nbsp;В корзину
+                                    </a>
+                                    <div t-if="product.availability == 'warning'" class="alert alert-warning">
+                                        <span class="fa fa-warning"/>
+                                        <span t-field="product.availability_warning"/>
+                                    </div>
+                                    <div class="js_product" t-if="product.product_variant_ids">
+                                        <t t-placeholder="select">
+                                            <input type="hidden" class="product_id" name="product_id"
+                                                   t-att-value="product.product_variant_id.id if len(product.product_variant_ids) == 1 else '0'"/>
+                                            <t t-call="website_sale.variants">
+                                                <t t-set="ul_class" t-value="'nav-stacked'"/>
+                                            </t>
+                                        </t>
+                                        <p t-if="len(product.product_variant_ids) &gt; 1"
+                                           class="css_not_available_msg bg-danger" style="padding: 15px;">Товар временно
+                                            не
+                                            доступен
+                                        </p>
+                                    </div>
+                                </form>
 
+                                <hr t-if="product.description_sale"/>
+                                <div>
+                                    <p t-field="product.description_sale" class="text-muted"/>
+                                </div>
+                                <hr/>
+
+                            </div>
                         </div>
-                    </div>
-                </section>
-                <div itemprop="description" t-field="product.website_description" class="oe_structure mt16"
-                     id="product_full_description"/>
-                <t t-set="head">
-                    <!-- Facebook and linkedin sharing data -->
-                    <meta property="og:type" content="website"/>
-                    <meta property="og:url" t-att-content="request.httprequest.url"/>
-                    <meta property="og:image"
-                          t-attf-content="#{request.httprequest.url_root}web/image/product.template/#{product.id}/image"/>
-                    <meta property="og:description" t-att-content="product.description_sale"/>
-                    <!--  Twitter sharing data -->
-                    <meta name="twitter:card" content="summary_large_image"/>
-                    <meta name="twitter:site" t-attf-content="@#{res_company.name}"/>
-                    <meta name="twitter:title" t-att-content="product.name"/>
-                    <meta name="twitter:description" t-att-content="product.description_sale"/>
-                    <meta name="twitter:image"
-                          t-attf-content="#{request.httprequest.url_root}web/image/product.template/#{product.id}/image"/>
-                </t>
-            </div>
+                    </section>
+                    <div itemprop="description" t-field="product.website_description" class="oe_structure mt16"
+                         id="product_full_description"/>
+                    <t t-set="head">
+                        <!-- Facebook and linkedin sharing data -->
+                        <meta property="og:type" content="website"/>
+                        <meta property="og:url" t-att-content="request.httprequest.url"/>
+                        <meta property="og:image"
+                              t-attf-content="#{request.httprequest.url_root}web/image/product.template/#{product.id}/image"/>
+                        <meta property="og:description" t-att-content="product.description_sale"/>
+                        <!--  Twitter sharing data -->
+                        <meta name="twitter:card" content="summary_large_image"/>
+                        <meta name="twitter:site" t-attf-content="@#{res_company.name}"/>
+                        <meta name="twitter:title" t-att-content="product.name"/>
+                        <meta name="twitter:description" t-att-content="product.description_sale"/>
+                        <meta name="twitter:image"
+                              t-attf-content="#{request.httprequest.url_root}web/image/product.template/#{product.id}/image"/>
+                    </t>
+                </div>
 
-        </xpath>
-    </template>
-    <template id="product_price">
-        <div itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" class="product_price mt16">
-            <h4 class="oe_price_h4 css_editable_mode_hidden">
-                <span class="text-danger oe_default_price" style="text-decoration: line-through; white-space: nowrap;"
-                      t-esc="compute_currency(product.website_public_price)"
-                      t-options="{'widget': 'monetary', 'display_currency': website.get_current_pricelist().currency_id, 'from_currency': website.currency_id}"
-                      t-att-style="'text-decoration: line-through; white-space: nowrap; ' + '' if (compute_currency(product.lst_price) - product.website_price) &gt; 0.01 and website.get_current_pricelist().discount_policy == 'without_discount' else 'display: none;'"
-                />
-                <b class="oe_price" style="white-space: nowrap;" t-esc="product.website_price"
-                   t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
-                <span itemprop="price" style="display:none;" t-esc="product.website_price"/>
-                <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
-            </h4>
-            <h4 class="css_non_editable_mode_hidden decimal_precision"
-                t-att-data-precision="str(product.currency_id.decimal_places)">
-                <span t-field="product.lst_price"
-                      t-options='{
+            </xpath>
+        </template>
+        <template id="product_price">
+            <div itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" class="product_price mt16">
+                <h4 class="oe_price_h4 css_editable_mode_hidden">
+                    <span class="text-danger oe_default_price"
+                          style="text-decoration: line-through; white-space: nowrap;"
+                          t-esc="compute_currency(product.website_public_price)"
+                          t-options="{'widget': 'monetary', 'display_currency': website.get_current_pricelist().currency_id, 'from_currency': website.currency_id}"
+                          t-att-style="'text-decoration: line-through; white-space: nowrap; ' + '' if (compute_currency(product.lst_price) - product.website_price) &gt; 0.01 and website.get_current_pricelist().discount_policy == 'without_discount' else 'display: none;'"
+                    />
+                    <b class="oe_price" style="white-space: nowrap;" t-esc="product.website_price"
+                       t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                    <span itemprop="price" style="display:none;" t-esc="product.website_price"/>
+                    <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
+                </h4>
+                <h4 class="css_non_editable_mode_hidden decimal_precision"
+                    t-att-data-precision="str(product.currency_id.decimal_places)">
+                    <span t-field="product.lst_price"
+                          t-options='{
                    "widget": "monetary",
                    "display_currency": product.currency_id,
                }'/>
-            </h4>
-            <h4 class="hidden oe_not_available bg-warning">Временно не доступен</h4>
-        </div>
-    </template>
-    <template id="custom_select_quantity" inherit_id="website_sale.product_quantity" name="Custom select quantity">
-        <xpath expr="//div[@class='css_quantity input-group oe_website_spinner']" position="replace">
-            <div class="center-block text-center">
-                <div class="css_quantity input-group oe_website_spinner" contenteditable="false">
-                    <a t-attf-href="#" class="mb8 input-group-addon js_add_cart_json">
-                        <i class="fa fa-minus"/>
-                    </a>
-                    <input type="text" class="form-control quantity" data-min="1" name="add_qty" value="1"/>
-                    <a t-attf-href="#" class="mb8 input-group-addon float_left js_add_cart_json">
-                        <i class="fa fa-plus"/>
-                    </a>
-                </div>
+                </h4>
+                <h4 class="hidden oe_not_available bg-warning">Временно не доступен</h4>
             </div>
-        </xpath>
-    </template>
-    <template id="marquee_text" inherit_id="theme_l.user_menu_cart" name="Marquee">
-        <xpath expr="//div[@class='hidden-sm col-md-6']" position="inside">
-            <marquee direction="left" class="mt4">
-                Застройщикам и оптовым покупателям индвидуальные скидки! Звоните сейчас ... +7-351-711-12-49
-            </marquee>
-        </xpath>
-    </template>
+        </template>
+        <template id="custom_select_quantity" inherit_id="website_sale.product_quantity" name="Custom select quantity">
+            <xpath expr="//div[@class='css_quantity input-group oe_website_spinner']" position="replace">
+                <div class="center-block text-center">
+                    <div class="css_quantity input-group oe_website_spinner" contenteditable="false">
+                        <a t-attf-href="#" class="mb8 input-group-addon js_add_cart_json">
+                            <i class="fa fa-minus"/>
+                        </a>
+                        <input type="text" class="form-control quantity" data-min="1" name="add_qty" value="1"/>
+                        <a t-attf-href="#" class="mb8 input-group-addon float_left js_add_cart_json">
+                            <i class="fa fa-plus"/>
+                        </a>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+        <template id="marquee_text" inherit_id="theme_l.user_menu_cart" name="Marquee">
+            <xpath expr="//div[@class='hidden-sm col-md-6']" position="inside">
+                <marquee direction="left" class="mt4">
+                    Застройщикам и оптовым покупателям индвидуальные скидки! Звоните сейчас ... +7-351-711-12-49
+                </marquee>
+            </xpath>
+        </template>
 
 
-</data>
-        </odoo>
+    </data>
+</odoo>
