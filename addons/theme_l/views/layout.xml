@@ -267,7 +267,7 @@
         <template id="user_menu_cart" inherit_id="user_menu" name="Cart in User Menu">
             <xpath expr=".//*[@id='user-menu-cart']" position="inside">
                 <t t-set="website_sale_order" t-value="website.sale_get_order()"/>
-                <a href="/shop/cart" class="btn">
+                <a id="cart-btn" href="/shop/cart" class="btn">
                     <i class="fa fa-shopping-cart"/>
                     Корзина
                     <sup t-attf-class="my_cart_quantity label label-primary"
@@ -922,5 +922,14 @@
                 </div>
             </xpath>
         </template>
+        <template id="marquee_text" inherit_id="theme_l.user_menu_cart" name="Marquee">
+            <xpath expr="//a[@id='cart-btn']" position="before">
+                <marquee direction="left" >
+                    Застройщикам и оптовым покупателям индвидуальные скидки! Звоните сейчас ... +7-351-711-12-49
+                </marquee>
+            </xpath>
+        </template>
+
+
     </data>
 </odoo>
