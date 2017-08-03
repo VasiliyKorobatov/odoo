@@ -12,6 +12,7 @@
         'views/layout.xml',
         'views/options.xml',
         'views/pages.xml',
+        'views/view.xml',
         'views/snippets.xml'
     ],
     'category': 'Theme/Creative',
