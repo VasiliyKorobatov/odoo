@@ -4694,7 +4694,7 @@
                                     </div>
                                 </t>
                             </div>
-                            <div class="col-sm-5 col-lg-4 col-lg-offset-1" id="product_details">
+                            <div class="col-sm-7 col-md-5 col-lg-8" id="product_details">
                                 <span itemprop="url" style="display:none;" t-esc="'/shop/product/%s' % slug(product)"/>
                                 <form action="/shop/cart/update" class="js_add_cart_variants"
                                       t-att-data-attribute_value_ids="product.product_variant_ids.ids" method="POST">
@@ -4812,7 +4812,7 @@
             <xpath expr="//section[@id='product_detail']/div[@class='row']/div[@class='col-sm-7 col-md-7 col-lg-7']" position="replace">
                 <input type="hidden" id="variant_img_display" t-att-value="product.variant_bool"/>
                 <input type="hidden" id="product_img_display" t-att-value="product.id"/>
-                <div class="col-sm-7 col-md-7 col-lg-7">
+                <div class="col-sm-7 col-md-7 col-lg-4">
                       <!-- Carousel indicators as Image ThumbNails -->
                     <div id="thumb_img_add">
                         <div id='carousel-custom' class='carousel slide'>
