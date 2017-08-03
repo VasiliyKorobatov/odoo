@@ -4809,7 +4809,7 @@
             </xpath>
         </template>
         <template id="custom_multi_image" inherit_id="website_multi_image_zoom.product_extended" name="Custom Multi Image">
-            <xpath expr="//section[@id='product_detail']/div[@class='row']/div[@class='col-sm-7']" position="replace">
+            <xpath expr="//section[@id='product_detail']/div[@class='row']/div[@class='col-sm-7 col-md-7 col-lg-7']" position="replace">
                 <input type="hidden" id="variant_img_display" t-att-value="product.variant_bool"/>
                 <input type="hidden" id="product_img_display" t-att-value="product.id"/>
                 <div class="col-sm-7 col-md-7 col-lg-7">
