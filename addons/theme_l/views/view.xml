@@ -17,16 +17,36 @@
         </field>
     </record>
     <record model="ir.ui.view"
-            id="theme_l.product_product_form_view">
-        <field name="name">theme_l.product.dimensions.product.product.form</field>
+            id="theme_l.product_product_easy_edit_view">
+        <field name="name">theme_l.product.dimensions.product.easyedit.form</field>
         <field name="model">product.product</field>
         <field name="inherit_id"
                ref="product.product_variant_easy_edit_view"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='weight']" position="after">
-                <field name="length"/>
-                <field name="width"/>
-                <field name="height"/>
+            <xpath expr="//group[@name='weight']" position="after">
+                <group name="lhw">
+                    <field name="length"/>
+                    <field name="width"/>
+                    <field name="height"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+    <record model="ir.ui.view"
+            id="theme_l.product_product_form_view">
+        <field name="name">theme_l.product.dimensions.product.product.form</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id"
+               ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook/page[1]" position="inside">
+                <group>
+                    <group name="lhw">
+                        <field name="length"/>
+                        <field name="width"/>
+                        <field name="height"/>
+                    </group>
+                </group>
             </xpath>
         </field>
     </record>
