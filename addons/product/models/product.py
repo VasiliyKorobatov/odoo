@@ -156,7 +156,7 @@ class ProductProduct(models.Model):
         groups="base.group_user",
         help="Cost of the product template used for standard stock valuation in accounting and used as a base price on purchase orders. "
              "Expressed in the default unit of measure of the product.")
-    volume = fields.Float('Volume', help="The volume in m3.")
+    volume = fields.Float('Volume', digits=dp.get_precision('Stock Volume'), help="The volume in m3.")
     weight = fields.Float(
         'Weight', digits=dp.get_precision('Stock Weight'),
         help="The weight of the contents in Kg, not including any packaging, etc.")
