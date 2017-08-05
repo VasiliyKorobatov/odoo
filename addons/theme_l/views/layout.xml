@@ -4698,6 +4698,9 @@
                                 </div>
                                 <span itemprop="url" style="display:none;" t-esc="'/shop/product/%s' % slug(product)"/>
                                 <div class="col-xs-12">
+                                    <t t-set="rating_stat" t-value="rating_product"/>
+                                    <t t-set="max_rate" t-value="5"/>
+                                    <t t-set="min_rate" t-value="1"/>
                                     <div class="o_rating_card">
                                         <div class="text-center well well-sm">
                                             <!-- popover 'button' -->
@@ -4836,6 +4839,24 @@
                     </section>
                     <div itemprop="description" t-field="product.website_description" class="oe_structure mt16"
                          id="product_full_description"/>
+                    <hr class="mb32"/>
+                    <section class="container">
+                        <div class="row col-md-10 col-md-offset-1">
+                            <div class="text-muted">
+                                <h3 class="fa fa-comment-o">
+                                    <a id="comments">
+                                        <t t-if="len(product.website_message_ids) &lt;= 1"><t t-esc="len(product.website_message_ids)"/> comment</t>
+                                        <t t-if="len(product.website_message_ids) &gt; 1"><t t-esc="len(product.website_message_ids)"/> comments</t>
+                                    </a>
+                                </h3>
+                            </div>
+                            <t t-call="website_mail.message_thread">
+                                <t t-set="object" t-value="product"/>
+                                <t t-set="chatter_mode" t-value="'json'"/>
+                                <t t-set="rating_enable" t-value="True"/>
+                            </t>
+                        </div>
+                    </section>
                     <t t-set="head">
                         <!-- Facebook and linkedin sharing data -->
                         <meta property="og:type" content="website"/>
