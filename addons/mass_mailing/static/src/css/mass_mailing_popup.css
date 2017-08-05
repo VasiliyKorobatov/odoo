@@ -203,6 +203,7 @@ fieldset[disabled] #o_newsletter_popup .btn.btn-success.active {
   -moz-transition: all ease 200ms;
   -ms-transition: all ease 200ms;
   -o-transition: all ease 200ms;
+  padding-top: 1px;
 }
 #o_newsletter_popup .o_popup_modal_content a.o_popup_btn_close:hover {
   background: #89296e;
