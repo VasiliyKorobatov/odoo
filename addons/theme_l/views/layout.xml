@@ -4702,7 +4702,7 @@
                                     <t t-set="max_rate" t-value="5"/>
                                     <t t-set="min_rate" t-value="1"/>
                                     <div class="o_rating_card">
-                                        <div class="text-center well well-sm">
+                                        <div class="text-center">
                                             <!-- popover 'button' -->
                                             <div class="rating" data-placement="top" data-toggle="rating-popover">
                                                 <t t-call="rating.rating_star_card">
