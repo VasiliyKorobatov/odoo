@@ -4842,14 +4842,14 @@
                     <hr class="mb32"/>
                     <section class="container">
                         <div class="row col-md-10 col-md-offset-1">
-                            <div class="text-muted">
-                                <h3 class="fa fa-comment-o">
-                                    <a id="comments">
-                                        <t t-if="len(product.website_message_ids) == 1"><t t-esc="len(product.website_message_ids)"/> комментарий </t>
-                                        <t t-if="len(product.website_message_ids) &gt; 1"><t t-esc="len(product.website_message_ids)"/> комментариев</t>
-                                    </a>
-                                </h3>
-                            </div>
+                            <!--<div class="text-muted">-->
+                                <!--<h3 class="fa fa-comment-o">-->
+                                    <!--<a id="comments">-->
+                                        <!--<t t-if="len(product.website_message_ids) == 1"><t t-esc="len(product.website_message_ids)"/> комментарий </t>-->
+                                        <!--<t t-if="len(product.website_message_ids) &gt; 1"><t t-esc="len(product.website_message_ids)"/> комментариев</t>-->
+                                    <!--</a>-->
+                                <!--</h3>-->
+                            <!--</div>-->
                             <t t-call="website_mail.message_thread">
                                 <t t-set="object" t-value="product"/>
                                 <t t-set="chatter_mode" t-value="'json'"/>

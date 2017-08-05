@@ -22,11 +22,11 @@ odoo.define('rating.rating', function (require) {
             });
             this.labels = {
                 '0': "",
-                '1': _t("I hate it"),
-                '2': _t("I don't like it"),
-                '3': _t("It's okay"),
-                '4': _t("I like it"),
-                '5': _t("I love it"),
+                '1': _t("Ненавижу"),
+                '2': _t("Не нравится"),
+                '3': _t("Нормально"),
+                '4': _t("Нравится"),
+                '5': _t("Обожаю"),
             };
             this.user_click = false; // user has click or not
             this.set("star_value", 0);
