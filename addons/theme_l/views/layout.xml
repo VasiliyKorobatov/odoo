@@ -4845,8 +4845,8 @@
                             <div class="text-muted">
                                 <h3 class="fa fa-comment-o">
                                     <a id="comments">
-                                        <t t-if="len(product.website_message_ids) &lt;= 1"><t t-esc="len(product.website_message_ids)"/> comment</t>
-                                        <t t-if="len(product.website_message_ids) &gt; 1"><t t-esc="len(product.website_message_ids)"/> comments</t>
+                                        <t t-if="len(product.website_message_ids) = 1"><t t-esc="len(product.website_message_ids)"/> комментарий </t>
+                                        <t t-if="len(product.website_message_ids) &gt; 1"><t t-esc="len(product.website_message_ids)"/> комментариев</t>
                                     </a>
                                 </h3>
                             </div>
