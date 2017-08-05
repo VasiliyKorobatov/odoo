@@ -12,6 +12,10 @@ $(document).ready(function() {
         Cookies.set('city', city, { expires: 365 });
         $("#city").modal('hide');
     });
+    update_price();
+    $(".js_variant_change").change(function(){
+        update_price();
+    });
 });
 $(window).load(function() {
 
@@ -33,3 +37,15 @@ $(window).load(function() {
 //        });
 //    }
 });
+
+function update_price(){
+	Array.prototype.diff = function(a) {
+		return this.filter(function(i) {return a.indexOf(i) < 0;});
+	};
+	var attrs = [];
+	var price;
+	$(".js_variant_change").each(function(i,e){attrs.push(parseInt($(e).val()))});
+	prc = $.parseJSON($("ul.js_add_cart_variants").attr("data-attribute_value_ids"));
+	prc.forEach(function (item,i,arr) { if (attrs.diff(item[1]).length == 0){price = arr[i][3]}});
+	$(".oe_currency_value").text((price.toFixed(2)).replace('.',','));
+}
