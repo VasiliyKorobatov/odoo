@@ -31,11 +31,11 @@
                     <sheet>
                         <group>
                             <field name="name"/>
-                            <!--<field name="product_templates">-->
-                                <!--<tree string="Product Templates">-->
-                                    <!--<field name="name" />-->
-                                <!--</tree>-->
-                            <!--</field>-->
+                            <field name="product_templates">
+                                <tree string="Product Templates">
+                                    <field name="name" />
+                                </tree>
+                            </field>
                         </group>
                     </sheet>
                 </form>
