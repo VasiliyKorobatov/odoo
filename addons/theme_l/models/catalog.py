@@ -5,9 +5,11 @@ from odoo import api, fields, models
 class ProductCatalogType(models.Model):
     _name = 'product.catalog.type'
     name = fields.Char(string="Name", required=True)
+    product_template = fields.Many2one('product.template', string="Product Template", ondelete='set null', index=True )
 
 class ProductCatalogModel(models.Model):
     _name = 'product.catalog.model'
     name = fields.Char(string="Name", required=True)
+    product_product = fields.Many2many('product.product', string="Product Variant", ondelete='set null', index=True  )
 
 
