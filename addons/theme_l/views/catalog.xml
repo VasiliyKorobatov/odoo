@@ -31,6 +31,8 @@
                     <sheet>
                         <group>
                             <field name="name"/>
+                            <field name="product_template"/>
+
                         </group>
                     </sheet>
                 </form>
@@ -45,7 +47,8 @@
                     <sheet>
                         <group>
                             <field name="name"/>
-                            <field name="product_template"/>
+                            <field name="product_product"/>
+
                         </group>
                     </sheet>
                 </form>
@@ -58,7 +61,6 @@
             <field name="arch" type="xml">
                 <search>
                     <field name="name"/>
-                    <field name="product_product"/>
 
                 </search>
             </field>
