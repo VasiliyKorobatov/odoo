@@ -31,8 +31,11 @@
                     <sheet>
                         <group>
                             <field name="name"/>
-                            <field name="product_template"/>
-
+                            <field name="product_templates">
+                                <tree string="Product Templates">
+                                    <field name="name" />
+                                </tree>
+                            </field>
                         </group>
                     </sheet>
                 </form>
@@ -47,7 +50,12 @@
                     <sheet>
                         <group>
                             <field name="name"/>
-                            <field name="product_product"/>
+                            <field name="product_product">
+                                <tree string="Product Variants">
+                                    <field name="name" />
+                                </tree>
+                            </field>
+
 
                         </group>
                     </sheet>
