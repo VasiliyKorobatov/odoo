@@ -11,6 +11,7 @@ class Product(models.Model):
         'Unit of Measure',
         help="Default Unit of Measure used for dimension."
     )
+    catalog_type = fields.Many2one('product.catalog.type', "Catalog type")
 
 class ProductProduct(models.Model):
     _inherit = "product.product"
