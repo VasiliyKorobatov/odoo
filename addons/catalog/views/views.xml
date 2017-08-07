@@ -76,9 +76,8 @@
             </field>
         </record>
 
-        <menuitem id="main_catalog_menu" name="Catalog"/>
         <menuitem id="catalog_menu" name="Catalog"
-                  parent="main_catalog_menu"/>
+                  parent="sale.prod_config_main"/>
         <menuitem id="catalog_type_menu" name="Catalog Types" parent="catalog_menu"
                   action="catalog_type_list_action"/>
         <menuitem id="catalog_model_menu" name="Catalog models" parent="catalog_menu"
