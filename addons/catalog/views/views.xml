@@ -2,7 +2,7 @@
   <data>
       <record model="ir.actions.act_window" id="catalog_type_list_action">
             <field name="name">Catalog Type</field>
-            <field name="res_model">product.catalog.type</field>
+            <field name="res_model">catalog.type</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
@@ -12,7 +12,7 @@
         </record>
         <record model="ir.actions.act_window" id="catalog_model_list_action">
             <field name="name">Catalog model</field>
-            <field name="res_model">product.catalog.model</field>
+            <field name="res_model">catalog.model</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
@@ -23,7 +23,7 @@
 
         <record model="ir.ui.view" id="catalog_type_form_view">
             <field name="name">catalog.type.form</field>
-            <field name="model">product.catalog.type</field>
+            <field name="model">catalog.type</field>
             <field name="arch" type="xml">
                 <form string="Catalog type Form">
                     <sheet>
@@ -37,7 +37,7 @@
 
         <record model="ir.ui.view" id="catalog_model_form_view">
             <field name="name">catalog.model.form</field>
-            <field name="model">product.catalog.model</field>
+            <field name="model">catalog.model</field>
             <field name="arch" type="xml">
                 <form string="Catalog model Form">
                     <sheet>
@@ -57,7 +57,7 @@
 
         <record model="ir.ui.view" id="catalog_type_search_view">
             <field name="name">catalog.type.search</field>
-            <field name="model">product.catalog.type</field>
+            <field name="model">catalog.type</field>
             <field name="arch" type="xml">
                 <search>
                     <field name="name"/>
@@ -68,7 +68,7 @@
 
         <record model="ir.ui.view" id="catalog_model_search_view">
             <field name="name">catalog.model.search</field>
-            <field name="model">product.catalog.model</field>
+            <field name="model">catalog.model</field>
             <field name="arch" type="xml">
                 <search>
                     <field name="name"/>

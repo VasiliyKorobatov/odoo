@@ -9,7 +9,6 @@
     'author': 'Vasiliy Korobatov',
     'data': [
         'views/assets.xml',
-        'views/catalog.xml',
         'views/layout.xml',
         'views/options.xml',
         'views/pages.xml',
