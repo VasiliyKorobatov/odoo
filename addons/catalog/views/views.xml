@@ -87,7 +87,7 @@
                         <group name="models">
                             <field name="catalog_model_ids">
                                  <tree string="Models">
-                                     <field name="name"/>
+                                     <field name="display_name"/>
                                  </tree>
                             </field>
                         </group>
