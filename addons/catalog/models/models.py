@@ -10,6 +10,10 @@ class ProductCatalogModel(models.Model):
     _name = 'catalog.model'
     name = fields.Char(string="Name", required=True)
     catalog_type = fields.Many2one(comodel_name="catalog.type", string="Catalog Type", required=True, )
-    product_product = fields.Many2many('product.product', string="Product Variant", ondelete='set null', index=True  )
+    product_product = fields.Many2many('product.product', 'mod_prod_rel', 'model_id', 'product_id', string="Product Variant", ondelete='set null', index=True  )
 
+class ProductProduct(models.Model):
+    _inherit = "product.product"
+    catalog_model_ids = fields.Many2many('catalog.model', 'mod_prod_rel', 'product_id', 'model_id',
+                                       string="Model")
 
