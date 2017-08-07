@@ -10,6 +10,7 @@ class ProductCatalogType(models.Model):
 
 class ProductCatalogModel(models.Model):
     _name = 'product.catalog.model'
+    _inherit = 'product.product'
     name = fields.Char(string="Name", required=True)
     product_product = fields.Many2many('product.product', string="Product Variant", ondelete='set null', index=True  )
 
