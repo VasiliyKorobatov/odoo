@@ -4,13 +4,13 @@
 from odoo import api, fields, models
 class ProductCatalogType(models.Model):
     _name = 'product.catalog.type'
+    _inherit = 'product.template'
     name = fields.Char(string="Name", required=True)
     product_template = fields.Many2many('product.template', string="Product Template", ondelete='set null', index=True )
-    product_templates = fields.One2many('product.template', inverse_name="catalog_type", string="Product Template",  auto_join=True)
+    product_templates = fields.One2many('product.template', inverse_name="catalog_type", string="Product Template",  auto_join=True, select=True)
 
 class ProductCatalogModel(models.Model):
     _name = 'product.catalog.model'
-    _inherit = 'product.product'
     name = fields.Char(string="Name", required=True)
     product_product = fields.Many2many('product.product', string="Product Variant", ondelete='set null', index=True  )
 
