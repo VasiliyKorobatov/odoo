@@ -5,7 +5,6 @@ from odoo import api, fields, models
 
 
 class Product(models.Model):
-    _inherit = 'product.template'
     dimensions_uom_id = fields.Many2one(
         'product.uom',
         'Unit of Measure',
