@@ -45,6 +45,7 @@
                     <sheet>
                         <group>
                             <field name="name"/>
+                            <field name="catalog_type" />
                             <field name="product_product">
                                 <tree string="Product Variants">
                                     <field name="name" />

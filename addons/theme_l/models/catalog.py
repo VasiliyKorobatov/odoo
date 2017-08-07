@@ -9,6 +9,7 @@ class ProductCatalogType(models.Model):
 class ProductCatalogModel(models.Model):
     _name = 'product.catalog.model'
     name = fields.Char(string="Name", required=True)
+    catalog_type = new_field_id = fields.Many2one(comodel_name="product.catalog.type", string="Catalog Type", required=True, )
     product_product = fields.Many2many('product.product', string="Product Variant", ondelete='set null', index=True  )
 
 
