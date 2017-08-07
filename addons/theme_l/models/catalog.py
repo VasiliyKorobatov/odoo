@@ -4,7 +4,6 @@
 from odoo import api, fields, models
 class ProductCatalogType(models.Model):
     _name = 'product.catalog.type'
-    _inherit = 'product.template'
     name = fields.Char(string="Name", required=True)
 
 class ProductCatalogModel(models.Model):
