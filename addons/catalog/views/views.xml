@@ -76,6 +76,26 @@
             </field>
         </record>
 
+        <record id="product_category_model" model="ir.ui.view">
+            <field name="name">product.category.model</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id"
+                   ref="product.product_normal_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook/page[1]" position="inside">
+                    <group>
+                        <group name="models">
+                            <field name="catalog_model_ids">
+                                 <tree string="Models">
+                                     <field name="name"/>
+                                 </tree>
+                            </field>
+                        </group>
+                    </group>
+                </xpath>
+        </field>
+        </record>
+
         <menuitem id="catalog_menu" name="Catalog"
                   parent="sale.prod_config_main"/>
         <menuitem id="catalog_type_menu" name="Catalog Types" parent="catalog_menu"
