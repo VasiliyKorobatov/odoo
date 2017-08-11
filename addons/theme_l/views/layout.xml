@@ -4749,7 +4749,7 @@
                                                Тип
                                            </td>
                                             <td class="attr-value">
-                                                <t t-esc="product.catalog_model_ids[0].name" />
+                                                <t t-esc="product.product_variant_id.catalog_model_ids[0].name" />
                                             </td>
                                         </tr>
                                     </table>
