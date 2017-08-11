@@ -4695,7 +4695,8 @@
                             </div>
                             <div class="col-sm-7 col-md-6 col-lg-8" id="product_details">
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <h1 class="text-center" itemprop="name" t-field="product.name">Название продукта</h1>
+                                    <h1 class="text-center" itemprop="name" t-field="product.name">Название продукта
+                                    </h1>
                                 </div>
                                 <span itemprop="url" style="display:none;" t-esc="'/shop/product/%s' % slug(product)"/>
                                 <div class="col-xs-12">
@@ -4707,10 +4708,13 @@
                                             <!-- popover 'button' -->
                                             <div class="rating" data-placement="top" data-toggle="rating-popover">
                                                 <t t-call="rating.rating_star_card">
-                                                    <t t-set="rating_default_value" t-value="'%.2f' % (rating_stat.get('avg', 0.0),)"/>
+                                                    <t t-set="rating_default_value"
+                                                       t-value="'%.2f' % (rating_stat.get('avg', 0.0),)"/>
                                                     <t t-set="rating_disabled" t-value="True"/>
                                                 </t>
-                                                <i class="fa fa-user"> <t t-esc="rating_stat.get('total', 0)"/></i>
+                                                <i class="fa fa-user">
+                                                    <t t-esc="rating_stat.get('total', 0)"/>
+                                                </i>
                                             </div>
                                             <!-- popover core -->
                                             <div class="popover rating_popover" role="tooltip">
@@ -4719,13 +4723,17 @@
                                                     <t t-foreach="rating_stat.get('percent')" t-as="percent">
                                                         <t t-if="min_rate &lt;= percent and percent &lt;= max_rate">
                                                             <div class="progress" style="width:200px;">
-                                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" t-att-aria-valuenow="rating_stat['percent'][percent]" t-attf-style="width: #{rating_stat['percent'][percent]}%">
+                                                                <div class="progress-bar" role="progressbar"
+                                                                     aria-valuemin="0" aria-valuemax="100"
+                                                                     t-att-aria-valuenow="rating_stat['percent'][percent]"
+                                                                     t-attf-style="width: #{rating_stat['percent'][percent]}%">
                                                                     <span class="sr-only">
                                                                         <t t-esc="rating_stat['percent'][percent]"/>%
                                                                     </span>
                                                                 </div>
                                                                 <span class="progress_type">
-                                                                    <t t-esc="percent"/> <i class="fa fa-star"/>
+                                                                    <t t-esc="percent"/>
+                                                                    <i class="fa fa-star"/>
                                                                 </span>
                                                                 <span class="progress_completed">
                                                                     <t t-esc="rating_stat['percent'][percent]"/>%
@@ -4738,30 +4746,41 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xs-12 col-md-6" >
-                                <div id="attr-color">
+                                <div class="col-xs-12 col-md-6">
+                                    <div id="attr-color">
 
-                                </div>
-                                <div id="main-attrs">
-                                    <table id="table-main-attrs">
-                                        <tr>
-                                           <td class="attr-name">
-                                               Тип
-                                           </td>
-                                            <td class="attr-value">
-                                                <t t-esc="product.product_variant_id.catalog_model_ids[0].name" />
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div id="description-sale">
-                                    <p t-field="product.description_sale" class="text-muted"/>
-                                </div>
+                                    </div>
+                                    <div id="main-attrs">
+                                        <table id="table-main-attrs">
+                                            <t t-if="product.product_variant_id.catalog_model_ids[0]">
+                                            <tr>
+                                                <td class="attr-name"><span>
+                                                    Тип</span>
+                                                </td>
+                                                <td class="attr-value">
+                                                    <t t-esc="product.product_variant_id.catalog_model_ids[0].catalog_type.name"/>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="attr-name"><span>
+                                                    Модель</span>
+                                                </td>
+                                                <td class="attr-value">
+                                                    <t t-esc="product.product_variant_id.catalog_model_ids[0].name"/>
+                                                </td>
+                                            </tr>
+                                            </t>
+                                        </table>
+                                    </div>
+                                    <div id="description-sale">
+                                        <p t-field="product.description_sale" class="text-muted"/>
+                                    </div>
 
                                 </div>
                                 <div class="col-xs-12 col-md-6  col-lg-offset-1 col-lg-5">
                                     <form action="/shop/cart/update" class="js_add_cart_variants"
-                                          t-att-data-attribute_value_ids="product.product_variant_ids.ids" method="POST">
+                                          t-att-data-attribute_value_ids="product.product_variant_ids.ids"
+                                          method="POST">
                                         <div class="panel panel-default">
                                             <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
                                             <div class="text-center">
@@ -4780,64 +4799,90 @@
                                                 <t t-placeholder="select">
                                                     <input type="hidden" class="product_id" name="product_id"
                                                            t-att-value="product.product_variant_id.id if len(product.product_variant_ids) == 1 else '0'"/>
-                                                    <t t-set="attribute_value_ids" t-value="get_attribute_value_ids(product)"/>
+                                                    <t t-set="attribute_value_ids"
+                                                       t-value="get_attribute_value_ids(product)"/>
 
-                                                    <ul t-attf-class="list-unstyled js_add_cart_variants #{ul_class}" t-att-data-attribute_value_ids="attribute_value_ids">
-                                                        <t t-foreach="product.attribute_line_ids.sorted(key=lambda x: x.attribute_id.sequence)" t-as="variant_id">
+                                                    <ul t-attf-class="list-unstyled js_add_cart_variants #{ul_class}"
+                                                        t-att-data-attribute_value_ids="attribute_value_ids">
+                                                        <t t-foreach="product.attribute_line_ids.sorted(key=lambda x: x.attribute_id.sequence)"
+                                                           t-as="variant_id">
                                                             <li t-if="len(variant_id.value_ids) &gt; 1">
                                                                 <div class="">
-                                                                    <span class="" t-field="variant_id.attribute_id.name"/>
+                                                                    <span class=""
+                                                                          t-field="variant_id.attribute_id.name"/>
                                                                 </div>
                                                                 <div style="min-width: 50%;">
-                                                                <t t-if="variant_id.attribute_id.type in ['select', 'hidden']">
-                                                                    <select t-attf-class="form-control #{'js_variant_change' if variant_id.attribute_id.create_variant else ''}" t-att-name="'attribute-%s-%s' % (product.id, variant_id.attribute_id.id)">
-                                                                        <t t-foreach="variant_id.value_ids" t-as="value_id">
-                                                                            <option t-att-value="value_id.id">
-                                                                                <span t-field="value_id.name"/>
-                                                                                <!--<span t-if="value_id.price_extra">-->
-                                                                                    <!--<t t-esc="value_id.price_extra &gt; 0 and '+' or ''"/><span t-field="value_id.price_extra" style="white-space: nowrap;" t-options="{                                    &quot;widget&quot;: &quot;monetary&quot;,                                     &quot;from_currency&quot;: product.currency_id,                                    &quot;display_currency&quot;: website.currency_id                                }"/>-->
-                                                                                <!--</span>-->
-                                                                            </option>
-                                                                        </t>
-                                                                    </select>
-                                                                </t>
-
-                                                                <t t-if="variant_id.attribute_id.type == 'radio'">
-                                                                    <ul class="list-unstyled">
-                                                                        <t t-set="inc" t-value="0"/>
-                                                                        <t t-foreach="variant_id.value_ids" t-as="value_id">
-                                                                            <li class="form-group js_attribute_value" style="margin: 0;">
-                                                                                <label class="control-label" style="margin: 0 20px;">
-                                                                                    <input type="radio" t-att-class="'js_variant_change' if variant_id.attribute_id.create_variant else None" t-att-checked="'checked' if not inc else None" t-att-name="'attribute-%s-%s' % (product.id, variant_id.attribute_id.id)" t-att-value="value_id.id" style="vertical-align: top; margin-right: 10px;"/>
+                                                                    <t t-if="variant_id.attribute_id.type in ['select', 'hidden']">
+                                                                        <select t-attf-class="form-control #{'js_variant_change' if variant_id.attribute_id.create_variant else ''}"
+                                                                                t-att-name="'attribute-%s-%s' % (product.id, variant_id.attribute_id.id)">
+                                                                            <t t-foreach="variant_id.value_ids"
+                                                                               t-as="value_id">
+                                                                                <option t-att-value="value_id.id">
                                                                                     <span t-field="value_id.name"/>
-                                                                                    <span class="badge" t-if="value_id.price_extra">
-                                                                                        <t t-esc="value_id.price_extra &gt; 0 and '+' or ''"/><span t-field="value_id.price_extra" style="white-space: nowrap;" t-options="{                                           &quot;widget&quot;: &quot;monetary&quot;,                                           &quot;from_currency&quot;: product.currency_id,                                           &quot;display_currency&quot;: website.currency_id                                        }"/>
-                                                                                    </span>
-                                                                                </label>
-                                                                            </li>
-                                                                            <t t-set="inc" t-value="inc+1"/>
-                                                                        </t>
-                                                                    </ul>
-                                                                </t>
+                                                                                    <!--<span t-if="value_id.price_extra">-->
+                                                                                    <!--<t t-esc="value_id.price_extra &gt; 0 and '+' or ''"/><span t-field="value_id.price_extra" style="white-space: nowrap;" t-options="{                                    &quot;widget&quot;: &quot;monetary&quot;,                                     &quot;from_currency&quot;: product.currency_id,                                    &quot;display_currency&quot;: website.currency_id                                }"/>-->
+                                                                                    <!--</span>-->
+                                                                                </option>
+                                                                            </t>
+                                                                        </select>
+                                                                    </t>
 
-                                                                <t t-if="variant_id.attribute_id.type == 'color'">
-                                                                    <ul class="list-inline">
-                                                                        <t t-set="inc" t-value="0"/>
-                                                                        <li t-foreach="variant_id.value_ids" t-as="value_id">
-                                                                            <label t-attf-style="background-color:#{value_id.html_color or value_id.name}" t-attf-class="css_attribute_color #{'active' if not inc else ''}">
-                                                                                <input type="radio" t-att-class="'js_variant_change' if variant_id.attribute_id.create_variant else None" t-att-checked="'checked' if not inc else None" t-att-name="'attribute-%s-%s' % (product.id, variant_id.attribute_id.id)" t-att-value="value_id.id" t-att-title="value_id.name"/>
-                                                                            </label>
-                                                                            <t t-set="inc" t-value="inc+1"/>
-                                                                        </li>
-                                                                    </ul>
-                                                                </t>
-                                                            </div>
+                                                                    <t t-if="variant_id.attribute_id.type == 'radio'">
+                                                                        <ul class="list-unstyled">
+                                                                            <t t-set="inc" t-value="0"/>
+                                                                            <t t-foreach="variant_id.value_ids"
+                                                                               t-as="value_id">
+                                                                                <li class="form-group js_attribute_value"
+                                                                                    style="margin: 0;">
+                                                                                    <label class="control-label"
+                                                                                           style="margin: 0 20px;">
+                                                                                        <input type="radio"
+                                                                                               t-att-class="'js_variant_change' if variant_id.attribute_id.create_variant else None"
+                                                                                               t-att-checked="'checked' if not inc else None"
+                                                                                               t-att-name="'attribute-%s-%s' % (product.id, variant_id.attribute_id.id)"
+                                                                                               t-att-value="value_id.id"
+                                                                                               style="vertical-align: top; margin-right: 10px;"/>
+                                                                                        <span t-field="value_id.name"/>
+                                                                                        <span class="badge"
+                                                                                              t-if="value_id.price_extra">
+                                                                                            <t t-esc="value_id.price_extra &gt; 0 and '+' or ''"/>
+                                                                                            <span t-field="value_id.price_extra"
+                                                                                                  style="white-space: nowrap;"
+                                                                                                  t-options="{                                           &quot;widget&quot;: &quot;monetary&quot;,                                           &quot;from_currency&quot;: product.currency_id,                                           &quot;display_currency&quot;: website.currency_id                                        }"/>
+                                                                                        </span>
+                                                                                    </label>
+                                                                                </li>
+                                                                                <t t-set="inc" t-value="inc+1"/>
+                                                                            </t>
+                                                                        </ul>
+                                                                    </t>
+
+                                                                    <t t-if="variant_id.attribute_id.type == 'color'">
+                                                                        <ul class="list-inline">
+                                                                            <t t-set="inc" t-value="0"/>
+                                                                            <li t-foreach="variant_id.value_ids"
+                                                                                t-as="value_id">
+                                                                                <label t-attf-style="background-color:#{value_id.html_color or value_id.name}"
+                                                                                       t-attf-class="css_attribute_color #{'active' if not inc else ''}">
+                                                                                    <input type="radio"
+                                                                                           t-att-class="'js_variant_change' if variant_id.attribute_id.create_variant else None"
+                                                                                           t-att-checked="'checked' if not inc else None"
+                                                                                           t-att-name="'attribute-%s-%s' % (product.id, variant_id.attribute_id.id)"
+                                                                                           t-att-value="value_id.id"
+                                                                                           t-att-title="value_id.name"/>
+                                                                                </label>
+                                                                                <t t-set="inc" t-value="inc+1"/>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </t>
+                                                                </div>
                                                             </li>
                                                         </t>
                                                     </ul>
                                                 </t>
                                                 <p t-if="len(product.product_variant_ids) &gt; 1"
-                                                   class="css_not_available_msg bg-danger" style="padding: 15px;">Товар временно
+                                                   class="css_not_available_msg bg-danger" style="padding: 15px;">Товар
+                                                    временно
                                                     не
                                                     доступен
                                                 </p>
@@ -4861,12 +4906,12 @@
                     <section class="container">
                         <div class="row col-md-10 col-md-offset-1">
                             <!--<div class="text-muted">-->
-                                <!--<h3 class="fa fa-comment-o">-->
-                                    <!--<a id="comments">-->
-                                        <!--<t t-if="len(product.website_message_ids) == 1"><t t-esc="len(product.website_message_ids)"/> комментарий </t>-->
-                                        <!--<t t-if="len(product.website_message_ids) &gt; 1"><t t-esc="len(product.website_message_ids)"/> комментариев</t>-->
-                                    <!--</a>-->
-                                <!--</h3>-->
+                            <!--<h3 class="fa fa-comment-o">-->
+                            <!--<a id="comments">-->
+                            <!--<t t-if="len(product.website_message_ids) == 1"><t t-esc="len(product.website_message_ids)"/> комментарий </t>-->
+                            <!--<t t-if="len(product.website_message_ids) &gt; 1"><t t-esc="len(product.website_message_ids)"/> комментариев</t>-->
+                            <!--</a>-->
+                            <!--</h3>-->
                             <!--</div>-->
                             <t t-call="website_mail.message_thread">
                                 <t t-set="object" t-value="product"/>
@@ -4941,8 +4986,10 @@
                 </marquee>
             </xpath>
         </template>
-        <template id="custom_multi_image" inherit_id="website_multi_image_zoom.product_extended" name="Custom Multi Image">
-            <xpath expr="//section[@id='product_detail']/div[@class='row']/div[@class='col-sm-7 col-md-7 col-lg-7']" position="replace">
+        <template id="custom_multi_image" inherit_id="website_multi_image_zoom.product_extended"
+                  name="Custom Multi Image">
+            <xpath expr="//section[@id='product_detail']/div[@class='row']/div[@class='col-sm-7 col-md-7 col-lg-7']"
+                   position="replace">
                 <input type="hidden" id="variant_img_display" t-att-value="product.variant_bool"/>
                 <input type="hidden" id="product_img_display" t-att-value="product.id"/>
                 <div class="col-sm-7 col-md-6 col-lg-4">
