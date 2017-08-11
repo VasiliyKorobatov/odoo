@@ -4747,28 +4747,40 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <div id="attr-color">
+                                    <div id="attr-color">Цвет:
 
+                                        <t t-foreach="product.attribute_line_ids.sorted(key=lambda x: x.attribute_id.sequence)"
+                                           t-as="variant_id">
+                                            <t t-if="variant_id.attribute_id.type == 'color'">
+                                                <t t-foreach="variant_id.value_ids"  t-as="value_id">
+                                                    <span t-field="value_id.name"/>
+                                                </t>
+                                            </t>
+                                        </t>
                                     </div>
                                     <div id="main-attrs">
                                         <table id="table-main-attrs">
                                             <t t-if="product.product_variant_id.catalog_model_ids">
-                                            <tr>
-                                                <td class="attr-name"><span>
-                                                    Тип</span>
-                                                </td>
-                                                <td class="attr-value">
-                                                    <t t-esc="product.product_variant_id.catalog_model_ids[0].catalog_type.name"/>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="attr-name"><span>
-                                                    Модель</span>
-                                                </td>
-                                                <td class="attr-value">
-                                                    <t t-esc="product.product_variant_id.catalog_model_ids[0].name"/>
-                                                </td>
-                                            </tr>
+                                                <tr>
+                                                    <td class="attr-name">
+                                                        <span>
+                                                            Тип
+                                                        </span>
+                                                    </td>
+                                                    <td class="attr-value">
+                                                        <t t-esc="product.product_variant_id.catalog_model_ids[0].catalog_type.name"/>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="attr-name">
+                                                        <span>
+                                                            Модель
+                                                        </span>
+                                                    </td>
+                                                    <td class="attr-value">
+                                                        <t t-esc="product.product_variant_id.catalog_model_ids[0].name"/>
+                                                    </td>
+                                                </tr>
                                             </t>
                                         </table>
                                     </div>
