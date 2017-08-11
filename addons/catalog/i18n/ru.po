@@ -1,0 +1,132 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* catalog
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-07 10:37+0000\n"
+"PO-Revision-Date: 2017-08-07 15:46+0500\n"
+"Last-Translator: Korobarov Vasiliy <korobarov@akvastil.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: ru\n"
+"X-Generator: Poedit 2.0.2\n"
+
+#. module: catalog
+#: model:ir.ui.menu,name:catalog.catalog_menu
+msgid "Catalog"
+msgstr "Каталог"
+
+#. module: catalog
+#: model:ir.actions.act_window,name:catalog.catalog_type_list_action
+#: model:ir.model.fields,field_description:catalog.field_catalog_model_catalog_type
+msgid "Catalog Type"
+msgstr "Каталожный тип"
+
+#. module: catalog
+#: model:ir.ui.menu,name:catalog.catalog_type_menu
+msgid "Catalog Types"
+msgstr "Каталожный типы"
+
+#. module: catalog
+#: model:ir.actions.act_window,name:catalog.catalog_model_list_action
+msgid "Catalog model"
+msgstr "Каталожная модель"
+
+#. module: catalog
+#: model:ir.ui.view,arch_db:catalog.catalog_model_form_view
+msgid "Catalog model Form"
+msgstr "Каталожный модель Форма"
+
+#. module: catalog
+#: model:ir.ui.menu,name:catalog.catalog_model_menu
+msgid "Catalog models"
+msgstr "Каталожные модели"
+
+#. module: catalog
+#: model:ir.ui.view,arch_db:catalog.catalog_type_form_view
+msgid "Catalog type Form"
+msgstr "Каталожный тип Форма"
+
+#. module: catalog
+#: model:ir.actions.act_window,help:catalog.catalog_model_list_action
+msgid "Create first catalog model"
+msgstr "Создайте первую каталожную модель"
+
+#. module: catalog
+#: model:ir.actions.act_window,help:catalog.catalog_type_list_action
+msgid "Create first catalog type"
+msgstr "Создайте первый каталожный тип"
+
+#. module: catalog
+#: model:ir.model.fields,field_description:catalog.field_catalog_model_create_uid
+#: model:ir.model.fields,field_description:catalog.field_catalog_type_create_uid
+msgid "Created by"
+msgstr "Создал"
+
+#. module: catalog
+#: model:ir.model.fields,field_description:catalog.field_catalog_model_create_date
+#: model:ir.model.fields,field_description:catalog.field_catalog_type_create_date
+msgid "Created on"
+msgstr "Создано"
+
+#. module: catalog
+#: model:ir.model.fields,field_description:catalog.field_catalog_model_display_name
+#: model:ir.model.fields,field_description:catalog.field_catalog_type_display_name
+msgid "Display Name"
+msgstr "Отображаемое имя"
+
+#. module: catalog
+#: model:ir.model.fields,field_description:catalog.field_catalog_model_id
+#: model:ir.model.fields,field_description:catalog.field_catalog_type_id
+msgid "ID"
+msgstr "ID"
+
+#. module: catalog
+#: model:ir.model.fields,field_description:catalog.field_catalog_model___last_update
+#: model:ir.model.fields,field_description:catalog.field_catalog_type___last_update
+msgid "Last Modified on"
+msgstr "Последний раз изменено"
+
+#. module: catalog
+#: model:ir.model.fields,field_description:catalog.field_catalog_model_write_uid
+#: model:ir.model.fields,field_description:catalog.field_catalog_type_write_uid
+msgid "Last Updated by"
+msgstr "Последний раз обновил"
+
+#. module: catalog
+#: model:ir.model.fields,field_description:catalog.field_catalog_model_write_date
+#: model:ir.model.fields,field_description:catalog.field_catalog_type_write_date
+msgid "Last Updated on"
+msgstr "Последний раз обновлено"
+
+#. module: catalog
+#: model:ir.model.fields,field_description:catalog.field_catalog_model_name
+#: model:ir.model.fields,field_description:catalog.field_catalog_type_name
+msgid "Name"
+msgstr "Имя"
+
+#. module: catalog
+#: model:ir.model.fields,field_description:catalog.field_catalog_model_product_product
+msgid "Product Variant"
+msgstr "Вариант продукта"
+
+#. module: catalog
+#: model:ir.ui.view,arch_db:catalog.catalog_model_form_view
+msgid "Product Variants"
+msgstr "Варианты продукта"
+
+#. module: catalog
+#: model:ir.model,name:catalog.model_catalog_model
+msgid "catalog.model"
+msgstr "catalog.model"
+
+#. module: catalog
+#: model:ir.model,name:catalog.model_catalog_type
+msgid "catalog.type"
+msgstr "catalog.type"
