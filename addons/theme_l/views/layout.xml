@@ -4788,7 +4788,7 @@
                                                     Габариты:
                                                 </td>
                                                 <td class="attr-value">
-                                                    <span id="lhw-value" t-esc=""></span>&amp;nbsp;мм.
+                                                    <!--<span id="lhw-value" t-esc=""></span>&amp;nbsp;мм.-->
                                                 </td>
                                             </tr>
                                             <tr>
