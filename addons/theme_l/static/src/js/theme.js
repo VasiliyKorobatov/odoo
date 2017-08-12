@@ -1,9 +1,11 @@
 $(document).ready(function() {
     $('#sidebar').on('show.bs.collapse', function(){
+        $("#leftCol").css("display","table-row");
         $('#sidebar').css("min-height", $('#wrap').outerHeight(true)+'px');
         $("main").attr("class","col-md-9");
     });
     $('#sidebar').on('hidden.bs.collapse', function(){
+        $("#leftCol").css("display","none");
         $("main").attr("class","col-md-12");
     });
     $("#city a").click(function(){
