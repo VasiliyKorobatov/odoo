@@ -4748,7 +4748,6 @@
                                 </div>
                                 <div class="col-xs-12 col-md-6">
                                     <div id="attr-color">
-
                                         <t t-foreach="product.attribute_line_ids.sorted(key=lambda x: x.attribute_id.sequence)"
                                            t-as="variant_id">
                                             <t t-if="variant_id.attribute_id.type == 'color'">
@@ -4784,6 +4783,30 @@
                                                     </td>
                                                 </tr>
                                             </t>
+                                            <tr>
+                                                <td class="attr-name">
+                                                    Габариты:
+                                                </td>
+                                                <td class="attr-value">
+                                                    <span id="lhw-value" t-esc=""></span>&amp;nbsp;мм.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="attr-name">
+                                                    Объём:
+                                                </td>
+                                                <td class="attr-value">
+                                                    <span id="volume-value" t-esc="product.product_variant_id.volume"></span>&amp;nbsp;м<sup>3</sup>.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="attr-name">
+                                                    Вес:
+                                                </td>
+                                                <td class="attr-value">
+                                                    <span id="weight-value" t-esc="product.product_variant_id.weight" ></span>&amp;nbsp;кг.
+                                                </td>
+                                            </tr>
                                         </table>
                                     </div>
                                     <div id="description-sale">
