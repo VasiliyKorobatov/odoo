@@ -4703,7 +4703,7 @@
                                     <t t-set="rating_stat" t-value="rating_product"/>
                                     <t t-set="max_rate" t-value="5"/>
                                     <t t-set="min_rate" t-value="1"/>
-                                    <div class="o_rating_card">
+                                    <div class="o_rating_card pull-left">
                                         <div class="text-center">
                                             <!-- popover 'button' -->
                                             <div class="rating" data-placement="top" data-toggle="rating-popover">
@@ -4745,6 +4745,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="pull-right">Артикул: <span t-esc="product.variant_id.default_code"></span></div>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
                                     <div id="attr-color">
