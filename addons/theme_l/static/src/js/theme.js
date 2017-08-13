@@ -55,10 +55,11 @@ function update_variant(){
 	$(".oe_currency_value").text((price.toFixed(2)).replace('.',','));
 	odoo.define('website.product', function(require) {'use strict'; var Model = require('web.Model');
         var Product = new Model('product.product');
-        Product.call('read', [[variant_id],['weight','volume','length','width','height']]).then(function(result){
+        Product.call('read', [[variant_id],['weight','volume','length','width','height','default_code']]).then(function(result){
         $("#weight-value").text(result[0]['weight']);
         $("#volume-value").text(result[0]['volume']);
         $("#lhw-value").text(result[0]['length']+'x'+result[0]['width']+'x'+result[0]['height']);
+        $('#default_code').text(result[0]['default_code']);
     });
 });
 }

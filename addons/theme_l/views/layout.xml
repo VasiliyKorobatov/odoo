@@ -4745,7 +4745,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="small pull-right">Артикул: <span t-esc="product.product_variant_id.default_code"></span></div>
+                                    <div class="small pull-right">Артикул: <span id="default_code" t-esc="product.product_variant_id.default_code"></span></div>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
                                     <div id="attr-color">
