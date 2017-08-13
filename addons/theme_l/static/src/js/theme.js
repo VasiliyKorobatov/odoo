@@ -61,5 +61,6 @@ function update_variant(){
         $("#lhw-value").text(result[0]['length']+'x'+result[0]['width']+'x'+result[0]['height']);
         $('#default_code').text(result[0]['default_code']);
     });
+    $("#xzoom-default").attr("src",'/website/image/product.product/'+variant_id+'/image');
 });
 }
