@@ -12,7 +12,7 @@
                     <div class="col-md-8 col-sm-9 oe_cart">
                         <!--<t t-call="website_sale.cart_lines"/>-->
                         <div t-if="not website_sale_order or not website_sale_order.website_order_line" class="js_cart_lines well well-lg">
-                            Воспользуйтесь поиском, чтобы найти всё что нужно.
+                            Воспользуйтесь поиском, чтобы найти всё что нужно.<br/>
                             Если в корзине были товары – <a href="/web/login">войдите с паролем</a>, чтобы посмотреть список.
                         </div>
                         <table class="table table-striped table-condensed js_cart_lines" id="cart_products" t-if="website_sale_order and website_sale_order.website_order_line">
@@ -20,7 +20,7 @@
                                 <tr>
                                     <th width="100">Наименование</th>
                                     <th></th>
-                                    <th width="130" class="text-center">Цена за ед.</th>
+                                    <!--<th width="130" class="text-center">Цена за ед.</th>-->
                                     <th width="130" class="text-center">Количество</th>
                                     <th width="100" class="text-center">Цена</th>
                                 </tr>
@@ -47,13 +47,13 @@
                                                 <a href='#' class='js_delete_product no-decoration'> <small><i class='fa fa-trash-o'></i> Удалить</small></a>
                                             </t>
                                         </td>
-                                        <td class="text-center">
-                                            <t t-if="(compute_currency(line.product_id.lst_price) - line.price_reduce ) &gt; 0.01  and website.get_current_pricelist().discount_policy=='without_discount'">
-                                                <del t-attf-class="#{'text-danger mr8'}" style="white-space: nowrap;" t-esc="compute_currency(line.product_id.website_public_price)" t-options="{'widget': 'monetary', 'display_currency': website.get_current_pricelist().currency_id, 'from_currency': website.currency_id}" />
-                                            </t>
-                                            <span t-field="line.price_reduce_taxexcl" style="white-space: nowrap;" t-options="{'widget': 'monetary', 'from_currency': website_sale_order.pricelist_id.currency_id, 'display_currency': website.currency_id}" groups="sale.group_show_price_subtotal" />
-                                            <span t-field="line.price_reduce_taxinc" style="white-space: nowrap;" t-options="{'widget': 'monetary', 'from_currency': website_sale_order.pricelist_id.currency_id, 'display_currency': website.currency_id}" groups="sale.group_show_price_total" />
-                                        </td>
+                                        <!--<td class="text-center">-->
+                                            <!--<t t-if="(compute_currency(line.product_id.lst_price) - line.price_reduce ) &gt; 0.01  and website.get_current_pricelist().discount_policy=='without_discount'">-->
+                                                <!--<del t-attf-class="#{'text-danger mr8'}" style="white-space: nowrap;" t-esc="compute_currency(line.product_id.website_public_price)" t-options="{'widget': 'monetary', 'display_currency': website.get_current_pricelist().currency_id, 'from_currency': website.currency_id}" />-->
+                                            <!--</t>-->
+                                            <!--<span t-field="line.price_reduce_taxexcl" style="white-space: nowrap;" t-options="{'widget': 'monetary', 'from_currency': website_sale_order.pricelist_id.currency_id, 'display_currency': website.currency_id}" groups="sale.group_show_price_subtotal" />-->
+                                            <!--<span t-field="line.price_reduce_taxinc" style="white-space: nowrap;" t-options="{'widget': 'monetary', 'from_currency': website_sale_order.pricelist_id.currency_id, 'display_currency': website.currency_id}" groups="sale.group_show_price_total" />-->
+                                        <!--</td>-->
                                         <td class="text-center" id="td-qty">
                                             <t t-if="line.linked_line_id">
                                                 <span class="js_quantity text-muted" t-att-data-line-id="line.id" t-att-data-product-id="line.product_id.id" t-esc="int(line.product_uom_qty)"/>
@@ -76,6 +76,7 @@
                                                 </div>
                                             </t>
                                         </td>
+                                        <!--<td class="text-center" id="td-price" name="price" style="display:none;">-->
                                         <td class="text-center" id="td-price" name="price" style="display:none;">
                                             <t t-if="(compute_currency(line.product_id.lst_price) - line.price_reduce ) &gt; 0.01  and website.get_current_pricelist().discount_policy=='without_discount'">
                                                 <del t-attf-class="#{'text-danger mr8'}" style="white-space: nowrap;" t-esc="compute_currency(line.product_id.website_public_price)" t-options="{'widget': 'monetary', 'display_currency': website.get_current_pricelist().currency_id, 'from_currency': website.currency_id}" />
@@ -83,9 +84,9 @@
                                             <span t-field="line.price_reduce_taxexcl" style="white-space: nowrap;" t-options="{'widget': 'monetary', 'from_currency': website_sale_order.pricelist_id.currency_id, 'display_currency': website.currency_id}" groups="sale.group_show_price_subtotal" />
                                             <span t-field="line.price_reduce_taxinc" style="white-space: nowrap;" t-options="{'widget': 'monetary', 'from_currency': website_sale_order.pricelist_id.currency_id, 'display_currency': website.currency_id}" groups="sale.group_show_price_total" />
                                         </td>
-                                        <td class="text-center" id="td-price" name="price">
-                                            <span t-esc="line.price_subtotal" t-options="{'widget': 'monetary', 'from_currency': website_sale_order.pricelist_id.currency_id, 'display_currency': website.currency_id}"/>
-                                        </td>
+                                        <!--<td class="text-center" id="td-price" name="price">-->
+                                            <!--<span t-esc="line.price_subtotal" t-options="{'widget': 'monetary', 'from_currency': website_sale_order.pricelist_id.currency_id, 'display_currency': website.currency_id}"/>-->
+                                        <!--</td>-->
                                     </tr>
                                 </t>
                             </tbody>
