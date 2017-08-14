@@ -27,7 +27,7 @@
                             </thead>
                             <tbody>
                                 <t t-foreach="website_sale_order.website_order_line" t-as="line">
-                                    <tr>
+                                    <tr t-att-class="'optional_product info' if line.linked_line_id else None">
                                         <td colspan="2" t-if="not line.product_id.product_tmpl_id"></td>
                                         <td align="center" t-if="line.product_id.product_tmpl_id">
                                             <span t-field="line.product_id.image_small" t-options="{'widget': 'image', 'class': 'img-rounded'}" />
@@ -55,9 +55,12 @@
                                             <span t-field="line.price_reduce_taxinc" style="white-space: nowrap;" t-options="{'widget': 'monetary', 'from_currency': website_sale_order.pricelist_id.currency_id, 'display_currency': website.currency_id}" groups="sale.group_show_price_total" />
                                         </td>
                                         <td class="text-center" id="td-qty">
+                                            <t t-if="line.linked_line_id">
+                                                <span class="js_quantity text-muted" t-att-data-line-id="line.id" t-att-data-product-id="line.product_id.id" t-esc="int(line.product_uom_qty)"/>
+                                            </t>
                                             <t t-if="line.product_id.display_name == 'Gift Coupon'">
                                                 <a href='#' class='js_delete_product no-decoration'> <small><i class='fa fa-trash-o'></i> Удалить</small></a>
-                                                <div class="input-group oe_website_spinner">
+                                                <div t-if="not line.linked_line_id" class="input-group oe_website_spinner">
                                                     <input type="hidden" class="js_quantity form-control" t-att-data-line-id="line.id" t-att-data-product-id="line.product_id.id" t-att-value="int(line.product_uom_qty)" />
                                                 </div>
                                             </t>
@@ -123,19 +126,6 @@
         </xpath>
     </template>
 
-    <template id="custom_optional_products" inherit_id="theme_l.custom_cart" name="Custom Optional products">
-        <xpath expr="//table[@id='cart_products']/tbody//td[@id='td-qty']/div" position="attributes">
-            <attribute name="t-if">not line.linked_line_id</attribute>
-        </xpath>
-        <xpath expr="//table[@id='cart_products']/tbody//tr" position="attributes">
-            <attribute name="t-att-class">'optional_product info' if line.linked_line_id else None</attribute>
-        </xpath>
-        <xpath expr="//table[@id='cart_products']/tbody//td[@id='td-qty']" position="inside">
-            <t t-if="line.linked_line_id">
-                <span class="js_quantity text-muted" t-att-data-line-id="line.id" t-att-data-product-id="line.product_id.id" t-esc="int(line.product_uom_qty)"/>
-            </t>
-        </xpath>
-    </template>
 
     <template id="custom_suggested_products_list" inherit_id="theme_l.custom_cart" customize_show="True" name="Custom Alternative Products in my cart">
         <xpath expr="//table[@id='cart_products']" position="after">
