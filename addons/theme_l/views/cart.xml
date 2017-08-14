@@ -1,4 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+    <template id="custom_cart" inherit_id="website_sale.cart" name="Custom Cart">
+        <xpath expr="//div[contains(@class, 'oe_website_sale')]" position="replace">
+            <div class="container oe_website_sale">
+                <t t-call="website_sale.wizard_checkout">
+                    <t t-set="step" t-value="10"/>
+                </t>
+                <h1 class="mb32">Корзина</h1>
+                <div class="row">
+                    <div class="col-md-8 col-sm-9 oe_cart">
+                        <t t-call="website_sale.cart_lines"/>
+                        <div class="clearfix"/>
+                        <a t-if="not optional_products and website_sale_order and website_sale_order.website_order_line" class="btn btn-primary pull-right mb32" href="/shop/checkout">
+                            <span class="hidden-xs">Оформить заказ</span>
+                            <span class="visible-xs-inline">Оформить заказ</span>
+                            <span class="fa fa-long-arrow-right"/>
+                        </a>
+                        <div class="oe_structure"/>
+                    </div>
+                    <div class="col-lg-3 col-lg-offset-1 col-sm-3 col-md-3 text-muted" id="right_column">
+                        <h4>Условия</h4>
+                        <ul class="list-unstyled mb32">
+                            <li>☑ 30-дневная гарантия возврата денег</li>
+                            <li>☑ Счет высылается по электронной почте</li>
+                        </ul>
+                        <h4>Безопасный платеж</h4>
+                        <ul class="list-unstyled mb32">
+                            <li>☑ 256-бит шифрование</li>
+                            <li>☑ Обработка Ogone</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="oe_structure"/>
+        </xpath>
+    </template>
+
 
 </odoo>
