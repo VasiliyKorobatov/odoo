@@ -11,6 +11,11 @@
                     <div class="col-md-8 col-sm-9 oe_cart">
                         <t t-call="website_sale.cart_lines"/>
                         <div class="clearfix"/>
+                        <a href="/shop" class="btn btn-default mb32">
+                            <span class="fa fa-long-arrow-left"/>
+                            <span class="hidden-xs">Продолжить покупки</span>
+                            <span class="visible-xs-inline">Продолжить</span>
+                        </a>
                         <a t-if="not optional_products and website_sale_order and website_sale_order.website_order_line" class="btn btn-primary pull-right mb32" href="/shop/checkout">
                             <span class="hidden-xs">Оформить заказ</span>
                             <span class="visible-xs-inline">Оформить заказ</span>
