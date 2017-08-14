@@ -48,11 +48,11 @@
                                             </t>
                                         </td>
                                         <!--<td class="text-center">-->
-                                            <!--<t t-if="(compute_currency(line.product_id.lst_price) - line.price_reduce ) &gt; 0.01  and website.get_current_pricelist().discount_policy=='without_discount'">-->
-                                                <!--<del t-attf-class="#{'text-danger mr8'}" style="white-space: nowrap;" t-esc="compute_currency(line.product_id.website_public_price)" t-options="{'widget': 'monetary', 'display_currency': website.get_current_pricelist().currency_id, 'from_currency': website.currency_id}" />-->
-                                            <!--</t>-->
-                                            <!--<span t-field="line.price_reduce_taxexcl" style="white-space: nowrap;" t-options="{'widget': 'monetary', 'from_currency': website_sale_order.pricelist_id.currency_id, 'display_currency': website.currency_id}" groups="sale.group_show_price_subtotal" />-->
-                                            <!--<span t-field="line.price_reduce_taxinc" style="white-space: nowrap;" t-options="{'widget': 'monetary', 'from_currency': website_sale_order.pricelist_id.currency_id, 'display_currency': website.currency_id}" groups="sale.group_show_price_total" />-->
+                                        <!--<t t-if="(compute_currency(line.product_id.lst_price) - line.price_reduce ) &gt; 0.01  and website.get_current_pricelist().discount_policy=='without_discount'">-->
+                                        <!--<del t-attf-class="#{'text-danger mr8'}" style="white-space: nowrap;" t-esc="compute_currency(line.product_id.website_public_price)" t-options="{'widget': 'monetary', 'display_currency': website.get_current_pricelist().currency_id, 'from_currency': website.currency_id}" />-->
+                                        <!--</t>-->
+                                        <!--<span t-field="line.price_reduce_taxexcl" style="white-space: nowrap;" t-options="{'widget': 'monetary', 'from_currency': website_sale_order.pricelist_id.currency_id, 'display_currency': website.currency_id}" groups="sale.group_show_price_subtotal" />-->
+                                        <!--<span t-field="line.price_reduce_taxinc" style="white-space: nowrap;" t-options="{'widget': 'monetary', 'from_currency': website_sale_order.pricelist_id.currency_id, 'display_currency': website.currency_id}" groups="sale.group_show_price_total" />-->
                                         <!--</td>-->
                                         <td class="text-center" id="td-qty">
                                             <t t-if="line.linked_line_id">
@@ -85,10 +85,52 @@
                                             <span t-field="line.price_reduce_taxinc" style="white-space: nowrap;" t-options="{'widget': 'monetary', 'from_currency': website_sale_order.pricelist_id.currency_id, 'display_currency': website.currency_id}" groups="sale.group_show_price_total" />
                                         </td>
                                         <!--<td class="text-center" id="td-price" name="price">-->
-                                            <!--<span t-esc="line.price_subtotal" t-options="{'widget': 'monetary', 'from_currency': website_sale_order.pricelist_id.currency_id, 'display_currency': website.currency_id}"/>-->
+                                        <!--<span t-esc="line.price_subtotal" t-options="{'widget': 'monetary', 'from_currency': website_sale_order.pricelist_id.currency_id, 'display_currency': website.currency_id}"/>-->
                                         <!--</td>-->
                                     </tr>
                                 </t>
+                            </tbody>
+                        </table>
+                        <table t-if="suggested_products" class="js_cart_lines table table-striped table-condensed">
+                            <colgroup>
+                                <col width="80" />
+                                <col />
+                                <col width="100" />
+                                <col width="120" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th colspan="4">Могут пригодиться:</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="suggested_products" t-as="product">
+                                    <td>
+                                        <a t-attf-href="/shop/product/#{ slug(product.product_tmpl_id) }">
+                                            <span t-field="product.image_small" t-options="{'widget': 'image', 'class': 'img-rounded'}" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a t-attf-href="/shop/product/#{ slug(product.product_tmpl_id) }">
+                                                <strong t-field="product.display_name" />
+                                            </a>
+                                        </div>
+                                        <div class="text-muted" t-field="product.description_sale" />
+                                    </td>
+                                    <td>
+                                        <t t-if="(compute_currency(product.lst_price) - product.website_price) &gt; 0.01  and website.get_current_pricelist().discount_policy=='without_discount'">
+                                            <del class="text-danger mr8" style="white-space: nowrap;" t-field="product.lst_price" t-options="{'widget': 'monetary','from_currency': product.currency_id, 'display_currency': website.currency_id}" />
+                                        </t>
+                                        <span t-field="product.website_price" style="white-space: nowrap;" t-options="{'widget': 'monetary','display_currency': website.currency_id}" />
+                                    </td>
+                                    <td class="text-center">
+                                        <input class="js_quantity" name="product_id" t-att-data-product-id="product.id" type="hidden" />
+                                        <a class="btn btn-link js_add_suggested_products">
+                                            <strong>В корзину</strong>
+                                        </a>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                         <div class="js_cart_lines row">
@@ -110,70 +152,20 @@
                         <div class="oe_structure"/>
                     </div>
                     <!--<div class="col-lg-3 col-lg-offset-1 col-sm-3 col-md-3 text-muted" id="right_column">-->
-                        <!--<h4>Условия</h4>-->
-                        <!--<ul class="list-unstyled mb32">-->
-                            <!--<li>☑ 30-дневная гарантия возврата денег</li>-->
-                            <!--<li>☑ Счет высылается по электронной почте</li>-->
-                        <!--</ul>-->
-                        <!--<h4>Безопасный платеж</h4>-->
-                        <!--<ul class="list-unstyled mb32">-->
-                            <!--<li>☑ 256-бит шифрование</li>-->
-                            <!--<li>☑ Обработка Ogone</li>-->
-                        <!--</ul>-->
+                    <!--<h4>Условия</h4>-->
+                    <!--<ul class="list-unstyled mb32">-->
+                    <!--<li>☑ 30-дневная гарантия возврата денег</li>-->
+                    <!--<li>☑ Счет высылается по электронной почте</li>-->
+                    <!--</ul>-->
+                    <!--<h4>Безопасный платеж</h4>-->
+                    <!--<ul class="list-unstyled mb32">-->
+                    <!--<li>☑ 256-бит шифрование</li>-->
+                    <!--<li>☑ Обработка Ogone</li>-->
+                    <!--</ul>-->
                     <!--</div>-->
                 </div>
             </div>
             <div class="oe_structure"/>
         </xpath>
     </template>
-
-
-    <template id="custom_suggested_products_list" inherit_id="theme_l.custom_cart" customize_show="True" name="Custom Alternative Products in my cart">
-        <xpath expr="//table[@id='cart_products']" position="after">
-            <table t-if="suggested_products" class="js_cart_lines table table-striped table-condensed">
-                <colgroup>
-                    <col width="80" />
-                    <col />
-                    <col width="100" />
-                    <col width="120" />
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th colspan="4">Могут пригодиться:</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr t-foreach="suggested_products" t-as="product">
-                        <td>
-                            <a t-attf-href="/shop/product/#{ slug(product.product_tmpl_id) }">
-                                <span t-field="product.image_small" t-options="{'widget': 'image', 'class': 'img-rounded'}" />
-                            </a>
-                        </td>
-                        <td>
-                            <div>
-                                <a t-attf-href="/shop/product/#{ slug(product.product_tmpl_id) }">
-                                    <strong t-field="product.display_name" />
-                                </a>
-                            </div>
-                            <div class="text-muted" t-field="product.description_sale" />
-                        </td>
-                        <td>
-                            <t t-if="(compute_currency(product.lst_price) - product.website_price) &gt; 0.01  and website.get_current_pricelist().discount_policy=='without_discount'">
-                                <del class="text-danger mr8" style="white-space: nowrap;" t-field="product.lst_price" t-options="{'widget': 'monetary','from_currency': product.currency_id, 'display_currency': website.currency_id}" />
-                            </t>
-                            <span t-field="product.website_price" style="white-space: nowrap;" t-options="{'widget': 'monetary','display_currency': website.currency_id}" />
-                        </td>
-                        <td class="text-center">
-                            <input class="js_quantity" name="product_id" t-att-data-product-id="product.id" type="hidden" />
-                            <a class="btn btn-link js_add_suggested_products">
-                                <strong>В корзину</strong>
-                            </a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </xpath>
-    </template>
-
-
 </odoo>
