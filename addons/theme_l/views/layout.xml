@@ -4340,28 +4340,28 @@
                         <section class="s_feature_grid mt16 mb8">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-md-3">
+                                    <div class="col-md-3 col-xs-12">
                                         <div class="col-md-12">
                                             <span style="min-width: 45px" class="pull-left mb16 fa fa-truck fa-2x"
                                                   data-original-title="" title=""/>
                                             <h5 class="mt0 mb0 o_default_snippet_text">Доставка по всей России</h5>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-3 col-xs-12">
                                         <div class="col-md-12">
                                             <span style="min-width: 45px" class="pull-left mb16 fa fa-star-o fa-2x"
                                                   data-original-title="" title=""/>
                                             <h5 class="mb0 mt0">Гарантия качества</h5>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-3  col-xs-12">
                                         <div class="col-md-12">
                                             <span style="min-width: 45px" class="pull-left mb16 fa fa-thumbs-o-up fa-2x"
                                                   data-original-title="" title=""/>
                                             <h5 class="mb0 mt0">Подберем нужное для Вас</h5>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-3  col-xs-12">
                                         <div class="col-md-12">
                                             <span style="min-width: 45px" class="pull-left mb16 fa fa-history fa-2x"
                                                   data-original-title="" title=""/>
