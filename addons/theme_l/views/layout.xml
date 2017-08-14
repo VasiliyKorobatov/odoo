@@ -4636,7 +4636,7 @@
                                     <t t-set="variant_img" t-value="product.product_variant_ids[0].image_variant"/>
                                     <t t-set="image_ids" t-value="product.product_image_ids"/>
                                     <div id="o-carousel-product" class="carousel slide" data-ride="carousel"
-                                         data-interval="0">
+                                         data-interval="false">
                                         <div class="carousel-outer">
                                             <div class="carousel-inner">
                                                 <div class="item active" itemprop="image"
@@ -5045,7 +5045,7 @@
                 <div class="col-xs-12 col-sm-7 col-md-6 col-lg-7" id="product-image-block">
                     <!-- Carousel indicators as Image ThumbNails -->
                     <div id="thumb_img_add">
-                        <div id='carousel-custom' class='carousel slide'>
+                        <div id='carousel-custom' class='carousel slide' data-interval="false">
                             <!-- Indicators -->
                             <ol class='carousel-indicators'>
                                 <li>
