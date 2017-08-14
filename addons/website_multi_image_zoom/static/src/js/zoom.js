@@ -56,11 +56,11 @@ function pro_img_click(proimg) {
 };
 
 //Show Model
-(function full_img(sample) {
+function full_img(sample) {
     var wi = $(window).width();
     if (wi < 980) {
         var img_bin = $(sample).find("img");
         $('#modal_img').attr('src', $(img_bin).attr("src"));
         $('#img_modal').modal('show');
     }
-})();
+};
