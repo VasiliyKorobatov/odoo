@@ -14,10 +14,10 @@ $(document).ready(function() {
         Cookies.set('city', city, { expires: 365 });
         $("#city").modal('hide');
     });
-//    update_variant();
-//    $("#product-card .js_variant_change").change(function(){
-//        update_variant();
-//    });
+    update_variant();
+    $("#product-card .js_variant_change").change(function(){
+        update_variant();
+    });
 });
 $(window).load(function() {
 
