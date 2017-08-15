@@ -15,7 +15,7 @@ $(document).ready(function() {
         $("#city").modal('hide');
     });
     update_variant();
-    $("#product-card .js_variant_change").change(function(){
+    $("#product-card .js_add_cart_variants .js_variant_change").change(function(){
         update_variant();
     });
 });
