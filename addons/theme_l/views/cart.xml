@@ -91,7 +91,7 @@
                                 </t>
                             </tbody>
                         </table>
-                        <t t-esc="len(suggested_products)" />
+                        <!--<t t-esc="len(suggested_products)" />-->
                         <table t-if="suggested_products" class="js_cart_lines table table-striped table-condensed">
                             <colgroup>
                                 <col width="80" />

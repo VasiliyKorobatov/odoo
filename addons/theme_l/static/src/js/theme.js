@@ -52,7 +52,8 @@ function update_variant(){
 	    variant_id = arr[i][0];
 	    price = arr[i][3];
 	}});
-	$(".oe_currency_value").text((price.toFixed(2)).replace('.',','));
+	if(typeof price != "undefined")
+	    $(".oe_currency_value").text((price.toFixed(2)).replace('.',','));
 	odoo.define('website.product', function(require) {'use strict'; var Model = require('web.Model');
         var Product = new Model('product.product');
         Product.call('read', [[variant_id],['weight','volume','length','width','height','default_code']]).then(function(result){
