@@ -186,7 +186,7 @@
             </xpath>
             <xpath expr="//div[@id='wrapwrap']" position="after">
                 <div class="modal fade" id="city">
-                    <div class="modal-dialog modal-lg">
+                    <div class="modal-dialog modal-sm">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal"
@@ -195,7 +195,9 @@
                                 <h4 class="modal-title">Выберите город</h4>
                             </div>
                             <div class="modal-body">
+                                <div class="container">
                                 <div class="row">
+                                    <div class="col-xs-12">
                                     <form role="form">
                                         <div class="form-group">
                                             <input class="form-control" id="searchinput" type="search" placeholder="Найти..." />
@@ -1335,6 +1337,8 @@
                                             <li  class='list-group-item' data-location-city='591'><a href='#' data-city-id='591' data-region-id='50'><span>Яхрома</span></a></li>
                                         </ul>
                                     </form>
+                                    </div>
+                                    </div>
                                 </div>
                             </div>
                             <!--div class="modal-footer">
