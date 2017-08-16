@@ -18,6 +18,7 @@ $(document).ready(function() {
     $("select.js_variant_change").change(function(){
         update_variant();
     });
+    $('#searchlist').btsListFilter('#searchinput', {itemChild: 'span'});
 });
 
 function update_variant(){
