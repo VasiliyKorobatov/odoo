@@ -19,6 +19,9 @@ $(document).ready(function() {
         update_variant();
     });
     $('#searchlist').btsListFilter('#searchinput', {itemChild: 'span'});
+    $('input[name="add_qty"]').change(function(){
+         $('#product-card-subtotal').text(((parseFloat( $("#default-price > .oe_currency_value").text())*parseInt($('input[name="add_qty"]').val())).toFixed(2)).replace('.',','));
+    });
 });
 
 function update_variant(){
@@ -34,8 +37,10 @@ function update_variant(){
             variant_id = arr[i][0];
             price = arr[i][3];
         }});
-        if(typeof price != "undefined")
-            $(".oe_currency_value").text((price.toFixed(2)).replace('.',','));
+        if(typeof price != "undefined"){
+            $("#default-price > .oe_currency_value").text((price.toFixed(2)).replace('.',','));
+            $('#product-card-subtotal').text(((parseFloat( $("#default-price > .oe_currency_value").text())*parseInt($('input[name="add_qty"]').val())).toFixed(2)).replace('.',','));
+        }
         odoo.define('website.product', function(require) {'use strict'; var Model = require('web.Model');
             var Product = new Model('product.product');
             Product.call('read', [[variant_id],['weight','volume','length','width','height','default_code']]).then(function(result){
