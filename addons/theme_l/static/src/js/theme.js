@@ -9,7 +9,7 @@ $(document).ready(function() {
         $("main").attr("class","col-md-12");
     });
     $("#city a").click(function(){
-        var city = $(this).text();
+        var city = $(this).text().split(',')[0];
         $("#user-city").text(city);
         Cookies.set('city', city, { expires: 365 });
         $("#city").modal('hide');
