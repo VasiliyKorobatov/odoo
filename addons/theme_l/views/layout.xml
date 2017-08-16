@@ -6820,7 +6820,13 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-xs-12"><span>На сумму:</span><span id="product-card-subtotal"></span></div>
+                <div class="row mt4 mb4">
+                    <div class="center-block text-center"><b>
+                        <span>На сумму:&amp;nbsp;</span>
+                        <span id="product-card-subtotal"></span>&amp;nbsp;
+                        <span t-esc="website.currency_id.name"/></b>
+                    </div>
+                </div>
             </xpath>
         </template>
         <template id="marquee_text" inherit_id="theme_l.user_menu_cart" name="Marquee">
