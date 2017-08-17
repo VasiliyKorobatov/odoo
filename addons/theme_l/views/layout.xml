@@ -6887,7 +6887,72 @@
                 </div>
             </xpath>
         </template>
-
-
+        <template id="custom_footer" inherit_id="website.layout" name="Custom Footer">
+            <xpath expr="//div[@id='footer']" position="replace">
+<div id="footer" class="container hidden-print">
+      <div class="row">
+        <div class="col-md-4 col-lg-3">
+          <h4>Наши продукты и Сервисы</h4>
+          <ul class="list-unstyled" id="products">
+            <li>
+              <a href="/">Главная</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4  col-lg-3" id="info">
+          <h4>Свяжитесь с нами</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a href="/page/website.contactus">Контакты</a>
+            </li>
+              <li><a t-attf-href="/groups">
+Список рассылки</a></li>
+          </ul>
+          <ul class="list-unstyled">
+            <li t-ignore="true">
+              <i class="fa fa-phone"/>
+              <span t-field="res_company.phone"/>
+            </li>
+            <li t-ignore="true">
+              <i class="fa fa-envelope"/>
+              <span t-field="res_company.email"/>
+            </li>
+          </ul>
+          <h2>
+            <a t-att-href="website.social_facebook" t-if="website.social_facebook">
+              <i class="fa fa-facebook-square"/>
+            </a>
+            <a t-att-href="website.social_twitter" t-if="website.social_twitter">
+              <i class="fa fa-twitter"/>
+            </a>
+            <a t-att-href="website.social_linkedin" t-if="website.social_linkedin">
+              <i class="fa fa-linkedin"/>
+            </a>
+            <a t-att-href="website.social_youtube" t-if="website.social_youtube">
+              <i class="fa fa-youtube-play"/>
+            </a>
+            <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher">
+              <i class="fa fa-google-plus-square"/>
+            </a>
+            <a t-att-href="website.social_github" t-if="website.social_github">
+              <i class="fa fa-github"/>
+            </a>
+          </h2>
+        </div>
+        <div class="col-md-4 col-lg-5 col-lg-offset-1">
+          <h4>
+            <span t-field="res_company.name"/>
+            <small> - <a href="/page/website.aboutus">О нас</a></small>
+          </h4>
+          <div>
+            <p> Мы - команда влюбленных в свою работу людей, и наша цель - разработка отличных продуктов, которые делают нашу жизнь лучше. Мы предлагаем отличные решения для ваших бизнес-задач. </p>
+            <p> Наши товары предназначены для малых и средних компаний, желающих оптимизировать свою производительность. </p>
+          </div>
+          <!--<t t-call="website.language_selector"/>-->
+        </div>
+      </div>
+    </div>
+            </xpath>
+        </template>
     </data>
 </odoo>
