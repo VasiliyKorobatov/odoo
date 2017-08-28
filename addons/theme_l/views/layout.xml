@@ -7005,7 +7005,7 @@
                                                    name="contact_name" required="" data-oe-id="1212"
                                                    data-oe-model="ir.ui.view" data-oe-field="arch"
                                                    data-oe-xpath="/data/xpath/div/form[1]/div[1]/div[1]/input[1]"
-                                                   value="">
+                                                   value="" />
                                         </div>
                                     </div>
                                     <!--Телефон-->
@@ -7018,7 +7018,7 @@
                                             <input type="text" class="form-control o_website_form_input" name="phone"
                                                    data-oe-id="1212" data-oe-model="ir.ui.view" data-oe-field="arch"
                                                    data-oe-xpath="/data/xpath/div/form[1]/div[2]/div[1]/input[1]"
-                                                   value="">
+                                                   value="" />
                                         </div>
                                     </div>
                                     <!--Емайл-->
@@ -7032,7 +7032,7 @@
                                                    name="email_from" required="" data-oe-id="1212"
                                                    data-oe-model="ir.ui.view" data-oe-field="arch"
                                                    data-oe-xpath="/data/xpath/div/form[1]/div[3]/div[1]/input[1]"
-                                                   value="">
+                                                   value="" />
                                         </div>
                                     </div>
                                     <!--Название компании-->
@@ -7060,7 +7060,7 @@
                                                    required="" data-oe-id="1212" data-oe-model="ir.ui.view"
                                                    data-oe-field="arch"
                                                    data-oe-xpath="/data/xpath/div/form[1]/div[5]/div[1]/input[1]"
-                                                   value="Обратная связь из футера">
+                                                   value="Новая иницатива" />
                                         </div>
                                     </div>
                                     <!--Содержание-->
@@ -7078,7 +7078,7 @@
                                     <div data-form-type="checkbox_boolean"
                                          data-field-id="25">
                                         <label>
-                                            <input type="checkbox" name="active" checked="checked">Нажимая на кнопку
+                                            <input type="checkbox" name="active" checked="checked" />Нажимая на кнопку
                                             я даю свое согласие на обработку моих персональных данных, в
                                             соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ
                                         </label>
@@ -7095,7 +7095,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </xpath>
         </template>
