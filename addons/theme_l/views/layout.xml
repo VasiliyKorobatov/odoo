@@ -5921,8 +5921,8 @@
 
         <template id="user_menu_cart" inherit_id="user_menu" name="Cart in User Menu">
             <xpath expr=".//*[@id='user-menu-cart']" position="inside">
-                <div class="hidden-sm  hidden-xs hidden-md col-lg-8" id="marquee-block"/>
-                <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="hidden-sm  hidden-xs hidden-md col-lg-7" id="marquee-block"/>
+                <div class="col-sm-12 col-md-12 col-lg-5">
                     <t t-set="website_sale_order" t-value="website.sale_get_order()"/>
                     <a id="cart-btn" href="/shop/cart" class="btn">
                         <i class="fa fa-shopping-cart"/>
@@ -6077,16 +6077,15 @@
                                 <li data-target="#myCarousel1501441674202" data-slide-to="0" class="active"/>
                             </ol>
                             <div class="carousel-inner">
-                                <div class="item bg-alpha oe_img_bg oe_custom_bg active"
-                                     style="background-image: url(&quot;/web/image/2464&quot;);">
+                                <div class="item bg-gray oe_img_bg active" style="background-image: url(&quot;/web/image/website.s_background_image_05&quot;);">
                                     <div class="container">
                                         <div class="row content">
                                             <div class="carousel-content col-md-offset-1 mb96 bg-black-50 mt16 col-md-4">
                                                 <h2 class="o_default_snippet_text">Здрасти,</h2>
                                                 <div>Hello, Салеметсiз бе.</div>
-                                                <div></div>
+                                                <div/>
                                                 <div>Предлагаем на выгодных условиях</div>
-                                                <div></div>
+                                                <div/>
                                                 <div>почтовые ящики уличные и секционные от производителя</div>
                                                 <div>армейские кровати</div>
                                                 <div>уличные урны.</div>
@@ -6098,138 +6097,123 @@
                                                 </p>
                                             </div>
                                             <div class="carousel-img hidden-sm hidden-xs mt32 col-md-6">
-                                                <img class="img-responsive" src="/web/image/2468" alt="ящик"
-                                                     data-original-title="ящик" title=""/>
+                                                <img class="img-responsive" src="/web/image/2468" alt="ящик" data-original-title="ящик" title=""/>
                                                 <br/>
-                                                <span style="color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.5);">
-                                                    Мы - Миасское производство, Миасс - это город инженеров-технологов и
-                                                    где
-                                                    делают ракеты. Лавков, пока не делает ракет. Но может качественно
-                                                    изготовить на интересных условиях металлическую мебель в дом.</span>&amp;nbsp;
+                                                <br/>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-control left hidden" data-target="#myCarousel1501441674202"
-                                 data-slide="prev" style="width: 10%" data-cke-saved-href="#myCarousel1501441674202">
+                            <div class="carousel-control left hidden" data-target="#myCarousel1501441674202" data-slide="prev" style="width: 10%" data-cke-saved-href="#myCarousel1501441674202">
                                 <i class="fa fa-chevron-left"/>
                             </div>
-                            <div class="carousel-control right hidden" data-target="#myCarousel1501441674202"
-                                 data-slide="next" style="width: 10%" data-cke-saved-href="#myCarousel1501441674202">
+                            <div class="carousel-control right hidden" data-target="#myCarousel1501441674202" data-slide="next" style="width: 10%" data-cke-saved-href="#myCarousel1501441674202">
                                 <i class="fa fa-chevron-right"/>
                             </div>
                         </div>
-                        <section class="s_feature_grid mt16 mb8">
+                        <section class="s_feature_grid mt0 mb0 bg-primary" style="">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-md-3 col-xs-12">
+                                    <div class="col-md-3 col-xs-12 mt8">
                                         <div class="col-md-12">
-                                            <span style="min-width: 45px" class="pull-left mb16 fa fa-truck fa-2x"
-                                                  data-original-title="" title=""/>
+                                            <span style="min-width: 45px" class="pull-left mb16 fa fa-truck fa-2x" data-original-title="" title=""/>
                                             <h5 class="mt0 mb0 o_default_snippet_text">Доставка по всей России</h5>
                                         </div>
                                     </div>
-                                    <div class="col-md-3 col-xs-12">
+                                    <div class="col-md-3 col-xs-12 mt4">
                                         <div class="col-md-12">
-                                            <span style="min-width: 45px" class="pull-left mb16 fa fa-star-o fa-2x"
-                                                  data-original-title="" title=""/>
-                                            <h5 class="mb0 mt0">Гарантия качества</h5>
+                                            <span style="min-width: 45px" class="pull-left mb16 fa fa-star-o fa-2x" data-original-title="" title=""/>
+                                            <h5 class="mb0 mt4">Гарантия качества</h5>
                                         </div>
                                     </div>
-                                    <div class="col-md-3  col-xs-12">
+                                    <div class="col-md-3  col-xs-12 mt8">
                                         <div class="col-md-12">
-                                            <span style="min-width: 45px" class="pull-left mb16 fa fa-thumbs-o-up fa-2x"
-                                                  data-original-title="" title=""/>
+                                            <span style="min-width: 45px" class="pull-left mb16 fa fa-thumbs-o-up fa-2x" data-original-title="" title=""/>
                                             <h5 class="mb0 mt0">Подберем нужное для Вас</h5>
                                         </div>
                                     </div>
-                                    <div class="col-md-3  col-xs-12">
+                                    <div class="col-md-3  col-xs-12 mt8">
                                         <div class="col-md-12">
-                                            <span style="min-width: 45px" class="pull-left mb16 fa fa-history fa-2x"
-                                                  data-original-title="" title=""/>
+                                            <span style="min-width: 45px" class="pull-left mb16 fa fa-history fa-2x" data-original-title="" title=""/>
                                             <h5 class="mb0 mt0">Оперативное обслуживание</h5>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </section>
-
+                        <section class="s_text_block_image_fw oe_img_bg" style="background-position: 50% 100%; background-image: url(&quot;/web/image/website.s_background_image_02&quot;);">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="mt64 mb64 bg-black-25 col-md-8">
+                                        <h2 style="font-size:62px">Производство<br/></h2>
+                                        <h4>Мы - Миасское производство<br/></h4>
+                                        <p>
+                                            <span style="background-color: rgba(0, 0, 0, 0.5);">Миасс - это город инженеров-технологов и где делают ракеты. Лавков, пока не делает ракет. Но может качественно изготовить на интересных условиях металлическую мебель в дом.</span>
+                                            <span style="background-color: rgb(85, 85, 85);">&amp;nbsp;</span>
+                                            <br/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
-                    <section class="o_data_slider mb32 container text-center"
-                             data-options="{&quot;lazyLoad&quot;:&quot;ondemand&quot;,&quot;slidesToShow&quot;:3,&quot;slidesToScroll&quot;:1,&quot;dots&quot;:true,&quot;infinite&quot;:true,&quot;speed&quot;:500,&quot;arrows&quot;:true,&quot;autoplay&quot;:true,&quot;adaptiveHeight&quot;:false,&quot;variableWidth&quot;:false,&quot;autoplaySpeed&quot;:3000,&quot;data_model&quot;:&quot;product.template&quot;,&quot;data_domain&quot;:[[&quot;website_published&quot;,&quot;=&quot;,true]],&quot;data_image_field&quot;:&quot;image_medium&quot;,&quot;data_name_field&quot;:&quot;display_name&quot;,&quot;data_title&quot;:&quot;Наша продукция &quot;,&quot;data_title_tag&quot;:&quot;h1&quot;,&quot;data_title_class&quot;:&quot;text-center&quot;,&quot;data_uri_field&quot;:&quot;website_url&quot;,&quot;data_container_width&quot;:&quot;90%&quot;,&quot;data_limit&quot;:10,&quot;prevArrow&quot;:&quot;&lt;a href=\&quot;#\&quot; class=\&quot;slider-arrow-left\&quot;&gt;&lt;i class=\&quot;fa fa-arrow-left fa-2x\&quot;&gt;&lt;/i&gt;&lt;/a&gt;&quot;,&quot;nextArrow&quot;:&quot;&lt;a href=\&quot;#\&quot; class=\&quot;slider-arrow-right\&quot;&gt;&lt;i class=\&quot;fa fa-arrow-right fa-2x\&quot;&gt;&lt;/i&gt;&lt;/a&gt;&quot;}"
-                             style="width: 90%;">
+                    <section class="o_data_slider mb32 container text-center" data-options="{&quot;lazyLoad&quot;:&quot;ondemand&quot;,&quot;slidesToShow&quot;:3,&quot;slidesToScroll&quot;:1,&quot;dots&quot;:true,&quot;infinite&quot;:true,&quot;speed&quot;:500,&quot;arrows&quot;:true,&quot;autoplay&quot;:true,&quot;adaptiveHeight&quot;:false,&quot;variableWidth&quot;:false,&quot;autoplaySpeed&quot;:3000,&quot;data_model&quot;:&quot;product.template&quot;,&quot;data_domain&quot;:[[&quot;website_published&quot;,&quot;=&quot;,true]],&quot;data_image_field&quot;:&quot;image_medium&quot;,&quot;data_name_field&quot;:&quot;display_name&quot;,&quot;data_title&quot;:&quot;Наша продукция &quot;,&quot;data_title_tag&quot;:&quot;h1&quot;,&quot;data_title_class&quot;:&quot;text-center&quot;,&quot;data_uri_field&quot;:&quot;website_url&quot;,&quot;data_container_width&quot;:&quot;90%&quot;,&quot;data_limit&quot;:10,&quot;prevArrow&quot;:&quot;&lt;a href=\&quot;#\&quot; class=\&quot;slider-arrow-left\&quot;&gt;&lt;i class=\&quot;fa fa-arrow-left fa-2x\&quot;&gt;&lt;/i&gt;&lt;/a&gt;&quot;,&quot;nextArrow&quot;:&quot;&lt;a href=\&quot;#\&quot; class=\&quot;slider-arrow-right\&quot;&gt;&lt;i class=\&quot;fa fa-arrow-right fa-2x\&quot;&gt;&lt;/i&gt;&lt;/a&gt;&quot;}" style="width: 90%;">
                         <div class="row">
                             <h1 class="text-center">Наша продукция</h1>
                         </div>
-                        <div class="o_slick_container oe_structure slick-initialized slick-slider slick-dotted"
-                             role="toolbar">
+                        <div class="o_slick_container oe_structure slick-initialized slick-slider slick-dotted" role="toolbar">
                             <a href="#" class="slider-arrow-left slick-arrow">
                                 <i class="fa fa-arrow-left fa-2x"/>
                             </a>
                             <div aria-live="polite" class="slick-list draggable">
-                                <div class="slick-track" role="listbox"
-                                     style="opacity: 1; width: 2328px; transform: translate3d(-485px, 0px, 0px);">
+                                <div class="slick-track" role="listbox" style="opacity: 1; width: 2328px; transform: translate3d(-485px, 0px, 0px);">
                                 </div>
                             </div>
                             <a href="#" class="slider-arrow-right slick-arrow">
                                 <i class="fa fa-arrow-right fa-2x"/>
                             </a>
                             <ul class="slick-dots" role="tablist">
-                                <li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true"
-                                    aria-controls="navigation00" id="slick-slide00">
+                                <li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true" aria-controls="navigation00" id="slick-slide00">
                                     <button type="button" data-role="none" role="button" tabindex="0">1</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation01" id="slick-slide01">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation01" id="slick-slide01">
                                     <button type="button" data-role="none" role="button" tabindex="0">2</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation02" id="slick-slide02">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation02" id="slick-slide02">
                                     <button type="button" data-role="none" role="button" tabindex="0">3</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation03" id="slick-slide03">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation03" id="slick-slide03">
                                     <button type="button" data-role="none" role="button" tabindex="0">4</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation04" id="slick-slide04">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation04" id="slick-slide04">
                                     <button type="button" data-role="none" role="button" tabindex="0">5</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation05" id="slick-slide05">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation05" id="slick-slide05">
                                     <button type="button" data-role="none" role="button" tabindex="0">6</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation06" id="slick-slide06">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation06" id="slick-slide06">
                                     <button type="button" data-role="none" role="button" tabindex="0">7</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation07" id="slick-slide07">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation07" id="slick-slide07">
                                     <button type="button" data-role="none" role="button" tabindex="0">8</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation08" id="slick-slide08">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation08" id="slick-slide08">
                                     <button type="button" data-role="none" role="button" tabindex="0">9</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation09" id="slick-slide09">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation09" id="slick-slide09">
                                     <button type="button" data-role="none" role="button" tabindex="0">10</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation010" id="slick-slide010">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation010" id="slick-slide010">
                                     <button type="button" data-role="none" role="button" tabindex="0">11</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation011" id="slick-slide011">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation011" id="slick-slide011">
                                     <button type="button" data-role="none" role="button" tabindex="0">12</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation012" id="slick-slide012">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation012" id="slick-slide012">
                                     <button type="button" data-role="none" role="button" tabindex="0">13</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation013" id="slick-slide013">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation013" id="slick-slide013">
                                     <button type="button" data-role="none" role="button" tabindex="0">14</button>
                                 </li>
                             </ul>
@@ -6287,21 +6271,17 @@
                         </div>
                     </div>
                     <div class="oe_structure oe_empty">
-                        <section
-                                class="jumbotron mt0 mb0 o_animate o_visible o_animated o_anim_bounce_in_left o_animate_preview bg-gray-lighter">
+                        <section class="jumbotron mt0 mb0 o_animate o_visible o_animated o_anim_bounce_in_left o_animate_preview bg-gray-lighter">
                             <div class="container">
                                 <h3>Оставайтесь на связи с нами</h3>
                                 <p>В одиночку мы можем сделать многое, вместе - еще больше</p>
                                 <div class="input-group js_subscribe" data-list-id="1" data-subscribe="off">
-                                    <input type="email" name="email" class="js_subscribe_email form-control"
-                                           placeholder="ваш электронный адрес..."/>
+                                    <input type="email" name="email" class="js_subscribe_email form-control" placeholder="ваш электронный адрес..."/>
                                     <span class="input-group-btn">
                                         <a href="#" class="btn btn-primary js_subscribe_btn o_default_snippet_text">
                                             Подписаться
                                         </a>
-                                        <a href="#"
-                                           class="btn btn-success js_subscribed_btn hidden o_default_snippet_text"
-                                           disabled="disabled">Спасибо
+                                        <a href="#" class="btn btn-success js_subscribed_btn hidden o_default_snippet_text" disabled="disabled">Спасибо
                                         </a>
                                     </span>
                                     <div class="alert alert-success hidden o_default_snippet_text">Спасибо за подписку!
@@ -6310,21 +6290,15 @@
                             </div>
                         </section>
                         <div class="o_newsletter_popup" data-list-id="1">
-                            <div class="alert alert-warning alert-dismissible fade in css_non_editable_mode_hidden o_not_editable o_default_snippet_text"
-                                 role="alert" contenteditable="false">
-                                <strong class="o_default_snippet_text">Всплывающий бюллетень!</strong>
+                            <div class="alert alert-warning alert-dismissible fade in css_non_editable_mode_hidden o_not_editable o_default_snippet_text" role="alert" contenteditable="false"><strong class="o_default_snippet_text">Всплывающий бюллетень!</strong>
                                 Эффект фрагмента всплывающего окна бюллетени активен на этой странице. Нажмите
-                                <a id="edit_dialog" href="#" class="o_default_snippet_text" data-original-title=""
-                                   title="">
+                                <a id="edit_dialog" href="#" class="o_default_snippet_text" data-original-title="" title="">
                                     Здесь диалоговое окно для редактирования контента
                                 </a>
                             </div>
-                            <div class="modal modal-dialog modal-md fade fade-custom" id="o_newsletter_popup"
-                                 tabindex="-1"
-                                 role="dialog" style="display: none;" aria-hidden="true">
+                            <div class="modal modal-dialog modal-md fade fade-custom" id="o_newsletter_popup" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
                                 <div class="modal-content o_popup_modal_content">
-                                    <a href="#" class="o_popup_btn_close o_not_editable o_default_snippet_text"
-                                       data-dismiss="modal" data-original-title="" title="" contenteditable="false">×
+                                    <a href="#" class="o_popup_btn_close o_not_editable o_default_snippet_text" data-dismiss="modal" data-original-title="" title="" contenteditable="false">×
                                     </a>
                                     <div class="o_popup_modal_body text-center">
                                         <div class="o_popup_content_dev" data-oe-placeholder="Type Here ...">
@@ -6338,13 +6312,10 @@
                                                 <p class="o_message_paragraph">оставайтесь с нами на связи</p>
                                             </div>
                                         </div>
-                                        <div class="input-group o_not_editable o_popup_animated o_popup_bounce_del500ms o_popup_bounce_small"
-                                             style="display: table;" contenteditable="false">
-                                            <input type="email" name="email" class="popup_subscribe_email form-control"
-                                                   placeholder="адрес электронной почты..." autofocus="autofocus"/>
+                                        <div class="input-group o_not_editable o_popup_animated o_popup_bounce_del500ms o_popup_bounce_small" style="display: table;" contenteditable="false">
+                                            <input type="email" name="email" class="popup_subscribe_email form-control" placeholder="адрес электронной почты..." autofocus="autofocus"/>
                                             <span class="input-group-btn">
-                                                <a href="#"
-                                                   class="btn btn-success popup_subscribe_btn o_default_snippet_text">
+                                                <a href="#" class="btn btn-success popup_subscribe_btn o_default_snippet_text">
                                                     Подписаться
                                                 </a>
                                             </span>
@@ -6889,69 +6860,69 @@
         </template>
         <template id="custom_footer" inherit_id="website.layout" name="Custom Footer">
             <xpath expr="//div[@id='footer']" position="replace">
-<div id="footer" class="container hidden-print">
-      <div class="row">
-        <div class="col-md-4 col-lg-3">
-          <h4>Наши продукты и Сервисы</h4>
-          <ul class="list-unstyled" id="products">
-            <li>
-              <a href="/">Главная</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4  col-lg-3" id="info">
-          <h4>Свяжитесь с нами</h4>
-          <ul class="list-unstyled">
-            <li>
-              <a href="/page/website.contactus">Контакты</a>
-            </li>
-              <li><a t-attf-href="/groups">
-Список рассылки</a></li>
-          </ul>
-          <ul class="list-unstyled">
-            <li t-ignore="true">
-              <i class="fa fa-phone"/>
-              <span t-field="res_company.phone"/>
-            </li>
-            <li t-ignore="true">
-              <i class="fa fa-envelope"/>
-              <span t-field="res_company.email"/>
-            </li>
-          </ul>
-          <h2>
-            <a t-att-href="website.social_facebook" t-if="website.social_facebook">
-              <i class="fa fa-facebook-square"/>
-            </a>
-            <a t-att-href="website.social_twitter" t-if="website.social_twitter">
-              <i class="fa fa-twitter"/>
-            </a>
-            <a t-att-href="website.social_linkedin" t-if="website.social_linkedin">
-              <i class="fa fa-linkedin"/>
-            </a>
-            <a t-att-href="website.social_youtube" t-if="website.social_youtube">
-              <i class="fa fa-youtube-play"/>
-            </a>
-            <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher">
-              <i class="fa fa-google-plus-square"/>
-            </a>
-            <a t-att-href="website.social_github" t-if="website.social_github">
-              <i class="fa fa-github"/>
-            </a>
-          </h2>
-        </div>
-        <div class="col-md-4 col-lg-5 col-lg-offset-1">
-          <h4>
-            <span t-field="res_company.name"/>
-            <small> - <a href="/page/website.aboutus">О нас</a></small>
-          </h4>
-          <div>
-            <p> Мы - команда влюбленных в свою работу людей, и наша цель - разработка отличных продуктов, которые делают нашу жизнь лучше. Мы предлагаем отличные решения для ваших бизнес-задач. </p>
-            <p> Наши товары предназначены для малых и средних компаний, желающих оптимизировать свою производительность. </p>
-          </div>
-          <!--<t t-call="website.language_selector"/>-->
-        </div>
-      </div>
-    </div>
+                <div id="footer" class="container hidden-print">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-3">
+                            <h4>Наши продукты и Сервисы</h4>
+                            <ul class="list-unstyled" id="products">
+                                <li>
+                                    <a href="/">Главная</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4  col-lg-3" id="info">
+                            <h4>Свяжитесь с нами</h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/page/website.contactus">Контакты</a>
+                                </li>
+                                <li><a t-attf-href="/groups">
+                                    Список рассылки</a></li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li t-ignore="true">
+                                    <i class="fa fa-phone"/>
+                                    <span t-field="res_company.phone"/>
+                                </li>
+                                <li t-ignore="true">
+                                    <i class="fa fa-envelope"/>
+                                    <span t-field="res_company.email"/>
+                                </li>
+                            </ul>
+                            <h2>
+                                <a t-att-href="website.social_facebook" t-if="website.social_facebook">
+                                    <i class="fa fa-facebook-square"/>
+                                </a>
+                                <a t-att-href="website.social_twitter" t-if="website.social_twitter">
+                                    <i class="fa fa-twitter"/>
+                                </a>
+                                <a t-att-href="website.social_linkedin" t-if="website.social_linkedin">
+                                    <i class="fa fa-linkedin"/>
+                                </a>
+                                <a t-att-href="website.social_youtube" t-if="website.social_youtube">
+                                    <i class="fa fa-youtube-play"/>
+                                </a>
+                                <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher">
+                                    <i class="fa fa-google-plus-square"/>
+                                </a>
+                                <a t-att-href="website.social_github" t-if="website.social_github">
+                                    <i class="fa fa-github"/>
+                                </a>
+                            </h2>
+                        </div>
+                        <div class="col-md-4 col-lg-5 col-lg-offset-1">
+                            <h4>
+                                <span t-field="res_company.name"/>
+                                <small> - <a href="/page/website.aboutus">О нас</a></small>
+                            </h4>
+                            <div>
+                                <p> Мы - команда влюбленных в свою работу людей, и наша цель - разработка отличных продуктов, которые делают нашу жизнь лучше. Мы предлагаем отличные решения для ваших бизнес-задач. </p>
+                                <p> Наши товары предназначены для малых и средних компаний, желающих оптимизировать свою производительность. </p>
+                            </div>
+                            <!--<t t-call="website.language_selector"/>-->
+                        </div>
+                    </div>
+                </div>
             </xpath>
         </template>
     </data>
