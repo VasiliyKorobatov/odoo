@@ -225,8 +225,8 @@ class AsteriskServer(models.Model):
 
     @api.model
     def get_record_from_my_channel(self):
-        calling_number = self.env['asterisk.server']._get_calling_number()
-        # calling_number = "0641981246"
+        # calling_number = self.env['asterisk.server']._get_calling_number()
+        calling_number = "777"
         if calling_number:
             record = self.env['phone.common'].get_record_from_phone_number(
                 calling_number)
