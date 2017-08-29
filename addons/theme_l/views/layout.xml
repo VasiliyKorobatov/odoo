@@ -117,8 +117,7 @@
                                         </li-->
                                         <li class="dropdown ">
                                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                                <span class="fa fa-question-circle-o"/>&amp;nbsp;
-                                                <span class="hidden-xs">Помощь</span>
+                                                <span><span class="fa fa-question-circle-o"/>&amp;nbsp;<span class="hidden-xs">Помощь</span></span>
                                                 <span class="caret"></span>
                                             </a>
                                             <ul class="dropdown-menu" role="menu">
