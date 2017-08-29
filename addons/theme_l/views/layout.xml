@@ -55,9 +55,7 @@
                                                data-content="&lt;div class='row'&gt;&lt;div class='col-xs-12'&gt;&lt;a class='btn btn-success btn-sm yes-city' href='javascript:void(0)'&gt;Да&lt;/a&gt;&lt;a class='btn btn-default btn-sm no-city' style='margin-left:10px;' href='javascript:void(0)'&gt;Нет&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;"
                                                data-delay="3" data-html="true" data-container="body"
                                                data-placement="bottom" data-toggle="modal" class="your-city hidden-md hidden-xs hidden-sm" href="#city">
-                                                <span class="fa fa-map-marker">
-                                                    <span class="user-city"/>
-                                                </span>
+                                                <span class="fa fa-map-marker" />&amp;nbsp;<span style="position:absolute;" class="user-city"/>
                                             </a>
                             </div>
                         </div>
@@ -92,7 +90,7 @@
                     <div class="container-fluid">
 
                         <div class="row">
-                            <div class="col-xs-6 col-sm-8 col-md-6 col-lg-5">
+                            <div class="col-xs-6 col-sm-8 col-md-6 col-lg-2">
                                 <div class="hidden-xs hidden-lg col-sm-5 col-md-5">
                                     <ul class="nav navbar-nav navbar-left">
                                         <li>
@@ -108,7 +106,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="col-xs-6 col-sm-7 col-md-7 col-lg-7">
+                                <div class="col-xs-6 col-sm-7 col-md-7 col-lg-12">
                                     <ul class="nav navbar-nav navbar-left">
                                         <!--li class="hidden-xs">
                                             <a href="/page/dostavka">
@@ -157,7 +155,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-xs-6 col-sm-4 col-md-6 col-lg-7 text-right mt8" id="user-menu-cart"/>
+                            <div class="col-xs-6 col-sm-4 col-md-6 col-lg-10 text-right mt8" id="user-menu-cart"/>
                         </div>
                     </div>
 
