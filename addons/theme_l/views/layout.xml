@@ -55,7 +55,7 @@
                                                data-content="&lt;div class='row'&gt;&lt;div class='col-xs-12'&gt;&lt;a class='btn btn-success btn-sm yes-city' href='javascript:void(0)'&gt;Да&lt;/a&gt;&lt;a class='btn btn-default btn-sm no-city' style='margin-left:10px;' href='javascript:void(0)'&gt;Нет&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;"
                                                data-delay="3" data-html="true" data-container="body"
                                                data-placement="bottom" data-toggle="modal" class="your-city hidden-md hidden-xs hidden-sm" href="#city">
-                                                <span class="fa fa-map-marker">&amp;nbsp;
+                                                <span class="fa fa-map-marker">
                                                     <span class="user-city"/>
                                                 </span>
                                             </a>
@@ -110,14 +110,14 @@
                                 </div>
                                 <div class="col-xs-6 col-sm-7 col-md-7 col-lg-7">
                                     <ul class="nav navbar-nav navbar-left">
-                                        <li class="hidden-xs">
+                                        <!--li class="hidden-xs">
                                             <a href="/page/dostavka">
                                                 <span>Доставка</span>
                                             </a>
-                                        </li>
+                                        </li-->
                                         <li class="dropdown ">
                                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                                <span class="fa fa-question-circle-o visible-xs hidden-sm hidden-md hidden-lg"/>&amp;nbsp;
+                                                <span class="fa fa-question-circle-o"/>&amp;nbsp;
                                                 <span class="hidden-xs">Помощь</span>
                                                 <span class="caret"></span>
                                             </a>
