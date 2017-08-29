@@ -88,8 +88,6 @@
                                 <div class="hidden-xs col-sm-5 col-md-5 col-lg-5">
                                     <ul class="nav navbar-nav navbar-left">
                                         <li>
-                                            <script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU"
-                                                    type="text/javascript"/>
                                             <script type="text/javascript">
                                                 ymaps.ready(function(){
                                                 if(typeof Cookies.get("city") == "undefined"){
