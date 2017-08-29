@@ -7059,7 +7059,6 @@
                         </div>
                     </div>
                 </div>
-            </xpath>
             <script src="//api-maps.yandex.ru/2.1/?lang=ru-RU"  type="text/javascript" />
             <script type="text/javascript">
                 ymaps.ready(function(){
@@ -7093,6 +7092,8 @@
                 }
                 });
             </script>
+                        </xpath>
+
         </template>
     </data>
 </odoo>
