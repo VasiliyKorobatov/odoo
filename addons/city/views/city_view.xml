@@ -47,6 +47,7 @@
         <field name="arch" type="xml">
             <tree string="City">
                 <field name="name"/>
+                <field name="address"/>
                 <field name="zip"/>
                 <field name="state_id" domain="[('country_id','=',country_id)]"/>
                 <field name="country_id"/>
@@ -62,6 +63,7 @@
             <form string="City">
               <group colspan="4" col="4">
                 <field name="name"/>
+                <field name="address"/>
                 <field name="zip" required="1"/>
                 <field name="country_id" />
                 <field name="state_id" domain="[('country_id','=',country_id)]"/>
