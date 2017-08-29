@@ -51,7 +51,11 @@
                         </div>
                         <div class="col-lg-2 hidden-md hidden-sm hidden-xs">
                             <div id="russia">
-
+                                <a data-title="Ваш город?" data-trigger="manual" data-content="<div class='row'><div class='col-xs-12'><a class='btn btn-success btn-sm' id='yes-city' href='javascript:void(0)'>Да</a><a class='btn btn-default btn-sm' id='no-city' style='margin-left:10px;' href='javascript:void(0)'>Нет</a></div></div>" data-delay="3" data-html="true" data-container="body" data-placement="bottom" data-toggle="modal" id="your-city" href="#city">
+                                    <span class="fa fa-map-marker">&nbsp;
+                                        <span id="user-city"></span>
+                                    </span>
+                                </a>
                             </div>
                         </div>
                         <!--div id="work-time" class="hidden-xs col-sm-2 col-md-2 col-lg-2 text-center">
