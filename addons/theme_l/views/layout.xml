@@ -100,7 +100,7 @@
                             }).then(function (result) {
                             $(".user-city").text(result.geoObjects.get(0).properties.get('name'));
                             $(function () {
-                            $(".your-city").popover('show');
+                            $(".your-city:visible").popover('show');
                             $(".popover").css("position","fixed");
                             });
                             $(".yes-city").click(function(){
@@ -108,7 +108,7 @@
                             Cookies.set('city', $(".user-city").text(), { expires: 365 });
                             });
                             $(".no-city").click(function(){
-                            $(".your-city").popover('hide')
+                            $(".your-city:visible").popover('hide')
                             $("#city").modal('show');
                             });
                             $("#city a").click(function(){
