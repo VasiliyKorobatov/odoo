@@ -113,13 +113,13 @@
                             });
                             $("#city a").click(function(){
                             var city = $(this).text();
-                            $(".user-city").text(city);
+                            $(".user-city").text(city.split(',')[0].replace(/(\r\n|\n|\r|\s)/gm,""));
                             Cookies.set('city', city, { expires: 365 });
                             $("#city").modal('hide');
                             });
                             });
                             } else {
-                            $(".user-city").text(Cookies.get("city"));
+                            $(".user-city").text(Cookies.get("city").split(',')[0].replace(/(\r\n|\n|\r|\s)/gm,""));
                             }
                             });
                         </script>
