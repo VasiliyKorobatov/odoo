@@ -9,8 +9,8 @@ $(document).ready(function() {
         $("main").attr("class","col-md-12");
     });
     $("#city a").click(function(){
-        var city = $(this).text().split(',')[0];
-        $("#user-city").text(city);
+        var city = $(this).text();
+        $(".user-city").text(city.split(',')[0].replace(/(\r\n|\n|\r|\s)/gm,""));
         Cookies.set('city', city, { expires: 365 });
         $("#city").modal('hide');
     });
