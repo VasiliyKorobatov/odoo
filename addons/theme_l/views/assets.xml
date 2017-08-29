@@ -16,8 +16,7 @@
                 <script src="/theme_l/static/src/js/bootstrap-list-filter.min.js" type="text/javascript" />
                 <script src="/theme_l/static/src/js/theme.js" type="text/javascript" />
                 <script src="/theme_l/static/src/js/js.cookie.js" type="text/javascript" />
-                <script src="//api-maps.yandex.ru/2.1/?lang=ru-RU"  type="text/javascript" async="async" defer="defer"></script>
-            </xpath>
+                           </xpath>
         </template>
     </data>
 </odoo>
