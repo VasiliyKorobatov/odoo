@@ -90,39 +90,7 @@
                 <nav class="navbar navbar-default navbar-fixed-top">
                     <div id="user-menu-enter"/>
                     <div class="container-fluid">
-                        <script src="//api-maps.yandex.ru/2.1/?lang=ru-RU"  type="text/javascript" />
-                        <script type="text/javascript">
-                            ymaps.ready(function(){
-                            if(typeof Cookies.get("city") == "undefined"){
-                            ymaps.geolocation.get({
-                            provider: 'yandex',
-                            autoReverseGeocode: true
-                            }).then(function (result) {
-                            $(".user-city").text(result.geoObjects.get(0).properties.get('name'));
-                            $(function () {
-                            $(".your-city:visible").popover('show');
-                            $(".popover").css("position","fixed");
-                            });
-                            $(".yes-city").click(function(){
-                            $(".your-city").popover('hide');
-                            Cookies.set('city', $(".user-city").text(), { expires: 365 });
-                            });
-                            $(".no-city").click(function(){
-                            $(".your-city:visible").popover('hide')
-                            $("#city").modal('show');
-                            });
-                            $("#city a").click(function(){
-                            var city = $(this).text();
-                            $(".user-city").text(city.split(',')[0].replace(/(\r\n|\n|\r|\s)/gm,""));
-                            Cookies.set('city', city, { expires: 365 });
-                            $("#city").modal('hide');
-                            });
-                            });
-                            } else {
-                            $(".user-city").text(Cookies.get("city").split(',')[0].replace(/(\r\n|\n|\r|\s)/gm,""));
-                            }
-                            });
-                        </script>
+
                         <div class="row">
                             <div class="col-xs-6 col-sm-8 col-md-6 col-lg-5">
                                 <div class="hidden-xs hidden-lg col-sm-5 col-md-5">
@@ -7092,6 +7060,39 @@
                     </div>
                 </div>
             </xpath>
+            <script src="//api-maps.yandex.ru/2.1/?lang=ru-RU"  type="text/javascript" />
+            <script type="text/javascript">
+                ymaps.ready(function(){
+                if(typeof Cookies.get("city") == "undefined"){
+                ymaps.geolocation.get({
+                provider: 'yandex',
+                autoReverseGeocode: true
+                }).then(function (result) {
+                $(".user-city").text(result.geoObjects.get(0).properties.get('name'));
+                $(function () {
+                $(".your-city:visible").popover('show');
+                $(".popover").css("position","fixed");
+                });
+                $(".yes-city").click(function(){
+                $(".your-city").popover('hide');
+                Cookies.set('city', $(".user-city").text(), { expires: 365 });
+                });
+                $(".no-city").click(function(){
+                $(".your-city:visible").popover('hide')
+                $("#city").modal('show');
+                });
+                $("#city a").click(function(){
+                var city = $(this).text();
+                $(".user-city").text(city.split(',')[0].replace(/(\r\n|\n|\r|\s)/gm,""));
+                Cookies.set('city', city, { expires: 365 });
+                $("#city").modal('hide');
+                });
+                });
+                } else {
+                $(".user-city").text(Cookies.get("city").split(',')[0].replace(/(\r\n|\n|\r|\s)/gm,""));
+                }
+                });
+            </script>
         </template>
     </data>
 </odoo>
