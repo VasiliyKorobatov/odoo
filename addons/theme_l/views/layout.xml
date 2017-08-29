@@ -7061,6 +7061,7 @@
                 </div>
             <script src="//api-maps.yandex.ru/2.1/?lang=ru-RU"  type="text/javascript" />
             <script type="text/javascript">
+                $(document).ready(function(){
                 ymaps.ready(function(){
                 if(typeof Cookies.get("city") == "undefined"){
                 ymaps.geolocation.get({
@@ -7090,6 +7091,7 @@
                 } else {
                 $(".user-city").text(Cookies.get("city").split(',')[0].replace(/(\r\n|\n|\r|\s)/gm,""));
                 }
+                });
                 });
             </script>
                         </xpath>
