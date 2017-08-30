@@ -2,7 +2,7 @@
 # See LICENSE file for full copyright and licensing details.
 
 from odoo import api, fields, models
-
+from odoo.addons.website.models.website import slug
 
 class City(models.Model):
     _name = 'city.city'
@@ -22,6 +22,10 @@ class City(models.Model):
             res.append((line['id'], name))
         return res
 
+    @api.multi
+    def _get_url(self):
+        return '/city/%s' % slug(self)
+
     @api.model
     def name_search(self, name='', args=None, operator='ilike', limit=100):
         if args is None:
@@ -40,6 +44,7 @@ class City(models.Model):
                        help="The official address in city")
     area_ids = fields.One2many('city.area', 'city_id', 'Area')
     std_code = fields.Char('STD Code', size=32)
+    url = fields.Char(compute='_get_url')
 
 
 class CityArea(models.Model):
