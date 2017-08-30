@@ -11,7 +11,8 @@ class City(http.Controller):
                 website=True)
     def index(self, **kw):
         Cities = http.request.env['city.city']
-        cities_ru = Cities.search([('country_id','=','base.ru')])
+        # cities_ru = Cities.search([('country_id','=','base.ru')])
+        cities_ru = Cities.search([['address','!=',False]])
         cities_kz = []
         return http.request.render("city.cities", {'cities_ru':cities_ru})
 
