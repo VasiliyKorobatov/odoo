@@ -11,10 +11,12 @@ class City(http.Controller):
                 website=True)
     def index(self, **kw):
         Cities = http.request.env['city.city']
-        # cities_ru = Cities.search([('country_id','=','base.ru')])
         cities_ru = Cities.search([['address','!=',False],['country_id.code','=','RU']])
-        cities_kz = []
-        return http.request.render("city.cities", {'cities_ru':cities_ru})
+        cities_kz = Cities.search([['address','!=',False],['country_id.code','=','KZ']])
+        return http.request.render("city.cities", {
+            'cities_ru':cities_ru,
+            'cities_kz':cities_kz,
+        })
 
         #     @http.route('/catalog/catalog/objects/', auth='public')
         #     def list(self, **kw):
