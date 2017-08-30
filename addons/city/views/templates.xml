@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-    <data>
-        <template id="cities" name="Cities">
-            <!--<t t-call="website.layout">-->
+        <template id="cities" name="Cities" page="True">
+            <t t-call="website.layout">
                 <div id="wrap">
                     <div class="oe_structure"/>
                     <div class="container">
@@ -10,7 +9,6 @@
                     </div>
                     <div class="oe_structure"/>
                 </div>
-            <!--</t>-->
+            </t>
         </template>
-    </data>
 </odoo>
