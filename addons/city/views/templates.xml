@@ -9,9 +9,9 @@
                     </p>
                     <h2>Железная мебель уже установлена городах в России.</h2>
                     <t t-foreach="cities_ru" t-as="city" >
-                        <a t-att-href="city.url" >
-                            <!--<span t-field="city.name" />-->
-                        </a>
+                        <!--<a t-att-href="city.url" >-->
+                            <span t-field="city.name" />
+                        <!--</a>-->
                     </t>
                     <div class="oe_structure"/>
                     <!--<h2>Приобрести в Казахстане можно в городах:</h2>-->
