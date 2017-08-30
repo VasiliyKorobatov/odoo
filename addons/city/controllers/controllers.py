@@ -7,7 +7,8 @@ from odoo.http import request
 from odoo.addons.website.models.website import slug
 
 class City(http.Controller):
-    @http.route('/city', auth='public')
+    @http.route('/city', type='http', auth='public',
+                website=True)
     def index(self, **kw):
         values = []
         return http.request.render("city.cities", {})
