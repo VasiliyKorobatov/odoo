@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-29 17:41+0000\n"
-"PO-Revision-Date: 2017-08-29 22:55+0500\n"
+"POT-Creation-Date: 2017-08-29 19:21+0000\n"
+"PO-Revision-Date: 2017-08-30 00:28+0500\n"
 "Last-Translator: Korobarov Vasiliy <korobarov@akvastil.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,6 +16,11 @@ msgstr ""
 "Plural-Forms: \n"
 "Language: ru\n"
 "X-Generator: Poedit 2.0.2\n"
+
+#. module: city
+#: model:ir.model.fields,field_description:city.field_city_city_address
+msgid "Address"
+msgstr "Адрес"
 
 #. module: city
 #: model:ir.actions.act_window,name:city.action_area
@@ -101,7 +106,7 @@ msgstr "Введите район"
 #: model:ir.model.fields,field_description:city.field_city_area_id
 #: model:ir.model.fields,field_description:city.field_city_city_id
 msgid "ID"
-msgstr "ИД"
+msgstr "ID"
 
 #. module: city
 #: model:ir.model.fields,field_description:city.field_city_area___last_update
@@ -142,12 +147,17 @@ msgstr "СТД Код"
 #. module: city
 #: model:ir.model.fields,field_description:city.field_city_city_state_id
 msgid "State"
-msgstr "Область"
+msgstr "Состояние"
 
 #. module: city
 #: model:ir.ui.view,arch_db:city.view_partner_form_city
 msgid "Std Code"
 msgstr "Стд код"
+
+#. module: city
+#: model:ir.model.fields,help:city.field_city_city_address
+msgid "The official address in city"
+msgstr "Официальный адрес в городе"
 
 #. module: city
 #: model:ir.model.fields,help:city.field_city_area_code
