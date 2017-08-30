@@ -10,7 +10,7 @@ class City(http.Controller):
     @http.route('/city', auth='public')
     def index(self, **kw):
         values = []
-        return http.request.render("city.cities", values)
+        return http.request.render("city.cities", {})
 
         #     @http.route('/catalog/catalog/objects/', auth='public')
         #     def list(self, **kw):

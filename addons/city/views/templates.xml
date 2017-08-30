@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-    <template id="cities" name="Cities">
-        <t t-call="website.layout">
-            <div id="wrap">
-                <div class="oe_structure"/>
-                <div class="container">
-                    <h1>Thanks!</h1>
+    <data>
+        <template id="cities" name="Cities">
+            <t t-call="website.layout">
+                <div id="wrap">
+                    <div class="oe_structure"/>
+                    <div class="container">
+                        <h1>Thanks!</h1>
+                    </div>
+                    <div class="oe_structure"/>
                 </div>
-                <div class="oe_structure"/>
-            </div>
-        </t>
-    </template>
+            </t>
+        </template>
+    </data>
 </odoo>
