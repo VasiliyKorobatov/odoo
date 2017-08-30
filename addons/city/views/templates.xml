@@ -9,7 +9,7 @@
                     </p>
                     <h2>Железная мебель уже установлена городах в России.</h2>
                     <t t-foreach="cities_ru" t-as="city" >
-                        <a t-att-href="city.url" >
+                        <a t-att-href="slug(city)" >
                             <span t-field="city.name" />
                         </a>
                     </t>
