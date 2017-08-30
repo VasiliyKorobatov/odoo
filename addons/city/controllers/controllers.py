@@ -18,15 +18,9 @@ class City(http.Controller):
             'cities_kz':cities_kz,
         })
 
-        #     @http.route('/catalog/catalog/objects/', auth='public')
-        #     def list(self, **kw):
-        #         return http.request.render('catalog.listing', {
-        #             'root': '/catalog/catalog',
-        #             'objects': http.request.env['catalog.catalog'].search([]),
-        #         })
-
-        #     @http.route('/catalog/catalog/objects/<model("catalog.catalog"):obj>/', auth='public')
-        #     def object(self, obj, **kw):
-        #         return http.request.render('catalog.object', {
-        #             'object': obj
-        #         })
+    @http.route(['/city/<model("city.city"):city>'],
+                type='http', auth="public", website=True)
+    def city(self, city, **kw):
+        return http.request.render("city.detail", {
+            "city": city
+        })

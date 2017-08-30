@@ -24,4 +24,12 @@
                 </div>
             </t>
         </template>
+        <template id="detail" name="City Detail" page="True">
+            <t t-call="website.layout">
+                <div id="wrap">
+                    <h1 t-field="city.name"/>
+                    <div class="oe_structure"/>
+                </div>
+            </t>
+        </template>
 </odoo>
