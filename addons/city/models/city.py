@@ -22,7 +22,7 @@ class City(models.Model):
             res.append((line['id'], name))
         return res
 
-    @api.multi
+    @api.one
     def _get_url(self):
         return '/city/%s' % slug(self)
 
