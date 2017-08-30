@@ -17,6 +17,7 @@
     "depends": ["sales_team"],
     "data": [
         "views/city_view.xml",
+        "views/templates.xml",
         "security/ir.model.access.csv",
         ],
     "installable": True,
