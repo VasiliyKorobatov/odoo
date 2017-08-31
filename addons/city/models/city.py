@@ -36,23 +36,9 @@ class City(models.Model):
 
     @api.one
     def _slug_name(self):
-        _logger.info('1 %s', self.name)
         s = ustr(self.name)
-        _logger.info('2 %s', s)
-        if slugify_lib:
-            # There are 2 different libraries only python-slugify is supported
-            try:
-                _logger.info('2.5 %s', slugify_lib.slugify(s))
-                return slugify_lib.slugify(s)
-            except TypeError:
-                pass
-        uni = unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode('ascii')
-        _logger.info('3 %s', uni)
-        slug_str = re.sub('[\W_]', ' ', uni).strip().lower()
-        _logger.info('4 %s', slug_str)
-        slug_str = re.sub('[-\s]+', '-', slug_str)
-        _logger.info('5 %s', slug_str)
-        return slug_str
+        return slugify_lib.slugify(s)
+
 
     @api.model
     def name_search(self, name='', args=None, operator='ilike', limit=100):
