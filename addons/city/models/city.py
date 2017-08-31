@@ -48,9 +48,6 @@ class City(models.Model):
         rec_ids = self.search(args, limit=limit)
         return rec_ids.name_get()
 
-    @api.model
-    def popular_cities(self):
-        return list(self.env['city.city'].sudo().search(['is_popular','=',True], order='name'))
 
     state_id = fields.Many2one('res.country.state', 'State', index=True)
     name = fields.Char('City', size=64, required=True, index=True)
@@ -135,3 +132,12 @@ class ResPartner(models.Model):
                 self.state_id = city.state_id.id
                 if city.state_id.country_id:
                     self.country_id = city.state_id.country_id.id
+
+
+
+
+class Website(models.Model):
+    _inherit = "website"
+    @api.model
+    def popular_cities(self):
+        return list(self.env['city.city'].sudo().search(['is_popular', '=', True], order='name'))
