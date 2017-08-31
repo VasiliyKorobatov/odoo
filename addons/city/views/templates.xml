@@ -3,32 +3,34 @@
     <template id="cities" name="Cities" page="True">
         <t t-call="website.layout">
             <div id="wrap">
-                <h1>Города</h1>
-                <p>
-                    <strong>В любой город России, Казахстана</strong>
-                    поставляем продукцию. Доставка осуществляется транспортными компаниями и собственным автопарком.
-                </p>
-                <h2>Железная мебель уже установлена городах в России.</h2>
-                <ul class="city-list">
-                <t t-foreach="cities_ru" t-as="city">
-                    <li class="city-city">
-                    <a t-att-href="'/city/%s' % slug(city)" t-att-title="city.name">
-                        <span t-field="city.name"/>
-                    </a>
-                    </li>
-                </t>
-                </ul>
-                <div class="oe_structure"/>
-                <h2>Приобрести в Казахстане можно в городах:</h2>
-                <ul class="city-list">
-                <t t-foreach="cities_kz" t-as="city">
-                    <li class="city-city">
-                    <a t-att-href="'/city/%s' % slug(city)" t-att-title="city.name">
-                        <span t-field="city.name"/>
-                    </a>
-                    </li>
-                </t>
-                </ul>
+                <div class="container">
+                    <h1>Города</h1>
+                    <p>
+                        <strong>В любой город России, Казахстана</strong>
+                        поставляем продукцию. Доставка осуществляется транспортными компаниями и собственным автопарком.
+                    </p>
+                    <h2>Железная мебель уже установлена городах в России.</h2>
+                    <ul class="city-list">
+                        <t t-foreach="cities_ru" t-as="city">
+                            <li class="city-city">
+                                <a t-att-href="'/city/%s' % slug(city)" t-att-title="city.name">
+                                    <span t-field="city.name"/>
+                                </a>
+                            </li>
+                        </t>
+                    </ul>
+                    <div class="oe_structure"/>
+                    <h2>Приобрести в Казахстане можно в городах:</h2>
+                    <ul class="city-list">
+                        <t t-foreach="cities_kz" t-as="city">
+                            <li class="city-city">
+                                <a t-att-href="'/city/%s' % slug(city)" t-att-title="city.name">
+                                    <span t-field="city.name"/>
+                                </a>
+                            </li>
+                        </t>
+                    </ul>
+                </div>
                 <div class="oe_structure"/>
             </div>
         </t>
@@ -52,13 +54,15 @@
                                 <div class="row well">
                                     <div class="col-xs-6 col-md-3">
                                         <span class="fa fa-map-marker"/>&amp;nbsp;
-                                        Адрес:<br />
+                                        Адрес:
+                                        <br/>
                                         <span t-field="city.name"/>,&amp;nbsp;
                                         <span t-field="city.address"/>
                                     </div>
                                     <div class="col-xs-6 col-md-3">
                                         <span class="fa fa-envelope"/>&amp;nbsp;
-                                        Email:<br />
+                                        Email:
+                                        <br/>
                                         <a t-att-href="'mailto:%s@%s' % (city.slug_name, res_company.email.split('@')[1])"
                                            t-esc="'%s@%s' % (city.slug_name, res_company.email.split('@')[1])"/>
                                     </div>
@@ -67,12 +71,14 @@
                                     <!--</p>-->
                                     <div class="col-xs-6 col-md-3">
                                         <span class="fa fa-phone-square"/>&amp;nbsp;
-                                        Телефон:<br />
+                                        Телефон:
+                                        <br/>
                                         <a t-att-href="'tel:%s' % res_company.phone" t-esc="res_company.phone"/>
                                     </div>
                                     <div class="col-xs-6 col-md-3">
                                         <span class="fa fa-clock-o"/>&amp;nbsp;
-                                        Мы работаем:<br />
+                                        Мы работаем:
+                                        <br/>
                                         С 9:00 до 18:00
                                     </div>
                                 </div>
