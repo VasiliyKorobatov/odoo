@@ -53,13 +53,18 @@
                                        zoom: 15,
                                        controls:['typeSelector','zoomControl']
                                     });
-                                    map.getObjects.add(new ymaps.Placemark(
-                                        coordinates,
-                                        {}, {
-                                            preset: "islands#dotCircleIcon",
-                                            iconColor: '#ff0000'
-                                        }
-                                    ));
+                                    var placemark = new ymaps.Placemark(coordinates, {}, {
+                                        preset: "islands#dotCircleIcon",
+                                        iconColor: '#ff0000'
+                                    });
+                                    geoMap.geoObjects.add(placemark);
+                                    // map.getObjects.add(new ymaps.Placemark(
+                                    //    coordinates,
+                                    //    {}, {
+                                    //        preset: "islands#dotCircleIcon",
+                                    //        iconColor: '#ff0000'
+                                    //    }
+                                    //));
                                 });
                             }
                             });
