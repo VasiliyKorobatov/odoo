@@ -41,7 +41,7 @@ class City(models.Model):
         _logger.info('2 %s', s)
         if slugify_lib:
             # There are 2 different libraries only python-slugify is supported
-            try
+            try:
                 _logger.info('2.5 %s', slugify_lib.slugify(s))
                 return slugify_lib.slugify(s)
             except TypeError:
