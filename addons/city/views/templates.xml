@@ -35,7 +35,7 @@
                     <h2>Пункт выдачи товара в г.<span t-field="city.name"/></h2>
                     <p>Мы работаем: <strong>С 9:00 до 18:00</strong></p>
                     <p>Адрес: <span t-field="city.name"/>,&amp;nbsp;<span t-field="city.address"/></p>
-                    <span t-esc="'mailto:%s' % slug(city)" />
+                    <span t-esc="'mailto:%s' % slugify(city)" />
                     <span t-esc="'mailto:%s' % (res_company.email.split('@')[1])" />
                     <!--<p>Email: <a t-att-href="'mailto:%s@%s' % (slug(city.name), res_company.email.split('@')[1])" t-esc="'%s@%s' % (slug(city.name), res_company.email.split('@')[1])" /></p>-->
                     <!--<p>Сайт <t t-esc="res.company.name" />: <a t-att-href="res_company.website" t-esc="res_company.website" /></p>-->
