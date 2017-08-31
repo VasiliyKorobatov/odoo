@@ -4,11 +4,13 @@ try:
     import slugify as slugify_lib
 except ImportError:
     slugify_lib = None
+import logging
 import unicodedata
 import re
 from odoo.tools import ustr
 from odoo import api, fields, models
 from odoo.addons.website.models.website import slug
+_logger = logging.getLogger(__name__)
 
 class City(models.Model):
     _name = 'city.city'
@@ -34,6 +36,7 @@ class City(models.Model):
 
     @api.one
     def _slug_name(self):
+        _logger.info('1 %s', self.name)
         s = ustr(self.name)
         if slugify_lib:
             # There are 2 different libraries only python-slugify is supported
@@ -41,9 +44,13 @@ class City(models.Model):
                 return slugify_lib.slugify(s)
             except TypeError:
                 pass
+        _logger.info('2 %s', s)
         uni = unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode('ascii')
+        _logger.info('3 %s', uni)
         slug_str = re.sub('[\W_]', ' ', uni).strip().lower()
+        _logger.info('4 %s', slug_str)
         slug_str = re.sub('[-\s]+', '-', slug_str)
+        _logger.info('5 %s', slug_str)
         return slug_str
 
     @api.model
