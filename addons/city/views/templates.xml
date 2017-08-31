@@ -53,18 +53,14 @@
                                        zoom: 15,
                                        controls:['typeSelector','zoomControl']
                                     });
-                                    var placemark = new ymaps.Placemark(coordinates, {}, {
+                                    var placemark = new ymaps.Placemark(coordinates, {
+                                        hintContent: address,
+                                        balloonContent: 'Время работы: Пн-Пт, с 9 до 18'
+                                        }, {
                                         preset: "islands#dotCircleIcon",
                                         iconColor: '#ff0000'
                                     });
                                     map.geoObjects.add(placemark);
-                                    // map.getObjects.add(new ymaps.Placemark(
-                                    //    coordinates,
-                                    //    {}, {
-                                    //        preset: "islands#dotCircleIcon",
-                                    //        iconColor: '#ff0000'
-                                    //    }
-                                    //));
                                 });
                             }
                             });
