@@ -41,6 +41,7 @@
                     <p>
                         <div id="map" style="width:600px;height:400px;" />
                         <script>
+                            $(window).load(function(){
                             ymaps.ready(initmap);
                             function initmap(){
                                 var address = <t t-esc="'\'%s, %s\'' % (city.name,city.address)" /> ;
@@ -64,6 +65,7 @@
                                     ));
                                 });
                             }
+                            });
                         </script>
                     </p>
                 </div>
