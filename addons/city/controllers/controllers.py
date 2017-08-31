@@ -1,10 +1,5 @@
 # -*- coding: utf-8 -*-
-import werkzeug
-
-from odoo import SUPERUSER_ID
 from odoo import http
-from odoo.http import request
-from odoo.addons.website.models.website import slug
 
 class City(http.Controller):
     @http.route('/city', type='http', auth='public',
