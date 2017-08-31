@@ -55,14 +55,9 @@
                                     });
                                     map.getObjects.add(new ymaps.Placemark(
                                         coordinates,
-                                        {
-                                            hintContent:address,
-                                            balloonContent:'Время работы Пн-Пт, с 9-00 до 18-00',
-                                        },
-                                        {
-                                            preset:'islands#dotCircleIcon',
-                                            iconColor: '#ff0000',
-                                            balloonCloseButton: false
+                                        {}, {
+                                            preset: "islands#dotCircleIcon",
+                                            iconColor: '#ff0000'
                                         }
                                     ));
                                 });
