@@ -57,7 +57,7 @@
                                         preset: "islands#dotCircleIcon",
                                         iconColor: '#ff0000'
                                     });
-                                    geoMap.geoObjects.add(placemark);
+                                    map.geoObjects.add(placemark);
                                     // map.getObjects.add(new ymaps.Placemark(
                                     //    coordinates,
                                     //    {}, {
