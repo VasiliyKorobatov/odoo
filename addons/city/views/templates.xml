@@ -43,7 +43,7 @@
                         <script>
                             ymaps.ready(initmap);
                             function initmap(){
-                                var address = <t t-esc="'%s, %s ' % (city.name,city.address)" /> ;
+                                var address = <t t-esc="'\'%s, %s\'' % (city.name,city.address)" /> ;
                                 var geocoder = ymaps.geocode(address);
                                 geocoder.then( function(res){
                                     var coordinates  = res.geoObjects.get(0).geometry.getCoordinates();
