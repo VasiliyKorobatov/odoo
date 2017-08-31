@@ -60,6 +60,7 @@ class City(models.Model):
     std_code = fields.Char('STD Code', size=32)
     url = fields.Char(compute='_get_url')
     slug_name = fields.Char(compute='_slug_name')
+    is_popular = fields.Boolean(string="Popular city", default=False)
 
 
 class CityArea(models.Model):
