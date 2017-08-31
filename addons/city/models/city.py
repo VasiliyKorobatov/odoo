@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 # See LICENSE file for full copyright and licensing details.
-
+try:
+    import slugify as slugify_lib
+except ImportError:
+    slugify_lib = None
+import unicodedata
+import re
+from odoo.tools import ustr
 from odoo import api, fields, models
 from odoo.addons.website.models.website import slug
 
@@ -26,6 +32,20 @@ class City(models.Model):
     def _get_url(self):
         return '/city/%s' % slug(self)
 
+    @api.one
+    def _slug_name(self):
+        s = ustr(self.name)
+        if slugify_lib:
+            # There are 2 different libraries only python-slugify is supported
+            try:
+                return slugify_lib.slugify(s)
+            except TypeError:
+                pass
+        uni = unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode('ascii')
+        slug_str = re.sub('[\W_]', ' ', uni).strip().lower()
+        slug_str = re.sub('[-\s]+', '-', slug_str)
+        return slug_str
+
     @api.model
     def name_search(self, name='', args=None, operator='ilike', limit=100):
         if args is None:
@@ -45,6 +65,7 @@ class City(models.Model):
     area_ids = fields.One2many('city.area', 'city_id', 'Area')
     std_code = fields.Char('STD Code', size=32)
     url = fields.Char(compute='_get_url')
+    slug_name = fields.Char(compute='_slug_name')
 
 
 class CityArea(models.Model):
