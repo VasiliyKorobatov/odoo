@@ -48,8 +48,8 @@
                                 geocoder.then( function(res){
                                     var coordinates  = res.geoObjects.get(0).geometry.getCoordinates();
                                     var map = new ymaps.Map("map", {
-                                       canter: coordinates;
-                                       zoom: 15;
+                                       center: coordinates,
+                                       zoom: 15,
                                        controls:['typeSelector','zoomControl']
                                     });
                                     map.getObjects.add(new ymaps.Placemark(
