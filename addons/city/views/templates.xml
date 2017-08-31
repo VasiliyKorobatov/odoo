@@ -1,72 +1,97 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-        <template id="cities" name="Cities" page="True">
-            <t t-call="website.layout">
-                <div id="wrap">
-                    <h1>Города</h1>
-                    <p>
-                        <strong>В любой город России, Казахстана</strong> поставляем продукцию. Доставка осуществляется транспортными компаниями и собственным автопарком.
-                    </p>
-                    <h2>Железная мебель уже установлена городах в России.</h2>
-                    <t t-foreach="cities_ru" t-as="city" >
-                        <a t-att-href="'/city/%s' % slug(city)" t-att-title="city.name">
-                            <span t-field="city.name" />
-                        </a>
-                    </t>
-                    <div class="oe_structure"/>
-                    <h2>Приобрести в Казахстане можно в городах:</h2>
-                    <t t-foreach="cities_kz" t-as="city" >
-                        <a t-att-href="'/city/%s' % slug(city)" t-att-title="city.name">
-                            <span t-field="city.name" />
-                        </a>
-                    </t>
-                    <div class="oe_structure"/>
-                </div>
-            </t>
-        </template>
-        <template id="detail" name="City Detail" page="True">
-            <t t-call="website.layout">
-                <div id="wrap">
-                    <h1 t-field="city.name"/>
-                    <div class="oe_structure" >
-                        <p>Изготовление металлической мебели, производство почтовых ящиков, продажа металлических уличных урн, железных кроватей.
-                        </p>
-                    </div>
-                    <h2>Пункт выдачи товара в г.<span t-field="city.name"/></h2>
-                    <p>Мы работаем: <strong>С 9:00 до 18:00</strong></p>
-                    <p>Адрес: <span t-field="city.name"/>,&amp;nbsp;<span t-field="city.address"/></p>
-                    <p>Email: <a t-att-href="'mailto:%s@%s' % (city.slug_name, res_company.email.split('@')[1])" t-esc="'%s@%s' % (city.slug_name, res_company.email.split('@')[1])" /></p>
-                    <p>Сайт <t t-esc="res_company.name" />: <a t-att-href="res_company.website" t-esc="res_company.website" /></p>
-                    <p>Телефон: <a t-att-href="'tel:%s' % res_company.phone" t-esc="res_company.phone" /></p>
-                    <p>
-                        <div id="map" style="width:600px;height:400px;" />
-                        <script>
-                            $(window).load(function(){
-                            ymaps.ready(initmap);
-                            function initmap(){
-                                var address = <t t-esc="'\'%s, %s\'' % (city.name,city.address)" /> ;
-                                var geocoder = ymaps.geocode(address);
-                                geocoder.then( function(res){
-                                    var coordinates  = res.geoObjects.get(0).geometry.getCoordinates();
-                                    var map = new ymaps.Map("map", {
-                                       center: coordinates,
-                                       zoom: 15,
-                                       controls:['typeSelector','zoomControl']
-                                    });
-                                    var placemark = new ymaps.Placemark(coordinates, {
+    <template id="cities" name="Cities" page="True">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <h1>Города</h1>
+                <p>
+                    <strong>В любой город России, Казахстана</strong>
+                    поставляем продукцию. Доставка осуществляется транспортными компаниями и собственным автопарком.
+                </p>
+                <h2>Железная мебель уже установлена городах в России.</h2>
+                <t t-foreach="cities_ru" t-as="city">
+                    <a t-att-href="'/city/%s' % slug(city)" t-att-title="city.name">
+                        <span t-field="city.name"/>
+                    </a>
+                </t>
+                <div class="oe_structure"/>
+                <h2>Приобрести в Казахстане можно в городах:</h2>
+                <t t-foreach="cities_kz" t-as="city">
+                    <a t-att-href="'/city/%s' % slug(city)" t-att-title="city.name">
+                        <span t-field="city.name"/>
+                    </a>
+                </t>
+                <div class="oe_structure"/>
+            </div>
+        </t>
+    </template>
+    <template id="detail" name="City Detail" page="True">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 t-field="city.name"/>
+                                <div class="oe_structure">
+                                    <p>Изготовление металлической мебели, производство почтовых ящиков, продажа
+                                        металлических уличных урн, железных кроватей.
+                                    </p>
+                                </div>
+                                <h2>Пункт выдачи товара в г.
+                                    <span t-field="city.name"/>
+                                </h2>
+                                <p>Мы работаем:
+                                    <strong>С 9:00 до 18:00</strong>
+                                </p>
+                                <p>Адрес:<span t-field="city.name"/>,&amp;nbsp;
+                                    <span t-field="city.address"/>
+                                </p>
+                                <p>Email:
+                                    <a t-att-href="'mailto:%s@%s' % (city.slug_name, res_company.email.split('@')[1])"
+                                       t-esc="'%s@%s' % (city.slug_name, res_company.email.split('@')[1])"/>
+                                </p>
+                                <p>Сайт<t t-esc="res_company.name"/>:
+                                    <a t-att-href="res_company.website" t-esc="res_company.website"/>
+                                </p>
+                                <p>Телефон:
+                                    <a t-att-href="'tel:%s' % res_company.phone" t-esc="res_company.phone"/>
+                                </p>
+                                <p>
+                                    <div id="map" style="width:100%;height:400px;"/>
+                                    <script>
+                                        $(window).load(function(){
+                                        ymaps.ready(initmap);
+                                        function initmap(){
+                                        var address =
+                                        <t t-esc="'\'%s, %s\'' % (city.name,city.address)"/>
+                                        ;
+                                        var geocoder = ymaps.geocode(address);
+                                        geocoder.then( function(res){
+                                        var coordinates = res.geoObjects.get(0).geometry.getCoordinates();
+                                        var map = new ymaps.Map("map", {
+                                        center: coordinates,
+                                        zoom: 15,
+                                        controls:['typeSelector','zoomControl']
+                                        });
+                                        var placemark = new ymaps.Placemark(coordinates, {
                                         hintContent: address,
                                         balloonContent: 'Время работы: Пн-Пт, с 9 до 18'
                                         }, {
                                         preset: "islands#dotCircleIcon",
                                         iconColor: '#ff0000'
-                                    });
-                                    map.geoObjects.add(placemark);
-                                });
-                            }
-                            });
-                        </script>
-                    </p>
-                </div>
-            </t>
-        </template>
+                                        });
+                                        map.geoObjects.add(placemark);
+                                        });
+                                        }
+                                        });
+                                    </script>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
 </odoo>
