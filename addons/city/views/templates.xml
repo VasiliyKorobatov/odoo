@@ -122,9 +122,10 @@
         </t>
     </template>
     <template id="most_popular_cities" inherit_id="theme_l.custom_footer" name="Most Popular Cities">
-        <xpath expr="//div[@id='footer']/div/div" position="inside">
+        <xpath expr="//div[@id='footer']/div/div/div" position="before">
             <div class="row">
                 <div class="col-md-12">
+                    <h4>Мы продаем продукцию по всей России!</h4>
                     <ul class="footer-city-list">
                         <t t-foreach="request.website.popular_cities()" t-as="city">
                             <li class="footer-city">
