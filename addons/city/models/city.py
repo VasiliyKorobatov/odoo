@@ -48,6 +48,10 @@ class City(models.Model):
         rec_ids = self.search(args, limit=limit)
         return rec_ids.name_get()
 
+    @api.model
+    def popular_cities(self):
+        return list(self.env['city.city'].sudo().search(['is_popular','=',True], order='name'))
+
     state_id = fields.Many2one('res.country.state', 'State', index=True)
     name = fields.Char('City', size=64, required=True, index=True)
     zip = fields.Char('ZIP', size=64, index=True)
