@@ -61,8 +61,8 @@
                                         },
                                         {
                                             preset:'islands#dotCircleIcon',
-                                            iconColor: '#ff0000'
-                                            balloonCloseButton: false,
+                                            iconColor: '#ff0000',
+                                            balloonCloseButton: false
                                         }
                                     ));
                                 });
