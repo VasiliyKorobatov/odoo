@@ -34,10 +34,10 @@ class City(models.Model):
     def _get_url(self):
         return '/city/%s' % slug(self)
 
-    @api.one
+    @api.depends('name')
     def _slug_name(self):
         s = ustr(self.name)
-        return slugify_lib.slugify(s)
+        self.slug_name = slugify_lib.slugify(s)
 
 
     @api.model
