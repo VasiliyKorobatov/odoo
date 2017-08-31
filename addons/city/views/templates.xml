@@ -12,7 +12,7 @@
                     <h2>Железная мебель уже установлена городах в России.</h2>
                     <ul class="city-list">
                         <t t-foreach="cities_ru" t-as="city">
-                            <li class="city-city">
+                            <li class="city-city"><span class="fa fa-map-marker" />&amp;nbsp;
                                 <a t-att-href="'/city/%s' % slug(city)" t-att-title="city.name">
                                     <span t-field="city.name"/>
                                 </a>
@@ -23,7 +23,7 @@
                     <h2>Приобрести в Казахстане можно в городах:</h2>
                     <ul class="city-list">
                         <t t-foreach="cities_kz" t-as="city">
-                            <li class="city-city">
+                            <li class="city-city"><span class="fa fa-map-marker" />&amp;nbsp;
                                 <a t-att-href="'/city/%s' % slug(city)" t-att-title="city.name">
                                     <span t-field="city.name"/>
                                 </a>

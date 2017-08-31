@@ -32,7 +32,7 @@ class City(models.Model):
 
     @api.one
     def _get_url(self):
-        return '/city/%s' % slug(self)
+        self.url = '/city/%s' % slug(self)
 
     @api.depends('name')
     def _slug_name(self):

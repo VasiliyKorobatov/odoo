@@ -16,6 +16,7 @@
         This module helps to keep homogeneous address data in the database.""",
     "depends": ["sales_team"],
     "data": [
+        "views/assets.xml",
         "views/city_view.xml",
         "views/templates.xml",
         "security/ir.model.access.csv",
