@@ -38,6 +38,34 @@
                     <p>Email: <a t-att-href="'mailto:%s@%s' % (city.slug_name, res_company.email.split('@')[1])" t-esc="'%s@%s' % (city.slug_name, res_company.email.split('@')[1])" /></p>
                     <p>Сайт <t t-esc="res_company.name" />: <a t-att-href="res_company.website" t-esc="res_company.website" /></p>
                     <p>Телефон: <a t-att-href="'tel:%s' % res_company.phone" t-esc="res_company.phone" /></p>
+                    <p>
+                        <div id="map" style="width:600px;height:400px;" />
+                        <script>
+                            ymaps.ready(initmap);
+                            function initmap(){
+                                var address = <t t-esc="city.name" /> +', '+ <t t-esc="city.address" />;
+                                var geocoder = ymaps.geocode(address);
+                                geocoder.then( function(res){
+                                    var coordinates  = res.geoObjects.get(0).geometry.getCoordinates();
+                                    var map = new ymaps.Map("map", {
+                                       canter: coordinates;
+                                       zoom: 15;
+                                       controls:['typeSelector','zoomControl']
+                                    });
+                                    map.getObjects.add(new ymaps.Placemark(
+                                        coordinates,
+                                        {
+                                            'hintContent':address,
+                                            'balloonContent':'Время работы Пн-Пт, с 9-00 до 18-00'
+                                        },
+                                        {
+                                            'preset':'islands#redDotIcon'
+                                        }
+                                    ));
+                                });
+                            }
+                        </script>
+                    </p>
                 </div>
             </t>
         </template>
