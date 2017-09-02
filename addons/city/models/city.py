@@ -141,4 +141,4 @@ class Website(models.Model):
     _inherit = "website"
     @api.model
     def popular_cities(self):
-        return list(self.env['city.city'].sudo().search([['is_popular', '=', True]], order='name'))
+        return list(self.env['city.city'].sudo().search([['is_popular', '=', True]], order='population desc'))
