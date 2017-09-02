@@ -190,7 +190,7 @@
                                                         <li class='list-group-item' t-att-data-location-city='city.id'>
                                                             <a href='#' t-att-data-city-id='city.id'
                                                                t-att-data-region-id='state_id'>
-                                                                <span t-esc="'%s, %s' % (city.name,state_id.name)"/>
+                                                                <span t-esc="'%s, %s' % (city.name,state_id)"/>
                                                             </a>
                                                         </li>
                                                     </t>
