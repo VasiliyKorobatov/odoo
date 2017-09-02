@@ -56,14 +56,22 @@
                                 <div class="row well">
                                     <div class="col-xs-6 col-md-3">
                                         <span class="fa fa-map-marker"/>&amp;nbsp;
-                                        Адрес:
+                                        <big>
+                                            <strong>
+                                                Адрес:
+                                            </strong>
+                                        </big>
                                         <br/>
                                         <span t-field="city.name"/>,&amp;nbsp;
                                         <span t-field="city.address"/>
                                     </div>
                                     <div class="col-xs-6 col-md-3">
                                         <span class="fa fa-envelope"/>&amp;nbsp;
-                                        Email:
+                                        <big>
+                                            <strong>
+                                                Email:
+                                            </strong>
+                                        </big>
                                         <br/>
                                         <a t-att-href="'mailto:%s@%s' % (city.slug_name, res_company.email.split('@')[1])"
                                            t-esc="'%s@%s' % (city.slug_name, res_company.email.split('@')[1])"/>
@@ -73,13 +81,21 @@
                                     <!--</p>-->
                                     <div class="col-xs-6 col-md-3">
                                         <span class="fa fa-phone-square"/>&amp;nbsp;
-                                        Телефон:
+                                        <big>
+                                            <strong>
+                                                Телефон:
+                                            </strong>
+                                        </big>
                                         <br/>
                                         <a t-att-href="'tel:%s' % res_company.phone" t-esc="res_company.phone"/>
                                     </div>
                                     <div class="col-xs-6 col-md-3">
                                         <span class="fa fa-clock-o"/>&amp;nbsp;
-                                        Мы работаем:
+                                        <big>
+                                            <strong>
+                                                Мы работаем:
+                                            </strong>
+                                        </big>
                                         <br/>
                                         С 9:00 до 18:00
                                     </div>
