@@ -192,6 +192,9 @@
                                                                t-att-data-region-id='city.state_id.id'>
                                                                 <span t-esc="'%s, %s' % (city.name,city.state_id.name)"/>
                                                             </a>
+                                                            <t t-if="city.address" >
+                                                               <a t-att-href="city.url" class="pull-right btn btn-xs btn-default">&amp;lt; На карте &amp;gt;</a>
+                                                            </t>
                                                         </li>
                                                     </t>
                                                 </ul>
