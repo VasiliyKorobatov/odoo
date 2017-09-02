@@ -189,8 +189,8 @@
                                                     <t t-foreach="request.website.all_cities()" t-as="city">
                                                         <li class='list-group-item' t-att-data-location-city='city.id'>
                                                             <a href='#' t-att-data-city-id='city.id'
-                                                               t-att-data-region-id='state_id'>
-                                                                <span t-esc="'%s, %s' % (city.name,state_id)"/>
+                                                               t-att-data-region-id='city.state_id.id'>
+                                                                <span t-esc="'%s, %s' % (city.name,city.state_id.id)"/>
                                                             </a>
                                                         </li>
                                                     </t>
