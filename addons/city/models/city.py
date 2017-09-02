@@ -145,4 +145,4 @@ class Website(models.Model):
 
     @api.model
     def all_cities(self):
-        return list(self.env['city.city'].sudo().search([['country_id..code', 'in', ['RU','KZ']]], order='country_id desc, name'))
+        return list(self.env['city.city'].sudo().search([['country_id.code', 'in', ['RU','KZ']]], order='country_id desc, name'))
