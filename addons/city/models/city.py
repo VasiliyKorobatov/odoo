@@ -142,3 +142,7 @@ class Website(models.Model):
     @api.model
     def popular_cities(self):
         return list(self.env['city.city'].sudo().search([['is_popular', '=', True]], order='population desc'))
+
+    @api.model
+    def all_cities(self):
+        return list(self.env['city.city'].sudo().search([['country_id..code', 'in', ['RU','KZ']]], order='country_id desc, name'))
