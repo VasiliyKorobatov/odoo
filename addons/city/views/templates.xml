@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <template id="cities" name="Cities" page="True">
+        <xpath expr="//title" position="replace">
+            <title>Города в которые поставляем продукцию</title>
+        </xpath>
+        <xpath expr="//meta[@name='description']" position="replace">
+            <meta name="description" content="В любой город России, Казахстана поставляем продукцию. Доставка осуществляется транспортными компаниями и собственным автопарком." />
+        </xpath>
+        <xpath expr="//meta[@name='keywords']" position="replace">
+           <meta name="keywords" content="Москва, Самара, Новосибирск, Казань, Челябинск, Омск, Екатеринбург, Златоуст, Миасс, Уфа, Самара, Пермь, Тюмень, Саратов, Оренбург, Стерлитамак, Кемерово, Красноярск, Рязань, Ижевск, Пенза, Ульяновск, Набережные Челны, Курган, Астрахань, Барнаул, Магнитогорск, Нижний Тагил, Шадринск, Тула, Санкт-Петербург, Нижний Новгород" />
+        </xpath>
         <t t-call="website.layout">
             <div id="wrap">
                 <div class="container">
@@ -36,15 +45,7 @@
                 <div class="oe_structure"/>
             </div>
         </t>
-        <xpath expr="//title" position="replace">
-            <title>Города в которые поставляем продукцию</title>
-        </xpath>
-        <xpath expr="//meta[@name='description']" position="replace">
-            <meta name="description" content="В любой город России, Казахстана поставляем продукцию. Доставка осуществляется транспортными компаниями и собственным автопарком." />
-        </xpath>
-        <xpath expr="//meta[@name='keywords']" position="replace">
-           <meta name="keywords" content="Москва, Самара, Новосибирск, Казань, Челябинск, Омск, Екатеринбург, Златоуст, Миасс, Уфа, Самара, Пермь, Тюмень, Саратов, Оренбург, Стерлитамак, Кемерово, Красноярск, Рязань, Ижевск, Пенза, Ульяновск, Набережные Челны, Курган, Астрахань, Барнаул, Магнитогорск, Нижний Тагил, Шадринск, Тула, Санкт-Петербург, Нижний Новгород" />
-        </xpath>
+
     </template>
     <template id="detail" name="City Detail" page="True">
         <xpath expr="//title" position="replace">
