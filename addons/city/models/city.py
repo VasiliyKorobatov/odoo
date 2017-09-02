@@ -62,6 +62,7 @@ class City(models.Model):
     url = fields.Char(compute='_get_url')
     slug_name = fields.Char(compute='_slug_name')
     is_popular = fields.Boolean(string="Popular city", default=False)
+    population = fields.Integer(string="City population", required=False, default=0)
 
 
 class CityArea(models.Model):
