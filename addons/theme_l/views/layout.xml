@@ -193,7 +193,7 @@
                                                                 <span t-esc="'%s, %s' % (city.name,city.state_id.name)"/>
                                                             </a>
                                                             <t t-if="city.address" >
-                                                               <a t-att-href="city.url" class="pull-right btn btn-xs btn-default">&amp;lt; На карте &amp;gt;</a>
+                                                               <a t-att-href="city.url" class="pull-right btn btn-xs btn-default">&amp;gt; На карте &amp;lt;</a>
                                                             </t>
                                                         </li>
                                                     </t>
