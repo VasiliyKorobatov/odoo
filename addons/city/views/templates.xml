@@ -36,6 +36,15 @@
                 <div class="oe_structure"/>
             </div>
         </t>
+        <xpath expr="//title" position="replace">
+            <title>Города в которые поставляем продукцию</title>
+        </xpath>
+        <xpath expr="//meta[@name='description']" position="replace">
+            <meta name="description" content="В любой город России, Казахстана поставляем продукцию. Доставка осуществляется транспортными компаниями и собственным автопарком." />
+        </xpath>
+        <xpath expr="//meta[@name='keywords']" position="replace">
+           <meta name="keywords" content="Москва, Самара, Новосибирск, Казань, Челябинск, Омск, Екатеринбург, Златоуст, Миасс, Уфа, Самара, Пермь, Тюмень, Саратов, Оренбург, Стерлитамак, Кемерово, Красноярск, Рязань, Ижевск, Пенза, Ульяновск, Набережные Челны, Курган, Астрахань, Барнаул, Магнитогорск, Нижний Тагил, Шадринск, Тула, Санкт-Петербург, Нижний Новгород" />
+        </xpath>
     </template>
     <template id="detail" name="City Detail" page="True">
         <t t-call="website.layout">
@@ -136,6 +145,16 @@
                 </section>
             </div>
         </t>
+        <xpath expr="//title" position="replace">
+            <title>Пункт выдачи товара в г. <t t-esc="city.name" /> </title>
+        </xpath>
+        <xpath expr="//meta[@name='description']" position="replace">
+            <meta name="description" t-att-content="'Изготовление металлической мебели, производство почтовых ящиков, продажа металлических уличных урн, железных кроватей. Пункт выдачи товара в г. %s' % city.name" />
+        </xpath>
+        <xpath expr="//meta[@name='keywords']" position="replace">
+           <meta name="keywords" t-att-content="city.name" />
+        </xpath>
+
     </template>
     <template id="most_popular_cities" inherit_id="theme_l.custom_footer" name="Most Popular Cities">
         <xpath expr="//div[@id='footer']/div/div/div" position="before">
