@@ -8,10 +8,20 @@ $(document).ready(function() {
         $("#leftCol").css("display","none");
         $("main").attr("class","col-md-12");
     });
-    $("#city a").click(function(){
-        var city = $(this).text();
-        $(".user-city").text(city.split(',')[0].replace(/(\r\n|\n|\r|\s)/gm,""));
-        Cookies.set('city', city, { expires: 365 });
+    $(".city-selector").click(function(){
+//        var city = $(this).text();
+//        $(".user-city").text(city.split(',')[0].replace(/(\r\n|\n|\r|\s)/gm,""));
+//        Cookies.set('city', city, { expires: 365 });
+//        $("#city").modal('hide');
+        var city_name = $(this).attr('data-city-name');
+        var city_id = $(this).attr('data-city-id');
+        var region_name = $(this).attr('data-region-name');
+        var region_id = $(this).attr('data-region-id');
+        $(".user-city").text(city_name);
+        Cookies.set('city_name', city_name, { expires: 365 });
+        Cookies.set('city_id', city_id, { expires: 365 });
+        Cookies.set('region_name', region_name, { expires: 365 });
+        Cookies.set('region_id', region_id, { expires: 365 });
         $("#city").modal('hide');
     });
     update_variant();

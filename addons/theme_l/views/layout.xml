@@ -188,12 +188,16 @@
                                                 <ul id="searchlist" class="list-group">
                                                     <t t-foreach="request.website.all_cities()" t-as="city">
                                                         <li class='list-group-item' t-att-data-location-city='city.id'>
-                                                            <a href='#' t-att-data-city-id='city.id'
-                                                               t-att-data-region-id='city.state_id.id'>
+                                                            <a class="city-selector" href='#'
+                                                               t-att-data-city-id='city.id'
+                                                               t-att-data-city-name="city.name"
+                                                               t-att-data-region-id='city.state_id.id'
+                                                               t-att-data-region-name='city.state_id.name'
+                                                            >
                                                                 <span t-esc="'%s, %s' % (city.name,city.state_id.name)"/>
                                                             </a>
                                                             <t t-if="city.address" >
-                                                               <a t-att-href="city.url" class="pull-right btn btn-xs btn-default">&amp;gt; На карте &amp;lt;</a>
+                                                                <a t-att-href="city.url" class="pull-right btn btn-xs btn-default"><span class="fa fa-map-marker" /> На карте</a>
                                                             </t>
                                                         </li>
                                                     </t>
@@ -1352,7 +1356,7 @@
                                          data-field-id="25">
                                         <label class="small" style="font-weight: normal;">
                                             <input type="checkbox" name="active" checked="checked"/>
-                                            Нажимая на кнопку
+                                            Нажимая на кнопку,
                                             я даю свое согласие на обработку моих персональных данных, в
                                             соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ
                                         </label>
@@ -1374,28 +1378,44 @@
                 <script type="text/javascript">
                     $(document).ready(function(){
                     ymaps.ready(function(){
-                    if(typeof Cookies.get("city") == "undefined"){
+                    // if(typeof Cookies.get("city") == "undefined"){
+                    if(typeof Cookies.get("city_name") == "undefined"){
                     ymaps.geolocation.get({
                     provider: 'yandex',
                     autoReverseGeocode: true
                     }).then(function (result) {
-                    $(".user-city").text(result.geoObjects.get(0).properties.get('name'));
+                    city_name = result.geoObjects.get(0).properties.get('name');
+                    region_name = result.geoObjects.get(0).properties.get('metaDataProperty').GeocoderMetaData.AddressDetails.Country.AdministrativeArea.AdministrativeAreaName;
+                    $(".user-city").text(city_name);
+                    $(".user-city").attr('data-city-name', city_name);
+                    $(".user-city").attr('data-region-name', region_name);
                     $(function () {
                     $(".your-city:visible").popover('show');
                     $(".popover").css("position","fixed");
                     });
                     $(".yes-city").click(function(){
                     $(".your-city").popover('hide');
-                    Cookies.set('city', $(".user-city").text(), { expires: 365 });
+                    // Cookies.set('city', $(".user-city").text(), { expires: 365 });
+                    Cookies.set('city_name', $(".user-city").attr('data-city-name'), { expires: 365 });
+                    Cookies.set('region_name', $(".user-city").attr('data-region-name'), { expires: 365 });
                     });
                     $(".no-city").click(function(){
                     $(".your-city:visible").popover('hide')
                     $("#city").modal('show');
                     });
-                    $("#city a").click(function(){
-                    var city = $(this).text();
-                    $(".user-city").text(city.split(',')[0].replace(/(\r\n|\n|\r|\s)/gm,""));
-                    Cookies.set('city', city, { expires: 365 });
+                    $(".city-selector").click(function(){
+                    // var city = $(this).text();
+                    // $(".user-city").text(city.split(',')[0].replace(/(\r\n|\n|\r|\s)/gm,""));
+                    // Cookies.set('city', city, { expires: 365 });
+                    var city_name = $(this).attr('data-city-name');
+                    var city_id = $(this).attr('data-city-id');
+                    var region_name = $(this).attr('data-region-name');
+                    var region_id = $(this).attr('data-region-id');
+                    $(".user-city").text(city_name);
+                    Cookies.set('city_name', city_name, { expires: 365 });
+                    Cookies.set('city_id', city_id, { expires: 365 });
+                    Cookies.set('region_name', region_name, { expires: 365 });
+                    Cookies.set('region_id', region_id, { expires: 365 });
                     $("#city").modal('hide');
                     });
                     });
