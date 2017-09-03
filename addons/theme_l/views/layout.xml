@@ -1420,7 +1420,7 @@
                     });
                     });
                     } else {
-                    $(".user-city").text(Cookies.get("city").split(',')[0].replace(/(\r\n|\n|\r|\s)/gm,""));
+                    $(".user-city").text(Cookies.get("city_name"));
                     }
                     });
                     });
