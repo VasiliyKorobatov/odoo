@@ -57,6 +57,9 @@
         <xpath expr="//meta[@name='keywords']" position="replace">
            <meta name="keywords" t-att-content="city.name" />
         </xpath>
+        <xpath expr="//html" position="attributes">
+            <attribute name="prefix">og: http://ogp.me/ns# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile# fb: http://ogp.me/ns/fb#</attribute>
+        </xpath>
         <t t-call="website.layout">
             <div id="wrap">
                 <section>
