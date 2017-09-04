@@ -48,9 +48,10 @@
 
     </template>
     <template id="detail" name="City Detail" page="True">
-        <xpath expr="//title" position="replace">
-            <title>Пункт выдачи товара в г. <t t-esc="city.name" /> </title>
-        </xpath>
+        <!--<xpath expr="//title" position="replace">-->
+            <!--<title>Пункт выдачи товара в г. <t t-esc="city.name" /> </title>-->
+        <!--</xpath>-->
+        <t t-set="title" t-value="'Пункт выдачи товара в г.%s' %city.name"/>
         <xpath expr="//meta[@name='description']" position="replace">
             <meta name="description" t-att-content="'Изготовление металлической мебели, производство почтовых ящиков, продажа металлических уличных урн, железных кроватей. Пункт выдачи товара в г. %s' % city.name" />
         </xpath>
