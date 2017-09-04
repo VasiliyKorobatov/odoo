@@ -57,9 +57,7 @@
         <xpath expr="//meta[@name='keywords']" position="replace">
            <meta name="keywords" t-att-content="city.name" />
         </xpath>
-        <xpath expr="//html" position="attributes">
-            <attribute name="prefix">og: http://ogp.me/ns# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile# fb: http://ogp.me/ns/fb#</attribute>
-        </xpath>
+
         <t t-call="website.layout">
             <div id="wrap">
                 <section>
@@ -161,6 +159,11 @@
         </t>
 
 
+    </template>
+    <template id="xpath_detail_city" inherit_id="city.detail" >
+        <xpath expr="//html" position="attributes">
+            <attribute name="prefix">og: http://ogp.me/ns# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile# fb: http://ogp.me/ns/fb#</attribute>
+        </xpath>
     </template>
     <template id="most_popular_cities" inherit_id="theme_l.custom_footer" name="Most Popular Cities">
         <xpath expr="//div[@id='footer']/div/div/div" position="before">
