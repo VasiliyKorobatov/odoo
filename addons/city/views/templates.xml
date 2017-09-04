@@ -50,7 +50,7 @@
     <template id="detail" name="City Detail" page="True">
         <t t-set="title" t-value="'Пункт выдачи товара в г.%s' %city.name"/>
         <t t-set="description" t-value="'Изготовление металлической мебели, производство почтовых ящиков, продажа металлических уличных урн, железных кроватей. Пункт выдачи товара в г. %s' % city.name"/>
-        <t t-set="title" t-value="city.name"/>
+        <t t-set="keywords" t-value="city.name"/>
 
         <t t-call="website.layout">
             <div id="wrap">
