@@ -48,16 +48,9 @@
 
     </template>
     <template id="detail" name="City Detail" page="True">
-        <!--<xpath expr="//title" position="replace">-->
-            <!--<title>Пункт выдачи товара в г. <t t-esc="city.name" /> </title>-->
-        <!--</xpath>-->
         <t t-set="title" t-value="'Пункт выдачи товара в г.%s' %city.name"/>
-        <xpath expr="//meta[@name='description']" position="replace">
-            <meta name="description" t-att-content="'Изготовление металлической мебели, производство почтовых ящиков, продажа металлических уличных урн, железных кроватей. Пункт выдачи товара в г. %s' % city.name" />
-        </xpath>
-<xpath expr="/*[@name='keywords']" position="replace">
-           <meta name="keywords" t-att-content="city.name" />
-        </xpath>
+        <t t-set="description" t-value="'Изготовление металлической мебели, производство почтовых ящиков, продажа металлических уличных урн, железных кроватей. Пункт выдачи товара в г. %s' % city.name"/>
+        <t t-set="title" t-value="city.name"/>
 
         <t t-call="website.layout">
             <div id="wrap">
@@ -161,13 +154,7 @@
 
 
     </template>
-    <template id="xpath_detail_city" inherit_id="city.detail" name="xpath detail city" >
 
-        <xpath expr="/*" position="attributes">
-
-            <attribute name="prefix">og: http://ogp.me/ns# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile# fb: http://ogp.me/ns/fb#</attribute>
-        </xpath>
-    </template>
     <template id="most_popular_cities" inherit_id="theme_l.custom_footer" name="Most Popular Cities">
         <xpath expr="//div[@id='footer']/div/div/div" position="before">
             <div class="row">
