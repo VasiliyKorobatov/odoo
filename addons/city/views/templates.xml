@@ -162,6 +162,7 @@
     </template>
     <template id="xpath_detail_city" inherit_id="city.detail" name="xpath detail city" >
         <xpath expr="/*" position="attributes">
+
             <attribute name="prefix">og: http://ogp.me/ns# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile# fb: http://ogp.me/ns/fb#</attribute>
         </xpath>
     </template>
