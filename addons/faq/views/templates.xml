@@ -29,7 +29,7 @@
     </template>
     <template id="most_popular_faq" inherit_id="theme_l.homepage" name="Most Popular FAQs">
         <xpath expr=".//*[@id='subscribe_container']" position="before">
-            <div class="container">
+            <div class="container-fluid bg-gray-lighter" id="faq-container">
                 <div class="row">
                     <div class="col-md-12">
                         <h2>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
@@ -40,7 +40,7 @@
                                     <span class="answer" t-field="faq.answer" />
                                 </li>
                             </t>
-                            <li class="homepage-faq">
+                            <li class="homepage-faq" id="all-faqs">
                                 <a href="/faq">
                                     Посмотреть все вопросы
                                 </a>
