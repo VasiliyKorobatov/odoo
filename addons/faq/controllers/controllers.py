@@ -8,6 +8,6 @@ class Faq(http.Controller):
     def index(self, **kw):
         Faq = http.request.env['faq.faq']
         values = Faq.search([])
-        return http.request.render("faq.index", {
+        return http.request.render("faq.faqs", {
            'faqs': values
         })
