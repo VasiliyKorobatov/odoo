@@ -16,8 +16,8 @@
                     <h1>Часто задаваемые вопросы</h1>
                     <ul class="faq-list">
                         <t t-foreach="faqs" t-as="faq">
-                            <li class="faq col-xs-12 col-md-6">
-                                <i class="fa fa-caret-right" aria-hidden="true"/><span class="question" t-field="faq.name" />
+                            <li class="faq">
+                                <i class="fa fa-caret-right" aria-hidden="true"/>&amp;nbsp;<span class="question" t-field="faq.name" />
                                 <span class="answer" t-field="faq.answer" />
                             </li>
                         </t>
@@ -35,8 +35,8 @@
                         <h2>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
                         <ul class="homepage-faq-list">
                             <t t-foreach="request.website.popular_faq()" t-as="faq">
-                                <li class="homepage-faq">
-                                     <i class="fa fa-caret-right" aria-hidden="true"/><span class="question" t-field="faq.name" />
+                                <li class="homepage-faq  col-xs-12 col-md-6">
+                                     <i class="fa fa-caret-right" aria-hidden="true"/>&amp;nbsp;<span class="question" t-field="faq.name" />
                                     <span class="answer" t-field="faq.answer" />
                                 </li>
                             </t>
