@@ -1105,7 +1105,7 @@
                     />
                     <b id="default-price" class="oe_price" style="white-space: nowrap;" t-esc="product.website_price"
                        t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>/
-                    <!--<t t-esc="product.uom_id.name" />-->
+                    <t t-esc="product.uom_id.name" />
                     <span itemprop="price" style="display:none;" t-esc="product.website_price"/>
                     <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
                 </h4>
