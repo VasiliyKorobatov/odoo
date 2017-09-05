@@ -1,13 +1,13 @@
 $(document).ready(function() {
-//    $('#sidebar').on('show.bs.collapse', function(){
-//        $("#leftCol").css("display","table-row");
-//        $('#sidebar').css("min-height", $('#wrap').outerHeight(true)+'px');
-//        $("main").attr("class","col-md-9");
-//    });
-//    $('#sidebar').on('hidden.bs.collapse', function(){
-//        $("#leftCol").css("display","none");
-//        $("main").attr("class","col-md-12");
-//    });
+    $('#sidebar').on('show.bs.collapse', function(){
+        $("#leftCol").css("display","table-row");
+        $('#sidebar').css("min-height", $('#wrap').outerHeight(true)+'px');
+        $("main").attr("class","col-md-9");
+    });
+    $('#sidebar').on('hidden.bs.collapse', function(){
+        $("#leftCol").css("display","none");
+        $("main").attr("class","col-md-12");
+    });
 //    $(".city-selector").click(function(){
 //        var city_name = $(this).attr('data-city-name');
 //        var city_id = $(this).attr('data-city-id');
