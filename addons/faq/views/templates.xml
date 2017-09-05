@@ -28,7 +28,7 @@
         </t>
     </template>
     <template id="most_popular_faq" inherit_id="theme_l.homepage" name="Most Popular FAQs">
-        <xpath expr="//*[@id='subscribe_container']" position="before">
+        <xpath expr=".//*[@id='subscribe_container']" position="before">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
