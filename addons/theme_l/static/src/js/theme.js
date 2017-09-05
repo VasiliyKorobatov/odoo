@@ -20,17 +20,17 @@ $(document).ready(function() {
         Cookies.set('region_id', region_id, { expires: 365 });
         $("#city").modal('hide');
     });
-//    update_variant();
-//    $("select.js_variant_change").change(function(){
-//        update_variant();
-//    });
-//    $('#searchlist').btsListFilter('#searchinput', {itemChild: 'span'});
-//    $('input[name="add_qty"]').change(function(){
-//         $('#product-card-subtotal').text(((parseFloat( $("#default-price > .oe_currency_value").text())*parseInt($('input[name="add_qty"]').val())).toFixed(2)).replace('.',','));
-//    });
+    update_variant();
+    $("select.js_variant_change").change(function(){
+        update_variant();
+    });
+    $('#searchlist').btsListFilter('#searchinput', {itemChild: 'span'});
+    $('input[name="add_qty"]').change(function(){
+         $('#product-card-subtotal').text(((parseFloat( $("#default-price > .oe_currency_value").text())*parseInt($('input[name="add_qty"]').val())).toFixed(2)).replace('.',','));
+    });
 });
 //
-//function update_variant(){
+function update_variant(){
 //	Array.prototype.diff = function(a) {
 //		return this.filter(function(i) {return a.indexOf(i) < 0;});
 //	};
@@ -61,4 +61,4 @@ $(document).ready(function() {
 //        $("#xzoom-default").attr("src",'/website/image/product.product/'+variant_id+'/image');
 //        $("#xzoom-default").attr("xoriginal",'/website/image/product.product/'+variant_id+'/image');
 //    }
-//}
+}
