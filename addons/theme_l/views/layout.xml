@@ -1425,7 +1425,45 @@
                     });
                 </script>
             </xpath>
-
+        </template>
+        <template id="custom_contact_us" inherit_id="website.contactus" name="Custom Contact Us">
+            <xpath expr="//div[@id='wrap']" position="replace">
+                        <div id="wrap">
+            <div class="oe_structure"/>
+            <div class="container">
+                <h1>Свяжитесь с нами</h1>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="oe_structure">
+                            <div>
+                                <p>Свяжитесь с нами по любому вопросу, связанному с нашей компанией или услугами.</p>
+                                <p>Мы приложим все усилия, чтобы связаться с вами как можно скорее.</p>
+                            </div>
+                        </div>
+                        <div class="text-center mt64" name="mail_button">
+                            <a t-attf-href="mailto:{{ res_company.email }}" class="btn btn-primary" id="o_contact_mail">Отправить письмо</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb32">
+                        <t t-call="theme_l.company_description"/>
+                    </div>
+                </div>
+            </div>
+            <div class="oe_structure"/></div>
+            </xpath>
+        </template>
+        <template id="theme_l.company_description" name="Company Description">
+            <address itemscope="itemscope" itemtype="http://schema.org/Organization">
+                <div t-field="res_company.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;,&quot;fields&quot;: [&quot;name&quot;, &quot;address&quot;, &quot;phone&quot;, &quot;email&quot;]}"/>
+                <t t-if="not res_company.google_map_img()">
+                    <span class="fa fa-map-marker fa-fw mt16"/> <a t-att-href="res_company.google_map_link()" target="_BLANK"> Google Maps</a>
+                </t>
+            </address>
+            <t t-if="res_company.google_map_img()">
+                <a t-att-href="res_company.google_map_link()" target="_BLANK">
+                    <img class="thumbnail img-responsive" t-att-src="res_company.google_map_img()"/>
+                </a>
+            </t>
         </template>
     </data>
 </odoo>
