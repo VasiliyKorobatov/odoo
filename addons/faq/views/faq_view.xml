@@ -19,7 +19,7 @@
         <field name="model">faq.faq</field>
         <field name="arch" type="xml">
             <form string="FAQ">
-              <group colspan="4" col="4">
+              <group colspan="2" col="2">
                 <field name="name"/>
                 <field name="answer"/>
                 <field name="is_popular"/>
