@@ -31,9 +31,9 @@ $(document).ready(function() {
 });
 //
 function update_variant(){
-//	Array.prototype.diff = function(a) {
-//		return this.filter(function(i) {return a.indexOf(i) < 0;});
-//	};
+	Array.prototype.diff = function(a) {
+		return this.filter(function(i) {return a.indexOf(i) < 0;});
+	};
 //	var attrs = [];
 //	var price;
 //	if($(".js_variant_change").length){
