@@ -1465,7 +1465,7 @@
                 </a>
             </t>
         </template>
-        <template id="custom_contactus_form" name="Custom Contact Form" inherit_id="theme_l.contactus">
+        <template id="custom_contactus_form" name="Custom Contact Form" inherit_id="theme_l.custom_contact_us">
             <xpath expr="//div[@name='mail_button']" position="replace">
                 <div>
                     <form action="/website_form/" method="post" data-model_name="crm.lead" data-success_page="/page/website_crm.contactus_thanks" class="s_website_form form-horizontal container-fluid mt32" enctype="multipart/form-data">
