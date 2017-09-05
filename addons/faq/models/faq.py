@@ -12,7 +12,7 @@ class Faq(models.Model):
     _name = 'faq.faq'
     _description = 'FAQ'
     name = fields.Char('Question', size=255, required=True, index=True)
-    answer = fields.HTML(string="Answer", index=True)
+    answer = fields.Html(string="Answer", index=True)
     is_popular = fields.Boolean(string="Popular question", default=False)
 
 
