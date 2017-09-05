@@ -196,8 +196,12 @@
                                                             >
                                                                 <span t-esc="'%s, %s' % (city.name,city.state_id.name)"/>
                                                             </a>
-                                                            <t t-if="city.address" >
-                                                                <a t-att-href="city.url" class="pull-right btn btn-xs btn-default"><span class="fa fa-map-marker" /> На карте</a>
+                                                            <t t-if="city.address">
+                                                                <a t-att-href="city.url"
+                                                                   class="pull-right btn btn-xs btn-default">
+                                                                    <span class="fa fa-map-marker"/>
+                                                                    На карте
+                                                                </a>
                                                             </t>
                                                         </li>
                                                     </t>
@@ -1104,7 +1108,8 @@
                           t-att-style="'text-decoration: line-through; white-space: nowrap; ' + '' if (compute_currency(product.lst_price) - product.website_price) &gt; 0.01 and website.get_current_pricelist().discount_policy == 'without_discount' else 'display: none;'"
                     />
                     <b id="default-price" class="oe_price" style="white-space: nowrap;" t-esc="product.website_price"
-                       t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>/<t t-esc="product.uom_id.name" />
+                       t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>/
+                    <t t-esc="product.uom_id.name"/>
                     <span itemprop="price" style="display:none;" t-esc="product.website_price"/>
                     <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
                 </h4>
@@ -1384,7 +1389,8 @@
                     autoReverseGeocode: true
                     }).then(function (result) {
                     city_name = result.geoObjects.get(0).properties.get('name');
-                    region_name = result.geoObjects.get(0).properties.get('metaDataProperty').GeocoderMetaData.AddressDetails.Country.AdministrativeArea.AdministrativeAreaName;
+                    region_name =
+                    result.geoObjects.get(0).properties.get('metaDataProperty').GeocoderMetaData.AddressDetails.Country.AdministrativeArea.AdministrativeAreaName;
                     $(".user-city").text(city_name);
                     $(".user-city").attr('data-city-name', city_name);
                     $(".user-city").attr('data-region-name', region_name);
@@ -1428,81 +1434,103 @@
         </template>
         <template id="custom_contact_us" inherit_id="website.contactus" name="Custom Contact Us">
             <xpath expr="//div[@id='wrap']" position="replace">
-                        <div id="wrap">
-            <div class="oe_structure"/>
-            <div class="container">
-                <h1>Свяжитесь с нами</h1>
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="oe_structure">
-                            <div>
-                                <p>Свяжитесь с нами по любому вопросу, связанному с нашей компанией или услугами.</p>
-                                <p>Мы приложим все усилия, чтобы связаться с вами как можно скорее.</p>
+                <div id="wrap">
+                    <div class="oe_structure"/>
+                    <div class="container">
+                        <h1>Свяжитесь с нами</h1>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="oe_structure">
+                                    <div>
+                                        <p>Свяжитесь с нами по любому вопросу, связанному с нашей компанией или
+                                            услугами.
+                                        </p>
+                                        <p>Мы приложим все усилия, чтобы связаться с вами как можно скорее.</p>
+                                    </div>
+                                </div>
+                                <div class="text-center mt64" name="mail_button">
+                                    <a t-attf-href="mailto:{{ res_company.email }}" class="btn btn-primary"
+                                       id="o_contact_mail">Отправить письмо
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb32">
+                                <t t-call="theme_l.company_description"/>
                             </div>
                         </div>
-                        <div class="text-center mt64" name="mail_button">
-                            <a t-attf-href="mailto:{{ res_company.email }}" class="btn btn-primary" id="o_contact_mail">Отправить письмо</a>
-                        </div>
                     </div>
-                    <div class="col-md-4 mb32">
-                        <t t-call="theme_l.company_description"/>
-                    </div>
+                    <div class="oe_structure"/>
                 </div>
-            </div>
-            <div class="oe_structure"/></div>
             </xpath>
         </template>
         <template id="theme_l.company_description" name="Company Description">
             <address itemscope="itemscope" itemtype="http://schema.org/Organization">
-                <div t-field="res_company.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;,&quot;fields&quot;: [&quot;name&quot;, &quot;address&quot;, &quot;phone&quot;, &quot;email&quot;]}"/>
-                <t t-if="not res_company.google_map_img()">
-                    <span class="fa fa-map-marker fa-fw mt16"/> <a t-att-href="res_company.google_map_link()" target="_BLANK"> Google Maps</a>
-                </t>
+                <t t-set="company" t-value="res_company.partner_id"/>
+                <div>
+                    <span itemprop="name" t-field="company.name"/>
+                </div>
+                <div itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <span itemprop="streetAddress" t-field="company.address"/>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span itemprop="telephone" t-field="company.phone"/>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span itemprop="email" t-field="company.email"/>
+                </div>
             </address>
-            <t t-if="res_company.google_map_img()">
-                <a t-att-href="res_company.google_map_link()" target="_BLANK">
-                    <img class="thumbnail img-responsive" t-att-src="res_company.google_map_img()"/>
-                </a>
-            </t>
         </template>
         <template id="custom_contactus_form" name="Custom Contact Form" inherit_id="theme_l.custom_contact_us">
             <xpath expr="//div[@name='mail_button']" position="replace">
                 <div>
-                    <form action="/website_form/" method="post" data-model_name="crm.lead" data-success_page="/page/website_crm.contactus_thanks" class="s_website_form form-horizontal container-fluid mt32" enctype="multipart/form-data">
+                    <form action="/website_form/" method="post" data-model_name="crm.lead"
+                          data-success_page="/page/website_crm.contactus_thanks"
+                          class="s_website_form form-horizontal container-fluid mt32" enctype="multipart/form-data">
                         <div class="form-group form-field o_website_form_required_custom">
-                            <label class="col-md-3 col-sm-4 control-label" for="contact_name">Ваше имя*</label>
+                            <label class="col-md-3 col-sm-4 control-label" for="contact_name">Ваше имя</label>
                             <div class="col-md-7 col-sm-8">
-                                <input type="text" class="form-control o_website_form_input" name="contact_name" t-att-value="request.params.get('contact_name', '')" required=""/>
+                                <input type="text" class="form-control o_website_form_input" name="contact_name"
+                                       t-att-value="request.params.get('contact_name', '')" required=""/>
                             </div>
                         </div>
                         <div class="form-group form-field">
-                            <label class="col-md-3 col-sm-4 control-label" for="phone">Телефон*</label>
+                            <label class="col-md-3 col-sm-4 control-label" for="phone">Телефон</label>
                             <div class="col-md-7 col-sm-8">
-                                <input type="text" class="form-control o_website_form_input" name="phone" t-att-value="request.params.get('phone', '')" />
+                                <input type="text" class="form-control o_website_form_input" name="phone"
+                                       t-att-value="request.params.get('phone', '')" required=""/>
                             </div>
                         </div>
                         <div class="form-group form-field o_website_form_required_custom">
-                            <label class="col-md-3 col-sm-4 control-label" for="email_from">Email*</label>
+                            <label class="col-md-3 col-sm-4 control-label" for="email_from">Email</label>
                             <div class="col-md-7 col-sm-8">
-                                <input type="text" class="form-control o_website_form_input" name="email_from" required="" t-att-value="request.params.get('email_from', '')" />
+                                <input type="text" class="form-control o_website_form_input" name="email_from"
+                                       required="" t-att-value="request.params.get('email_from', '')"/>
                             </div>
                         </div>
                         <div class="form-group form-field o_website_form_required_custom">
-                            <label class="col-md-3 col-sm-4 control-label" for="partner_name">Организация*</label>
+                            <label class="col-md-3 col-sm-4 control-label" for="partner_name">Организация</label>
                             <div class="col-md-7 col-sm-8">
-                                <input type="text" class="form-control o_website_form_input" name="partner_name" required="" t-att-value="request.params.get('partner_name', '')" />
+                                <input type="text" class="form-control o_website_form_input" name="partner_name"
+                                       required="" t-att-value="request.params.get('partner_name', '')"/>
                             </div>
                         </div>
                         <div class="form-group form-field o_website_form_required">
-                            <label class="col-md-3 col-sm-4 control-label" for="name">Тема*</label>
+                            <label class="col-md-3 col-sm-4 control-label" for="name">Тема</label>
                             <div class="col-md-7 col-sm-8">
-                                <input type="text" class="form-control o_website_form_input" name="name" required="" t-att-value="request.params.get('name', '')" />
+                                <input type="text" class="form-control o_website_form_input" name="name" required=""
+                                       t-att-value="request.params.get('name', '')"/>
                             </div>
                         </div>
                         <div class="form-group form-field o_website_form_required_custom">
-                            <label class="col-md-3 col-sm-4 control-label" for="description">Ваш вопрос*</label>
+                            <label class="col-md-3 col-sm-4 control-label" for="description">Ваш вопрос</label>
                             <div class="col-md-7 col-sm-8">
-                                <textarea class="form-control o_website_form_input" name="description" required=""><t t-esc="request.params.get('description', '')"/></textarea>
+                                <textarea class="form-control o_website_form_input" name="description" required="">
+                                    <t t-esc="request.params.get('description', '')"/>
+                                </textarea>
                             </div>
                         </div>
                         <div class="form-group">
@@ -1513,8 +1541,8 @@
                         </div>
                     </form>
                 </div>
-			</xpath>
-		</template>
+            </xpath>
+        </template>
     </data>
 
 </odoo>
