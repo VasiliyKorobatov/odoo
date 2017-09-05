@@ -1470,17 +1470,18 @@
                     <span itemprop="name" t-field="company.name"/>
                 </div>
                 <div itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress">
-                <div>
-                    <i class="fa fa-map-marker"></i>
-                    <span itemprop="streetAddress" t-field="company.address"/>
-                </div>
-                <div>
-                    <i class="fa fa-phone"></i>
-                    <span itemprop="telephone" t-field="company.phone"/>
-                </div>
-                <div>
-                    <i class="fa fa-envelope"></i>
-                    <span itemprop="email" t-field="company.email"/>
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <span itemprop="streetAddress" t-field="company.address"/>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span itemprop="telephone" t-field="company.phone"/>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <span itemprop="email" t-field="company.email"/>
+                    </div>
                 </div>
             </address>
         </template>
