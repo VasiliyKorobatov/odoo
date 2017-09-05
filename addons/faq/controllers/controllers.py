@@ -7,7 +7,7 @@ class Faq(http.Controller):
                 website=True)
     def index(self, **kw):
         Faq = http.request.env['faq.faq']
-        values = Faq.search([[]])
+        values = Faq.search([])
         return http.request.render("faq.index", {
            'faqs': values
         })
