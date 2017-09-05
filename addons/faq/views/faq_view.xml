@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- FAQ -->
+    <record model="ir.ui.view" id="view_faq_tree">
+        <field name="name">faq.faq.tree</field>
+        <field name="model">faq.faq</field>
+        <field name="arch" type="xml">
+            <tree string="FAQ">
+                <field name="name"/>
+                <field name="answer"/>
+                <field name="is_popular"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_faq_form">
+        <field name="name">faq.faq.form</field>
+        <field name="model">faq.faq</field>
+        <field name="arch" type="xml">
+            <form string="FAQ">
+              <group colspan="4" col="4">
+                <field name="name"/>
+                <field name="answer"/>
+                <field name="is_popular"/>
+             </group>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_faq">
+        <field name="name">FAQ</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">faq.faq</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="faq_menu" name="FAQs"
+              parent="sale.prod_config_main"/>
+    <menuitem id="faq_records_menu" name="FAQs" parent="faq_menu"
+              action="action_faq"/>
+
+</odoo>

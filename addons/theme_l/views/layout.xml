@@ -603,7 +603,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="oe_structure oe_empty">
+                    <div class="oe_structure oe_empty" id="subscribe_container">
                         <section
                                 class="jumbotron mt0 mb0 o_animate o_visible o_animated o_anim_bounce_in_left o_animate_preview bg-gray-lighter">
                             <div class="container">

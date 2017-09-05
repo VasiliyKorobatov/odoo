@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="faqs" name="FAQs" page="True">
+        <xpath expr="//title" position="replace">
+            <title>ЧАВО - Часто задаваемые вопросы</title>
+        </xpath>
+        <xpath expr="//meta[@name='description']" position="replace">
+            <meta name="description" content="Часто задаваевые вопросы" />
+        </xpath>
+        <xpath expr="//meta[@name='keywords']" position="replace">
+           <meta name="keywords" content="Часто, задаваемые, вопросы" />
+        </xpath>
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="container">
+                    <h1>Часто задаваемые вопросы</h1>
+                    <ul class="faq-list">
+                        <t t-foreach="faqs" t-as="faq">
+                            <li class="faq">
+                                <span class="question" t-field="faq.name" />
+                                <span class="answer" t-field="faq.answer" />
+                            </li>
+                        </t>
+                    </ul>
+                </div>
+                <div class="oe_structure"/>
+            </div>
+        </t>
+    </template>
+    <template id="most_popular_faq" inherit_id="theme_l.homepage" name="Most Popular FAQs">
+        <xpath expr="//div[@id='subscribe_container']" position="before">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
+                        <ul class="homepage-faq-list">
+                            <t t-foreach="request.website.popular_faq()" t-as="faq">
+                                <li class="homepage-faq">
+                                     <span class="question" t-field="faq.name" />
+                                    <span class="answer" t-field="faq.answer" />
+                                </li>
+                            </t>
+                            <li class="homepage-faq">
+                                <a href="/faq">
+                                    Посмотреть все вопросы
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>
