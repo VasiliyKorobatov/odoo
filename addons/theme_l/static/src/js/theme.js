@@ -1,4 +1,4 @@
-//$(document).ready(function() {
+$(document).ready(function() {
 //    $('#sidebar').on('show.bs.collapse', function(){
 //        $("#leftCol").css("display","table-row");
 //        $('#sidebar').css("min-height", $('#wrap').outerHeight(true)+'px');
@@ -28,7 +28,7 @@
 //    $('input[name="add_qty"]').change(function(){
 //         $('#product-card-subtotal').text(((parseFloat( $("#default-price > .oe_currency_value").text())*parseInt($('input[name="add_qty"]').val())).toFixed(2)).replace('.',','));
 //    });
-//});
+});
 //
 //function update_variant(){
 //	Array.prototype.diff = function(a) {
