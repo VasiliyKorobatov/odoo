@@ -1472,7 +1472,12 @@
                 <div itemprop="address" itemscope="itemscope" itemtype="http://schema.org/PostalAddress">
                     <div>
                         <i class="fa fa-map-marker"></i>
-                        <span itemprop="streetAddress" t-field="company.address"/>
+                        <span itemprop="streetAddress">
+                            <t t-esc="company.zip" />,
+                            <t t-esc="company.state_id.name"/>, <br />
+                            <t t-esc="company.city"/>,
+                            <t t-esc="company.street2"/>
+                        </span>
                     </div>
                     <div>
                         <i class="fa fa-phone"></i>
