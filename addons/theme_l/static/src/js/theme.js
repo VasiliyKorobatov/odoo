@@ -20,6 +20,7 @@ $(document).ready(function() {
         Cookies.set('region_id', region_id, { expires: 365 });
         $("#city").modal('hide');
     });
+
     update_variant();
     $("select.js_variant_change").change(function(){
         update_variant();
@@ -27,6 +28,17 @@ $(document).ready(function() {
     $('#searchlist').btsListFilter('#searchinput', {itemChild: 'span'});
     $('input[name="add_qty"]').change(function(){
          $('#product-card-subtotal').text(((parseFloat( $("#default-price > .oe_currency_value").text())*parseInt($('input[name="add_qty"]').val())).toFixed(2)).replace('.',','));
+    });
+    var map = {
+        'q' : 'й', 'w' : 'ц', 'e' : 'у', 'r' : 'к', 't' : 'е', 'y' : 'н', 'u' : 'г', 'i' : 'ш', 'o' : 'щ', 'p' : 'з', '[' : 'х', ']' : 'ъ', 'a' : 'ф', 's' : 'ы', 'd' : 'в', 'f' : 'а', 'g' : 'п', 'h' : 'р', 'j' : 'о', 'k' : 'л', 'l' : 'д', ';' : 'ж', '\'' : 'э', 'z' : 'я', 'x' : 'ч', 'c' : 'с', 'v' : 'м', 'b' : 'и', 'n' : 'т', 'm' : 'ь', ',' : 'б', '.' : 'ю','Q' : 'Й', 'W' : 'Ц', 'E' : 'У', 'R' : 'К', 'T' : 'Е', 'Y' : 'Н', 'U' : 'Г', 'I' : 'Ш', 'O' : 'Щ', 'P' : 'З', '[' : 'Х', ']' : 'Ъ', 'A' : 'Ф', 'S' : 'Ы', 'D' : 'В', 'F' : 'А', 'G' : 'П', 'H' : 'Р', 'J' : 'О', 'K' : 'Л', 'L' : 'Д', ';' : 'Ж', '\'' : 'Э', 'Z' : '?', 'X' : 'ч', 'C' : 'С', 'V' : 'М', 'B' : 'И', 'N' : 'Т', 'M' : 'Ь', ',' : 'Б', '.' : 'Ю',
+    };
+    $("#city #searchinput").on('keyup', function () {
+        var str = $("#city #searchinput").val();
+	    var r = '';
+        for (var i = 0; i < str.length; i++) {
+             r += map[str.charAt(i)] || str.charAt(i);
+        }
+        $("#city #searchinput").val(r);
     });
 });
 //
