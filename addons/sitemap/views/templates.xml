@@ -42,7 +42,7 @@
         </t>
     </template>
     <template id="sitemap_link" inherit_id="theme_l.custom_footer" name="Sitemap link">
-        <xpath expr="//div[@id='footer']/ul[@id='products']" position="inside">
+        <xpath expr="//ul[@id='products']" position="inside">
             <li>
                 <a t-attf-href="/sitemap">Карта сайта</a>
             </li>
