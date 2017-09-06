@@ -167,7 +167,6 @@
                 </nav>
             </xpath>
             <xpath expr="//div[@id='wrapwrap']" position="after">
-                <script src="/theme_l/static/src/js/bootstrap-list-filter.min.js" type="text/javascript" />
                 <div class="modal fade" id="city">
                     <div class="modal-dialog modal-md">
                         <div class="modal-content">
