@@ -13,7 +13,8 @@ class Sitemap(http.Controller):
         Faq = http.request.env['faq.faq']
         values = Faq.search([])
         locs = request.website.with_context(use_public_user=True).enumerate_pages()
-        logger.info(locs)
+        for page in locs:
+            logger.info(page)
         return http.request.render("faq.faqs", {
            'faqs': values
         })
