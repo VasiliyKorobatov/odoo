@@ -34,7 +34,10 @@ class Sitemap(http.Controller):
             if '/shop/category/' not in k:
                 url_map.append({k: [urls[k], []]})
             else:
-                cat_id = k.split('-')[-1]
+                try:
+                    cat_id = int(k.split('-')[-1])
+                except:
+                    continue
                 url_map.append({k: [urls[k], category_product_urls[cat_id]]})
         logger.info(url_map)
         return http.request.render("faq.faqs", {
