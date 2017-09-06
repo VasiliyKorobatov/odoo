@@ -17,8 +17,7 @@ class Sitemap(http.Controller):
         locs = request.website.with_context(use_public_user=True).enumerate_pages()
         urls = []
         for page in pages:
-            urls.append({page.url:page.name})
-        logger.info(urls)
+            logger.info('%s:%s' % (page.url,page.name))
         return http.request.render("faq.faqs", {
            'faqs': values
         })
