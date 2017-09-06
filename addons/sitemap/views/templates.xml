@@ -9,7 +9,7 @@
                         <t t-foreach="pages" t-as="page">
                             <li>
                                 <a t-att-href="page.keys()[0]" t-att-title="page[page.keys()[0]][0]">
-                                    <span t-field="page[page.keys()[0]][0]"/>
+                                    <span t-esc="page[page.keys()[0]][0]"/>
                                 </a>
                             </li>
                         </t>
