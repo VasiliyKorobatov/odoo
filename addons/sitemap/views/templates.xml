@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <template id="sitemap" name="Html sitemap" page="True">
-        <t t-set="title" t-value="Карта сайта"/>
-        <t t-set="description" t-value="Карта сайта ООО Лавков"/>
-        <t t-set="keywords" t-value="Карта сайта"/>
+        <t t-set="title" t-value="'Карта сайта'"/>
+        <t t-set="description" t-value="'Карта сайта ООО Лавков'"/>
+        <t t-set="keywords" t-value="'Карта сайта'"/>
         <t t-call="website.layout">
             <div id="wrap">
                 <div class="container">
