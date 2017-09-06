@@ -10,7 +10,9 @@
     "summary": "Sitemap",
     "description": """Sitemap.""",
     "depends": ["website"],
-    "data": [],
+    "data": [
+        "views/templates.xml",
+    ],
     "installable": True,
     "auto_install": False,
 }
