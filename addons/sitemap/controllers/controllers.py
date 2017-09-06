@@ -18,10 +18,10 @@ class Sitemap(http.Controller):
         category_product_urls = {}
         for product in products:
             for c_id in product.public_categ_ids:
-                if c_id not in category_product_urls.keys():
-                    category_product_urls[c_id] = [{product.website_url:product.name}]
+                if c_id.id not in category_product_urls.keys():
+                    category_product_urls[c_id.id] = [{product.website_url:product.name}]
                 else:
-                    category_product_urls[c_id].append({product.website_url:product.name})
+                    category_product_urls[c_id.id].append({product.website_url:product.name})
         for page in pages:
             if page.url == '/page/homepage' or page.url == '':
                 continue
