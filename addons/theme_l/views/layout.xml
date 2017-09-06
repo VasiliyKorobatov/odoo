@@ -194,7 +194,7 @@
                                                                t-att-data-region-id='city.state_id.id'
                                                                t-att-data-region-name='city.state_id.name'
                                                             >
-                                                                <span t-esc="'%s, %s' % (city.name,city.state_id.name)"/>
+                                                                <i class="fa fa-circle-o"/>&amp;nbsp;<span t-esc="'%s, %s' % (city.name,city.state_id.name)"/>
                                                             </a>
                                                             <t t-if="city.address">
                                                                 <a t-att-href="city.url"
