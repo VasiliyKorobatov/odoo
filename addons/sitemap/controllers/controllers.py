@@ -17,11 +17,11 @@ class Sitemap(http.Controller):
         locs = request.website.with_context(use_public_user=True).enumerate_pages()
         urls = {}
         for page in pages:
-            if page.url == '/page/homepage':
+            if page.url == '/page/homepage' or page.url == '':
                 continue
             if page.url not in urls:
                 urls[page.url] = page.name
-        for k in urls.keys():
+        for k in sorted(urls.keys()):
             logger.info('%s:%s' % (k, urls[k]))
         return http.request.render("faq.faqs", {
            'faqs': values
