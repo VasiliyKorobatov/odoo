@@ -200,7 +200,7 @@
                                                             <t t-if="city.address">
                                                                 <a t-att-href="city.url"
                                                                    class="pull-right btn btn-xs btn-default">
-                                                                    <span class="fa fa-map-marker"/>
+                                                                    <i class="fa fa-map-marker"/>
                                                                     На карте
                                                                 </a>
                                                             </t>
