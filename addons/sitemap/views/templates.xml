@@ -5,30 +5,37 @@
             <div id="wrap">
                 <div class="container">
                     <h1>Карта сайта</h1>
-                    <ul class="sitemap-list">
-                        <li>
-                            <i class="fa fa-caret-right" />&amp;nbsp;<a title="Главная" href="/">
-                            Главная
-                        </a>
-                        </li>
-                        <t t-foreach="pages" t-as="page">
+                    <div class="col-xs-12">
+                        <ul class="sitemap-list">
                             <li>
-                                <i class="fa fa-caret-right" />&amp;nbsp;<a t-att-href="page.keys()[0]" t-att-title="page[page.keys()[0]][0]">
-                                <span t-esc="page[page.keys()[0]][0]"/></a>
-                                <t t-if="len(page[page.keys()[0]])>1">
-                                    <ul class="sitemap-sub-list">
-                                        <t t-foreach="page[page.keys()[0]][1]" t-as="sub_page">
-                                            <li>
-                                                <i class="fa fa-caret-right" />&amp;nbsp;<a t-att-href="sub_page.keys()[0]" t-att-title="sub_page[sub_page.keys()[0]]">
-                                                <span t-esc="sub_page[sub_page.keys()[0]]" />
-                                            </a>
-                                            </li>
-                                        </t>
-                                    </ul>
-                                </t>
+                                <i class="fa fa-caret-right"/>&amp;nbsp;
+                                <a title="Главная" href="/">
+                                    Главная
+                                </a>
                             </li>
-                        </t>
-                    </ul>
+                            <t t-foreach="pages" t-as="page">
+                                <li>
+                                    <i class="fa fa-caret-right"/>&amp;nbsp;
+                                    <a t-att-href="page.keys()[0]" t-att-title="page[page.keys()[0]][0]">
+                                        <span t-esc="page[page.keys()[0]][0]"/>
+                                    </a>
+                                    <t t-if="len(page[page.keys()[0]])>1">
+                                        <ul class="sitemap-sub-list">
+                                            <t t-foreach="page[page.keys()[0]][1]" t-as="sub_page">
+                                                <li>
+                                                    <i class="fa fa-caret-right"/>&amp;nbsp;
+                                                    <a t-att-href="sub_page.keys()[0]"
+                                                       t-att-title="sub_page[sub_page.keys()[0]]">
+                                                        <span t-esc="sub_page[sub_page.keys()[0]]"/>
+                                                    </a>
+                                                </li>
+                                            </t>
+                                        </ul>
+                                    </t>
+                                </li>
+                            </t>
+                        </ul>
+                    </div>
                 </div>
                 <div class="oe_structure"/>
             </div>
@@ -36,7 +43,9 @@
     </template>
     <template id="sitemap_link" inherit_id="theme_l.custom_footer" name="Sitemap link">
         <xpath expr="//div[@id='footer']/ul[@id='products']" position="inside">
-            <li><a t-attf-href="/sitemap">Карта сайта</a></li>
+            <li>
+                <a t-attf-href="/sitemap">Карта сайта</a>
+            </li>
         </xpath>
     </template>
 </odoo>
