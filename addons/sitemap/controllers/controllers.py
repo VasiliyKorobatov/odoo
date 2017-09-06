@@ -14,8 +14,14 @@ class Sitemap(http.Controller):
         products = http.request.env['product.template'].search([['active','=',True]])
         pages = http.request.env['website.menu'].search([], order='url')
         values = Faq.search([])
-        locs = request.website.with_context(use_public_user=True).enumerate_pages()
         urls = {}
+        category_product_urls = {}
+        for product in products:
+            for c_id in product.public_categ_ids:
+                if c_id not in category_product_urls.keys():
+                    category_product_urls[c_id] = [{product.website_url:product.name}]
+                else:
+                    category_product_urls[c_id].append({product.website_url:product.name})
         for page in pages:
             if page.url == '/page/homepage' or page.url == '':
                 continue
@@ -23,6 +29,7 @@ class Sitemap(http.Controller):
                 urls[page.url] = page.name
         for k in sorted(urls.keys()):
             logger.info('%s:%s' % (k, urls[k]))
+        logger.info(category_product_urls)
         return http.request.render("faq.faqs", {
            'faqs': values
         })
