@@ -12,7 +12,7 @@ class Sitemap(http.Controller):
     def index(self, **kw):
         Faq = http.request.env['faq.faq']
         products = http.request.env['product.template'].search([['active','=',True]])
-        pages = http.request.env['website.menu'].search([])
+        pages = http.request.env['website.menu'].search([], order='url')
         values = Faq.search([])
         locs = request.website.with_context(use_public_user=True).enumerate_pages()
         urls = []
