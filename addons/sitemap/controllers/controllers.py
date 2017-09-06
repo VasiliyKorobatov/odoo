@@ -29,9 +29,14 @@ class Sitemap(http.Controller):
                 continue
             if page.url not in urls:
                 urls[page.url] = page.name
+        url_map = []
         for k in sorted(urls.keys()):
-            logger.info('%s:%s' % (k, urls[k]))
-        logger.info(category_product_urls)
+            if '/shop/category/' not in k:
+                url_map.append({k: [urls[k], []]})
+            else:
+                cat_id = k.split('-')[-1]
+                url_map.append({k: [urls[k], category_product_urls[cat_id]]})
+        logger.info(url_map)
         return http.request.render("faq.faqs", {
            'faqs': values
         })
