@@ -11,11 +11,13 @@ class Sitemap(http.Controller):
                 website=True)
     def index(self, **kw):
         Faq = http.request.env['faq.faq']
+        products = http.request.env['product.template'].search([['active','=',True]])
+        pages = http.request.env['website.menu'].search([])
         values = Faq.search([])
         locs = request.website.with_context(use_public_user=True).enumerate_pages()
         urls = []
-        for page in locs:
-            urls.append(page['loc'])
+        for page in pages:
+            urls.append({page.url:page.name})
         logger.info(urls)
         return http.request.render("faq.faqs", {
            'faqs': values
