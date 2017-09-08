@@ -456,3 +456,23 @@ footer a:hover {
 .sitemap-list, .sitemap-sub-list{
     list-style-type: none;
 }
+
+#city .list-group-item .circle{
+     display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+#city .list-group-item .circle:before{
+     content: "\f10c";
+}
+
+#city .list-group-item:hover .circle:before{
+     content: "\f192";
+}
+
+#city .list-group-item:hover{
+    background-color: #dddddd;
+}
