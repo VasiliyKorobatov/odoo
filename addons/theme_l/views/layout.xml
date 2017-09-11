@@ -1536,7 +1536,7 @@
             </xpath>
         </template>
         <template id="custom_products" inherit_id="website_sale.products" name="Custom Products">
-            <xpath expr="//id[@name='wrap']" position="replace">
+            <xpath expr="//div[@id='wrap']" position="replace">
                 <div id="wrap" class="js_sale">
                     <div class="oe_structure"/>
                     <div class="container oe_website_sale">
