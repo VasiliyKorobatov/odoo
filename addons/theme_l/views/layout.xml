@@ -1592,7 +1592,7 @@
             </xpath>
         </template>
 
-        <template id="theme_l.product_item" name="Custom Product Item">
+        <template id="theme_l.products_item" name="Custom Product Item">
             <form action="/shop/cart/update" method="post" t-attf-class="#{'disable_to_order' if any([not s.can_be_ordered for s in product.website_style_ids]) else ''}">
                 <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
                 <div itemscope="itemscope" itemtype="http://schema.org/Product">
