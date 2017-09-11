@@ -15,7 +15,7 @@ from odoo.addons.website_form.controllers.main import WebsiteForm
 _logger = logging.getLogger(__name__)
 
 PPG = 20  # Products Per Page
-PPR = 4   # Products Per Row
+PPR = 3   # Products Per Row
 
 
 class TableCompute(object):
