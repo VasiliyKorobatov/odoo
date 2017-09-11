@@ -1541,13 +1541,13 @@
                     <div class="oe_structure"/>
                     <div class="container oe_website_sale">
                         <!--<div class="products_pager">-->
-                            <!--<div class="row" style="width: 100%;">-->
-                                <!--<t t-call="website_sale.search">-->
-                                    <!--<t t-set="search_class">pagination form-inline o_website_sale_search</t>-->
-                                <!--</t>-->
-                                <!--<t t-call="website_sale.pricelist_list"/>-->
-                                <!--&lt;!&ndash;<t t-call="website.pager"/>&ndash;&gt;-->
-                            <!--</div>-->
+                        <!--<div class="row" style="width: 100%;">-->
+                        <!--<t t-call="website_sale.search">-->
+                        <!--<t t-set="search_class">pagination form-inline o_website_sale_search</t>-->
+                        <!--</t>-->
+                        <!--<t t-call="website_sale.pricelist_list"/>-->
+                        <!--&lt;!&ndash;<t t-call="website.pager"/>&ndash;&gt;-->
+                        <!--</div>-->
                         <!--</div>-->
                         <div class="row">
                             <div class="hidden" id="products_grid_before"/>
@@ -1564,7 +1564,8 @@
                                                     <td t-att-colspan="td_product['x'] != 1 and td_product['x']" t-att-rowspan="td_product['y'] != 1 and td_product['y']" t-attf-class="oe_product oe_grid oe-height-#{td_product['y']*4} #{ td_product['class'] }">
                                                         <div class="oe_product_cart" t-att-data-publish="product.website_published and 'on' or 'off'">
                                                             <t t-set="product_image_big" t-value="td_product['x']+td_product['y'] &gt; 2"/>
-                                                            <t t-call="website_sale.products_item"/>
+                                                            <!--<t t-call="website_sale.products_item"/>-->
+                                                            <t t-call="theme_l.products_item"/>
                                                         </div>
                                                     </td>
                                                 </t>
@@ -1591,7 +1592,66 @@
             </xpath>
         </template>
 
+        <template id="theme_l.product_item" name="Custom Product Item">
+            <form action="/shop/cart/update" method="post" t-attf-class="#{'disable_to_order' if any([not s.can_be_ordered for s in product.website_style_ids]) else ''}">
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                <div itemscope="itemscope" itemtype="http://schema.org/Product">
+                    <div class="ribbon-wrapper">
+                        <div class="ribbon btn btn-danger">Sale</div>
+                    </div>
+                     <div class="ribbon-wrapper-custom ribbon-new">
+                    <div class="ribbon btn btn-danger">New</div>
+                </div>
+                <div class="ribbon-wrapper-custom-big ribbon-new-release">
+                    <div class="ribbon btn btn-danger">NEW RELEASE</div>
+                </div>
+                <div class="ribbon-wrapper-custom-big ribbon-backordered">
+                    <div class="ribbon btn btn-danger">Backordered</div>
+                </div>
+                <div class="ribbon-wrapper-custom-big ribbon-discontinued">
+                    <div class="ribbon btn btn-danger">Discontinued</div>
+                </div>
+                <div class="ribbon-wrapper-custom-big ribbon-pre-order-now">
+                    <div class="ribbon btn btn-danger">Pre order now!</div>
+                </div>
+                    <div class="oe_product_image">
+                        <a itemprop="url" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']&gt;1 else None))">
+                            <span itemprop="image" t-field="product.image" t-options="{'widget': 'image', 'resize': None if product_image_big else '500x500', 'zoom': 'image'}" t-att-alt="product.name"/>
+                        </a>
+                    </div>
+                    <t t-if="show_publish">
+                        <div id="website_published_button" class="" groups="sales_team.group_sale_manager">
+                            <t t-call="website.publish_management">
+                                <t t-set="object" t-value="product"/>
+                                <t t-set="publish_edit" t-value="True"/>
+                                <t t-set="action" t-value="'product.product_template_action'"/>
+                            </t>
+                        </div>
+                    </t>
+                    <section>
+                        <h5>
+                            <strong>
+                                <a itemprop="name" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']&gt;1 else None))" t-field="product.name"/>
+                            </strong>
+                        </h5>
+                        <div class="text-info oe_subdescription" contenteditable="false">
+                            <div itemprop="description" t-field="product.description_sale"/>
+                        </div>
+                        <div itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" class="product_price" t-if="product.product_variant_ids">
+                            <b>
+                                <t t-if="(compute_currency(product.lst_price) - product.website_price ) &gt; 0.01  and website.get_current_pricelist().discount_policy=='without_discount'">
+                                    <del class="text-danger mr8" style="white-space: nowrap;" t-esc="compute_currency(product.website_public_price)" t-options="{'widget': 'monetary', 'display_currency': website.get_current_pricelist().currency_id, 'from_currency': website.currency_id}"/>
+                                </t>
 
+                                <span t-esc="product.website_price" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                <span itemprop="price" style="display:none;" t-esc="product.website_price"/>
+                                <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
+                            </b>
+                        </div>
+                    </section>
+                </div>
+            </form>
+        </template>
     </data>
 
 </odoo>
