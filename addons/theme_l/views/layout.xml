@@ -1546,7 +1546,7 @@
                                     <t t-set="search_class">pagination form-inline o_website_sale_search</t>
                                 </t>
                                 <t t-call="website_sale.pricelist_list"/>
-                                <t t-call="website.pager"/>
+                                <!--<t t-call="website.pager"/>-->
                             </div>
                         </div>
                         <div class="row">
