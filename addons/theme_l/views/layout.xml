@@ -1576,8 +1576,8 @@
                                 </table>
                                 <t t-if="not bins">
                                     <div class="text-center text-muted">
-                                        <h3 class="css_editable_display">No product defined.</h3>
-                                        <p groups="sales_team.group_sale_manager">Click <i>'New'</i> in the top-right corner to create your first product.</p>
+                                        <h3 class="css_editable_display">Нет товаров.</h3>
+                                        <p groups="sales_team.group_sale_manager">Нажмите <i>'Новый'</i> в верхнем правом углу, чтобы создать товар.</p>
                                     </div>
                                 </t>
                             </div>
@@ -1597,22 +1597,22 @@
                 <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
                 <div itemscope="itemscope" itemtype="http://schema.org/Product">
                     <div class="ribbon-wrapper">
-                        <div class="ribbon btn btn-danger">Sale</div>
+                        <div class="ribbon btn btn-danger">Распродажа</div>
                     </div>
                      <div class="ribbon-wrapper-custom ribbon-new">
-                    <div class="ribbon btn btn-danger">New</div>
+                    <div class="ribbon btn btn-danger">Новый!</div>
                 </div>
                 <div class="ribbon-wrapper-custom-big ribbon-new-release">
-                    <div class="ribbon btn btn-danger">NEW RELEASE</div>
+                    <div class="ribbon btn btn-danger">Новый Релиз!</div>
                 </div>
                 <div class="ribbon-wrapper-custom-big ribbon-backordered">
-                    <div class="ribbon btn btn-danger">Backordered</div>
+                    <div class="ribbon btn btn-danger">Задолженный!</div>
                 </div>
                 <div class="ribbon-wrapper-custom-big ribbon-discontinued">
-                    <div class="ribbon btn btn-danger">Discontinued</div>
+                    <div class="ribbon btn btn-danger">Со скидкой!</div>
                 </div>
                 <div class="ribbon-wrapper-custom-big ribbon-pre-order-now">
-                    <div class="ribbon btn btn-danger">Pre order now!</div>
+                    <div class="ribbon btn btn-danger">Предзаказ!</div>
                 </div>
                     <div class="oe_product_image">
                         <a itemprop="url" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']&gt;1 else None))">
