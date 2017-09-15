@@ -11,6 +11,12 @@ class Product(models.Model):
         'Unit of Measure',
         help="Default Unit of Measure used for dimension."
     )
+    default_variant = fields.Many2one(
+        'product.product',
+        'Default Variant',
+        help='Default Variant of Product',
+    )
+
 
 class ProductProduct(models.Model):
     _inherit = "product.product"

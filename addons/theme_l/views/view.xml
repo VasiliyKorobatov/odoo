@@ -13,6 +13,11 @@
                         <field name="dimensions_uom_id"/>
                     </group>
                 </group>
+                <group>
+                    <group>
+                        <field name="default_variant" />
+                    </group>
+                </group>
             </xpath>
         </field>
     </record>
