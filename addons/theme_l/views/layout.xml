@@ -1668,7 +1668,7 @@
                                 <t t-foreach="variant.attribute_value_ids" t-as="attribute">
                                     <t t-if="attribute.attribute_id.type != 'color'" >
                                         <!--<div >-->
-                                            <label  class="btn btn-primary">
+                                            <label  class="btn btn-sm btn-default">
                                             <input name="product_id" autocomplete="off" t-att-value="variant.id" type="radio" t-att-id="'product_%s' %variant.id"/>
                                             <t t-esc="attribute.name" />
                                             </label>
