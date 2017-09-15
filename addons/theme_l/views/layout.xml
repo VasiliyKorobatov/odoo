@@ -1662,12 +1662,12 @@
                     </section>
                 </div>
                 <t t-if="len(product.product_variant_ids) &gt; 1">
-                    <div>
+                    <div class="product-attributes">
                         <t t-foreach="product.product_variant_ids" t-as="variant">
                             <t t-if="len(variant.attribute_value_ids) &gt; 0">
                                 <t t-foreach="variant.attribute_value_ids" t-as="attribute">
                                     <t t-if="attribute.attribute_id.type != 'color'" >
-                                        <div class="product-attributes">
+                                        <div >
                                             <input name="product_id" t-att-value="variant.id" type="radio" t-att-id="'product_%s' %variant.id"/>
                                             <label t-att-for="'product_%s' %variant.id" t-esc="attribute.name" />
                                         </div>
