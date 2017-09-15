@@ -15,7 +15,7 @@
                 </group>
                 <group>
                     <group>
-                        <field name="default_variant" />
+                        <field name="default_variant" domain="[('product_tmpl_id','=', id)]" />
                     </group>
                 </group>
             </xpath>
