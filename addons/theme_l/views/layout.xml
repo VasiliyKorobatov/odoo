@@ -1662,10 +1662,12 @@
                             <div>
                                  <t t-foreach="product.product_variant_ids" t-as="variant">
                                      <t t-if="len(variant.attribute_value_ids) &gt; 0">
-
                                          <t t-foreach="variant.attribute_value_ids" t-as="attribute">
                                              <t t-if="attribute.attribute_id.type != 'color'" >
-                                                 <input name="product_id" t-att-value="variant.id" type="radio" t-att-id="'product_%s' %variant.id"/> <label t-att-for="'product_%s' %variant.id" t-esc="attribute.name" />
+                                                 <div>
+                                                    <input name="product_id" t-att-value="variant.id" type="radio" t-att-id="'product_%s' %variant.id"/>
+                                                    <label t-att-for="'product_%s' %variant.id" t-esc="attribute.name" />
+                                                 </div>
                                              </t>
                                          </t>
                                      </t>
