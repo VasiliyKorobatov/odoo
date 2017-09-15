@@ -1663,7 +1663,7 @@
                                  <t t-foreach="product.product_variant_ids" t-as="variant">
                                      <t t-if="len(variant.attribute_value_ids) &gt; 0">
                                          <t t-foreach="variant.attribute_value_ids" t-as="attribute">
-                                            <t t-esc="attribute.attribute_id.type" />:<t t-esc="attribute.name" />
+                                             <t t-if="attribute.attribute_id.type != 'color'" >:<t t-esc="attribute.name" /></t>
                                          </t>
                                      </t>
                                  </t>
