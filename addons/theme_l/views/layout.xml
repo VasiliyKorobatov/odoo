@@ -1686,7 +1686,7 @@
                             </t>
                         </t>
                         <a class="btn btn-default btn-sm a-submit">
-                            <span class="fa fa-shopping-cart"/>&amp;nbsp;В корзину
+                            <span class="fa fa-plus"/>&amp;nbsp;В корзину
                         </a>
                     </div>
                 </t>
