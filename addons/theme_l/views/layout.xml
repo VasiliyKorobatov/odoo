@@ -1658,6 +1658,17 @@
                                 </a>
                             </t>
                         </div>
+                        <t t-if="len(product.product_variant_ids) &gt; 1">
+                            <div>
+                                 <t t-foreach="product.product_variant_ids" t-as="variant">
+                                     <t t-if="len(variant.attribute_value_ids) &gt; 0">
+                                         <t t-foreach="variant.attribute_value_ids" t-as="attribute">
+                                             <t t-esc="attribute.name" />
+                                         </t>
+                                     </t>
+                                 </t>
+                            </div>
+                        </t>
                     </section>
                 </div>
             </form>
