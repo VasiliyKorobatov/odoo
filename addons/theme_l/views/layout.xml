@@ -1646,7 +1646,6 @@
                                 <span itemprop="price" style="display:none;" t-esc="product.website_price"/>
                                 <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
                             </b>
-                            <input name="product_id" t-att-value="product.product_variant_id.id" type="hidden"/>
                             <t t-if="len(product.product_variant_ids) == 1">
                                 <a class="btn btn-default btn-xs a-submit">
                                     <span class="fa fa-shopping-cart"/>
@@ -1664,7 +1663,7 @@
                 <t t-if="len(product.product_variant_ids) &gt; 1">
                     <div class="product-attributes btn-group-vertical" data-toggle="buttons">
                         <t t-foreach="product.product_variant_ids" t-as="variant">
-                            <t t-if="len(variant.attribute_value_ids) &gt; 0">
+                            <t t-if="len(variant.attribute_value_ids) &gt; 1">
                                 <t t-foreach="variant.attribute_value_ids" t-as="attribute">
                                     <t t-if="attribute.attribute_id.type != 'color'" >
                                         <t t-if="product.default_variant.id == variant.id">
@@ -1682,9 +1681,12 @@
                                     </t>
                                 </t>
                             </t>
+                            <t t-else="">
+                                <input name="product_id" t-att-value="product.product_variant_id.id" type="hidden"/>
+                            </t>
                         </t>
                         <a class="btn btn-default btn-sm a-submit">
-                                    <span class="fa fa-shopping-cart"/>&amp;nbsp;В корзину
+                            <span class="fa fa-shopping-cart"/>&amp;nbsp;В корзину
                         </a>
                     </div>
                 </t>
