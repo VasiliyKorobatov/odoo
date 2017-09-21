@@ -149,25 +149,13 @@ class Cdr(models.Model):
         _logger.info(type(dst))
         _logger.info(dst)
         _logger.info(len(dst))
-        if src_internal:
-            user_src = self.env['res.users'].search([('sip_peer.callerid', '=', src,)], limit=1)
-            if user_src:
-                partnet_src = user_src.partner_id
-            else:
-                partner_src = self.env['res.partner'].search(['|', ('phone', 'like', dst,), ('mobile', 'like', dst,)],
+        user_src = self.env['res.users'].search([('sip_peer.callerid', '=', src,)], limit=1)
+        partner_src = user_src.partner_id if user_src and src_internal else self.env['res.partner'].search(['|', ('phone', 'like', src,), ('mobile', 'like', src,)],
                                                              limit=1)
-        else:
-            partner_src = self.env['res.partner'].search(['|',('phone','like', dst,),('mobile','like', dst,)], limit=1)
-        if dst_internal:
-            user_dst = self.env['res.users'].search([('sip_peer.callerid', '=', dst,)], limit=1)
-            if user_dst:
-                partnet_dst = user_dst.partner_id
-            else:
-                partner_dst = self.env['res.partner'].search(['|', ('phone', 'like', dst,), ('mobile', 'like', dst,)],
-                                                             limit=1)
-        else:
-            partner_dst = self.env['res.partner'].search(['|',('phone','like', dst,),('mobile','like', dst,)], limit=1)
-        _logger.info("From %s to %s" %(partnet_src.id, partnet_dst.id))
+        user_dst = self.env['res.users'].search([('sip_peer.callerid', '=', dst,)], limit=1)
+        partner_dst = user_dst.partner_id if user_dst and dst_internal else self.env['res.partner'].search(['|', ('phone', 'like', dst,), ('mobile', 'like', dst,)],
+                                                                                                           limit=1)
+        _logger.info("From %s to %s" %(partner_src.id, partner_dst.id))
         if not rec:
             _logger.warning('save_call_recording - cdr not found by id {}.'.format(call_id))
             return False
