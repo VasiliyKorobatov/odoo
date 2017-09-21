@@ -1,0 +1,532 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* asterisk_sip
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-21 05:27+0000\n"
+"PO-Revision-Date: 2017-09-21 10:34+0500\n"
+"Last-Translator: Korobarov Vasiliy <korobarov@akvastil.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: ru\n"
+"X-Generator: Poedit 2.0.2\n"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_accountcode
+msgid "Accountcode"
+msgstr "Код учетной записи"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_status_address
+msgid "Address"
+msgstr "Адрес"
+
+#. module: asterisk_sip
+#: model:ir.ui.view,arch_db:asterisk_sip.asterisk_sip_peer_trunk_form
+#: model:ir.ui.view,arch_db:asterisk_sip.asterisk_sip_peer_user_form
+msgid "Advanced Settings"
+msgstr "Расширенные настройки"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_allow
+msgid "Allow"
+msgstr "Разрешить"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_amaflags
+msgid "Amaflags"
+msgstr "Ama флаги"
+
+#. module: asterisk_sip
+#: model:ir.model,name:asterisk_sip.model_asterisk_sip_peer
+msgid "Asterisk SIP Peer"
+msgstr "SIP пир Астериска"
+
+#. module: asterisk_sip
+#: selection:asterisk.sip_peer,dtmfmode:0
+msgid "Auto"
+msgstr "Авто"
+
+#. module: asterisk_sip
+#: selection:asterisk.sip_peer,nat:0
+msgid "Auto comedia"
+msgstr "Автоматическая Comedia"
+
+#. module: asterisk_sip
+#: selection:asterisk.sip_peer,nat:0
+msgid "Auto force rport"
+msgstr "Автоматический принудительный rport"
+
+#. module: asterisk_sip
+#: model:ir.ui.view,arch_db:asterisk_sip.asterisk_sip_peer_trunk_form
+#: model:ir.ui.view,arch_db:asterisk_sip.asterisk_sip_peer_user_form
+msgid "Basic Settings"
+msgstr "Простые настройки"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_callbackextension
+msgid "Callbackextension"
+msgstr "Расширение обратного вызова"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_callerid
+msgid "Caller ID"
+msgstr "ID вызывающего"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_callgroup
+msgid "Callgroup"
+msgstr "Группа вызова"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_canreinvite
+msgid "Can reinvite"
+msgstr "Можно пригласить повторно"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_cancallforward
+msgid "Cancallforward"
+msgstr "Можно переадресовать вызов"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_status_cause
+msgid "Cause"
+msgstr "Причина"
+
+#. module: asterisk_sip
+#: selection:asterisk.sip_peer,nat:0
+msgid "Comedia"
+msgstr "Comedia"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_context
+msgid "Context"
+msgstr "Контекст"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_status_created
+#: model:ir.ui.view,arch_db:asterisk_sip.sip_peer_status_search
+msgid "Created"
+msgstr "Создано"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_create_uid
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_status_create_uid
+msgid "Created by"
+msgstr "Создал"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_create_date
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_status_create_date
+msgid "Created on"
+msgstr "Создано"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_dtmfmode
+msgid "DTMF mode"
+msgstr "DTMF мод"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_defaultip
+msgid "Default IP"
+msgstr "IP по умолчанию"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_defaultuser
+msgid "Default user"
+msgstr "Пользователь по умолчанию"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_deny
+msgid "Deny"
+msgstr "Запрещенно"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_disallow
+msgid "Disallow"
+msgstr "Отвергать"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_display_name
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_status_display_name
+msgid "Display Name"
+msgstr "Отображаемое имя"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_peer_status_count
+msgid "Events"
+msgstr "События"
+
+#. module: asterisk_sip
+#: selection:asterisk.sip_peer,nat:0
+msgid "Force rport"
+msgstr "Принудительный rport"
+
+#. module: asterisk_sip
+#: selection:asterisk.sip_peer,nat:0
+msgid "Force rport, Comedia"
+msgstr "Принудительный rport, Comedia"
+
+#. module: asterisk_sip
+#: selection:asterisk.sip_peer,type:0
+msgid "Friend"
+msgstr "Друг"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_fromdomain
+msgid "From domain"
+msgstr "С домена"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_fromuser
+msgid "From user"
+msgstr "От пользователя"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_fullcontact
+msgid "Full contact"
+msgstr "Полный контакт"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_host
+msgid "Host"
+msgstr "Хост"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_id
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_status_id
+msgid "ID"
+msgstr "ID"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_ipaddr
+msgid "IP Address"
+msgstr "IP адрес"
+
+#. module: asterisk_sip
+#: selection:asterisk.sip_peer,dtmfmode:0
+msgid "Inband"
+msgstr "В группе"
+
+#. module: asterisk_sip
+#: selection:asterisk.sip_peer,dtmfmode:0
+msgid "Info"
+msgstr "Инфо"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_insecure
+msgid "Insecure"
+msgstr "Небезопасный"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_language
+msgid "Language"
+msgstr "Язык"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer___last_update
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_status___last_update
+msgid "Last Modified on"
+msgstr "Последний раз изменено"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_regseconds_human
+msgid "Last Reg"
+msgstr "Последний рег"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_status_write_uid
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_write_uid
+msgid "Last Updated by"
+msgstr "Последний раз обновил"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_status_write_date
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_write_date
+msgid "Last Updated on"
+msgstr "Последний раз обновлено"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_lastms
+msgid "Lastms"
+msgstr "Последний мс"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_mailbox
+msgid "Mailbox"
+msgstr "Почтовый ящик"
+
+#. module: asterisk_sip
+#: model:ir.ui.view,arch_db:asterisk_sip.asterisk_sip_peer_trunk_form
+#: model:ir.ui.view,arch_db:asterisk_sip.asterisk_sip_peer_user_form
+msgid "Main"
+msgstr "Главный"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_mask
+msgid "Mask"
+msgstr "Маска"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_md5secret
+msgid "Md5secret"
+msgstr "Md5-пароль"
+
+#. module: asterisk_sip
+#: model:ir.ui.view,arch_db:asterisk_sip.asterisk_sip_peer_trunk_form
+#: model:ir.ui.view,arch_db:asterisk_sip.asterisk_sip_peer_user_form
+msgid "Media"
+msgstr "Медиа"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_musiconhold
+msgid "Music on hold"
+msgstr "Музыка на удержании"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_name
+msgid "Name"
+msgstr "Имя"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_nat
+msgid "Nat"
+msgstr "Nat"
+
+#. module: asterisk_sip
+#: selection:asterisk.sip_peer,canreinvite:0 selection:asterisk.sip_peer,nat:0
+msgid "No"
+msgstr "Нет"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_note
+msgid "Note"
+msgstr "Заметка"
+
+#. module: asterisk_sip
+#: model:ir.model,name:asterisk_sip.model_res_partner
+msgid "Partner"
+msgstr "Партнёр"
+
+#. module: asterisk_sip
+#: selection:asterisk.sip_peer,type:0
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_status_peer
+#: model:ir.ui.view,arch_db:asterisk_sip.sip_peer_status_search
+msgid "Peer"
+msgstr "Пир"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_status_peer_name
+msgid "Peer name"
+msgstr "Имя пира"
+
+#. module: asterisk_sip
+#: code:addons/asterisk_sip/models/peer.py:104
+#: sql_constraint:asterisk.sip_peer:0
+#, python-format
+msgid "Peer name must be unique!"
+msgstr "Имя пира должно быть уникальным!"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_peer_statuses
+msgid "Peer statuses"
+msgstr "Статусы пира"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_peer_type
+msgid "Peer type"
+msgstr "Тип пира"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_permit
+msgid "Permit"
+msgstr "Позволить"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_pickupgroup
+msgid "Pickupgroup"
+msgstr "Группа подбора"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_port
+msgid "Port"
+msgstr "Порт"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_qualify
+msgid "Qualify"
+msgstr "Качество"
+
+#. module: asterisk_sip
+#: selection:asterisk.sip_peer,dtmfmode:0
+msgid "RFC2833"
+msgstr "RFC2833"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_rtpholdtimeout
+msgid "RTP hold timeout"
+msgstr "RTP таймаут удержания"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_rtptimeout
+msgid "RTP timeout"
+msgstr "RTP таймаут"
+
+#. module: asterisk_sip
+#: selection:asterisk.sip_peer_status,status:0
+#: model:ir.ui.view,arch_db:asterisk_sip.sip_peer_status_search
+msgid "Reachable"
+msgstr "Достижимый"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_regexten
+msgid "Regexten"
+msgstr "Регэкстен"
+
+#. module: asterisk_sip
+#: selection:asterisk.sip_peer_status,status:0
+#: model:ir.ui.view,arch_db:asterisk_sip.sip_peer_status_search
+msgid "Registered"
+msgstr "Зарегистрировано"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_regseconds
+msgid "Regseconds"
+msgstr "Регистрация секунд"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_regserver
+msgid "Regserver"
+msgstr "Рег сервер"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_restrictcid
+msgid "Restrictcid"
+msgstr "Ограничить cid"
+
+#. module: asterisk_sip
+#: model:ir.ui.menu,name:asterisk_sip.asterisk_sip_peers_menu
+msgid "SIP Peers"
+msgstr "SIP пиры"
+
+#. module: asterisk_sip
+#: model:ir.actions.act_window,name:asterisk_sip.asterisk_sip_peer_status_action
+#: model:ir.ui.menu,name:asterisk_sip.asterisk_peers_status_menu
+msgid "SIP Status"
+msgstr "SIP статус"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_res_users_sip_peer
+msgid "SIP peer"
+msgstr "SIP пир"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_secret
+msgid "Secret"
+msgstr "Пароль"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_server
+msgid "Server"
+msgstr "Сервер"
+
+#. module: asterisk_sip
+#: selection:asterisk.sip_peer,dtmfmode:0
+msgid "Short Info"
+msgstr "Краткая информация"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_status_status
+#: model:ir.ui.view,arch_db:asterisk_sip.asterisk_sip_peer_form
+#: model:ir.ui.view,arch_db:asterisk_sip.asterisk_sip_peer_trunk_form
+#: model:ir.ui.view,arch_db:asterisk_sip.asterisk_sip_peer_user_form
+#: model:ir.ui.view,arch_db:asterisk_sip.sip_peer_status_search
+msgid "Status"
+msgstr "Статус"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_subscribecontext
+msgid "Subscribecontext"
+msgstr "Подписывать контекст"
+
+#. module: asterisk_sip
+#: model:ir.ui.view,arch_db:asterisk_sip.asterisk_sip_peer_form
+msgid "Sync"
+msgstr "Синхронизация"
+
+#. module: asterisk_sip
+#: model:ir.ui.view,arch_db:asterisk_sip.view_users_form
+msgid "Telephony"
+msgstr "Телефония"
+
+#. module: asterisk_sip
+#: model:ir.ui.view,arch_db:asterisk_sip.view_users_form
+#: model:ir.ui.view,arch_db:asterisk_sip.view_users_form_simple_modif
+msgid "Telephony Preferences"
+msgstr "Настройки телефонии"
+
+#. module: asterisk_sip
+#: selection:asterisk.sip_peer,peer_type:0
+msgid "Trunk"
+msgstr "Транк"
+
+#. module: asterisk_sip
+#: model:ir.actions.act_window,name:asterisk_sip.asterisk_sip_peer_trunk_action
+#: model:ir.ui.menu,name:asterisk_sip.asterisk_sip_peer_trunk_menu
+msgid "Trunks"
+msgstr "Транки"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_type
+msgid "Type"
+msgstr "Тип"
+
+#. module: asterisk_sip
+#: selection:asterisk.sip_peer_status,status:0
+#: model:ir.ui.view,arch_db:asterisk_sip.sip_peer_status_search
+msgid "Unreachable"
+msgstr "Недоступный"
+
+#. module: asterisk_sip
+#: selection:asterisk.sip_peer_status,status:0
+#: model:ir.ui.view,arch_db:asterisk_sip.sip_peer_status_search
+msgid "Unregistered"
+msgstr "Не зарегистрированный"
+
+#. module: asterisk_sip
+#: selection:asterisk.sip_peer,peer_type:0 selection:asterisk.sip_peer,type:0
+msgid "User"
+msgstr "Пользователь"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_useragent
+msgid "User agent"
+msgstr "Пользовательский агент"
+
+#. module: asterisk_sip
+#: model:ir.model.fields,field_description:asterisk_sip.field_asterisk_sip_peer_username
+msgid "User name"
+msgstr "Имя пользователя"
+
+#. module: asterisk_sip
+#: model:ir.actions.act_window,name:asterisk_sip.asterisk_sip_peer_user_action
+#: model:ir.model,name:asterisk_sip.model_res_users
+#: model:ir.ui.menu,name:asterisk_sip.asterisk_sip_peer_user_menu
+msgid "Users"
+msgstr "Пользователи"
+
+#. module: asterisk_sip
+#: selection:asterisk.sip_peer,canreinvite:0
+msgid "Yes"
+msgstr "Да"
+
+#. module: asterisk_sip
+#: model:ir.model,name:asterisk_sip.model_asterisk_sip_peer_status
+msgid "asterisk.sip_peer_status"
+msgstr "asterisk.sip_peer_status"

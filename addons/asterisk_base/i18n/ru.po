@@ -1,0 +1,441 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* asterisk_base
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-21 05:20+0000\n"
+"PO-Revision-Date: 2017-09-21 10:26+0500\n"
+"Last-Translator: Korobarov Vasiliy <korobarov@akvastil.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: ru\n"
+"X-Generator: Poedit 2.0.2\n"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_server_ami_password
+msgid "AMI password"
+msgstr "AMI пароль"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_server_ami_port
+msgid "AMI port"
+msgstr "AMI порт"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_server_ami_username
+msgid "AMI username"
+msgstr "AMI имя пользователя"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_channel_accountcode
+msgid "Accountcode"
+msgstr "Код учетной записи"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_channel_app
+msgid "Application"
+msgstr "Приложение"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_channel_app_data
+msgid "Application Data"
+msgstr "Данные приложения"
+
+#. module: asterisk_base
+#: model:ir.ui.menu,name:asterisk_base.asterisk_apps_menu
+msgid "Applications"
+msgstr "Приложения"
+
+#. module: asterisk_base
+#: model:ir.actions.act_window,name:asterisk_base.asterisk_base_settings_action
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_base_settings_form
+msgid "Asterisk Base Configuration"
+msgstr "Базовые конфигурации Астериск"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_server_cli_url
+msgid "Asterisk CLI URL"
+msgstr "CLI URL Астериска"
+
+#. module: asterisk_base
+#: model:ir.actions.act_window,name:asterisk_base.asterisk_configfile_action
+msgid "Asterisk Conf Files"
+msgstr "Конфигурационные файлы Астериска"
+
+#. module: asterisk_base
+#: model:ir.actions.act_window,name:asterisk_base.asterisk_server_action
+msgid "Asterisk Servers"
+msgstr "Серверы Астериск"
+
+#. module: asterisk_base
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_base_settings_form
+msgid "Asterisk Settings"
+msgstr "Настройки Астериск"
+
+#. module: asterisk_base
+#: model:ir.ui.menu,name:asterisk_base.asterisk_base_settings_menu
+msgid "Base Settings"
+msgstr "Базовые настройки"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_channel_callerid_name
+msgid "Callerid name"
+msgstr "Имя вызывающего"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_channel_callerid_num
+msgid "Callerid num"
+msgstr "Номер вызывающего"
+
+#. module: asterisk_base
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_base_settings_form
+msgid "Cancel"
+msgstr "Отмена"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_channel_channel
+msgid "Channel"
+msgstr "Канал"
+
+#. module: asterisk_base
+#: model:ir.actions.act_window,name:asterisk_base.asterisk_channel_action
+#: model:ir.ui.menu,name:asterisk_base.asterisk_channel_menu
+msgid "Channels"
+msgstr "Каналы"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_server_cli_area
+msgid "Cli area"
+msgstr "Cli область"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_server_conf_files
+msgid "Conf files"
+msgstr "Конфигурационные файлы"
+
+#. module: asterisk_base
+#: model:ir.model,name:asterisk_base.model_asterisk_conf
+msgid "Configuration Files"
+msgstr "Конфигурационные файлы"
+
+#. module: asterisk_base
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_server_form
+msgid "Configuration files"
+msgstr "Конфигурационные файлы"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_channel_connected_line_name
+msgid "Connected line name"
+msgstr "Название подключенной линии"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_channel_connected_line_num
+msgid "Connected line num"
+msgstr "Номер подключенной линии"
+
+#. module: asterisk_base
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_server_form
+msgid "Console"
+msgstr "Консоль"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_conf_content
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_configfile_form
+msgid "Content"
+msgstr "Содержимое"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_channel_context
+msgid "Context"
+msgstr "Контекст"
+
+#. module: asterisk_base
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_configfile_form
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_server_form
+msgid "Created"
+msgstr "Создано"
+
+#. module: asterisk_base
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_configfile_form
+msgid "Created By"
+msgstr "Создал"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_channel_create_uid
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_conf_create_uid
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_server_create_uid
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_settings_create_uid
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_server_form
+msgid "Created by"
+msgstr "Создал"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_channel_create_date
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_conf_create_date
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_server_create_date
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_settings_create_date
+msgid "Created on"
+msgstr "Создано"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_channel_display_name
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_conf_display_name
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_server_display_name
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_settings_display_name
+msgid "Display Name"
+msgstr "Отображаемое имя"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_channel_exten
+msgid "Exten"
+msgstr "Расширение"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_conf_filename
+msgid "Filename"
+msgstr "Имя файла"
+
+#. module: asterisk_base
+#: model:ir.ui.menu,name:asterisk_base.asterisk_configfile_menu
+msgid "Files"
+msgstr "Файлы"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_server_http_port
+msgid "HTTP port"
+msgstr "HTTP порт"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_server_https_port
+msgid "HTTPS port"
+msgstr "HTTPS порт"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_server_host
+msgid "Host"
+msgstr "Хост"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_channel_id
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_conf_id
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_server_id
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_settings_id
+msgid "ID"
+msgstr "ID"
+
+#. module: asterisk_base
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_configfile_form
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_server_form
+msgid "Information"
+msgstr "Информация"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_channel___last_update
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_conf___last_update
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_server___last_update
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_settings___last_update
+msgid "Last Modified on"
+msgstr "Последний раз изменено"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_channel_write_uid
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_conf_write_uid
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_server_write_uid
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_settings_write_uid
+msgid "Last Updated by"
+msgstr "Последний раз обновил"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_channel_write_date
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_conf_write_date
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_server_write_date
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_settings_write_date
+msgid "Last Updated on"
+msgstr "Последний раз обновлено"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_channel_linkedid
+msgid "Linkedid"
+msgstr "Cвязанный id"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_server_name
+msgid "Name"
+msgstr "Имя"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_settings_no_asterisk
+msgid "No Asterisk"
+msgstr "Нет Астериска"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_server_note
+msgid "Note"
+msgstr "Заметка"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_channel_priority
+msgid "Priority"
+msgstr "Приоритет"
+
+#. module: asterisk_base
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_base_settings_form
+msgid "Reload AMI Broker"
+msgstr "Перезапустить AMI-брокер"
+
+#. module: asterisk_base
+#: model:ir.ui.menu,name:asterisk_base.asterisk_reports_menu
+msgid "Reports"
+msgstr "Отчеты"
+
+#. module: asterisk_base
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_base_settings_form
+msgid "Save"
+msgstr "Сохранить"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_conf_server
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_configfile_search
+msgid "Server"
+msgstr "Сервер"
+
+#. module: asterisk_base
+#: model:ir.ui.menu,name:asterisk_base.asterisk_server_menu
+msgid "Servers"
+msgstr "Серверы"
+
+#. module: asterisk_base
+#: model:ir.ui.menu,name:asterisk_base.asterisk_settings_menu
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_server_form
+msgid "Settings"
+msgstr "Настройки"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_channel_state
+msgid "State"
+msgstr "Состояние"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_channel_state_desc
+msgid "State Description"
+msgstr "Описание состояния"
+
+#. module: asterisk_base
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_server_form
+msgid "Sync Configuration"
+msgstr "Синхронизация конфигурации"
+
+#. module: asterisk_base
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_configfile_form
+msgid "Sync File"
+msgstr "Синхронизация файлов"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_conf_sync_uid
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_server_sync_uid
+msgid "Sync by"
+msgstr "Синхронизировал"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_conf_sync_date
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_server_sync_date
+msgid "Sync date"
+msgstr "Дата синхронизации"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_channel_system_name
+msgid "System name"
+msgstr "Имя системы"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_server_certificate
+msgid "TLS certificate"
+msgstr "TLS сертификат"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_server_key
+msgid "TLS private key"
+msgstr "TLS закрытый  ключ"
+
+#. module: asterisk_base
+#: code:addons/asterisk_base/models/conf.py:24 sql_constraint:asterisk.conf:0
+#, python-format
+msgid "This file already exists on this server."
+msgstr "Этот файл уже существует на этом сервере."
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_channel_timestamp
+msgid "Timestamp"
+msgstr "Метка времени"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_channel_uniqueid
+msgid "Uniqueid"
+msgstr "Уникальный идентификатор"
+
+#. module: asterisk_base
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_channel_form
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_channel_list
+msgid "Update"
+msgstr "Обновить"
+
+#. module: asterisk_base
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_configfile_form
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_server_form
+msgid "Updated"
+msgstr "Обновлено"
+
+#. module: asterisk_base
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_configfile_form
+msgid "Updated By"
+msgstr "Обновил"
+
+#. module: asterisk_base
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_server_form
+msgid "Updated by"
+msgstr "Обновил"
+
+#. module: asterisk_base
+#: model:ir.model.fields,field_description:asterisk_base.field_asterisk_server_use_https
+msgid "Use HTTPS"
+msgstr "Использовать HTTPS"
+
+#. module: asterisk_base
+#: model:ir.model.fields,help:asterisk_base.field_asterisk_settings_no_asterisk
+msgid ""
+"When this is set all communication with Asterisk is considered successful.\n"
+"This can be used to test the management interface without errors when there is not Asterisk server connected."
+msgstr ""
+"Когда это установлено, вся связь с Asterisk считается успешной.\n"
+"Это можно использовать для проверки интерфейса управления без ошибок, если сервер Asterisk не подключен."
+
+#. module: asterisk_base
+#: model:ir.model,name:asterisk_base.model_asterisk_channel
+msgid "asterisk.channel"
+msgstr "asterisk.channel"
+
+#. module: asterisk_base
+#: model:ir.model,name:asterisk_base.model_asterisk_server
+msgid "asterisk.server"
+msgstr "asterisk.server"
+
+#. module: asterisk_base
+#: model:ir.model,name:asterisk_base.model_asterisk_settings
+msgid "asterisk.settings"
+msgstr "asterisk.settings"
+
+#. module: asterisk_base
+#: model:ir.ui.view,arch_db:asterisk_base.asterisk_base_settings_form
+msgid "or"
+msgstr "или"
+
+#. module: asterisk_base
+#: model:ir.actions.client,name:asterisk_base.server_cli_action
+msgid "server cli action"
+msgstr "действия cli сервера"

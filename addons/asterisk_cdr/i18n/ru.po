@@ -1,0 +1,606 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* asterisk_cdr
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-21 05:09+0000\n"
+"PO-Revision-Date: 2017-09-21 10:18+0500\n"
+"Last-Translator: Korobarov Vasiliy <korobarov@akvastil.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: ru\n"
+"X-Generator: Poedit 2.0.2\n"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_amaflags
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_amaflags
+msgid "AMA flags"
+msgstr "AMA флаги"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_accountcode
+msgid "Account"
+msgstr "Учетная запись"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_accountcode
+msgid "Account code"
+msgstr "Код учетной записи"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:9 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "Answer"
+msgstr "Ответ"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_answered
+#: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_search
+msgid "Answered"
+msgstr "Отвечено"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_appname
+msgid "Application"
+msgstr "Приложение"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_appdata
+msgid "Application data"
+msgstr "Данные приложения"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:16 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "Application end"
+msgstr "Конец приложения"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:15 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "Application start"
+msgstr "Начало приложения"
+
+#. module: asterisk_cdr
+#: model:ir.model,name:asterisk_cdr.model_asterisk_cel
+msgid "Asterisk CEL"
+msgstr "Астериск CEL"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:25 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "Attended transfer"
+msgstr "Посещаемый трансфер"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_billsec
+msgid "Billsec"
+msgstr "Счетчик секунд"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:24 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "Blind transfer"
+msgstr "Слепой трансфер"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:20 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "Bridge end"
+msgstr "Конец моста"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:19 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "Bridge start"
+msgstr "Начало моста"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:21 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "Bridge update"
+msgstr "Обновление моста"
+
+#. module: asterisk_cdr
+#: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_search
+msgid "Busy"
+msgstr "Занято"
+
+#. module: asterisk_cdr
+#: model:ir.ui.menu,name:asterisk_cdr.asterisk_calls_cdr_menu
+#: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_list
+msgid "CDR"
+msgstr "ПЗВ"
+
+#. module: asterisk_cdr
+#: model:ir.actions.act_window,name:asterisk_cdr.asterisk_cdr_cel_action
+msgid "CDR Events"
+msgstr "ПЗВ события"
+
+#. module: asterisk_cdr
+#: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_search
+msgid "CDR Request"
+msgstr "ПЗВ запросы"
+
+#. module: asterisk_cdr
+#: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cel_form
+#: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cel_list
+msgid "CEL"
+msgstr "CEL"
+
+#. module: asterisk_cdr
+#: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cel_search
+msgid "CEL Request"
+msgstr "CEL запросы"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_cid_ani
+msgid "CID ANI"
+msgstr "CID ANI"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_cid_dnid
+msgid "CID DNID"
+msgstr "CID DNID"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_cid_rdnis
+msgid "CID RDNIS"
+msgstr "CID RDNIS"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_cid_name
+msgid "CID name"
+msgstr "CID имя"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_cid_num
+msgid "CID number"
+msgstr "CID номер"
+
+#. module: asterisk_cdr
+#: model:ir.model,name:asterisk_cdr.model_asterisk_cdr
+msgid "Call Detail Record"
+msgstr "Запись подробной информации о вызове"
+
+#. module: asterisk_cdr
+#: model:ir.actions.act_window,name:asterisk_cdr.asterisk_cdr_action
+msgid "Call Details"
+msgstr "Подробная информация о вызове"
+
+#. module: asterisk_cdr
+#: model:ir.actions.act_window,name:asterisk_cdr.cdr_board_action
+#: model:ir.ui.menu,name:asterisk_cdr.cdr_board
+#: model:ir.ui.view,arch_db:asterisk_cdr.cdr_board_view
+msgid "Call Details Dashboard"
+msgstr "Приборная панель подробной информации о вызове"
+
+#. module: asterisk_cdr
+#: model:ir.actions.act_window,name:asterisk_cdr.asterisk_cel_action
+#: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_form
+msgid "Call Events"
+msgstr "События вызова"
+
+#. module: asterisk_cdr
+#: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_graph
+msgid "Call by day"
+msgstr "Звонок днем"
+
+#. module: asterisk_cdr
+#: model:ir.ui.menu,name:asterisk_cdr.asterisk_calls_menu
+#: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_pivot
+#: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cel_graph
+msgid "Calls"
+msgstr "Вызовы"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_cdr
+msgid "Cdr"
+msgstr "Cdr"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_cel_count
+msgid "Cel count"
+msgstr "Cel счетчик"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_cels
+msgid "Cels"
+msgstr "Cels"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_channel
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_channame
+msgid "Channel"
+msgstr "Канал"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_clid
+msgid "Clid"
+msgstr "Clid"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:14 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "Conference end"
+msgstr "Окончание конференции"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:13 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "Conference start"
+msgstr "Начало конференции"
+
+#. module: asterisk_cdr
+#: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_search
+msgid "Congestion"
+msgstr "Перегруженность"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_context
+msgid "Context"
+msgstr "Контекст"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_create_uid
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_create_uid
+msgid "Created by"
+msgstr "Создал"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_create_date
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_create_date
+msgid "Created on"
+msgstr "Создано"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_dcontext
+msgid "Dcontext"
+msgstr "Dcontext"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_display_name
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_display_name
+msgid "Display Name"
+msgstr "Отображаемое имя"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_disposition
+#: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_search
+msgid "Disposition"
+msgstr "Диспозиция"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_dst
+#: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_search
+msgid "Dst"
+msgstr "Назначение"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_dstchannel
+msgid "Dst channel"
+msgstr "Канал назначения"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_duration
+msgid "Duration"
+msgstr "Длительность"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:8 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "End"
+msgstr "Конец"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_ended
+msgid "Ended"
+msgstr "Завершено"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:11 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "Enter conference"
+msgstr "Вход в конференцию"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_eventtype
+msgid "Event type"
+msgstr "Тип события"
+
+#. module: asterisk_cdr
+#: model:ir.ui.menu,name:asterisk_cdr.asterisk_cel_menu
+msgid "Events"
+msgstr "Мероприятия"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:12 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "Exit conference"
+msgstr "Выход из конференции"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_exten
+msgid "Extension"
+msgstr "Расширение"
+
+#. module: asterisk_cdr
+#: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_search
+msgid "Failed"
+msgstr "Ошибка"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:28 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "Forward"
+msgstr "Переадресация"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:26 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "Generic transfer"
+msgstr "Главный трансфер"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:10 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "Hangup"
+msgstr "Повесить трубку"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:29 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "Hookflash"
+msgstr "Хукфлеш"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_id
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_id
+msgid "ID"
+msgstr "ID"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr___last_update
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel___last_update
+msgid "Last Modified on"
+msgstr "Последний раз изменено"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_write_uid
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_write_uid
+msgid "Last Updated by"
+msgstr "Последний раз обновил"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_write_date
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_write_date
+msgid "Last Updated on"
+msgstr "Последний раз обновлено"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_lastapp
+msgid "Last app"
+msgstr "Последний приложение"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_lastdata
+msgid "Last data"
+msgstr "Последние данные"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_linkedid
+msgid "Linked ID"
+msgstr "Связанный ID"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_linkedid
+msgid "Linked id"
+msgstr "Cвязанный id"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:30 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "Linkedid end"
+msgstr "Связанный id конец"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_lp
+msgid "Local Lost Packets"
+msgstr "Локальные потерянные пакеты"
+
+#. module: asterisk_cdr
+#: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_search
+msgid "No answer"
+msgstr "Нет ответа"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_themssrc
+msgid "Other SSRC"
+msgstr "Другие SSRC"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_peer
+msgid "Other channel"
+msgstr "Другой канал"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_ssrc
+msgid "Our SSRC"
+msgstr "Ваш SSRC"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:17 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "Park"
+msgstr "Парковать"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_peeraccount
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_peeraccount
+msgid "Peer account"
+msgstr "Учетная запись пира"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:27 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "Pickup"
+msgstr "Подбирать"
+
+#. module: asterisk_cdr
+#: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_form
+msgid "QoS"
+msgstr "Качество обслуживания"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_rxcount
+msgid "RX Count"
+msgstr "RX счетчик"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_rxjitter
+msgid "RX Jitter"
+msgstr "RX дребезг"
+
+#. module: asterisk_cdr
+#: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_form
+msgid "Recording"
+msgstr "Запись"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_recording_data
+msgid "Recording data"
+msgstr "Данные записи"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_recording_filename
+msgid "Recording filename"
+msgstr "Имя файла записи"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_recording_widget
+msgid "Recording widget"
+msgstr "Виджет записи"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_rlp
+msgid "Remote Lost Packets"
+msgstr "Удаленные потерянные пакеты"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_rtt
+msgid "Round Trip Time"
+msgstr "Время в пути"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_sequence
+msgid "Sequence"
+msgstr "Последовательность"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_src
+#: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_search
+msgid "Src"
+msgstr "Источник"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:7 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "Start"
+msgstr "Старт"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_started
+#: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_search
+msgid "Started"
+msgstr "Запущено"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_txcount
+msgid "TX Count"
+msgstr "TX счетчик"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_txjitter
+msgid "TX Jitter"
+msgstr "TX дребезг"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,help:asterisk_cdr.field_asterisk_cel_exten
+msgid "The extension in the dialplan"
+msgstr "Расширение в диалплане"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,help:asterisk_cdr.field_asterisk_cel_channame
+msgid "The name assigned to the channel in which the event took place"
+msgstr "Имя, присвоенное каналу, в котором произошло событие"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,help:asterisk_cdr.field_asterisk_cel_eventtype
+msgid "The name of the event"
+msgstr "Название события"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:23 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "Three way end"
+msgstr "Трехсторонний конец"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:22 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "Three way start"
+msgstr "Трехстороннее начало"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_eventtime
+msgid "Time"
+msgstr "Время"
+
+#. module: asterisk_cdr
+#: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_search
+msgid "Today"
+msgstr "Сегодня"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_uniqueid
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_uniqueid
+msgid "Uniqueid"
+msgstr "Уникальный идентификатор"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:18 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "Unpark"
+msgstr "Распарковать"
+
+#. module: asterisk_cdr
+#: code:addons/asterisk_cdr/models/cel.py:31 selection:asterisk.cel,eventtype:0
+#, python-format
+msgid "User defined"
+msgstr "Определяемые пользователем"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_userdeftype
+msgid "User event type"
+msgstr "Пользователь тип события"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_userfield
+msgid "User field"
+msgstr "Поле пользователя"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_userfield
+msgid "Userfield"
+msgstr "Поле пользователя"
+
+#. module: asterisk_cdr
+#: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_form
+msgid "cdr"
+msgstr "ПЗВ"
