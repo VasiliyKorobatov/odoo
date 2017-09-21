@@ -35,7 +35,7 @@
                     <field name='src'/>
                     <field name='from_partner'/>
                     <field name='dst'/>
-                    <field name='to_partner.name'/>
+                    <field name='to_partner.id'/>
                     <field name='billsec'/>
                     <field name='disposition'/>
                     <!--<field name='lp'/>-->
