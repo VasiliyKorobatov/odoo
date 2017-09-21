@@ -32,12 +32,12 @@
             <field name='arch' type='xml'>
                 <tree create='false' string='CDR'>
                     <field name='started'/>
-                    <field name='src'/>
-                    <field name='from_partner'/>
-                    <field name='dst'/>
-                    <field name='to_partner.id'/>
                     <field name='billsec'/>
-                    <field name='disposition'/>
+                    <!--<field name='src'/>-->
+                    <field name='from_partner'/>
+                    <!--<field name='dst'/>-->
+                    <field name='to_partner'/>
+                    <!--<field name='disposition'/>-->
                     <!--<field name='lp'/>-->
                     <!--<field name='rlp'/>-->
                     <field widget="html" name='recording_widget'/>
