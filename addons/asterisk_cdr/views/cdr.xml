@@ -38,7 +38,7 @@
                     <field name='disposition'/>
                     <!--<field name='lp'/>-->
                     <!--<field name='rlp'/>-->
-                    <!--<field widget="html" name='recording_widget'/>-->
+                    <field widget="html" name='recording_widget'/>
                 </tree>
             </field>
         </record>
