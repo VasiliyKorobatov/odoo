@@ -70,6 +70,7 @@ class Cdr(models.Model):
     @api.one
     @api.depends('src')
     def _get_from_partner(self):
+        src_internal = False
         if len(self.src) <= 3:
             src_internal = True
         user_src = self.env['res.users'].search([('sip_peer.callerid', '=', self.src,)], limit=1)
@@ -79,10 +80,10 @@ class Cdr(models.Model):
     @api.one
     @api.depends('src','dst')
     def _get_to_partner(self):
+        dst_internal = False
         if len(self.src) <= 3:
             dst = self.dst
             if len(dst) > 3:
-                dst_internal = False
                 dst = dst[-10:]
             else:
                 dst_internal = True
