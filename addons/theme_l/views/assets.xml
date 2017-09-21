@@ -6,6 +6,11 @@
                 <link href="/theme_l/static/less/style.less" rel="stylesheet" type="text/less" />
             </xpath>
         </template>
+        <template id="lstyle" name="L Style" inherit_id="website.assets_backend">
+            <xpath expr="link[last()]" position="after">
+                <link href="/theme_l/static/less/backend.less" rel="stylesheet" type="text/less" />
+            </xpath>
+        </template>
         <template id="l_js" inherit_id="website.assets_editor" name="L Js">
             <xpath expr="script[last()]" position="after">
                 <script src="/theme_l/static/src/js/tutorial_editor.js" type="text/javascript" />
