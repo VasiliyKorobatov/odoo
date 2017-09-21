@@ -7,6 +7,7 @@
         <record id='asterisk_cdr_action' model='ir.actions.act_window'>
             <field name='name'>Call Details</field>
             <field name='res_model'>asterisk.cdr</field>
+            <field name="domain">[('ended','!=',False)]</field>
             <field name="view_mode">tree,form,graph,pivot,calendar</field>
         </record>
 
@@ -28,7 +29,6 @@
             <field name='name'>asterisk.cdr.list</field>
             <field name='model'>asterisk.cdr</field>
             <field name='type'>tree</field>
-            <field name="domain">[('ended','!=',False)]</field>
             <field name='arch' type='xml'>
                 <tree create='false' string='CDR'>
                     <field name='started'/>
