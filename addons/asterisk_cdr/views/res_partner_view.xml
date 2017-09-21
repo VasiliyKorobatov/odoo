@@ -11,7 +11,7 @@
             <data>
                 <xpath expr="//div[@name='button_box']" position="inside">
                     <button class="oe_inline oe_stat_button" type="action"
-                        name="%(crm_phonecall.crm_case_categ_phone_incoming0)d"
+                        name="%(asterisk_cdr.asterisk_cdr_phone)d"
                         icon="fa-phone"
                         context="{'search_default_partner_id': active_id}">
                         <!--<field string="Calls" name="phonecall_count" widget="statinfo"/>-->
