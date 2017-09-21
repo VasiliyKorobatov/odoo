@@ -130,29 +130,29 @@ class Cdr(models.Model):
         _logger.debug('save_call_recording for callid.')
         rec = self.env['asterisk.cdr'].search([('uniqueid', '=', call_id),], limit=1, order='id desc')
         src = rec.src
+        if len(src) <= 3:
+            src_internal = True
+            dst = rec.dst
+            if len(dst) > 3:
+                dst_internal = False
+                dst = dst[-10:]
+            else:
+                dst_internal = True
+        else:
+            src_internal = False
+            src = src[-10:]
+            dst = rec.dstchannel.split('/')[1].split('-')[0]
+        if src_internal:
+            user_src = self.env['res.users'].search([('sip_peer.callerid','=', src,)], limit=1)
+            partnet_src = user_src.partner_id
+        else:
+            partner_src = self.env['res.partner'].search(['|',('phone','like', dst,),('mobile','like', dst,)], limit=1)
+        if dst_internal:
+            user_dst = self.env['res.users'].search([('sip_peer.callerid','=', dst,)], limit=1)
+            partnet_dst = user_dst.partner_id
+        else:
+            partner_dst = self.env['res.partner'].search(['|',('phone','like', dst,),('mobile','like', dst,)], limit=1)
         try:
-            if len(src) <= 3:
-                src_internal = True
-                dst = rec.dst
-                if len(dst) > 3:
-                    dst_internal = False
-                    dst = dst[-10:]
-                else:
-                    dst_internal = True
-            else:
-                src_internal = False
-                src = src[-10:]
-                dst = rec.dstchannel.split('/')[1].split('-')[0]
-            if src_internal:
-                user_src = self.env['res.users'].search([('sip_peer.callerid','=', src,)], limit=1)
-                partnet_src = user_src.partner_id
-            else:
-                partner_src = self.env['res.partner'].search(['|',('phone','like', dst,),('mobile','like', dst,)], limit=1)
-            if dst_internal:
-                user_dst = self.env['res.users'].search([('sip_peer.callerid','=', dst,)], limit=1)
-                partnet_dst = user_dst.partner_id
-            else:
-                partner_dst = self.env['res.partner'].search(['|',('phone','like', dst,),('mobile','like', dst,)], limit=1)
             _logger.info("From %s to %s" %(partnet_src.id, partnet_dst.id))
         except:
             pass
