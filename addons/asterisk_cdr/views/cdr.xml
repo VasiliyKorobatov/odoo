@@ -33,7 +33,9 @@
                 <tree create='false' string='CDR'>
                     <field name='started'/>
                     <field name='src'/>
+                    <field name='from_partner.name'/>
                     <field name='dst'/>
+                    <field name='to_partner.name'/>
                     <field name='billsec'/>
                     <field name='disposition'/>
                     <!--<field name='lp'/>-->
