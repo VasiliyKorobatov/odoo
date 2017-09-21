@@ -133,8 +133,7 @@ class Cdr(models.Model):
         _logger.info("Destanantion= %s" % rec.dst)
         _logger.info("Destanantion Channel= %s" % rec.dstchannel)
         if not rec:
-            _logger.warning(11
-                'save_call_recording - cdr not found by id {}.'.format(call_id))
+            _logger.warning('save_call_recording - cdr not found by id {}.'.format(call_id))
             return False
         else:
             #_logger.debug('Found CDR for id {}.'.format(call_id))
