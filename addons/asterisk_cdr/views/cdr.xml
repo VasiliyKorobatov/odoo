@@ -38,6 +38,7 @@
                     <field name='disposition'/>
                     <field name='lp'/>
                     <field name='rlp'/>
+                    <field name='recording_widget'/>
                 </tree>
             </field>
         </record>
