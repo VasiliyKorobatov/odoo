@@ -63,7 +63,34 @@ class Cdr(models.Model):
     cel_count = fields.Integer(compute='_get_cel_count')
     cels = fields.One2many(comodel_name='asterisk.cel',
                            inverse_name='cdr')
+    from_partner = fields.Many2one('res.partner', compute='_get_from_partner', readonly=True)
+    to_partner = fields.Many2one('res.partner', compute='_get_to_partner', readonly=True)
 
+
+    @api.multi
+    @api.depends('src')
+    def _get_from_partner(self):
+        if len(self.src) <= 3:
+            src_internal = True
+        user_src = self.env['res.users'].search([('sip_peer.callerid', '=', src,)], limit=1)
+        self.from_partner = user_src.partner_id if user_src and src_internal else self.env['res.partner'].search(['|', ('phone', 'like', src,), ('mobile', 'like', src,)],
+                                                             limit=1)
+
+    @api.multi
+    @api.depends('src','dst')
+    def _get_to_partner(self):
+        if len(self.src) <= 3:
+            dst = self.dst
+            if len(dst) > 3:
+                dst_internal = False
+                dst = dst[-10:]
+            else:
+                dst_internal = True
+        else:
+            dst = self.dstchannel.split('/')[1].split('-')[0]
+        user_dst = self.env['res.users'].search([('sip_peer.callerid', '=', dst,)], limit=1)
+        self.to_partner = user_dst.partner_id if user_dst and dst_internal else self.env['res.partner'].search(['|', ('phone', 'like', dst,), ('mobile', 'like', dst,)],
+                                                                                                           limit=1)
 
     @api.multi
     def _get_cel_count(self):
@@ -129,38 +156,10 @@ class Cdr(models.Model):
     def save_call_recording(self, call_id, file_data):
         _logger.debug('save_call_recording for callid.')
         rec = self.env['asterisk.cdr'].search([('uniqueid', '=', call_id),], limit=1, order='id desc')
-        src = rec.src
-        _logger.info(type(src))
-        _logger.info(src)
-        _logger.info(len(src))
-
-        if len(src) <= 3:
-            src_internal = True
-            dst = rec.dst
-            if len(dst) > 3:
-                dst_internal = False
-                dst = dst[-10:]
-            else:
-                dst_internal = True
-        else:
-            src_internal = False
-            src = src[-10:]
-            dst = rec.dstchannel.split('/')[1].split('-')[0]
-        _logger.info(type(dst))
-        _logger.info(dst)
-        _logger.info(len(dst))
-        user_src = self.env['res.users'].search([('sip_peer.callerid', '=', src,)], limit=1)
-        partner_src = user_src.partner_id if user_src and src_internal else self.env['res.partner'].search(['|', ('phone', 'like', src,), ('mobile', 'like', src,)],
-                                                             limit=1)
-        user_dst = self.env['res.users'].search([('sip_peer.callerid', '=', dst,)], limit=1)
-        partner_dst = user_dst.partner_id if user_dst and dst_internal else self.env['res.partner'].search(['|', ('phone', 'like', dst,), ('mobile', 'like', dst,)],
-                                                                                                           limit=1)
-        _logger.info("From %s to %s" % (partner_src.id, partner_dst.id))
         if not rec:
             _logger.warning('save_call_recording - cdr not found by id {}.'.format(call_id))
             return False
         else:
-            #_logger.debug('Found CDR for id {}.'.format(call_id))
             rec.recording_filename = '{}.wav'.format(call_id)
             rec.recording_data = file_data
             return True
