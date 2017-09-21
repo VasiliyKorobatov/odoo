@@ -36,8 +36,8 @@
                     <field name='dst'/>
                     <field name='billsec'/>
                     <field name='disposition'/>
-                    <field name='lp'/>
-                    <field name='rlp'/>
+                    <!--<field name='lp'/>-->
+                    <!--<field name='rlp'/>-->
                     <field name='recording_widget'/>
                 </tree>
             </field>
