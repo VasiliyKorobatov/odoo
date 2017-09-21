@@ -67,7 +67,7 @@ class Cdr(models.Model):
     to_partner = fields.Many2one('res.partner', compute='_get_to_partner', readonly=True)
 
 
-    @api.multi
+    @api.one
     @api.depends('src')
     def _get_from_partner(self):
         if len(self.src) <= 3:
@@ -76,7 +76,7 @@ class Cdr(models.Model):
         self.from_partner = user_src.partner_id if user_src and src_internal else self.env['res.partner'].search(['|', ('phone', 'like', src,), ('mobile', 'like', src,)],
                                                              limit=1)
 
-    @api.multi
+    @api.one
     @api.depends('src','dst')
     def _get_to_partner(self):
         if len(self.src) <= 3:
