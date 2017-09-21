@@ -209,23 +209,6 @@
             <field name="view_id" ref="cdr_board_view"/>
         </record>
 
-        <record model="ir.actions.act_window" id="asterisk_cdr_phone">
-            <field name="name">Logged Calls</field>
-            <field name="res_model">asterisk.cdr</field>
-            <field name="view_type">form</field>
-            <field name="view_mode">tree,calendar</field>
-            <field name="view_id" ref="crm_case_cdr_tree_view"/>
-            <!--<field name="domain">['|',('')]</field>-->
-            <!--<field name="context">{'search_default_state': 'done', 'default_state': 'done'}</field>-->
-            <!--<field name="search_view_id" ref="view1_crm_case_phonecalls_filter"/>-->
-            <field name="help" type="html">
-                <p class="oe_view_nocontent_create">
-                    No calls
-                </p>
-            </field>
-        </record>
-
-
         <record model="ir.ui.view" id="crm_case_cdr_tree_view">
             <field name="name">Logged Phone Calls</field>
             <field name="model">asterisk.cdr</field>
@@ -244,6 +227,23 @@
                 </tree>
             </field>
         </record>
+        <record model="ir.actions.act_window" id="asterisk_cdr_phone">
+            <field name="name">Logged Calls</field>
+            <field name="res_model">asterisk.cdr</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,calendar</field>
+            <field name="view_id" ref="crm_case_cdr_tree_view"/>
+            <!--<field name="domain">['|',('')]</field>-->
+            <!--<field name="context">{'search_default_state': 'done', 'default_state': 'done'}</field>-->
+            <!--<field name="search_view_id" ref="view1_crm_case_phonecalls_filter"/>-->
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    No calls
+                </p>
+            </field>
+        </record>
+
+
 
 
         <menuitem id="cdr_board" parent="base.menu_board_root"
