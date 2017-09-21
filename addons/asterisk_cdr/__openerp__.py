@@ -13,6 +13,7 @@
     'data': [
         'views/cdr.xml',    
         'views/cel.xml',
+        'views/res_partner_view.xml',
     ],
     'demo': [
     ],

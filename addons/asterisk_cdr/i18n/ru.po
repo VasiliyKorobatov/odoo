@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-21 05:09+0000\n"
-"PO-Revision-Date: 2017-09-21 10:18+0500\n"
+"POT-Creation-Date: 2017-09-21 20:17+0000\n"
+"PO-Revision-Date: 2017-09-22 01:30+0500\n"
 "Last-Translator: Korobarov Vasiliy <korobarov@akvastil.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -81,7 +81,7 @@ msgstr "Посещаемый трансфер"
 #. module: asterisk_cdr
 #: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_billsec
 msgid "Billsec"
-msgstr "Счетчик секунд"
+msgstr "Длительность сек"
 
 #. module: asterisk_cdr
 #: code:addons/asterisk_cdr/models/cel.py:24 selection:asterisk.cel,eventtype:0
@@ -116,7 +116,7 @@ msgstr "Занято"
 #: model:ir.ui.menu,name:asterisk_cdr.asterisk_calls_cdr_menu
 #: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_list
 msgid "CDR"
-msgstr "ПЗВ"
+msgstr "Звонки"
 
 #. module: asterisk_cdr
 #: model:ir.actions.act_window,name:asterisk_cdr.asterisk_cdr_cel_action
@@ -342,6 +342,11 @@ msgid "Forward"
 msgstr "Переадресация"
 
 #. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_from_partner
+msgid "From partner"
+msgstr "Кто звонил"
+
+#. module: asterisk_cdr
 #: code:addons/asterisk_cdr/models/cel.py:26 selection:asterisk.cel,eventtype:0
 #, python-format
 msgid "Generic transfer"
@@ -485,7 +490,7 @@ msgstr "Имя файла записи"
 #. module: asterisk_cdr
 #: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_recording_widget
 msgid "Recording widget"
-msgstr "Виджет записи"
+msgstr "Запись разговора абонентов - прослушать, скачать"
 
 #. module: asterisk_cdr
 #: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_rlp
@@ -518,7 +523,7 @@ msgstr "Старт"
 #: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_started
 #: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_search
 msgid "Started"
-msgstr "Запущено"
+msgstr "Время"
 
 #. module: asterisk_cdr
 #: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_txcount
@@ -563,6 +568,11 @@ msgid "Time"
 msgstr "Время"
 
 #. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_to_partner
+msgid "To partner"
+msgstr "Кому звонил"
+
+#. module: asterisk_cdr
 #: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_search
 msgid "Today"
 msgstr "Сегодня"
@@ -603,4 +613,4 @@ msgstr "Поле пользователя"
 #. module: asterisk_cdr
 #: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_form
 msgid "cdr"
-msgstr "ПЗВ"
+msgstr "звонки"
