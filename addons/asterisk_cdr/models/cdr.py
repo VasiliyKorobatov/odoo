@@ -142,14 +142,22 @@ class Cdr(models.Model):
             src_internal = False
             src = src[-10:]
             dst = rec.dstchannel.split('/')[1].split('-')[0]
-        user_src = self.env['res.users'].search([('sip_peer.callerid','=', src,)], limit=1)
-        user_dst = self.env['res.users'].search([('sip_peer.callerid', '=', dst,)], limit=1)
-        if src_internal and user_src:
-            partnet_src = user_src.partner_id
+        if src_internal:
+            user_src = self.env['res.users'].search([('sip_peer.callerid', '=', src,)], limit=1)
+            if user_src:
+                partnet_src = user_src.partner_id
+            else:
+                partner_src = self.env['res.partner'].search(['|', ('phone', 'like', dst,), ('mobile', 'like', dst,)],
+                                                             limit=1)
         else:
             partner_src = self.env['res.partner'].search(['|',('phone','like', dst,),('mobile','like', dst,)], limit=1)
-        if dst_internal and user_dst:
-            partnet_dst = user_dst.partner_id
+        if dst_internal:
+            user_dst = self.env['res.users'].search([('sip_peer.callerid', '=', dst,)], limit=1)
+            if user_dst:
+                partnet_dst = user_dst.partner_id
+            else:
+                partner_dst = self.env['res.partner'].search(['|', ('phone', 'like', dst,), ('mobile', 'like', dst,)],
+                                                             limit=1)
         else:
             partner_dst = self.env['res.partner'].search(['|',('phone','like', dst,),('mobile','like', dst,)], limit=1)
         try:
