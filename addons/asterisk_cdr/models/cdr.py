@@ -131,6 +131,9 @@ class Cdr(models.Model):
         rec = self.env['asterisk.cdr'].search([('uniqueid', '=', call_id),], limit=1, order='id desc')
         src = rec.src
         _logger.info(type(src))
+        _logger.info(src)
+        _logger.info(len(src))
+
         if len(src) <= 3:
             src_internal = True
             dst = rec.dst
@@ -143,6 +146,9 @@ class Cdr(models.Model):
             src_internal = False
             src = src[-10:]
             dst = rec.dstchannel.split('/')[1].split('-')[0]
+        _logger.info(type(dst))
+        _logger.info(dst)
+        _logger.info(len(dst))
         if src_internal:
             user_src = self.env['res.users'].search([('sip_peer.callerid', '=', src,)], limit=1)
             if user_src:
