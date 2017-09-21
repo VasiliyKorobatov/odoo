@@ -129,7 +129,7 @@ class Cdr(models.Model):
     def save_call_recording(self, call_id, file_data):
         _logger.debug('save_call_recording for callid.')
         rec = self.env['asterisk.cdr'].search([('uniqueid', '=', call_id),], limit=1, order='id desc')
-        _logger.info(rec.name)
+        _logger.info(rec.dstchannel)
         src = rec.src
         _logger.info(type(src))
         _logger.info(src)
