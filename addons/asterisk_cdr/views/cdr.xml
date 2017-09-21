@@ -28,6 +28,7 @@
             <field name='name'>asterisk.cdr.list</field>
             <field name='model'>asterisk.cdr</field>
             <field name='type'>tree</field>
+            <field name="domain">[('started','=',True)]</field>
             <field name='arch' type='xml'>
                 <tree create='false' string='CDR'>
                     <field name='started'/>
