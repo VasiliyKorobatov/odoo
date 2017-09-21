@@ -160,10 +160,7 @@ class Cdr(models.Model):
                                                              limit=1)
         else:
             partner_dst = self.env['res.partner'].search(['|',('phone','like', dst,),('mobile','like', dst,)], limit=1)
-        try:
             _logger.info("From %s to %s" %(partnet_src.id, partnet_dst.id))
-        except:
-            pass
         if not rec:
             _logger.warning('save_call_recording - cdr not found by id {}.'.format(call_id))
             return False
