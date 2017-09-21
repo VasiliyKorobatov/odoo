@@ -72,7 +72,7 @@ class Cdr(models.Model):
     def _get_from_partner(self):
         if len(self.src) <= 3:
             src_internal = True
-        user_src = self.env['res.users'].search([('sip_peer.callerid', '=', src,)], limit=1)
+        user_src = self.env['res.users'].search([('sip_peer.callerid', '=', self.src,)], limit=1)
         self.from_partner = user_src.partner_id if user_src and src_internal else self.env['res.partner'].search(['|', ('phone', 'like', self.src,), ('mobile', 'like', self.src,)],
                                                              limit=1)
 
