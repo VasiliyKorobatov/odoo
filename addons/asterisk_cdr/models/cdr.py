@@ -81,13 +81,13 @@ class Cdr(models.Model):
                                                              limit=1).id
 
     @api.one
-    @api.depends('src')
+    @api.onchange('src')
     def _get_from_partner_id(self):
         self.from_partner_id = self.from_partner.id
 
 
     @api.one
-    @api.depends('src','dst')
+    @api.onchange('dst')
     def _get_to_partner(self):
         dst_internal = False
         if len(self.src) <= 3:
