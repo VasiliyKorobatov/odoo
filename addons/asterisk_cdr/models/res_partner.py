@@ -12,5 +12,5 @@ class ResPartner(models.Model):
     call_count = fields.Integer(compute='_compute_sale_order_count', string='# of Calls')
     def _compute_sale_order_count(self):
         call_data = self.env['asterisk.cdr'].search([('to_partner_id', '=', self.id)])
-        _logger.info(call_data)
+        _logger.info("Calls %s" % call_data)
         self.call_count = len(call_data)
