@@ -9,8 +9,8 @@ _logger = logging.getLogger(__name__)
 
 class ResPartner(models.Model):
     _inherit = 'res.partner'
-    call_count = fields.Integer(compute='_compute_sale_order_count', string='# of Calls')
-    def _compute_sale_order_count(self):
+    call_count = fields.Integer(compute='_compute_calls', string='# of Calls')
+    def _compute_calls(self):
         call_data = self.env['asterisk.cdr'].search([('to_partner_id', '=', self.id)])
         _logger.info("Calls %s" % call_data)
         self.call_count = 20
