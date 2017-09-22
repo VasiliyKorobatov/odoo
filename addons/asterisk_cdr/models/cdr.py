@@ -65,9 +65,9 @@ class Cdr(models.Model):
                            inverse_name='cdr')
 
     from_partner = fields.Many2one('res.partner', compute='_get_from_partner', readonly=True)
-    from_partner_id = fields.Integer(compute='_get_from_partner_id', readonly=True, store=True)
+    from_partner_id = fields.Integer(compute='_get_from_partner_id', readonly=True)
     to_partner = fields.Many2one('res.partner', compute='_get_to_partner', readonly=True)
-    to_partner_id = fields.Integer(compute='_get_to_partner_id', readonly=True, store=True )
+    to_partner_id = fields.Integer(compute='_get_to_partner_id', readonly=True)
 
 
     @api.one
