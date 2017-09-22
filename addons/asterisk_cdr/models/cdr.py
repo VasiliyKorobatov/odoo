@@ -82,7 +82,7 @@ class Cdr(models.Model):
     @api.one
     @api.depends('src')
     def _get_from_partner_id(self):
-        self.from_partner_id = self.from_partner.name
+        self.from_partner_id = self.env['res.partner'].search(['display_name','=',self.from_partner])[0].id
 
     @api.one
     @api.depends('src','dst')
