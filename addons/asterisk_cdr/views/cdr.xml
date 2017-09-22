@@ -217,9 +217,9 @@
                     <field name='started'/>
                     <field name='billsec'/>
                     <field name='from_partner'/>
-                    <field name='from_partner_id'/>
+                    <field name='from_partner_id' invisible="True"/>
                     <field name='to_partner'/>
-                    <field name='to_partner_id'/>
+                    <field name='to_partner_id' invisible="True"/>
                     <field widget="html" name='recording_widget'/>
                 </tree>
             </field>
