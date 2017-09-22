@@ -13,6 +13,7 @@ class ResPartner(models.Model):
 
     @api.one
     def _compute_calls(self):
-        call_data = self.env['asterisk.cdr'].search([('to_partner_id', '=', self.id)])
-        _logger.info("Calls %s" % call_data)
-        self.call_count = 20
+        call_data = self.env['asterisk.cdr'].search()
+        for call in call_data:
+            if self.id in [call.to_partner_id, call.from_partner_id]:
+                self.call_count += 1
