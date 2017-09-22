@@ -216,13 +216,8 @@
                 <tree string="Phone Calls" editable="top">
                     <field name='started'/>
                     <field name='billsec'/>
-                    <!--<field name='src'/>-->
                     <field name='from_partner'/>
-                    <!--<field name='dst'/>-->
                     <field name='to_partner'/>
-                    <!--<field name='disposition'/>-->
-                    <!--<field name='lp'/>-->
-                    <!--<field name='rlp'/>-->
                     <field widget="html" name='recording_widget'/>
                 </tree>
             </field>

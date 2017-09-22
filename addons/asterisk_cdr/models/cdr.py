@@ -63,7 +63,9 @@ class Cdr(models.Model):
     cel_count = fields.Integer(compute='_get_cel_count')
     cels = fields.One2many(comodel_name='asterisk.cel',
                            inverse_name='cdr')
+
     from_partner = fields.Many2one('res.partner', compute='_get_from_partner', readonly=True)
+    from_partner_id = fields.Many2one('res.partner', compute='_get_from_partner_id', readonly=True)
     to_partner = fields.Many2one('res.partner', compute='_get_to_partner', readonly=True)
 
 
@@ -76,6 +78,11 @@ class Cdr(models.Model):
         user_src = self.env['res.users'].search([('sip_peer.callerid', '=', self.src,)], limit=1)
         self.from_partner = user_src.partner_id if user_src and src_internal else self.env['res.partner'].search(['|', ('phone', 'like', self.src,), ('mobile', 'like', self.src,)],
                                                              limit=1)
+
+    @api.one
+    @api.depends('src')
+    def _get_from_partner_id(self):
+        self.from_partner_id = self.from_partner.id
 
     @api.one
     @api.depends('src','dst')
