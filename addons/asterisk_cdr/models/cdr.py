@@ -82,7 +82,7 @@ class Cdr(models.Model):
     @api.one
     @api.depends('src')
     def _get_from_partner_id(self):
-        self.from_partner_id = 1
+        self.from_partner_id = self.from_partner.id
 
     @api.one
     @api.depends('src','dst')
