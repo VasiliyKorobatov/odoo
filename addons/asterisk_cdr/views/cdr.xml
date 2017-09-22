@@ -232,7 +232,8 @@
             <field name="view_id" ref="crm_case_cdr_tree_view"/>
             <!--<field name="domain">['|',('')]</field>-->
             <!--<field name="domain">[('ended','!=',False),('src','=','222')]</field>-->
-            <field name="domain">[('ended','!=',False),('from_partner_id','=', active_id)]</field>
+            <!--<field name="domain">[('ended','!=',False),('from_partner_id','=', active_id)]</field>-->
+            <field name="domain">[('from_partner_id','=', active_id)]</field>
             <field name="context">{'default_partner_id': context.get('search_default_partner_id', False),}</field>
             <!--<field name="context">{'search_default_state': 'done', 'default_state': 'done'}</field>-->
             <!--<field name="search_view_id" ref="view1_crm_case_phonecalls_filter"/>-->
