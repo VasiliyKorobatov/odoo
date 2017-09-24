@@ -178,8 +178,10 @@ class Cdr(models.Model):
 
     @api.model
     def save_call_recording(self, call_id, file_data):
-        _logger.debug('save_call_recording for callid.')
+        _logger.info('save_call_recording for callid.')
         rec = self.env['asterisk.cdr'].search([('uniqueid', '=', call_id),], limit=1, order='id desc')
+        _logger.info('Rec ID: %s' % rec.id)
+        _logger.info('Rec FROM: %s' % rec.from_partner.id)
         if not rec:
             _logger.warning('save_call_recording - cdr not found by id {}.'.format(call_id))
             return False
