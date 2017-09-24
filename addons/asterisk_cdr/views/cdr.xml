@@ -232,7 +232,7 @@
             <field name="view_type">form</field>
             <field name="view_mode">tree,calendar</field>
             <field name="view_id" ref="crm_case_cdr_tree_view"/>
-            <field name="domain">['|',('from_partner_id','!=', active_id), ('to_partner_id','!=', active_id)]</field>
+            <field name="domain">['|',('from_partner_id','=', active_id), ('to_partner_id','=', active_id)]</field>
             <!--<field name="context">{'default_partner_id': context.get('search_default_partner_id', False),}</field>-->
             <field name="help" type="html">
                 <p class="oe_view_nocontent_create">
