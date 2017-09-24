@@ -85,6 +85,7 @@ class Cdr(models.Model):
     @api.one
     @api.onchange('src')
     def _get_from_partner_id(self):
+        _logger.info("!!!!!!!!!!!!!!!!!!!!!!! _get_from_partner_id")
         self.from_partner_id = self.from_partner.id
 
 
@@ -106,6 +107,7 @@ class Cdr(models.Model):
     @api.one
     @api.depends('src','dst')
     def _get_to_partner_id(self):
+        _logger.info("!!!!!!!!!!!!!!!!!!!!!!! _get_to_partner_id")
         self.to_partner_id = self.to_partner.id
 
     @api.multi
