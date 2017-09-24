@@ -71,12 +71,6 @@ class Cdr(models.Model):
     # to_partner_id = fields.Integer(compute='_get_to_partner_id', readonly=True, store=True)
     to_partner_id = fields.Integer(store=True)
 
-    @api.model
-    def create(self, values):
-        _logger.info("Create cdr")
-        new_id = super(Cdr, self).create(vals=values)
-        _logger.info(values)
-        return new_id
 
     @api.one
     @api.depends('src')
@@ -88,11 +82,11 @@ class Cdr(models.Model):
         self.from_partner = user_src.partner_id if user_src and src_internal else self.env['res.partner'].sudo().search(['|', ('phone', 'like', self.src,), ('mobile', 'like', self.src,)],
                                                              limit=1).id
 
-    # @api.one
-    @api.onchange('src')
-    def _get_from_partner_id(self):
-        _logger.info("!!!!!!!!!!!!!!!!!!!!!!! _get_from_partner_id")
-        self.from_partner_id = self.from_partner.id
+    # # @api.one
+    # @api.onchange('src')
+    # def _get_from_partner_id(self):
+    #     _logger.info("!!!!!!!!!!!!!!!!!!!!!!! _get_from_partner_id")
+    #     self.from_partner_id = self.from_partner.id
 
 
     @api.one
@@ -110,11 +104,11 @@ class Cdr(models.Model):
         user_dst = self.env['res.users'].search([('sip_peer.callerid', '=', dst,)], limit=1)
         self.to_partner = user_dst.partner_id if user_dst and dst_internal else self.env['res.partner'].search(['|', ('phone', 'like', dst,), ('mobile', 'like', dst,)],
                                                                                                            limit=1)
-    # @api.one
-    @api.onchange('dst')
-    def _get_to_partner_id(self):
-        _logger.info("!!!!!!!!!!!!!!!!!!!!!!! _get_to_partner_id")
-        self.to_partner_id = self.to_partner.id
+    # # @api.one
+    # @api.onchange('dst')
+    # def _get_to_partner_id(self):
+    #     _logger.info("!!!!!!!!!!!!!!!!!!!!!!! _get_to_partner_id")
+    #     self.to_partner_id = self.to_partner.id
 
     @api.multi
     def _get_cel_count(self):
