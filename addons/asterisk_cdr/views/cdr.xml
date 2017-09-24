@@ -35,10 +35,10 @@
                     <field name='billsec'/>
                     <!--<field name='src'/>-->
                     <field name='from_partner'/>
-                    <field name='from_partner_id'/>
+                    <field name='from_partner_id'  invisible="True"/>
                     <!--<field name='dst'/>-->
                     <field name='to_partner'/>
-                    <field name='to_partner_id'/>
+                    <field name='to_partner_id'  invisible="True"/>
                     <!--<field name='disposition'/>-->
                     <!--<field name='lp'/>-->
                     <!--<field name='rlp'/>-->
