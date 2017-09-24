@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 import humanize
 import logging
-from odoo import models, fields, api, _
+from odoo import models, fields, api
 from odoo import sql_db
 import requests
 from urlparse import urljoin
@@ -76,34 +76,39 @@ class Cdr(models.Model):
     @api.depends('src')
     def _get_from_partner(self):
         src_internal = False
-        if len(self.src) <= 3:
-            src_internal = True
-        user_src = self.env['res.users'].search([('sip_peer.callerid', '=', self.src,)], limit=1)
-        self.from_partner = user_src.partner_id if user_src and src_internal else self.env['res.partner'].sudo().search(['|', ('phone', 'like', self.src,), ('mobile', 'like', self.src,)],
-                                                             limit=1).id
+        if self.src:
+            if len(self.src) <= 3:
+                src_internal = True
+            user_src = self.env['res.users'].search([('sip_peer.callerid', '=', self.src,)], limit=1)
+            self.from_partner = user_src.partner_id if user_src and src_internal else self.env['res.partner'].sudo().search(['|', ('phone', 'like', self.src,), ('mobile', 'like', self.src,)],
+                                                                 limit=1).id
+        else:
+            self.from_partner = self.env['res.partner'].sudo().search([('id','=',1)])
 
-    # # @api.one
+    # @api.one
     # @api.onchange('src')
     # def _get_from_partner_id(self):
     #     _logger.info("!!!!!!!!!!!!!!!!!!!!!!! _get_from_partner_id")
     #     self.from_partner_id = self.from_partner.id
 
-
     @api.one
     @api.depends('src','dst')
     def _get_to_partner(self):
         dst_internal = False
-        if len(self.src) <= 3:
-            dst = self.dst
-            if len(dst) > 3:
-                dst = dst[-10:]
+        if self.dst:
+            if len(self.src) <= 3:
+                dst = self.dst
+                if len(dst) > 3:
+                    dst = dst[-10:]
+                else:
+                    dst_internal = True
             else:
-                dst_internal = True
+                dst = self.dstchannel.split('/')[1].split('-')[0]
+            user_dst = self.env['res.users'].search([('sip_peer.callerid', '=', dst,)], limit=1)
+            self.to_partner = user_dst.partner_id if user_dst and dst_internal else self.env['res.partner'].search(['|', ('phone', 'like', dst,), ('mobile', 'like', dst,)],
+                                                                                                               limit=1)
         else:
-            dst = self.dstchannel.split('/')[1].split('-')[0]
-        user_dst = self.env['res.users'].search([('sip_peer.callerid', '=', dst,)], limit=1)
-        self.to_partner = user_dst.partner_id if user_dst and dst_internal else self.env['res.partner'].search(['|', ('phone', 'like', dst,), ('mobile', 'like', dst,)],
-                                                                                                           limit=1)
+            self.to_partner = self.env['res.partner'].sudo().search([('id','=',1)])
     # # @api.one
     # @api.onchange('dst')
     # def _get_to_partner_id(self):
