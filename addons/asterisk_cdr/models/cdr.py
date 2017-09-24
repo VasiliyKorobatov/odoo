@@ -100,7 +100,7 @@ class Cdr(models.Model):
             _logger.info("src %s" % self.src)
             _logger.info("dst %s" % self.dst)
             _logger.info("dst channel %s" % self.dstchannel)
-            if len(self.src) <= 3:
+            if not self.src or len(self.src) <= 3:
                 dst = self.dst
                 if len(dst) > 3:
                     dst = dst[-10:]
