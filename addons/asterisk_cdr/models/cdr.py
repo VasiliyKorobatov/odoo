@@ -71,6 +71,12 @@ class Cdr(models.Model):
     # to_partner_id = fields.Integer(compute='_get_to_partner_id', readonly=True, store=True)
     to_partner_id = fields.Integer(store=True)
 
+    @api.model
+    def create(self, values):
+        new_id = super(Cdr, self).create(vals=values)
+        _logger.info("Create cdr")
+        _logger.info(values)
+        return new_id
 
     @api.one
     @api.depends('src')
