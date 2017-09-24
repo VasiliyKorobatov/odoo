@@ -67,9 +67,9 @@ class Cdr(models.Model):
     from_partner = fields.Many2one('res.partner', compute='_get_from_partner', readonly=True)
     to_partner = fields.Many2one('res.partner', compute='_get_to_partner', readonly=True)
     # from_partner_id = fields.Integer(compute='_get_from_partner_id', readonly=True, store=True)
-    from_partner_id = fields.Integer(compute='_get_from_partner_id', store=True)
+    from_partner_id = fields.Integer(store=True)
     # to_partner_id = fields.Integer(compute='_get_to_partner_id', readonly=True, store=True)
-    to_partner_id = fields.Integer(compute='_get_to_partner_id', store=True)
+    to_partner_id = fields.Integer(store=True)
 
 
     @api.one
@@ -82,7 +82,7 @@ class Cdr(models.Model):
         self.from_partner = user_src.partner_id if user_src and src_internal else self.env['res.partner'].sudo().search(['|', ('phone', 'like', self.src,), ('mobile', 'like', self.src,)],
                                                              limit=1).id
 
-    @api.one
+    # @api.one
     @api.onchange('src')
     def _get_from_partner_id(self):
         _logger.info("!!!!!!!!!!!!!!!!!!!!!!! _get_from_partner_id")
@@ -90,7 +90,7 @@ class Cdr(models.Model):
 
 
     @api.one
-    @api.onchange('dst')
+    @api.depends('src','dst')
     def _get_to_partner(self):
         dst_internal = False
         if len(self.src) <= 3:
@@ -104,8 +104,8 @@ class Cdr(models.Model):
         user_dst = self.env['res.users'].search([('sip_peer.callerid', '=', dst,)], limit=1)
         self.to_partner = user_dst.partner_id if user_dst and dst_internal else self.env['res.partner'].search(['|', ('phone', 'like', dst,), ('mobile', 'like', dst,)],
                                                                                                            limit=1)
-    @api.one
-    @api.depends('src','dst')
+    # @api.one
+    @api.onchange('dst')
     def _get_to_partner_id(self):
         _logger.info("!!!!!!!!!!!!!!!!!!!!!!! _get_to_partner_id")
         self.to_partner_id = self.to_partner.id
