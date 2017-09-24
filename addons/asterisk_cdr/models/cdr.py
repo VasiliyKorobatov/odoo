@@ -73,8 +73,8 @@ class Cdr(models.Model):
 
     @api.model
     def create(self, values):
-        new_id = super(Cdr, self).create(vals=values)
         _logger.info("Create cdr")
+        new_id = super(Cdr, self).create(vals=values)
         _logger.info(values)
         return new_id
 
