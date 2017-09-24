@@ -182,6 +182,10 @@ class Cdr(models.Model):
         rec = self.env['asterisk.cdr'].search([('uniqueid', '=', call_id),], limit=1, order='id desc')
         _logger.info('Rec ID: %s' % rec.id)
         _logger.info('Rec FROM: %s' % rec.from_partner.id)
+        _logger.info('Rec To: %s' % rec.to_partner.id)
+        rec.from_partner_id = rec.from_partner.id
+        rec.to_partner_id = rec.to_partner.id
+
         if not rec:
             _logger.warning('save_call_recording - cdr not found by id {}.'.format(call_id))
             return False
