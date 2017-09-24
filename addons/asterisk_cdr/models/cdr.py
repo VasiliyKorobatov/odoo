@@ -77,8 +77,7 @@ class Cdr(models.Model):
     def _get_from_partner(self):
         src_internal = False
         if self.src:
-            _logger.info(self.src)
-            _logger.info(type(self.src))
+
             if len(self.src) <= 3:
                 src_internal = True
             user_src = self.env['res.users'].search([('sip_peer.callerid', '=', self.src,)], limit=1)
@@ -98,6 +97,9 @@ class Cdr(models.Model):
     def _get_to_partner(self):
         dst_internal = False
         if self.dst:
+            _logger.info("src %s" % self.src)
+            _logger.info("dst %s" % self.dst)
+            _logger.info("dst channel %s" % self.dstchannel)
             if len(self.src) <= 3:
                 dst = self.dst
                 if len(dst) > 3:
