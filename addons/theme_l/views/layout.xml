@@ -1667,13 +1667,13 @@
                                 <t t-foreach="variant.attribute_value_ids" t-as="attribute">
                                     <t t-if="attribute.attribute_id.type != 'color'" >
                                         <t t-if="product.default_variant.id == variant.id">
-                                            <label  class="btn btn-sm btn-default active">
+                                            <label  class="change-variant btn btn-sm btn-default active">
                                             <input name="product_id" class="product_id"  autocomplete="off" t-att-value="variant.id" type="radio" t-att-id="'product_%s' %variant.id"  checked="checked"/>
                                             <t t-esc="attribute.name" />
                                             </label>
                                         </t>
                                         <t t-else="">
-                                            <label  class="btn btn-sm btn-default ">
+                                            <label  class="change-variant btn btn-sm btn-default ">
                                             <input name="product_id" class="product_id" autocomplete="off" t-att-value="variant.id" type="radio" t-att-id="'product_%s' %variant.id"/>
                                             <t t-esc="attribute.name" />
                                             </label>

@@ -40,6 +40,9 @@ $(document).ready(function() {
         }
         $("#city #searchinput").val(r);
     });
+
+    $('label.change-variant').on('click', function(){ var product = $(this).find('input').val(); $(this).parents('form').find('img').attr('src','/web/image/product.product/'+product+'/image/500x500') });
+
 });
 
 function diffarray(a,b){
