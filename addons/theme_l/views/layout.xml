@@ -1664,6 +1664,7 @@
                     <div class="product-attributes btn-group-vertical" data-toggle="buttons">
                         <t t-foreach="product.product_variant_ids" t-as="variant">
                             <t t-if="len(variant.attribute_value_ids) &gt; 1">
+                                <t t-esc="len(variant.attribute_value_ids)" />
                                 <t t-foreach="variant.attribute_value_ids" t-as="attribute">
                                     <t t-if="attribute.attribute_id.type != 'color'" >
                                         <t t-if="product.default_variant.id == variant.id">
