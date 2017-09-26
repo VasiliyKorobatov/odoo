@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-21 20:17+0000\n"
-"PO-Revision-Date: 2017-09-22 01:30+0500\n"
+"POT-Creation-Date: 2017-09-24 15:45+0000\n"
+"PO-Revision-Date: 2017-09-24 20:54+0500\n"
 "Last-Translator: Korobarov Vasiliy <korobarov@akvastil.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,6 +16,12 @@ msgstr ""
 "Plural-Forms: \n"
 "Language: ru\n"
 "X-Generator: Poedit 2.0.2\n"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_res_partner_call_count
+#: model:ir.model.fields,field_description:asterisk_cdr.field_res_users_call_count
+msgid "# of Calls"
+msgstr "# записей"
 
 #. module: asterisk_cdr
 #: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_amaflags
@@ -196,13 +202,14 @@ msgstr "Звонок днем"
 #: model:ir.ui.menu,name:asterisk_cdr.asterisk_calls_menu
 #: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_pivot
 #: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cel_graph
+#: model:ir.ui.view,arch_db:asterisk_cdr.view_partners_form_crm_cdr
 msgid "Calls"
 msgstr "Вызовы"
 
 #. module: asterisk_cdr
 #: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_cdr
 msgid "Cdr"
-msgstr "Cdr"
+msgstr "Записи"
 
 #. module: asterisk_cdr
 #: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_cel_count
@@ -347,6 +354,11 @@ msgid "From partner"
 msgstr "Кто звонил"
 
 #. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_from_partner_id
+msgid "From partner id"
+msgstr "ID исходящего партнера"
+
+#. module: asterisk_cdr
 #: code:addons/asterisk_cdr/models/cel.py:26 selection:asterisk.cel,eventtype:0
 #, python-format
 msgid "Generic transfer"
@@ -420,9 +432,19 @@ msgid "Local Lost Packets"
 msgstr "Локальные потерянные пакеты"
 
 #. module: asterisk_cdr
+#: model:ir.actions.act_window,name:asterisk_cdr.asterisk_cdr_phone
+msgid "Logged Calls"
+msgstr "Логированные вызовы"
+
+#. module: asterisk_cdr
 #: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_search
 msgid "No answer"
 msgstr "Нет ответа"
+
+#. module: asterisk_cdr
+#: model:ir.actions.act_window,help:asterisk_cdr.asterisk_cdr_phone
+msgid "No calls"
+msgstr "Нет вызовов"
 
 #. module: asterisk_cdr
 #: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_themssrc
@@ -446,10 +468,20 @@ msgid "Park"
 msgstr "Парковать"
 
 #. module: asterisk_cdr
+#: model:ir.model,name:asterisk_cdr.model_res_partner
+msgid "Partner"
+msgstr "Партнёр"
+
+#. module: asterisk_cdr
 #: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_peeraccount
 #: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cel_peeraccount
 msgid "Peer account"
 msgstr "Учетная запись пира"
+
+#. module: asterisk_cdr
+#: model:ir.ui.view,arch_db:asterisk_cdr.crm_case_cdr_tree_view
+msgid "Phone Calls"
+msgstr "Телефонные звонки"
 
 #. module: asterisk_cdr
 #: code:addons/asterisk_cdr/models/cel.py:27 selection:asterisk.cel,eventtype:0
@@ -571,6 +603,11 @@ msgstr "Время"
 #: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_to_partner
 msgid "To partner"
 msgstr "Кому звонил"
+
+#. module: asterisk_cdr
+#: model:ir.model.fields,field_description:asterisk_cdr.field_asterisk_cdr_to_partner_id
+msgid "To partner id"
+msgstr "ID входящего партнера"
 
 #. module: asterisk_cdr
 #: model:ir.ui.view,arch_db:asterisk_cdr.asterisk_cdr_search
