@@ -1682,12 +1682,11 @@
 
                                 </t>
                             </t>
+
                             <t t-else="">
-                                        <span class="">
+                                <span class="">
                                             <t t-esc="len(variant.attribute_value_ids)" />
                                         </span>
-                                    </t>
-                            <t t-else="">
                                 <input name="product_id" t-att-value="product.product_variant_id.id" type="hidden"/>
                             </t>
                         </t>
