@@ -4,8 +4,7 @@
 
 {
     "name": "Web Responsive Plus",
-    "summary": "Web Responsive Plus is upgrade Web Responsive Module"
-               "web",
+    "summary": "Web Responsive Plus is upgrade Web Responsive Module",
     "version": "10.0.0.0.1",
     "category": "Website",
     "website": "https://korobatov.ru/",
