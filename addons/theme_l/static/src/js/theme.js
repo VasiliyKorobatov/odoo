@@ -41,7 +41,19 @@ $(document).ready(function() {
         $("#city #searchinput").val(r);
     });
 
-    $('label.change-variant').on('click', function(){ var product = $(this).find('input').val(); $(this).parents('form').find('img').attr('src','/web/image/product.product/'+product+'/image/500x500') });
+    $('label.change-variant').on('click',
+        function(){
+            var product = $(this).find('input').val();
+            $(this).parents('form').find('img').attr('src','/web/image/product.product/'+product+'/image/500x500');
+            odoo.define('website.product', function(require) {
+            'use strict';
+            var Model = require('web.Model');
+            var Product = new Model('product.product');
+            Product.call('read', [[113],['website_price']]).then(function(result){
+                    $(this).parents('form').find('oe_currency_value').text(result[0]['website_price'].toFixed(2));
+                });
+            });
+         });
 
 });
 
