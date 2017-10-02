@@ -21,9 +21,9 @@ $(document).ready(function() {
         $("#city").modal('hide');
     });
 
-    update_variant();
+    update_variant_detail();
     $("select.js_variant_change").change(function(){
-        update_variant();
+        update_variant_detail();
     });
     $('#searchlist').btsListFilter('#searchinput', {itemChild: 'span'});
     $('input[name="add_qty"]').change(function(){
@@ -51,7 +51,7 @@ $(document).ready(function() {
             var Model = require('web.Model');
             var Product = new Model('product.product');
             Product.call('read', [[parseInt(product)],['website_price']]).then(function(result){
-                    form.find('.oe_currency_value').text(result[0]['website_price'].toFixed(2));
+                    form.find('.oe_currency_value').text((result[0]['website_price'].toFixed(2)).replace('.',','));
                 });
             });
          });
@@ -64,7 +64,15 @@ function diffarray(a,b){
     })
 }
 
-function update_variant(){
+function update_product_price(){
+    prc = $.parseJSON($("ul.js_add_cart_variants").attr("data-attribute_value_ids"));
+        prc.forEach(function (item,i,arr) {
+
+         }
+}
+
+
+function update_variant_detail(){
 	var attrs = [];
 	var price;
 	if($(".js_variant_change").length){
