@@ -50,6 +50,7 @@ class MrpWorkcenter(models.Model):
     oee_target = fields.Float(string='OEE Target', help="OEE Target in percentage", default=90)
     performance = fields.Integer('Performance', compute='_compute_performance', help='Performance over the last month')
     workcenter_load = fields.Float('Work Center Load', compute='_compute_workorder_count')
+    costs_hour = fields.Float('Cost of one work hour', default=0.0)
 
     @api.depends('order_ids.duration_expected', 'order_ids.workcenter_id', 'order_ids.state', 'order_ids.date_planned_start')
     def _compute_workorder_count(self):
