@@ -51,7 +51,7 @@ $(document).ready(function() {
             var Model = require('web.Model');
             var Product = new Model('product.product');
             Product.call('read', [[parseInt(product)],['website_price']]).then(function(result){
-                    form.find('oe_currency_value').text(result[0]['website_price'].toFixed(2));
+                    form.find('.oe_currency_value').text(result[0]['website_price'].toFixed(2));
                 });
             });
          });
