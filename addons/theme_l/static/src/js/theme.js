@@ -44,13 +44,14 @@ $(document).ready(function() {
     $('label.change-variant').on('click',
         function(){
             product = $(this).find('input').val();
-            $(this).parents('form').find('img').attr('src','/web/image/product.product/'+product+'/image/500x500');
+            form = $(this).parents('form');
+            form.find('img').attr('src','/web/image/product.product/'+product+'/image/500x500');
             odoo.define('website.product', function(require) {
             'use strict';
             var Model = require('web.Model');
             var Product = new Model('product.product');
             Product.call('read', [[parseInt(product)],['website_price']]).then(function(result){
-                    $(this).parents('form').find('oe_currency_value').text(result[0]['website_price'].toFixed(2));
+                    form.find('oe_currency_value').text(result[0]['website_price'].toFixed(2));
                 });
             });
          });
