@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template  id="assets_backend_plus" name="Open Mobile Assets Plus" inherit_id="web.assets_backend">
+         <xpath expr=".">
+            <link rel="stylesheet"
+                  type="text/css"
+                  href="/web_responsive_plus/static/src/less/style.less"
+                  />
+         </xpath>
+    </template>
+</odoo>
