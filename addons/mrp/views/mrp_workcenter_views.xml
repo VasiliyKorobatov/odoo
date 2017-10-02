@@ -310,6 +310,11 @@
                                         </div>
                                     </group>
                                     <group>
+
+                                        <label for="costs_hour"/>
+                                        <div>
+                                            <field name="costs_hour" class="oe_inline"/>
+                                        </div>
                                         <label for="time_start"/>
                                         <div>
                                             <field name="time_start" widget="float_time" class="oe_inline"/> minutes
