@@ -1084,6 +1084,7 @@
                                                class="btn btn-primary btn-lg mt8 js_check_product text-center center-block"
                                                href="#"><span class="fa fa-shopping-cart"/>&amp;nbsp;В корзину
                                             </a>
+
                                         </div>
                                     </form>
                                 </div>
@@ -1647,16 +1648,16 @@
                                 <span itemprop="price" style="display:none;" t-esc="product.website_price"/>
                                 <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
                             </b>
-                            <t t-if="len(product.product_variant_ids) == 1">
-                                <a class="btn btn-default btn-xs a-submit">
-                                    <span class="fa fa-shopping-cart"/>
-                                </a>
-                            </t>
-                            <t t-if="len(product.product_variant_ids) &gt; 1">
-                                <a class="btn btn-default btn-xs" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']&gt;1 else None))">
-                                    <span class="fa fa-shopping-cart"/>
-                                </a>
-                            </t>
+                            <!--<t t-if="len(product.product_variant_ids) == 1">-->
+                                <!--<a class="btn btn-default btn-xs a-submit">-->
+                                    <!--<span class="fa fa-shopping-cart"/>-->
+                                <!--</a>-->
+                            <!--</t>-->
+                            <!--<t t-if="len(product.product_variant_ids) &gt; 1">-->
+                                <!--<a class="btn btn-default btn-xs" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']&gt;1 else None))">-->
+                                    <!--<span class="fa fa-shopping-cart"/>-->
+                                <!--</a>-->
+                            <!--</t>-->
                         </div>
                     </section>
                 </div>
@@ -1713,6 +1714,20 @@
                 <t t-else="">
                     <input name="product_id" t-att-value="product.product_variant_id.id" type="hidden"/>
                 </t>
+                <div class="measure">
+                    <div class="length">
+                        <span class="fa fa-2x fa-arrows-h length-arrow"/>
+                        <span class="length-val" t-esc="product.default_variant.length"/>
+                    </div>
+                    <div class="height">
+                        <span class="fa fa-2x fa-arrows-v height-arrow"/>
+                        <span class="height-val" t-esc="product.default_variant.height"/>
+                    </div>
+                    <div class="width">
+                        <span class="fa fa-2x fa-arrows-h width-arrow"/>
+                        <span class="width-val" t-esc="product.default_variant.width"/>
+                    </div>
+                </div>
             </form>
         </template>
     </data>
