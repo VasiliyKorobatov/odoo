@@ -20,7 +20,7 @@
                             <t t-foreach="product.images" t-as="i">
                                 <li>
                                     <a t-att-href="'/web/image/product.image/%s/image' %i.id">
-                                        <img class="image_thumb img-responsive" itemprop="image"
+                                        <img class="img img-responsive" itemprop="image"
                                              t-att-src="'/web/image/product.image/%s/image_small' %i.id"/>
                                     </a>
                                 </li>
