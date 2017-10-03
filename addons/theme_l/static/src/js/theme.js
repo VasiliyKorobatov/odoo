@@ -117,7 +117,7 @@ function update_variant_detail(){
                 $('#default_code').text(result[0]['default_code']);
             });
         });
-        $("#xzoom-default").attr("src",'/website/image/product.product/'+variant_id+'/image');
-        $("#xzoom-default").attr("xoriginal",'/website/image/product.product/'+variant_id+'/image');
+//        $("#xzoom-default").attr("src",'/website/image/product.product/'+variant_id+'/image');
+//        $("#xzoom-default").attr("xoriginal",'/website/image/product.product/'+variant_id+'/image');
     }
 }
