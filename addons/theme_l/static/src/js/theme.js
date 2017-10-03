@@ -22,6 +22,7 @@ $(document).ready(function() {
     });
 
     update_variant_detail();
+    update_product_price();
     $("select.js_variant_change").change(function(){
         update_variant_detail();
     });
@@ -63,13 +64,25 @@ function diffarray(a,b){
         return b.indexOf(i) < 0;
     })
 }
-//
-//function update_product_price(){
-//    prc = $.parseJSON($("ul.js_add_cart_variants").attr("data-attribute_value_ids"));
-//        prc.forEach(function (item,i,arr) {
-//
-//         }
-//}
+
+function update_product_price(){
+    pids = [];
+    $(".product-attributes").each(function(){
+        product_id = $(this).find(".active").find("input").val();
+        pids.push(parseInt(product_id));
+    });
+    if(pids.length)
+        odoo.define('website.product', function(require) {
+            'use strict';
+            var Model = require('web.Model');
+            var Product = new Model('product.product');
+            Product.call('read', [pids,['website_price']]).then(function(result){
+            result.forEach(function(item,i,arr){
+                $("#product_"+item.id).parents("form").find(".oe_currency_value").text((item.website_price.toFixed(2)).replace(".",","));
+                });
+            });
+        });
+}
 
 
 function update_variant_detail(){
