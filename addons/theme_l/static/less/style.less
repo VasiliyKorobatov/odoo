@@ -556,3 +556,52 @@ footer a:hover {
 .width-arrow{
     transform: rotate(-45deg);
 }
+
+.measure {
+    z-index: 100;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    background: rgba(255, 255, 255, 0.5);
+    width: 100px;
+    border-radius: 10px;
+}
+
+.oe_product:hover .measure {
+    display: inline;
+}
+.length {
+    position: relative;
+    top: 33px;
+    left: 34px;
+}
+.height {
+    position: relative;
+    top: -10px;
+    left: 29px;
+}
+.width {
+    position: relative;
+    top: -21px;
+    left: 14px;
+}
+.length-arrow, .height-arrow, .width-arrow {
+    color: gray;
+}
+.length-val {
+    position: relative;
+    top: -5px;
+}
+.height-val {
+    position: relative;
+    top: -26px;
+    left: -23px;
+}
+.width-val {
+    position: relative;
+    top: 13px;
+    left: -40px;
+}
+
+
