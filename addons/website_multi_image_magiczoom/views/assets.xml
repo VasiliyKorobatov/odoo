@@ -3,8 +3,7 @@
     <data>
         <template id="magiczoom_frontend" name="MagicZoomPlus Style Frontend" inherit_id="website.assets_frontend">
             <xpath expr="link[last()]" position="after">
-                <link href="/website_multi_image_magiczoom/static/src/css/magiczoomplus.css" rel="stylesheet"
-                      type="text/less"/>
+                <!--<link href="/website_multi_image_magiczoom/static/src/css/magiczoomplus.css" rel="stylesheet" type="text/less"/>-->
             </xpath>
         </template>
         <template id="magiczoom_js" inherit_id="website.assets_frontend" name="MagicZoomPlus Js">
