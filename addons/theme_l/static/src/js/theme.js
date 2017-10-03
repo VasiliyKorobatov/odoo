@@ -63,13 +63,13 @@ function diffarray(a,b){
         return b.indexOf(i) < 0;
     })
 }
-
-function update_product_price(){
-    prc = $.parseJSON($("ul.js_add_cart_variants").attr("data-attribute_value_ids"));
-        prc.forEach(function (item,i,arr) {
-
-         }
-}
+//
+//function update_product_price(){
+//    prc = $.parseJSON($("ul.js_add_cart_variants").attr("data-attribute_value_ids"));
+//        prc.forEach(function (item,i,arr) {
+//
+//         }
+//}
 
 
 function update_variant_detail(){
