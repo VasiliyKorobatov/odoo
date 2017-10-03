@@ -10,7 +10,9 @@
                         <t t-if="product.product_variant_ids">
                             <t t-foreach="product.product_variant_ids" t-as="variant">
                                 <li>
-                                    <a t-att-href="'/web/image/product.product/%s/image' %variant.id">
+                                    <a data-zoom-id="zoom" t-att-href="'/web/image/product.product/%s/image' %variant.id"
+                                    t-att-data-image="'/web/image/product.product/%s/image/500x500' %variant.id"
+                                    t-att-title="variant.name">
                                         <img class="img img-responsive" itemprop="image"
                                                 t-att-src="'/web/image/product.product/%s/image_small' %variant.id"/>
                                     </a>
@@ -20,7 +22,9 @@
                         <t t-if="product.product_variant_ids">
                             <t t-foreach="product.images" t-as="i">
                                 <li>
-                                    <a t-att-href="'/web/image/product.image/%s/image' %i.id">
+                                    <a data-zoom-id="zoom" t-att-href="'/web/image/product.image/%s/image' %i.id"
+                                    t-att-data-image="'/web/image/product.image/%s/image/500x500' %i.id"
+                                    t-att-title="i.image_alt">
                                         <img class="img img-responsive" itemprop="image"
                                              t-att-src="'/web/image/product.image/%s/image_small' %i.id"/>
                                     </a>
@@ -30,7 +34,9 @@
                     </ol>
                 </div>
                 <div class="image_bigsize">
-                    <img t-att-src="'/web/image/product.product/%s/image' %product.default_variant.id" class="img img-responsive"  itemprop="image"/>
+                    <a t-att-href="'/web/image/product.product/%s/image/' %product.default_variant.id" class="MagicZoom" id="zoom" t-att-title="product.default_variant.name" >
+                        <img t-att-src="'/web/image/product.product/%s/image/500x500' %product.default_variant.id" class="img img-responsive"  itemprop="image"/>
+                    </a>
                 </div>
             </div>
             <!--<input type="hidden" id="variant_img_display" t-att-value="product.variant_bool"/>-->
