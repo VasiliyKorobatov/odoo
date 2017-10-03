@@ -109,6 +109,8 @@ class Cdr(models.Model):
             else:
                 if self.dstchannel and self.dstchannel.split('/')[1]:
                     dst = self.dstchannel.split('/')[1].split('-')[0]
+                else:
+                    dst = 1
             user_dst = self.env['res.users'].search([('sip_peer.callerid', '=', dst,)], limit=1)
             self.to_partner = user_dst.partner_id if user_dst and dst_internal else self.env['res.partner'].search(['|', ('phone', 'like', dst,), ('mobile', 'like', dst,)],
                                                                                                                limit=1)
