@@ -99,7 +99,7 @@ function update_variant_detail(){
         prc.forEach(function (item,i,arr) {
             if (diffarray(attrs, item[1]).length == 0){
                 variant_id = arr[i][0];
-                price = arr[i][3];
+                price = arr[i][2];
             }
         });
         if(typeof price != "undefined"){
