@@ -51,8 +51,11 @@ $(document).ready(function() {
             'use strict';
             var Model = require('web.Model');
             var Product = new Model('product.product');
-            Product.call('read', [[parseInt(product)],['website_price']]).then(function(result){
+            Product.call('read', [[parseInt(product)],['website_price','length','width','height']]).then(function(result){
                     form.find('.oe_currency_value').text((result[0]['website_price'].toFixed(2)).replace('.',','));
+                    form.find('.length-val').text(result[0]['length']);
+                    form.find('.width-val').text(result[0]['width']);
+                    form.find('.height-val').text(result[0]['height']);
                 });
             });
          });
