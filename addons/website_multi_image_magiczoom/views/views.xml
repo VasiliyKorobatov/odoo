@@ -11,7 +11,8 @@
                             <t t-foreach="product.product_variant_ids" t-as="variant">
                                 <li>
                                     <a t-att-href="'/web/image/product.product/%s/image' %variant.id">
-                                        <img t-att-src="'/web/image/product.product/%s/image_small' %variant.id"/>
+                                        <img class="img img-responsive" itemprop="image"
+                                                t-att-src="'/web/image/product.product/%s/image_small' %variant.id"/>
                                     </a>
                                 </li>
                             </t>
