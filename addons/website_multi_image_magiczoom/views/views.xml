@@ -13,7 +13,7 @@
                             <t t-foreach="product.product_variant_ids" t-as="variant">
                                 <li>
                                     <a t-att-href="'/web/image/product.product/%s/image' %variant.id">
-                                        <img t-att-src="'/web/image/product.product/%s/image' %variant.id"/>
+                                        <img t-att-src="'/web/image/product.product/%s/image_small' %variant.id"/>
                                     </a>
                                 </li>
                             </t>
@@ -25,7 +25,7 @@
                                 <li>
                                     <a t-att-href="'/web/image/product.image/%s/image' %i.id">
                                         <img class="image_thumb img-responsive" itemprop="image"
-                                             t-att-src="'data:image/jpeg;base64,%s' %i.image_small"/>
+                                             t-att-src="'/web/image/product.image/%s/image_small' %i.id"/>
                                     </a>
                                 </li>
                             </t>
