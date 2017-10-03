@@ -30,7 +30,7 @@
                     </ol>
                 </div>
                 <div class="image_bigsize">
-                    <img t-att-src="'/web/image/product.product/%s/image' %product.default_variant.id" class="image_thumb img-responsive"  itemprop="image"/>
+                    <img t-att-src="'/web/image/product.product/%s/image' %product.default_variant.id" class="img img-responsive"  itemprop="image"/>
                 </div>
             </div>
             <!--<input type="hidden" id="variant_img_display" t-att-value="product.variant_bool"/>-->
