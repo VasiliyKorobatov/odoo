@@ -14,7 +14,8 @@
         'website_multi_image_zoom',
     ],
     'data': [
-        'views/templates.xml',
+        'views/assets.xml',
+        'views/views.xml',
     ],
     'installable': True,
 }
