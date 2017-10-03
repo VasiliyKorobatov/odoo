@@ -8,6 +8,8 @@
                 <div id='carousel-custom' class='carousel slide' data-interval="false">
                     <ol class='carousel-indicators'>
                         <t t-if="product.product_variant_ids">
+                            <li>1</li>
+
                             <t t-foreach="product.product_variant_ids" t-as="variant">
                                 <li>
                                     <a t-att-href="'/web/image/product.product/%s/image' %variant.id">
@@ -17,6 +19,8 @@
                             </t>
                         </t>
                         <t t-if="product.product_variant_ids">
+                                                            <li>2</li>
+
                             <t t-foreach="product.images" t-as="i">
                                 <li>
                                     <a t-att-href="'/web/image/product.image/%s/image' %i.id">
