@@ -195,7 +195,8 @@
                                                                t-att-data-region-id='city.state_id.id'
                                                                t-att-data-region-name='city.state_id.name'
                                                             >
-                                                                <i class="circle"/>&amp;nbsp;<span t-esc="'%s, %s' % (city.name,city.state_id.name)"/>
+                                                                <i class="circle"/>&amp;nbsp;
+                                                                <span t-esc="'%s, %s' % (city.name,city.state_id.name)"/>
                                                             </a>
                                                             <t t-if="city.address">
                                                                 <a t-att-href="city.url"
@@ -281,7 +282,10 @@
                     </a>
                     <a groups="base.group_user" t-attf-href="/my/home" class="btn btn-default">
                         <span class="fa fa-user-circle-o"/>
-                        <b><span class="hidden-sm">Личный</span> кабинет</b>
+                        <b>
+                            <span class="hidden-sm">Личный</span>
+                            кабинет
+                        </b>
                     </a>
                     <a groups="base.group_user" t-attf-href="/web/session/logout?redirect=/" class="btn btn-default">
                         <span class="fa fa-sign-out"/>
@@ -1094,27 +1098,47 @@
                             </div>
                         </div>
                     </section>
-                    <a name="description"/>
-                    <div itemprop="description" t-field="product.website_description" class="oe_structure mt16"
-                         id="product_full_description"/>
-                    <hr class="mb32"/>
-                    <section class="container">
-                        <div class="row col-md-10 col-md-offset-1">
-                            <!--<div class="text-muted">-->
-                            <!--<h3 class="fa fa-comment-o">-->
-                            <!--<a id="comments">-->
-                            <!--<t t-if="len(product.website_message_ids) == 1"><t t-esc="len(product.website_message_ids)"/> комментарий </t>-->
-                            <!--<t t-if="len(product.website_message_ids) &gt; 1"><t t-esc="len(product.website_message_ids)"/> комментариев</t>-->
-                            <!--</a>-->
-                            <!--</h3>-->
-                            <!--</div>-->
-                            <t t-call="website_mail.message_thread">
+                    <section>
+                        <div class="container">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active">
+                                    <a href="#product-description" aria-controls="home" role="tab" data-toggle="tab">Описание</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#review" aria-controls="profile" role="tab" data-toggle="tab">Отзывы</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#delivery-payment" aria-controls="messages" role="tab" data-toggle="tab">Доставка и оплата
+                                    </a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#insurance" aria-controls="settings" role="tab" data-toggle="tab">Гарантии
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="product-description">
+                                    <a name="description"/>
+                            <div itemprop="description" t-field="product.website_description"
+                                 class="oe_structure mt16" id="product_full_description"/>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="review">
+                                    <t t-call="website_mail.message_thread">
                                 <t t-set="object" t-value="product"/>
                                 <t t-set="chatter_mode" t-value="'json'"/>
                                 <t t-set="rating_enable" t-value="True"/>
                             </t>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="delivery-payment">
+
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="insurance">
+
+                                </div>
+                            </div>
                         </div>
                     </section>
+
                     <t t-set="head">
                         <!-- Facebook and linkedin sharing data -->
                         <meta property="og:type" content="website"/>
@@ -1563,9 +1587,13 @@
                                             <t t-foreach="tr_product" t-as="td_product">
                                                 <t t-if="td_product">
                                                     <t t-set="product" t-value="td_product['product']"/>
-                                                    <td t-att-colspan="td_product['x'] != 1 and td_product['x']" t-att-rowspan="td_product['y'] != 1 and td_product['y']" t-attf-class="oe_product oe_grid oe-height-#{td_product['y']*4} #{ td_product['class'] }">
-                                                        <div class="oe_product_cart" t-att-data-publish="product.website_published and 'on' or 'off'">
-                                                            <t t-set="product_image_big" t-value="td_product['x']+td_product['y'] &gt; 2"/>
+                                                    <td t-att-colspan="td_product['x'] != 1 and td_product['x']"
+                                                        t-att-rowspan="td_product['y'] != 1 and td_product['y']"
+                                                        t-attf-class="oe_product oe_grid oe-height-#{td_product['y']*4} #{ td_product['class'] }">
+                                                        <div class="oe_product_cart"
+                                                             t-att-data-publish="product.website_published and 'on' or 'off'">
+                                                            <t t-set="product_image_big"
+                                                               t-value="td_product['x']+td_product['y'] &gt; 2"/>
                                                             <!--<t t-call="website_sale.products_item"/>-->
                                                             <t t-call="theme_l.products_item"/>
                                                         </div>
@@ -1579,7 +1607,9 @@
                                 <t t-if="not bins">
                                     <div class="text-center text-muted">
                                         <h3 class="css_editable_display">Нет товаров.</h3>
-                                        <p groups="sales_team.group_sale_manager">Нажмите <i>'Новый'</i> в верхнем правом углу, чтобы создать товар.</p>
+                                        <p groups="sales_team.group_sale_manager">Нажмите <i>'Новый'</i> в верхнем
+                                            правом углу, чтобы создать товар.
+                                        </p>
                                     </div>
                                 </t>
                             </div>
@@ -1594,7 +1624,8 @@
             </xpath>
         </template>
         <template id="theme_l.products_item" name="Custom Product Item">
-            <form action="/shop/cart/update" method="post" t-attf-class="#{'disable_to_order' if any([not s.can_be_ordered for s in product.website_style_ids]) else ''}">
+            <form action="/shop/cart/update" method="post"
+                  t-attf-class="#{'disable_to_order' if any([not s.can_be_ordered for s in product.website_style_ids]) else ''}">
                 <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
                 <div itemscope="itemscope" itemtype="http://schema.org/Product">
                     <div class="ribbon-wrapper">
@@ -1616,8 +1647,11 @@
                         <div class="ribbon btn btn-danger">Предзаказ!</div>
                     </div>
                     <div class="oe_product_image">
-                        <a itemprop="url" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']&gt;1 else None))">
-                            <span itemprop="image" t-field="product.image" t-options="{'widget': 'image', 'resize': None if product_image_big else '500x500', 'zoom': 'image'}" t-att-alt="product.name"/>
+                        <a itemprop="url"
+                           t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']&gt;1 else None))">
+                            <span itemprop="image" t-field="product.image"
+                                  t-options="{'widget': 'image', 'resize': None if product_image_big else '500x500', 'zoom': 'image'}"
+                                  t-att-alt="product.name"/>
                         </a>
                     </div>
                     <t t-if="show_publish">
@@ -1632,31 +1666,37 @@
                     <section>
                         <h5>
                             <strong>
-                                <a itemprop="name" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']&gt;1 else None))" t-field="product.name"/>
+                                <a itemprop="name"
+                                   t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']&gt;1 else None))"
+                                   t-field="product.name"/>
                             </strong>
                         </h5>
                         <div class="text-info oe_subdescription" contenteditable="false">
                             <div itemprop="description" t-field="product.description_sale"/>
                         </div>
-                        <div itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" class="product_price" t-if="product.product_variant_ids">
+                        <div itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer"
+                             class="product_price" t-if="product.product_variant_ids">
                             <b>
                                 <t t-if="(compute_currency(product.lst_price) - product.website_price ) &gt; 0.01  and website.get_current_pricelist().discount_policy=='without_discount'">
-                                    <del class="text-danger mr8" style="white-space: nowrap;" t-esc="compute_currency(product.website_public_price)" t-options="{'widget': 'monetary', 'display_currency': website.get_current_pricelist().currency_id, 'from_currency': website.currency_id}"/>
+                                    <del class="text-danger mr8" style="white-space: nowrap;"
+                                         t-esc="compute_currency(product.website_public_price)"
+                                         t-options="{'widget': 'monetary', 'display_currency': website.get_current_pricelist().currency_id, 'from_currency': website.currency_id}"/>
                                 </t>
 
-                                <span t-esc="product.website_price" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                <span t-esc="product.website_price"
+                                      t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
                                 <span itemprop="price" style="display:none;" t-esc="product.website_price"/>
                                 <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
                             </b>
                             <!--<t t-if="len(product.product_variant_ids) == 1">-->
-                                <!--<a class="btn btn-default btn-xs a-submit">-->
-                                    <!--<span class="fa fa-shopping-cart"/>-->
-                                <!--</a>-->
+                            <!--<a class="btn btn-default btn-xs a-submit">-->
+                            <!--<span class="fa fa-shopping-cart"/>-->
+                            <!--</a>-->
                             <!--</t>-->
                             <!--<t t-if="len(product.product_variant_ids) &gt; 1">-->
-                                <!--<a class="btn btn-default btn-xs" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']&gt;1 else None))">-->
-                                    <!--<span class="fa fa-shopping-cart"/>-->
-                                <!--</a>-->
+                            <!--<a class="btn btn-default btn-xs" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']&gt;1 else None))">-->
+                            <!--<span class="fa fa-shopping-cart"/>-->
+                            <!--</a>-->
                             <!--</t>-->
                         </div>
                     </section>
@@ -1667,17 +1707,21 @@
                             <t t-if="len(variant.attribute_value_ids) &gt; 1">
                                 <!--<t t-esc="len(variant.attribute_value_ids)" />-->
                                 <t t-foreach="variant.attribute_value_ids" t-as="attribute">
-                                    <t t-if="attribute.attribute_id.type != 'color'" >
+                                    <t t-if="attribute.attribute_id.type != 'color'">
                                         <t t-if="product.default_variant.id == variant.id">
-                                            <label  class="change-variant btn btn-sm btn-default active">
-                                                <input name="product_id" class="product_id"  autocomplete="off" t-att-value="variant.id" type="radio" t-att-id="'product_%s' %variant.id"  checked="checked"/>
-                                                <t t-esc="attribute.name" />
+                                            <label class="change-variant btn btn-sm btn-default active">
+                                                <input name="product_id" class="product_id" autocomplete="off"
+                                                       t-att-value="variant.id" type="radio"
+                                                       t-att-id="'product_%s' %variant.id" checked="checked"/>
+                                                <t t-esc="attribute.name"/>
                                             </label>
                                         </t>
                                         <t t-else="">
-                                            <label  class="change-variant btn btn-sm btn-default ">
-                                                <input name="product_id" class="product_id" autocomplete="off" t-att-value="variant.id" type="radio" t-att-id="'product_%s' %variant.id"/>
-                                                <t t-esc="attribute.name" />
+                                            <label class="change-variant btn btn-sm btn-default ">
+                                                <input name="product_id" class="product_id" autocomplete="off"
+                                                       t-att-value="variant.id" type="radio"
+                                                       t-att-id="'product_%s' %variant.id"/>
+                                                <t t-esc="attribute.name"/>
                                             </label>
                                         </t>
                                     </t>
@@ -1688,15 +1732,19 @@
                             <t t-else="">
                                 <t t-foreach="variant.attribute_value_ids" t-as="attribute">
                                     <t t-if="product.default_variant.id == variant.id">
-                                        <label  class="change-variant btn btn-sm btn-default active">
-                                            <input name="product_id" class="product_id"  autocomplete="off" t-att-value="variant.id" type="radio" t-att-id="'product_%s' %variant.id"  checked="checked"/>
-                                            <t t-esc="attribute.name" />
+                                        <label class="change-variant btn btn-sm btn-default active">
+                                            <input name="product_id" class="product_id" autocomplete="off"
+                                                   t-att-value="variant.id" type="radio"
+                                                   t-att-id="'product_%s' %variant.id" checked="checked"/>
+                                            <t t-esc="attribute.name"/>
                                         </label>
                                     </t>
                                     <t t-else="">
-                                        <label  class="change-variant btn btn-sm btn-default ">
-                                            <input name="product_id" class="product_id" autocomplete="off" t-att-value="variant.id" type="radio" t-att-id="'product_%s' %variant.id"/>
-                                            <t t-esc="attribute.name" />
+                                        <label class="change-variant btn btn-sm btn-default ">
+                                            <input name="product_id" class="product_id" autocomplete="off"
+                                                   t-att-value="variant.id" type="radio"
+                                                   t-att-id="'product_%s' %variant.id"/>
+                                            <t t-esc="attribute.name"/>
                                         </label>
                                     </t>
                                 </t>
