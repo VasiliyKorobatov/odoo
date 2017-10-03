@@ -281,7 +281,7 @@
                     </a>
                     <a groups="base.group_user" t-attf-href="/my/home" class="btn btn-default">
                         <span class="fa fa-user-circle-o"/>
-                        <b>Личный кабинет</b>
+                        <b><span class="hidden-sm">Личный</span> кабинет</b>
                     </a>
                     <a groups="base.group_user" t-attf-href="/web/session/logout?redirect=/" class="btn btn-default">
                         <span class="fa fa-sign-out"/>
