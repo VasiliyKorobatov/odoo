@@ -40,16 +40,17 @@
     height: auto;
     margin: 1 !important;
     width: auto;
+    text-indent: 0;
 }
 .carousel-image .carousel-indicators li img {
     display: block;
-    opacity: 0.5;
+    opacity: 0.75;
 }
 .carousel-image .carousel-indicators li.active img {
     opacity: 1;
 }
 .carousel-image .carousel-indicators li:hover img {
-    opacity: 0.75;
+    opacity: 0.9;
 }
 .carousel-image .carousel-outer {
     position: relative;
