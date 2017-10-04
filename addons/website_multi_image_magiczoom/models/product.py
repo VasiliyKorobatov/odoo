@@ -10,6 +10,9 @@ class Product(models.Model):
     def _compute_attribute_string(self):
         attribute_value_ids = self.attribute_value_ids
         attribute_string = ''
-        for attr in attribute_value_ids:
-            attribute_string += ' '+attr.attribute_id.name+' '+attr.name
+        attr_len = len(attribute_value_ids)
+        for i, attr in enumerate(attribute_value_ids):
+            attribute_string += attr.attribute_id.name+': '+attr.name
+            if i < (attr_len-1):
+                attribute_string += ', '
         self.attribute_string = attribute_string
