@@ -54,3 +54,31 @@
 .carousel-image .carousel-outer {
     position: relative;
 }
+
+@media (min-width: 979px) {
+    #thumb_img_add {
+        float: left;
+        width: 87px;
+        margin-left: 1px;
+    }
+
+    .carousel-image {
+        height: 300px;
+        overflow-y: auto;
+        margin: 7px 0px;
+    }
+
+   .carousel-image  .image_thumb{
+        height: 67px !important;
+    }
+
+   .carousel-image  .carousel-indicators li{
+        display:block!important;
+        text-align: center;
+        text-align: -webkit-center;
+   }
+}
+
+.image_bigsize{
+    background-color: white!important;
+}
