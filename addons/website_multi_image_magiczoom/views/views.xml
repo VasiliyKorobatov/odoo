@@ -42,49 +42,6 @@
                     </a>
                 </div>
             </div>
-            <!--<input type="hidden" id="variant_img_display" t-att-value="product.variant_bool"/>-->
-            <!--<input type="hidden" id="product_img_display" t-att-value="product.id"/>-->
-            <!--<div class="col-xs-12 col-sm-7 col-md-6 col-lg-7" id="product-image-block">-->
-            <!--Carousel indicators as Image ThumbNails -->
-            <!--<div id="thumb_img_add">-->
-            <!--<div id='carousel-custom' class='carousel slide' data-interval="false">-->
-            <!-- Indicators -->
-            <!--<ol class='carousel-indicators'>-->
-            <!--<li>-->
-            <!--<img onclick="pro_img_click(this)" itemprop="image"-->
-            <!--class="image_thumb img-responsive"-->
-            <!--t-att-src="'data:image/jpeg;base64,%s' %product.image"/>-->
-            <!--</li>-->
-            <!--<t t-foreach="product.images" t-as="i">-->
-            <!--<li>-->
-            <!--<img onclick="pro_img_click(this)" class="image_thumb img-responsive"-->
-            <!--t-att-src="'data:image/jpeg;base64,%s' %i.image"/>-->
-            <!--</li>-->
-            <!--</t>-->
-            <!--</ol>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!-- Assigned id to the span for able to find image which
-                like to be magnifying -->
-            <!--<div class="image_bigsize">-->
-            <!--<div id="ex1" onclick='full_img(this)'>-->
-            <!--<span itemprop="image" t-field="product.image"-->
-            <!--t-field-options='{"widget": "image", "class": "img_set"}'/>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!-- Model to display image instead of image zoom when in mobile view -->
-            <!--<div class="modal fade" tabindex="-1" role="dialog"-->
-            <!--id="img_modal" aria-hidden="true">-->
-            <!--<div class="modal-dialog">-->
-            <!--<div class="modal-content">-->
-            <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"-->
-            <!--style="padding:5px;margin-bottom:-8%;color:red;">x-->
-            <!--</button>-->
-            <!--<img class="img img-responsive" id="modal_img"/>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--</div>-->
         </xpath>
     </template>
 </odoo>
