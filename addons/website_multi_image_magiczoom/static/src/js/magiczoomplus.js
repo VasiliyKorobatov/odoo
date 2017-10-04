@@ -4182,43 +4182,43 @@ window.MagicZoom = (function() {
             this.zoomBox.setMode(this.option("zoomMode"));
             this.zoomBox.image.removeAttribute("width");
             this.zoomBox.image.removeAttribute("height");
-            if (typeof(r) !== "undefined") {
-                var N = Math.floor(Math.random() * A.now());
-                i(this.node).jStore("cr", A.$new(((Math.floor(Math.random() * 101) + 1) % 2) ? "span" : "div").setProps({
-                    id: "crMz" + N
-                }).jSetCss({
-                    display: "inline",
-                    overflow: "hidden",
-                    visibility: "visible",
-                    color: r[1],
-                    fontSize: r[2],
-                    fontWeight: r[3],
-                    fontFamily: "sans-serif",
-                    position: "absolute",
-                    top: 8,
-                    left: 8,
-                    margin: "auto",
-                    width: "auto",
-                    textAlign: "right",
-                    lineHeight: "2em",
-                    zIndex: 2147483647
-                }).changeContent(x(r[0])));
-                if (i(i(this.node).jFetch("cr")).byTag("a")[0]) {
-                    i(i(i(this.node).jFetch("cr")).byTag("a")[0]).jAddEvent("tap btnclick", function(O) {
-                        O.stopDistribution();
-                        window.open(this.href)
-                    }).setProps({
-                        id: "mzCrA" + N
-                    })
-                }
-                A.addCSS("#" + this.id + " > figure.mz-figure > #" + ("crMz" + N) + ",#" + this.id + " > figure.mz-figure > #" + ("crMz" + N) + " > #" + ("mzCrA" + N) + ",html body .mz-expand > #" + ("crMz" + N) + ",html body .mz-expand > #" + ("crMz" + N) + " > #" + ("mzCrA" + N), {
-                    display: "inline !important;",
-                    visibility: "visible !important;",
-                    color: r[1] + " !important;",
-                    "font-size": r[2] + "px !important;",
-                    "z-index": "2147483647 !important;"
-                }, "mz-runtime-css", true)
-            }
+//            if (typeof(r) !== "undefined") {
+//                var N = Math.floor(Math.random() * A.now());
+//                i(this.node).jStore("cr", A.$new(((Math.floor(Math.random() * 101) + 1) % 2) ? "span" : "div").setProps({
+//                    id: "crMz" + N
+//                }).jSetCss({
+//                    display: "inline",
+//                    overflow: "hidden",
+//                    visibility: "visible",
+//                    color: r[1],
+//                    fontSize: r[2],
+//                    fontWeight: r[3],
+//                    fontFamily: "sans-serif",
+//                    position: "absolute",
+//                    top: 8,
+//                    left: 8,
+//                    margin: "auto",
+//                    width: "auto",
+//                    textAlign: "right",
+//                    lineHeight: "2em",
+//                    zIndex: 2147483647
+//                }).changeContent(x(r[0])));
+//                if (i(i(this.node).jFetch("cr")).byTag("a")[0]) {
+//                    i(i(i(this.node).jFetch("cr")).byTag("a")[0]).jAddEvent("tap btnclick", function(O) {
+//                        O.stopDistribution();
+//                        window.open(this.href)
+//                    }).setProps({
+//                        id: "mzCrA" + N
+//                    })
+//                }
+//                A.addCSS("#" + this.id + " > figure.mz-figure > #" + ("crMz" + N) + ",#" + this.id + " > figure.mz-figure > #" + ("crMz" + N) + " > #" + ("mzCrA" + N) + ",html body .mz-expand > #" + ("crMz" + N) + ",html body .mz-expand > #" + ("crMz" + N) + " > #" + ("mzCrA" + N), {
+//                    display: "inline !important;",
+//                    visibility: "visible !important;",
+//                    color: r[1] + " !important;",
+//                    "font-size": r[2] + "px !important;",
+//                    "z-index": "2147483647 !important;"
+//                }, "mz-runtime-css", true)
+//            }
             if ((K = ("" + this.option("zoomWidth")).match(/^([0-9]+)?(px|%)?$/))) {
                 this.zoomBox.size.wunits = K[2] || "px";
                 this.zoomBox.size.width = (parseFloat(K[1]) || "auto")
