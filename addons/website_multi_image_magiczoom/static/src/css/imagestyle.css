@@ -24,7 +24,7 @@
     vertical-align: middle;
 }
 
-.carousel-custom .carousel-indicators {
+.carousel-image .carousel-indicators {
     margin: 10px 0 0;
     overflow: auto;
     position: static;
@@ -32,7 +32,7 @@
     white-space: nowrap;
     width: auto;
 }
-.carousel-custom .carousel-indicators li {
+.carousel-image .carousel-indicators li {
     background-color: transparent;
     -webkit-border-radius: 0;
     border-radius: 0;
@@ -41,16 +41,16 @@
     margin: 1 !important;
     width: auto;
 }
-.carousel-custom .carousel-indicators li img {
+.carousel-image .carousel-indicators li img {
     display: block;
     opacity: 0.5;
 }
-.carousel-custom .carousel-indicators li.active img {
+.carousel-image .carousel-indicators li.active img {
     opacity: 1;
 }
-.carousel-custom .carousel-indicators li:hover img {
+.carousel-image .carousel-indicators li:hover img {
     opacity: 0.75;
 }
-.carousel-custom .carousel-outer {
+.carousel-image .carousel-outer {
     position: relative;
 }
