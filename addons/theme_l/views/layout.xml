@@ -886,14 +886,20 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <div id="attr-color">
+                                    <div class="attr-color">
                                         <t t-foreach="product.attribute_line_ids.sorted(key=lambda x: x.attribute_id.sequence)"
                                            t-as="variant_id">
                                             <t t-if="variant_id.attribute_id.type == 'color'">
                                                 <t t-if="len(variant_id.value_ids) &gt; 1">Цвета:</t>
                                                 <t t-else="">Цвет:</t>
+
                                                 <t t-foreach="variant_id.value_ids" t-as="value_id">
-                                                    <span t-field="value_id.name"/>
+                                                     <t t-if="value_id in product.default_variant.attribute_value_ids">
+                                                             <span class="active" t-field="value_id.name"/>
+                                                     </t>
+                                                    <t t-else="">
+                                                        <span t-field="value_id.name"/>
+                                                    </t>
                                                 </t>
                                             </t>
                                         </t>
