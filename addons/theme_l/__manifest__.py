@@ -17,6 +17,6 @@
         'views/snippets.xml'
     ],
     'category': 'Theme/Creative',
-    'depends': ['website', 'sale'],
+    'depends': ['website', 'website_sale', 'sale'],
     'application': False,
 }
