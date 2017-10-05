@@ -13,3 +13,11 @@ class Website(models.Model):
     @api.model
     def sale_categories(self):
         return list(self.env['product.public.category'].sudo().search([]))
+
+
+class WebsiteConfigSettings(models.TransientModel):
+
+    _inherit = 'website.config.settings'
+
+    content_before = fields.Html(related='website_id.content_before')
+    content_after = fields.Html(related='website_id.content_after')
