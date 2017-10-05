@@ -62,11 +62,13 @@
         <field name="inherit_id"
                ref="website_sale.product_public_category_form_view"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='sequence']" position="after">
-                <group>
-                    <field name="content_before"/>
-                    <field name="content_after"/>
-                </group>
+            <xpath expr="//div[@class='oe_left']" position="after">
+                <div class="oe_left">
+                    <group>
+                        <field name="content_before"/>
+                        <field name="content_after"/>
+                    </group>
+                </div>
             </xpath>
         </field>
     </record>
