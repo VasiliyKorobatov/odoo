@@ -15,7 +15,7 @@
                 </group>
                 <group>
                     <group>
-                        <field name="default_variant" domain="[('product_tmpl_id','=', id)]" />
+                        <field name="default_variant" domain="[('product_tmpl_id','=', id)]"/>
                     </group>
                 </group>
             </xpath>
@@ -63,8 +63,10 @@
                ref="website_sale.product_public_category_form_view"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='sequence']" position="after">
-                <field name="content_before"/>
-                <field name="content_after"/>
+                <group>
+                    <field name="content_before"/>
+                    <field name="content_after"/>
+                </group>
             </xpath>
         </field>
     </record>
