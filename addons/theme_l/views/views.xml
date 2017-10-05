@@ -72,4 +72,24 @@
             </xpath>
         </field>
     </record>
+
+    <record model="ir.ui.view"
+            id="theme_l.website_config_settings_form_view">
+        <field name="name">theme_l.website.config.settings.form</field>
+        <field name="model">website.config.settings</field>
+        <field name="inherit_id"
+               ref="website.view_website_config_settings"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='optimization']" position="after">
+                <group string="Content In Shop Page" name="Content" groups="base.group_no_one">
+                    <div>
+                        <div>
+                            <field name="content_before"/>
+                            <field name="content_after"/>
+                        </div>
+                    </div>
+                </group>
+            </xpath>
+        </field>
+    </record>
 </odoo>
