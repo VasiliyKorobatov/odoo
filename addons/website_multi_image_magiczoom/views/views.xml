@@ -13,7 +13,7 @@
                                     <a data-zoom-id="zoom" t-att-href="'/web/image/product.product/%s/image' %variant.id"
                                     t-att-data-image="'/web/image/product.product/%s/image/500x500' %variant.id"
                                     t-att-title="'%s (%s)' %(variant.name, variant.attribute_string)"
-                                    t-att-data-variant-id="varinat.id">
+                                    t-att-data-variant-id="variant.id">
                                         <img class="img img-responsive" itemprop="image"
                                                 t-att-src="'/web/image/product.product/%s/image_small' %variant.id"
                                                 t-att-title="'%s (%s)' %(variant.name, variant.attribute_string)"
