@@ -41,7 +41,7 @@
                     <a t-att-href="'/web/image/product.product/%s/image/' %product.default_variant.id"
                         class="MagicZoom" id="zoom"
                         t-att-title="'%s (%s)' %(product.default_variant.name, product.default_variant.attribute_string)"
-                        data-options="textBtnClose: Закрыть; textBtnNext: Следующая; textBtnPrev: Предыдущая; textHoverZoomHint: Наведите для увеличения; textClickZoomHint: Нажмите для увеличения; textExpandHint: Нажмите, чтобы развернуть"
+                        data-options="selectorTrigger: hover; textBtnClose: Закрыть; textBtnNext: Следующая; textBtnPrev: Предыдущая; textHoverZoomHint: Наведите для увеличения; textClickZoomHint: Нажмите для увеличения; textExpandHint: Нажмите, чтобы развернуть"
                         data-mobile-options="textTouchZoomHint: Нажмите, чтобы увеличить; textClickZoomHint: Дважды нажмите, чтобы увеличить; textExpandHint: Нажмите, чтобы развернуть">
                         <img t-att-src="'/web/image/product.product/%s/image/500x500' %product.default_variant.id" class="img img-responsive"  itemprop="image"
                          t-att-title="'%s (%s)' %(product.default_variant.name, product.default_variant.attribute_string)"
