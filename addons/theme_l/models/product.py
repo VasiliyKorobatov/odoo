@@ -26,6 +26,6 @@ class ProductProduct(models.Model):
 
 #
 class ProductPublicCategory(models.Model):
-    _inherit = "product.public.category"
+    _inherit = 'product.public.category'
     content_before = fields.Html(string="Content Before")
     content_after = fields.Html(string="Content After")
