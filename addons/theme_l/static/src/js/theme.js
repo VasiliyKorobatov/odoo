@@ -41,7 +41,13 @@ $(document).ready(function() {
         }
         $("#city #searchinput").val(r);
     });
-
+    $("a[data-zoom-id='zoom']").hover(function(){
+        href = $(this).attr('href');
+        if(href.indexOf('product.product') !== -1){
+            variant_id = parseInt(href.split('/')[4]);
+            update_variant_detail(variant_id);
+        }
+    });
     $('label.change-variant').on('click',
         function(){
             product = $(this).find('input').val();
