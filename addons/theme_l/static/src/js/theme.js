@@ -118,6 +118,6 @@ function update_variant_detail(){
             });
         });
 //        $("#xzoom-default").attr("src",'/website/image/product.product/'+variant_id+'/image');
-//        $("#xzoom-default").attr("xoriginal",'/website/image/product.product/'+variant_id+'/image');
+        MagicZoom.switchTo("zoom", $("a[data-variant-id='"+variant_id+"']").parents("li").index());
     }
 }
