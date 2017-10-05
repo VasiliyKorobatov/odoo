@@ -1567,21 +1567,12 @@
             <xpath expr="//div[@id='wrap']" position="replace">
                 <div id="wrap" class="js_sale shop-page">
                     <div itemprop="description" t-field="category.content_before" class="oe_structure"/>
-                    <span t-esc="len(products)" />
+                    <span t-esc="len(bins)" />
                     <t t-if="category != NoneType">
                         <hr />
                     </t>
                     <div class="oe_structure"/>
                     <div class="container oe_website_sale">
-                        <!--<div class="products_pager">-->
-                        <!--<div class="row" style="width: 100%;">-->
-                        <!--<t t-call="website_sale.search">-->
-                        <!--<t t-set="search_class">pagination form-inline o_website_sale_search</t>-->
-                        <!--</t>-->
-                        <!--<t t-call="website_sale.pricelist_list"/>-->
-                        <!--&lt;!&ndash;<t t-call="website.pager"/>&ndash;&gt;-->
-                        <!--</div>-->
-                        <!--</div>-->
                         <div class="row">
                             <div class="hidden" id="products_grid_before"/>
                             <div class="col-md-12" id="products_grid">
