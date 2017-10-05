@@ -1567,7 +1567,7 @@
             <xpath expr="//div[@id='wrap']" position="replace">
                 <div id="wrap" class="js_sale shop-page">
                     <div itemprop="description" t-field="category.content_before" class="oe_structure"/>
-                    <span t-ecs="len(products)" />
+                    <span t-esc="len(products)" />
                     <t t-if="category != NoneType">
                         <hr />
                     </t>
