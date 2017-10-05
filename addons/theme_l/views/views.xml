@@ -84,7 +84,9 @@
                 <group string="Content In Shop Page" name="Content" groups="base.group_no_one">
                     <div>
                         <div>
+                            <label for="content_before" string="Content In Top Shop page"/>
                             <field name="content_before"/>
+                            <label for="content_after" string="Content In Bottom Shop page"/>
                             <field name="content_after"/>
                         </div>
                     </div>
