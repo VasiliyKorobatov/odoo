@@ -1651,7 +1651,7 @@
                     <div class="oe_product_image">
                         <a itemprop="url"
                            t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']&gt;1 else None))">
-                            <span itemprop="image" t-field="product.image"
+                            <span itemprop="image" t-field="product.default_variant.image"
                                   t-options="{'widget': 'image', 'resize': None if product_image_big else '500x500', 'zoom': 'image'}"
                                   t-att-alt="product.name"/>
                         </a>
