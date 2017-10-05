@@ -303,9 +303,6 @@
         <template id="category_left_menu" inherit_id="custom_header" name="Left Category Menu">
             <xpath expr="//*[@id='sidebar']" position="inside">
                 <ul class="nav nav-pills nav-stacked mt8">
-                    <!--<li t-att-class=" '' if category else 'active' ">-->
-                    <!--<a t-att-href="keep('/shop',category=0)" class="o_not_editable">All Products</a>-->
-                    <!--</li>-->
                     <t t-foreach="request.website.sale_categories()" t-as="c">
                         <t t-call="theme_l.categories_recursive"/>
                     </t>
@@ -315,7 +312,6 @@
         </template>
         <template id="categories_recursive" name="Category list">
             <li t-att-class="'active' if c.id == int(category or 0) else None">
-                <!--<a t-att-href="keep('/shop/category/' + slug(c), category=0)" t-field="c.name"></a>-->
                 <a class="left-menu-item" t-att-href="'/shop/category/'+slug(c)">
                     <div class="category-image" t-field="c.image_small"
                          t-options="{'widget': 'image', 'class': 'img-circle'}"/>
@@ -715,7 +711,6 @@
 
         <template id="categories_recursive_homepage" name="Category list HomePage">
             <li class="col-md-4">
-                <!--<a t-att-href="keep('/shop/category/' + slug(c), category=0)" t-field="c.name"></a>-->
                 <a class="homepage-category thumbnail" t-att-href="'/shop/category/'+slug(c)">
                     <div class="category-image" t-field="c.image"
                          t-options="{'widget': 'image', 'class': 'img-rounded center-block'}"/>
@@ -894,9 +889,9 @@
                                                 <t t-else="">Цвет:</t>
 
                                                 <t t-foreach="variant_id.value_ids" t-as="value_id">
-                                                     <t t-if="value_id in product.default_variant.attribute_value_ids">
-                                                             <span class="active" t-field="value_id.name"/>
-                                                     </t>
+                                                    <t t-if="value_id in product.default_variant.attribute_value_ids">
+                                                        <span class="active" t-field="value_id.name"/>
+                                                    </t>
                                                     <t t-else="">
                                                         <span t-field="value_id.name"/>
                                                     </t>
@@ -1008,14 +1003,15 @@
                                                                             <t t-foreach="variant_id.value_ids"
                                                                                t-as="value_id">
                                                                                 <t t-if="value_id in product.default_variant.attribute_value_ids">
-                                                                                <option t-att-value="value_id.id" selected="selected">
-                                                                                    <span t-field="value_id.name"/>
-                                                                                </option>
-                                                                                 </t>
+                                                                                    <option t-att-value="value_id.id"
+                                                                                            selected="selected">
+                                                                                        <span t-field="value_id.name"/>
+                                                                                    </option>
+                                                                                </t>
                                                                                 <t t-else="">
-                                                                                <option t-att-value="value_id.id">
-                                                                                    <span t-field="value_id.name"/>
-                                                                                </option>
+                                                                                    <option t-att-value="value_id.id">
+                                                                                        <span t-field="value_id.name"/>
+                                                                                    </option>
                                                                                 </t>
                                                                             </t>
                                                                         </select>
@@ -1055,26 +1051,27 @@
                                                                             <t t-foreach="variant_id.value_ids"
                                                                                t-as="value_id">
                                                                                 <t t-if="value_id in product.default_variant.attribute_value_ids">
-                                                                                <option t-att-value="value_id.id" selected="selected">
-                                                                                    <span t-field="value_id.name"/>
-                                                                                </option>
-                                                                                 </t>
+                                                                                    <option t-att-value="value_id.id"
+                                                                                            selected="selected">
+                                                                                        <span t-field="value_id.name"/>
+                                                                                    </option>
+                                                                                </t>
                                                                                 <t t-else="">
-                                                                                <option t-att-value="value_id.id">
-                                                                                    <span t-field="value_id.name"/>
-                                                                                </option>
+                                                                                    <option t-att-value="value_id.id">
+                                                                                        <span t-field="value_id.name"/>
+                                                                                    </option>
                                                                                 </t>
                                                                                 <!--<t t-if="variant_id.id == product.default_variant.id" >-->
-                                                                                    <!--<option t-att-value="value_id.id" selected="selected">-->
-                                                                                        <!--<span t-field="value_id.name"/>-->
-                                                                                    <!--</option>-->
+                                                                                <!--<option t-att-value="value_id.id" selected="selected">-->
+                                                                                <!--<span t-field="value_id.name"/>-->
+                                                                                <!--</option>-->
                                                                                 <!--</t>-->
                                                                                 <!--<t t-else="">-->
-                                                                                    <!--<option t-att-value="value_id.id">-->
-                                                                                        <!--<span t-field="value_id.name"/>-->
-                                                                                        <!--<t t-esc="variant_id.id" />- -->
+                                                                                <!--<option t-att-value="value_id.id">-->
+                                                                                <!--<span t-field="value_id.name"/>-->
+                                                                                <!--<t t-esc="variant_id.id" />- -->
                                                                                 <!--<t t-esc="product.default_variant.id" />-->
-                                                                                    <!--</option>-->
+                                                                                <!--</option>-->
                                                                                 <!--</t>-->
                                                                             </t>
                                                                         </select>
@@ -1084,7 +1081,10 @@
                                                         </t>
                                                     </ul>
                                                 </t>
-                                                <p t-if="len(product.product_variant_ids) &gt; 1" class="css_not_available_msg bg-danger" style="padding: 15px;">Товар временно не доступен</p>
+                                                <p t-if="len(product.product_variant_ids) &gt; 1"
+                                                   class="css_not_available_msg bg-danger" style="padding: 15px;">Товар
+                                                    временно не доступен
+                                                </p>
                                             </div>
                                             <a id="add_to_cart"
                                                class="btn btn-primary btn-lg mt8 js_check_product text-center center-block"
@@ -1101,13 +1101,16 @@
                         <div class="container">
                             <ul class="nav nav-tabs" role="tablist">
                                 <li role="presentation" class="active">
-                                    <a href="#product-description" aria-controls="home" role="tab" data-toggle="tab">Описание</a>
+                                    <a href="#product-description" aria-controls="home" role="tab" data-toggle="tab">
+                                        Описание
+                                    </a>
                                 </li>
                                 <li role="presentation">
                                     <a href="#review" aria-controls="profile" role="tab" data-toggle="tab">Отзывы</a>
                                 </li>
                                 <li role="presentation">
-                                    <a href="#delivery-payment" aria-controls="messages" role="tab" data-toggle="tab">Доставка и оплата
+                                    <a href="#delivery-payment" aria-controls="messages" role="tab" data-toggle="tab">
+                                        Доставка и оплата
                                     </a>
                                 </li>
                                 <li role="presentation">
@@ -1118,15 +1121,15 @@
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane active" id="product-description">
                                     <a name="description"/>
-                            <div itemprop="description" t-field="product.website_description"
-                                 class="oe_structure mt16" id="product_full_description"/>
+                                    <div itemprop="description" t-field="product.website_description"
+                                         class="oe_structure mt16" id="product_full_description"/>
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="review">
                                     <t t-call="website_mail.message_thread">
-                                <t t-set="object" t-value="product"/>
-                                <t t-set="chatter_mode" t-value="'json'"/>
-                                <t t-set="rating_enable" t-value="True"/>
-                            </t>
+                                        <t t-set="object" t-value="product"/>
+                                        <t t-set="chatter_mode" t-value="'json'"/>
+                                        <t t-set="rating_enable" t-value="True"/>
+                                    </t>
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="delivery-payment">
 
@@ -1687,16 +1690,14 @@
                                 <span itemprop="price" style="display:none;" t-esc="product.website_price"/>
                                 <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name"/>
                             </b>
-                            <!--<t t-if="len(product.product_variant_ids) == 1">-->
-                            <!--<a class="btn btn-default btn-xs a-submit">-->
-                            <!--<span class="fa fa-shopping-cart"/>-->
-                            <!--</a>-->
-                            <!--</t>-->
-                            <!--<t t-if="len(product.product_variant_ids) &gt; 1">-->
-                            <!--<a class="btn btn-default btn-xs" t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']&gt;1 else None))">-->
-                            <!--<span class="fa fa-shopping-cart"/>-->
-                            <!--</a>-->
-                            <!--</t>-->
+                        </div>
+                        <div class="see-more">
+                            <a class=" btn btn-xs btn-primary"
+                               t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']&gt;1 else None))"
+                            >
+                                Подробнее&amp;nbsp;
+                                <span class="fa fa-angle-right"/>
+                            </a>
                         </div>
                     </section>
                 </div>
