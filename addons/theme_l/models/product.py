@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-from odoo import api, fields, models
+from odoo import fields, models
 
 
 class Product(models.Model):
@@ -25,7 +25,7 @@ class ProductProduct(models.Model):
     length = fields.Integer('Length')
 
 #
-# class ProductPublicCategory(models.Model):
-#     _inherit = "product.public.category"
-#     content_before = fields.Html(string="Content Before")
-#     content_after = fields.Html(string="Content After")
+class ProductPublicCategory(models.Model):
+    _inherit = "product.public.category"
+    content_before = fields.Html(string="Content Before")
+    content_after = fields.Html(string="Content After")
