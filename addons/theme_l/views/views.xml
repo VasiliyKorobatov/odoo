@@ -84,8 +84,8 @@
                 <group string="Content In Shop Page" name="Content" groups="base.group_no_one">
                     <div>
                         <div>
-                            <!--<field name="content_before"/>-->
-                            <!--<field name="content_after"/>-->
+                            <field name="content_before"/>
+                            <field name="content_after"/>
                         </div>
                     </div>
                 </group>
