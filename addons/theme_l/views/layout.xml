@@ -1570,7 +1570,6 @@
                         <div itemprop="description" t-field="category.content_before" class="oe_structure"/>
                         <hr/>
                     </t>
-                    <div class="oe_structure"/>
                     <div class="container oe_website_sale">
                         <div class="row">
                             <div class="hidden" id="products_grid_before"/>
@@ -1614,7 +1613,6 @@
                             <t t-call="website.pager"/>
                         </div>
                     </div>
-                    <div class="oe_structure"/>
                     <t t-if="category">
                         <hr/>
                         <div itemprop="description" t-field="category.content_after" class="oe_structure"/>
