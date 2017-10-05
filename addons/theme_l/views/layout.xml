@@ -1568,8 +1568,11 @@
                 <div id="wrap" class="js_sale shop-page">
                     <t t-if="category">
                         <div itemprop="description" t-field="category.content_before" class="oe_structure"/>
-                        <hr/>
                     </t>
+                    <t t-else="">
+                        <div itemprop="description" t-field="website.content_before" class="oe_structure"/>
+                    </t>
+                    <hr/>
                     <div class="container oe_website_sale">
                         <div class="row">
                             <div class="hidden" id="products_grid_before"/>
@@ -1616,6 +1619,9 @@
                     <t t-if="category">
                         <hr/>
                         <div itemprop="description" t-field="category.content_after" class="oe_structure"/>
+                    </t>
+                    <t t-else="">
+                        <div itemprop="description" t-field="website.content_after" class="oe_structure"/>
                     </t>
                 </div>
 
