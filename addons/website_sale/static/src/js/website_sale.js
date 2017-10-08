@@ -12,7 +12,7 @@ odoo.define('website_sale.cart', function (require) {
         animation: true,
         html: true,
         title: function () {
-            return _t("My Cart");
+            return _t("Корзина");
         },
         container: 'body',
         placement: 'auto',
