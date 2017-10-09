@@ -149,8 +149,8 @@ class Letsencrypt(models.AbstractModel):
         _logger.info('7')
         if self.env.context.get('letsencrypt_dry_run'):
             crt_text = 'I\'m a test text'
-        _logger.info('8')
-        else:  # pragma: no cover
+            _logger.info('8')
+        else: # pragma: no cover
             from acme_tiny import get_crt, DEFAULT_CA
             crt_text = get_crt(
                 account_key, csr, acme_challenge, log=_logger, CA=DEFAULT_CA)
@@ -174,7 +174,7 @@ class Letsencrypt(models.AbstractModel):
         if reload_cmd:
             _logger.info('reloading webserver...')
             self.call_cmdline(['sh', '-c', reload_cmd])
-        _logger.info('12')
+            _logger.info('12')
         else:
             _logger.info('no command defined for reloading webserver, please '
                          'do it manually in order to apply new certificate')
