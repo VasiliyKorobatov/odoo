@@ -131,21 +131,30 @@ class Letsencrypt(models.AbstractModel):
 
     @api.model
     def cron(self):
+        _logger.info('1')
         domain = urlparse.urlparse(
             self.env['ir.config_parameter'].get_param(
                 'web.base.url', 'localhost')).netloc
+        _logger.info('2')
         self.validate_domain(domain)
+        _logger.info('3')
         account_key = self.generate_account_key()
+        _logger.info('4')
         csr = self.generate_csr(domain)
+        _logger.info('5')
         acme_challenge = get_challenge_dir()
+        _logger.info('6')
         if not os.path.isdir(acme_challenge):
             os.makedirs(acme_challenge)
+        _logger.info('7')
         if self.env.context.get('letsencrypt_dry_run'):
             crt_text = 'I\'m a test text'
+        _logger.info('8')
         else:  # pragma: no cover
             from acme_tiny import get_crt, DEFAULT_CA
             crt_text = get_crt(
                 account_key, csr, acme_challenge, log=_logger, CA=DEFAULT_CA)
+        _logger.info('9')
         with open(os.path.join(get_data_dir(), '%s.crt' % domain), 'w')\
                 as crt:
             crt.write(crt_text)
@@ -158,11 +167,14 @@ class Letsencrypt(models.AbstractModel):
             crt.write(chain_cert.read())
             chain_cert.close()
             _logger.info('wrote %s', crt.name)
+        _logger.info('10')
         reload_cmd = self.env['ir.config_parameter'].get_param(
             'letsencrypt.reload_command', False)
+        _logger.info('11')
         if reload_cmd:
             _logger.info('reloading webserver...')
             self.call_cmdline(['sh', '-c', reload_cmd])
+        _logger.info('12')
         else:
             _logger.info('no command defined for reloading webserver, please '
                          'do it manually in order to apply new certificate')
