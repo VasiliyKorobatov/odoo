@@ -373,7 +373,7 @@ up worker processes and prevent new users from accessing the system. However,
 those long-lived connections do very little and mostly stay parked waiting for
 notifications.
 
-The solutions to support livechat/motifications in a WSGI application are:
+The solutions to support livechat/notifications in a WSGI application are:
 
 * deploy a threaded version of Odoo (instread of a process-based preforking
   one) and redirect only requests to URLs starting with ``/longpolling/`` to
