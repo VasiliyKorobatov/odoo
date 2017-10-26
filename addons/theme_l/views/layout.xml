@@ -710,7 +710,7 @@
         </template>
 
         <template id="categories_recursive_homepage" name="Category list HomePage">
-            <li class="col-md-4">
+            <li class="col-md-6 col-xs-12">
                 <a class="homepage-category thumbnail" t-att-href="'/shop/category/'+slug(c)">
                     <div class="category-image" t-field="c.image"
                          t-options="{'widget': 'image', 'class': 'img-rounded center-block'}"/>

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-10-26 09:11+0000\n"
-"PO-Revision-Date: 2017-10-26 14:20+0500\n"
+"PO-Revision-Date: 2017-10-26 16:01+0500\n"
 "Last-Translator: Korobarov Vasiliy <korobarov@akvastil.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgstr "&amp;nbsp;мм."
 #. module: theme_l
 #: model:ir.ui.view,arch_db:theme_l.user_menu
 msgid "&amp;times;"
-msgstr "&amp;раз;"
+msgstr "&amp;times;"
 
 #. module: theme_l
 #: model:ir.ui.view,arch_db:theme_l.homepage
