@@ -51,7 +51,7 @@ class City(models.Model):
 
     state_id = fields.Many2one('res.country.state', 'State', index=True)
     name = fields.Char('City', size=64, required=True, index=True)
-    zip = fields.Char('ZIP', size=64, index=True)
+    zip = fields.Char('ZIP', size=64)
     country_id = fields.Many2one('res.country', 'Country', index=True)
     code = fields.Char('City Code', size=64,
                        help="The official code for the city")
@@ -104,7 +104,7 @@ class CityArea(models.Model):
         return areas.name_get()
 
     name = fields.Char('Area', size=256, required=True, index=True)
-    zip = fields.Char('ZIP', size=256, index=True)
+    zip = fields.Char('ZIP', size=256)
     city_id = fields.Many2one('city.city', 'City', index=True)
     code = fields.Char('Area Code', size=64,
                        help="The official code for the area")

@@ -6,16 +6,60 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-29 19:21+0000\n"
-"PO-Revision-Date: 2017-08-30 00:28+0500\n"
+"POT-Creation-Date: 2017-10-26 12:47+0000\n"
+"PO-Revision-Date: 2017-10-26 17:55+0500\n"
 "Last-Translator: Korobarov Vasiliy <korobarov@akvastil.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: \n"
-"Language: ru\n"
-"X-Generator: Poedit 2.0.2\n"
+"Language: rwk\n"
+"X-Generator: Poedit 2.0.4\n"
+
+#. module: city
+#: model:ir.ui.view,arch_db:city.detail
+msgid ",&amp;nbsp;"
+msgstr ",&amp;nbsp;"
+
+#. module: city
+#: model:ir.ui.view,arch_db:city.detail
+msgid ""
+"<br/>\n"
+"                                        <span class=\"workhours\">С 9:00 до 18:00</span>"
+msgstr ""
+"<br/>\n"
+"                                        <span class=\"workhours\">С 9:00 до 18:00</span>"
+
+#. module: city
+#: model:ir.ui.view,arch_db:city.detail
+msgid "<span class=\"fa fa-clock-o\"/>&amp;nbsp;"
+msgstr "<span class=\"fa fa-clock-o\"/>&amp;nbsp;"
+
+#. module: city
+#: model:ir.ui.view,arch_db:city.detail
+msgid "<span class=\"fa fa-envelope\"/>&amp;nbsp;"
+msgstr "<span class=\"fa fa-envelope\"/>&amp;nbsp;"
+
+#. module: city
+#: model:ir.ui.view,arch_db:city.cities model:ir.ui.view,arch_db:city.detail
+msgid "<span class=\"fa fa-map-marker\"/>&amp;nbsp;"
+msgstr "<span class=\"fa fa-map-marker\"/>&amp;nbsp;"
+
+#. module: city
+#: model:ir.ui.view,arch_db:city.detail
+msgid "<span class=\"fa fa-phone-square\"/>&amp;nbsp;"
+msgstr "<span class=\"fa fa-phone-square\"/>&amp;nbsp;"
+
+#. module: city
+#: model:ir.ui.view,arch_db:city.detail
+msgid ""
+"<strong class=\"email\">\n"
+"                                                Email:\n"
+"                                            </strong>"
+msgstr ""
+"<strong class=\"email\">\n"
+"                                                Email:\n"
+"                                            </strong>"
 
 #. module: city
 #: model:ir.model.fields,field_description:city.field_city_city_address
@@ -68,6 +112,11 @@ msgstr "Код города"
 #: model:ir.ui.view,arch_db:city.view_country_state_form2
 msgid "City Information"
 msgstr "Городская информация"
+
+#. module: city
+#: model:ir.model.fields,field_description:city.field_city_city_population
+msgid "City population"
+msgstr "Численность"
 
 #. module: city
 #: model:ir.model.fields,field_description:city.field_city_city_country_id
@@ -138,11 +187,21 @@ msgid "Partner"
 msgstr "Партнёр"
 
 #. module: city
+#: model:ir.model.fields,field_description:city.field_city_city_is_popular
+msgid "Popular city"
+msgstr "Популярный город"
+
+#. module: city
 #: model:ir.model.fields,field_description:city.field_city_city_std_code
 #: model:ir.model.fields,field_description:city.field_res_partner_std_code
 #: model:ir.model.fields,field_description:city.field_res_users_std_code
 msgid "STD Code"
 msgstr "СТД Код"
+
+#. module: city
+#: model:ir.model.fields,field_description:city.field_city_city_slug_name
+msgid "Slug name"
+msgstr "Транслит"
 
 #. module: city
 #: model:ir.model.fields,field_description:city.field_city_city_state_id
@@ -170,7 +229,22 @@ msgid "The official code for the city"
 msgstr "Официальный код города"
 
 #. module: city
+#: model:ir.model.fields,field_description:city.field_city_city_url
+msgid "Url"
+msgstr "Url"
+
+#. module: city
+#: model:ir.model,name:city.model_website
+msgid "Website"
+msgstr "Сайт"
+
+#. module: city
 #: model:ir.model.fields,field_description:city.field_city_area_zip
 #: model:ir.model.fields,field_description:city.field_city_city_zip
 msgid "ZIP"
 msgstr "Индекс"
+
+#. module: city
+#: model:ir.ui.view,arch_db:city.most_popular_cities
+msgid "Полный список&amp;gt;"
+msgstr "Полный список&amp;gt;"
