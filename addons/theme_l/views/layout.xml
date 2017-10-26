@@ -716,11 +716,11 @@
                          t-options="{'widget': 'image', 'class': 'img-rounded center-block'}"/>
                     <div class="category-caption text-center" t-esc="c.name"/>
                 </a>
-                <ul t-if="c.child_id" class="nav nav-pills nav-stacked nav-hierarchy">
-                    <t t-foreach="c.child_id" t-as="c">
-                        <t t-call="theme_l.categories_recursive_homepage"/>
-                    </t>
-                </ul>
+                <!--<ul t-if="c.child_id" class="nav nav-pills nav-stacked nav-hierarchy">-->
+                    <!--<t t-foreach="c.child_id" t-as="c">-->
+                        <!--<t t-call="theme_l.categories_recursive_homepage"/>-->
+                    <!--</t>-->
+                <!--</ul>-->
             </li>
         </template>
         <template id="custom_product_detail" inherit_id="website_sale.product" name="Custom Product Detail">

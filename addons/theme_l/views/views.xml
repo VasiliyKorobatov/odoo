@@ -63,7 +63,7 @@
                ref="website_sale.product_public_category_form_view"/>
         <field name="arch" type="xml">
             <xpath expr="//div[@class='oe_left']" position="after">
-                <div class="oe_left">
+                <div class="">
                     <group>
                         <field name="content_before"/>
                         <field name="content_after"/>

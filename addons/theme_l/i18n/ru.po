@@ -6,20 +6,40 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-03 19:48+0000\n"
-"PO-Revision-Date: 2017-08-04 00:57+0500\n"
+"POT-Creation-Date: 2017-10-26 09:11+0000\n"
+"PO-Revision-Date: 2017-10-26 14:20+0500\n"
 "Last-Translator: Korobarov Vasiliy <korobarov@akvastil.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
 "Language: ru\n"
-"X-Generator: Poedit 2.0.2\n"
+"X-Generator: Poedit 2.0.4\n"
+
+#. module: theme_l
+#: model:ir.ui.view,arch_db:theme_l.custom_product_detail
+msgid "&amp;nbsp;кг."
+msgstr "&amp;nbsp;кг."
+
+#. module: theme_l
+#: model:ir.ui.view,arch_db:theme_l.custom_product_detail
+msgid ""
+"&amp;nbsp;м<sup>\n"
+"                                                    3</sup>."
+msgstr ""
+"&amp;nbsp;м<sup>\n"
+"                                                    3</sup>."
+
+#. module: theme_l
+#: model:ir.ui.view,arch_db:theme_l.custom_product_detail
+msgid "&amp;nbsp;мм."
+msgstr "&amp;nbsp;мм."
 
 #. module: theme_l
 #: model:ir.ui.view,arch_db:theme_l.user_menu
 msgid "&amp;times;"
-msgstr "&amp;times;"
+msgstr "&amp;раз;"
 
 #. module: theme_l
 #: model:ir.ui.view,arch_db:theme_l.homepage
@@ -47,50 +67,52 @@ msgid "14"
 msgstr "14"
 
 #. module: theme_l
-#: model:ir.ui.view,arch_db:theme_l.homepage
-msgid ""
-"<br/>\n"
-"                                                <span style=\"color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.5);\">\n"
-"                                                    Мы - Миасское производство, Миасс - это город инженеров-технологов и\n"
-"                                                    где\n"
-"                                                    делают ракеты. Лавков, пока не делает ракет. Но может качественно\n"
-"                                                    изготовить на интересных условиях металлическую мебель в дом.</span>&amp;nbsp;"
-msgstr ""
-"<br/>\n"
-"                                                <span style=\"color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.5);\">\n"
-"                                                    Мы - Миасское производство, Миасс - это город инженеров-технологов и\n"
-"                                                    где\n"
-"                                                    делают ракеты. Лавков, пока не делает ракет. Но может качественно\n"
-"                                                    изготовить на интересных условиях металлическую мебель в дом.</span>&amp;nbsp;"
+#: model:ir.ui.view,arch_db:theme_l.user_menu
+msgid "<i class=\"circle\"/>&amp;nbsp;"
+msgstr "<i class=\"circle\"/>&amp;nbsp;"
 
 #. module: theme_l
 #: model:ir.ui.view,arch_db:theme_l.custom_product_detail
 msgid ""
 "<span class=\"fa fa-chevron-left\" aria-hidden=\"true\"/>\n"
-"                                                    <span class=\"sr-only\">Previous</span>"
+"                      <span class=\"sr-only\">Previous</span>"
 msgstr ""
 "<span class=\"fa fa-chevron-left\" aria-hidden=\"true\"/>\n"
-"                                                    <span class=\"sr-only\">Назад</span>"
+"                      <span class=\"sr-only\">Предыдущий</span>"
 
 #. module: theme_l
 #: model:ir.ui.view,arch_db:theme_l.custom_product_detail
 msgid ""
 "<span class=\"fa fa-chevron-right\" aria-hidden=\"true\"/>\n"
-"                                                    <span class=\"sr-only\">Next</span>"
+"                      <span class=\"sr-only\">Next</span>"
 msgstr ""
 "<span class=\"fa fa-chevron-right\" aria-hidden=\"true\"/>\n"
-"                                                    <span class=\"sr-only\">Вперед</span>"
+"                      <span class=\"sr-only\">Следующий</span>"
+
+#. module: theme_l
+#: model:ir.ui.view,arch_db:theme_l.custom_header
+msgid ""
+"<span class=\"fa fa-map-marker\"/>&amp;nbsp;\n"
+"                                    <span style=\"position:absolute;\" class=\"user-city\"/>"
+msgstr ""
+"<span class=\"fa fa-map-marker\"/>&amp;nbsp;\n"
+"                                    <span style=\"position:absolute;\" class=\"user-city\"/>"
 
 #. module: theme_l
 #: model:ir.ui.view,arch_db:theme_l.user_menu
 msgid ""
 "<span class=\"fa fa-map-marker\">&amp;nbsp;\n"
-"                                                    <span id=\"user-city\"/>\n"
+"                                                    <span class=\"user-city\"/>\n"
 "                                                </span>"
 msgstr ""
 "<span class=\"fa fa-map-marker\">&amp;nbsp;\n"
-"                                                    <span id=\"user-city\"/>\n"
+"                                                    <span class=\"user-city\"/>\n"
 "                                                </span>"
+
+#. module: theme_l
+#: model:ir.ui.view,arch_db:theme_l.products_item
+msgid "<span class=\"fa fa-plus\"/>&amp;nbsp;В корзину"
+msgstr "<span class=\"fa fa-plus\"/>&amp;nbsp;В корзину"
 
 #. module: theme_l
 #: model:ir.ui.view,arch_db:theme_l.custom_product_detail
@@ -98,15 +120,114 @@ msgid "<span class=\"fa fa-shopping-cart\"/>&amp;nbsp;В корзину"
 msgstr "<span class=\"fa fa-shopping-cart\"/>&amp;nbsp;В корзину"
 
 #. module: theme_l
+#: model:ir.ui.view,arch_db:theme_l.homepage
+msgid ""
+"<span style=\"background-color: rgba(0, 0, 0, 0.5);\">Миасс - это город\n"
+"                                                инженеров-технологов и где делают ракеты. Лавков, пока не делает ракет.\n"
+"                                                Но может качественно изготовить на интересных условиях металлическую\n"
+"                                                мебель в дом.\n"
+"                                            </span>\n"
+"                  <span style=\"background-color: rgb(85, 85, 85);\">&amp;nbsp;</span>\n"
+"                  <br/>"
+msgstr ""
+"<span style=\"background-color: rgba(0, 0, 0, 0.5);\">Миасс - это город\n"
+"                                                инженеров-технологов и где делают ракеты. Лавков, пока не делает ракет.\n"
+"                                                Но может качественно изготовить на интересных условиях металлическую\n"
+"                                                мебель в дом.\n"
+"                                            </span>\n"
+"                  <span style=\"background-color: rgb(85, 85, 85);\">&amp;nbsp;</span>\n"
+"                  <br/>"
+
+#. module: theme_l
+#: model:ir.ui.view,arch_db:theme_l.user_menu
+msgid ""
+"<span><span class=\"fa fa-question-circle-o\"/>&amp;nbsp;\n"
+"                                                    <span class=\"hidden-xs\">Помощь</span>\n"
+"                                                </span>\n"
+"                                                <span class=\"caret\"/>"
+msgstr ""
+"<span><span class=\"fa fa-question-circle-o\"/>&amp;nbsp;\n"
+"                                                    <span class=\"hidden-xs\">Помощь</span>\n"
+"                                                </span>\n"
+"                                                <span class=\"caret\"/>"
+
+#. module: theme_l
+#: model:ir.ui.view,arch_db:theme_l.custom_select_quantity
+msgid ""
+"<span>На сумму:&amp;nbsp;</span>\n"
+"                            <span id=\"product-card-subtotal\"/>&amp;nbsp;"
+msgstr ""
+"<span>На сумму:&amp;nbsp;</span>\n"
+"                            <span id=\"product-card-subtotal\"/>&amp;nbsp;"
+
+#. module: theme_l
 #: model:ir.ui.view,arch_db:theme_l.snippet_tmonial
 msgid "Client"
 msgstr "Клиент"
 
 #. module: theme_l
+#: model:ir.model.fields,field_description:theme_l.field_product_public_category_content_after
+msgid "Content After"
+msgstr "Контент после категории"
+
+#. module: theme_l
+#: model:ir.model.fields,field_description:theme_l.field_product_public_category_content_before
+msgid "Content Before"
+msgstr "Контент до категории"
+
+#. module: theme_l
+#: model:ir.model.fields,field_description:theme_l.field_website_config_settings_content_after
+#: model:ir.model.fields,field_description:theme_l.field_website_content_after
+msgid "Content In Bottom"
+msgstr "Контент внизу страницы"
+
+#. module: theme_l
+#: model:ir.ui.view,arch_db:theme_l.website_config_settings_form_view
+msgid "Content In Bottom Shop page"
+msgstr "Контент внизу страницы магазина"
+
+#. module: theme_l
+#: model:ir.ui.view,arch_db:theme_l.website_config_settings_form_view
+msgid "Content In Shop Page"
+msgstr "Контент на странице магазина"
+
+#. module: theme_l
+#: model:ir.model.fields,field_description:theme_l.field_website_config_settings_content_before
+#: model:ir.model.fields,field_description:theme_l.field_website_content_before
+msgid "Content In Top"
+msgstr "Контент вверху"
+
+#. module: theme_l
+#: model:ir.ui.view,arch_db:theme_l.website_config_settings_form_view
+msgid "Content In Top Shop page"
+msgstr "Контент вверху страницы магазина"
+
+#. module: theme_l
+#: model:ir.model.fields,help:theme_l.field_delivery_carrier_dimensions_uom_id
 #: model:ir.model.fields,help:theme_l.field_product_product_dimensions_uom_id
 #: model:ir.model.fields,help:theme_l.field_product_template_dimensions_uom_id
 msgid "Default Unit of Measure used for dimension."
 msgstr "Единица измерения продукции"
+
+#. module: theme_l
+#: model:ir.model.fields,field_description:theme_l.field_delivery_carrier_default_variant
+#: model:ir.model.fields,field_description:theme_l.field_product_product_default_variant
+#: model:ir.model.fields,field_description:theme_l.field_product_template_default_variant
+msgid "Default Variant"
+msgstr "Вариант по умолчанию"
+
+#. module: theme_l
+#: model:ir.model.fields,help:theme_l.field_delivery_carrier_default_variant
+#: model:ir.model.fields,help:theme_l.field_product_product_default_variant
+#: model:ir.model.fields,help:theme_l.field_product_template_default_variant
+msgid "Default Variant of Product"
+msgstr "Вариант товара по умолчанию"
+
+#. module: theme_l
+#: model:ir.ui.view,arch_db:theme_l.custom_contactus_form
+#: model:ir.ui.view,arch_db:theme_l.custom_footer
+msgid "Email"
+msgstr "Email"
 
 #. module: theme_l
 #: model:ir.ui.view,arch_db:theme_l.snippet_tmonial_opt
@@ -114,6 +235,7 @@ msgid "Grey Bg"
 msgstr "Серый"
 
 #. module: theme_l
+#: model:ir.model.fields,field_description:theme_l.field_delivery_carrier_height
 #: model:ir.model.fields,field_description:theme_l.field_product_product_height
 msgid "Height"
 msgstr "Высота"
@@ -124,6 +246,7 @@ msgid "Hello, Салеметсiз бе."
 msgstr "Hello, Салеметсiз бе."
 
 #. module: theme_l
+#: model:ir.model.fields,field_description:theme_l.field_delivery_carrier_length
 #: model:ir.model.fields,field_description:theme_l.field_product_product_length
 msgid "Length"
 msgstr "Длина"
@@ -132,11 +255,6 @@ msgstr "Длина"
 #: model:ir.ui.view,arch_db:theme_l.snippet_tmonial_opt
 msgid "None"
 msgstr "Ничего"
-
-#. module: theme_l
-#: model:ir.ui.view,arch_db:theme_l.category_left_menu
-msgid "Odoo CMS - это большая картина"
-msgstr "Odoo CMS - это большая картина"
 
 #. module: theme_l
 #: model:ir.ui.view,arch_db:theme_l.snippet_tmonial_opt
@@ -159,6 +277,7 @@ msgid "Shadow Images"
 msgstr "Тень"
 
 #. module: theme_l
+#: model:ir.model.fields,field_description:theme_l.field_delivery_carrier_dimensions_uom_id
 #: model:ir.model.fields,field_description:theme_l.field_product_product_dimensions_uom_id
 #: model:ir.model.fields,field_description:theme_l.field_product_template_dimensions_uom_id
 msgid "Unit of Measure"
@@ -170,9 +289,25 @@ msgid "Website"
 msgstr "Сайт"
 
 #. module: theme_l
+#: model:ir.model,name:theme_l.model_product_public_category
+msgid "Website Product Category"
+msgstr "Сайт: категория товара"
+
+#. module: theme_l
+#: model:ir.model.fields,field_description:theme_l.field_delivery_carrier_width
 #: model:ir.model.fields,field_description:theme_l.field_product_product_width
 msgid "Width"
 msgstr "Ширина"
+
+#. module: theme_l
+#: model:ir.model,name:theme_l.model_website_config_settings
+msgid "website.config.settings"
+msgstr "website.config.settings"
+
+#. module: theme_l
+#: model:ir.ui.view,arch_db:theme_l.custom_footer
+msgid "Ваш Email*"
+msgstr "Ваш Email*"
 
 #. module: theme_l
 #: model:ir.ui.view,arch_db:theme_l.marquee_text
@@ -181,8 +316,32 @@ msgstr "Застройщикам и оптовым покупателям инд
 
 #. module: theme_l
 #: model:ir.ui.view,arch_db:theme_l.homepage
-msgid "Здрасти, Hello, Салеметсiз бе."
-msgstr "Здрасти, Hello, Салеметсiз бе."
+msgid ""
+"Здравствуйте, Hello,\n"
+"                                    Салеметсiз бе."
+msgstr ""
+"Здравствуйте, Hello,\n"
+"                                    Салеметсiз бе."
+
+#. module: theme_l
+#: model:ir.ui.view,arch_db:theme_l.custom_footer
+msgid ""
+"Нажимая на кнопку,\n"
+"                                            я даю свое согласие на обработку моих персональных данных, в\n"
+"                                            соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ"
+msgstr ""
+"Нажимая на кнопку,\n"
+"                                            я даю свое согласие на обработку моих персональных данных, в\n"
+"                                            соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ"
+
+#. module: theme_l
+#: model:ir.ui.view,arch_db:theme_l.products_item
+msgid ""
+"Подробнее&amp;nbsp;\n"
+"                                <span class=\"fa fa-angle-right\"/>"
+msgstr ""
+"Подробнее&amp;nbsp;\n"
+"                                <span class=\"fa fa-angle-right\"/>"
 
 #. module: theme_l
 #: model:ir.ui.view,arch_db:theme_l.homepage
