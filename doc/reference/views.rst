@@ -1043,7 +1043,7 @@ take the following attributes:
   (e.g. ``{"user_id": 100}``)
 
   .. warning::
-      The dictionnary definition must use double-quotes, ``{'user_id': 100}`` is
+      The dictionary definition must use double-quotes, ``{'user_id': 100}`` is
       not a valid value
 ``string``
   string to display next to the consolidation value, if not specified, the label
