@@ -58,8 +58,9 @@ class SubTaskMaster(models.Model):
 
     @api.constrains('date_deadline', 'task_ref')
     def date_deadline_validation(self):
-        if self.date_deadline > self.task_ref.date_deadline:
-            raise ValidationError(_("Your main task will dead at this date"))
+        pass
+        # if self.date_deadline > self.task_ref.date_deadline:
+        #     raise ValidationError(_("Your main task will dead at this date"))
 
     active = fields.Boolean(default=True)
     name = fields.Char(string="Name", requires=True)
