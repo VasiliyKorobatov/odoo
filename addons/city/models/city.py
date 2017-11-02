@@ -123,6 +123,14 @@ class ResPartner(models.Model):
     std_code = fields.Char(related="area_id.city_id.std_code",
                            string='STD Code', size=32)
 
+    city_id = fields.Many2one('city.coty', 'City Location')
+
+    @api.onchange('city_id')
+    def onchange_city_id(self):
+        if self.city_id:
+            self.country_id = self.city_id.country_id.id
+            self.state_id = self.city_id.state_id.id
+
     @api.onchange('area_id')
     def onchange_area_id(self):
         if self.area_id:

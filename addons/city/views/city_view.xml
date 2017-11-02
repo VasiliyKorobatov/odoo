@@ -8,21 +8,20 @@
         <field name="arch" type="xml">
             <data>
                 <field name="state_id" position="attributes">
-                    <attribute name="invisible">True</attribute>
+                    <attribute name="readonly">True</attribute>
                 </field>
                  <field name="country_id" position="attributes">
-                    <attribute name="invisible">True</attribute>
+                    <attribute name="readonly">True</attribute>
                 </field>
-                 <field name="zip" position="attributes">
-                    <attribute name="invisible">True</attribute>
-                </field>
+                 <!--<field name="zip" position="attributes">-->
+                    <!--<attribute name="invisible">True</attribute>-->
+                <!--</field>-->
                 <field name="city" position="replace">
-                    <field name="area_id" colspan="4" placeholder="Enter Area"/>
-                    <field name="std_code" colspan="4" placeholder="Std Code"/>
+                    <field name="city_id" />
                 </field>
-                <field name="child_ids" position="attributes">
-                    <attribute name="context">{'default_parent_id': active_id, 'default_street': street, 'default_street2': street2, 'default_area_id': area_id, 'default_state_id': state_id, 'default_zip': zip, 'default_country_id': country_id, 'default_supplier': supplier, 'default_customer': customer, 'default_lang': lang}</attribute>
-                </field>
+                <!--<field name="child_ids" position="attributes">-->
+                    <!--<attribute name="context">{'default_parent_id': active_id, 'default_street': street, 'default_street2': street2, 'default_area_id': area_id, 'default_state_id': state_id, 'default_zip': zip, 'default_country_id': country_id, 'default_supplier': supplier, 'default_customer': customer, 'default_lang': lang}</attribute>-->
+                <!--</field>-->
             </data>
         </field>
     </record>
