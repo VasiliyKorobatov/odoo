@@ -14,6 +14,7 @@ class Company(models.Model):
     inn = fields.Char(related='partner_id.inn')
     kpp = fields.Char(related='partner_id.kpp')
     okpo = fields.Char(related='partner_id.okpo')
+    ogrn = fields.Char(related='partner_id.ogrn')
     chief_id = fields.Many2one('res.users', 'Chief')
     accountant_id = fields.Many2one('res.users', 'General Accountant')
     print_facsimile = fields.Boolean('Print Facsimile', help="Check this for adding Facsimiles of responsible persons to documents.")
