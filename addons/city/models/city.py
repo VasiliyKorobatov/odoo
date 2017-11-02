@@ -123,7 +123,7 @@ class ResPartner(models.Model):
     std_code = fields.Char(related="area_id.city_id.std_code",
                            string='STD Code', size=32)
 
-    city_id = fields.Many2one('city.coty', 'City Location')
+    city_id = fields.Many2one('city.city', 'City Location')
 
     @api.onchange('city_id')
     def onchange_city_id(self):
