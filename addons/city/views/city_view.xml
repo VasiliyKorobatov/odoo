@@ -16,7 +16,7 @@
                  <!--<field name="zip" position="attributes">-->
                     <!--<attribute name="invisible">True</attribute>-->
                 <!--</field>-->
-                <field name="city" position="replace">
+                <field name="city" position="after">
                     <field name="city_id" />
                 </field>
                 <!--<field name="child_ids" position="attributes">-->
