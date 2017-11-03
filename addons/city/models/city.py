@@ -128,6 +128,7 @@ class ResPartner(models.Model):
     @api.onchange('city_id')
     def onchange_city_id(self):
         if self.city_id:
+            self.city = self.city_id.name
             self.country_id = self.city_id.country_id.id
             self.state_id = self.city_id.state_id.id
 
