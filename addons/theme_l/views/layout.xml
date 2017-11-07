@@ -268,6 +268,7 @@
                     </div>
                 </div>
                 </div>
+                <div class="hidden-md hidden-lg mt16" />
             </xpath>
         </template>
         <template id="user_menu_enter" inherit_id="theme_l.static_menu" name="Enter in User Menu">
