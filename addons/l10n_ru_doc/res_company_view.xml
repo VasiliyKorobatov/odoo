@@ -12,7 +12,7 @@
                     <field name="inn"/>
                     <field name="kpp"/>
                     <field name="okpo"/>
-                    <field name="ogrn"/>
+                    <!--<field name="ogrn"/>-->
                 </field>
                 <xpath expr="//page" position="after">
                     <page string="Configuration">
