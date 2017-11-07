@@ -1234,7 +1234,7 @@
                                     <h4>Наши продукты и Сервисы</h4>
                                     <ul class="list-unstyled" id="products">
                                         <li>
-                                            <a href="/">Главная</a>
+                                            <a href="/"><span class="fa fa-home" />&amp;nbsp;Главная</a>
                                         </li>
                                     </ul>
                                 </div>
