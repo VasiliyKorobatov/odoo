@@ -1097,6 +1097,7 @@
                             </div>
                         </div>
                     </section>
+                    <a name="description"/>
                     <section>
                         <div class="container">
                             <ul class="nav nav-tabs" role="tablist">
@@ -1120,7 +1121,7 @@
                             </ul>
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane active" id="product-description">
-                                    <a name="description"/>
+
                                     <div itemprop="description" t-field="product.website_description"
                                          class="oe_structure mt16" id="product_full_description"/>
                                 </div>

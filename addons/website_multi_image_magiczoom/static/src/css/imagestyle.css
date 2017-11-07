@@ -1,9 +1,17 @@
-.carousel-image{
-    min-width: 80px;
-    height: 300px;
-    overflow-y: auto;
-    margin: 5px 0;
+@media (min-width: 979px) {
+    .carousel-image{
+        min-width: 80px;
+        height: 300px;
+        overflow-y: auto;
+        margin: 5px 0;
+    }
 }
+@media (max-width: 978px) {
+    .carousel-image{
+        margin: 5px 0;
+    }
+}
+
 .image_bigsize .img {
     width: 500px;
 }
