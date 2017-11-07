@@ -6,12 +6,6 @@
         margin: 5px 0;
     }
 }
-@media (max-width: 978px) {
-    .carousel-image{
-        margin: 5px 0;
-    }
-}
-
 .image_bigsize .img {
     width: 500px;
 }
