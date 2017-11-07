@@ -240,7 +240,8 @@
         </template>
         <template id="static_menu" inherit_id="website.layout" name="Static Menu">
             <xpath expr=".//*[contains(@class, 'navbar-static-top')]" position="replace">
-                <div class="navbar navbar-default navbar-static-top">
+                <div class="hidden-sm hidden-xs" >
+                    <div class="navbar navbar-default navbar-static-top">
                     <div class="container-fluid">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -265,6 +266,7 @@
                             </ul>
                         </div>
                     </div>
+                </div>
                 </div>
             </xpath>
         </template>
