@@ -258,6 +258,7 @@
                                     <span class="fa fa-2x fa-navicon"/>
                                 </button>
                             </div>
+
                             <ul class="nav navbar-nav navbar-left" id="top_menu">
                                 <t t-foreach="website.menu_id.child_id" t-as="submenu">
                                     <t t-call="website.submenu"/>

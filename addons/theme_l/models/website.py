@@ -21,3 +21,7 @@ class WebsiteConfigSettings(models.TransientModel):
 
     content_before = fields.Html(related='website_id.content_before')
     content_after = fields.Html(related='website_id.content_after')
+
+class Menu(models.Model):
+    _inherit = "website.menu"
+    icon = fields.Char('menu icon class')
