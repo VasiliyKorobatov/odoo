@@ -1240,11 +1240,11 @@
                                         <li>
                                             <a href="/page/website.contactus">Контакты</a>
                                         </li>
-                                        <li>
-                                            <a t-attf-href="/groups">
-                                                Список рассылки
-                                            </a>
-                                        </li>
+                                        <!--<li>-->
+                                            <!--<a t-attf-href="/groups">-->
+                                                <!--Список рассылки-->
+                                            <!--</a>-->
+                                        <!--</li>-->
                                     </ul>
                                     <ul class="list-unstyled">
                                         <li t-ignore="true">
