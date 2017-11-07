@@ -1239,7 +1239,7 @@
                                     <h4>Свяжитесь с нами</h4>
                                     <ul class="list-unstyled">
                                         <li>
-                                            <a href="/page/website.contactus">Контакты</a>
+                                            <a href="/page/contactus">Контакты</a>
                                         </li>
                                         <!--<li>-->
                                             <!--<a t-attf-href="/groups">-->
