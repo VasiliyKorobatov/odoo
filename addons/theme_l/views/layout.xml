@@ -1256,7 +1256,7 @@
         <template id="marquee_text" inherit_id="theme_l.user_menu_cart" name="Marquee">
             <xpath expr="//div[@id='marquee-block']" position="inside">
                 <marquee direction="left" class="mt4">
-                    Застройщикам и оптовым покупателям индвидуальные скидки! Звоните сейчас ... +7-351-711-12-49
+                    Застройщикам и оптовым покупателям индвидуальные скидки! Звоните сейчас ...
                 </marquee>
             </xpath>
         </template>
