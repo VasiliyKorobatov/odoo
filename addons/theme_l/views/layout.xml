@@ -253,13 +253,16 @@
                             </button>
                         </div>
                         <div class="collapse navbar-collapse navbar-top-collapse">
-                            <div class="hidden-xs col-sm-1 col-md-1 menu-button mt8">
-                                <button data-toggle="collapse" data-target="#sidebar">
-                                    <span class="fa fa-2x fa-navicon"/>
-                                </button>
-                            </div>
+                            <!--<div class="hidden-xs col-sm-1 col-md-1 menu-button mt8">-->
+                                <!--<button data-toggle="collapse" data-target="#sidebar">-->
+                                    <!--<span class="fa fa-2x fa-navicon"/>-->
+                                <!--</button>-->
+                            <!--</div>-->
 
                             <ul class="nav navbar-nav navbar-left" id="top_menu">
+                                <li>
+                                    <a href="/shop">Каталог&amp;nbsp;<span class="fa fa-navicon"/></a>
+                                </li>
                                 <t t-foreach="website.menu_id.child_id" t-as="submenu">
 
                                     <t t-call="theme_l.custom_submenu"/>
