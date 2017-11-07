@@ -240,7 +240,7 @@
         </template>
         <template id="static_menu" inherit_id="website.layout" name="Static Menu">
             <xpath expr=".//*[contains(@class, 'navbar-static-top')]" position="replace">
-                <div class="hidden-sm hidden-xs" >
+                <div class="" >
                     <div class="navbar navbar-default navbar-static-top">
                     <div class="container-fluid">
                         <div class="navbar-header">
@@ -268,7 +268,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="hidden-md hidden-lg mt16" />
+                <!--<div class="hidden-md hidden-lg mt16" />-->
             </xpath>
         </template>
         <template id="user_menu_enter" inherit_id="theme_l.static_menu" name="Enter in User Menu">
