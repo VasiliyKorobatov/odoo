@@ -29,7 +29,7 @@
 
                         <div class="col-md-3 col-lg-3 hidden-xs hidden-sm">
                             <div id="logo">
-                                <img src="/logo.png" alt="Логотип ООО Лавков" title="ООО Лавков"/>
+                                <a href="/" t-att-alt="res_company.name" t-att-title="res_company.name" ><img src="/logo.png" alt="Логотип ООО Лавков" title="ООО Лавков"/></a>
                             </div>
                             <div id="credo" class="small">
                                 <t t-esc="res_company.rml_header1"/>
