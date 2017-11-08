@@ -571,55 +571,6 @@
                                 </div>
                             </div>
                         </section>
-                        <div class="o_newsletter_popup" data-list-id="1">
-                            <div class="alert alert-warning alert-dismissible fade in css_non_editable_mode_hidden o_not_editable o_default_snippet_text" role="alert"><strong class="o_default_snippet_text">Всплывающий бюллетень!</strong>
-                                Эффект фрагмента всплывающего окна бюллетени активен на этой странице. Нажмите
-
-                                <a id="edit_dialog" href="#" data-original-title="" title="">
-                                    Здесь диалоговое окно для редактирования контента
-                                </a>
-                            </div>
-                            <div class="modal modal-dialog modal-md fade fade-custom in" id="o_newsletter_popup" tabindex="-1" role="dialog" style="display: none; padding-right: 17px;" aria-hidden="false">
-                                <div class="modal-content o_popup_modal_content">
-                                    <a href="#" class="o_popup_btn_close o_not_editable o_default_snippet_text" data-dismiss="modal" data-original-title="" title="">×
-                                    </a>
-                                    <div class="o_popup_modal_body text-center">
-                                        <div class="o_popup_content_dev" data-oe-placeholder="Type Here ...">
-                                            <div class="modal-header text-center">
-                                                <h3 class="modal-title mt8">ООО "Лавков"
-                                                    <br/>
-                                                </h3>
-                                            </div>
-                                            <div class="o_popup_message">
-                                                <div style="text-align: center;">
-                                                    <strong style="font-size: 3em;">
-                                                        <font style="font-size: 18px;">ООО "Лавков"</font>
-                                                    </strong>
-                                                </div>
-                                                <strong>
-                                                    <div style="text-align: center;">
-                                                        <strong style="font-size: 3em;">
-                                                            <font style="font-size: 18px;">Предлагает специальные условия для постоянных покупателей</font>
-                                                        </strong>
-                                                    </div>
-                                                </strong>
-                                            </div>
-                                            <p class="o_message_paragraph">Подпишитесь на нашу маркетинговую рассылку и получите
-                                                <strong>этот обзор мгновенно</strong>
-                                            </p>
-                                        </div>
-                                        <div class="input-group o_not_editable o_popup_animated o_popup_bounce_del500ms o_popup_bounce_small" style="">
-                                            <input type="email" name="email" class="popup_subscribe_email form-control" placeholder="адрес электронной почты..." autofocus="autofocus"/>
-                                            <span class="input-group-btn">
-                                                <a href="#" class="btn btn-success popup_subscribe_btn o_default_snippet_text">
-                                                    Подписаться
-                                                </a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </xpath>
