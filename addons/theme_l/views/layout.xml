@@ -29,16 +29,15 @@
 
                         <div class="col-md-3 col-lg-3 hidden-xs hidden-sm">
                             <div id="logo">
-                                <img src="/logo.png" alt="Логотип ООО Лавков" title="ООО Лавков" />
+                                <img src="/logo.png" alt="Логотип ООО Лавков" title="ООО Лавков"/>
                             </div>
                             <div id="credo" class="small">
                                 <t t-esc="res_company.rml_header1"/>
                             </div>
                         </div>
-                        <div id="search" class="col-xs-12 col-sm-5 col-md-6 col-lg-4 mt16">
+                        <div id="search" class="hidden-xs col-sm-5 col-md-6 col-lg-4 mt16">
                             <t t-if="website_sale">
-                                <form t-att-action="keep('/shop'+ ('/category/'+slug(category)) if category else None, search=0)"
-                                      method="get" t-att-class="search_class">
+                                <form t-att-action="keep('/shop'+ ('/category/'+slug(category)) if category else None, search=0)" method="get" t-att-class="search_class">
                                     <t t-if="attrib_values">
                                         <t t-foreach="attrib_values" t-as="a">
                                             <input type="hidden" name="attrib" t-att-value="'%s-%s' % (a[0], a[1])"/>
@@ -61,11 +60,7 @@
                         </div>
                         <div class="col-lg-2 hidden-md hidden-sm hidden-xs">
                             <div id="russia">
-                                <a data-title="Ваш город?" data-trigger="manual"
-                                   data-content="&lt;div class='row'&gt;&lt;div class='col-xs-12'&gt;&lt;a class='btn btn-success btn-sm yes-city' href='javascript:void(0)'&gt;Да&lt;/a&gt;&lt;a class='btn btn-default btn-sm no-city' style='margin-left:10px;' href='javascript:void(0)'&gt;Выбрать другой&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;"
-                                   data-delay="3" data-html="true" data-container="body"
-                                   data-placement="bottom" data-toggle="modal"
-                                   class="your-city hidden-md hidden-xs hidden-sm" href="#city">
+                                <a data-title="Ваш город?" data-trigger="manual" data-content="&lt;div class='row'&gt;&lt;div class='col-xs-12'&gt;&lt;a class='btn btn-success btn-sm yes-city' href='javascript:void(0)'&gt;Да&lt;/a&gt;&lt;a class='btn btn-default btn-sm no-city' style='margin-left:10px;' href='javascript:void(0)'&gt;Выбрать другой&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;" data-delay="3" data-html="true" data-container="body" data-placement="bottom" data-toggle="modal" class="your-city hidden-md hidden-xs hidden-sm" href="#city">
                                     <span class="fa fa-map-marker"/>&amp;nbsp;
                                     <span style="position:absolute;" class="user-city"/>
                                 </a>
@@ -97,7 +92,7 @@
         </template>
         <template id="user_menu" inherit_id="website.layout" name="User Menu and Cart">
             <xpath expr="//div[@id='wrapwrap']" position="before">
-                <nav class="navbar navbar-default navbar-fixed-top">
+                <nav class="navbar navbar-default navbar-fixed-top" id="top-fixed-menu">
                     <div id="user-menu-enter"/>
                     <div class="container-fluid">
 
@@ -251,36 +246,36 @@
             <xpath expr=".//*[contains(@class, 'navbar-static-top')]" position="replace">
                 <div class="" >
                     <div class="navbar navbar-default navbar-static-top">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                    data-target=".navbar-top-collapse">
-                                <span class="sr-only">Свернуть</span>
-                                <span class="icon-bar"/>
-                                <span class="icon-bar"/>
-                                <span class="icon-bar"/>
-                            </button>
-                        </div>
-                        <div class="collapse navbar-collapse navbar-top-collapse">
-                            <!--<div class="hidden-xs col-sm-1 col-md-1 menu-button mt8">-->
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                        data-target=".navbar-top-collapse">
+                                    <span class="sr-only">Свернуть</span>
+                                    <span class="icon-bar"/>
+                                    <span class="icon-bar"/>
+                                    <span class="icon-bar"/>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse navbar-top-collapse">
+                                <!--<div class="hidden-xs col-sm-1 col-md-1 menu-button mt8">-->
                                 <!--<button data-toggle="collapse" data-target="#sidebar">-->
-                                    <!--<span class="fa fa-2x fa-navicon"/>-->
+                                <!--<span class="fa fa-2x fa-navicon"/>-->
                                 <!--</button>-->
-                            <!--</div>-->
+                                <!--</div>-->
 
-                            <ul class="nav navbar-nav navbar-left" id="top_menu">
-                                <li id="shop-menu-link">
-                                    <a href="/shop" data-toggle="collapse" data-target="#sidebar">Каталог&amp;nbsp;<span class="fa fa-navicon"/></a>
-                                </li>
-                                <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                <ul class="nav navbar-nav navbar-left" id="top_menu">
+                                    <li id="shop-menu-link">
+                                        <a href="/shop" data-toggle="collapse" data-target="#sidebar">Каталог&amp;nbsp;<span class="fa fa-navicon"/></a>
+                                    </li>
+                                    <t t-foreach="website.menu_id.child_id" t-as="submenu">
 
-                                    <t t-call="theme_l.custom_submenu"/>
-                                </t>
-                                <div id="user-enter"/>
-                            </ul>
+                                        <t t-call="theme_l.custom_submenu"/>
+                                    </t>
+                                    <div id="user-enter"/>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </div>
                 <!--<div class="hidden-md hidden-lg mt16" />-->
             </xpath>
@@ -412,101 +407,77 @@
             <xpath expr="//div[@id='wrap']" position="replace">
                 <div id="wrap" class="">
                     <div class="oe_structure oe_empty">
-                        <div id="myCarousel1501441674202" class="carousel slide s_banner" data-interval="10000">
-                            <ol class="carousel-indicators hidden">
-                                <li data-target="#myCarousel1501441674202" data-slide-to="0" class="active"/>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="item bg-gray oe_img_bg active"
-                                     style="background-image: url(&quot;/web/image/website.s_background_image_05&quot;);">
-                                    <div class="container">
-                                        <div class="row content">
-                                            <div class="carousel-content col-md-offset-1 mb96 bg-black-50 mt16 col-md-4">
-                                                <h2 class="o_default_snippet_text">Здравствуйте,</h2>
-                                                <div>Hello, Салеметсiз бе.</div>
-                                                <div/>
-                                                <div>Предлагаем на выгодных условиях</div>
-                                                <div/>
-                                                <div>почтовые ящики уличные и секционные от производителя</div>
-                                                <div>армейские кровати</div>
-                                                <div>уличные урны.</div>
-                                                <p>
-                                                    <a href="/page/website.contactus" class="btn btn-warning">Свяжитесь
-                                                        с
-                                                        нами
-                                                    </a>
-                                                </p>
+                        <section class="s_text_block">
+                            <div class="container">
+                                <h3 class="text-center text-muted o_default_snippet_text">Здравствуйте, Hello, Салеметсiз бе. </h3>
+                                <div class="row">
+                                    <div class="col-md-12 mb16 mt16">
+                                        <div class="o_image_floating s_image_floating o_margin_l pull-left">
+                                            <div class="o_container">
+                                                <img class="img img-rounded img-responsive" src="/web/image/1004" data-original-title="" title=""/>
                                             </div>
-                                            <div class="carousel-img hidden-sm hidden-xs mt32 col-md-6">
-                                                <img class="img-responsive" src="/web/image/2468" alt="ящик"
-                                                     data-original-title="ящик" title=""/>
-                                                <br/>
-                                                <br/>
+                                            <div class="o_footer">
+                                                <small class="text-muted">Отличные почтовые ящики идеально подойдут в любой подъезд </small>
                                             </div>
                                         </div>
+                                        <p class="o_default_snippet_text">Ящики почтовые уличные "Почта", секционные ящики "Подъезд", облагородить площадку во дворе, заказав уличную урну от 24 литров или скамейку для сада. Низкие цены, высокое качество. </p>
+                                        <p>Для армейских гарнизонов, профилакториев есть выбор металлических кроваток, двух ярусных кроватей. </p>
+                                        <p class="o_default_snippet_text">Легированная сталь основа всей железной продукции. Покраска идёт в специализированных малярных комнатах в соответствии с рекомендацией производителя порошковой краски. При заданной температуре. </p>
+                                        <p class="o_default_snippet_text">Ассортимент продукции предлагаем посмотреть в фотообзоре в верхней части сайта. </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-control left hidden" data-target="#myCarousel1501441674202"
-                                 data-slide="prev" style="width: 10%" data-cke-saved-href="#myCarousel1501441674202">
-                                <i class="fa fa-chevron-left"/>
-                            </div>
-                            <div class="carousel-control right hidden" data-target="#myCarousel1501441674202"
-                                 data-slide="next" style="width: 10%" data-cke-saved-href="#myCarousel1501441674202">
-                                <i class="fa fa-chevron-right"/>
-                            </div>
-                        </div>
+                        </section>
                         <section class="s_feature_grid mt0 mb0 bg-primary" style="">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-md-3 col-xs-12 mt8">
+                                    <div class="col-md-3 col-sm-6  col-xs-12 mt8">
                                         <div class="col-md-12">
-                                            <span style="min-width: 45px" class="pull-left mb16 fa fa-truck fa-2x"
-                                                  data-original-title="" title=""/>
+                                            <span style="min-width: 45px" class="pull-left mb16 fa fa-truck fa-2x" data-original-title="" title=""/>
                                             <h5 class="mt0 mb0 o_default_snippet_text">Доставка по всей России</h5>
                                         </div>
                                     </div>
-                                    <div class="col-md-3 col-xs-12 mt4">
+                                    <div class="col-md-3 col-sm-6 col-xs-12 mt4">
                                         <div class="col-md-12">
-                                            <span style="min-width: 45px" class="pull-left mb16 fa fa-star-o fa-2x"
-                                                  data-original-title="" title=""/>
+                                            <span style="min-width: 45px" class="pull-left mb16 fa fa-star-o fa-2x" data-original-title="" title=""/>
                                             <h5 class="mb0 mt4">Гарантия качества</h5>
                                         </div>
                                     </div>
-                                    <div class="col-md-3  col-xs-12 mt8">
+                                    <div class="col-md-3 col-sm-6  col-xs-12 mt8">
                                         <div class="col-md-12">
-                                            <span style="min-width: 45px" class="pull-left mb16 fa fa-thumbs-o-up fa-2x"
-                                                  data-original-title="" title=""/>
+                                            <span style="min-width: 45px" class="pull-left mb16 fa fa-thumbs-o-up fa-2x" data-original-title="" title=""/>
                                             <h5 class="mb0 mt0">Подберем нужное для Вас</h5>
                                         </div>
                                     </div>
-                                    <div class="col-md-3  col-xs-12 mt8">
+                                    <div class="col-md-3 col-sm-6  col-xs-12 mt8">
                                         <div class="col-md-12">
-                                            <span style="min-width: 45px" class="pull-left mb16 fa fa-history fa-2x"
-                                                  data-original-title="" title=""/>
+                                            <span style="min-width: 45px" class="pull-left mb16 fa fa-history fa-2x" data-original-title="" title=""/>
                                             <h5 class="mb0 mt0">Оперативное обслуживание</h5>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </section>
-                        <section class="s_text_block_image_fw oe_img_bg"
-                                 style="background-position: 50% 100%; background-image: url(&quot;/web/image/website.s_background_image_02&quot;);">
+                        <section>
+
+                            <div class="container">
+                                <h2 class="text-center">Категории продукции</h2>
+                                <ul class="homepage-categories">
+                                    <t t-foreach="request.website.sale_categories()" t-as="c">
+                                        <t t-call="theme_l.categories_recursive_homepage"/>
+                                    </t>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <section class="s_text_block_image_fw oe_img_bg" style="background-position: 50% 100%; background-image: url(&quot;/web/image/website.s_background_image_02&quot;);">
                             <div class="container">
                                 <div class="row">
-                                    <div class="mt64 mb64 bg-black-25 col-md-8">
-                                        <h2 style="font-size:62px">Производство
-                                            <br/>
-                                        </h2>
-                                        <h4>Мы - Миасское производство
-                                            <br/>
-                                        </h4>
+                                    <div class="mt64 mb64 bg-black-25 col-md-6">
+                                        <h2>Производство <br/></h2>
+                                        <h4>Мы - Миасское производство <br/></h4>
                                         <p>
-                                            <span style="background-color: rgba(0, 0, 0, 0.5);">Миасс - это город
-                                                инженеров-технологов и где делают ракеты. Лавков, пока не делает ракет.
-                                                Но может качественно изготовить на интересных условиях металлическую
-                                                мебель в дом.
-                                            </span>
+                                            <span style="background-color: rgba(0, 0, 0, 0.5);">Миасс - это город инженеров-технологов и где делают ракеты. Лавков, пока не делает ракет. Но может качественно изготовить на интересных условиях металлическую мебель в дом. </span>
                                             <span style="background-color: rgb(85, 85, 85);">&amp;nbsp;</span>
                                             <br/>
                                         </p>
@@ -515,187 +486,84 @@
                             </div>
                         </section>
                     </div>
-                    <section class="carousel s_slider" id="myCarousel1504603964362">
-                        <div class="text-center">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <div class="carousel slide mb0" data-interval="10000" id="myCarousel1504603964363">
-                                        <div class="carousel-inner">
-                                            <img src="/web/image/3086" class="mg-responsive item" style="width: 100%;"
-                                                 data-original-title="" title=""/>
-                                            <img src="/web/image/3089" class="mg-responsive item" style="width: 100%;"
-                                                 data-original-title="" title=""/>
-                                            <img src="/web/image/3090" class="mg-responsive item active"
-                                                 style="width: 100%;" data-original-title="" title=""
-                                                 aria-describedby="tooltip130720"/>
-                                            <img src="/web/image/3091" class="mg-responsive item" style="width: 100%;"/>
-                                            <img src="/web/image/3087" class="mg-responsive item" style="width: 100%;"
-                                                 data-original-title="" title=""/>
-                                            <img src="/web/image/3088" class="mg-responsive item" style="width: 100%;"/>
-                                        </div>
-                                        <div class="chevron">
-                                            <a data-slide="prev" data-target="#myCarousel1504603964363"
-                                               data-cke-saved-href="#myCarousel1504603964363">
-                                                <i class="fa fa-chevron-left"></i>
-                                            </a>
-                                            <a data-slide="next" data-target="#myCarousel1504603964363"
-                                               data-cke-saved-href="#myCarousel1504603964363">
-                                                <i class="fa fa-chevron-right" data-original-title="" title=""></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="o_data_slider mb32 container text-center"
-                             data-options="{&quot;lazyLoad&quot;:&quot;ondemand&quot;,&quot;slidesToShow&quot;:3,&quot;slidesToScroll&quot;:1,&quot;dots&quot;:true,&quot;infinite&quot;:true,&quot;speed&quot;:500,&quot;arrows&quot;:true,&quot;autoplay&quot;:true,&quot;adaptiveHeight&quot;:false,&quot;variableWidth&quot;:false,&quot;autoplaySpeed&quot;:3000,&quot;data_model&quot;:&quot;product.template&quot;,&quot;data_domain&quot;:[[&quot;website_published&quot;,&quot;=&quot;,true]],&quot;data_image_field&quot;:&quot;image_medium&quot;,&quot;data_name_field&quot;:&quot;display_name&quot;,&quot;data_title&quot;:&quot;Наша продукция &quot;,&quot;data_title_tag&quot;:&quot;h1&quot;,&quot;data_title_class&quot;:&quot;text-center&quot;,&quot;data_uri_field&quot;:&quot;website_url&quot;,&quot;data_container_width&quot;:&quot;90%&quot;,&quot;data_limit&quot;:10,&quot;prevArrow&quot;:&quot;&lt;a href=\&quot;#\&quot; class=\&quot;slider-arrow-left\&quot;&gt;&lt;i class=\&quot;fa fa-arrow-left fa-2x\&quot;&gt;&lt;/i&gt;&lt;/a&gt;&quot;,&quot;nextArrow&quot;:&quot;&lt;a href=\&quot;#\&quot; class=\&quot;slider-arrow-right\&quot;&gt;&lt;i class=\&quot;fa fa-arrow-right fa-2x\&quot;&gt;&lt;/i&gt;&lt;/a&gt;&quot;}"
-                             style="width: 90%;">
+
+
+                    <!--section class="carousel s_slider" id="myCarousel1504603964362"><div class="text-center"><div class="row"><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><div class="carousel slide mb0" data-interval="10000" id="myCarousel1504603964363"><div class="carousel-inner"><img src="/web/image/846" class="mg-responsive item active" style="width: 100%;" data-original-title="" title=""/><img src="/web/image/847" class="mg-responsive item" style="width: 100%;" data-original-title="" title=""/><img src="/web/image/842" class="mg-responsive item" style="width: 100%;" data-original-title="" title="" aria-describedby="tooltip130720"/><img src="/web/image/843" class="mg-responsive item" style="width: 100%;" data-original-title="" title=""/><img src="/web/image/844" class="mg-responsive item" style="width: 100%;" data-original-title="" title=""/><img src="/web/image/845" class="mg-responsive item" style="width: 100%;"/></div><div class="chevron"><a data-slide="prev" data-target="#myCarousel1504603964363" data-cke-saved-href="#myCarousel1504603964363"><i class="fa fa-chevron-left"/></a><a data-slide="next" data-target="#myCarousel1504603964363" data-cke-saved-href="#myCarousel1504603964363"><i class="fa fa-chevron-right" data-original-title="" title=""/></a></div></div></div></div></div></section-->
+                    <section class="o_data_slider mb32 container text-center" data-options="{&quot;lazyLoad&quot;:&quot;ondemand&quot;,&quot;slidesToShow&quot;:3,&quot;slidesToScroll&quot;:1,&quot;dots&quot;:true,&quot;infinite&quot;:true,&quot;speed&quot;:500,&quot;arrows&quot;:true,&quot;autoplay&quot;:true,&quot;adaptiveHeight&quot;:false,&quot;variableWidth&quot;:false,&quot;autoplaySpeed&quot;:3000,&quot;data_model&quot;:&quot;product.template&quot;,&quot;data_domain&quot;:[[&quot;website_published&quot;,&quot;=&quot;,true]],&quot;data_image_field&quot;:&quot;image_medium&quot;,&quot;data_name_field&quot;:&quot;display_name&quot;,&quot;data_title&quot;:&quot;Наша продукция &quot;,&quot;data_title_tag&quot;:&quot;h1&quot;,&quot;data_title_class&quot;:&quot;text-center&quot;,&quot;data_uri_field&quot;:&quot;website_url&quot;,&quot;data_container_width&quot;:&quot;90%&quot;,&quot;data_limit&quot;:10,&quot;prevArrow&quot;:&quot;&lt;a href=\&quot;#\&quot; class=\&quot;slider-arrow-left\&quot;&gt;&lt;i class=\&quot;fa fa-arrow-left fa-2x\&quot;&gt;&lt;/i&gt;&lt;/a&gt;&quot;,&quot;nextArrow&quot;:&quot;&lt;a href=\&quot;#\&quot; class=\&quot;slider-arrow-right\&quot;&gt;&lt;i class=\&quot;fa fa-arrow-right fa-2x\&quot;&gt;&lt;/i&gt;&lt;/a&gt;&quot;}" style="width: 90%;">
                         <div class="row">
                             <h1 class="text-center">Наша продукция</h1>
                         </div>
-                        <div class="o_slick_container oe_structure slick-initialized slick-slider slick-dotted"
-                             role="toolbar">
+                        <div class="o_slick_container oe_structure slick-initialized slick-slider slick-dotted" role="toolbar">
                             <a href="#" class="slider-arrow-left slick-arrow">
                                 <i class="fa fa-arrow-left fa-2x"/>
                             </a>
                             <div aria-live="polite" class="slick-list draggable">
-                                <div class="slick-track" role="listbox"
-                                     style="opacity: 1; width: 2328px; transform: translate3d(-485px, 0px, 0px);">
-                                </div>
+                                <div class="slick-track" role="listbox" style="opacity: 1; width: 2328px; transform: translate3d(-485px, 0px, 0px);"/>
                             </div>
                             <a href="#" class="slider-arrow-right slick-arrow">
                                 <i class="fa fa-arrow-right fa-2x"/>
                             </a>
                             <ul class="slick-dots" role="tablist">
-                                <li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true"
-                                    aria-controls="navigation00" id="slick-slide00">
+                                <li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true" aria-controls="navigation00" id="slick-slide00">
                                     <button type="button" data-role="none" role="button" tabindex="0">1</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation01" id="slick-slide01">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation01" id="slick-slide01">
                                     <button type="button" data-role="none" role="button" tabindex="0">2</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation02" id="slick-slide02">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation02" id="slick-slide02">
                                     <button type="button" data-role="none" role="button" tabindex="0">3</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation03" id="slick-slide03">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation03" id="slick-slide03">
                                     <button type="button" data-role="none" role="button" tabindex="0">4</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation04" id="slick-slide04">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation04" id="slick-slide04">
                                     <button type="button" data-role="none" role="button" tabindex="0">5</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation05" id="slick-slide05">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation05" id="slick-slide05">
                                     <button type="button" data-role="none" role="button" tabindex="0">6</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation06" id="slick-slide06">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation06" id="slick-slide06">
                                     <button type="button" data-role="none" role="button" tabindex="0">7</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation07" id="slick-slide07">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation07" id="slick-slide07">
                                     <button type="button" data-role="none" role="button" tabindex="0">8</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation08" id="slick-slide08">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation08" id="slick-slide08">
                                     <button type="button" data-role="none" role="button" tabindex="0">9</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation09" id="slick-slide09">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation09" id="slick-slide09">
                                     <button type="button" data-role="none" role="button" tabindex="0">10</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation010" id="slick-slide010">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation010" id="slick-slide010">
                                     <button type="button" data-role="none" role="button" tabindex="0">11</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation011" id="slick-slide011">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation011" id="slick-slide011">
                                     <button type="button" data-role="none" role="button" tabindex="0">12</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation012" id="slick-slide012">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation012" id="slick-slide012">
                                     <button type="button" data-role="none" role="button" tabindex="0">13</button>
                                 </li>
-                                <li aria-hidden="true" role="presentation" aria-selected="false"
-                                    aria-controls="navigation013" id="slick-slide013">
+                                <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation013" id="slick-slide013">
                                     <button type="button" data-role="none" role="button" tabindex="0">14</button>
                                 </li>
                             </ul>
                         </div>
                     </section>
+                    <div class="oe_structure oe_empty"/>
 
-                    <div class="oe_structure oe_empty">
-                        <section class="s_text_block">
-                            <div class="container">
-                                <h3 class="text-center text-muted o_default_snippet_text">Здравствуйте, Hello,
-                                    Салеметсiз бе.
-                                </h3>
-                                <div class="row">
-                                    <div class="col-md-12 mb16 mt16">
-                                        <div class="o_image_floating pull-right s_image_floating o_margin_l">
-                                            <div class="o_container">
-                                                <img class="img img-rounded img-responsive" src="/web/image/2106"/>
-                                            </div>
-                                            <div class="o_footer">
-                                                <small class="text-muted">Отличные почтовые ящики идеально подойдут в
-                                                    любой
-                                                    подъезд
-                                                </small>
-                                            </div>
-                                        </div>
-                                        <p class="o_default_snippet_text">Ящики почтовые уличные "Почта", секционные
-                                            ящики
-                                            "Подъезд", облагородить площадку во дворе, заказав уличную урну от 24 литров
-                                            или
-                                            скамейку для сада. Низкие цены, высокое качество.
-                                        </p>
-                                        <p>Для армейских гарнизонов, профилакториев есть выбор металлических кроваток,
-                                            двух
-                                            ярусных кроватей.
-                                        </p>
-                                        <p class="o_default_snippet_text">Легированная сталь основа всей железной
-                                            продукции.
-                                            Покраска идёт в специализированных малярных комнатах в соответствии с
-                                            рекомендацией производителя порошковой краски. При заданной температуре.
-                                        </p>
-                                        <p class="o_default_snippet_text">Ассортимент продукции предлагаем посмотреть в
-                                            фотообзоре в верхней части сайта.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="row">
-                        <div class="container">
-                            <h2 class="text-center">Категории продукции</h2>
-                            <ul class="homepage-categories">
-                                <t t-foreach="request.website.sale_categories()" t-as="c">
-                                    <t t-call="theme_l.categories_recursive_homepage"/>
-                                </t>
-                            </ul>
-                        </div>
-                    </div>
+
                     <div class="oe_structure oe_empty" id="subscribe_container">
-                        <section
-                                class="jumbotron mt0 mb0 o_animate o_visible o_animated o_anim_bounce_in_left o_animate_preview bg-gray-lighter">
+                        <section class="jumbotron mt0 mb0 o_animate o_anim_bounce_in_left bg-gray-lighter" style="animation-play-state: paused;">
                             <div class="container">
                                 <h3>Оставайтесь на связи с нами</h3>
                                 <p>В одиночку мы можем сделать многое, вместе - еще больше</p>
-                                <div class="input-group js_subscribe" data-list-id="1" data-subscribe="off">
-                                    <input type="email" name="email" class="js_subscribe_email form-control"
-                                           placeholder="ваш электронный адрес..."/>
+                                <div class="input-group js_subscribe hidden" data-list-id="1" data-subscribe="off">
+                                    <input type="email" name="email" class="js_subscribe_email form-control" placeholder="ваш электронный адрес..."/>
                                     <span class="input-group-btn">
                                         <a href="#" class="btn btn-primary js_subscribe_btn o_default_snippet_text">
                                             Подписаться
                                         </a>
-                                        <a href="#"
-                                           class="btn btn-success js_subscribed_btn hidden o_default_snippet_text"
-                                           disabled="disabled">Спасибо
+                                        <a href="#" class="btn btn-success js_subscribed_btn hidden o_default_snippet_text" disabled="disabled">Спасибо
                                         </a>
                                     </span>
                                     <div class="alert alert-success hidden o_default_snippet_text">Спасибо за подписку!
@@ -704,40 +572,46 @@
                             </div>
                         </section>
                         <div class="o_newsletter_popup" data-list-id="1">
-                            <div class="alert alert-warning alert-dismissible fade in css_non_editable_mode_hidden o_not_editable o_default_snippet_text"
-                                 role="alert" contenteditable="false">
-                                <strong class="o_default_snippet_text">Всплывающий бюллетень!</strong>
+                            <div class="alert alert-warning alert-dismissible fade in css_non_editable_mode_hidden o_not_editable o_default_snippet_text" role="alert"><strong class="o_default_snippet_text">Всплывающий бюллетень!</strong>
                                 Эффект фрагмента всплывающего окна бюллетени активен на этой странице. Нажмите
-                                <a id="edit_dialog" href="#" class="o_default_snippet_text" data-original-title=""
-                                   title="">
+
+                                <a id="edit_dialog" href="#" data-original-title="" title="">
                                     Здесь диалоговое окно для редактирования контента
                                 </a>
                             </div>
-                            <div class="modal modal-dialog modal-md fade fade-custom" id="o_newsletter_popup"
-                                 tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+                            <div class="modal modal-dialog modal-md fade fade-custom in" id="o_newsletter_popup" tabindex="-1" role="dialog" style="display: none; padding-right: 17px;" aria-hidden="false">
                                 <div class="modal-content o_popup_modal_content">
-                                    <a href="#" class="o_popup_btn_close o_not_editable o_default_snippet_text"
-                                       data-dismiss="modal" data-original-title="" title="" contenteditable="false">×
+                                    <a href="#" class="o_popup_btn_close o_not_editable o_default_snippet_text" data-dismiss="modal" data-original-title="" title="">×
                                     </a>
                                     <div class="o_popup_modal_body text-center">
                                         <div class="o_popup_content_dev" data-oe-placeholder="Type Here ...">
-                                            <div>
-                                                <div class="modal-header text-center">
-                                                    <h3 class="modal-title mt8">ООО "Лавков" для клиентов</h3>
-                                                </div>
-                                                <div class="o_popup_message" style="text-align: center;">
-                                                    <strong>Специальные условия для постоянных покупателей</strong>
-                                                </div>
-                                                <p class="o_message_paragraph">оставайтесь с нами на связи</p>
+                                            <div class="modal-header text-center">
+                                                <h3 class="modal-title mt8">ООО "Лавков"
+                                                    <br/>
+                                                </h3>
                                             </div>
+                                            <div class="o_popup_message">
+                                                <div style="text-align: center;">
+                                                    <strong style="font-size: 3em;">
+                                                        <font style="font-size: 18px;">ООО "Лавков"</font>
+                                                    </strong>
+                                                </div>
+                                                <strong>
+                                                    <div style="text-align: center;">
+                                                        <strong style="font-size: 3em;">
+                                                            <font style="font-size: 18px;">Предлагает специальные условия для постоянных покупателей</font>
+                                                        </strong>
+                                                    </div>
+                                                </strong>
+                                            </div>
+                                            <p class="o_message_paragraph">Подпишитесь на нашу маркетинговую рассылку и получите
+                                                <strong>этот обзор мгновенно</strong>
+                                            </p>
                                         </div>
-                                        <div class="input-group o_not_editable o_popup_animated o_popup_bounce_del500ms o_popup_bounce_small"
-                                             style="display: table;" contenteditable="false">
-                                            <input type="email" name="email" class="popup_subscribe_email form-control"
-                                                   placeholder="адрес электронной почты..." autofocus="autofocus"/>
+                                        <div class="input-group o_not_editable o_popup_animated o_popup_bounce_del500ms o_popup_bounce_small" style="">
+                                            <input type="email" name="email" class="popup_subscribe_email form-control" placeholder="адрес электронной почты..." autofocus="autofocus"/>
                                             <span class="input-group-btn">
-                                                <a href="#"
-                                                   class="btn btn-success popup_subscribe_btn o_default_snippet_text">
+                                                <a href="#" class="btn btn-success popup_subscribe_btn o_default_snippet_text">
                                                     Подписаться
                                                 </a>
                                             </span>
@@ -759,9 +633,9 @@
                     <div class="category-caption text-center" t-esc="c.name"/>
                 </a>
                 <!--<ul t-if="c.child_id" class="nav nav-pills nav-stacked nav-hierarchy">-->
-                    <!--<t t-foreach="c.child_id" t-as="c">-->
-                        <!--<t t-call="theme_l.categories_recursive_homepage"/>-->
-                    <!--</t>-->
+                <!--<t t-foreach="c.child_id" t-as="c">-->
+                <!--<t t-call="theme_l.categories_recursive_homepage"/>-->
+                <!--</t>-->
                 <!--</ul>-->
             </li>
         </template>
@@ -769,9 +643,7 @@
             <xpath expr="//div[@id='wrap']" position="replace">
                 <t t-set="additional_title" t-value="product.name"/>
                 <div itemscope="itemscope" itemtype="http://schema.org/Product" id="wrap" class="js_sale">
-                    <section
-                            t-attf-class="container-fluid oe_website_sale #{(compute_currency(product.lst_price) - product.website_price) &gt; 0.01 and website.get_current_pricelist().discount_policy == 'without_discount'  and 'discount'}"
-                            id="product_detail" style="max-width:1310px;">
+                    <section t-attf-class="container-fluid oe_website_sale #{(compute_currency(product.lst_price) - product.website_price) &gt; 0.01 and website.get_current_pricelist().discount_policy == 'without_discount'  and 'discount'}" id="product_detail" style="max-width:1310px;">
                         <div class="row">
                             <div class="col-sm-8">
                                 <ol class="breadcrumb">
@@ -779,8 +651,7 @@
                                         <a t-att-href="keep(category=0)">Каталог</a>
                                     </li>
                                     <li t-if="category">
-                                        <a t-att-href="keep('/shop/category/%s' % slug(category), category=0)"
-                                           t-field="category.name"/>
+                                        <a t-att-href="keep('/shop/category/%s' % slug(category), category=0)" t-field="category.name"/>
                                     </li>
                                     <li class="active">
                                         <span t-field="product.name"/>
@@ -804,62 +675,40 @@
                                 </h1>
                             </div>
                             <div class="col-sm-7">
-                                <span itemprop="image" t-field="product.image"
-                                      t-options="{'widget': 'image', 'class': 'product_detail_img', 'alt-field': 'name', 'zoom': 'image'}"
-                                      groups="!website_sale.group_website_multi_image"/>
+                                <span itemprop="image" t-field="product.image" t-options="{'widget': 'image', 'class': 'product_detail_img', 'alt-field': 'name', 'zoom': 'image'}" groups="!website_sale.group_website_multi_image"/>
                                 <t groups="website_sale.group_website_multi_image">
                                     <t t-set="variant_img" t-value="product.product_variant_ids[0].image_variant"/>
                                     <t t-set="image_ids" t-value="product.product_image_ids"/>
-                                    <div id="o-carousel-product" class="carousel slide" data-ride="carousel"
-                                         data-interval="false">
+                                    <div id="o-carousel-product" class="carousel slide" data-ride="carousel" data-interval="false">
                                         <div class="carousel-outer">
                                             <div class="carousel-inner">
-                                                <div class="item active" itemprop="image"
-                                                     t-field="product.product_variant_ids[0].image"
-                                                     t-options="{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;product_detail_img js_variant_img&quot;, &quot;alt-field&quot;: &quot;name&quot;, &quot;zoom&quot;: &quot;image&quot;}"/>
-                                                <div t-if="variant_img" class="item" itemprop="image"
-                                                     t-field="product.image"
-                                                     t-options="{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;product_detail_img&quot;, &quot;alt-field&quot;: &quot;name&quot;, &quot;zoom&quot;: &quot;image&quot;}"/>
+                                                <div class="item active" itemprop="image" t-field="product.product_variant_ids[0].image" t-options="{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;product_detail_img js_variant_img&quot;, &quot;alt-field&quot;: &quot;name&quot;, &quot;zoom&quot;: &quot;image&quot;}"/>
+                                                <div t-if="variant_img" class="item" itemprop="image" t-field="product.image" t-options="{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;product_detail_img&quot;, &quot;alt-field&quot;: &quot;name&quot;, &quot;zoom&quot;: &quot;image&quot;}"/>
                                                 <t t-if="len(image_ids)" t-foreach="image_ids" t-as="pimg">
-                                                    <div class="item" t-field="pimg.image"
-                                                         t-options="{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;product_detail_img&quot;, &quot;alt-field&quot;: &quot;name&quot;, &quot;zoom&quot;: &quot;image&quot; }"/>
+                                                    <div class="item" t-field="pimg.image" t-options="{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;product_detail_img&quot;, &quot;alt-field&quot;: &quot;name&quot;, &quot;zoom&quot;: &quot;image&quot; }"/>
                                                 </t>
                                             </div>
-
                                             <t t-if="len(image_ids) or variant_img">
-                                                <a class="carousel-control left" href="#o-carousel-product"
-                                                   role="button"
-                                                   data-slide="prev">
+                                                <a class="carousel-control left" href="#o-carousel-product" role="button" data-slide="prev">
                                                     <span class="fa fa-chevron-left" aria-hidden="true"/>
                                                     <span class="sr-only">Previous</span>
                                                 </a>
-                                                <a class="carousel-control right" href="#o-carousel-product"
-                                                   role="button"
-                                                   data-slide="next">
+                                                <a class="carousel-control right" href="#o-carousel-product" role="button" data-slide="next">
                                                     <span class="fa fa-chevron-right" aria-hidden="true"/>
                                                     <span class="sr-only">Next</span>
                                                 </a>
                                             </t>
                                         </div>
-
                                         <ol class="carousel-indicators" t-if="len(image_ids) or variant_img">
                                             <li data-target="#o-carousel-product" data-slide-to="0" class="active">
-                                                <img class="img img-responsive js_variant_img_small"
-                                                     t-attf-src="/website/image/product.product/{{product.product_variant_ids[0].id}}/image/90x90"
-                                                     t-att-alt="product.name"/>
+                                                <img class="img img-responsive js_variant_img_small" t-attf-src="/website/image/product.product/{{product.product_variant_ids[0].id}}/image/90x90" t-att-alt="product.name"/>
                                             </li>
-                                            <li t-if="variant_img" data-target="#o-carousel-product" data-slide-to="1"
-                                                class="">
-                                                <img class="img img-responsive"
-                                                     t-attf-src="/website/image/product.template/{{product.id}}/image/90x90"
-                                                     t-att-alt="product.name"/>
+                                            <li t-if="variant_img" data-target="#o-carousel-product" data-slide-to="1" class="">
+                                                <img class="img img-responsive" t-attf-src="/website/image/product.template/{{product.id}}/image/90x90" t-att-alt="product.name"/>
                                             </li>
                                             <t t-if="len(image_ids)" t-foreach="image_ids" t-as="pimg">
-                                                <li data-target="#o-carousel-product"
-                                                    t-att-data-slide-to="pimg_index + (variant_img and 2 or 1)">
-                                                    <img class="img img-responsive"
-                                                         t-attf-src="/website/image/product.image/{{pimg.id}}/image/90x90"
-                                                         t-att-alt="pimg.name"/>
+                                                <li data-target="#o-carousel-product" t-att-data-slide-to="pimg_index + (variant_img and 2 or 1)">
+                                                    <img class="img img-responsive" t-attf-src="/website/image/product.image/{{pimg.id}}/image/90x90" t-att-alt="pimg.name"/>
                                                 </li>
                                             </t>
                                         </ol>
@@ -881,8 +730,7 @@
                                             <!-- popover 'button' -->
                                             <div class="rating" data-placement="top" data-toggle="rating-popover">
                                                 <t t-call="rating.rating_star_card">
-                                                    <t t-set="rating_default_value"
-                                                       t-value="'%.2f' % (rating_stat.get('avg', 0.0),)"/>
+                                                    <t t-set="rating_default_value" t-value="'%.2f' % (rating_stat.get('avg', 0.0),)"/>
                                                     <t t-set="rating_disabled" t-value="True"/>
                                                 </t>
                                                 <i class="fa fa-user">
@@ -896,20 +744,15 @@
                                                     <t t-foreach="rating_stat.get('percent')" t-as="percent">
                                                         <t t-if="min_rate &lt;= percent and percent &lt;= max_rate">
                                                             <div class="progress" style="width:200px;">
-                                                                <div class="progress-bar" role="progressbar"
-                                                                     aria-valuemin="0" aria-valuemax="100"
-                                                                     t-att-aria-valuenow="rating_stat['percent'][percent]"
-                                                                     t-attf-style="width: #{rating_stat['percent'][percent]}%">
-                                                                    <span class="sr-only">
-                                                                        <t t-esc="rating_stat['percent'][percent]"/>%
+                                                                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" t-att-aria-valuenow="rating_stat['percent'][percent]" t-attf-style="width: #{rating_stat['percent'][percent]}%">
+                                                                    <span class="sr-only"><t t-esc="rating_stat['percent'][percent]"/>%
                                                                     </span>
                                                                 </div>
                                                                 <span class="progress_type">
                                                                     <t t-esc="percent"/>
                                                                     <i class="fa fa-star"/>
                                                                 </span>
-                                                                <span class="progress_completed">
-                                                                    <t t-esc="rating_stat['percent'][percent]"/>%
+                                                                <span class="progress_completed"><t t-esc="rating_stat['percent'][percent]"/>%
                                                                 </span>
                                                             </div>
                                                         </t>
@@ -919,17 +762,15 @@
                                         </div>
                                     </div>
                                     <div class="small pull-right">Артикул:
-                                        <span id="default_code" t-esc="product.default_variant.default_code"></span>
+                                        <span id="default_code" t-esc="product.default_variant.default_code"/>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
                                     <div class="attr-color">
-                                        <t t-foreach="product.attribute_line_ids.sorted(key=lambda x: x.attribute_id.sequence)"
-                                           t-as="variant_id">
+                                        <t t-foreach="product.attribute_line_ids.sorted(key=lambda x: x.attribute_id.sequence)" t-as="variant_id">
                                             <t t-if="variant_id.attribute_id.type == 'color'">
                                                 <t t-if="len(variant_id.value_ids) &gt; 1">Цвета:</t>
                                                 <t t-else="">Цвет:</t>
-
                                                 <t t-foreach="variant_id.value_ids" t-as="value_id">
                                                     <t t-if="value_id in product.default_variant.attribute_value_ids">
                                                         <span class="active" t-field="value_id.name"/>
@@ -969,18 +810,14 @@
                                                 <td class="attr-name">
                                                     Габариты:
                                                 </td>
-                                                <td class="attr-value">
-                                                    <span id="lhw-value"
-                                                          t-esc="'%sx%sx%s' %(product.default_variant.length, product.default_variant.width, product.default_variant.height)"></span>&amp;nbsp;мм.
+                                                <td class="attr-value"><span id="lhw-value" t-esc="'%sx%sx%s' %(product.default_variant.length, product.default_variant.width, product.default_variant.height)"/>&amp;nbsp;мм.
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="attr-name">
                                                     Объём:
                                                 </td>
-                                                <td class="attr-value">
-                                                    <span id="volume-value"
-                                                          t-esc="product.default_variant.volume"></span>&amp;nbsp;м<sup>
+                                                <td class="attr-value"><span id="volume-value" t-esc="product.default_variant.volume"/>&amp;nbsp;м<sup>
                                                     3</sup>.
                                                 </td>
                                             </tr>
@@ -988,9 +825,7 @@
                                                 <td class="attr-name">
                                                     Вес:
                                                 </td>
-                                                <td class="attr-value">
-                                                    <span id="weight-value"
-                                                          t-esc="product.default_variant.weight"></span>&amp;nbsp;кг.
+                                                <td class="attr-value"><span id="weight-value" t-esc="product.default_variant.weight"/>&amp;nbsp;кг.
                                                 </td>
                                             </tr>
                                         </table>
@@ -1006,16 +841,13 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
-                                    <form action="/shop/cart/update" class="js_add_cart_variants"
-                                          t-att-data-attribute_value_ids="product.product_variant_ids.ids"
-                                          method="POST">
+                                    <form action="/shop/cart/update" class="js_add_cart_variants" t-att-data-attribute_value_ids="product.product_variant_ids.ids" method="POST">
                                         <div class="panel panel-default">
                                             <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
                                             <div class="text-center">
                                                 <t t-call="theme_l.product_price"/>
                                             </div>
-                                            <div t-if="product.availability == 'in_stock'"
-                                                 class="alert alert-success text-center">
+                                            <div t-if="product.availability == 'in_stock'" class="alert alert-success text-center">
                                                 <span class="fa fa-check-circle"/>
                                                 <span>В наличии</span>
                                             </div>
@@ -1025,28 +857,20 @@
                                             </div>
                                             <div class="js_product col-xs-12 mb8" t-if="product.product_variant_ids">
                                                 <t t-placeholder="select">
-                                                    <input type="hidden" class="product_id" name="product_id"
-                                                           t-att-value="product.product_variant_id.id if len(product.product_variant_ids) == 1 else '0'"/>
-                                                    <t t-set="attribute_value_ids"
-                                                       t-value="get_attribute_value_ids(product)"/>
-                                                    <ul t-attf-class="list-unstyled js_add_cart_variants #{ul_class}"
-                                                        t-att-data-attribute_value_ids="attribute_value_ids">
-                                                        <t t-foreach="product.attribute_line_ids.sorted(key=lambda x: x.attribute_id.sequence)"
-                                                           t-as="variant_id">
+                                                    <input type="hidden" class="product_id" name="product_id" t-att-value="product.product_variant_id.id if len(product.product_variant_ids) == 1 else '0'"/>
+                                                    <t t-set="attribute_value_ids" t-value="get_attribute_value_ids(product)"/>
+                                                    <ul t-attf-class="list-unstyled js_add_cart_variants #{ul_class}" t-att-data-attribute_value_ids="attribute_value_ids">
+                                                        <t t-foreach="product.attribute_line_ids.sorted(key=lambda x: x.attribute_id.sequence)" t-as="variant_id">
                                                             <li t-if="len(variant_id.value_ids) &gt; 1">
                                                                 <div class="">
-                                                                    <span class=""
-                                                                          t-field="variant_id.attribute_id.name"/>
+                                                                    <span class="" t-field="variant_id.attribute_id.name"/>
                                                                 </div>
                                                                 <div style="min-width: 50%;">
                                                                     <t t-if="variant_id.attribute_id.type in ['select', 'hidden']">
-                                                                        <select t-attf-class="form-control #{'js_variant_change' if variant_id.attribute_id.create_variant else ''}"
-                                                                                t-att-name="'attribute-%s-%s' % (product.id, variant_id.attribute_id.id)">
-                                                                            <t t-foreach="variant_id.value_ids"
-                                                                               t-as="value_id">
+                                                                        <select t-attf-class="form-control #{'js_variant_change' if variant_id.attribute_id.create_variant else ''}" t-att-name="'attribute-%s-%s' % (product.id, variant_id.attribute_id.id)">
+                                                                            <t t-foreach="variant_id.value_ids" t-as="value_id">
                                                                                 <t t-if="value_id in product.default_variant.attribute_value_ids">
-                                                                                    <option t-att-value="value_id.id"
-                                                                                            selected="selected">
+                                                                                    <option t-att-value="value_id.id" selected="selected">
                                                                                         <span t-field="value_id.name"/>
                                                                                     </option>
                                                                                 </t>
@@ -1061,25 +885,14 @@
                                                                     <t t-if="variant_id.attribute_id.type == 'radio'">
                                                                         <ul class="list-unstyled">
                                                                             <t t-set="inc" t-value="0"/>
-                                                                            <t t-foreach="variant_id.value_ids"
-                                                                               t-as="value_id">
-                                                                                <li class="form-group js_attribute_value"
-                                                                                    style="margin: 0;">
-                                                                                    <label class="control-label"
-                                                                                           style="margin: 0 20px;">
-                                                                                        <input type="radio"
-                                                                                               t-att-class="'js_variant_change' if variant_id.attribute_id.create_variant else None"
-                                                                                               t-att-checked="'checked' if not inc else None"
-                                                                                               t-att-name="'attribute-%s-%s' % (product.id, variant_id.attribute_id.id)"
-                                                                                               t-att-value="value_id.id"
-                                                                                               style="vertical-align: top; margin-right: 10px;"/>
+                                                                            <t t-foreach="variant_id.value_ids" t-as="value_id">
+                                                                                <li class="form-group js_attribute_value" style="margin: 0;">
+                                                                                    <label class="control-label" style="margin: 0 20px;">
+                                                                                        <input type="radio" t-att-class="'js_variant_change' if variant_id.attribute_id.create_variant else None" t-att-checked="'checked' if not inc else None" t-att-name="'attribute-%s-%s' % (product.id, variant_id.attribute_id.id)" t-att-value="value_id.id" style="vertical-align: top; margin-right: 10px;"/>
                                                                                         <span t-field="value_id.name"/>
-                                                                                        <span class="badge"
-                                                                                              t-if="value_id.price_extra">
+                                                                                        <span class="badge" t-if="value_id.price_extra">
                                                                                             <t t-esc="value_id.price_extra &gt; 0 and '+' or ''"/>
-                                                                                            <span t-field="value_id.price_extra"
-                                                                                                  style="white-space: nowrap;"
-                                                                                                  t-options="{                                           &quot;widget&quot;: &quot;monetary&quot;,                                           &quot;from_currency&quot;: product.currency_id,                                           &quot;display_currency&quot;: website.currency_id                                        }"/>
+                                                                                            <span t-field="value_id.price_extra" style="white-space: nowrap;" t-options="{                                           &quot;widget&quot;: &quot;monetary&quot;,                                           &quot;from_currency&quot;: product.currency_id,                                           &quot;display_currency&quot;: website.currency_id                                        }"/>
                                                                                         </span>
                                                                                     </label>
                                                                                 </li>
@@ -1088,13 +901,10 @@
                                                                         </ul>
                                                                     </t>
                                                                     <t t-if="variant_id.attribute_id.type == 'color'">
-                                                                        <select t-attf-class="form-control #{'js_variant_change' if variant_id.attribute_id.create_variant else ''}"
-                                                                                t-att-name="'attribute-%s-%s' % (product.id, variant_id.attribute_id.id)">
-                                                                            <t t-foreach="variant_id.value_ids"
-                                                                               t-as="value_id">
+                                                                        <select t-attf-class="form-control #{'js_variant_change' if variant_id.attribute_id.create_variant else ''}" t-att-name="'attribute-%s-%s' % (product.id, variant_id.attribute_id.id)">
+                                                                            <t t-foreach="variant_id.value_ids" t-as="value_id">
                                                                                 <t t-if="value_id in product.default_variant.attribute_value_ids">
-                                                                                    <option t-att-value="value_id.id"
-                                                                                            selected="selected">
+                                                                                    <option t-att-value="value_id.id" selected="selected">
                                                                                         <span t-field="value_id.name"/>
                                                                                     </option>
                                                                                 </t>
@@ -1123,14 +933,11 @@
                                                         </t>
                                                     </ul>
                                                 </t>
-                                                <p t-if="len(product.product_variant_ids) &gt; 1"
-                                                   class="css_not_available_msg bg-danger" style="padding: 15px;">Товар
+                                                <p t-if="len(product.product_variant_ids) &gt; 1" class="css_not_available_msg bg-danger" style="padding: 15px;">Товар
                                                     временно не доступен
                                                 </p>
                                             </div>
-                                            <a id="add_to_cart"
-                                               class="btn btn-primary btn-lg mt8 js_check_product text-center center-block"
-                                               href="#"><span class="fa fa-shopping-cart"/>&amp;nbsp;В корзину
+                                            <a id="add_to_cart" class="btn btn-primary btn-lg mt8 js_check_product text-center center-block" href="#"><span class="fa fa-shopping-cart"/>&amp;nbsp;В корзину
                                             </a>
                                         </div>
                                     </form>
@@ -1139,33 +946,32 @@
                             </div>
                         </div>
                     </section>
-                    <a name="description" class="todescription"/>
+                    <a name="description" class="todescription">&amp;nbsp;</a>
                     <section>
                         <div class="container">
                             <ul class="nav nav-tabs" role="tablist">
                                 <li role="presentation" class="active">
-                                    <a href="#product-description" aria-controls="home" role="tab" data-toggle="tab">
+                                    <a href="#product-description" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true">
                                         Описание
                                     </a>
                                 </li>
                                 <li role="presentation">
-                                    <a href="#review" aria-controls="profile" role="tab" data-toggle="tab">Отзывы</a>
+                                    <a href="#review" aria-controls="profile" role="tab" data-toggle="tab" aria-expanded="false">Отзывы</a>
                                 </li>
                                 <li role="presentation">
-                                    <a href="#delivery-payment" aria-controls="messages" role="tab" data-toggle="tab">
+                                    <a href="#delivery-payment" aria-controls="messages" role="tab" data-toggle="tab" aria-expanded="false">
                                         Доставка и оплата
                                     </a>
                                 </li>
                                 <li role="presentation">
-                                    <a href="#insurance" aria-controls="settings" role="tab" data-toggle="tab">Гарантии
+                                    <a href="#insurance" aria-controls="settings" role="tab" data-toggle="tab" aria-expanded="false">Гарантии
                                     </a>
                                 </li>
                             </ul>
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane active" id="product-description">
 
-                                    <div itemprop="description" t-field="product.website_description"
-                                         class="oe_structure mt16" id="product_full_description"/>
+                                    <div itemprop="description" t-field="product.website_description" class="oe_structure mt16" id="product_full_description"/>
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="review">
                                     <t t-call="website_mail.message_thread">
@@ -1183,24 +989,20 @@
                             </div>
                         </div>
                     </section>
-
                     <t t-set="head">
                         <!-- Facebook and linkedin sharing data -->
                         <meta property="og:type" content="website"/>
                         <meta property="og:url" t-att-content="request.httprequest.url"/>
-                        <meta property="og:image"
-                              t-attf-content="#{request.httprequest.url_root}web/image/product.template/#{product.id}/image"/>
+                        <meta property="og:image" t-attf-content="#{request.httprequest.url_root}web/image/product.template/#{product.id}/image"/>
                         <meta property="og:description" t-att-content="product.description_sale"/>
                         <!--  Twitter sharing data -->
                         <meta name="twitter:card" content="summary_large_image"/>
                         <meta name="twitter:site" t-attf-content="@#{res_company.name}"/>
                         <meta name="twitter:title" t-att-content="product.name"/>
                         <meta name="twitter:description" t-att-content="product.description_sale"/>
-                        <meta name="twitter:image"
-                              t-attf-content="#{request.httprequest.url_root}web/image/product.template/#{product.id}/image"/>
+                        <meta name="twitter:image" t-attf-content="#{request.httprequest.url_root}web/image/product.template/#{product.id}/image"/>
                     </t>
                 </div>
-
             </xpath>
         </template>
         <template id="product_price">
@@ -1284,9 +1086,9 @@
                                             <a href="/page/contactus">Контакты</a>
                                         </li>
                                         <!--<li>-->
-                                            <!--<a t-attf-href="/groups">-->
-                                                <!--Список рассылки-->
-                                            <!--</a>-->
+                                        <!--<a t-attf-href="/groups">-->
+                                        <!--Список рассылки-->
+                                        <!--</a>-->
                                         <!--</li>-->
                                     </ul>
                                     <ul class="list-unstyled">
@@ -1695,10 +1497,10 @@
                         <a itemprop="url"
                            t-att-href="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager['page']['num']&gt;1 else None))">
                             <img t-att-alt="product.name" t-att-title="product.name"
-                            t-att-src="'/web/image/product.product/%s/image/500x500' %(product.default_variant.id)" />
+                                 t-att-src="'/web/image/product.product/%s/image/500x500' %(product.default_variant.id)" />
                             <!--<span itemprop="image" t-field="product.default_variant.image"-->
-                                  <!--t-options="{'widget': 'image', 'resize': None if product_image_big else '500x500', 'zoom': 'image'}"-->
-                                  <!--t-att-alt="product.name"/>-->
+                            <!--t-options="{'widget': 'image', 'resize': None if product_image_big else '500x500', 'zoom': 'image'}"-->
+                            <!--t-att-alt="product.name"/>-->
                         </a>
                     </div>
                     <t t-if="show_publish">
