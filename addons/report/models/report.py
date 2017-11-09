@@ -130,8 +130,10 @@ class Report(models.Model):
         # Otherwise, fallback on the generic html rendering.
         report_model_name = 'report.%s' % report_name
         report_model = self.env.get(report_model_name)
+
         _logger.info("Report Model:")
         _logger.info(report_model_name)
+        _logger.info(report_model)
 
         if report_model is not None:
             return report_model.render_html(docids, data=data)
