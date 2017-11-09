@@ -130,11 +130,16 @@ class Report(models.Model):
         # Otherwise, fallback on the generic html rendering.
         report_model_name = 'report.%s' % report_name
         report_model = self.env.get(report_model_name)
+        _logger.info("Report Model:")
+        _logger.info(report_model_name)
 
         if report_model is not None:
             return report_model.render_html(docids, data=data)
         else:
             report = self._get_report_from_name(report_name)
+            _logger.info('docs id')
+            _logger.info(docids)
+
             docs = self.env[report.model].browse(docids)
             docargs = {
                 'doc_ids': docids,
