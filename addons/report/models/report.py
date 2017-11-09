@@ -129,6 +129,8 @@ class Report(models.Model):
         # If the report is using a custom model to render its html, we must use it.
         # Otherwise, fallback on the generic html rendering.
         report_model_name = 'report.%s' % report_name
+        if report_model_name == 'report.sale.report_saleorder':
+            report_model_name = 'report.l10n_ru_doc.report_order'
         report_model = self.env.get(report_model_name)
 
         _logger.info("Report Model:")
