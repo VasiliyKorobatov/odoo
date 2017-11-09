@@ -64,8 +64,10 @@ class QWebHelper(object):
         repr = []
         if partner.zip: repr.append(partner.zip)
         if partner.city: repr.append(partner.city)
-        if partner.street: repr.append(partner.street)
-        if partner.street2: repr.append(partner.street2)
+        if partner.street2:
+            repr.append(partner.street2)
+        elif partner.street:
+            repr.append(partner.street)
         return ', '.join(repr)
 
     def representation(self, partner):
