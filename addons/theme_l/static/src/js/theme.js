@@ -23,6 +23,8 @@ $(document).ready(function() {
 
     update_variant_detail();
     update_product_price();
+    $('#product-card-subtotal').text(((parseFloat( $("#default-price > .oe_currency_value").text())*parseInt($('input[name="add_qty"]').val())).toFixed(2)).replace('.',','));
+
     $("select.js_variant_change").change(function(){
         update_variant_detail();
     });
