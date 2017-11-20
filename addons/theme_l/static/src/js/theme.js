@@ -130,6 +130,7 @@ function update_variant_detail(variant_id = 0){
                 $('#product-card-subtotal').text(((parseFloat( $("#default-price > .oe_currency_value").text())*parseInt($('input[name="add_qty"]').val())).toFixed(2)).replace('.',','));
             });
         });
+
         MagicZoom.switchTo("zoom", $("a[data-variant-id='"+variant_id+"']").parents("li").index());
     }
 }
