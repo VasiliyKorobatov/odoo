@@ -30,7 +30,7 @@
             </xpath>
         </template>
         <template id="top_wrap_panel" inherit_id="theme_as.theme_as_layout" name="Theme AS Top Wrap Panel">
-            <xpath expr="//div[@id='top-wrap-panel']" position="inside">
+            <xpath expr="//div[@class='top-wrap-panel']" position="inside">
                 <div class="top-panel-line-in catalog-wr">
                     <div class="folder-top-wr">
                         <div class="folder-block-title">
