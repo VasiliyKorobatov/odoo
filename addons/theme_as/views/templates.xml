@@ -1,10 +1,6 @@
 <odoo>
     <data>
         <template id="theme_as_layout" inherit_id="website.layout" name="Theme AS Layout">
-            <xpath expr="//div[@id='wrapwrap']/header" position="attributes">
-                <attribute name="role">banner</attribute>
-                <attribute name="class">site-header</attribute>
-            </xpath>
             <xpath expr="//div[@id='wrapwrap']/footer" position="attributes">
                 <attribute name="role">contentinfo</attribute>
                 <attribute name="class">site-footer</attribute>
@@ -16,6 +12,7 @@
                 <div class="bottom-block"/>
             </xpath>
             <xpath expr="//div[@id='wrapwrap']/header" position="replace">
+                <header  class="site-header" role="banner">
                 <div class="header-inner">
                     <div class="company-block">
                         <div class="company-name">
@@ -40,6 +37,7 @@
                         </div>
                     </div>
                 </div>
+                </header>
             </xpath>
         </template>
         <template id="theme_as_homepage" inherit_id="website.homepage" name="Theme AS Homepage">
