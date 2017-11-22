@@ -371,7 +371,7 @@
             </xpath>
         </template>
         <template id="theme_as_header" inherit_id="website.layout" name="Theme AS Header">
-            <xpath expr="//div[id='wrapwrap']/header" position="replace">
+            <xpath expr="//div[@id='wrapwrap']/header" position="replace">
                 <div class="header-inner">
                     <div class="company-block">
                         <div class="company-name">
