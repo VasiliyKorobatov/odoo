@@ -1607,1269 +1607,1269 @@
         </template>
         <template id="site_container" inherit_id="theme_as.theme_as_homepage" name="Theme AS Site Container">
             <xpath expr="//div[@id='first-site-container']" position="inside">
-                <div class="site-main__inner">
-
-                    <div class="shop2-cookies-disabled shop2-warning hide"></div>
-
-
-                    <div class="shopBlocks-wrapper">
-
-
-                        <div class="shop-main-blocks new">
-                            <div class="inner">
-                                <div class="shop2-main-header shop2-main-new">
-                                    <span>Новые поступления!</span>
-                                </div>
-                                <div class="main-slide-block">
-
-
-                                    <div class="product-list product-list-thumbs  owl-carousel owl-loaded owl-drag">
-
-
-                                        <div class="owl-stage-outer">
-                                            <div class="owl-stage"
-                                                 style="transform: translate3d(-996px, 0px, 0px); transition: 0s; width: 3984px;">
-                                                <div class="owl-item cloned" style="width: 219px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/mini-pogruzchik-ant-750">
-                                                                <img src="/theme_as/static/img/layer_5.jpg"
-                                                                     alt="Мини погрузчик АНТ-750"
-                                                                     title="Мини погрузчик АНТ-750"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/mini-pogruzchik-ant-750">Мини
-                                                                погрузчик АНТ-750
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-
-                                                            <div class="price-old question">
-                                                                <span>
-                                                                    <strong>1&amp;nbsp;984&amp;nbsp;000</strong>
-                                                                    руб.
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="shop2-product-discount-desc"
-                                                                 style="display: none;">
-                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
-                                                            </div>
-                                                            <div class="price-current">
-                                                                <strong>1&amp;nbsp;884&amp;nbsp;800</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item cloned" style="width: 219px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/pritsep-dlya-gnb-6tn">
-                                                                <img src="/theme_as/static/img/5458863.jpg"
-                                                                     alt="Прицеп для ГНБ 6тн"
-                                                                     title="Прицеп для ГНБ 6тн"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/pritsep-dlya-gnb-6tn">Прицеп для
-                                                                ГНБ 6тн
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-
-                                                            <div class="price-old question">
-                                                                <span>
-                                                                    <strong>854&amp;nbsp;100</strong>
-                                                                    руб.
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="shop2-product-discount-desc"
-                                                                 style="display: none;">
-                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
-                                                            </div>
-                                                            <div class="price-current">
-                                                                <strong>811&amp;nbsp;395</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item cloned" style="width: 219px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/pritsep-dlya-gnb-15t">
-                                                                <img src="/theme_as/static/img/5458868.jpg"
-                                                                     alt="Прицеп для ГНБ 15т"
-                                                                     title="Прицеп для ГНБ 15т"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/pritsep-dlya-gnb-15t">Прицеп для
-                                                                ГНБ 15т
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-
-                                                            <div class="price-old question">
-                                                                <span>
-                                                                    <strong>975&amp;nbsp;000</strong>
-                                                                    руб.
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="shop2-product-discount-desc"
-                                                                 style="display: none;">
-                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
-                                                            </div>
-                                                            <div class="price-current">
-                                                                <strong>926&amp;nbsp;250</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item cloned" style="width: 219px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/rotornaya-burovaya-ustanovka-shantui-ser150">
-                                                                <img src="/theme_as/static/img/5458856.jpg"
-                                                                     alt="Роторная буровая установка SHANTUI SER150"
-                                                                     title="Роторная буровая установка SHANTUI SER150"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/rotornaya-burovaya-ustanovka-shantui-ser150">
-                                                                Роторная буровая установка SHANTUI SER150
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-                                                            <div class="price-current">
-                                                                <strong>1&amp;nbsp;250&amp;nbsp;840</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item active" style="width: 219px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/asfaltovyy-katok-xgma-xg6032d">
-                                                                <img src="/theme_as/static/img/layer_15.png"
-                                                                     alt="Асфальтовый каток XGMA XG6032D"
-                                                                     title="Асфальтовый каток XGMA XG6032D"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/asfaltovyy-katok-xgma-xg6032d">
-                                                                Асфальтовый каток XGMA XG6032D
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-                                                            <div class="price-current">
-                                                                <strong>2&amp;nbsp;940&amp;nbsp;000</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item active" style="width: 219px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/buldozer-xgma-xg4161l">
-                                                                <img src="/theme_as/static/img/559988554.jpg"
-                                                                     alt="Бульдозер XGMA XG4161L"
-                                                                     title="Бульдозер XGMA XG4161L"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/buldozer-xgma-xg4161l">Бульдозер
-                                                                XGMA XG4161L
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-                                                            <div class="price-current">
-                                                                <strong>8&amp;nbsp;649&amp;nbsp;392</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item" style="width: 219px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/greyder-mitsubishi-mg230-2">
-                                                                <img src="/theme_as/static/img/neytralka.png"
-                                                                     alt="Грейдер MITSUBISHI MG230-2"
-                                                                     title="Грейдер MITSUBISHI MG230-2"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/greyder-mitsubishi-mg230-2">
-                                                                Грейдер MITSUBISHI MG230-2
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-
-                                                            <div class="price-old question">
-                                                                <span>
-                                                                    <strong>4&amp;nbsp;675&amp;nbsp;000</strong>
-                                                                    руб.
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="shop2-product-discount-desc"
-                                                                 style="display: none;">
-                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
-                                                            </div>
-                                                            <div class="price-current">
-                                                                <strong>4&amp;nbsp;441&amp;nbsp;250</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item" style="width: 219px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/mini-pogruzchik-xgma-xg3070">
-                                                                <img src="/theme_as/static/img/layer-6.jpg"
-                                                                     alt="Мини погрузчик XGMA XG3070"
-                                                                     title="Мини погрузчик XGMA XG3070"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/mini-pogruzchik-xgma-xg3070">Мини
-                                                                погрузчик XGMA XG3070
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-
-                                                            <div class="price-old question">
-                                                                <span>
-                                                                    <strong>4&amp;nbsp;100&amp;nbsp;000</strong>
-                                                                    руб.
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="shop2-product-discount-desc"
-                                                                 style="display: none;">
-                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
-                                                            </div>
-                                                            <div class="price-current">
-                                                                <strong>3&amp;nbsp;895&amp;nbsp;000</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item" style="width: 219px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/mini-pogruzchik-ant-750">
-                                                                <img src="/theme_as/static/img/layer_5.jpg"
-                                                                     alt="Мини погрузчик АНТ-750"
-                                                                     title="Мини погрузчик АНТ-750"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/mini-pogruzchik-ant-750">Мини
-                                                                погрузчик АНТ-750
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-
-                                                            <div class="price-old question">
-                                                                <span>
-                                                                    <strong>1&amp;nbsp;984&amp;nbsp;000</strong>
-                                                                    руб.
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="shop2-product-discount-desc"
-                                                                 style="display: none;">
-                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
-                                                            </div>
-                                                            <div class="price-current">
-                                                                <strong>1&amp;nbsp;884&amp;nbsp;800</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item" style="width: 219px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/pritsep-dlya-gnb-6tn">
-                                                                <img src="/theme_as/static/img/5458863.jpg"
-                                                                     alt="Прицеп для ГНБ 6тн"
-                                                                     title="Прицеп для ГНБ 6тн"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/pritsep-dlya-gnb-6tn">Прицеп для
-                                                                ГНБ 6тн
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-
-                                                            <div class="price-old question">
-                                                                <span>
-                                                                    <strong>854&amp;nbsp;100</strong>
-                                                                    руб.
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="shop2-product-discount-desc"
-                                                                 style="display: none;">
-                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
-                                                            </div>
-                                                            <div class="price-current">
-                                                                <strong>811&amp;nbsp;395</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item" style="width: 219px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/pritsep-dlya-gnb-15t">
-                                                                <img src="/theme_as/static/img/5458868.jpg"
-                                                                     alt="Прицеп для ГНБ 15т"
-                                                                     title="Прицеп для ГНБ 15т"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/pritsep-dlya-gnb-15t">Прицеп для
-                                                                ГНБ 15т
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-
-                                                            <div class="price-old question">
-                                                                <span>
-                                                                    <strong>975&amp;nbsp;000</strong>
-                                                                    руб.
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="shop2-product-discount-desc"
-                                                                 style="display: none;">
-                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
-                                                            </div>
-                                                            <div class="price-current">
-                                                                <strong>926&amp;nbsp;250</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item" style="width: 219px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/rotornaya-burovaya-ustanovka-shantui-ser150">
-                                                                <img src="/theme_as/static/img/5458856.jpg"
-                                                                     alt="Роторная буровая установка SHANTUI SER150"
-                                                                     title="Роторная буровая установка SHANTUI SER150"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/rotornaya-burovaya-ustanovka-shantui-ser150">
-                                                                Роторная буровая установка SHANTUI SER150
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-                                                            <div class="price-current">
-                                                                <strong>1&amp;nbsp;250&amp;nbsp;840</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item cloned" style="width: 219px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/asfaltovyy-katok-xgma-xg6032d">
-                                                                <img src="/theme_as/static/img/layer_15.png"
-                                                                     alt="Асфальтовый каток XGMA XG6032D"
-                                                                     title="Асфальтовый каток XGMA XG6032D"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/asfaltovyy-katok-xgma-xg6032d">
-                                                                Асфальтовый каток XGMA XG6032D
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-                                                            <div class="price-current">
-                                                                <strong>2&amp;nbsp;940&amp;nbsp;000</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item cloned" style="width: 219px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/buldozer-xgma-xg4161l">
-                                                                <img src="/theme_as/static/img/559988554.jpg"
-                                                                     alt="Бульдозер XGMA XG4161L"
-                                                                     title="Бульдозер XGMA XG4161L"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/buldozer-xgma-xg4161l">Бульдозер
-                                                                XGMA XG4161L
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-                                                            <div class="price-current">
-                                                                <strong>8&amp;nbsp;649&amp;nbsp;392</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item cloned" style="width: 219px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/greyder-mitsubishi-mg230-2">
-                                                                <img src="/theme_as/static/img/neytralka.png"
-                                                                     alt="Грейдер MITSUBISHI MG230-2"
-                                                                     title="Грейдер MITSUBISHI MG230-2"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/greyder-mitsubishi-mg230-2">
-                                                                Грейдер MITSUBISHI MG230-2
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-
-                                                            <div class="price-old question">
-                                                                <span>
-                                                                    <strong>4&amp;nbsp;675&amp;nbsp;000</strong>
-                                                                    руб.
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="shop2-product-discount-desc"
-                                                                 style="display: none;">
-                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
-                                                            </div>
-                                                            <div class="price-current">
-                                                                <strong>4&amp;nbsp;441&amp;nbsp;250</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item cloned" style="width: 219px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/mini-pogruzchik-xgma-xg3070">
-                                                                <img src="/theme_as/static/img/layer-6.jpg"
-                                                                     alt="Мини погрузчик XGMA XG3070"
-                                                                     title="Мини погрузчик XGMA XG3070"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/mini-pogruzchik-xgma-xg3070">Мини
-                                                                погрузчик XGMA XG3070
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-
-                                                            <div class="price-old question">
-                                                                <span>
-                                                                    <strong>4&amp;nbsp;100&amp;nbsp;000</strong>
-                                                                    руб.
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="shop2-product-discount-desc"
-                                                                 style="display: none;">
-                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
-                                                            </div>
-                                                            <div class="price-current">
-                                                                <strong>3&amp;nbsp;895&amp;nbsp;000</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="owl-controls">
-                                            <div class="owl-nav">
-                                                <div class="owl-prev">prev</div>
-                                                <div class="owl-next">next</div>
-                                            </div>
-                                            <div class="owl-dots">
-                                                <div class="owl-dot active">
-                                                    <span></span>
-                                                </div>
-                                                <div class="owl-dot">
-                                                    <span></span>
-                                                </div>
-                                                <div class="owl-dot">
-                                                    <span></span>
-                                                </div>
-                                                <div class="owl-dot">
-                                                    <span></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="shop-main-blocks spec">
-                            <div class="inner">
-                                <div class="shop2-main-header shop2-main-spec">
-                                    <span>Хиты продаж!</span>
-                                </div>
-                                <div class="main-slide-block">
-
-
-                                    <div class="product-list product-list-thumbs  owl-carousel owl-loaded owl-drag">
-
-
-                                        <div class="owl-stage-outer">
-                                            <div class="owl-stage"
-                                                 style="transform: translate3d(-1250px, 0px, 0px); transition: 0s; width: 5000px;">
-                                                <div class="owl-item cloned" style="width: 220px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/gruntovyy-katok-xgma-xg6141m-i">
-                                                                <img src="/theme_as/static/img/559988555.jpg"
-                                                                     alt="Грунтовый каток XGMA XG6141М-I"
-                                                                     title="Грунтовый каток XGMA XG6141М-I"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/gruntovyy-katok-xgma-xg6141m-i">
-                                                                Грунтовый каток XGMA XG6141М-I
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-                                                            <div class="price-current">
-                                                                <strong>3&amp;nbsp;280&amp;nbsp;000</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item cloned" style="width: 220px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/dizelnyy-pogruzchik-gros-cpcd460">
-                                                                <img src="/theme_as/static/img/5458841.jpg"
-                                                                     alt="Дизельный погрузчик GROS CPCD460"
-                                                                     title="Дизельный погрузчик GROS CPCD460"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/dizelnyy-pogruzchik-gros-cpcd460">
-                                                                Дизельный погрузчик GROS CPCD460
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-
-                                                            <div class="price-old question">
-                                                                <span>
-                                                                    <strong>849&amp;nbsp;000</strong>
-                                                                    руб.
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="shop2-product-discount-desc"
-                                                                 style="display: none;">
-                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
-                                                            </div>
-                                                            <div class="price-current">
-                                                                <strong>806&amp;nbsp;550</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item cloned" style="width: 220px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/mini-pogruzchik-tcm-ssl704">
-                                                                <img src="/theme_as/static/img/1118.jpg"
-                                                                     alt="Мини погрузчик TCM SSL704"
-                                                                     title="Мини погрузчик TCM SSL704"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/mini-pogruzchik-tcm-ssl704">Мини
-                                                                погрузчик TCM SSL704
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-
-                                                            <div class="price-old question">
-                                                                <span>
-                                                                    <strong>1&amp;nbsp;984&amp;nbsp;000</strong>
-                                                                    руб.
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="shop2-product-discount-desc"
-                                                                 style="display: none;">
-                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
-                                                            </div>
-                                                            <div class="price-current">
-                                                                <strong>1&amp;nbsp;884&amp;nbsp;800</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item cloned" style="width: 220px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/mini-pogruzchik-xgma-xg3070">
-                                                                <img src="/theme_as/static/img/layer-6.jpg"
-                                                                     alt="Мини погрузчик XGMA XG3070"
-                                                                     title="Мини погрузчик XGMA XG3070"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/mini-pogruzchik-xgma-xg3070">Мини
-                                                                погрузчик XGMA XG3070
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-
-                                                            <div class="price-old question">
-                                                                <span>
-                                                                    <strong>4&amp;nbsp;100&amp;nbsp;000</strong>
-                                                                    руб.
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="shop2-product-discount-desc"
-                                                                 style="display: none;">
-                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
-                                                            </div>
-                                                            <div class="price-current">
-                                                                <strong>3&amp;nbsp;895&amp;nbsp;000</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item cloned" style="width: 220px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/traktor-ttz-80-11">
-                                                                <img src="/theme_as/static/img/4578161.jpg"
-                                                                     alt="Трактор TTZ 80.11" title="Трактор TTZ 80.11"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/traktor-ttz-80-11">Трактор TTZ
-                                                                80.11
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-                                                            <div class="price-current">
-                                                                <strong>11&amp;nbsp;000&amp;nbsp;000</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item active" style="width: 220px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/avtokran-kato-krm-35h-2-3490770">
-                                                                <img src="/theme_as/static/img/114550.jpg"
-                                                                     alt="Автокран KATO KRM-35H-2 3490770"
-                                                                     title="Автокран KATO KRM-35H-2 3490770"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/avtokran-kato-krm-35h-2-3490770">
-                                                                Автокран KATO KRM-35H-2 3490770
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-
-                                                            <div class="price-old question">
-                                                                <span>
-                                                                    <strong>6&amp;nbsp;000&amp;nbsp;000</strong>
-                                                                    руб.
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="shop2-product-discount-desc"
-                                                                 style="display: none;">
-                                                                <p>10% СКИДКА - Торопитесь, акция ограниченна!</p>
-                                                            </div>
-                                                            <div class="price-current">
-                                                                <strong>5&amp;nbsp;400&amp;nbsp;000</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item active" style="width: 220px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/avtokran-tadano-tr160m-2">
-                                                                <img src="/theme_as/static/img/114544.jpg"
-                                                                     alt="Автокран TADANO TR160M-2"
-                                                                     title="Автокран TADANO TR160M-2"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/avtokran-tadano-tr160m-2">Автокран
-                                                                TADANO TR160M-2
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-                                                            <div class="price-current">
-                                                                <strong>7&amp;nbsp;400&amp;nbsp;000</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item" style="width: 220px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/borona-diskovaya-db-2">
-                                                                <img src="/theme_as/static/img/5458851.jpg"
-                                                                     alt="Борона дисковая ДБ-2"
-                                                                     title="Борона дисковая ДБ-2"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/borona-diskovaya-db-2">Борона
-                                                                дисковая ДБ-2
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-                                                            <div class="price-current">
-                                                                <strong>39&amp;nbsp;675</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item" style="width: 220px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/greyder-komatsu-gd605a-5">
-                                                                <img src="/theme_as/static/img/4578155.jpg"
-                                                                     alt="Грейдер KOMATSU GD605A-5"
-                                                                     title="Грейдер KOMATSU GD605A-5"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/greyder-komatsu-gd605a-5">Грейдер
-                                                                KOMATSU GD605A-5
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-
-                                                            <div class="price-old question">
-                                                                <span>
-                                                                    <strong>4&amp;nbsp;675&amp;nbsp;000</strong>
-                                                                    руб.
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="shop2-product-discount-desc"
-                                                                 style="display: none;">
-                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
-                                                            </div>
-                                                            <div class="price-current">
-                                                                <strong>4&amp;nbsp;441&amp;nbsp;250</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item" style="width: 220px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/greyder-mitsubishi-mg230-2-1">
-                                                                <img src="/theme_as/static/img/598561.jpg"
-                                                                     alt="Грейдер KOMATSU GD605A-5"
-                                                                     title="Грейдер KOMATSU GD605A-5"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/greyder-mitsubishi-mg230-2-1">
-                                                                Грейдер KOMATSU GD605A-5
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-
-                                                            <div class="price-old question">
-                                                                <span>
-                                                                    <strong>4&amp;nbsp;647&amp;nbsp;500</strong>
-                                                                    руб.
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="shop2-product-discount-desc"
-                                                                 style="display: none;">
-                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
-                                                            </div>
-                                                            <div class="price-current">
-                                                                <strong>4&amp;nbsp;415&amp;nbsp;125</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item" style="width: 220px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/gruntovyy-katok-xgma-xg6141m-i">
-                                                                <img src="/theme_as/static/img/559988555.jpg"
-                                                                     alt="Грунтовый каток XGMA XG6141М-I"
-                                                                     title="Грунтовый каток XGMA XG6141М-I"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/gruntovyy-katok-xgma-xg6141m-i">
-                                                                Грунтовый каток XGMA XG6141М-I
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-                                                            <div class="price-current">
-                                                                <strong>3&amp;nbsp;280&amp;nbsp;000</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item" style="width: 220px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/dizelnyy-pogruzchik-gros-cpcd460">
-                                                                <img src="/theme_as/static/img/5458841.jpg"
-                                                                     alt="Дизельный погрузчик GROS CPCD460"
-                                                                     title="Дизельный погрузчик GROS CPCD460"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/dizelnyy-pogruzchik-gros-cpcd460">
-                                                                Дизельный погрузчик GROS CPCD460
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-
-                                                            <div class="price-old question">
-                                                                <span>
-                                                                    <strong>849&amp;nbsp;000</strong>
-                                                                    руб.
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="shop2-product-discount-desc"
-                                                                 style="display: none;">
-                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
-                                                            </div>
-                                                            <div class="price-current">
-                                                                <strong>806&amp;nbsp;550</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item" style="width: 220px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/mini-pogruzchik-tcm-ssl704">
-                                                                <img src="/theme_as/static/img/1118.jpg"
-                                                                     alt="Мини погрузчик TCM SSL704"
-                                                                     title="Мини погрузчик TCM SSL704"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/mini-pogruzchik-tcm-ssl704">Мини
-                                                                погрузчик TCM SSL704
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-
-                                                            <div class="price-old question">
-                                                                <span>
-                                                                    <strong>1&amp;nbsp;984&amp;nbsp;000</strong>
-                                                                    руб.
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="shop2-product-discount-desc"
-                                                                 style="display: none;">
-                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
-                                                            </div>
-                                                            <div class="price-current">
-                                                                <strong>1&amp;nbsp;884&amp;nbsp;800</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item" style="width: 220px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/mini-pogruzchik-xgma-xg3070">
-                                                                <img src="/theme_as/static/img/layer-6.jpg"
-                                                                     alt="Мини погрузчик XGMA XG3070"
-                                                                     title="Мини погрузчик XGMA XG3070"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/mini-pogruzchik-xgma-xg3070">Мини
-                                                                погрузчик XGMA XG3070
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-
-                                                            <div class="price-old question">
-                                                                <span>
-                                                                    <strong>4&amp;nbsp;100&amp;nbsp;000</strong>
-                                                                    руб.
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="shop2-product-discount-desc"
-                                                                 style="display: none;">
-                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
-                                                            </div>
-                                                            <div class="price-current">
-                                                                <strong>3&amp;nbsp;895&amp;nbsp;000</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item" style="width: 220px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/traktor-ttz-80-11">
-                                                                <img src="/theme_as/static/img/4578161.jpg"
-                                                                     alt="Трактор TTZ 80.11" title="Трактор TTZ 80.11"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/traktor-ttz-80-11">Трактор TTZ
-                                                                80.11
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-                                                            <div class="price-current">
-                                                                <strong>11&amp;nbsp;000&amp;nbsp;000</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item cloned" style="width: 220px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/avtokran-kato-krm-35h-2-3490770">
-                                                                <img src="/theme_as/static/img/114550.jpg"
-                                                                     alt="Автокран KATO KRM-35H-2 3490770"
-                                                                     title="Автокран KATO KRM-35H-2 3490770"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/avtokran-kato-krm-35h-2-3490770">
-                                                                Автокран KATO KRM-35H-2 3490770
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-
-                                                            <div class="price-old question">
-                                                                <span>
-                                                                    <strong>6&amp;nbsp;000&amp;nbsp;000</strong>
-                                                                    руб.
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="shop2-product-discount-desc"
-                                                                 style="display: none;">
-                                                                <p>10% СКИДКА - Торопитесь, акция ограниченна!</p>
-                                                            </div>
-                                                            <div class="price-current">
-                                                                <strong>5&amp;nbsp;400&amp;nbsp;000</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item cloned" style="width: 220px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/avtokran-tadano-tr160m-2">
-                                                                <img src="/theme_as/static/img/114544.jpg"
-                                                                     alt="Автокран TADANO TR160M-2"
-                                                                     title="Автокран TADANO TR160M-2"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/avtokran-tadano-tr160m-2">Автокран
-                                                                TADANO TR160M-2
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-                                                            <div class="price-current">
-                                                                <strong>7&amp;nbsp;400&amp;nbsp;000</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item cloned" style="width: 220px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/borona-diskovaya-db-2">
-                                                                <img src="/theme_as/static/img/5458851.jpg"
-                                                                     alt="Борона дисковая ДБ-2"
-                                                                     title="Борона дисковая ДБ-2"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/borona-diskovaya-db-2">Борона
-                                                                дисковая ДБ-2
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-                                                            <div class="price-current">
-                                                                <strong>39&amp;nbsp;675</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item cloned" style="width: 220px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/greyder-komatsu-gd605a-5">
-                                                                <img src="/theme_as/static/img/4578155.jpg"
-                                                                     alt="Грейдер KOMATSU GD605A-5"
-                                                                     title="Грейдер KOMATSU GD605A-5"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/greyder-komatsu-gd605a-5">Грейдер
-                                                                KOMATSU GD605A-5
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-
-                                                            <div class="price-old question">
-                                                                <span>
-                                                                    <strong>4&amp;nbsp;675&amp;nbsp;000</strong>
-                                                                    руб.
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="shop2-product-discount-desc"
-                                                                 style="display: none;">
-                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
-                                                            </div>
-                                                            <div class="price-current">
-                                                                <strong>4&amp;nbsp;441&amp;nbsp;250</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="owl-item cloned" style="width: 220px; margin-right: 30px;">
-                                                    <div class="main-product-item" style="height: 439px;">
-                                                        <div class="product-image" style="height:px;">
-                                                            <a href="/magazin/product/greyder-mitsubishi-mg230-2-1">
-                                                                <img src="/theme_as/static/img/598561.jpg"
-                                                                     alt="Грейдер KOMATSU GD605A-5"
-                                                                     title="Грейдер KOMATSU GD605A-5"/>
-                                                            </a>
-                                                        </div>
-                                                        <div class="product-name">
-                                                            <a href="/magazin/product/greyder-mitsubishi-mg230-2-1">
-                                                                Грейдер KOMATSU GD605A-5
-                                                            </a>
-                                                        </div>
-
-
-                                                        <div class="product-price">
-
-
-                                                            <div class="price-old question">
-                                                                <span>
-                                                                    <strong>4&amp;nbsp;647&amp;nbsp;500</strong>
-                                                                    руб.
-                                                                </span>
-                                                            </div>
-
-                                                            <div class="shop2-product-discount-desc"
-                                                                 style="display: none;">
-                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
-                                                            </div>
-                                                            <div class="price-current">
-                                                                <strong>4&amp;nbsp;415&amp;nbsp;125</strong>
-                                                                руб.
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="owl-controls">
-                                            <div class="owl-nav">
-                                                <div class="owl-prev">prev</div>
-                                                <div class="owl-next">next</div>
-                                            </div>
-                                            <div class="owl-dots">
-                                                <div class="owl-dot active">
-                                                    <span></span>
-                                                </div>
-                                                <div class="owl-dot">
-                                                    <span></span>
-                                                </div>
-                                                <div class="owl-dot">
-                                                    <span></span>
-                                                </div>
-                                                <div class="owl-dot">
-                                                    <span></span>
-                                                </div>
-                                                <div class="owl-dot">
-                                                    <span></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
+                <!--<div class="site-main__inner">-->
+
+                    <!--<div class="shop2-cookies-disabled shop2-warning hide"></div>-->
+
+
+                    <!--<div class="shopBlocks-wrapper">-->
+
+
+                        <!--<div class="shop-main-blocks new">-->
+                            <!--<div class="inner">-->
+                                <!--<div class="shop2-main-header shop2-main-new">-->
+                                    <!--<span>Новые поступления!</span>-->
+                                <!--</div>-->
+                                <!--<div class="main-slide-block">-->
+
+
+                                    <!--<div class="product-list product-list-thumbs  owl-carousel owl-loaded owl-drag">-->
+
+
+                                        <!--<div class="owl-stage-outer">-->
+                                            <!--<div class="owl-stage"-->
+                                                 <!--style="transform: translate3d(-996px, 0px, 0px); transition: 0s; width: 3984px;">-->
+                                                <!--<div class="owl-item cloned" style="width: 219px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/mini-pogruzchik-ant-750">-->
+                                                                <!--<img src="/theme_as/static/img/layer_5.jpg"-->
+                                                                     <!--alt="Мини погрузчик АНТ-750"-->
+                                                                     <!--title="Мини погрузчик АНТ-750"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/mini-pogruzchik-ant-750">Мини-->
+                                                                <!--погрузчик АНТ-750-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+
+                                                            <!--<div class="price-old question">-->
+                                                                <!--<span>-->
+                                                                    <!--<strong>1&amp;nbsp;984&amp;nbsp;000</strong>-->
+                                                                    <!--руб.-->
+                                                                <!--</span>-->
+                                                            <!--</div>-->
+
+                                                            <!--<div class="shop2-product-discount-desc"-->
+                                                                 <!--style="display: none;">-->
+                                                                <!--<p>5% СКИДКИ - Срок акции ограничен!</p>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>1&amp;nbsp;884&amp;nbsp;800</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item cloned" style="width: 219px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/pritsep-dlya-gnb-6tn">-->
+                                                                <!--<img src="/theme_as/static/img/5458863.jpg"-->
+                                                                     <!--alt="Прицеп для ГНБ 6тн"-->
+                                                                     <!--title="Прицеп для ГНБ 6тн"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/pritsep-dlya-gnb-6tn">Прицеп для-->
+                                                                <!--ГНБ 6тн-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+
+                                                            <!--<div class="price-old question">-->
+                                                                <!--<span>-->
+                                                                    <!--<strong>854&amp;nbsp;100</strong>-->
+                                                                    <!--руб.-->
+                                                                <!--</span>-->
+                                                            <!--</div>-->
+
+                                                            <!--<div class="shop2-product-discount-desc"-->
+                                                                 <!--style="display: none;">-->
+                                                                <!--<p>5% СКИДКИ - Срок акции ограничен!</p>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>811&amp;nbsp;395</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item cloned" style="width: 219px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/pritsep-dlya-gnb-15t">-->
+                                                                <!--<img src="/theme_as/static/img/5458868.jpg"-->
+                                                                     <!--alt="Прицеп для ГНБ 15т"-->
+                                                                     <!--title="Прицеп для ГНБ 15т"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/pritsep-dlya-gnb-15t">Прицеп для-->
+                                                                <!--ГНБ 15т-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+
+                                                            <!--<div class="price-old question">-->
+                                                                <!--<span>-->
+                                                                    <!--<strong>975&amp;nbsp;000</strong>-->
+                                                                    <!--руб.-->
+                                                                <!--</span>-->
+                                                            <!--</div>-->
+
+                                                            <!--<div class="shop2-product-discount-desc"-->
+                                                                 <!--style="display: none;">-->
+                                                                <!--<p>5% СКИДКИ - Срок акции ограничен!</p>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>926&amp;nbsp;250</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item cloned" style="width: 219px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/rotornaya-burovaya-ustanovka-shantui-ser150">-->
+                                                                <!--<img src="/theme_as/static/img/5458856.jpg"-->
+                                                                     <!--alt="Роторная буровая установка SHANTUI SER150"-->
+                                                                     <!--title="Роторная буровая установка SHANTUI SER150"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/rotornaya-burovaya-ustanovka-shantui-ser150">-->
+                                                                <!--Роторная буровая установка SHANTUI SER150-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>1&amp;nbsp;250&amp;nbsp;840</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item active" style="width: 219px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/asfaltovyy-katok-xgma-xg6032d">-->
+                                                                <!--<img src="/theme_as/static/img/layer_15.png"-->
+                                                                     <!--alt="Асфальтовый каток XGMA XG6032D"-->
+                                                                     <!--title="Асфальтовый каток XGMA XG6032D"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/asfaltovyy-katok-xgma-xg6032d">-->
+                                                                <!--Асфальтовый каток XGMA XG6032D-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>2&amp;nbsp;940&amp;nbsp;000</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item active" style="width: 219px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/buldozer-xgma-xg4161l">-->
+                                                                <!--<img src="/theme_as/static/img/559988554.jpg"-->
+                                                                     <!--alt="Бульдозер XGMA XG4161L"-->
+                                                                     <!--title="Бульдозер XGMA XG4161L"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/buldozer-xgma-xg4161l">Бульдозер-->
+                                                                <!--XGMA XG4161L-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>8&amp;nbsp;649&amp;nbsp;392</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item" style="width: 219px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/greyder-mitsubishi-mg230-2">-->
+                                                                <!--<img src="/theme_as/static/img/neytralka.png"-->
+                                                                     <!--alt="Грейдер MITSUBISHI MG230-2"-->
+                                                                     <!--title="Грейдер MITSUBISHI MG230-2"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/greyder-mitsubishi-mg230-2">-->
+                                                                <!--Грейдер MITSUBISHI MG230-2-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+
+                                                            <!--<div class="price-old question">-->
+                                                                <!--<span>-->
+                                                                    <!--<strong>4&amp;nbsp;675&amp;nbsp;000</strong>-->
+                                                                    <!--руб.-->
+                                                                <!--</span>-->
+                                                            <!--</div>-->
+
+                                                            <!--<div class="shop2-product-discount-desc"-->
+                                                                 <!--style="display: none;">-->
+                                                                <!--<p>5% СКИДКИ - Срок акции ограничен!</p>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>4&amp;nbsp;441&amp;nbsp;250</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item" style="width: 219px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/mini-pogruzchik-xgma-xg3070">-->
+                                                                <!--<img src="/theme_as/static/img/layer-6.jpg"-->
+                                                                     <!--alt="Мини погрузчик XGMA XG3070"-->
+                                                                     <!--title="Мини погрузчик XGMA XG3070"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/mini-pogruzchik-xgma-xg3070">Мини-->
+                                                                <!--погрузчик XGMA XG3070-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+
+                                                            <!--<div class="price-old question">-->
+                                                                <!--<span>-->
+                                                                    <!--<strong>4&amp;nbsp;100&amp;nbsp;000</strong>-->
+                                                                    <!--руб.-->
+                                                                <!--</span>-->
+                                                            <!--</div>-->
+
+                                                            <!--<div class="shop2-product-discount-desc"-->
+                                                                 <!--style="display: none;">-->
+                                                                <!--<p>5% СКИДКИ - Срок акции ограничен!</p>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>3&amp;nbsp;895&amp;nbsp;000</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item" style="width: 219px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/mini-pogruzchik-ant-750">-->
+                                                                <!--<img src="/theme_as/static/img/layer_5.jpg"-->
+                                                                     <!--alt="Мини погрузчик АНТ-750"-->
+                                                                     <!--title="Мини погрузчик АНТ-750"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/mini-pogruzchik-ant-750">Мини-->
+                                                                <!--погрузчик АНТ-750-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+
+                                                            <!--<div class="price-old question">-->
+                                                                <!--<span>-->
+                                                                    <!--<strong>1&amp;nbsp;984&amp;nbsp;000</strong>-->
+                                                                    <!--руб.-->
+                                                                <!--</span>-->
+                                                            <!--</div>-->
+
+                                                            <!--<div class="shop2-product-discount-desc"-->
+                                                                 <!--style="display: none;">-->
+                                                                <!--<p>5% СКИДКИ - Срок акции ограничен!</p>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>1&amp;nbsp;884&amp;nbsp;800</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item" style="width: 219px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/pritsep-dlya-gnb-6tn">-->
+                                                                <!--<img src="/theme_as/static/img/5458863.jpg"-->
+                                                                     <!--alt="Прицеп для ГНБ 6тн"-->
+                                                                     <!--title="Прицеп для ГНБ 6тн"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/pritsep-dlya-gnb-6tn">Прицеп для-->
+                                                                <!--ГНБ 6тн-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+
+                                                            <!--<div class="price-old question">-->
+                                                                <!--<span>-->
+                                                                    <!--<strong>854&amp;nbsp;100</strong>-->
+                                                                    <!--руб.-->
+                                                                <!--</span>-->
+                                                            <!--</div>-->
+
+                                                            <!--<div class="shop2-product-discount-desc"-->
+                                                                 <!--style="display: none;">-->
+                                                                <!--<p>5% СКИДКИ - Срок акции ограничен!</p>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>811&amp;nbsp;395</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item" style="width: 219px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/pritsep-dlya-gnb-15t">-->
+                                                                <!--<img src="/theme_as/static/img/5458868.jpg"-->
+                                                                     <!--alt="Прицеп для ГНБ 15т"-->
+                                                                     <!--title="Прицеп для ГНБ 15т"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/pritsep-dlya-gnb-15t">Прицеп для-->
+                                                                <!--ГНБ 15т-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+
+                                                            <!--<div class="price-old question">-->
+                                                                <!--<span>-->
+                                                                    <!--<strong>975&amp;nbsp;000</strong>-->
+                                                                    <!--руб.-->
+                                                                <!--</span>-->
+                                                            <!--</div>-->
+
+                                                            <!--<div class="shop2-product-discount-desc"-->
+                                                                 <!--style="display: none;">-->
+                                                                <!--<p>5% СКИДКИ - Срок акции ограничен!</p>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>926&amp;nbsp;250</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item" style="width: 219px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/rotornaya-burovaya-ustanovka-shantui-ser150">-->
+                                                                <!--<img src="/theme_as/static/img/5458856.jpg"-->
+                                                                     <!--alt="Роторная буровая установка SHANTUI SER150"-->
+                                                                     <!--title="Роторная буровая установка SHANTUI SER150"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/rotornaya-burovaya-ustanovka-shantui-ser150">-->
+                                                                <!--Роторная буровая установка SHANTUI SER150-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>1&amp;nbsp;250&amp;nbsp;840</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item cloned" style="width: 219px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/asfaltovyy-katok-xgma-xg6032d">-->
+                                                                <!--<img src="/theme_as/static/img/layer_15.png"-->
+                                                                     <!--alt="Асфальтовый каток XGMA XG6032D"-->
+                                                                     <!--title="Асфальтовый каток XGMA XG6032D"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/asfaltovyy-katok-xgma-xg6032d">-->
+                                                                <!--Асфальтовый каток XGMA XG6032D-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>2&amp;nbsp;940&amp;nbsp;000</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item cloned" style="width: 219px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/buldozer-xgma-xg4161l">-->
+                                                                <!--<img src="/theme_as/static/img/559988554.jpg"-->
+                                                                     <!--alt="Бульдозер XGMA XG4161L"-->
+                                                                     <!--title="Бульдозер XGMA XG4161L"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/buldozer-xgma-xg4161l">Бульдозер-->
+                                                                <!--XGMA XG4161L-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>8&amp;nbsp;649&amp;nbsp;392</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item cloned" style="width: 219px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/greyder-mitsubishi-mg230-2">-->
+                                                                <!--<img src="/theme_as/static/img/neytralka.png"-->
+                                                                     <!--alt="Грейдер MITSUBISHI MG230-2"-->
+                                                                     <!--title="Грейдер MITSUBISHI MG230-2"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/greyder-mitsubishi-mg230-2">-->
+                                                                <!--Грейдер MITSUBISHI MG230-2-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+
+                                                            <!--<div class="price-old question">-->
+                                                                <!--<span>-->
+                                                                    <!--<strong>4&amp;nbsp;675&amp;nbsp;000</strong>-->
+                                                                    <!--руб.-->
+                                                                <!--</span>-->
+                                                            <!--</div>-->
+
+                                                            <!--<div class="shop2-product-discount-desc"-->
+                                                                 <!--style="display: none;">-->
+                                                                <!--<p>5% СКИДКИ - Срок акции ограничен!</p>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>4&amp;nbsp;441&amp;nbsp;250</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item cloned" style="width: 219px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/mini-pogruzchik-xgma-xg3070">-->
+                                                                <!--<img src="/theme_as/static/img/layer-6.jpg"-->
+                                                                     <!--alt="Мини погрузчик XGMA XG3070"-->
+                                                                     <!--title="Мини погрузчик XGMA XG3070"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/mini-pogruzchik-xgma-xg3070">Мини-->
+                                                                <!--погрузчик XGMA XG3070-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+
+                                                            <!--<div class="price-old question">-->
+                                                                <!--<span>-->
+                                                                    <!--<strong>4&amp;nbsp;100&amp;nbsp;000</strong>-->
+                                                                    <!--руб.-->
+                                                                <!--</span>-->
+                                                            <!--</div>-->
+
+                                                            <!--<div class="shop2-product-discount-desc"-->
+                                                                 <!--style="display: none;">-->
+                                                                <!--<p>5% СКИДКИ - Срок акции ограничен!</p>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>3&amp;nbsp;895&amp;nbsp;000</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                        <!--<div class="owl-controls">-->
+                                            <!--<div class="owl-nav">-->
+                                                <!--<div class="owl-prev">prev</div>-->
+                                                <!--<div class="owl-next">next</div>-->
+                                            <!--</div>-->
+                                            <!--<div class="owl-dots">-->
+                                                <!--<div class="owl-dot active">-->
+                                                    <!--<span></span>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-dot">-->
+                                                    <!--<span></span>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-dot">-->
+                                                    <!--<span></span>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-dot">-->
+                                                    <!--<span></span>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+
+
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+
+                        <!--<div class="shop-main-blocks spec">-->
+                            <!--<div class="inner">-->
+                                <!--<div class="shop2-main-header shop2-main-spec">-->
+                                    <!--<span>Хиты продаж!</span>-->
+                                <!--</div>-->
+                                <!--<div class="main-slide-block">-->
+
+
+                                    <!--<div class="product-list product-list-thumbs  owl-carousel owl-loaded owl-drag">-->
+
+
+                                        <!--<div class="owl-stage-outer">-->
+                                            <!--<div class="owl-stage"-->
+                                                 <!--style="transform: translate3d(-1250px, 0px, 0px); transition: 0s; width: 5000px;">-->
+                                                <!--<div class="owl-item cloned" style="width: 220px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/gruntovyy-katok-xgma-xg6141m-i">-->
+                                                                <!--<img src="/theme_as/static/img/559988555.jpg"-->
+                                                                     <!--alt="Грунтовый каток XGMA XG6141М-I"-->
+                                                                     <!--title="Грунтовый каток XGMA XG6141М-I"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/gruntovyy-katok-xgma-xg6141m-i">-->
+                                                                <!--Грунтовый каток XGMA XG6141М-I-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>3&amp;nbsp;280&amp;nbsp;000</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item cloned" style="width: 220px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/dizelnyy-pogruzchik-gros-cpcd460">-->
+                                                                <!--<img src="/theme_as/static/img/5458841.jpg"-->
+                                                                     <!--alt="Дизельный погрузчик GROS CPCD460"-->
+                                                                     <!--title="Дизельный погрузчик GROS CPCD460"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/dizelnyy-pogruzchik-gros-cpcd460">-->
+                                                                <!--Дизельный погрузчик GROS CPCD460-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+
+                                                            <!--<div class="price-old question">-->
+                                                                <!--<span>-->
+                                                                    <!--<strong>849&amp;nbsp;000</strong>-->
+                                                                    <!--руб.-->
+                                                                <!--</span>-->
+                                                            <!--</div>-->
+
+                                                            <!--<div class="shop2-product-discount-desc"-->
+                                                                 <!--style="display: none;">-->
+                                                                <!--<p>5% СКИДКИ - Срок акции ограничен!</p>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>806&amp;nbsp;550</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item cloned" style="width: 220px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/mini-pogruzchik-tcm-ssl704">-->
+                                                                <!--<img src="/theme_as/static/img/1118.jpg"-->
+                                                                     <!--alt="Мини погрузчик TCM SSL704"-->
+                                                                     <!--title="Мини погрузчик TCM SSL704"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/mini-pogruzchik-tcm-ssl704">Мини-->
+                                                                <!--погрузчик TCM SSL704-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+
+                                                            <!--<div class="price-old question">-->
+                                                                <!--<span>-->
+                                                                    <!--<strong>1&amp;nbsp;984&amp;nbsp;000</strong>-->
+                                                                    <!--руб.-->
+                                                                <!--</span>-->
+                                                            <!--</div>-->
+
+                                                            <!--<div class="shop2-product-discount-desc"-->
+                                                                 <!--style="display: none;">-->
+                                                                <!--<p>5% СКИДКИ - Срок акции ограничен!</p>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>1&amp;nbsp;884&amp;nbsp;800</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item cloned" style="width: 220px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/mini-pogruzchik-xgma-xg3070">-->
+                                                                <!--<img src="/theme_as/static/img/layer-6.jpg"-->
+                                                                     <!--alt="Мини погрузчик XGMA XG3070"-->
+                                                                     <!--title="Мини погрузчик XGMA XG3070"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/mini-pogruzchik-xgma-xg3070">Мини-->
+                                                                <!--погрузчик XGMA XG3070-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+
+                                                            <!--<div class="price-old question">-->
+                                                                <!--<span>-->
+                                                                    <!--<strong>4&amp;nbsp;100&amp;nbsp;000</strong>-->
+                                                                    <!--руб.-->
+                                                                <!--</span>-->
+                                                            <!--</div>-->
+
+                                                            <!--<div class="shop2-product-discount-desc"-->
+                                                                 <!--style="display: none;">-->
+                                                                <!--<p>5% СКИДКИ - Срок акции ограничен!</p>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>3&amp;nbsp;895&amp;nbsp;000</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item cloned" style="width: 220px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/traktor-ttz-80-11">-->
+                                                                <!--<img src="/theme_as/static/img/4578161.jpg"-->
+                                                                     <!--alt="Трактор TTZ 80.11" title="Трактор TTZ 80.11"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/traktor-ttz-80-11">Трактор TTZ-->
+                                                                <!--80.11-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>11&amp;nbsp;000&amp;nbsp;000</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item active" style="width: 220px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/avtokran-kato-krm-35h-2-3490770">-->
+                                                                <!--<img src="/theme_as/static/img/114550.jpg"-->
+                                                                     <!--alt="Автокран KATO KRM-35H-2 3490770"-->
+                                                                     <!--title="Автокран KATO KRM-35H-2 3490770"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/avtokran-kato-krm-35h-2-3490770">-->
+                                                                <!--Автокран KATO KRM-35H-2 3490770-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+
+                                                            <!--<div class="price-old question">-->
+                                                                <!--<span>-->
+                                                                    <!--<strong>6&amp;nbsp;000&amp;nbsp;000</strong>-->
+                                                                    <!--руб.-->
+                                                                <!--</span>-->
+                                                            <!--</div>-->
+
+                                                            <!--<div class="shop2-product-discount-desc"-->
+                                                                 <!--style="display: none;">-->
+                                                                <!--<p>10% СКИДКА - Торопитесь, акция ограниченна!</p>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>5&amp;nbsp;400&amp;nbsp;000</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item active" style="width: 220px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/avtokran-tadano-tr160m-2">-->
+                                                                <!--<img src="/theme_as/static/img/114544.jpg"-->
+                                                                     <!--alt="Автокран TADANO TR160M-2"-->
+                                                                     <!--title="Автокран TADANO TR160M-2"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/avtokran-tadano-tr160m-2">Автокран-->
+                                                                <!--TADANO TR160M-2-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>7&amp;nbsp;400&amp;nbsp;000</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item" style="width: 220px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/borona-diskovaya-db-2">-->
+                                                                <!--<img src="/theme_as/static/img/5458851.jpg"-->
+                                                                     <!--alt="Борона дисковая ДБ-2"-->
+                                                                     <!--title="Борона дисковая ДБ-2"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/borona-diskovaya-db-2">Борона-->
+                                                                <!--дисковая ДБ-2-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>39&amp;nbsp;675</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item" style="width: 220px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/greyder-komatsu-gd605a-5">-->
+                                                                <!--<img src="/theme_as/static/img/4578155.jpg"-->
+                                                                     <!--alt="Грейдер KOMATSU GD605A-5"-->
+                                                                     <!--title="Грейдер KOMATSU GD605A-5"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/greyder-komatsu-gd605a-5">Грейдер-->
+                                                                <!--KOMATSU GD605A-5-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+
+                                                            <!--<div class="price-old question">-->
+                                                                <!--<span>-->
+                                                                    <!--<strong>4&amp;nbsp;675&amp;nbsp;000</strong>-->
+                                                                    <!--руб.-->
+                                                                <!--</span>-->
+                                                            <!--</div>-->
+
+                                                            <!--<div class="shop2-product-discount-desc"-->
+                                                                 <!--style="display: none;">-->
+                                                                <!--<p>5% СКИДКИ - Срок акции ограничен!</p>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>4&amp;nbsp;441&amp;nbsp;250</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item" style="width: 220px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/greyder-mitsubishi-mg230-2-1">-->
+                                                                <!--<img src="/theme_as/static/img/598561.jpg"-->
+                                                                     <!--alt="Грейдер KOMATSU GD605A-5"-->
+                                                                     <!--title="Грейдер KOMATSU GD605A-5"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/greyder-mitsubishi-mg230-2-1">-->
+                                                                <!--Грейдер KOMATSU GD605A-5-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+
+                                                            <!--<div class="price-old question">-->
+                                                                <!--<span>-->
+                                                                    <!--<strong>4&amp;nbsp;647&amp;nbsp;500</strong>-->
+                                                                    <!--руб.-->
+                                                                <!--</span>-->
+                                                            <!--</div>-->
+
+                                                            <!--<div class="shop2-product-discount-desc"-->
+                                                                 <!--style="display: none;">-->
+                                                                <!--<p>5% СКИДКИ - Срок акции ограничен!</p>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>4&amp;nbsp;415&amp;nbsp;125</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item" style="width: 220px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/gruntovyy-katok-xgma-xg6141m-i">-->
+                                                                <!--<img src="/theme_as/static/img/559988555.jpg"-->
+                                                                     <!--alt="Грунтовый каток XGMA XG6141М-I"-->
+                                                                     <!--title="Грунтовый каток XGMA XG6141М-I"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/gruntovyy-katok-xgma-xg6141m-i">-->
+                                                                <!--Грунтовый каток XGMA XG6141М-I-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>3&amp;nbsp;280&amp;nbsp;000</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item" style="width: 220px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/dizelnyy-pogruzchik-gros-cpcd460">-->
+                                                                <!--<img src="/theme_as/static/img/5458841.jpg"-->
+                                                                     <!--alt="Дизельный погрузчик GROS CPCD460"-->
+                                                                     <!--title="Дизельный погрузчик GROS CPCD460"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/dizelnyy-pogruzchik-gros-cpcd460">-->
+                                                                <!--Дизельный погрузчик GROS CPCD460-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+
+                                                            <!--<div class="price-old question">-->
+                                                                <!--<span>-->
+                                                                    <!--<strong>849&amp;nbsp;000</strong>-->
+                                                                    <!--руб.-->
+                                                                <!--</span>-->
+                                                            <!--</div>-->
+
+                                                            <!--<div class="shop2-product-discount-desc"-->
+                                                                 <!--style="display: none;">-->
+                                                                <!--<p>5% СКИДКИ - Срок акции ограничен!</p>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>806&amp;nbsp;550</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item" style="width: 220px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/mini-pogruzchik-tcm-ssl704">-->
+                                                                <!--<img src="/theme_as/static/img/1118.jpg"-->
+                                                                     <!--alt="Мини погрузчик TCM SSL704"-->
+                                                                     <!--title="Мини погрузчик TCM SSL704"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/mini-pogruzchik-tcm-ssl704">Мини-->
+                                                                <!--погрузчик TCM SSL704-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+
+                                                            <!--<div class="price-old question">-->
+                                                                <!--<span>-->
+                                                                    <!--<strong>1&amp;nbsp;984&amp;nbsp;000</strong>-->
+                                                                    <!--руб.-->
+                                                                <!--</span>-->
+                                                            <!--</div>-->
+
+                                                            <!--<div class="shop2-product-discount-desc"-->
+                                                                 <!--style="display: none;">-->
+                                                                <!--<p>5% СКИДКИ - Срок акции ограничен!</p>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>1&amp;nbsp;884&amp;nbsp;800</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item" style="width: 220px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/mini-pogruzchik-xgma-xg3070">-->
+                                                                <!--<img src="/theme_as/static/img/layer-6.jpg"-->
+                                                                     <!--alt="Мини погрузчик XGMA XG3070"-->
+                                                                     <!--title="Мини погрузчик XGMA XG3070"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/mini-pogruzchik-xgma-xg3070">Мини-->
+                                                                <!--погрузчик XGMA XG3070-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+
+                                                            <!--<div class="price-old question">-->
+                                                                <!--<span>-->
+                                                                    <!--<strong>4&amp;nbsp;100&amp;nbsp;000</strong>-->
+                                                                    <!--руб.-->
+                                                                <!--</span>-->
+                                                            <!--</div>-->
+
+                                                            <!--<div class="shop2-product-discount-desc"-->
+                                                                 <!--style="display: none;">-->
+                                                                <!--<p>5% СКИДКИ - Срок акции ограничен!</p>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>3&amp;nbsp;895&amp;nbsp;000</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item" style="width: 220px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/traktor-ttz-80-11">-->
+                                                                <!--<img src="/theme_as/static/img/4578161.jpg"-->
+                                                                     <!--alt="Трактор TTZ 80.11" title="Трактор TTZ 80.11"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/traktor-ttz-80-11">Трактор TTZ-->
+                                                                <!--80.11-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>11&amp;nbsp;000&amp;nbsp;000</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item cloned" style="width: 220px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/avtokran-kato-krm-35h-2-3490770">-->
+                                                                <!--<img src="/theme_as/static/img/114550.jpg"-->
+                                                                     <!--alt="Автокран KATO KRM-35H-2 3490770"-->
+                                                                     <!--title="Автокран KATO KRM-35H-2 3490770"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/avtokran-kato-krm-35h-2-3490770">-->
+                                                                <!--Автокран KATO KRM-35H-2 3490770-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+
+                                                            <!--<div class="price-old question">-->
+                                                                <!--<span>-->
+                                                                    <!--<strong>6&amp;nbsp;000&amp;nbsp;000</strong>-->
+                                                                    <!--руб.-->
+                                                                <!--</span>-->
+                                                            <!--</div>-->
+
+                                                            <!--<div class="shop2-product-discount-desc"-->
+                                                                 <!--style="display: none;">-->
+                                                                <!--<p>10% СКИДКА - Торопитесь, акция ограниченна!</p>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>5&amp;nbsp;400&amp;nbsp;000</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item cloned" style="width: 220px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/avtokran-tadano-tr160m-2">-->
+                                                                <!--<img src="/theme_as/static/img/114544.jpg"-->
+                                                                     <!--alt="Автокран TADANO TR160M-2"-->
+                                                                     <!--title="Автокран TADANO TR160M-2"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/avtokran-tadano-tr160m-2">Автокран-->
+                                                                <!--TADANO TR160M-2-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>7&amp;nbsp;400&amp;nbsp;000</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item cloned" style="width: 220px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/borona-diskovaya-db-2">-->
+                                                                <!--<img src="/theme_as/static/img/5458851.jpg"-->
+                                                                     <!--alt="Борона дисковая ДБ-2"-->
+                                                                     <!--title="Борона дисковая ДБ-2"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/borona-diskovaya-db-2">Борона-->
+                                                                <!--дисковая ДБ-2-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>39&amp;nbsp;675</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item cloned" style="width: 220px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/greyder-komatsu-gd605a-5">-->
+                                                                <!--<img src="/theme_as/static/img/4578155.jpg"-->
+                                                                     <!--alt="Грейдер KOMATSU GD605A-5"-->
+                                                                     <!--title="Грейдер KOMATSU GD605A-5"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/greyder-komatsu-gd605a-5">Грейдер-->
+                                                                <!--KOMATSU GD605A-5-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+
+                                                            <!--<div class="price-old question">-->
+                                                                <!--<span>-->
+                                                                    <!--<strong>4&amp;nbsp;675&amp;nbsp;000</strong>-->
+                                                                    <!--руб.-->
+                                                                <!--</span>-->
+                                                            <!--</div>-->
+
+                                                            <!--<div class="shop2-product-discount-desc"-->
+                                                                 <!--style="display: none;">-->
+                                                                <!--<p>5% СКИДКИ - Срок акции ограничен!</p>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>4&amp;nbsp;441&amp;nbsp;250</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-item cloned" style="width: 220px; margin-right: 30px;">-->
+                                                    <!--<div class="main-product-item" style="height: 439px;">-->
+                                                        <!--<div class="product-image" style="height:px;">-->
+                                                            <!--<a href="/magazin/product/greyder-mitsubishi-mg230-2-1">-->
+                                                                <!--<img src="/theme_as/static/img/598561.jpg"-->
+                                                                     <!--alt="Грейдер KOMATSU GD605A-5"-->
+                                                                     <!--title="Грейдер KOMATSU GD605A-5"/>-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="product-name">-->
+                                                            <!--<a href="/magazin/product/greyder-mitsubishi-mg230-2-1">-->
+                                                                <!--Грейдер KOMATSU GD605A-5-->
+                                                            <!--</a>-->
+                                                        <!--</div>-->
+
+
+                                                        <!--<div class="product-price">-->
+
+
+                                                            <!--<div class="price-old question">-->
+                                                                <!--<span>-->
+                                                                    <!--<strong>4&amp;nbsp;647&amp;nbsp;500</strong>-->
+                                                                    <!--руб.-->
+                                                                <!--</span>-->
+                                                            <!--</div>-->
+
+                                                            <!--<div class="shop2-product-discount-desc"-->
+                                                                 <!--style="display: none;">-->
+                                                                <!--<p>5% СКИДКИ - Срок акции ограничен!</p>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="price-current">-->
+                                                                <!--<strong>4&amp;nbsp;415&amp;nbsp;125</strong>-->
+                                                                <!--руб.-->
+                                                            <!--</div>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                        <!--<div class="owl-controls">-->
+                                            <!--<div class="owl-nav">-->
+                                                <!--<div class="owl-prev">prev</div>-->
+                                                <!--<div class="owl-next">next</div>-->
+                                            <!--</div>-->
+                                            <!--<div class="owl-dots">-->
+                                                <!--<div class="owl-dot active">-->
+                                                    <!--<span></span>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-dot">-->
+                                                    <!--<span></span>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-dot">-->
+                                                    <!--<span></span>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-dot">-->
+                                                    <!--<span></span>-->
+                                                <!--</div>-->
+                                                <!--<div class="owl-dot">-->
+                                                    <!--<span></span>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+
+
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+
+                    <!--</div>-->
+                <!--</div>-->
             </xpath>
         </template>
         <template id="content_block" inherit_id="theme_as.theme_as_homepage" name="Theme AS  Content Block">
