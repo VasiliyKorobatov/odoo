@@ -98,9 +98,9 @@
             <xpath expr="//div[@id='wrap']" position="inside">
                 <div class="main-top-block"/>
                 <div class="folder-block"/>
-                <div class="site-container mainBlock"/>
+                <div class="site-container "/>
                 <div class="content-block"/>
-                <div class="site-container"/>
+                <div class="site-container mainBlock"/>
                 <div class="subscribe-block"/>
             </xpath>
         </template>
@@ -2888,8 +2888,8 @@
                 </div>
             </xpath>
         </template>
-        <template id="site_container" inherit_id="theme_as.theme_as_homepage" name="Theme AS Site Container">
-            <xpath expr="//div[contains(@class,'folder-block')]" position="inside">
+        <template id="site_container" inherit_id="theme_as.theme_as_homepage" name="Theme AS Main Site Container">
+            <xpath expr="//div[contains(@class,'mainBlock')]" position="inside">
                 <aside role="complementary" class="site-sidebar left">
                     <div class="left-menu">
                         <ul class="left-menu">
