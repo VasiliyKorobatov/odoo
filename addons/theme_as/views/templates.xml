@@ -12,6 +12,11 @@
                 <attribute name="role">contentinfo</attribute>
                 <attribute name="class">site-footer</attribute>
             </xpath>
+            <xpath expr="//div[@id='wrapwrap']/header" position="before">
+                <div class="top-wrap-panel">
+
+                </div>
+            </xpath>
             <xpath expr="//div[@id='wrapwrap']/footer" position="before">
                 <div class="bottom-block">
 
