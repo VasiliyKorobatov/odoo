@@ -98,7 +98,7 @@
             <xpath expr="//div[@id='wrap']" position="inside">
                 <div class="main-top-block"/>
                 <div class="folder-block"/>
-                <div class="site-container "/>
+                <div class="site-container" id="first-site-container"/>
                 <div class="content-block"/>
                 <div class="site-container mainBlock"/>
                 <div class="subscribe-block"/>
@@ -1606,7 +1606,7 @@
             </xpath>
         </template>
         <template id="site_container" inherit_id="theme_as.theme_as_homepage" name="Theme AS Site Container">
-            <xpath expr="//div[@class='site-container']" position="inside">
+            <xpath expr="//div[@id='first-site-container']" position="inside">
                 <div class="site-main__inner">
 
                     <div class="shop2-cookies-disabled shop2-warning hide"></div>
@@ -2888,7 +2888,7 @@
                 </div>
             </xpath>
         </template>
-        <template id="site_container" inherit_id="theme_as.theme_as_homepage" name="Theme AS Main Site Container">
+        <template id="main_site_container" inherit_id="theme_as.theme_as_homepage" name="Theme AS Main Site Container">
             <xpath expr="//div[contains(@class,'mainBlock')]" position="inside">
                 <aside role="complementary" class="site-sidebar left">
                     <div class="left-menu">
