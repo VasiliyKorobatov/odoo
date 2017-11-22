@@ -1,15 +1,48 @@
 <odoo>
     <data>
         <template id="theme_as_layout" inherit_id="website.layout" name="Theme AS Layout">
-            <xpath expr="//div[@id='wrapwrap']/footer" position="attributes">
-                <attribute name="role">contentinfo</attribute>
-                <attribute name="class">site-footer</attribute>
-            </xpath>
             <xpath expr="//div[@id='wrapwrap']/header" position="before">
                 <div class="top-wrap-panel"/>
             </xpath>
             <xpath expr="//div[@id='wrapwrap']/footer" position="before">
-                <div class="bottom-block"/>
+                <div class="bottom-block">
+                    <div class="menu-bottom">
+                        <ul class="menu-bot">
+                            <li class="opened active">
+                                <a href="/">Главная</a>
+                            </li>
+                            <li>
+                                <a href="/o-kompanii">О компании</a>
+                            </li>
+                            <li>
+                                <a href="/otzyvy-o-nas">Отзывы о нас</a>
+                            </li>
+                            <li>
+                                <a href="/aktsii">Акции</a>
+                            </li>
+                            <li>
+                                <a href="/kontakty">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="contacts">
+                        <div class="address">
+                            <div>г. Москва, Ленинский проспект, дом, строение, номер кабинета</div>
+                            <a href="/kontakty">Посмотреть схему проезда</a>
+                        </div>
+
+                        <div class="phones">
+                            <div>
+                                <a href="tel:8 (000) 111-11-11">8 (000) 111-11-11</a>
+                            </div>
+                        </div>
+
+                        <div class="callback-click">
+                            <a href="#">Заказать звонок</a>
+                        </div>
+                    </div>
+                </div>
             </xpath>
             <xpath expr="//div[@id='wrapwrap']/header" position="replace">
                 <header class="site-header" role="banner">
@@ -39,6 +72,24 @@
                     </div>
                 </header>
             </xpath>
+            <xpath expr="//div[@id='wrapwrap']/footer" position="replace">
+                <footer role="contentinfo" class="site-footer">
+                    <div class="site-footer-inner">
+                        <div class="copyrights">© 2017 Название компании</div>
+                        <div class="site-counters">Код счетчиков
+                        </div>
+                        <div class="mega">
+                            <span style="font-size:10px;" class="copyright"><!--noindex-->
+                                <a href="/" target="_blank" rel="nofollow">
+                                    <img src="http://cp1.megagroup.ru/g/mlogo/svg/sozdanie-saitov-megagroup-ru-dark.svg"
+                                         class="copyright" />
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </footer>
+            </xpath>
+
         </template>
         <template id="theme_as_homepage" inherit_id="website.homepage" name="Theme AS Homepage">
             <xpath expr="//div[@id='wrap']" position="attributes">
@@ -47,7 +98,7 @@
             <xpath expr="//div[@id='wrap']" position="inside">
                 <div class="main-top-block"/>
                 <div class="folder-block"/>
-                <div class="site-container"/>
+                <div class="site-container mainBlock"/>
                 <div class="content-block"/>
                 <div class="site-container"/>
                 <div class="subscribe-block"/>
@@ -59,7 +110,9 @@
                     <div class="folder-top-wr">
                         <div class="folder-block-title">
                             <span>
-                                <span>Каталог&amp;nbsp;<span class="fa fa-bars" /></span>
+                                <span>Каталог&amp;nbsp;
+                                    <span class="fa fa-bars"/>
+                                </span>
                             </span>
                         </div>
                         <ul class="folder-ul">
@@ -397,533 +450,533 @@
         <template id="main_top_block" inherit_id="theme_as.theme_as_homepage" name="Theme AS Main Top Block">
             <xpath expr="//div[@class='main-top-block']" position="inside">
                 <!--<div class="search-mobile-wr">-->
-                    <!--<div class="site-search-wr">-->
-                        <!--<form action="/search" method="get" class="site-search-form clear-self">-->
-                            <!--<input type="text" class="search-text" name="search"-->
-                                   <!--onblur="this.placeholder=this.placeholder==''?'Поиск по сайту':this.placeholder"-->
-                                   <!--onfocus="this.placeholder=this.placeholder=='Поиск по сайту'?'':this.placeholder;"-->
-                                   <!--placeholder="Поиск по сайту"/>-->
-                            <!--<input type="submit" class="search-but" value=""/>-->
-                        <!--</form>-->
-                    <!--</div>-->
-                    <!--<div class="search-shop-button">-->
-                        <!--<div class="btn-inner">-->
-                            <!--<span>Расширенный поиск</span>-->
-                        <!--</div>-->
-                    <!--</div>-->
+                <!--<div class="site-search-wr">-->
+                <!--<form action="/search" method="get" class="site-search-form clear-self">-->
+                <!--<input type="text" class="search-text" name="search"-->
+                <!--onblur="this.placeholder=this.placeholder==''?'Поиск по сайту':this.placeholder"-->
+                <!--onfocus="this.placeholder=this.placeholder=='Поиск по сайту'?'':this.placeholder;"-->
+                <!--placeholder="Поиск по сайту"/>-->
+                <!--<input type="submit" class="search-but" value=""/>-->
+                <!--</form>-->
+                <!--</div>-->
+                <!--<div class="search-shop-button">-->
+                <!--<div class="btn-inner">-->
+                <!--<span>Расширенный поиск</span>-->
+                <!--</div>-->
+                <!--</div>-->
                 <!--</div>-->
 
                 <!--<div class="search-block-wr">-->
-                    <!--<div class="close-mobile-search">Закрыть</div>-->
+                <!--<div class="close-mobile-search">Закрыть</div>-->
 
 
-                    <!--<div class="search-online-store">-->
+                <!--<div class="search-online-store">-->
 
-                        <!--<div class="block-body">-->
-                            <!--<div class="shop-search-close">Закрыть</div>-->
-                            <!--<form class="dropdown" action="/magazin/search" enctype="multipart/form-data">-->
-                                <!--<div class="field-first clear-self">-->
-                                    <!--<div class="field dimension clear-self">-->
-                                        <!--<span class="field-title">Цена</span>-->
-                                        <!--<label class="start">-->
-                                            <!--<span class="unit-title">руб.</span>-->
-                                            <!--<input name="s[price][min]" type="text" value="" placeholder="от"/>-->
-                                        <!--</label>-->
-                                        <!--<label class="end">-->
-                                            <!--<span class="unit-title">руб.</span>-->
-                                            <!--<input name="s[price][max]" type="text" value="" placeholder="до"/>-->
-                                        <!--</label>-->
-                                    <!--</div>-->
-                                    <!--<div class="field select">-->
-                                        <!--<span class="field-title">Выберите категорию</span>-->
-                                        <!--<div id="s[folder_id]-styler" class="jq-selectbox jqselect"-->
-                                             <!--style="display: inline-block; position: relative; z-index:100">-->
-                                            <!--<select name="s[folder_id]" id="s[folder_id]"-->
-                                                    <!--style="margin: 0px; padding: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; opacity: 0;">-->
-                                                <!--<option value="">Все</option>-->
-                                                <!--<option value="668658641">-->
-                                                    <!--Строительная техника-->
-                                                <!--</option>-->
-                                                <!--<option value="668664241">-->
-                                                    <!--» Автокраны-->
-                                                <!--</option>-->
-                                                <!--<option value="668664641">-->
-                                                    <!--» Экскаваторы-->
-                                                <!--</option>-->
-                                                <!--<option value="670374041">-->
-                                                    <!--» Вышка-->
-                                                <!--</option>-->
-                                                <!--<option value="670542841">-->
-                                                    <!--» Грейдеры-->
-                                                <!--</option>-->
-                                                <!--<option value="668665041">-->
-                                                    <!--Складская техника-->
-                                                <!--</option>-->
-                                                <!--<option value="668665241">-->
-                                                    <!--» Вилочные погрузчики-->
-                                                <!--</option>-->
-                                                <!--<option value="668665441">-->
-                                                    <!--» Штабелеры-->
-                                                <!--</option>-->
-                                                <!--<option value="668665641">-->
-                                                    <!--» Рич-Траки-->
-                                                <!--</option>-->
-                                                <!--<option value="668665841">-->
-                                                    <!--Поддержанная техника-->
-                                                <!--</option>-->
-                                                <!--<option value="668666041">-->
-                                                    <!--» Погрузчики-->
-                                                <!--</option>-->
-                                                <!--<option value="668666441">-->
-                                                    <!--» Автокраны-->
-                                                <!--</option>-->
-                                                <!--<option value="673419841">-->
-                                                    <!--» Вышка-->
-                                                <!--</option>-->
-                                                <!--<option value="668666641">-->
-                                                    <!--Дорожно-строительная техника-->
-                                                <!--</option>-->
-                                                <!--<option value="668666841">-->
-                                                    <!--» Бульдозеры-->
-                                                <!--</option>-->
-                                                <!--<option value="668667041">-->
-                                                    <!--» Мини погрузчики-->
-                                                <!--</option>-->
-                                                <!--<option value="668667241">-->
-                                                    <!--» Катки-->
-                                                <!--</option>-->
-                                                <!--<option value="668667441">-->
-                                                    <!--Грузовые автомобили и прицепы-->
-                                                <!--</option>-->
-                                                <!--<option value="668667641">-->
-                                                    <!--» Грузовики-->
-                                                <!--</option>-->
-                                                <!--<option value="668667841">-->
-                                                    <!--» Прицепы-->
-                                                <!--</option>-->
-                                                <!--<option value="668669841">-->
-                                                    <!--» Рефрижератор-->
-                                                <!--</option>-->
-                                                <!--<option value="668670041">-->
-                                                    <!--Аренда спецтехники-->
-                                                <!--</option>-->
-                                                <!--<option value="668670241">-->
-                                                    <!--» Экскаваторы-погрузчики-->
-                                                <!--</option>-->
-                                                <!--<option value="668670441">-->
-                                                    <!--» Прицепы-->
-                                                <!--</option>-->
-                                                <!--<option value="668670641">-->
-                                                    <!--» Автокраны-->
-                                                <!--</option>-->
-                                                <!--<option value="668670841">-->
-                                                    <!--Сельскохозяйственная техника-->
-                                                <!--</option>-->
-                                                <!--<option value="668671041">-->
-                                                    <!--» Комбайны-->
-                                                <!--</option>-->
-                                                <!--<option value="668671241">-->
-                                                    <!--» Тракторы-->
-                                                <!--</option>-->
-                                                <!--<option value="668671441">-->
-                                                    <!--» Бороны-->
-                                                <!--</option>-->
-                                                <!--<option value="668671641">-->
-                                                    <!--Буровые установки-->
-                                                <!--</option>-->
-                                                <!--<option value="668671841">-->
-                                                    <!--» Роторные буровые установки-->
-                                                <!--</option>-->
-                                                <!--<option value="668672041">-->
-                                                    <!--» Буровые установки ГНБ-->
-                                                <!--</option>-->
-                                                <!--<option value="668672241">-->
-                                                    <!--» Малогабаритные буровые установки-->
-                                                <!--</option>-->
-                                                <!--<option value="668672441">-->
-                                                    <!--Запчасти-->
-                                                <!--</option>-->
-                                                <!--<option value="668672641">-->
-                                                    <!--» Запчасти для погрузчиков-->
-                                                <!--</option>-->
-                                                <!--<option value="668673041">-->
-                                                    <!--» Запчасти для автокранов-->
-                                                <!--</option>-->
-                                                <!--<option value="672658041">-->
-                                                    <!--» Запчасти для тракторов-->
-                                                <!--</option>-->
-                                            <!--</select>-->
-                                            <!--<div class="jq-selectbox__select" style="position: relative">-->
-                                                <!--<div class="jq-selectbox__select-text placeholder">Выберите категорию-->
-                                                <!--</div>-->
-                                                <!--<div class="jq-selectbox__trigger">-->
-                                                    <!--<div class="jq-selectbox__trigger-arrow"></div>-->
-                                                <!--</div>-->
-                                            <!--</div>-->
-                                            <!--<div class="jq-selectbox__dropdown"-->
-                                                 <!--style="position: absolute; left: 0px; top: 0px; display: none;">-->
-                                                <!--<ul style="position: relative; list-style: none; overflow: auto; overflow-x: hidden">-->
-                                                    <!--<li class="selected sel" style="">Все</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--Строительная техника-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Автокраны-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Экскаваторы-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Вышка-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Грейдеры-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--Складская техника-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Вилочные погрузчики-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Штабелеры-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Рич-Траки-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--Поддержанная техника-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Погрузчики-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Автокраны-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Вышка-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--Дорожно-строительная техника-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Бульдозеры-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Мини погрузчики-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Катки-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--Грузовые автомобили и прицепы-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Грузовики-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Прицепы-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Рефрижератор-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--Аренда спецтехники-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Экскаваторы-погрузчики-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Прицепы-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Автокраны-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--Сельскохозяйственная техника-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Комбайны-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Тракторы-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Бороны-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--Буровые установки-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Роторные буровые установки-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Буровые установки ГНБ-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Малогабаритные буровые установки-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--Запчасти-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Запчасти для погрузчиков-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Запчасти для автокранов-->
-                                                    <!--</li>-->
-                                                    <!--<li style="">-->
-                                                        <!--» Запчасти для тракторов-->
-                                                    <!--</li>-->
-                                                <!--</ul>-->
-                                            <!--</div>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                    <!--<div class="field text">-->
-                                        <!--<label class="field-title" for="s[name]">Название</label>-->
-                                        <!--<label class="input">-->
-                                            <!--<input type="text" name="s[name]" id="s[name]" value=""-->
-                                                   <!--placeholder="Название"/>-->
-                                        <!--</label>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                                <!--<div class="field text">-->
-                                    <!--<label class="field-title" for="s[article">Артикул:</label>-->
-                                    <!--<label class="input">-->
-                                        <!--<input type="text" name="s[article]" id="s[article" value=""-->
-                                               <!--placeholder="Артикул"/>-->
-                                    <!--</label>-->
-                                <!--</div>-->
-                                <!--<input type="hidden" name="sort_by" value=""/>-->
+                <!--<div class="block-body">-->
+                <!--<div class="shop-search-close">Закрыть</div>-->
+                <!--<form class="dropdown" action="/magazin/search" enctype="multipart/form-data">-->
+                <!--<div class="field-first clear-self">-->
+                <!--<div class="field dimension clear-self">-->
+                <!--<span class="field-title">Цена</span>-->
+                <!--<label class="start">-->
+                <!--<span class="unit-title">руб.</span>-->
+                <!--<input name="s[price][min]" type="text" value="" placeholder="от"/>-->
+                <!--</label>-->
+                <!--<label class="end">-->
+                <!--<span class="unit-title">руб.</span>-->
+                <!--<input name="s[price][max]" type="text" value="" placeholder="до"/>-->
+                <!--</label>-->
+                <!--</div>-->
+                <!--<div class="field select">-->
+                <!--<span class="field-title">Выберите категорию</span>-->
+                <!--<div id="s[folder_id]-styler" class="jq-selectbox jqselect"-->
+                <!--style="display: inline-block; position: relative; z-index:100">-->
+                <!--<select name="s[folder_id]" id="s[folder_id]"-->
+                <!--style="margin: 0px; padding: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; opacity: 0;">-->
+                <!--<option value="">Все</option>-->
+                <!--<option value="668658641">-->
+                <!--Строительная техника-->
+                <!--</option>-->
+                <!--<option value="668664241">-->
+                <!--» Автокраны-->
+                <!--</option>-->
+                <!--<option value="668664641">-->
+                <!--» Экскаваторы-->
+                <!--</option>-->
+                <!--<option value="670374041">-->
+                <!--» Вышка-->
+                <!--</option>-->
+                <!--<option value="670542841">-->
+                <!--» Грейдеры-->
+                <!--</option>-->
+                <!--<option value="668665041">-->
+                <!--Складская техника-->
+                <!--</option>-->
+                <!--<option value="668665241">-->
+                <!--» Вилочные погрузчики-->
+                <!--</option>-->
+                <!--<option value="668665441">-->
+                <!--» Штабелеры-->
+                <!--</option>-->
+                <!--<option value="668665641">-->
+                <!--» Рич-Траки-->
+                <!--</option>-->
+                <!--<option value="668665841">-->
+                <!--Поддержанная техника-->
+                <!--</option>-->
+                <!--<option value="668666041">-->
+                <!--» Погрузчики-->
+                <!--</option>-->
+                <!--<option value="668666441">-->
+                <!--» Автокраны-->
+                <!--</option>-->
+                <!--<option value="673419841">-->
+                <!--» Вышка-->
+                <!--</option>-->
+                <!--<option value="668666641">-->
+                <!--Дорожно-строительная техника-->
+                <!--</option>-->
+                <!--<option value="668666841">-->
+                <!--» Бульдозеры-->
+                <!--</option>-->
+                <!--<option value="668667041">-->
+                <!--» Мини погрузчики-->
+                <!--</option>-->
+                <!--<option value="668667241">-->
+                <!--» Катки-->
+                <!--</option>-->
+                <!--<option value="668667441">-->
+                <!--Грузовые автомобили и прицепы-->
+                <!--</option>-->
+                <!--<option value="668667641">-->
+                <!--» Грузовики-->
+                <!--</option>-->
+                <!--<option value="668667841">-->
+                <!--» Прицепы-->
+                <!--</option>-->
+                <!--<option value="668669841">-->
+                <!--» Рефрижератор-->
+                <!--</option>-->
+                <!--<option value="668670041">-->
+                <!--Аренда спецтехники-->
+                <!--</option>-->
+                <!--<option value="668670241">-->
+                <!--» Экскаваторы-погрузчики-->
+                <!--</option>-->
+                <!--<option value="668670441">-->
+                <!--» Прицепы-->
+                <!--</option>-->
+                <!--<option value="668670641">-->
+                <!--» Автокраны-->
+                <!--</option>-->
+                <!--<option value="668670841">-->
+                <!--Сельскохозяйственная техника-->
+                <!--</option>-->
+                <!--<option value="668671041">-->
+                <!--» Комбайны-->
+                <!--</option>-->
+                <!--<option value="668671241">-->
+                <!--» Тракторы-->
+                <!--</option>-->
+                <!--<option value="668671441">-->
+                <!--» Бороны-->
+                <!--</option>-->
+                <!--<option value="668671641">-->
+                <!--Буровые установки-->
+                <!--</option>-->
+                <!--<option value="668671841">-->
+                <!--» Роторные буровые установки-->
+                <!--</option>-->
+                <!--<option value="668672041">-->
+                <!--» Буровые установки ГНБ-->
+                <!--</option>-->
+                <!--<option value="668672241">-->
+                <!--» Малогабаритные буровые установки-->
+                <!--</option>-->
+                <!--<option value="668672441">-->
+                <!--Запчасти-->
+                <!--</option>-->
+                <!--<option value="668672641">-->
+                <!--» Запчасти для погрузчиков-->
+                <!--</option>-->
+                <!--<option value="668673041">-->
+                <!--» Запчасти для автокранов-->
+                <!--</option>-->
+                <!--<option value="672658041">-->
+                <!--» Запчасти для тракторов-->
+                <!--</option>-->
+                <!--</select>-->
+                <!--<div class="jq-selectbox__select" style="position: relative">-->
+                <!--<div class="jq-selectbox__select-text placeholder">Выберите категорию-->
+                <!--</div>-->
+                <!--<div class="jq-selectbox__trigger">-->
+                <!--<div class="jq-selectbox__trigger-arrow"></div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="jq-selectbox__dropdown"-->
+                <!--style="position: absolute; left: 0px; top: 0px; display: none;">-->
+                <!--<ul style="position: relative; list-style: none; overflow: auto; overflow-x: hidden">-->
+                <!--<li class="selected sel" style="">Все</li>-->
+                <!--<li style="">-->
+                <!--Строительная техника-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Автокраны-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Экскаваторы-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Вышка-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Грейдеры-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--Складская техника-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Вилочные погрузчики-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Штабелеры-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Рич-Траки-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--Поддержанная техника-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Погрузчики-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Автокраны-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Вышка-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--Дорожно-строительная техника-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Бульдозеры-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Мини погрузчики-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Катки-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--Грузовые автомобили и прицепы-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Грузовики-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Прицепы-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Рефрижератор-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--Аренда спецтехники-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Экскаваторы-погрузчики-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Прицепы-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Автокраны-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--Сельскохозяйственная техника-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Комбайны-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Тракторы-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Бороны-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--Буровые установки-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Роторные буровые установки-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Буровые установки ГНБ-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Малогабаритные буровые установки-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--Запчасти-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Запчасти для погрузчиков-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Запчасти для автокранов-->
+                <!--</li>-->
+                <!--<li style="">-->
+                <!--» Запчасти для тракторов-->
+                <!--</li>-->
+                <!--</ul>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="field text">-->
+                <!--<label class="field-title" for="s[name]">Название</label>-->
+                <!--<label class="input">-->
+                <!--<input type="text" name="s[name]" id="s[name]" value=""-->
+                <!--placeholder="Название"/>-->
+                <!--</label>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="field text">-->
+                <!--<label class="field-title" for="s[article">Артикул:</label>-->
+                <!--<label class="input">-->
+                <!--<input type="text" name="s[article]" id="s[article" value=""-->
+                <!--placeholder="Артикул"/>-->
+                <!--</label>-->
+                <!--</div>-->
+                <!--<input type="hidden" name="sort_by" value=""/>-->
 
-                                <!--<div class="user-flags-wr">-->
-                                    <!--<div class="mobile-select-product">-->
-                                        <!--Все-->
-                                    <!--</div>-->
-                                    <!--<div class="field-product-type">-->
+                <!--<div class="user-flags-wr">-->
+                <!--<div class="mobile-select-product">-->
+                <!--Все-->
+                <!--</div>-->
+                <!--<div class="field-product-type">-->
 
-                                        <!--<label>-->
-                                            <!--<input type="radio" name="s[s_em_ili_prodaza]" value="" checked="checked"/>-->
-                                            <!--<span class="checked"></span>-->
-                                            <!--<span class="cat-item">Все</span>-->
-                                        <!--</label>-->
-                                        <!--<label>-->
-                                            <!--<input type="radio" name="s[s_em_ili_prodaza]" value="368904241"/>-->
-                                            <!--<span class="checked"></span>-->
-                                            <!--<span class="cat-item">Продажа</span>-->
-                                        <!--</label>-->
+                <!--<label>-->
+                <!--<input type="radio" name="s[s_em_ili_prodaza]" value="" checked="checked"/>-->
+                <!--<span class="checked"></span>-->
+                <!--<span class="cat-item">Все</span>-->
+                <!--</label>-->
+                <!--<label>-->
+                <!--<input type="radio" name="s[s_em_ili_prodaza]" value="368904241"/>-->
+                <!--<span class="checked"></span>-->
+                <!--<span class="cat-item">Продажа</span>-->
+                <!--</label>-->
 
-                                        <!--<label>-->
-                                            <!--<input type="radio" name="s[s_em_ili_prodaza]" value="368904441"/>-->
-                                            <!--<span class="checked"></span>-->
-                                            <!--<span class="cat-item">Аренда</span>-->
-                                        <!--</label>-->
+                <!--<label>-->
+                <!--<input type="radio" name="s[s_em_ili_prodaza]" value="368904441"/>-->
+                <!--<span class="checked"></span>-->
+                <!--<span class="cat-item">Аренда</span>-->
+                <!--</label>-->
 
-                                        <!--<label>-->
-                                            <!--<input type="radio" name="s[s_em_ili_prodaza]" value="368904641"/>-->
-                                            <!--<span class="checked"></span>-->
-                                            <!--<span class="cat-item">Запчасти</span>-->
-                                        <!--</label>-->
+                <!--<label>-->
+                <!--<input type="radio" name="s[s_em_ili_prodaza]" value="368904641"/>-->
+                <!--<span class="checked"></span>-->
+                <!--<span class="cat-item">Запчасти</span>-->
+                <!--</label>-->
 
-                                    <!--</div>-->
-                                <!--</div>-->
-
-
-                                <!--<div id="shop2_search_global_fields">-->
+                <!--</div>-->
+                <!--</div>-->
 
 
-                                <!--</div>-->
+                <!--<div id="shop2_search_global_fields">-->
 
 
-                                <!--<div class="field text">-->
-                                    <!--<label class="field-title" for="search_text">Текст</label>-->
-                                    <!--<label class="input">-->
-                                        <!--<input type="text" name="search_text" id="search_text" value=""-->
-                                               <!--placeholder="Текст"/>-->
-                                    <!--</label>-->
-                                <!--</div>-->
-                                <!--<div id="shop2_search_custom_fields"></div>-->
+                <!--</div>-->
 
-                                <!--<div class="field select">-->
-                                    <!--<span class="field-title">Производитель</span>-->
-                                    <!--<div class="jq-selectbox jqselect"-->
-                                         <!--style="display: inline-block; position: relative; z-index:100">-->
-                                        <!--<select name="s[vendor_id]"-->
-                                                <!--style="margin: 0px; padding: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; opacity: 0;">-->
-                                            <!--<option value="">Все</option>-->
-                                            <!--<option value="207175041">AMKODOR</option>-->
-                                            <!--<option value="205974241">CATERPILLAR</option>-->
-                                            <!--<option value="206380241">GROS</option>-->
-                                            <!--<option value="205991241">HITACHI</option>-->
-                                            <!--<option value="207351641">IVECO</option>-->
-                                            <!--<option value="205982041">JLG</option>-->
-                                            <!--<option value="205934241">KATO</option>-->
-                                            <!--<option value="205973041">KOBELCO</option>-->
-                                            <!--<option value="205975641">KOMATSU</option>-->
-                                            <!--<option value="207173441">LUTZ KURTH</option>-->
-                                            <!--<option value="207343041">MAN</option>-->
-                                            <!--<option value="205991041">MEC</option>-->
-                                            <!--<option value="206239641">MITSUBISHI</option>-->
-                                            <!--<option value="207175241">MTZ</option>-->
-                                            <!--<option value="206429241">Nichiyu</option>-->
-                                            <!--<option value="206292441">Ningbo Ruyi</option>-->
-                                            <!--<option value="207343241">RENAULT</option>-->
-                                            <!--<option value="206444441">ROSTSELMASH</option>-->
-                                            <!--<option value="207173241">SHANTUI</option>-->
-                                            <!--<option value="205974041">SUMITOMO</option>-->
-                                            <!--<option value="205861241">TADANO</option>-->
-                                            <!--<option value="206805641">TTZ</option>-->
-                                            <!--<option value="205786241">Unicarriers Corporation (ТСМ)</option>-->
-                                            <!--<option value="205290041">XGMA</option>-->
-                                            <!--<option value="206380441">Xilin</option>-->
-                                            <!--<option value="205771241">АНТ</option>-->
-                                            <!--<option value="206812241">Беларусь</option>-->
-                                            <!--<option value="206458041">Гомсельмаш КСК</option>-->
-                                            <!--<option value="205483641">ДСТ-Урал</option>-->
-                                        <!--</select>-->
-                                        <!--<div class="jq-selectbox__select" style="position: relative">-->
-                                            <!--<div class="jq-selectbox__select-text placeholder">Производитель</div>-->
-                                            <!--<div class="jq-selectbox__trigger">-->
-                                                <!--<div class="jq-selectbox__trigger-arrow"></div>-->
-                                            <!--</div>-->
-                                        <!--</div>-->
-                                        <!--<div class="jq-selectbox__dropdown"-->
-                                             <!--style="position: absolute; left: 0px; top: 0px; display: none;">-->
-                                            <!--<ul style="position: relative; list-style: none; overflow: auto; overflow-x: hidden">-->
-                                                <!--<li class="selected sel" style="">Все</li>-->
-                                                <!--<li style="">AMKODOR</li>-->
-                                                <!--<li style="">CATERPILLAR</li>-->
-                                                <!--<li style="">GROS</li>-->
-                                                <!--<li style="">HITACHI</li>-->
-                                                <!--<li style="">IVECO</li>-->
-                                                <!--<li style="">JLG</li>-->
-                                                <!--<li style="">KATO</li>-->
-                                                <!--<li style="">KOBELCO</li>-->
-                                                <!--<li style="">KOMATSU</li>-->
-                                                <!--<li style="">LUTZ KURTH</li>-->
-                                                <!--<li style="">MAN</li>-->
-                                                <!--<li style="">MEC</li>-->
-                                                <!--<li style="">MITSUBISHI</li>-->
-                                                <!--<li style="">MTZ</li>-->
-                                                <!--<li style="">Nichiyu</li>-->
-                                                <!--<li style="">Ningbo Ruyi</li>-->
-                                                <!--<li style="">RENAULT</li>-->
-                                                <!--<li style="">ROSTSELMASH</li>-->
-                                                <!--<li style="">SHANTUI</li>-->
-                                                <!--<li style="">SUMITOMO</li>-->
-                                                <!--<li style="">TADANO</li>-->
-                                                <!--<li style="">TTZ</li>-->
-                                                <!--<li style="">Unicarriers Corporation (ТСМ)</li>-->
-                                                <!--<li style="">XGMA</li>-->
-                                                <!--<li style="">Xilin</li>-->
-                                                <!--<li style="">АНТ</li>-->
-                                                <!--<li style="">Беларусь</li>-->
-                                                <!--<li style="">Гомсельмаш КСК</li>-->
-                                                <!--<li style="">ДСТ-Урал</li>-->
-                                            <!--</ul>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                <!--</div>-->
 
-                                <!--<div class="field select">-->
-                                    <!--<div class="field-title">Новинка</div>-->
-                                    <!--<div class="jq-selectbox jqselect"-->
-                                         <!--style="display: inline-block; position: relative; z-index:100">-->
-                                        <!--<select name="s[_flags][2]"-->
-                                                <!--style="margin: 0px; padding: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; opacity: 0;">-->
-                                            <!--<option value="">Все</option>-->
-                                            <!--<option value="1">да</option>-->
-                                            <!--<option value="0">нет</option>-->
-                                        <!--</select>-->
-                                        <!--<div class="jq-selectbox__select" style="position: relative">-->
-                                            <!--<div class="jq-selectbox__select-text placeholder">Новинка</div>-->
-                                            <!--<div class="jq-selectbox__trigger">-->
-                                                <!--<div class="jq-selectbox__trigger-arrow"></div>-->
-                                            <!--</div>-->
-                                        <!--</div>-->
-                                        <!--<div class="jq-selectbox__dropdown"-->
-                                             <!--style="position: absolute; left: 0px; top: 0px; display: none;">-->
-                                            <!--<ul style="position: relative; list-style: none; overflow: auto; overflow-x: hidden">-->
-                                                <!--<li class="selected sel" style="">Все</li>-->
-                                                <!--<li style="">да</li>-->
-                                                <!--<li style="">нет</li>-->
-                                            <!--</ul>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                                <!--<div class="field select">-->
-                                    <!--<div class="field-title">Спецпредложение</div>-->
-                                    <!--<div class="jq-selectbox jqselect"-->
-                                         <!--style="display: inline-block; position: relative; z-index:100">-->
-                                        <!--<select name="s[_flags][1]"-->
-                                                <!--style="margin: 0px; padding: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; opacity: 0;">-->
-                                            <!--<option value="">Все</option>-->
-                                            <!--<option value="1">да</option>-->
-                                            <!--<option value="0">нет</option>-->
-                                        <!--</select>-->
-                                        <!--<div class="jq-selectbox__select" style="position: relative">-->
-                                            <!--<div class="jq-selectbox__select-text placeholder">Спецпредложение</div>-->
-                                            <!--<div class="jq-selectbox__trigger">-->
-                                                <!--<div class="jq-selectbox__trigger-arrow"></div>-->
-                                            <!--</div>-->
-                                        <!--</div>-->
-                                        <!--<div class="jq-selectbox__dropdown"-->
-                                             <!--style="position: absolute; left: 0px; top: 0px; display: none;">-->
-                                            <!--<ul style="position: relative; list-style: none; overflow: auto; overflow-x: hidden">-->
-                                                <!--<li class="selected sel" style="">Все</li>-->
-                                                <!--<li style="">да</li>-->
-                                                <!--<li style="">нет</li>-->
-                                            <!--</ul>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                <!--</div>-->
+                <!--<div class="field text">-->
+                <!--<label class="field-title" for="search_text">Текст</label>-->
+                <!--<label class="input">-->
+                <!--<input type="text" name="search_text" id="search_text" value=""-->
+                <!--placeholder="Текст"/>-->
+                <!--</label>-->
+                <!--</div>-->
+                <!--<div id="shop2_search_custom_fields"></div>-->
 
-                                <!--<div class="field select">-->
-                                    <!--<span class="field-title">Результатов на странице:</span>-->
-                                    <!--<div class="jq-selectbox jqselect"-->
-                                         <!--style="display: inline-block; position: relative; z-index:100">-->
-                                        <!--<select name="s[products_per_page]"-->
-                                                <!--style="margin: 0px; padding: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; opacity: 0;">-->
-                                            <!--<option value="5">5</option>-->
-                                            <!--<option value="20">20</option>-->
-                                            <!--<option value="35">35</option>-->
-                                            <!--<option value="50">50</option>-->
-                                            <!--<option value="65">65</option>-->
-                                            <!--<option value="80">80</option>-->
-                                            <!--<option value="95">95</option>-->
-                                        <!--</select>-->
-                                        <!--<div class="jq-selectbox__select" style="position: relative">-->
-                                            <!--<div class="jq-selectbox__select-text">5</div>-->
-                                            <!--<div class="jq-selectbox__trigger">-->
-                                                <!--<div class="jq-selectbox__trigger-arrow"></div>-->
-                                            <!--</div>-->
-                                        <!--</div>-->
-                                        <!--<div class="jq-selectbox__dropdown"-->
-                                             <!--style="position: absolute; left: 0px; top: 0px; display: none;">-->
-                                            <!--<ul style="position: relative; list-style: none; overflow: auto; overflow-x: hidden">-->
-                                                <!--<li class="selected sel" style="">5</li>-->
-                                                <!--<li style="">20</li>-->
-                                                <!--<li style="">35</li>-->
-                                                <!--<li style="">50</li>-->
-                                                <!--<li style="">65</li>-->
-                                                <!--<li style="">80</li>-->
-                                                <!--<li style="">95</li>-->
-                                            <!--</ul>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                                <!--<div class="clear-self"></div>-->
+                <!--<div class="field select">-->
+                <!--<span class="field-title">Производитель</span>-->
+                <!--<div class="jq-selectbox jqselect"-->
+                <!--style="display: inline-block; position: relative; z-index:100">-->
+                <!--<select name="s[vendor_id]"-->
+                <!--style="margin: 0px; padding: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; opacity: 0;">-->
+                <!--<option value="">Все</option>-->
+                <!--<option value="207175041">AMKODOR</option>-->
+                <!--<option value="205974241">CATERPILLAR</option>-->
+                <!--<option value="206380241">GROS</option>-->
+                <!--<option value="205991241">HITACHI</option>-->
+                <!--<option value="207351641">IVECO</option>-->
+                <!--<option value="205982041">JLG</option>-->
+                <!--<option value="205934241">KATO</option>-->
+                <!--<option value="205973041">KOBELCO</option>-->
+                <!--<option value="205975641">KOMATSU</option>-->
+                <!--<option value="207173441">LUTZ KURTH</option>-->
+                <!--<option value="207343041">MAN</option>-->
+                <!--<option value="205991041">MEC</option>-->
+                <!--<option value="206239641">MITSUBISHI</option>-->
+                <!--<option value="207175241">MTZ</option>-->
+                <!--<option value="206429241">Nichiyu</option>-->
+                <!--<option value="206292441">Ningbo Ruyi</option>-->
+                <!--<option value="207343241">RENAULT</option>-->
+                <!--<option value="206444441">ROSTSELMASH</option>-->
+                <!--<option value="207173241">SHANTUI</option>-->
+                <!--<option value="205974041">SUMITOMO</option>-->
+                <!--<option value="205861241">TADANO</option>-->
+                <!--<option value="206805641">TTZ</option>-->
+                <!--<option value="205786241">Unicarriers Corporation (ТСМ)</option>-->
+                <!--<option value="205290041">XGMA</option>-->
+                <!--<option value="206380441">Xilin</option>-->
+                <!--<option value="205771241">АНТ</option>-->
+                <!--<option value="206812241">Беларусь</option>-->
+                <!--<option value="206458041">Гомсельмаш КСК</option>-->
+                <!--<option value="205483641">ДСТ-Урал</option>-->
+                <!--</select>-->
+                <!--<div class="jq-selectbox__select" style="position: relative">-->
+                <!--<div class="jq-selectbox__select-text placeholder">Производитель</div>-->
+                <!--<div class="jq-selectbox__trigger">-->
+                <!--<div class="jq-selectbox__trigger-arrow"></div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="jq-selectbox__dropdown"-->
+                <!--style="position: absolute; left: 0px; top: 0px; display: none;">-->
+                <!--<ul style="position: relative; list-style: none; overflow: auto; overflow-x: hidden">-->
+                <!--<li class="selected sel" style="">Все</li>-->
+                <!--<li style="">AMKODOR</li>-->
+                <!--<li style="">CATERPILLAR</li>-->
+                <!--<li style="">GROS</li>-->
+                <!--<li style="">HITACHI</li>-->
+                <!--<li style="">IVECO</li>-->
+                <!--<li style="">JLG</li>-->
+                <!--<li style="">KATO</li>-->
+                <!--<li style="">KOBELCO</li>-->
+                <!--<li style="">KOMATSU</li>-->
+                <!--<li style="">LUTZ KURTH</li>-->
+                <!--<li style="">MAN</li>-->
+                <!--<li style="">MEC</li>-->
+                <!--<li style="">MITSUBISHI</li>-->
+                <!--<li style="">MTZ</li>-->
+                <!--<li style="">Nichiyu</li>-->
+                <!--<li style="">Ningbo Ruyi</li>-->
+                <!--<li style="">RENAULT</li>-->
+                <!--<li style="">ROSTSELMASH</li>-->
+                <!--<li style="">SHANTUI</li>-->
+                <!--<li style="">SUMITOMO</li>-->
+                <!--<li style="">TADANO</li>-->
+                <!--<li style="">TTZ</li>-->
+                <!--<li style="">Unicarriers Corporation (ТСМ)</li>-->
+                <!--<li style="">XGMA</li>-->
+                <!--<li style="">Xilin</li>-->
+                <!--<li style="">АНТ</li>-->
+                <!--<li style="">Беларусь</li>-->
+                <!--<li style="">Гомсельмаш КСК</li>-->
+                <!--<li style="">ДСТ-Урал</li>-->
+                <!--</ul>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
 
-                                <!--<div class="submit">-->
-                                    <!--<div class="opened-all-selsect">Ещё</div>-->
-                                    <!--<div class="reset-btn">-->
-                                        <!--<span>Сбросить</span>-->
-                                    <!--</div>-->
-                                    <!--<button type="submit" class="search-btn btn-variant1">Показать</button>-->
-                                <!--</div>-->
-                            <!--</form>-->
-                        <!--</div>-->
-                    <!--</div>&lt;!&ndash; Search Form &ndash;&gt;-->
+                <!--<div class="field select">-->
+                <!--<div class="field-title">Новинка</div>-->
+                <!--<div class="jq-selectbox jqselect"-->
+                <!--style="display: inline-block; position: relative; z-index:100">-->
+                <!--<select name="s[_flags][2]"-->
+                <!--style="margin: 0px; padding: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; opacity: 0;">-->
+                <!--<option value="">Все</option>-->
+                <!--<option value="1">да</option>-->
+                <!--<option value="0">нет</option>-->
+                <!--</select>-->
+                <!--<div class="jq-selectbox__select" style="position: relative">-->
+                <!--<div class="jq-selectbox__select-text placeholder">Новинка</div>-->
+                <!--<div class="jq-selectbox__trigger">-->
+                <!--<div class="jq-selectbox__trigger-arrow"></div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="jq-selectbox__dropdown"-->
+                <!--style="position: absolute; left: 0px; top: 0px; display: none;">-->
+                <!--<ul style="position: relative; list-style: none; overflow: auto; overflow-x: hidden">-->
+                <!--<li class="selected sel" style="">Все</li>-->
+                <!--<li style="">да</li>-->
+                <!--<li style="">нет</li>-->
+                <!--</ul>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="field select">-->
+                <!--<div class="field-title">Спецпредложение</div>-->
+                <!--<div class="jq-selectbox jqselect"-->
+                <!--style="display: inline-block; position: relative; z-index:100">-->
+                <!--<select name="s[_flags][1]"-->
+                <!--style="margin: 0px; padding: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; opacity: 0;">-->
+                <!--<option value="">Все</option>-->
+                <!--<option value="1">да</option>-->
+                <!--<option value="0">нет</option>-->
+                <!--</select>-->
+                <!--<div class="jq-selectbox__select" style="position: relative">-->
+                <!--<div class="jq-selectbox__select-text placeholder">Спецпредложение</div>-->
+                <!--<div class="jq-selectbox__trigger">-->
+                <!--<div class="jq-selectbox__trigger-arrow"></div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="jq-selectbox__dropdown"-->
+                <!--style="position: absolute; left: 0px; top: 0px; display: none;">-->
+                <!--<ul style="position: relative; list-style: none; overflow: auto; overflow-x: hidden">-->
+                <!--<li class="selected sel" style="">Все</li>-->
+                <!--<li style="">да</li>-->
+                <!--<li style="">нет</li>-->
+                <!--</ul>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="field select">-->
+                <!--<span class="field-title">Результатов на странице:</span>-->
+                <!--<div class="jq-selectbox jqselect"-->
+                <!--style="display: inline-block; position: relative; z-index:100">-->
+                <!--<select name="s[products_per_page]"-->
+                <!--style="margin: 0px; padding: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; opacity: 0;">-->
+                <!--<option value="5">5</option>-->
+                <!--<option value="20">20</option>-->
+                <!--<option value="35">35</option>-->
+                <!--<option value="50">50</option>-->
+                <!--<option value="65">65</option>-->
+                <!--<option value="80">80</option>-->
+                <!--<option value="95">95</option>-->
+                <!--</select>-->
+                <!--<div class="jq-selectbox__select" style="position: relative">-->
+                <!--<div class="jq-selectbox__select-text">5</div>-->
+                <!--<div class="jq-selectbox__trigger">-->
+                <!--<div class="jq-selectbox__trigger-arrow"></div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="jq-selectbox__dropdown"-->
+                <!--style="position: absolute; left: 0px; top: 0px; display: none;">-->
+                <!--<ul style="position: relative; list-style: none; overflow: auto; overflow-x: hidden">-->
+                <!--<li class="selected sel" style="">5</li>-->
+                <!--<li style="">20</li>-->
+                <!--<li style="">35</li>-->
+                <!--<li style="">50</li>-->
+                <!--<li style="">65</li>-->
+                <!--<li style="">80</li>-->
+                <!--<li style="">95</li>-->
+                <!--</ul>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="clear-self"></div>-->
+
+                <!--<div class="submit">-->
+                <!--<div class="opened-all-selsect">Ещё</div>-->
+                <!--<div class="reset-btn">-->
+                <!--<span>Сбросить</span>-->
+                <!--</div>-->
+                <!--<button type="submit" class="search-btn btn-variant1">Показать</button>-->
+                <!--</div>-->
+                <!--</form>-->
+                <!--</div>-->
+                <!--</div>&lt;!&ndash; Search Form &ndash;&gt;-->
                 <!--</div>-->
 
                 <div class="slider-main-wrapper">
@@ -954,7 +1007,8 @@
                                             </div>
                                         </div>
 
-                                        <div class="pic" style="background-image: url(/theme_as/static/img/sp.jpg);"></div>
+                                        <div class="pic"
+                                             style="background-image: url(/theme_as/static/img/sp.jpg);"></div>
                                     </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 820px;">
@@ -979,7 +1033,8 @@
                                             </div>
                                         </div>
 
-                                        <div class="pic" style="background-image: url(/theme_as/static/img/5455442.jpg);"></div>
+                                        <div class="pic"
+                                             style="background-image: url(/theme_as/static/img/5455442.jpg);"></div>
                                     </div>
                                 </div>
                                 <div class="owl-item active" style="width: 820px;">
@@ -1002,7 +1057,8 @@
                                             </div>
                                         </div>
 
-                                        <div class="pic" style="background-image: url(/theme_as/static/img/5455441.jpg);"></div>
+                                        <div class="pic"
+                                             style="background-image: url(/theme_as/static/img/5455441.jpg);"></div>
                                     </div>
                                 </div>
                                 <div class="owl-item" style="width: 820px;">
@@ -1026,7 +1082,8 @@
                                             </div>
                                         </div>
 
-                                        <div class="pic" style="background-image: url(/theme_as/static/img/sp.jpg);"></div>
+                                        <div class="pic"
+                                             style="background-image: url(/theme_as/static/img/sp.jpg);"></div>
                                     </div>
                                 </div>
                                 <div class="owl-item" style="width: 820px;">
@@ -1051,7 +1108,8 @@
                                             </div>
                                         </div>
 
-                                        <div class="pic" style="background-image: url(/theme_as/static/img/5455442.jpg);"></div>
+                                        <div class="pic"
+                                             style="background-image: url(/theme_as/static/img/5455442.jpg);"></div>
                                     </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 820px;">
@@ -1074,7 +1132,8 @@
                                             </div>
                                         </div>
 
-                                        <div class="pic" style="background-image: url(/theme_as/static/img/5455441.jpg);"></div>
+                                        <div class="pic"
+                                             style="background-image: url(/theme_as/static/img/5455441.jpg);"></div>
                                     </div>
                                 </div>
                                 <div class="owl-item cloned" style="width: 820px;">
@@ -1098,7 +1157,8 @@
                                             </div>
                                         </div>
 
-                                        <div class="pic" style="background-image: url(/theme_as/static/img/sp.jpg);"></div>
+                                        <div class="pic"
+                                             style="background-image: url(/theme_as/static/img/sp.jpg);"></div>
                                     </div>
                                 </div>
                             </div>
@@ -1134,6 +1194,1772 @@
                                     <a href="/magazin/folder/pogruzchiki">Узнать больше ...</a>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+        <template id="folder_block" inherit_id="theme_as.theme_as_homepage" name="Theme AS Main Folder Block">
+            <xpath expr="//div[@class='folder-block']" position="inside">
+                <div class="folders-main-wr">
+                    <div class="folders-main">
+                        <div class="folders-li">
+                            <div class="folder-inner">
+                                <div class="img-block-wr">
+                                    <div class="img-block"
+                                         style="background-image: url(/thumb/nJ3-qL0w1iALCjCIRxHbLA/110c110/1772981/folder_1.jpg);"></div>
+                                </div>
+                                <div class="folderName-wr">
+                                    <div class="folder-name-in">
+                                        <ul>
+                                            <li>
+                                                <a href="/magazin/folder/stroitelnaya-tekhnika">Строительная техника</a>
+
+
+                                                <ul>
+
+                                                    <li>
+                                                        <a href="/magazin/folder/avtokrany">Автокраны</a>
+                                                    </li>
+
+
+                                                    <li>
+                                                        <a href="/magazin/folder/ekskavatory">Экскаваторы</a>
+                                                    </li>
+
+
+                                                    <li>
+                                                        <a href="/magazin/folder/vyshka">Вышка</a>
+                                                    </li>
+
+
+                                                </ul>
+
+                                            </li>
+                                        </ul>
+                                        <span class="view-all">
+                                            <a href="/magazin/folder/stroitelnaya-tekhnika">Смотреть все</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="folders-li">
+                            <div class="folder-inner">
+                                <div class="img-block-wr">
+                                    <div class="img-block"
+                                         style="background-image: url(/thumb/PATzPVcjlHyMbsqOwpiFvw/110c110/1772981/folder2.jpg);"></div>
+                                </div>
+                                <div class="folderName-wr">
+                                    <div class="folder-name-in">
+                                        <ul>
+                                            <li>
+                                                <a href="/magazin/folder/skladskaya-tekhnika">Складская техника</a>
+
+
+                                                <ul>
+
+                                                    <li>
+                                                        <a href="/magazin/folder/vilochnyye-pogruzchiki">Вилочные
+                                                            погрузчики
+                                                        </a>
+                                                    </li>
+
+
+                                                    <li>
+                                                        <a href="/magazin/folder/shtabelery">Штабелеры</a>
+                                                    </li>
+
+
+                                                    <li>
+                                                        <a href="/magazin/folder/rich-traki">Рич-Траки</a>
+                                                    </li>
+
+
+                                                </ul>
+
+                                            </li>
+                                        </ul>
+                                        <span class="view-all">
+                                            <a href="/magazin/folder/skladskaya-tekhnika">Смотреть все</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="folders-li">
+                            <div class="folder-inner">
+                                <div class="img-block-wr">
+                                    <div class="img-block"
+                                         style="background-image: url(/thumb/zDgXbrkiOZFZlx09sDoh8w/110c110/1772981/folder3.jpg);"></div>
+                                </div>
+                                <div class="folderName-wr">
+                                    <div class="folder-name-in">
+                                        <ul>
+                                            <li>
+                                                <a href="/magazin/folder/podderzhannaya-tekhnika">Поддержанная техника
+                                                </a>
+
+
+                                                <ul>
+
+                                                    <li>
+                                                        <a href="/magazin/folder/pogruzchiki">Погрузчики</a>
+                                                    </li>
+
+
+                                                    <li>
+                                                        <a href="/magazin/folder/avtokrany-1">Автокраны</a>
+                                                    </li>
+
+
+                                                    <li>
+                                                        <a href="/magazin/folder/vyshka-1">Вышка</a>
+                                                    </li>
+
+
+                                                </ul>
+
+                                            </li>
+                                        </ul>
+                                        <span class="view-all">
+                                            <a href="/magazin/folder/podderzhannaya-tekhnika">Смотреть все</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="folders-li">
+                            <div class="folder-inner">
+                                <div class="img-block-wr">
+                                    <div class="img-block"
+                                         style="background-image: url(/thumb/dRNCTvauSDeuLp1J8nAKMg/110c110/1772981/folder4.jpg);"></div>
+                                </div>
+                                <div class="folderName-wr">
+                                    <div class="folder-name-in">
+                                        <ul>
+                                            <li>
+                                                <a href="/magazin/folder/dorozhno-stroitelnaya-tekhnika">
+                                                    Дорожно-строительная техника
+                                                </a>
+
+
+                                                <ul>
+
+                                                    <li>
+                                                        <a href="/magazin/folder/dorozhnyye-frezy">Бульдозеры</a>
+                                                    </li>
+
+
+                                                    <li>
+                                                        <a href="/magazin/folder/mini-pogruzchiki">Мини погрузчики</a>
+                                                    </li>
+
+
+                                                    <li>
+                                                        <a href="/magazin/folder/katki">Катки</a>
+                                                    </li>
+
+
+                                                </ul>
+
+                                            </li>
+                                        </ul>
+                                        <span class="view-all">
+                                            <a href="/magazin/folder/dorozhno-stroitelnaya-tekhnika">Смотреть все</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="folders-li">
+                            <div class="folder-inner">
+                                <div class="img-block-wr">
+                                    <div class="img-block"
+                                         style="background-image: url(/thumb/vDcex-Lfzg5YVUr6JG7nSQ/110c110/1772981/folder5.jpg);"></div>
+                                </div>
+                                <div class="folderName-wr">
+                                    <div class="folder-name-in">
+                                        <ul>
+                                            <li>
+                                                <a href="/magazin/folder/gruzovyye-avtomobili-i-pritsepy">Грузовые
+                                                    автомобили и прицепы
+                                                </a>
+
+
+                                                <ul>
+
+                                                    <li>
+                                                        <a href="/magazin/folder/gruzoviki">Грузовики</a>
+                                                    </li>
+
+
+                                                    <li>
+                                                        <a href="/magazin/folder/pritsepy">Прицепы</a>
+                                                    </li>
+
+
+                                                    <li>
+                                                        <a href="/magazin/folder/refrizherator">Рефрижератор</a>
+                                                    </li>
+
+
+                                                </ul>
+
+                                            </li>
+                                        </ul>
+                                        <span class="view-all">
+                                            <a href="/magazin/folder/gruzovyye-avtomobili-i-pritsepy">Смотреть все</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="folders-li">
+                            <div class="folder-inner">
+                                <div class="img-block-wr">
+                                    <div class="img-block"
+                                         style="background-image: url(/thumb/gmP4bsTOKpkctKc4f_KWaw/110c110/1772981/folder6.jpg);"></div>
+                                </div>
+                                <div class="folderName-wr">
+                                    <div class="folder-name-in">
+                                        <ul>
+                                            <li>
+                                                <a href="/magazin/folder/arenda-spetstekhniki">Аренда спецтехники</a>
+
+
+                                                <ul>
+
+                                                    <li>
+                                                        <a href="/magazin/folder/ekskavatory-pogruzchiki">
+                                                            Экскаваторы-погрузчики
+                                                        </a>
+                                                    </li>
+
+
+                                                    <li>
+                                                        <a href="/magazin/folder/avtopritsepy-1">Прицепы</a>
+                                                    </li>
+
+
+                                                    <li>
+                                                        <a href="/magazin/folder/avtokrany-2">Автокраны</a>
+                                                    </li>
+
+
+                                                </ul>
+
+                                            </li>
+                                        </ul>
+                                        <span class="view-all">
+                                            <a href="/magazin/folder/arenda-spetstekhniki">Смотреть все</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="folders-li">
+                            <div class="folder-inner">
+                                <div class="img-block-wr">
+                                    <div class="img-block"
+                                         style="background-image: url(/thumb/nfM8uBvkdOxGTPOIOVodSA/110c110/1772981/folder7.jpg);"></div>
+                                </div>
+                                <div class="folderName-wr">
+                                    <div class="folder-name-in">
+                                        <ul>
+                                            <li>
+                                                <a href="/magazin/folder/selskokhozyaystvennaya-tekhnika">
+                                                    Сельскохозяйственная техника
+                                                </a>
+
+
+                                                <ul>
+
+                                                    <li>
+                                                        <a href="/magazin/folder/kombayny">Комбайны</a>
+                                                    </li>
+
+
+                                                    <li>
+                                                        <a href="/magazin/folder/traktory">Тракторы</a>
+                                                    </li>
+
+
+                                                    <li>
+                                                        <a href="/magazin/folder/borony">Бороны</a>
+                                                    </li>
+
+
+                                                </ul>
+
+                                            </li>
+                                        </ul>
+                                        <span class="view-all">
+                                            <a href="/magazin/folder/selskokhozyaystvennaya-tekhnika">Смотреть все</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="folders-li">
+                            <div class="folder-inner">
+                                <div class="img-block-wr">
+                                    <div class="img-block"
+                                         style="background-image: url(/thumb/lJltmzDmipzv8yuNF_5VEg/110c110/1772981/folder8.jpg);"></div>
+                                </div>
+                                <div class="folderName-wr">
+                                    <div class="folder-name-in">
+                                        <ul>
+                                            <li>
+                                                <a href="/magazin/folder/burovyye-ustanovki">Буровые установки</a>
+
+
+                                                <ul>
+
+                                                    <li>
+                                                        <a href="/magazin/folder/rotornyye-burovyye-ustanovki">Роторные
+                                                            буровые установки
+                                                        </a>
+                                                    </li>
+
+
+                                                    <li>
+                                                        <a href="/magazin/folder/burovyye-ustanovki-gnb">Буровые
+                                                            установки ГНБ
+                                                        </a>
+                                                    </li>
+
+
+                                                    <li>
+                                                        <a href="/magazin/folder/malogabaritnyye-burovyye-ustanovki">
+                                                            Малогабаритные буровые установки
+                                                        </a>
+                                                    </li>
+
+
+                                                </ul>
+
+                                            </li>
+                                        </ul>
+                                        <span class="view-all">
+                                            <a href="/magazin/folder/burovyye-ustanovki">Смотреть все</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="folders-li">
+                            <div class="folder-inner">
+                                <div class="img-block-wr">
+                                    <div class="img-block"
+                                         style="background-image: url(/thumb/Cwpr2Wl7iTiGARUKP1ywwg/110c110/1772981/fp9.jpg);"></div>
+                                </div>
+                                <div class="folderName-wr">
+                                    <div class="folder-name-in">
+                                        <ul>
+                                            <li>
+                                                <a href="/magazin/folder/zapchasti">Запчасти</a>
+
+
+                                                <ul>
+
+                                                    <li>
+                                                        <a href="/magazin/folder/zapchasti-dlya-pogruzchikov">Запчасти
+                                                            для погрузчиков
+                                                        </a>
+                                                    </li>
+
+
+                                                    <li>
+                                                        <a href="/magazin/folder/zapchasti-dlya-avtokranov">Запчасти для
+                                                            автокранов
+                                                        </a>
+                                                    </li>
+
+
+                                                    <li>
+                                                        <a href="/magazin/folder/zapchasti-dlya-traktorov">Запчасти для
+                                                            тракторов
+                                                        </a>
+                                                    </li>
+
+
+                                                </ul>
+
+                                            </li>
+                                        </ul>
+                                        <span class="view-all">
+                                            <a href="/magazin/folder/zapchasti">Смотреть все</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-all-folder" data-more="Все категории" data-hide="Скрыть"
+                             style="display: none;">
+                            <span>
+                                Все категории
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+        <template id="site_container" inherit_id="theme_as.theme_as_homepage" name="Theme AS Site Container">
+            <xpath expr="//div[@class='site-container']" position="inside">
+                <div class="site-main__inner">
+
+                    <div class="shop2-cookies-disabled shop2-warning hide"></div>
+
+
+                    <div class="shopBlocks-wrapper">
+
+
+                        <div class="shop-main-blocks new">
+                            <div class="inner">
+                                <div class="shop2-main-header shop2-main-new">
+                                    <span>Новые поступления!</span>
+                                </div>
+                                <div class="main-slide-block">
+
+
+                                    <div class="product-list product-list-thumbs  owl-carousel owl-loaded owl-drag">
+
+
+                                        <div class="owl-stage-outer">
+                                            <div class="owl-stage"
+                                                 style="transform: translate3d(-996px, 0px, 0px); transition: 0s; width: 3984px;">
+                                                <div class="owl-item cloned" style="width: 219px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/mini-pogruzchik-ant-750">
+                                                                <img src="/thumb/eXHvAsbck6FEnk4tOphDbQ/200r200/1772981/layer_5.jpg"
+                                                                     alt="Мини погрузчик АНТ-750"
+                                                                     title="Мини погрузчик АНТ-750"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/mini-pogruzchik-ant-750">Мини
+                                                                погрузчик АНТ-750
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+
+                                                            <div class="price-old question">
+                                                                <span>
+                                                                    <strong>1&nbsp;984&nbsp;000</strong>
+                                                                    руб.
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="shop2-product-discount-desc"
+                                                                 style="display: none;">
+                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
+                                                            </div>
+                                                            <div class="price-current">
+                                                                <strong>1&nbsp;884&nbsp;800</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item cloned" style="width: 219px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/pritsep-dlya-gnb-6tn">
+                                                                <img src="/thumb/yFoMOfZLpkDQMauIdmNrlg/200r200/1772981/5458863.jpg"
+                                                                     alt="Прицеп для ГНБ 6тн"
+                                                                     title="Прицеп для ГНБ 6тн"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/pritsep-dlya-gnb-6tn">Прицеп для
+                                                                ГНБ 6тн
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+
+                                                            <div class="price-old question">
+                                                                <span>
+                                                                    <strong>854&nbsp;100</strong>
+                                                                    руб.
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="shop2-product-discount-desc"
+                                                                 style="display: none;">
+                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
+                                                            </div>
+                                                            <div class="price-current">
+                                                                <strong>811&nbsp;395</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item cloned" style="width: 219px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/pritsep-dlya-gnb-15t">
+                                                                <img src="/thumb/EUaqvgvgXSjUtf_TrUFeDQ/200r200/1772981/5458868.jpg"
+                                                                     alt="Прицеп для ГНБ 15т"
+                                                                     title="Прицеп для ГНБ 15т"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/pritsep-dlya-gnb-15t">Прицеп для
+                                                                ГНБ 15т
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+
+                                                            <div class="price-old question">
+                                                                <span>
+                                                                    <strong>975&nbsp;000</strong>
+                                                                    руб.
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="shop2-product-discount-desc"
+                                                                 style="display: none;">
+                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
+                                                            </div>
+                                                            <div class="price-current">
+                                                                <strong>926&nbsp;250</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item cloned" style="width: 219px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/rotornaya-burovaya-ustanovka-shantui-ser150">
+                                                                <img src="/thumb/HXQo7U3op8jBa_7Hthu1iQ/200r200/1772981/5458856.jpg"
+                                                                     alt="Роторная буровая установка SHANTUI SER150"
+                                                                     title="Роторная буровая установка SHANTUI SER150"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/rotornaya-burovaya-ustanovka-shantui-ser150">
+                                                                Роторная буровая установка SHANTUI SER150
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+                                                            <div class="price-current">
+                                                                <strong>1&nbsp;250&nbsp;840</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item active" style="width: 219px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/asfaltovyy-katok-xgma-xg6032d">
+                                                                <img src="/thumb/kttfwWpipjVUyAYSkxdM6A/200r200/1772981/layer_15.png"
+                                                                     alt="Асфальтовый каток XGMA XG6032D"
+                                                                     title="Асфальтовый каток XGMA XG6032D"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/asfaltovyy-katok-xgma-xg6032d">
+                                                                Асфальтовый каток XGMA XG6032D
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+                                                            <div class="price-current">
+                                                                <strong>2&nbsp;940&nbsp;000</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item active" style="width: 219px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/buldozer-xgma-xg4161l">
+                                                                <img src="/thumb/1xBBEab6knHjiH-ubYnacQ/200r200/1772981/559988554.jpg"
+                                                                     alt="Бульдозер XGMA XG4161L"
+                                                                     title="Бульдозер XGMA XG4161L"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/buldozer-xgma-xg4161l">Бульдозер
+                                                                XGMA XG4161L
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+                                                            <div class="price-current">
+                                                                <strong>8&nbsp;649&nbsp;392</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 219px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/greyder-mitsubishi-mg230-2">
+                                                                <img src="/thumb/VfLep0Eh7B-bWxvfjwD3ow/200r200/1772981/neytralka.png"
+                                                                     alt="Грейдер MITSUBISHI MG230-2"
+                                                                     title="Грейдер MITSUBISHI MG230-2"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/greyder-mitsubishi-mg230-2">
+                                                                Грейдер MITSUBISHI MG230-2
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+
+                                                            <div class="price-old question">
+                                                                <span>
+                                                                    <strong>4&nbsp;675&nbsp;000</strong>
+                                                                    руб.
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="shop2-product-discount-desc"
+                                                                 style="display: none;">
+                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
+                                                            </div>
+                                                            <div class="price-current">
+                                                                <strong>4&nbsp;441&nbsp;250</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 219px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/mini-pogruzchik-xgma-xg3070">
+                                                                <img src="/thumb/D1S50G89TnkJ8HARtHGSbw/200r200/1772981/layer-6.jpg"
+                                                                     alt="Мини погрузчик XGMA XG3070"
+                                                                     title="Мини погрузчик XGMA XG3070"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/mini-pogruzchik-xgma-xg3070">Мини
+                                                                погрузчик XGMA XG3070
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+
+                                                            <div class="price-old question">
+                                                                <span>
+                                                                    <strong>4&nbsp;100&nbsp;000</strong>
+                                                                    руб.
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="shop2-product-discount-desc"
+                                                                 style="display: none;">
+                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
+                                                            </div>
+                                                            <div class="price-current">
+                                                                <strong>3&nbsp;895&nbsp;000</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 219px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/mini-pogruzchik-ant-750">
+                                                                <img src="/thumb/eXHvAsbck6FEnk4tOphDbQ/200r200/1772981/layer_5.jpg"
+                                                                     alt="Мини погрузчик АНТ-750"
+                                                                     title="Мини погрузчик АНТ-750"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/mini-pogruzchik-ant-750">Мини
+                                                                погрузчик АНТ-750
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+
+                                                            <div class="price-old question">
+                                                                <span>
+                                                                    <strong>1&nbsp;984&nbsp;000</strong>
+                                                                    руб.
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="shop2-product-discount-desc"
+                                                                 style="display: none;">
+                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
+                                                            </div>
+                                                            <div class="price-current">
+                                                                <strong>1&nbsp;884&nbsp;800</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 219px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/pritsep-dlya-gnb-6tn">
+                                                                <img src="/thumb/yFoMOfZLpkDQMauIdmNrlg/200r200/1772981/5458863.jpg"
+                                                                     alt="Прицеп для ГНБ 6тн"
+                                                                     title="Прицеп для ГНБ 6тн"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/pritsep-dlya-gnb-6tn">Прицеп для
+                                                                ГНБ 6тн
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+
+                                                            <div class="price-old question">
+                                                                <span>
+                                                                    <strong>854&nbsp;100</strong>
+                                                                    руб.
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="shop2-product-discount-desc"
+                                                                 style="display: none;">
+                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
+                                                            </div>
+                                                            <div class="price-current">
+                                                                <strong>811&nbsp;395</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 219px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/pritsep-dlya-gnb-15t">
+                                                                <img src="/thumb/EUaqvgvgXSjUtf_TrUFeDQ/200r200/1772981/5458868.jpg"
+                                                                     alt="Прицеп для ГНБ 15т"
+                                                                     title="Прицеп для ГНБ 15т"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/pritsep-dlya-gnb-15t">Прицеп для
+                                                                ГНБ 15т
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+
+                                                            <div class="price-old question">
+                                                                <span>
+                                                                    <strong>975&nbsp;000</strong>
+                                                                    руб.
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="shop2-product-discount-desc"
+                                                                 style="display: none;">
+                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
+                                                            </div>
+                                                            <div class="price-current">
+                                                                <strong>926&nbsp;250</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 219px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/rotornaya-burovaya-ustanovka-shantui-ser150">
+                                                                <img src="/thumb/HXQo7U3op8jBa_7Hthu1iQ/200r200/1772981/5458856.jpg"
+                                                                     alt="Роторная буровая установка SHANTUI SER150"
+                                                                     title="Роторная буровая установка SHANTUI SER150"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/rotornaya-burovaya-ustanovka-shantui-ser150">
+                                                                Роторная буровая установка SHANTUI SER150
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+                                                            <div class="price-current">
+                                                                <strong>1&nbsp;250&nbsp;840</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item cloned" style="width: 219px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/asfaltovyy-katok-xgma-xg6032d">
+                                                                <img src="/thumb/kttfwWpipjVUyAYSkxdM6A/200r200/1772981/layer_15.png"
+                                                                     alt="Асфальтовый каток XGMA XG6032D"
+                                                                     title="Асфальтовый каток XGMA XG6032D"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/asfaltovyy-katok-xgma-xg6032d">
+                                                                Асфальтовый каток XGMA XG6032D
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+                                                            <div class="price-current">
+                                                                <strong>2&nbsp;940&nbsp;000</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item cloned" style="width: 219px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/buldozer-xgma-xg4161l">
+                                                                <img src="/thumb/1xBBEab6knHjiH-ubYnacQ/200r200/1772981/559988554.jpg"
+                                                                     alt="Бульдозер XGMA XG4161L"
+                                                                     title="Бульдозер XGMA XG4161L"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/buldozer-xgma-xg4161l">Бульдозер
+                                                                XGMA XG4161L
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+                                                            <div class="price-current">
+                                                                <strong>8&nbsp;649&nbsp;392</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item cloned" style="width: 219px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/greyder-mitsubishi-mg230-2">
+                                                                <img src="/thumb/VfLep0Eh7B-bWxvfjwD3ow/200r200/1772981/neytralka.png"
+                                                                     alt="Грейдер MITSUBISHI MG230-2"
+                                                                     title="Грейдер MITSUBISHI MG230-2"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/greyder-mitsubishi-mg230-2">
+                                                                Грейдер MITSUBISHI MG230-2
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+
+                                                            <div class="price-old question">
+                                                                <span>
+                                                                    <strong>4&nbsp;675&nbsp;000</strong>
+                                                                    руб.
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="shop2-product-discount-desc"
+                                                                 style="display: none;">
+                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
+                                                            </div>
+                                                            <div class="price-current">
+                                                                <strong>4&nbsp;441&nbsp;250</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item cloned" style="width: 219px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/mini-pogruzchik-xgma-xg3070">
+                                                                <img src="/thumb/D1S50G89TnkJ8HARtHGSbw/200r200/1772981/layer-6.jpg"
+                                                                     alt="Мини погрузчик XGMA XG3070"
+                                                                     title="Мини погрузчик XGMA XG3070"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/mini-pogruzchik-xgma-xg3070">Мини
+                                                                погрузчик XGMA XG3070
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+
+                                                            <div class="price-old question">
+                                                                <span>
+                                                                    <strong>4&nbsp;100&nbsp;000</strong>
+                                                                    руб.
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="shop2-product-discount-desc"
+                                                                 style="display: none;">
+                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
+                                                            </div>
+                                                            <div class="price-current">
+                                                                <strong>3&nbsp;895&nbsp;000</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-controls">
+                                            <div class="owl-nav">
+                                                <div class="owl-prev">prev</div>
+                                                <div class="owl-next">next</div>
+                                            </div>
+                                            <div class="owl-dots">
+                                                <div class="owl-dot active">
+                                                    <span></span>
+                                                </div>
+                                                <div class="owl-dot">
+                                                    <span></span>
+                                                </div>
+                                                <div class="owl-dot">
+                                                    <span></span>
+                                                </div>
+                                                <div class="owl-dot">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="shop-main-blocks spec">
+                            <div class="inner">
+                                <div class="shop2-main-header shop2-main-spec">
+                                    <span>Хиты продаж!</span>
+                                </div>
+                                <div class="main-slide-block">
+
+
+                                    <div class="product-list product-list-thumbs  owl-carousel owl-loaded owl-drag">
+
+
+                                        <div class="owl-stage-outer">
+                                            <div class="owl-stage"
+                                                 style="transform: translate3d(-1250px, 0px, 0px); transition: 0s; width: 5000px;">
+                                                <div class="owl-item cloned" style="width: 220px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/gruntovyy-katok-xgma-xg6141m-i">
+                                                                <img src="/thumb/gH0TVO9xOBvwRFl-eFGEvQ/200r200/1772981/559988555.jpg"
+                                                                     alt="Грунтовый каток XGMA XG6141М-I"
+                                                                     title="Грунтовый каток XGMA XG6141М-I"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/gruntovyy-katok-xgma-xg6141m-i">
+                                                                Грунтовый каток XGMA XG6141М-I
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+                                                            <div class="price-current">
+                                                                <strong>3&nbsp;280&nbsp;000</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item cloned" style="width: 220px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/dizelnyy-pogruzchik-gros-cpcd460">
+                                                                <img src="/thumb/IqPoybUW7FHgWF52kKcvQQ/200r200/1772981/5458841.jpg"
+                                                                     alt="Дизельный погрузчик GROS CPCD460"
+                                                                     title="Дизельный погрузчик GROS CPCD460"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/dizelnyy-pogruzchik-gros-cpcd460">
+                                                                Дизельный погрузчик GROS CPCD460
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+
+                                                            <div class="price-old question">
+                                                                <span>
+                                                                    <strong>849&nbsp;000</strong>
+                                                                    руб.
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="shop2-product-discount-desc"
+                                                                 style="display: none;">
+                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
+                                                            </div>
+                                                            <div class="price-current">
+                                                                <strong>806&nbsp;550</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item cloned" style="width: 220px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/mini-pogruzchik-tcm-ssl704">
+                                                                <img src="/thumb/Xi9Vpmfxo6JFtaDpSy5HsQ/200r200/1772981/1118.jpg"
+                                                                     alt="Мини погрузчик TCM SSL704"
+                                                                     title="Мини погрузчик TCM SSL704"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/mini-pogruzchik-tcm-ssl704">Мини
+                                                                погрузчик TCM SSL704
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+
+                                                            <div class="price-old question">
+                                                                <span>
+                                                                    <strong>1&nbsp;984&nbsp;000</strong>
+                                                                    руб.
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="shop2-product-discount-desc"
+                                                                 style="display: none;">
+                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
+                                                            </div>
+                                                            <div class="price-current">
+                                                                <strong>1&nbsp;884&nbsp;800</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item cloned" style="width: 220px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/mini-pogruzchik-xgma-xg3070">
+                                                                <img src="/thumb/D1S50G89TnkJ8HARtHGSbw/200r200/1772981/layer-6.jpg"
+                                                                     alt="Мини погрузчик XGMA XG3070"
+                                                                     title="Мини погрузчик XGMA XG3070"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/mini-pogruzchik-xgma-xg3070">Мини
+                                                                погрузчик XGMA XG3070
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+
+                                                            <div class="price-old question">
+                                                                <span>
+                                                                    <strong>4&nbsp;100&nbsp;000</strong>
+                                                                    руб.
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="shop2-product-discount-desc"
+                                                                 style="display: none;">
+                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
+                                                            </div>
+                                                            <div class="price-current">
+                                                                <strong>3&nbsp;895&nbsp;000</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item cloned" style="width: 220px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/traktor-ttz-80-11">
+                                                                <img src="/thumb/Y64M0x77AGGCOkkxR3EDXg/200r200/1772981/4578161.jpg"
+                                                                     alt="Трактор TTZ 80.11" title="Трактор TTZ 80.11"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/traktor-ttz-80-11">Трактор TTZ
+                                                                80.11
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+                                                            <div class="price-current">
+                                                                <strong>11&nbsp;000&nbsp;000</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item active" style="width: 220px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/avtokran-kato-krm-35h-2-3490770">
+                                                                <img src="/thumb/q6NpZnFqS-z69XdLXnbKZQ/200r200/1772981/114550.jpg"
+                                                                     alt="Автокран KATO KRM-35H-2 3490770"
+                                                                     title="Автокран KATO KRM-35H-2 3490770"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/avtokran-kato-krm-35h-2-3490770">
+                                                                Автокран KATO KRM-35H-2 3490770
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+
+                                                            <div class="price-old question">
+                                                                <span>
+                                                                    <strong>6&nbsp;000&nbsp;000</strong>
+                                                                    руб.
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="shop2-product-discount-desc"
+                                                                 style="display: none;">
+                                                                <p>10% СКИДКА - Торопитесь, акция ограниченна!</p>
+                                                            </div>
+                                                            <div class="price-current">
+                                                                <strong>5&nbsp;400&nbsp;000</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item active" style="width: 220px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/avtokran-tadano-tr160m-2">
+                                                                <img src="/thumb/ZWwtwjWZ3eVNxCpkbXGoRQ/200r200/1772981/114544.jpg"
+                                                                     alt="Автокран TADANO TR160M-2"
+                                                                     title="Автокран TADANO TR160M-2"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/avtokran-tadano-tr160m-2">Автокран
+                                                                TADANO TR160M-2
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+                                                            <div class="price-current">
+                                                                <strong>7&nbsp;400&nbsp;000</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 220px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/borona-diskovaya-db-2">
+                                                                <img src="/thumb/bLAGM5qI7YDiBD3DFnMPMQ/200r200/1772981/5458851.jpg"
+                                                                     alt="Борона дисковая ДБ-2"
+                                                                     title="Борона дисковая ДБ-2"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/borona-diskovaya-db-2">Борона
+                                                                дисковая ДБ-2
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+                                                            <div class="price-current">
+                                                                <strong>39&nbsp;675</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 220px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/greyder-komatsu-gd605a-5">
+                                                                <img src="/thumb/9bjjGkjOo1E_CEn2zAoMQA/200r200/1772981/4578155.jpg"
+                                                                     alt="Грейдер KOMATSU GD605A-5"
+                                                                     title="Грейдер KOMATSU GD605A-5"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/greyder-komatsu-gd605a-5">Грейдер
+                                                                KOMATSU GD605A-5
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+
+                                                            <div class="price-old question">
+                                                                <span>
+                                                                    <strong>4&nbsp;675&nbsp;000</strong>
+                                                                    руб.
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="shop2-product-discount-desc"
+                                                                 style="display: none;">
+                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
+                                                            </div>
+                                                            <div class="price-current">
+                                                                <strong>4&nbsp;441&nbsp;250</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 220px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/greyder-mitsubishi-mg230-2-1">
+                                                                <img src="/thumb/LqqRVuOerv2ksmcpaPsQgA/200r200/1772981/598561.jpg"
+                                                                     alt="Грейдер KOMATSU GD605A-5"
+                                                                     title="Грейдер KOMATSU GD605A-5"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/greyder-mitsubishi-mg230-2-1">
+                                                                Грейдер KOMATSU GD605A-5
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+
+                                                            <div class="price-old question">
+                                                                <span>
+                                                                    <strong>4&nbsp;647&nbsp;500</strong>
+                                                                    руб.
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="shop2-product-discount-desc"
+                                                                 style="display: none;">
+                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
+                                                            </div>
+                                                            <div class="price-current">
+                                                                <strong>4&nbsp;415&nbsp;125</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 220px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/gruntovyy-katok-xgma-xg6141m-i">
+                                                                <img src="/thumb/gH0TVO9xOBvwRFl-eFGEvQ/200r200/1772981/559988555.jpg"
+                                                                     alt="Грунтовый каток XGMA XG6141М-I"
+                                                                     title="Грунтовый каток XGMA XG6141М-I"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/gruntovyy-katok-xgma-xg6141m-i">
+                                                                Грунтовый каток XGMA XG6141М-I
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+                                                            <div class="price-current">
+                                                                <strong>3&nbsp;280&nbsp;000</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 220px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/dizelnyy-pogruzchik-gros-cpcd460">
+                                                                <img src="/thumb/IqPoybUW7FHgWF52kKcvQQ/200r200/1772981/5458841.jpg"
+                                                                     alt="Дизельный погрузчик GROS CPCD460"
+                                                                     title="Дизельный погрузчик GROS CPCD460"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/dizelnyy-pogruzchik-gros-cpcd460">
+                                                                Дизельный погрузчик GROS CPCD460
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+
+                                                            <div class="price-old question">
+                                                                <span>
+                                                                    <strong>849&nbsp;000</strong>
+                                                                    руб.
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="shop2-product-discount-desc"
+                                                                 style="display: none;">
+                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
+                                                            </div>
+                                                            <div class="price-current">
+                                                                <strong>806&nbsp;550</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 220px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/mini-pogruzchik-tcm-ssl704">
+                                                                <img src="/thumb/Xi9Vpmfxo6JFtaDpSy5HsQ/200r200/1772981/1118.jpg"
+                                                                     alt="Мини погрузчик TCM SSL704"
+                                                                     title="Мини погрузчик TCM SSL704"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/mini-pogruzchik-tcm-ssl704">Мини
+                                                                погрузчик TCM SSL704
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+
+                                                            <div class="price-old question">
+                                                                <span>
+                                                                    <strong>1&nbsp;984&nbsp;000</strong>
+                                                                    руб.
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="shop2-product-discount-desc"
+                                                                 style="display: none;">
+                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
+                                                            </div>
+                                                            <div class="price-current">
+                                                                <strong>1&nbsp;884&nbsp;800</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 220px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/mini-pogruzchik-xgma-xg3070">
+                                                                <img src="/thumb/D1S50G89TnkJ8HARtHGSbw/200r200/1772981/layer-6.jpg"
+                                                                     alt="Мини погрузчик XGMA XG3070"
+                                                                     title="Мини погрузчик XGMA XG3070"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/mini-pogruzchik-xgma-xg3070">Мини
+                                                                погрузчик XGMA XG3070
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+
+                                                            <div class="price-old question">
+                                                                <span>
+                                                                    <strong>4&nbsp;100&nbsp;000</strong>
+                                                                    руб.
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="shop2-product-discount-desc"
+                                                                 style="display: none;">
+                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
+                                                            </div>
+                                                            <div class="price-current">
+                                                                <strong>3&nbsp;895&nbsp;000</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item" style="width: 220px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/traktor-ttz-80-11">
+                                                                <img src="/thumb/Y64M0x77AGGCOkkxR3EDXg/200r200/1772981/4578161.jpg"
+                                                                     alt="Трактор TTZ 80.11" title="Трактор TTZ 80.11"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/traktor-ttz-80-11">Трактор TTZ
+                                                                80.11
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+                                                            <div class="price-current">
+                                                                <strong>11&nbsp;000&nbsp;000</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item cloned" style="width: 220px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/avtokran-kato-krm-35h-2-3490770">
+                                                                <img src="/thumb/q6NpZnFqS-z69XdLXnbKZQ/200r200/1772981/114550.jpg"
+                                                                     alt="Автокран KATO KRM-35H-2 3490770"
+                                                                     title="Автокран KATO KRM-35H-2 3490770"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/avtokran-kato-krm-35h-2-3490770">
+                                                                Автокран KATO KRM-35H-2 3490770
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+
+                                                            <div class="price-old question">
+                                                                <span>
+                                                                    <strong>6&nbsp;000&nbsp;000</strong>
+                                                                    руб.
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="shop2-product-discount-desc"
+                                                                 style="display: none;">
+                                                                <p>10% СКИДКА - Торопитесь, акция ограниченна!</p>
+                                                            </div>
+                                                            <div class="price-current">
+                                                                <strong>5&nbsp;400&nbsp;000</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item cloned" style="width: 220px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/avtokran-tadano-tr160m-2">
+                                                                <img src="/thumb/ZWwtwjWZ3eVNxCpkbXGoRQ/200r200/1772981/114544.jpg"
+                                                                     alt="Автокран TADANO TR160M-2"
+                                                                     title="Автокран TADANO TR160M-2"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/avtokran-tadano-tr160m-2">Автокран
+                                                                TADANO TR160M-2
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+                                                            <div class="price-current">
+                                                                <strong>7&nbsp;400&nbsp;000</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item cloned" style="width: 220px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/borona-diskovaya-db-2">
+                                                                <img src="/thumb/bLAGM5qI7YDiBD3DFnMPMQ/200r200/1772981/5458851.jpg"
+                                                                     alt="Борона дисковая ДБ-2"
+                                                                     title="Борона дисковая ДБ-2"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/borona-diskovaya-db-2">Борона
+                                                                дисковая ДБ-2
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+                                                            <div class="price-current">
+                                                                <strong>39&nbsp;675</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item cloned" style="width: 220px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/greyder-komatsu-gd605a-5">
+                                                                <img src="/thumb/9bjjGkjOo1E_CEn2zAoMQA/200r200/1772981/4578155.jpg"
+                                                                     alt="Грейдер KOMATSU GD605A-5"
+                                                                     title="Грейдер KOMATSU GD605A-5"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/greyder-komatsu-gd605a-5">Грейдер
+                                                                KOMATSU GD605A-5
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+
+                                                            <div class="price-old question">
+                                                                <span>
+                                                                    <strong>4&nbsp;675&nbsp;000</strong>
+                                                                    руб.
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="shop2-product-discount-desc"
+                                                                 style="display: none;">
+                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
+                                                            </div>
+                                                            <div class="price-current">
+                                                                <strong>4&nbsp;441&nbsp;250</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="owl-item cloned" style="width: 220px; margin-right: 30px;">
+                                                    <div class="main-product-item" style="height: 439px;">
+                                                        <div class="product-image" style="height:px;">
+                                                            <a href="/magazin/product/greyder-mitsubishi-mg230-2-1">
+                                                                <img src="/thumb/LqqRVuOerv2ksmcpaPsQgA/200r200/1772981/598561.jpg"
+                                                                     alt="Грейдер KOMATSU GD605A-5"
+                                                                     title="Грейдер KOMATSU GD605A-5"/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="product-name">
+                                                            <a href="/magazin/product/greyder-mitsubishi-mg230-2-1">
+                                                                Грейдер KOMATSU GD605A-5
+                                                            </a>
+                                                        </div>
+
+
+                                                        <div class="product-price">
+
+
+                                                            <div class="price-old question">
+                                                                <span>
+                                                                    <strong>4&nbsp;647&nbsp;500</strong>
+                                                                    руб.
+                                                                </span>
+                                                            </div>
+
+                                                            <div class="shop2-product-discount-desc"
+                                                                 style="display: none;">
+                                                                <p>5% СКИДКИ - Срок акции ограничен!</p>
+                                                            </div>
+                                                            <div class="price-current">
+                                                                <strong>4&nbsp;415&nbsp;125</strong>
+                                                                руб.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-controls">
+                                            <div class="owl-nav">
+                                                <div class="owl-prev">prev</div>
+                                                <div class="owl-next">next</div>
+                                            </div>
+                                            <div class="owl-dots">
+                                                <div class="owl-dot active">
+                                                    <span></span>
+                                                </div>
+                                                <div class="owl-dot">
+                                                    <span></span>
+                                                </div>
+                                                <div class="owl-dot">
+                                                    <span></span>
+                                                </div>
+                                                <div class="owl-dot">
+                                                    <span></span>
+                                                </div>
+                                                <div class="owl-dot">
+                                                    <span></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </xpath>
+        </template>
+        <template id="content_block" inherit_id="theme_as.theme_as_homepage" name="Theme AS  Content Block">
+            <xpath expr="//div[@class='content-block']" position="inside">
+                <div class="right-pic" style="background-image: url(/d/1772981/d/cp.jpg);"></div>
+                <div class="content-block-inner">
+                    <div class="left-part">
+                        <div class="title">Внимание! Экскаваторы по выгодной цене!</div>
+                        <div class="text">
+                            <p>Спешите только до 31 декабря!</p>
+                        </div>
+                        <div class="link">
+                            <a href="/aktsii">Узнать больше</a>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+        <template id="site_container" inherit_id="theme_as.theme_as_homepage" name="Theme AS Site Container">
+            <xpath expr="//div[contains(@class,'folder-block')]" position="inside">
+                <aside role="complementary" class="site-sidebar left">
+                    <div class="left-menu">
+                        <ul class="left-menu">
+                            <li>
+                                <a href="/proizvoditeli">Производители</a>
+                            </li>
+                            <li>
+                                <a href="/garantiya">Гарантия</a>
+                            </li>
+                            <li>
+                                <a href="/usloviya-postavki">Условия поставки</a>
+                            </li>
+                            <li>
+                                <a href="/sotrudnichestvo">Сотрудничество</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside> <!-- .site-sidebar.left -->
+                <div class="site-main">
+                    <div class="site-main__inner">
+                        <h1>Добро пожаловать!</h1>
+                        <p>На сегодняшний день магазинов по продаже спецтехники великое множество. А качественных
+                            каталогов, продающих спецтехнику не так уж много. Спешите создать каталог и обойти ваших
+                            конкурентов на этом поприще. Начните получать прибыль в кратчайшие сроки. Компания
+                            "Megagroup.ru" предлагает Вам купить готовый шаблон каталога спецтехники. Заказывайте сайт
+                            прямо сейчас, вы получите уникальный дизайн, простую и удобную систему управления, а главное
+                            готовый продающий каталог с уже оптимизированной структурой. Сделайте правильный выбор пути
+                            ведения Вашего бизнеса, создайте онлайн каталог спецтехники. Компания «Megagroup.ru» поможет
+                            Вам стать успешным в бизнесе.
+                        </p>
+                        <p style="text-align: right;">
+                            <span style="font-size: 8pt;">
+                                <em>Внимание! Текст этой страницы шаблонный, его необходимо заменить на Ваш собственный
+                                    уникальный текст, чтобы сайт находился в поисковых системах!
+                                </em>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+        <template id="subscribe_block" inherit_id="theme_as.theme_as_homepage" name="Theme AS subscribe block">
+            <xpath expr="//div[@class='subscribe-block']" position="inside">
+                <div class="inner">
+                    <div class="left-p">
+                        <div>Подписаться на бесплатную рассылку!</div>
+                    </div>
+
+                    <div class="right-p">
+                        <div class="tpl-anketa"
+                             data-api-url="/my/s3/xapi/public/?method=form/postform&amp;param[form_id]=92670441"
+                             data-api-type="form">
+                            <div class="title">Подписаться на бесплатную рассылку!</div>
+                            <form method="post" action="/">
+                                <input type="hidden" name="params[placeholdered_fields]" value="1"/>
+                                <input type="hidden" name="form_id" value="92670441"/>
+                                <input type="hidden" name="tpl" value="global:form.minimal.2.2.68.tpl"/>
+                                <div class="tpl-field type-text field-required">
+                                    <div class="field-value">
+                                        <input type="text" size="30" maxlength="100" value="" name="d[0]"
+                                               placeholder="Введите Ваш E-mail *"/>
+                                    </div>
+                                </div>
+
+
+                                <div class="tpl-field tpl-field-button">
+                                    <button type="submit" class="tpl-form-button">Подписаться</button>
+                                </div>
+
+                            </form>
                         </div>
                     </div>
                 </div>
