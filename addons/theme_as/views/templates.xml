@@ -394,7 +394,7 @@
                 </div>
             </xpath>
         </template>
-        <template id="main_top_block" inherit_id="theme_as.theme_as_layout" name="Theme AS Main Top Block">
+        <template id="main_top_block" inherit_id="theme_as.theme_as_homepage" name="Theme AS Main Top Block">
             <xpath expr="//div[@class='main-top-block']" position="inside">
                 <div class="search-mobile-wr">
                     <div class="site-search-wr">
