@@ -370,7 +370,34 @@
                 </div>
             </xpath>
         </template>
-
+        <template id="theme_as_header" inherit_id="website.layout" name="Theme AS Header">
+            <xpath expr="//div[id='wrapwrap']/header" position="replace">
+                <div class="header-inner">
+                    <div class="company-block">
+                        <div class="company-name">
+                            <a href="/">Название компании</a>
+                        </div>
+                        <div class="company-activity">Каталог спецтехники</div>
+                    </div>
+                    <div class="contacts-block">
+                        <div class="address">
+                            <div>
+                                г. Москва, Ленинский проспект, дом, строение, номер кабинета
+                            </div>
+                            <a href="/kontakty">Посмотреть схему проезда</a>
+                        </div>
+                        <div class="phones">
+                            <div>
+                                <a href="tel:8 (000) 111-11-11">8 (000) 111-11-11</a>
+                            </div>
+                        </div>
+                        <div class="callback-click">
+                            <a href="#">Заказать звонок</a>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </template>
 
     </data>
 </odoo>
