@@ -10,14 +10,10 @@
                 <attribute name="class">site-footer</attribute>
             </xpath>
             <xpath expr="//div[@id='wrapwrap']/header" position="before">
-                <div class="top-wrap-panel">
-
-                </div>
+                <div class="top-wrap-panel"/>
             </xpath>
             <xpath expr="//div[@id='wrapwrap']/footer" position="before">
-                <div class="bottom-block">
-
-                </div>
+                <div class="bottom-block"/>
             </xpath>
         </template>
         <template id="theme_as_homepage" inherit_id="website.homepage" name="Theme AS Homepage">
@@ -33,5 +29,348 @@
                 <div class="subscribe-block"/>
             </xpath>
         </template>
+        <template id="top_wrap_panel" inherit_id="theme_as.theme_as_layout" name="Theme AS Top Wrap Panel">
+            <xpath expr="//div[@id='top-wrap-panel']" position="inside">
+                <div class="top-panel-line-in catalog-wr">
+                    <div class="folder-top-wr">
+                        <div class="folder-block-title">
+                            <span>
+                                <span>Каталог</span>
+                            </span>
+                        </div>
+                        <ul class="folder-ul">
+                            <li class="hasClass">
+                                <a href="/magazin/folder/stroitelnaya-tekhnika" class="hasMenu">
+                                    <span>Строительная техника</span>
+                                    <span class="s1"></span>
+                                </a>
+                                <ul class="level-2" style="margin-left: 0px;">
+                                    <li>
+                                        <a href="/magazin/folder/avtokrany">
+                                            <span>Автокраны</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/magazin/folder/ekskavatory">
+                                            <span>Экскаваторы</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/magazin/folder/vyshka">
+                                            <span>Вышка</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/magazin/folder/greydery">
+                                            <span>Грейдеры</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hasClass">
+                                <a href="/magazin/folder/skladskaya-tekhnika" class="hasMenu">
+                                    <span>Складская техника</span>
+                                    <span class="s1"></span>
+                                </a>
+                                <ul class="level-2" style="margin-left: 0px;">
+                                    <li>
+                                        <a href="/magazin/folder/vilochnyye-pogruzchiki">
+                                            <span>Вилочные погрузчики</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/magazin/folder/shtabelery">
+                                            <span>Штабелеры</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/magazin/folder/rich-traki">
+                                            <span>Рич-Траки</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hasClass">
+                                <a href="/magazin/folder/podderzhannaya-tekhnika" class="hasMenu">
+                                    <span>Поддержанная техника</span>
+                                    <span class="s1"></span>
+                                </a>
+                                <ul class="level-2" style="margin-left: 0px;">
+                                    <li>
+                                        <a href="/magazin/folder/pogruzchiki">
+                                            <span>Погрузчики</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/magazin/folder/avtokrany-1">
+                                            <span>Автокраны</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/magazin/folder/vyshka-1">
+                                            <span>Вышка</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hasClass">
+                                <a href="/magazin/folder/dorozhno-stroitelnaya-tekhnika" class="hasMenu">
+                                    <span>Дорожно-строительная техника</span>
+                                    <span class="s1"></span>
+                                </a>
+                                <ul class="level-2" style="margin-left: 0px;">
+                                    <li>
+                                        <a href="/magazin/folder/dorozhnyye-frezy">
+                                            <span>Бульдозеры</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/magazin/folder/mini-pogruzchiki">
+                                            <span>Мини погрузчики</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/magazin/folder/katki">
+                                            <span>Катки</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hasClass">
+                                <a href="/magazin/folder/gruzovyye-avtomobili-i-pritsepy" class="hasMenu">
+                                    <span>Грузовые автомобили и прицепы</span>
+                                    <span class="s1"></span>
+                                </a>
+                                <ul class="level-2" style="margin-left: 0px;">
+                                    <li>
+                                        <a href="/magazin/folder/gruzoviki">
+                                            <span>Грузовики</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/magazin/folder/pritsepy">
+                                            <span>Прицепы</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/magazin/folder/refrizherator">
+                                            <span>Рефрижератор</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hasClass">
+                                <a href="/magazin/folder/arenda-spetstekhniki" class="hasMenu">
+                                    <span>Аренда спецтехники</span>
+                                    <span class="s1"></span>
+                                </a>
+                                <ul class="level-2" style="margin-left: 0px;">
+                                    <li>
+                                        <a href="/magazin/folder/ekskavatory-pogruzchiki">
+                                            <span>Экскаваторы-погрузчики</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/magazin/folder/avtopritsepy-1">
+                                            <span>Прицепы</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/magazin/folder/avtokrany-2">
+                                            <span>Автокраны</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hasClass">
+                                <a href="/magazin/folder/selskokhozyaystvennaya-tekhnika" class="hasMenu">
+                                    <span>Сельскохозяйственная техника</span>
+                                    <span class="s1"></span>
+                                </a>
+                                <ul class="level-2" style="margin-left: 0px;">
+                                    <li>
+                                        <a href="/magazin/folder/kombayny">
+                                            <span>Комбайны</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/magazin/folder/traktory">
+                                            <span>Тракторы</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/magazin/folder/borony">
+                                            <span>Бороны</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hasClass">
+                                <a href="/magazin/folder/burovyye-ustanovki" class="hasMenu">
+                                    <span>Буровые установки</span>
+                                    <span class="s1"></span>
+                                </a>
+                                <ul class="level-2" style="margin-left: 0px;">
+                                    <li>
+                                        <a href="/magazin/folder/rotornyye-burovyye-ustanovki">
+                                            <span>Роторные буровые установки</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/magazin/folder/burovyye-ustanovki-gnb">
+                                            <span>Буровые установки ГНБ</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/magazin/folder/malogabaritnyye-burovyye-ustanovki">
+                                            <span>Малогабаритные буровые установки</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hasClass">
+                                <a href="/magazin/folder/zapchasti" class="hasMenu">
+                                    <span>Запчасти</span>
+                                    <span class="s1"></span>
+                                </a>
+                                <ul class="level-2" style="margin-left: 0px;">
+                                    <li>
+                                        <a href="/magazin/folder/zapchasti-dlya-pogruzchikov">
+                                            <span>Запчасти для погрузчиков</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/magazin/folder/zapchasti-dlya-avtokranov">
+                                            <span>Запчасти для автокранов</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/magazin/folder/zapchasti-dlya-traktorov">
+                                            <span>Запчасти для тракторов</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile-top-menu-burger"></div>
+                    <div class="menu-top-wr">
+                        <nav class="menu-top-in">
+                            <div class="menu-top-title">
+                                Закрыть
+                            </div>
+                            <ul class="menu-top">
+                                <li class="opened active">
+                                    <a href="/">
+                                        <span>Главная</span>
+                                    </a>
+                                </li>
+                                <li class="s3-menu-allin-has">
+                                    <a href="/o-kompanii">
+                                        <span>О компании</span>
+                                    </a>
+                                    <ul class="level-2" style="display: none; left: 244.766px; top: 54px;">
+                                        <li>
+                                            <a href="/news">
+                                                <span>Новости</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/obratnaya-svyaz">
+                                                <span>Обратная связь</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/otzyvy-o-nas">
+                                        <span>Отзывы о нас</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/aktsii">
+                                        <span>Акции</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/kontakty">
+                                        <span>Контакты</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="menu-top left" style="">
+                                <li>
+                                    <a href="/proizvoditeli">
+                                        <span>Производители</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/garantiya">
+                                        <span>Гарантия</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/usloviya-postavki">
+                                        <span>Условия поставки</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/sotrudnichestvo">
+                                        <span>Сотрудничество</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="site-search-btn"></div>
+                    <div class="site-search-wr">
+                        <form action="/search" method="get" class="site-search-form clear-self">
+                            <input type="text" class="search-text" name="search"
+                                   onblur="this.placeholder=this.placeholder==''?'Поиск по сайту':this.placeholder"
+                                   onfocus="this.placeholder=this.placeholder=='Поиск по сайту'?'':this.placeholder;"
+                                   placeholder="Поиск по сайту"/>
+                            <input type="submit" class="search-but" value=""/>
+                        </form>
+                    </div>
+                    <div class="login-block-wr">
+                        <div class="block-user">
+                            <div class="block-title">
+                                <div class="close-btn"></div>
+                            </div>
+                            <div class="block-body">
+                                <form method="post" action="/registraciya">
+                                    <input type="hidden" name="mode" value="login"/>
+                                    <div class="field name">
+                                        <label class="input">
+                                            <input type="text" name="login" id="login" tabindex="1"
+                                                   onblur="this.placeholder=this.placeholder==''?'Логин, e-mail':this.placeholder"
+                                                   onfocus="this.placeholder=this.placeholder=='Логин, e-mail'?'':this.placeholder;"
+                                                   placeholder="Логин, e-mail" value=""/>
+                                        </label>
+                                    </div>
+                                    <div class="field password clear-self">
+                                        <label class="input">
+                                            <input type="password" name="password" id="password" tabindex="2"
+                                                   onblur="this.placeholder=this.placeholder==''?'Пароль':this.placeholder"
+                                                   onfocus="this.placeholder=this.placeholder=='Пароль'?'':this.placeholder;"
+                                                   placeholder="Пароль" value=""/>
+                                        </label>
+                                    </div>
+                                    <div class="field btn clear-self">
+                                        <button type="submit" class="btn-variant1">Вход</button>
+                                        <a href="/registraciya/forgot_password" class="forgot">Забыли пароль?</a>
+                                    </div>
+                                    <div class="field register-wr clear-self">
+                                        <a href="/registraciya/register" class="register">Регистрация</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+
+
     </data>
 </odoo>
