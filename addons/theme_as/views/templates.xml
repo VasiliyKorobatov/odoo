@@ -59,7 +59,7 @@
                     <div class="folder-top-wr">
                         <div class="folder-block-title">
                             <span>
-                                <span>Каталог</span>
+                                <span>Каталог&amp;nbsp;<span class="fa fa-bars" /></span>
                             </span>
                         </div>
                         <ul class="folder-ul">
