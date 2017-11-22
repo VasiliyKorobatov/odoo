@@ -2,7 +2,7 @@
     <data>
         <template id="theme_as_layout" inherit_id="website.layout" name="Theme AS Layout">
             <xpath expr="//div[@id='wrapwrap']" position="attributes">
-                <attribute name="class">site-wrapper</attribute>
+                <attribute name="class"></attribute>
             </xpath>
             <xpath expr="//div[@id='wrapwrap']/header" position="attributes">
                 <attribute name="role">banner</attribute>
