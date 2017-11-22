@@ -1,22 +1,35 @@
 <odoo>
     <data>
-        <!-- <template id="listing"> -->
-        <!--   <ul> -->
-        <!--     <li t-foreach="objects" t-as="object"> -->
-        <!--       <a t-attf-href="#{ root }/objects/#{ object.id }"> -->
-        <!--         <t t-esc="object.display_name"/> -->
-        <!--       </a> -->
-        <!--     </li> -->
-        <!--   </ul> -->
-        <!-- </template> -->
-        <!-- <template id="object"> -->
-        <!--   <h1><t t-esc="object.display_name"/></h1> -->
-        <!--   <dl> -->
-        <!--     <t t-foreach="object._fields" t-as="field"> -->
-        <!--       <dt><t t-esc="field"/></dt> -->
-        <!--       <dd><t t-esc="object[field]"/></dd> -->
-        <!--     </t> -->
-        <!--   </dl> -->
-        <!-- </template> -->
+        <template id="theme_as_layout" inherit_id="website.layout" name="Theme AS Layout">
+            <xpath expr="//div[@id='wrapwrap']" position="attributes">
+                <attribute name="class">site-wrapper</attribute>
+            </xpath>
+            <xpath expr="//div[@id='wrapwrap']/header" position="attributes">
+                <attribute name="role">banner</attribute>
+                <attribute name="class">site-header</attribute>
+            </xpath>
+            <xpath expr="//div[@id='wrapwrap']/footer" position="attributes">
+                <attribute name="role">contentinfo</attribute>
+                <attribute name="class">site-footer</attribute>
+            </xpath>
+            <xpath expr="//div[@id='wrapwrap']/footer" position="before">
+                <div class="bottom-block">
+
+                </div>
+            </xpath>
+        </template>
+        <template id="theme_as_homepage" inherit_id="website.homepage" name="Theme AS Homepage">
+            <xpath expr="//div[@id='wrap']" position="attributes">
+                <attribute name="class">oe_structure</attribute>
+            </xpath>
+            <xpath expr="//div[@id='wrap']" position="inside">
+                <div class="main-top-block"/>
+                <div class="folder-block"/>
+                <div class="site-container"/>
+                <div class="content-block"/>
+                <div class="site-container"/>
+                <div class="subscribe-block"/>
+            </xpath>
+        </template>
     </data>
 </odoo>
