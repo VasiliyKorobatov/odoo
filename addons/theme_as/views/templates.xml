@@ -12,31 +12,31 @@
                 <div class="bottom-block"/>
             </xpath>
             <xpath expr="//div[@id='wrapwrap']/header" position="replace">
-                <header  class="site-header" role="banner">
-                <div class="header-inner">
-                    <div class="company-block">
-                        <div class="company-name">
-                            <a href="/">Название компании</a>
-                        </div>
-                        <div class="company-activity">Каталог спецтехники</div>
-                    </div>
-                    <div class="contacts-block">
-                        <div class="address">
-                            <div>
-                                г. Москва, Ленинский проспект, дом, строение, номер кабинета
+                <header class="site-header" role="banner">
+                    <div class="header-inner">
+                        <div class="company-block">
+                            <div class="company-name">
+                                <a href="/">Название компании</a>
                             </div>
-                            <a href="/kontakty">Посмотреть схему проезда</a>
+                            <div class="company-activity">Каталог спецтехники</div>
                         </div>
-                        <div class="phones">
-                            <div>
-                                <a href="tel:8 (000) 111-11-11">8 (000) 111-11-11</a>
+                        <div class="contacts-block">
+                            <div class="address">
+                                <div>
+                                    г. Москва, Ленинский проспект, дом, строение, номер кабинета
+                                </div>
+                                <a href="/kontakty">Посмотреть схему проезда</a>
+                            </div>
+                            <div class="phones">
+                                <div>
+                                    <a href="tel:8 (000) 111-11-11">8 (000) 111-11-11</a>
+                                </div>
+                            </div>
+                            <div class="callback-click">
+                                <a href="#">Заказать звонок</a>
                             </div>
                         </div>
-                        <div class="callback-click">
-                            <a href="#">Заказать звонок</a>
-                        </div>
                     </div>
-                </div>
                 </header>
             </xpath>
         </template>
@@ -388,6 +388,751 @@
                                         <a href="/registraciya/register" class="register">Регистрация</a>
                                     </div>
                                 </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+        <template id="main_top_block" inherit_id="theme_as.theme_as_layout" name="Theme AS Main Top Block">
+            <xpath expr="//div[@class='main-top-block']" position="inside">
+                <div class="search-mobile-wr">
+                    <div class="site-search-wr">
+                        <form action="/search" method="get" class="site-search-form clear-self">
+                            <input type="text" class="search-text" name="search"
+                                   onblur="this.placeholder=this.placeholder==''?'Поиск по сайту':this.placeholder"
+                                   onfocus="this.placeholder=this.placeholder=='Поиск по сайту'?'':this.placeholder;"
+                                   placeholder="Поиск по сайту"/>
+                            <input type="submit" class="search-but" value=""/>
+                        </form>
+                    </div>
+                    <div class="search-shop-button">
+                        <div class="btn-inner">
+                            <span>Расширенный поиск</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-block-wr">
+                    <div class="close-mobile-search">Закрыть</div>
+
+
+                    <div class="search-online-store">
+
+                        <div class="block-body">
+                            <div class="shop-search-close">Закрыть</div>
+                            <form class="dropdown" action="/magazin/search" enctype="multipart/form-data">
+                                <div class="field-first clear-self">
+                                    <div class="field dimension clear-self">
+                                        <span class="field-title">Цена</span>
+                                        <label class="start">
+                                            <span class="unit-title">руб.</span>
+                                            <input name="s[price][min]" type="text" value="" placeholder="от"/>
+                                        </label>
+                                        <label class="end">
+                                            <span class="unit-title">руб.</span>
+                                            <input name="s[price][max]" type="text" value="" placeholder="до"/>
+                                        </label>
+                                    </div>
+                                    <div class="field select">
+                                        <span class="field-title">Выберите категорию</span>
+                                        <div id="s[folder_id]-styler" class="jq-selectbox jqselect"
+                                             style="display: inline-block; position: relative; z-index:100">
+                                            <select name="s[folder_id]" id="s[folder_id]"
+                                                    style="margin: 0px; padding: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; opacity: 0;">
+                                                <option value="">Все</option>
+                                                <option value="668658641">
+                                                    Строительная техника
+                                                </option>
+                                                <option value="668664241">
+                                                    » Автокраны
+                                                </option>
+                                                <option value="668664641">
+                                                    » Экскаваторы
+                                                </option>
+                                                <option value="670374041">
+                                                    » Вышка
+                                                </option>
+                                                <option value="670542841">
+                                                    » Грейдеры
+                                                </option>
+                                                <option value="668665041">
+                                                    Складская техника
+                                                </option>
+                                                <option value="668665241">
+                                                    » Вилочные погрузчики
+                                                </option>
+                                                <option value="668665441">
+                                                    » Штабелеры
+                                                </option>
+                                                <option value="668665641">
+                                                    » Рич-Траки
+                                                </option>
+                                                <option value="668665841">
+                                                    Поддержанная техника
+                                                </option>
+                                                <option value="668666041">
+                                                    » Погрузчики
+                                                </option>
+                                                <option value="668666441">
+                                                    » Автокраны
+                                                </option>
+                                                <option value="673419841">
+                                                    » Вышка
+                                                </option>
+                                                <option value="668666641">
+                                                    Дорожно-строительная техника
+                                                </option>
+                                                <option value="668666841">
+                                                    » Бульдозеры
+                                                </option>
+                                                <option value="668667041">
+                                                    » Мини погрузчики
+                                                </option>
+                                                <option value="668667241">
+                                                    » Катки
+                                                </option>
+                                                <option value="668667441">
+                                                    Грузовые автомобили и прицепы
+                                                </option>
+                                                <option value="668667641">
+                                                    » Грузовики
+                                                </option>
+                                                <option value="668667841">
+                                                    » Прицепы
+                                                </option>
+                                                <option value="668669841">
+                                                    » Рефрижератор
+                                                </option>
+                                                <option value="668670041">
+                                                    Аренда спецтехники
+                                                </option>
+                                                <option value="668670241">
+                                                    » Экскаваторы-погрузчики
+                                                </option>
+                                                <option value="668670441">
+                                                    » Прицепы
+                                                </option>
+                                                <option value="668670641">
+                                                    » Автокраны
+                                                </option>
+                                                <option value="668670841">
+                                                    Сельскохозяйственная техника
+                                                </option>
+                                                <option value="668671041">
+                                                    » Комбайны
+                                                </option>
+                                                <option value="668671241">
+                                                    » Тракторы
+                                                </option>
+                                                <option value="668671441">
+                                                    » Бороны
+                                                </option>
+                                                <option value="668671641">
+                                                    Буровые установки
+                                                </option>
+                                                <option value="668671841">
+                                                    » Роторные буровые установки
+                                                </option>
+                                                <option value="668672041">
+                                                    » Буровые установки ГНБ
+                                                </option>
+                                                <option value="668672241">
+                                                    » Малогабаритные буровые установки
+                                                </option>
+                                                <option value="668672441">
+                                                    Запчасти
+                                                </option>
+                                                <option value="668672641">
+                                                    » Запчасти для погрузчиков
+                                                </option>
+                                                <option value="668673041">
+                                                    » Запчасти для автокранов
+                                                </option>
+                                                <option value="672658041">
+                                                    » Запчасти для тракторов
+                                                </option>
+                                            </select>
+                                            <div class="jq-selectbox__select" style="position: relative">
+                                                <div class="jq-selectbox__select-text placeholder">Выберите категорию
+                                                </div>
+                                                <div class="jq-selectbox__trigger">
+                                                    <div class="jq-selectbox__trigger-arrow"></div>
+                                                </div>
+                                            </div>
+                                            <div class="jq-selectbox__dropdown"
+                                                 style="position: absolute; left: 0px; top: 0px; display: none;">
+                                                <ul style="position: relative; list-style: none; overflow: auto; overflow-x: hidden">
+                                                    <li class="selected sel" style="">Все</li>
+                                                    <li style="">
+                                                        Строительная техника
+                                                    </li>
+                                                    <li style="">
+                                                        » Автокраны
+                                                    </li>
+                                                    <li style="">
+                                                        » Экскаваторы
+                                                    </li>
+                                                    <li style="">
+                                                        » Вышка
+                                                    </li>
+                                                    <li style="">
+                                                        » Грейдеры
+                                                    </li>
+                                                    <li style="">
+                                                        Складская техника
+                                                    </li>
+                                                    <li style="">
+                                                        » Вилочные погрузчики
+                                                    </li>
+                                                    <li style="">
+                                                        » Штабелеры
+                                                    </li>
+                                                    <li style="">
+                                                        » Рич-Траки
+                                                    </li>
+                                                    <li style="">
+                                                        Поддержанная техника
+                                                    </li>
+                                                    <li style="">
+                                                        » Погрузчики
+                                                    </li>
+                                                    <li style="">
+                                                        » Автокраны
+                                                    </li>
+                                                    <li style="">
+                                                        » Вышка
+                                                    </li>
+                                                    <li style="">
+                                                        Дорожно-строительная техника
+                                                    </li>
+                                                    <li style="">
+                                                        » Бульдозеры
+                                                    </li>
+                                                    <li style="">
+                                                        » Мини погрузчики
+                                                    </li>
+                                                    <li style="">
+                                                        » Катки
+                                                    </li>
+                                                    <li style="">
+                                                        Грузовые автомобили и прицепы
+                                                    </li>
+                                                    <li style="">
+                                                        » Грузовики
+                                                    </li>
+                                                    <li style="">
+                                                        » Прицепы
+                                                    </li>
+                                                    <li style="">
+                                                        » Рефрижератор
+                                                    </li>
+                                                    <li style="">
+                                                        Аренда спецтехники
+                                                    </li>
+                                                    <li style="">
+                                                        » Экскаваторы-погрузчики
+                                                    </li>
+                                                    <li style="">
+                                                        » Прицепы
+                                                    </li>
+                                                    <li style="">
+                                                        » Автокраны
+                                                    </li>
+                                                    <li style="">
+                                                        Сельскохозяйственная техника
+                                                    </li>
+                                                    <li style="">
+                                                        » Комбайны
+                                                    </li>
+                                                    <li style="">
+                                                        » Тракторы
+                                                    </li>
+                                                    <li style="">
+                                                        » Бороны
+                                                    </li>
+                                                    <li style="">
+                                                        Буровые установки
+                                                    </li>
+                                                    <li style="">
+                                                        » Роторные буровые установки
+                                                    </li>
+                                                    <li style="">
+                                                        » Буровые установки ГНБ
+                                                    </li>
+                                                    <li style="">
+                                                        » Малогабаритные буровые установки
+                                                    </li>
+                                                    <li style="">
+                                                        Запчасти
+                                                    </li>
+                                                    <li style="">
+                                                        » Запчасти для погрузчиков
+                                                    </li>
+                                                    <li style="">
+                                                        » Запчасти для автокранов
+                                                    </li>
+                                                    <li style="">
+                                                        » Запчасти для тракторов
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="field text">
+                                        <label class="field-title" for="s[name]">Название</label>
+                                        <label class="input">
+                                            <input type="text" name="s[name]" id="s[name]" value=""
+                                                   placeholder="Название"/>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="field text">
+                                    <label class="field-title" for="s[article">Артикул:</label>
+                                    <label class="input">
+                                        <input type="text" name="s[article]" id="s[article" value=""
+                                               placeholder="Артикул"/>
+                                    </label>
+                                </div>
+                                <input type="hidden" name="sort_by" value=""/>
+
+                                <div class="user-flags-wr">
+                                    <div class="mobile-select-product">
+                                        Все
+                                    </div>
+                                    <div class="field-product-type">
+
+                                        <label>
+                                            <input type="radio" name="s[s_em_ili_prodaza]" value="" checked="checked"/>
+                                            <span class="checked"></span>
+                                            <span class="cat-item">Все</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="s[s_em_ili_prodaza]" value="368904241"/>
+                                            <span class="checked"></span>
+                                            <span class="cat-item">Продажа</span>
+                                        </label>
+
+                                        <label>
+                                            <input type="radio" name="s[s_em_ili_prodaza]" value="368904441"/>
+                                            <span class="checked"></span>
+                                            <span class="cat-item">Аренда</span>
+                                        </label>
+
+                                        <label>
+                                            <input type="radio" name="s[s_em_ili_prodaza]" value="368904641"/>
+                                            <span class="checked"></span>
+                                            <span class="cat-item">Запчасти</span>
+                                        </label>
+
+                                    </div>
+                                </div>
+
+
+                                <div id="shop2_search_global_fields">
+
+
+                                </div>
+
+
+                                <div class="field text">
+                                    <label class="field-title" for="search_text">Текст</label>
+                                    <label class="input">
+                                        <input type="text" name="search_text" id="search_text" value=""
+                                               placeholder="Текст"/>
+                                    </label>
+                                </div>
+                                <div id="shop2_search_custom_fields"></div>
+
+                                <div class="field select">
+                                    <span class="field-title">Производитель</span>
+                                    <div class="jq-selectbox jqselect"
+                                         style="display: inline-block; position: relative; z-index:100">
+                                        <select name="s[vendor_id]"
+                                                style="margin: 0px; padding: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; opacity: 0;">
+                                            <option value="">Все</option>
+                                            <option value="207175041">AMKODOR</option>
+                                            <option value="205974241">CATERPILLAR</option>
+                                            <option value="206380241">GROS</option>
+                                            <option value="205991241">HITACHI</option>
+                                            <option value="207351641">IVECO</option>
+                                            <option value="205982041">JLG</option>
+                                            <option value="205934241">KATO</option>
+                                            <option value="205973041">KOBELCO</option>
+                                            <option value="205975641">KOMATSU</option>
+                                            <option value="207173441">LUTZ KURTH</option>
+                                            <option value="207343041">MAN</option>
+                                            <option value="205991041">MEC</option>
+                                            <option value="206239641">MITSUBISHI</option>
+                                            <option value="207175241">MTZ</option>
+                                            <option value="206429241">Nichiyu</option>
+                                            <option value="206292441">Ningbo Ruyi</option>
+                                            <option value="207343241">RENAULT</option>
+                                            <option value="206444441">ROSTSELMASH</option>
+                                            <option value="207173241">SHANTUI</option>
+                                            <option value="205974041">SUMITOMO</option>
+                                            <option value="205861241">TADANO</option>
+                                            <option value="206805641">TTZ</option>
+                                            <option value="205786241">Unicarriers Corporation (ТСМ)</option>
+                                            <option value="205290041">XGMA</option>
+                                            <option value="206380441">Xilin</option>
+                                            <option value="205771241">АНТ</option>
+                                            <option value="206812241">Беларусь</option>
+                                            <option value="206458041">Гомсельмаш КСК</option>
+                                            <option value="205483641">ДСТ-Урал</option>
+                                        </select>
+                                        <div class="jq-selectbox__select" style="position: relative">
+                                            <div class="jq-selectbox__select-text placeholder">Производитель</div>
+                                            <div class="jq-selectbox__trigger">
+                                                <div class="jq-selectbox__trigger-arrow"></div>
+                                            </div>
+                                        </div>
+                                        <div class="jq-selectbox__dropdown"
+                                             style="position: absolute; left: 0px; top: 0px; display: none;">
+                                            <ul style="position: relative; list-style: none; overflow: auto; overflow-x: hidden">
+                                                <li class="selected sel" style="">Все</li>
+                                                <li style="">AMKODOR</li>
+                                                <li style="">CATERPILLAR</li>
+                                                <li style="">GROS</li>
+                                                <li style="">HITACHI</li>
+                                                <li style="">IVECO</li>
+                                                <li style="">JLG</li>
+                                                <li style="">KATO</li>
+                                                <li style="">KOBELCO</li>
+                                                <li style="">KOMATSU</li>
+                                                <li style="">LUTZ KURTH</li>
+                                                <li style="">MAN</li>
+                                                <li style="">MEC</li>
+                                                <li style="">MITSUBISHI</li>
+                                                <li style="">MTZ</li>
+                                                <li style="">Nichiyu</li>
+                                                <li style="">Ningbo Ruyi</li>
+                                                <li style="">RENAULT</li>
+                                                <li style="">ROSTSELMASH</li>
+                                                <li style="">SHANTUI</li>
+                                                <li style="">SUMITOMO</li>
+                                                <li style="">TADANO</li>
+                                                <li style="">TTZ</li>
+                                                <li style="">Unicarriers Corporation (ТСМ)</li>
+                                                <li style="">XGMA</li>
+                                                <li style="">Xilin</li>
+                                                <li style="">АНТ</li>
+                                                <li style="">Беларусь</li>
+                                                <li style="">Гомсельмаш КСК</li>
+                                                <li style="">ДСТ-Урал</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field select">
+                                    <div class="field-title">Новинка</div>
+                                    <div class="jq-selectbox jqselect"
+                                         style="display: inline-block; position: relative; z-index:100">
+                                        <select name="s[_flags][2]"
+                                                style="margin: 0px; padding: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; opacity: 0;">
+                                            <option value="">Все</option>
+                                            <option value="1">да</option>
+                                            <option value="0">нет</option>
+                                        </select>
+                                        <div class="jq-selectbox__select" style="position: relative">
+                                            <div class="jq-selectbox__select-text placeholder">Новинка</div>
+                                            <div class="jq-selectbox__trigger">
+                                                <div class="jq-selectbox__trigger-arrow"></div>
+                                            </div>
+                                        </div>
+                                        <div class="jq-selectbox__dropdown"
+                                             style="position: absolute; left: 0px; top: 0px; display: none;">
+                                            <ul style="position: relative; list-style: none; overflow: auto; overflow-x: hidden">
+                                                <li class="selected sel" style="">Все</li>
+                                                <li style="">да</li>
+                                                <li style="">нет</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field select">
+                                    <div class="field-title">Спецпредложение</div>
+                                    <div class="jq-selectbox jqselect"
+                                         style="display: inline-block; position: relative; z-index:100">
+                                        <select name="s[_flags][1]"
+                                                style="margin: 0px; padding: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; opacity: 0;">
+                                            <option value="">Все</option>
+                                            <option value="1">да</option>
+                                            <option value="0">нет</option>
+                                        </select>
+                                        <div class="jq-selectbox__select" style="position: relative">
+                                            <div class="jq-selectbox__select-text placeholder">Спецпредложение</div>
+                                            <div class="jq-selectbox__trigger">
+                                                <div class="jq-selectbox__trigger-arrow"></div>
+                                            </div>
+                                        </div>
+                                        <div class="jq-selectbox__dropdown"
+                                             style="position: absolute; left: 0px; top: 0px; display: none;">
+                                            <ul style="position: relative; list-style: none; overflow: auto; overflow-x: hidden">
+                                                <li class="selected sel" style="">Все</li>
+                                                <li style="">да</li>
+                                                <li style="">нет</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="field select">
+                                    <span class="field-title">Результатов на странице:</span>
+                                    <div class="jq-selectbox jqselect"
+                                         style="display: inline-block; position: relative; z-index:100">
+                                        <select name="s[products_per_page]"
+                                                style="margin: 0px; padding: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; opacity: 0;">
+                                            <option value="5">5</option>
+                                            <option value="20">20</option>
+                                            <option value="35">35</option>
+                                            <option value="50">50</option>
+                                            <option value="65">65</option>
+                                            <option value="80">80</option>
+                                            <option value="95">95</option>
+                                        </select>
+                                        <div class="jq-selectbox__select" style="position: relative">
+                                            <div class="jq-selectbox__select-text">5</div>
+                                            <div class="jq-selectbox__trigger">
+                                                <div class="jq-selectbox__trigger-arrow"></div>
+                                            </div>
+                                        </div>
+                                        <div class="jq-selectbox__dropdown"
+                                             style="position: absolute; left: 0px; top: 0px; display: none;">
+                                            <ul style="position: relative; list-style: none; overflow: auto; overflow-x: hidden">
+                                                <li class="selected sel" style="">5</li>
+                                                <li style="">20</li>
+                                                <li style="">35</li>
+                                                <li style="">50</li>
+                                                <li style="">65</li>
+                                                <li style="">80</li>
+                                                <li style="">95</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clear-self"></div>
+
+                                <div class="submit">
+                                    <div class="opened-all-selsect">Ещё</div>
+                                    <div class="reset-btn">
+                                        <span>Сбросить</span>
+                                    </div>
+                                    <button type="submit" class="search-btn btn-variant1">Показать</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div><!-- Search Form -->
+                </div>
+
+                <div class="slider-main-wrapper">
+                    <div class="slider-block owl-carousel owl-loaded owl-drag">
+
+
+                        <div class="owl-stage-outer owl-height" style="height: 360px;">
+                            <div class="owl-stage"
+                                 style="transform: translate3d(-1640px, 0px, 0px); transition: 0s; width: 5740px;">
+                                <div class="owl-item cloned" style="width: 820px;">
+                                    <div class="item">
+
+                                        <div class="info">
+                                            <div>
+                                                <div>
+                                                    <div class="title">Закажи запчасти на спецтехнику и получи скидку!
+                                                    </div>
+
+                                                    <div class="text">
+                                                        <p>При заказе запчастей на&nbsp;любую спецтехнику из нашего
+                                                            каталога скидка 10%!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="link">
+                                                    <a href="/magazin/folder/zapchasti">Узнать больше ...</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="pic" style="background-image: url(/d/1772981/d/sp.jpg);"></div>
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 820px;">
+                                    <div class="item">
+
+                                        <div class="info">
+                                            <div>
+                                                <div>
+                                                    <div class="title">Июнь – время арендовать автовышки со скидкой 8%
+                                                    </div>
+
+                                                    <div class="text">
+                                                        <p>В июне этого года наша компания предлагает скидку 8% при
+                                                            аренде автовышки на срок от 8 дней. Закажите автовышку на 16
+                                                            дней и получите 10% скидку!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="link">
+                                                    <a href="/magazin/folder/vyshka">Узнать больше ...</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="pic" style="background-image: url(/d/1772981/d/5455442.jpg);"></div>
+                                    </div>
+                                </div>
+                                <div class="owl-item active" style="width: 820px;">
+                                    <div class="item">
+
+                                        <div class="info">
+                                            <div>
+                                                <div>
+                                                    <div class="title">Внимание АКЦИЯ!</div>
+
+                                                    <div class="text">
+                                                        <p>Только на этой неделе мы снижаем стоимость продажы
+                                                            погрузчиков на 5%. Сэкономьте десятки тысяч рублей!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="link">
+                                                    <a href="/magazin/folder/pogruzchiki">Узнать больше ...</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="pic" style="background-image: url(/d/1772981/d/5455441.jpg);"></div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 820px;">
+                                    <div class="item">
+
+                                        <div class="info">
+                                            <div>
+                                                <div>
+                                                    <div class="title">Закажи запчасти на спецтехнику и получи скидку!
+                                                    </div>
+
+                                                    <div class="text">
+                                                        <p>При заказе запчастей на&nbsp;любую спецтехнику из нашего
+                                                            каталога скидка 10%!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="link">
+                                                    <a href="/magazin/folder/zapchasti">Узнать больше ...</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="pic" style="background-image: url(/d/1772981/d/sp.jpg);"></div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 820px;">
+                                    <div class="item">
+
+                                        <div class="info">
+                                            <div>
+                                                <div>
+                                                    <div class="title">Июнь – время арендовать автовышки со скидкой 8%
+                                                    </div>
+
+                                                    <div class="text">
+                                                        <p>В июне этого года наша компания предлагает скидку 8% при
+                                                            аренде автовышки на срок от 8 дней. Закажите автовышку на 16
+                                                            дней и получите 10% скидку!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="link">
+                                                    <a href="/magazin/folder/vyshka">Узнать больше ...</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="pic" style="background-image: url(/d/1772981/d/5455442.jpg);"></div>
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 820px;">
+                                    <div class="item">
+
+                                        <div class="info">
+                                            <div>
+                                                <div>
+                                                    <div class="title">Внимание АКЦИЯ!</div>
+
+                                                    <div class="text">
+                                                        <p>Только на этой неделе мы снижаем стоимость продажы
+                                                            погрузчиков на 5%. Сэкономьте десятки тысяч рублей!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="link">
+                                                    <a href="/magazin/folder/pogruzchiki">Узнать больше ...</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="pic" style="background-image: url(/d/1772981/d/5455441.jpg);"></div>
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 820px;">
+                                    <div class="item">
+
+                                        <div class="info">
+                                            <div>
+                                                <div>
+                                                    <div class="title">Закажи запчасти на спецтехнику и получи скидку!
+                                                    </div>
+
+                                                    <div class="text">
+                                                        <p>При заказе запчастей на&nbsp;любую спецтехнику из нашего
+                                                            каталога скидка 10%!
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="link">
+                                                    <a href="/magazin/folder/zapchasti">Узнать больше ...</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="pic" style="background-image: url(/d/1772981/d/sp.jpg);"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-nav">
+                            <div class="owl-prev">prev</div>
+                            <div class="owl-next">next</div>
+                        </div>
+                        <div class="owl-dots">
+                            <div class="owl-dot active">
+                                <span></span>
+                            </div>
+                            <div class="owl-dot">
+                                <span></span>
+                            </div>
+                            <div class="owl-dot">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-sliderText">
+                        <div class="info">
+                            <div>
+                                <div>
+                                    <div class="title">Внимание АКЦИЯ!</div>
+                                    <div class="text">
+                                        <p>Только на этой неделе мы снижаем стоимость продажы погрузчиков на 5%.
+                                            Сэкономьте десятки тысяч рублей!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="link">
+                                    <a href="/magazin/folder/pogruzchiki">Узнать больше ...</a>
+                                </div>
                             </div>
                         </div>
                     </div>
