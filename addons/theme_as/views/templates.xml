@@ -399,51 +399,51 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="site-search-btn"></div>
-                    <div class="site-search-wr">
-                        <form action="/search" method="get" class="site-search-form clear-self">
-                            <input type="text" class="search-text" name="search"
-                                   onblur="this.placeholder=this.placeholder==''?'Поиск по сайту':this.placeholder"
-                                   onfocus="this.placeholder=this.placeholder=='Поиск по сайту'?'':this.placeholder;"
-                                   placeholder="Поиск по сайту"/>
-                            <input type="submit" class="search-but" value=""/>
-                        </form>
-                    </div>
-                    <div class="login-block-wr">
-                        <div class="block-user">
-                            <div class="block-title">
-                                <div class="close-btn"></div>
-                            </div>
-                            <div class="block-body">
-                                <form method="post" action="/registraciya">
-                                    <input type="hidden" name="mode" value="login"/>
-                                    <div class="field name">
-                                        <label class="input">
-                                            <input type="text" name="login" id="login" tabindex="1"
-                                                   onblur="this.placeholder=this.placeholder==''?'Логин, e-mail':this.placeholder"
-                                                   onfocus="this.placeholder=this.placeholder=='Логин, e-mail'?'':this.placeholder;"
-                                                   placeholder="Логин, e-mail" value=""/>
-                                        </label>
-                                    </div>
-                                    <div class="field password clear-self">
-                                        <label class="input">
-                                            <input type="password" name="password" id="password" tabindex="2"
-                                                   onblur="this.placeholder=this.placeholder==''?'Пароль':this.placeholder"
-                                                   onfocus="this.placeholder=this.placeholder=='Пароль'?'':this.placeholder;"
-                                                   placeholder="Пароль" value=""/>
-                                        </label>
-                                    </div>
-                                    <div class="field btn clear-self">
-                                        <button type="submit" class="btn-variant1">Вход</button>
-                                        <a href="/registraciya/forgot_password" class="forgot">Забыли пароль?</a>
-                                    </div>
-                                    <div class="field register-wr clear-self">
-                                        <a href="/registraciya/register" class="register">Регистрация</a>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                    <!--<div class="site-search-btn"></div>-->
+                    <!--<div class="site-search-wr">-->
+                        <!--<form action="/search" method="get" class="site-search-form clear-self">-->
+                            <!--<input type="text" class="search-text" name="search"-->
+                                   <!--onblur="this.placeholder=this.placeholder==''?'Поиск по сайту':this.placeholder"-->
+                                   <!--onfocus="this.placeholder=this.placeholder=='Поиск по сайту'?'':this.placeholder;"-->
+                                   <!--placeholder="Поиск по сайту"/>-->
+                            <!--<input type="submit" class="search-but" value=""/>-->
+                        <!--</form>-->
+                    <!--</div>-->
+                    <!--<div class="login-block-wr">-->
+                        <!--<div class="block-user">-->
+                            <!--<div class="block-title">-->
+                                <!--<div class="close-btn"></div>-->
+                            <!--</div>-->
+                            <!--<div class="block-body">-->
+                                <!--<form method="post" action="/registraciya">-->
+                                    <!--<input type="hidden" name="mode" value="login"/>-->
+                                    <!--<div class="field name">-->
+                                        <!--<label class="input">-->
+                                            <!--<input type="text" name="login" id="login" tabindex="1"-->
+                                                   <!--onblur="this.placeholder=this.placeholder==''?'Логин, e-mail':this.placeholder"-->
+                                                   <!--onfocus="this.placeholder=this.placeholder=='Логин, e-mail'?'':this.placeholder;"-->
+                                                   <!--placeholder="Логин, e-mail" value=""/>-->
+                                        <!--</label>-->
+                                    <!--</div>-->
+                                    <!--<div class="field password clear-self">-->
+                                        <!--<label class="input">-->
+                                            <!--<input type="password" name="password" id="password" tabindex="2"-->
+                                                   <!--onblur="this.placeholder=this.placeholder==''?'Пароль':this.placeholder"-->
+                                                   <!--onfocus="this.placeholder=this.placeholder=='Пароль'?'':this.placeholder;"-->
+                                                   <!--placeholder="Пароль" value=""/>-->
+                                        <!--</label>-->
+                                    <!--</div>-->
+                                    <!--<div class="field btn clear-self">-->
+                                        <!--<button type="submit" class="btn-variant1">Вход</button>-->
+                                        <!--<a href="/registraciya/forgot_password" class="forgot">Забыли пароль?</a>-->
+                                    <!--</div>-->
+                                    <!--<div class="field register-wr clear-self">-->
+                                        <!--<a href="/registraciya/register" class="register">Регистрация</a>-->
+                                    <!--</div>-->
+                                <!--</form>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
                 </div>
             </xpath>
         </template>
