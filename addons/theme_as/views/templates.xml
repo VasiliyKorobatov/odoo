@@ -29,9 +29,9 @@
                     <div class="contacts col-md-3 col-xs-12">
                         <div class="address">
                             <div>
-                                <t t-esc="company.state_id.name"/>,
-                                <t t-esc="company.city"/>,
-                                <t t-esc="company.street"/>
+                                <t t-esc="res_company.state_id.name"/>,
+                                <t t-esc="res_company.city"/>,
+                                <t t-esc="res_company.street"/>
                             </div>
                             <a href="/page/contactus">Посмотреть схему проезда</a>
                         </div>
@@ -53,22 +53,22 @@
             <xpath expr="//div[@id='wrapwrap']/header" position="replace">
                 <header class="site-header" role="banner">
                     <div class="header-inner">
-                        <div class="company-block">
-                            <div class="company-name">
+                        <div class="res_company-block">
+                            <div class="res_company-name">
                                 <a href="/" t-att-title="res_company.name">
                                     <t t-esc="res_company.name"/>
                                 </a>
                             </div>
-                            <div class="company-activity">
+                            <div class="res_company-activity">
                                 <t t-esc="res_company.rml_header1"/>
                             </div>
                         </div>
                         <div class="contacts-block">
                             <div class="address">
                                 <div>
-                                    <t t-esc="company.state_id.name"/>,
-                                    <t t-esc="company.city"/>,
-                                    <t t-esc="company.street"/>
+                                    <t t-esc="res_company.state_id.name"/>,
+                                    <t t-esc="res_company.city"/>,
+                                    <t t-esc="res_company.street"/>
                                 </div>
                                 <a href="/page/contactus">Посмотреть схему проезда</a>
                             </div>
