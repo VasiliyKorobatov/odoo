@@ -21,7 +21,7 @@
                                 <a href="/aktsii">Акции</a>
                             </li>
                             <li>
-                                <a href="/kontakty">Контакты</a>
+                                <a href="/page/contactus">Контакты</a>
                             </li>
                         </ul>
                     </div>
@@ -29,7 +29,7 @@
                     <div class="contacts col-md-3 col-xs-12">
                         <div class="address">
                             <div>г. Москва, Ленинский проспект, дом, строение, номер кабинета</div>
-                            <a href="/kontakty">Посмотреть схему проезда</a>
+                            <a href="/page/contactus">Посмотреть схему проезда</a>
                         </div>
 
                         <div class="phones">
@@ -62,7 +62,7 @@
                                 <div>
                                     г. Москва, Ленинский проспект, дом, строение, номер кабинета
                                 </div>
-                                <a href="/kontakty">Посмотреть схему проезда</a>
+                                <a href="/page/contactus">Посмотреть схему проезда</a>
                             </div>
                             <div class="phones">
                                 <div>
@@ -374,7 +374,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/kontakty">
+                                    <a href="/page/contactus">
                                         <span>Контакты</span>
                                     </a>
                                 </li>
