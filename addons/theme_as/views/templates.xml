@@ -45,7 +45,7 @@
                         </div>
 
                         <div class="callback-click">
-                            <a href="#">Заказать звонок</a>
+                            <a href="#" data-toggle="modal" data-target="callbackModal">Заказать звонок</a>
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                                 </div>
                             </div>
                             <div class="callback-click">
-                                <a href="#">Заказать звонок</a>
+                                <a href="#" data-toggle="modal" data-target="callbackModal">Заказать звонок</a>
                             </div>
                         </div>
                     </div>
@@ -2980,6 +2980,70 @@
                 <!--</div>-->
                 <!--</div>-->
                 <!--</div>-->
+            </xpath>
+        </template>
+        <template id="callbackModal" inherit_id="website.layout" name="Theme AS Callback Modal Window">
+            <xpath expr="//div[@id='wrapwrap']" position="after">
+                <div id="callbackModal" class="modal fade" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">Заказать звонок</h4>
+                            </div>
+                            <div class="modal-body">
+                                <section class="html_form" data-form-model="crm.lead" data-form-id="1">
+                                    <div class="container mt16 mb16">
+                                        <form role="form" method="POST" action="/form/sinsert"
+                                              enctype="multipart/form-data">
+                                            <div class="oe_structure" id="html_fields">
+                                                <div class="hff hff_textbox form-group col-xs-12"
+                                                     data-form-type="textbox" data-field-id="1">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="fa fa-phone"></i>
+                                                        </span>
+                                                        <input type="text" class="form-control" style="max-width:100%"
+                                                               name="phone" maxlength="100" pattern="[7-8]{1}[0-9]{10}"
+                                                               placeholder="Телефон *"/>
+                                                    </div>
+                                                </div>
+                                                <div class="hff hff_textbox form-group col-xs-12"
+                                                     data-form-type="textbox" data-field-id="2">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon">
+                                                            <i class="fa fa-user"></i>
+                                                        </span>
+                                                        <input type="text" class="form-control" style="max-width:100%"
+                                                               name="contact_name" maxlength="100" placeholder="Имя *"/>
+                                                    </div>
+                                                </div>
+                                                <div class="hff hff_textarea form-group col-xs-12"
+                                                     data-form-type="textarea" data-field-id="3">
+
+                                                    <textarea class="form-control" name="description"
+                                                              style="max-width:100%" placeholder="Комментарий..."/>
+                                                </div>
+                                                <div class="hidden-xs" data-form-type="textbox" data-field-id="4">
+                                                    <input type="hidden" value="Заказ обратного звонка"
+                                                           class="form-control" name="name" maxlength="100"/>
+                                                </div>
+                                                <div class="hff hff_textbox form-group col-xs-12">
+                                                    <input type="hidden" name="form_id" value="1"/>
+                                                    <input type="hidden" name="csrf_token"
+                                                           t-att-value="request.csrf_token()"/>
+                                                    <button class="btn btn-warning">Отправить</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </xpath>
         </template>
 
