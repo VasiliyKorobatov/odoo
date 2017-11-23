@@ -2933,36 +2933,36 @@
         </template>
         <template id="subscribe_block" inherit_id="theme_as.theme_as_homepage" name="Theme AS subscribe block">
             <xpath expr="//div[@class='subscribe-block']" position="inside">
-                <div class="inner">
-                    <div class="left-p">
-                        <div>Подписаться на бесплатную рассылку!</div>
-                    </div>
+                <!--<div class="inner">-->
+                    <!--<div class="left-p">-->
+                        <!--<div>Подписаться на бесплатную рассылку!</div>-->
+                    <!--</div>-->
 
-                    <div class="right-p">
-                        <div class="tpl-anketa"
-                             data-api-url="/my/s3/xapi/public/?method=form/postform&amp;param[form_id]=92670441"
-                             data-api-type="form">
-                            <div class="title">Подписаться на бесплатную рассылку!</div>
-                            <form method="post" action="/">
-                                <input type="hidden" name="params[placeholdered_fields]" value="1"/>
-                                <input type="hidden" name="form_id" value="92670441"/>
-                                <input type="hidden" name="tpl" value="global:form.minimal.2.2.68.tpl"/>
-                                <div class="tpl-field type-text field-required">
-                                    <div class="field-value">
-                                        <input type="text" size="30" maxlength="100" value="" name="d[0]"
-                                               placeholder="Введите Ваш E-mail *"/>
-                                    </div>
-                                </div>
+                    <!--<div class="right-p">-->
+                        <!--<div class="tpl-anketa"-->
+                             <!--data-api-url="/my/s3/xapi/public/?method=form/postform&amp;param[form_id]=92670441"-->
+                             <!--data-api-type="form">-->
+                            <!--<div class="title">Подписаться на бесплатную рассылку!</div>-->
+                            <!--<form method="post" action="/">-->
+                                <!--<input type="hidden" name="params[placeholdered_fields]" value="1"/>-->
+                                <!--<input type="hidden" name="form_id" value="92670441"/>-->
+                                <!--<input type="hidden" name="tpl" value="global:form.minimal.2.2.68.tpl"/>-->
+                                <!--<div class="tpl-field type-text field-required">-->
+                                    <!--<div class="field-value">-->
+                                        <!--<input type="text" size="30" maxlength="100" value="" name="d[0]"-->
+                                               <!--placeholder="Введите Ваш E-mail *"/>-->
+                                    <!--</div>-->
+                                <!--</div>-->
 
 
-                                <div class="tpl-field tpl-field-button">
-                                    <button type="submit" class="tpl-form-button">Подписаться</button>
-                                </div>
+                                <!--<div class="tpl-field tpl-field-button">-->
+                                    <!--<button type="submit" class="tpl-form-button">Подписаться</button>-->
+                                <!--</div>-->
 
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                            <!--</form>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
             </xpath>
         </template>
 
