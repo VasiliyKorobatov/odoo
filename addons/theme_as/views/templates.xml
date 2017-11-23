@@ -49,9 +49,13 @@
                     <div class="header-inner">
                         <div class="company-block">
                             <div class="company-name">
-                                <a href="/">Название компании</a>
+                                <a href="/" t-att-title="res_company.name">
+                                    <t t-esc="res_company.name" />
+                                </a>
                             </div>
-                            <div class="company-activity">Каталог спецтехники</div>
+                            <div class="company-activity">
+                                <t t-esc="res_company.rml_header1"/>
+                            </div>
                         </div>
                         <div class="contacts-block">
                             <div class="address">
@@ -75,7 +79,7 @@
             <xpath expr="//div[@id='wrapwrap']/footer" position="replace">
                 <footer role="contentinfo" class="site-footer">
                     <div class="site-footer-inner">
-                        <div class="copyrights">© 2017 Название компании</div>
+                        <div class="copyrights">© 2017 <t t-esc="res_company.name" /></div>
                         <div class="site-counters">Код счетчиков
                         </div>
                         <div class="mega">
