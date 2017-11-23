@@ -34,7 +34,7 @@
 
                         <div class="phones">
                             <div>
-                                <a href="tel:8 (000) 111-11-11">8 (000) 111-11-11</a>
+                                <a t-att-href="'tel:%s' % res_company.phone"><t t-esc="res_company.phone" /> </a>
                             </div>
                         </div>
 
@@ -66,7 +66,7 @@
                             </div>
                             <div class="phones">
                                 <div>
-                                    <a href="tel:8 (000) 111-11-11">8 (000) 111-11-11</a>
+                                <a t-att-href="'tel:%s' % res_company.phone"><t t-esc="res_company.phone" /> </a>
                                 </div>
                             </div>
                             <div class="callback-click">
