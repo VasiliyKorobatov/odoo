@@ -11,6 +11,7 @@
                 <script src="/theme_as/static/js/jquery.inputmask.bundle.min.js" type="text/javascript"/>
                 <script src="/theme_as/static/js/inputmask/inputmask.phone.extensions.min.js" type="text/javascript"/>
                 <script src="/theme_as/static/js/inputmask/phone-codes/phone.min.js" type="text/javascript"/>
+                <script src="/theme_as/static/js/inputmask/phone-codes/phone-ru.min.js" type="text/javascript"/>
             </xpath>
         </template>
     </data>
