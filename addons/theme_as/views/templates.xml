@@ -2933,6 +2933,7 @@
         </template>
         <template id="subscribe_block" inherit_id="theme_as.theme_as_homepage" name="Theme AS subscribe block">
             <xpath expr="//div[@class='subscribe-block']" position="inside">
+                <hr />
                 <!--<div class="inner">-->
                     <!--<div class="left-p">-->
                         <!--<div>Подписаться на бесплатную рассылку!</div>-->
