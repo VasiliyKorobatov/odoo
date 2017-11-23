@@ -45,7 +45,7 @@
                         </div>
 
                         <div class="callback-click">
-                            <a href="#" data-toggle="modal" data-target="callbackModal">Заказать звонок</a>
+                            <a href="#" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a>
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                                 </div>
                             </div>
                             <div class="callback-click">
-                                <a href="#" data-toggle="modal" data-target="callbackModal">Заказать звонок</a>
+                                <a href="#" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a>
                             </div>
                         </div>
                     </div>
@@ -2991,7 +2991,7 @@
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
                                     <span aria-hidden="true">×</span>
                                 </button>
-                                <h4 class="modal-title" id="myModalLabel">Заказать звонок</h4>
+                                <h4 class="modal-title" id="callbackModalLabel">Заказать звонок</h4>
                             </div>
                             <div class="modal-body">
                                 <section class="html_form" data-form-model="crm.lead" data-form-id="1">
