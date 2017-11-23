@@ -3,7 +3,12 @@
     <data>
         <template id="as_style_frontend" name="AS Style Frontend" inherit_id="website.assets_frontend">
             <xpath expr="link[last()]" position="after">
-                <link href="/theme_as/static/less/style.less" rel="stylesheet" type="text/less" />
+                <link href="/theme_as/static/less/style.less" rel="stylesheet" type="text/less"/>
+            </xpath>
+        </template>
+        <template id="as_js_frontend" inherit_id="website.assets_frontend" name="Theme As Js">
+            <xpath expr="script[last()]" position="after">
+                <script src="/theme_as/static/src/js/jquery.inputmask.bundle.min.js" type="text/javascript"/>
             </xpath>
         </template>
     </data>
