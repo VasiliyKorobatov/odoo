@@ -53,13 +53,13 @@
             <xpath expr="//div[@id='wrapwrap']/header" position="replace">
                 <header class="site-header" role="banner">
                     <div class="header-inner">
-                        <div class="res_company-block">
-                            <div class="res_company-name">
+                        <div class="company-block">
+                            <div class="company-name">
                                 <a href="/" t-att-title="res_company.name">
                                     <t t-esc="res_company.name"/>
                                 </a>
                             </div>
-                            <div class="res_company-activity">
+                            <div class="company-activity">
                                 <t t-esc="res_company.rml_header1"/>
                             </div>
                         </div>
