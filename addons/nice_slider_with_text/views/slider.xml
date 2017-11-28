@@ -2,7 +2,7 @@
 <openerp>
     <data>
         <template id="st_slider" name="Красивый слайдер c текстом">
-            <div id="myCarousel" class="carousel slide s_banner" data-interval="10000" style="height: 400px;">
+            <div id="myCarousel" class="carousel slide s_banner st_slider" data-interval="10000" style="height: 400px;">
         <!-- Indicators -->
         <ol class="carousel-indicators hidden">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
