@@ -41,3 +41,17 @@ h3{
         left: 95%;
     }
 
+.st_slider .left-sliderText{
+    display: inline-block;
+    padding: 45px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    width: 320px;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+}
+.st_slider .pic{
+    display: inline-block;
+}

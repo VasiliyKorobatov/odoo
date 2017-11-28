@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 {
-    'name': 'Theme Nice Slider',
+    'name': 'Theme Nice Slider With Text',
     'description': 'website Mid Slider',
     'category': 'Website',
     'version':'1.0',
