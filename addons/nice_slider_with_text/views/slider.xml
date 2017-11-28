@@ -19,10 +19,15 @@
                                             Сэкономьте десятки тысяч рублей!
                                         </p>
                                     </div>
+                                    <div class="link">
+                                        <a href="/page/akcii">Узнать больше ...</a>
+                                    </div>
                                 </div>
                                 <div class="carousel-img col-md-6 col-md-offset-1 hidden-sm hidden-xs mt48">
-                                    <img class="img-responsive" src="/web/image/website.s_banner_default_image"
-                                         alt="Banner Odoo Image"/>
+                                    <div class="pic">
+                                        <img src="/nice_slider_with_text/static/img/img3.jpg" class="mg-responsive"
+                                             style="width: 100%;"/>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -45,7 +50,7 @@
             <!--<div class="carousel-inner">-->
             <!--<div class="item active">-->
             <!--<div class="pic">-->
-            <!--<img src="/nice_slider/static/img/img3.jpg" class="mg-responsive"-->
+            <!--<img src="/nice_slider_with_text/static/img/img3.jpg" class="mg-responsive"-->
             <!--style="width: 100%;"/>-->
             <!--</div>-->
             <!--<div class="left-sliderText">-->
