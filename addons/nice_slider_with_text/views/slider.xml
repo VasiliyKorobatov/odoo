@@ -23,11 +23,8 @@
                                         <a href="/page/akcii">Узнать больше ...</a>
                                     </div>
                                 </div>
-                                <div class="carousel-img col-md-6 col-md-offset-1 hidden-sm hidden-xs mt48">
-                                    <div class="pic">
-                                        <img src="/nice_slider_with_text/static/img/img3.jpg" class="mg-responsive"
-                                             style="width: 100%;"/>
-                                    </div>
+                                <div class="carousel-img col-md-8">
+                                        <img src="/nice_slider_with_text/static/img/img3.jpg" class="img-responsive" />
                                 </div>
                             </div>
                         </div>
