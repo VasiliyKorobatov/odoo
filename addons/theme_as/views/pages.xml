@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template name="О компании" id="website.okompanii" page="True">
+            <t t-call="website.layout">
+                <div id="wrap">
+                    <div class="container">
+                        <h1>О компании</h1>
+                    </div>
+                    <div class="oe_structure" />
+                </div>
+            </t>
+        </template>
+        <template name="Отзывы о нас" id="website.otzivi" page="True">
+            <t t-call="website.layout">
+                <div id="wrap">
+                    <div class="container">
+                        <h1>Отзывы о нас</h1>
+                    </div>
+                    <div class="oe_structure" />
+                </div>
+            </t>
+        </template>
+        <template name="Акции" id="website.akcii" page="True">
+            <t t-call="website.layout">
+                <div id="wrap">
+                    <div class="container">
+                        <h1>Акции</h1>
+                    </div>
+                    <div class="oe_structure" />
+                </div>
+            </t>
+        </template>
+        <template name="Акции" id="website.akcii" page="True">
+            <t t-call="website.layout">
+                <div id="wrap">
+                    <div class="container">
+                        <h1>Акции</h1>
+                    </div>
+                    <div class="oe_structure" />
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

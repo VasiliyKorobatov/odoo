@@ -19,6 +19,7 @@
 
     'data': [
         'views/assets.xml',
+        'views/pages.xml',
         'views/views.xml',
         'views/templates.xml',
     ],
