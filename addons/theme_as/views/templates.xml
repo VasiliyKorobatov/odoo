@@ -12,13 +12,13 @@
                                 <a href="/">Главная</a>
                             </li>
                             <li>
-                                <a href="/o-kompanii">О компании</a>
+                                <a href="/page/okompanii">О компании</a>
                             </li>
                             <li>
-                                <a href="/otzyvy-o-nas">Отзывы о нас</a>
+                                <a href="/page/otzivi">Отзывы о нас</a>
                             </li>
                             <li>
-                                <a href="/aktsii">Акции</a>
+                                <a href="/page/akcii">Акции</a>
                             </li>
                             <li>
                                 <a href="/page/contactus">Контакты</a>
@@ -359,7 +359,7 @@
                                     </a>
                                 </li>
                                 <li class="s3-menu-allin-has">
-                                    <a href="/o-kompanii">
+                                    <a href="/page/okompanii">
                                         <span>О компании</span>
                                     </a>
                                     <ul class="level-2" style="display: none; left: 244.766px; top: 54px;">
@@ -369,19 +369,19 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="/obratnaya-svyaz">
+                                            <a href="/page/contactus">
                                                 <span>Обратная связь</span>
                                             </a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="/otzyvy-o-nas">
+                                    <a href="/page/otzivi">
                                         <span>Отзывы о нас</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/aktsii">
+                                    <a href="/page/akcii">
                                         <span>Акции</span>
                                     </a>
                                 </li>
