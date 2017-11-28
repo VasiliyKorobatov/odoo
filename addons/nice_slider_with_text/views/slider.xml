@@ -49,7 +49,7 @@
         </template>
         <template id="carousel_text_id" inherit_id="website.snippets">
             <xpath expr="//div[@class='o_panel_body']" position="inside">
-                <t t-snippet="nice_slider_with_text.st_slider" t-thumbnail="/nice_slider/static/img/snippets.png"/>
+                <t t-snippet="nice_slider_with_text.st_slider" t-thumbnail="/nice_slider_with_text/static/img/snippets.png"/>
             </xpath>
         </template>
     </data>
