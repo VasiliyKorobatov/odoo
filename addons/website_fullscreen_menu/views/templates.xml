@@ -42,11 +42,11 @@
                 </ul>
             </li>
         </template>
-        <template id="website_menu" name="Replaced Menu" inherit_id="website.layout">
-            <xpath expr="//ul[@id='top_menu']" position="replace">
-                <t t-call="website_fullscreen_menu.menu"/>
-            </xpath>
-        </template>
+        <!--<template id="website_menu" name="Replaced Menu" inherit_id="website.layout">-->
+            <!--<xpath expr="//ul[@id='top_menu']" position="replace">-->
+                <!--<t t-call="website_fullscreen_menu.menu"/>-->
+            <!--</xpath>-->
+        <!--</template>-->
 
 
     </data>
