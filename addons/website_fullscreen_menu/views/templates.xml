@@ -45,13 +45,13 @@
                         </li>
                     </div>
                     <!-- THIS IS THE ICON -->
-                    <a href="javascript:void(0)" class="icon">
-                        <div class="hamburger">
-                            <div class="menui top-menu"></div>
-                            <div class="menui mid-menu"></div>
-                            <div class="menui bottom-menu"></div>
-                        </div>
-                    </a>
+                    <!--<a href="javascript:void(0)" class="icon">-->
+                        <!--<div class="hamburger">-->
+                            <!--<div class="menui top-menu"></div>-->
+                            <!--<div class="menui mid-menu"></div>-->
+                            <!--<div class="menui bottom-menu"></div>-->
+                        <!--</div>-->
+                    <!--</a>-->
                 </div>
             </div>
         </template>
