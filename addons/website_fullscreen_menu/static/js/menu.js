@@ -4,5 +4,6 @@ $(document).ready(function () {
         $(".top-menu").toggleClass("top-animate");
         $(".mid-menu").toggleClass("mid-animate");
         $(".bottom-menu").toggleClass("bottom-animate");
+        $("body").toggleClass("dontscroll");
     });
 });
