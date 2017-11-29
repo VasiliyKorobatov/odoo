@@ -1,7 +1,7 @@
 <odoo>
     <data>
         <template id="menu" name="Fullscreen Menu">
-            <ul class="nav navbar-nav navbar-right" id="top_menu">
+            <ul class="nav navbar-nav navbar-left" id="top_menu">
                 <t t-foreach="website.menu_id.child_id" t-as="submenu">
                     <t t-call="website_fullscreen_menu.submenu"/>
                 </t>
