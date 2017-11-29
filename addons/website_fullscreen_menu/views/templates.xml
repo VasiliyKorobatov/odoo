@@ -19,9 +19,11 @@
                     </ul>
                 </li>
             </ul>
+            <a href="javascript:void(0)" class="icon">
             <div class="top_menu_burger">
                 <span class="fa fa-2x fa-ellipsis-h"/>
             </div>
+            </a>
             <div class="container">
                 <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
                     <!-- THIS IS THE MENU -->
