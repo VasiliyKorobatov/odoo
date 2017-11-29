@@ -20,37 +20,25 @@
                 </li>
             </ul>
             <a href="javascript:void(0)" class="icon">
-            <div class="top_menu_burger">
-                <span class="fa fa-2x fa-ellipsis-h"/>
-            </div>
+                <div class="top_menu_burger">
+                    <span class="fa fa-2x fa-ellipsis-h"/>
+                </div>
             </a>
             <div class="container">
                 <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
                     <!-- THIS IS THE MENU -->
                     <div class="mobilenav">
-                        <li>
-                            <a href="#">Ho1me</a>
-                        </li>
-                        <li>
-                            <a href="#">Services</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
+                        <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                            <t t-call="website_fullscreen_menu.list_submenu"/>
+                        </t>
                     </div>
                     <!-- THIS IS THE ICON -->
                     <!--<a href="javascript:void(0)" class="icon">-->
-                        <!--<div class="hamburger">-->
-                            <!--<div class="menui top-menu"></div>-->
-                            <!--<div class="menui mid-menu"></div>-->
-                            <!--<div class="menui bottom-menu"></div>-->
-                        <!--</div>-->
+                    <!--<div class="hamburger">-->
+                    <!--<div class="menui top-menu"></div>-->
+                    <!--<div class="menui mid-menu"></div>-->
+                    <!--<div class="menui bottom-menu"></div>-->
+                    <!--</div>-->
                     <!--</a>-->
                 </div>
             </div>
@@ -77,12 +65,23 @@
                 </ul>
             </li>
         </template>
-        <!--<template id="website_menu" name="Replaced Menu" inherit_id="website.layout">-->
-        <!--<xpath expr="//ul[@id='top_menu']" position="replace">-->
-        <!--<t t-call="website_fullscreen_menu.menu"/>-->
-        <!--</xpath>-->
-        <!--</template>-->
-
-
+        <template id="list_submenu" name="Fullscreen list Sub Menu">
+            <li t-if="not submenu.child_id">
+                <a t-att-href="(website.menu_id.child_id[0] == submenu) and '/' or submenu.url" t-ignore="true"
+                   t-att-target="'_blank' if submenu.new_window else None">
+                    <span t-field="submenu.name"/>
+                </a>
+            </li>
+            <li t-if="submenu.child_id">
+                <a href="#">
+                    <span t-field="submenu.name"/>
+                </a>
+                <ul role="menu">
+                    <t t-foreach="submenu.child_id" t-as="submenu">
+                        <t t-call="website_fullscreen_menu.list_submenu"/>
+                    </t>
+                </ul>
+            </li>
+        </template>
     </data>
 </odoo>
