@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="webiste_fullscreen_menu_style_frontend" name="Fullscreen menu Style Frontend" inherit_id="website.assets_frontend">
+            <xpath expr="link[last()]" position="after">
+                <link href="/website_fullscreen_menu/static/less/style.less" rel="stylesheet" type="text/less"/>
+            </xpath>
+        </template>
+
+    </data>
+</odoo>
+

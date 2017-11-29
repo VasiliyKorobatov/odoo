@@ -19,6 +19,10 @@
                     </ul>
                 </li>
             </ul>
+            <div class="top_menu_burger">
+                <span class="fa fa-ellipsis-h" />
+            </div>
+
         </template>
 
         <template id="submenu" name="Fullscreen Sub Menu">
