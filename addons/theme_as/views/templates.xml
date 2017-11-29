@@ -392,28 +392,28 @@
                                     <!--</a>-->
                                 <!--</li>-->
                             <!--</ul>-->
-                            <ul class="menu-top left" style="">
-                                <li>
-                                    <a href="/proizvoditeli">
-                                        <span>Производители</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/garantiya">
-                                        <span>Гарантия</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/usloviya-postavki">
-                                        <span>Условия поставки</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/sotrudnichestvo">
-                                        <span>Сотрудничество</span>
-                                    </a>
-                                </li>
-                            </ul>
+                            <!--<ul class="menu-top left" style="">-->
+                                <!--<li>-->
+                                    <!--<a href="/proizvoditeli">-->
+                                        <!--<span>Производители</span>-->
+                                    <!--</a>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<a href="/garantiya">-->
+                                        <!--<span>Гарантия</span>-->
+                                    <!--</a>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<a href="/usloviya-postavki">-->
+                                        <!--<span>Условия поставки</span>-->
+                                    <!--</a>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<a href="/sotrudnichestvo">-->
+                                        <!--<span>Сотрудничество</span>-->
+                                    <!--</a>-->
+                                <!--</li>-->
+                            <!--</ul>-->
                         </nav>
                     </div>
                     <!--<div class="site-search-btn"></div>-->
