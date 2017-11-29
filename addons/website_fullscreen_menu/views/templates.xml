@@ -20,9 +20,38 @@
                 </li>
             </ul>
             <div class="top_menu_burger">
-                <span class="fa fa-ellipsis-h" />
+                <span class="fa fa-2x fa-ellipsis-h"/>
             </div>
-
+            <div class="container">
+                <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+                    <!-- THIS IS THE MENU -->
+                    <div class="mobilenav">
+                        <li>
+                            <a href="#">Ho1me</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                    </div>
+                    <!-- THIS IS THE ICON -->
+                    <a href="javascript:void(0)" class="icon">
+                        <div class="hamburger">
+                            <div class="menui top-menu"></div>
+                            <div class="menui mid-menu"></div>
+                            <div class="menui bottom-menu"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </template>
 
         <template id="submenu" name="Fullscreen Sub Menu">
@@ -47,9 +76,9 @@
             </li>
         </template>
         <!--<template id="website_menu" name="Replaced Menu" inherit_id="website.layout">-->
-            <!--<xpath expr="//ul[@id='top_menu']" position="replace">-->
-                <!--<t t-call="website_fullscreen_menu.menu"/>-->
-            <!--</xpath>-->
+        <!--<xpath expr="//ul[@id='top_menu']" position="replace">-->
+        <!--<t t-call="website_fullscreen_menu.menu"/>-->
+        <!--</xpath>-->
         <!--</template>-->
 
 
