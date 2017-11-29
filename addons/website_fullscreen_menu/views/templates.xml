@@ -26,20 +26,18 @@
             </a>
             <div class="container">
                 <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
-                    <!-- THIS IS THE MENU -->
                     <div class="mobilenav">
                         <t t-foreach="website.menu_id.child_id" t-as="submenu">
                             <t t-call="website_fullscreen_menu.list_submenu"/>
                         </t>
+                        <a href="javascript:void(0)" class="icon close-btn">
+                        <div class="hamburger">
+                            <div class="menui top-menu"></div>
+                            <div class="menui mid-menu"></div>
+                            <div class="menui bottom-menu"></div>
+                        </div>
+                    </a>
                     </div>
-                    <!-- THIS IS THE ICON -->
-                    <!--<a href="javascript:void(0)" class="icon">-->
-                    <!--<div class="hamburger">-->
-                    <!--<div class="menui top-menu"></div>-->
-                    <!--<div class="menui mid-menu"></div>-->
-                    <!--<div class="menui bottom-menu"></div>-->
-                    <!--</div>-->
-                    <!--</a>-->
                 </div>
             </div>
         </template>
