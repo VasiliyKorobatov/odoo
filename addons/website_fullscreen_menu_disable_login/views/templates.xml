@@ -1,0 +1,9 @@
+<odoo>
+    <data>
+        <template id="disable_login" name="Fullscreen Menu Disable login" inherit_id="website_fullscreen_menu.menu">
+            <xpath expr="//ul[contains(@class,'js_usermenu')]/parent::li" position="attributes">
+                <attribute name="class">hidden</attribute>
+            </xpath>
+        </template>
+    </data>
+</odoo>
