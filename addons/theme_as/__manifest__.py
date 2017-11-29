@@ -15,7 +15,10 @@
     'category': 'Theme',
     'version': '10.0.0.1',
 
-    'depends': ['base'],
+    'depends': ['base',
+                'website',
+                'website_fullscreen_menu',
+                ],
 
     'data': [
         'views/assets.xml',

@@ -352,45 +352,46 @@
                             <div class="menu-top-title">
                                 Закрыть
                             </div>
-                            <ul class="menu-top">
-                                <li class="opened active">
-                                    <a href="/">
-                                        <span>Главная</span>
-                                    </a>
-                                </li>
-                                <li class="s3-menu-allin-has">
-                                    <a href="/page/okompanii">
-                                        <span>О компании</span>
-                                    </a>
-                                    <ul class="level-2" style="display: none; left: 244.766px; top: 54px;">
-                                        <li>
-                                            <a href="/news">
-                                                <span>Новости</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="/page/contactus">
-                                                <span>Обратная связь</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="/page/otzivi">
-                                        <span>Отзывы о нас</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/page/akcii">
-                                        <span>Акции</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/page/contactus">
-                                        <span>Контакты</span>
-                                    </a>
-                                </li>
-                            </ul>
+                            <t t-call="website_fullscreen_menu.menu" />
+                            <!--<ul class="menu-top">-->
+                                <!--<li class="opened active">-->
+                                    <!--<a href="/">-->
+                                        <!--<span>Главная</span>-->
+                                    <!--</a>-->
+                                <!--</li>-->
+                                <!--<li class="s3-menu-allin-has">-->
+                                    <!--<a href="/page/okompanii">-->
+                                        <!--<span>О компании</span>-->
+                                    <!--</a>-->
+                                    <!--<ul class="level-2" style="display: none; left: 244.766px; top: 54px;">-->
+                                        <!--<li>-->
+                                            <!--<a href="/news">-->
+                                                <!--<span>Новости</span>-->
+                                            <!--</a>-->
+                                        <!--</li>-->
+                                        <!--<li>-->
+                                            <!--<a href="/page/contactus">-->
+                                                <!--<span>Обратная связь</span>-->
+                                            <!--</a>-->
+                                        <!--</li>-->
+                                    <!--</ul>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<a href="/page/otzivi">-->
+                                        <!--<span>Отзывы о нас</span>-->
+                                    <!--</a>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<a href="/page/akcii">-->
+                                        <!--<span>Акции</span>-->
+                                    <!--</a>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                    <!--<a href="/page/contactus">-->
+                                        <!--<span>Контакты</span>-->
+                                    <!--</a>-->
+                                <!--</li>-->
+                            <!--</ul>-->
                             <ul class="menu-top left" style="">
                                 <li>
                                     <a href="/proizvoditeli">
