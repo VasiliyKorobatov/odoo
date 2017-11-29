@@ -1,0 +1,46 @@
+<odoo>
+    <data>
+        <template id="menu" name="Fullscreen Menu">
+            <ul class="nav navbar-nav navbar-right" id="main_menu">
+                <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                    <t t-call="fullscreen_menu.submenu"/>
+                </t>
+                <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <b>
+                            <span t-esc="(len(user_id.name)&gt;25) and (user_id.name[:23]+'...') or user_id.name"/>
+                            <span class="caret"/>
+                        </b>
+                    </a>
+                    <ul class="dropdown-menu js_usermenu" role="menu">
+                        <li id="o_logout">
+                            <a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </template>
+
+        <template id="submenu" name="Fullscreen Sub Menu">
+            <li t-if="not submenu.child_id"
+                t-att-class="         'active' if submenu.url and submenu.url != '/' and request.httprequest.path == submenu.url.replace('/page/website.', '/page/') else None         ">
+                <a t-att-href="(website.menu_id.child_id[0] == submenu) and '/' or submenu.url" t-ignore="true"
+                   t-att-target="'_blank' if submenu.new_window else None">
+                    <span t-field="submenu.name"/>
+                </a>
+            </li>
+            <li t-if="submenu.child_id"
+                t-attf-class="dropdown #{         (submenu.url and submenu.url != '/' and any([request.httprequest.path == child.url.replace('/page/website.', '/page/') for child in submenu.child_id if child.url]) or          (submenu.url and request.httprequest.path == submenu.url.replace('/page/website.', '/page/'))) and 'active'         }">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <span t-field="submenu.name"/>
+                    <span class="caret" t-ignore="true"/>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <t t-foreach="submenu.child_id" t-as="submenu">
+                        <t t-call="fullscreen_menu.submenu"/>
+                    </t>
+                </ul>
+            </li>
+        </template>
+    </data>
+</odoo>
