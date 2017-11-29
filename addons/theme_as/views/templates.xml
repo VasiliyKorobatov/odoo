@@ -347,8 +347,8 @@
                         </ul>
                     </div>
                     <div class="mobile-top-menu-burger"></div>
-                    <div class="top_menu-wr">
-                        <nav class="top_menu-in">
+                    <div id="top_menu-wr">
+                        <nav id="top_menu-in">
                             <!--<div class="top_menu-title">-->
                                 <!--Закрыть-->
                             <!--</div>-->
