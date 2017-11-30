@@ -1091,32 +1091,22 @@
                                     <div class="folder-name-in">
                                         <ul>
                                             <li>
-                                                <a href="/magazin/folder/stroitelnaya-tekhnika">Строительная техника</a>
-
-
+                                                <a href="/page/uslugi-assenizatora">Услуги ассенизатора</a>
                                                 <ul>
-
                                                     <li>
-                                                        <a href="/magazin/folder/avtokrany">Автокраны</a>
+                                                        <a href="/page/uslugi-assenizatora">Хозяйственно-фекальные отходы</a>
                                                     </li>
-
-
                                                     <li>
-                                                        <a href="/magazin/folder/ekskavatory">Экскаваторы</a>
+                                                        <a href="/page/uslugi-assenizatora">Грунтовые воды</a>
                                                     </li>
-
-
                                                     <li>
-                                                        <a href="/magazin/folder/vyshka">Вышка</a>
+                                                        <a href="/page/uslugi-assenizatora">Жировые и белковые стоки</a>
                                                     </li>
-
-
                                                 </ul>
-
                                             </li>
                                         </ul>
                                         <span class="view-all">
-                                            <a href="/magazin/folder/stroitelnaya-tekhnika">Смотреть все</a>
+                                            <a href="/page/uslugi-assenizatora">Смотреть все</a>
                                         </span>
                                     </div>
                                 </div>
@@ -1126,40 +1116,28 @@
                             <div class="folder-inner">
                                 <div class="img-block-wr">
                                     <div class="img-block"
-                                         style="background-image: url(/theme_as/static/img/folder2.jpg);"></div>
+                                         style="background-image: url(/theme_as/static/img/folder_2.jpg);"></div>
                                 </div>
                                 <div class="folderName-wr">
                                     <div class="folder-name-in">
                                         <ul>
                                             <li>
-                                                <a href="/magazin/folder/skladskaya-tekhnika">Складская техника</a>
-
-
+                                                <a href="/page/uslugi-ilososa">Услуги илососа</a>
                                                 <ul>
-
                                                     <li>
-                                                        <a href="/magazin/folder/vilochnyye-pogruzchiki">Вилочные
-                                                            погрузчики
-                                                        </a>
+                                                        <a href="/page/uslugi-ilososa">Сливные и выгребные ямы</a>
                                                     </li>
-
-
                                                     <li>
-                                                        <a href="/magazin/folder/shtabelery">Штабелеры</a>
+                                                        <a href="/page/uslugi-ilososa">Отстойники КНС и септики</a>
                                                     </li>
-
-
                                                     <li>
-                                                        <a href="/magazin/folder/rich-traki">Рич-Траки</a>
+                                                        <a href="/page/uslugi-ilososa">Автономные системы канализации</a>
                                                     </li>
-
-
                                                 </ul>
-
                                             </li>
                                         </ul>
                                         <span class="view-all">
-                                            <a href="/magazin/folder/skladskaya-tekhnika">Смотреть все</a>
+                                            <a href="/page/uslugi-ilososa">Смотреть все</a>
                                         </span>
                                     </div>
                                 </div>
@@ -1169,39 +1147,61 @@
                             <div class="folder-inner">
                                 <div class="img-block-wr">
                                     <div class="img-block"
-                                         style="background-image: url(/theme_as/static/img/folder3.jpg);"></div>
+                                         style="background-image: url(/theme_as/static/img/folder_3.jpg);"></div>
                                 </div>
                                 <div class="folderName-wr">
                                     <div class="folder-name-in">
                                         <ul>
                                             <li>
-                                                <a href="/magazin/folder/podderzhannaya-tekhnika">Поддержанная техника
+                                                <a href="/page/obsluzhivanie-chastnykh-domov">Обслуживание частных домов</a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="/page/obsluzhivanie-chastnykh-domov">Дома</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/page/obsluzhivanie-chastnykh-domov">Коттеджи</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/page/obsluzhivanie-chastnykh-domov">Таун-хаус</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <span class="view-all">
+                                            <a href="/page/obsluzhivanie-chastnykh-domov">Смотреть все</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="folders-li">
+                            <div class="folder-inner">
+                                <div class="img-block-wr">
+                                    <div class="img-block"
+                                         style="background-image: url(/theme_as/static/img/folder_4.jpg);"></div>
+                                </div>
+                                <div class="folderName-wr">
+                                    <div class="folder-name-in">
+                                        <ul>
+                                            <li>
+                                                <a href="/page/obsluzhivanie-avtomoek">
+                                                    Обслуживание автомоек
                                                 </a>
-
-
                                                 <ul>
-
                                                     <li>
-                                                        <a href="/magazin/folder/pogruzchiki">Погрузчики</a>
+                                                        <a href="/page/obsluzhivanie-avtomoek">Автомойки</a>
                                                     </li>
-
-
                                                     <li>
-                                                        <a href="/magazin/folder/avtokrany-1">Автокраны</a>
+                                                        <a href="/page/obsluzhivanie-avtomoek">Автоэлектромойки</a>
                                                     </li>
-
-
                                                     <li>
-                                                        <a href="/magazin/folder/vyshka-1">Вышка</a>
+                                                        <a href="/page/obsluzhivanie-avtomoek">Мойки</a>
                                                     </li>
-
-
                                                 </ul>
-
                                             </li>
                                         </ul>
                                         <span class="view-all">
-                                            <a href="/magazin/folder/podderzhannaya-tekhnika">Смотреть все</a>
+                                            <a href="/page/obsluzhivanie-avtomoek">Смотреть все</a>
                                         </span>
                                     </div>
                                 </div>
@@ -1211,40 +1211,29 @@
                             <div class="folder-inner">
                                 <div class="img-block-wr">
                                     <div class="img-block"
-                                         style="background-image: url(/theme_as/static/img/folder4.jpg);"></div>
+                                         style="background-image: url(/theme_as/static/img/folder_5.jpg);"></div>
                                 </div>
                                 <div class="folderName-wr">
                                     <div class="folder-name-in">
                                         <ul>
                                             <li>
-                                                <a href="/magazin/folder/dorozhno-stroitelnaya-tekhnika">
-                                                    Дорожно-строительная техника
+                                                <a href="/page/osushenie-stroitelnykh-kotlovanov">Осушение строительных котлованов
                                                 </a>
-
-
                                                 <ul>
-
                                                     <li>
-                                                        <a href="/magazin/folder/dorozhnyye-frezy">Бульдозеры</a>
+                                                        <a href="/page/osushenie-stroitelnykh-kotlovanov">Котлованы</a>
                                                     </li>
-
-
                                                     <li>
-                                                        <a href="/magazin/folder/mini-pogruzchiki">Мини погрузчики</a>
+                                                        <a href="/page/osushenie-stroitelnykh-kotlovanov">Канав</a>
                                                     </li>
-
-
                                                     <li>
-                                                        <a href="/magazin/folder/katki">Катки</a>
+                                                        <a href="/page/osushenie-stroitelnykh-kotlovanov">Каналы</a>
                                                     </li>
-
-
                                                 </ul>
-
                                             </li>
                                         </ul>
                                         <span class="view-all">
-                                            <a href="/magazin/folder/dorozhno-stroitelnaya-tekhnika">Смотреть все</a>
+                                            <a href="/page/osushenie-stroitelnykh-kotlovanov">Смотреть все</a>
                                         </span>
                                     </div>
                                 </div>
@@ -1254,40 +1243,63 @@
                             <div class="folder-inner">
                                 <div class="img-block-wr">
                                     <div class="img-block"
-                                         style="background-image: url(/theme_as/static/img/folder5.jpg);"></div>
+                                         style="background-image: url(/theme_as/static/img/folder_6.jpg);"></div>
                                 </div>
                                 <div class="folderName-wr">
                                     <div class="folder-name-in">
                                         <ul>
                                             <li>
-                                                <a href="/magazin/folder/gruzovyye-avtomobili-i-pritsepy">Грузовые
-                                                    автомобили и прицепы
+                                                <a href="/page/chistka-skvazhin">Чистка скважин</a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="/page/chistka-skvazhin">
+                                                            Размывка песчаных отложений
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/page/chistka-skvazhin">Откачка разжиженной массы</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/page/chistka-skvazhin">Оперативная промывка скважины</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <span class="view-all">
+                                            <a href="/page/chistka-skvazhin">Смотреть все</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="folders-li">
+                            <div class="folder-inner">
+                                <div class="img-block-wr">
+                                    <div class="img-block"
+                                         style="background-image: url(/theme_as/static/img/folder_7.jpg);"></div>
+                                </div>
+                                <div class="folderName-wr">
+                                    <div class="folder-name-in">
+                                        <ul>
+                                            <li>
+                                                <a href="/page/vyvoz-burovogo-shlama">
+                                                Вывоз бурового шлама
                                                 </a>
-
-
                                                 <ul>
-
                                                     <li>
-                                                        <a href="/magazin/folder/gruzoviki">Грузовики</a>
+                                                        <a href="/page/vyvoz-burovogo-shlama">Вывоз отходов</a>
                                                     </li>
-
-
                                                     <li>
-                                                        <a href="/magazin/folder/pritsepy">Прицепы</a>
+                                                        <a href="/page/vyvoz-burovogo-shlama">Ассенизация сточных вод</a>
                                                     </li>
-
-
                                                     <li>
-                                                        <a href="/magazin/folder/refrizherator">Рефрижератор</a>
+                                                        <a href="/page/vyvoz-burovogo-shlama">Утилизации суспензии</a>
                                                     </li>
-
-
                                                 </ul>
-
                                             </li>
                                         </ul>
                                         <span class="view-all">
-                                            <a href="/magazin/folder/gruzovyye-avtomobili-i-pritsepy">Смотреть все</a>
+                                            <a href="/page/vyvoz-burovogo-shlama">Смотреть все</a>
                                         </span>
                                     </div>
                                 </div>
@@ -1297,40 +1309,34 @@
                             <div class="folder-inner">
                                 <div class="img-block-wr">
                                     <div class="img-block"
-                                         style="background-image: url(/theme_as/static/img/folder6.jpg);"></div>
+                                         style="background-image: url(/theme_as/static/img/folder_8.jpg);"></div>
                                 </div>
                                 <div class="folderName-wr">
                                     <div class="folder-name-in">
                                         <ul>
                                             <li>
-                                                <a href="/magazin/folder/arenda-spetstekhniki">Аренда спецтехники</a>
-
-
+                                                <a href="/page/ochistka-vodostokov">Очистка водостоков и канализационных сетей</a>
                                                 <ul>
-
                                                     <li>
-                                                        <a href="/magazin/folder/ekskavatory-pogruzchiki">
-                                                            Экскаваторы-погрузчики
+                                                        <a href="/page/ochistka-vodostokov">Устранение
+                                                            жировых отложения
                                                         </a>
                                                     </li>
-
-
                                                     <li>
-                                                        <a href="/magazin/folder/avtopritsepy-1">Прицепы</a>
+                                                        <a href="/page/ochistka-vodostokov">Устранение
+                                                            песка
+                                                        </a>
                                                     </li>
-
-
                                                     <li>
-                                                        <a href="/magazin/folder/avtokrany-2">Автокраны</a>
+                                                        <a href="/page/ochistka-vodostokov">
+                                                            Утилизации отходов
+                                                        </a>
                                                     </li>
-
-
                                                 </ul>
-
                                             </li>
                                         </ul>
                                         <span class="view-all">
-                                            <a href="/magazin/folder/arenda-spetstekhniki">Смотреть все</a>
+                                            <a href="/page/ochistka-vodostokov">Смотреть все</a>
                                         </span>
                                     </div>
                                 </div>
@@ -1340,134 +1346,31 @@
                             <div class="folder-inner">
                                 <div class="img-block-wr">
                                     <div class="img-block"
-                                         style="background-image: url(/theme_as/static/img/folder7.jpg);"></div>
+                                         style="background-image: url(/theme_as/static/img/folder_9.jpg);"></div>
                                 </div>
                                 <div class="folderName-wr">
                                     <div class="folder-name-in">
                                         <ul>
                                             <li>
-                                                <a href="/magazin/folder/selskokhozyaystvennaya-tekhnika">
-                                                    Сельскохозяйственная техника
-                                                </a>
-
-
+                                                <a href="/page/osushenie-i-chistka-vodoemov">Осушение и чистка водоемов</a>
                                                 <ul>
-
                                                     <li>
-                                                        <a href="/magazin/folder/kombayny">Комбайны</a>
+                                                        <a href="/page/osushenie-i-chistka-vodoemov">Осушение болот
+                                                        </a>
                                                     </li>
-
-
                                                     <li>
-                                                        <a href="/magazin/folder/traktory">Тракторы</a>
+                                                        <a href="/page/osushenie-i-chistka-vodoemov">Чистка прудов
+                                                        </a>
                                                     </li>
-
-
                                                     <li>
-                                                        <a href="/magazin/folder/borony">Бороны</a>
+                                                        <a href="/page/osushenie-i-chistka-vodoemov">Осушение сельхозугодий
+                                                        </a>
                                                     </li>
-
-
                                                 </ul>
-
                                             </li>
                                         </ul>
                                         <span class="view-all">
-                                            <a href="/magazin/folder/selskokhozyaystvennaya-tekhnika">Смотреть все</a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="folders-li">
-                            <div class="folder-inner">
-                                <div class="img-block-wr">
-                                    <div class="img-block"
-                                         style="background-image: url(/theme_as/static/img/folder8.jpg);"></div>
-                                </div>
-                                <div class="folderName-wr">
-                                    <div class="folder-name-in">
-                                        <ul>
-                                            <li>
-                                                <a href="/magazin/folder/burovyye-ustanovki">Буровые установки</a>
-
-
-                                                <ul>
-
-                                                    <li>
-                                                        <a href="/magazin/folder/rotornyye-burovyye-ustanovki">Роторные
-                                                            буровые установки
-                                                        </a>
-                                                    </li>
-
-
-                                                    <li>
-                                                        <a href="/magazin/folder/burovyye-ustanovki-gnb">Буровые
-                                                            установки ГНБ
-                                                        </a>
-                                                    </li>
-
-
-                                                    <li>
-                                                        <a href="/magazin/folder/malogabaritnyye-burovyye-ustanovki">
-                                                            Малогабаритные буровые установки
-                                                        </a>
-                                                    </li>
-
-
-                                                </ul>
-
-                                            </li>
-                                        </ul>
-                                        <span class="view-all">
-                                            <a href="/magazin/folder/burovyye-ustanovki">Смотреть все</a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="folders-li">
-                            <div class="folder-inner">
-                                <div class="img-block-wr">
-                                    <div class="img-block"
-                                         style="background-image: url(/theme_as/static/img/fp9.jpg);"></div>
-                                </div>
-                                <div class="folderName-wr">
-                                    <div class="folder-name-in">
-                                        <ul>
-                                            <li>
-                                                <a href="/magazin/folder/zapchasti">Запчасти</a>
-
-
-                                                <ul>
-
-                                                    <li>
-                                                        <a href="/magazin/folder/zapchasti-dlya-pogruzchikov">Запчасти
-                                                            для погрузчиков
-                                                        </a>
-                                                    </li>
-
-
-                                                    <li>
-                                                        <a href="/magazin/folder/zapchasti-dlya-avtokranov">Запчасти для
-                                                            автокранов
-                                                        </a>
-                                                    </li>
-
-
-                                                    <li>
-                                                        <a href="/magazin/folder/zapchasti-dlya-traktorov">Запчасти для
-                                                            тракторов
-                                                        </a>
-                                                    </li>
-
-
-                                                </ul>
-
-                                            </li>
-                                        </ul>
-                                        <span class="view-all">
-                                            <a href="/magazin/folder/zapchasti">Смотреть все</a>
+                                            <a href="/page/osushenie-i-chistka-vodoemov">Смотреть все</a>
                                         </span>
                                     </div>
                                 </div>
